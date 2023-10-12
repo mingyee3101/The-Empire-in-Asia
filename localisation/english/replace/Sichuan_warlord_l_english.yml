@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #인물
+ SCC_Liu_Xiang:0 "류샹"
+
+
+ #정당
+ SCC_fascism_party:0 "국민당"
+ SCC_fascism_party_long:0 "국민당"
+ SCC_democratic_party:0 "국민당"
+ SCC_democratic_party_long:0 "국민당"
+ SCC_communism_party:0 "국민당"
+ SCC_communism_party_long:0 "국민당"
+ SCC_neutrality_party:0 "국민당"
+ SCC_neutrality_party_long:0 "국민당"
+
+ #국명
+ SCC_fascism:0 "쓰촨군벌"
+ SCC_fascism_DEF:0 "쓰촨군벌"
+ SCC_democratic:0 "쓰촨군벌"
+ SCC_democratic_DEF:0 "쓰촨군벌"
+ SCC_neutrality:0 "쓰촨군벌"
+ SCC_neutrality_DEF:0 "쓰촨군벌"
+ SCC_communism:0 "쓰촨군벌"
+ SCC_communism_DEF:0 "쓰촨군벌"
+ SCC_fascism_ADJ:0 "쓰촨"
+ SCC_democratic_ADJ:0 "쓰촨"
+ SCC_neutrality_ADJ:0 "쓰촨"
+ SCC_communism_ADJ:0 "쓰촨"
+ SCC:0 "쓰촨"
+ SCC_DEF:0 "쓰촨"
+ SCC_ADJ:0 "쓰촨"

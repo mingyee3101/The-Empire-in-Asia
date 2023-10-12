@@ -1,0 +1,510 @@
+music_station = "teia"
+
+############ 일본 ############
+
+music = {
+	song = "Gunkan_March"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Miya_San_Miya_San"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Roei_no_Uta"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Rabauru_kouta"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Battotai"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Hohei_no_Honryo"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_the_Kamikaze_Pilots"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Japanese_Army_March"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Pacific_Ocean_March"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Naval_Ensign"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "March_The_Battle_of_Tsushima"
+	modifier = {
+		original_tag = JAP
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 중국 ############
+
+music = {
+	song = "March_of_the_Volunteers"
+	modifier = {
+		OR = {
+			original_tag = CHI
+			original_tag = PRC
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Victory_Song"
+	modifier = {
+		OR = {
+			original_tag = CHI
+			original_tag = PRC
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+
+############ 중국 국민당 ############
+
+music = {
+	song = "The_Sword_March"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Ode_to_the_Republic_of_China"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Night_Raid"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Banners_are_Fluttering"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Whampoa_men_is_the_most_grand_and_heroic"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Immortal_China"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "I_have_a_rifle"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_the_Great_Wall_Troops"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Defend_the_Yellow_River"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 중국 공산당 ############
+
+music = {
+	song = "March_of_the_Eighth_Route_Army"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "When_that_day_comes"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 중국 군벌 ############
+
+music = {
+	song = "Song_of_the_Guangxi_Army"
+	modifier = {
+		original_tag = GXC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 한국 ############
+
+music = {
+	song = "The_Torch_of_the_Annihilation_of_Communism"
+	modifier = {
+		original_tag = KOR
+		NOT = {
+			has_government = communism
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_Korean_Independence_Army"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 북한 ############
+
+music = {
+	song = "Aegukga_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 베트남 ############
+
+############ 일반 ############
+
+music = {
+	song = "Noi_Vong_Tay_Lon"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Bac_dang_Cung_Chung_Chau_Hanh_Quan"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Bai_Ca_Ho_Chi_Minh"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Giai_Phong_Mien_Nam"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Hanh_Khuc_Giai_Phong"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Quoc_te_ca"
+	chance = {
+		factor = 1
+		modifier = {
+			original_tag = VIN
+			has_government = communism
+		}
+	}
+	chance = {
+		modifier = {
+			factor = 0.5
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "Tieng_goi_thanh_nien"
+	modifier = {
+		original_tag = VIN
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Tien_Ve_Sai_Gon"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Dat_Nuoc_Tron_Niem_Vui"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Bai_ca_nguoi_linh"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Hat_mai_khuc_quan_hanh"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Sai_Gon_Quat_Khoi"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "tieu_doan_307"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 평화 ############
+
+music = {
+	song = "Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+		has_war = no
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Cung_nhau_ta_di_len"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 전쟁 #############
+
+music = {
+	song = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_war = yes
+		}	
+	}	
+}

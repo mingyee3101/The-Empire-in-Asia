@@ -1,0 +1,983 @@
+focus_tree = {
+	id = josen
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = kor
+		}
+	}
+	default = no
+	focus = {
+		id = 대일본제국의_땅
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = 대한민국_임시정부_인정
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = 대한민국_임시정부_인정
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = 대일본제국의_땅
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = 임시정부를_서울로_옮겨주다
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한민국_임시정부_인정
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = 임시정부장_김구
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 임시정부를_서울로_옮겨주다
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = 임시정부_근위대_모집
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 임시정부장_김구
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = 독립준비
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 임시정부_근위대_모집
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = 서울_경기도에서_독립전쟁_개시
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 독립준비
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = 중국에서_무기밀수
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 서울_경기도에서_독립전쟁_개시
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = 중국_용병대대
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 중국에서_무기밀수
+		}
+		mutually_exclusive = {
+			focus = 소련_용병대대
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = 소련에서_무기밀수
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 서울_경기도에서_독립전쟁_개시
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = 소련_용병대대
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 중국에서_무기밀수
+			focus = 소련에서_무기밀수
+		}
+		mutually_exclusive = {
+			focus = 중국_용병대대
+			focus = 몽골용병대대
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = 몽골용병대대
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 소련에서_무기밀수
+		}
+		mutually_exclusive = {
+			focus = 소련_용병대대
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = 서서히_밀고나가다
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 몽골용병대대
+			focus = 소련_용병대대
+			focus = 소련_용병대대
+			focus = 중국_용병대대
+		}
+		mutually_exclusive = {
+			focus = 전선 고착화
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = 남북_동시공세
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 서서히_밀고나가다
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = 대한의_주인은_대한민족
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 남북_동시공세
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = 승리
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한의_주인은_대한민족
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = 독립운동_탄압
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대일본제국의_땅
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = 조선어_사용자_처형
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 독립운동_탄압
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = 조선인_노동착취
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선어_사용자_처형
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = 조선인_탄광행
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선인_노동착취
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = 조선화폐_탄압
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선어_사용자_처형
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = 조선인_차별_심화유도
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선어_사용자_처형
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = 조선인구역
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선화폐_탄압
+			focus = 조선인_차별_심화유도
+			focus = 조선인_노동착취
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = 조선인_강제_징집
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선인_노동착취
+			focus = 조선화폐_탄압
+			focus = 조선인_차별_심화유도
+		}
+		x = 33
+		y = 5
+
+	}
+	focus = {
+		id = 총독부_안정화_정책
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선인_강제_징집
+			focus = 조선인구역
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = 전선_고착화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 소련_용병대대
+			focus = 중국_용병대대
+			focus = 몽골용병대대
+			focus = 소련_용병대대
+			focus = 몽골용병대대
+		}
+		mutually_exclusive = {
+			focus = 서서히_밀고나가다
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = 미국용병대대_요청
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 전선_고착화
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = 부산상륙작전
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 미국용병대대_요청
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = 성공
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 부산상륙작전
+		}
+		mutually_exclusive = {
+			focus = 실패
+		}
+		x = 6
+		y = 12
+
+	}
+	focus = {
+		id = 실패
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 부산상륙작전
+		}
+		mutually_exclusive = {
+			focus = 성공
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = 대한민족의_승리를위해
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 성공
+			focus = 실패
+		}
+		x = 7
+		y = 13
+
+	}
+	focus = {
+		id = 대한민국의_독립
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 승리
+			focus = 대한민족의_승리를위해
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = 부산항_요새화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 만주전선_요새화
+		}
+		x = 8
+		y = 18
+
+	}
+	focus = {
+		id = 민중을_위한_민주주의로 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한민국의_독립
+		}
+		mutually_exclusive = {
+			focus = 모두를위한_공산주의로
+		}
+		x = 6
+		y = 15
+
+	}
+	focus = {
+		id = 모두를위한_공산주의로
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = 대한민국의_독립
+		}
+		mutually_exclusive = {
+			focus = 민중을_위한_민주주의로 
+		}
+		x = 17
+		y = 15
+
+	}
+	focus = {
+		id = 이승만_대통령
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 민중을_위한_민주주의로 
+		}
+		x = 6
+		y = 16
+
+	}
+	focus = {
+		id = 박헌영_대통령
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 모두를위한_공산주의로
+		}
+		x = 17
+		y = 16
+
+	}
+	focus = {
+		id = 소련과_교류
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = 신분평등제도
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = 미국과_교류
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 만주전선_요새화
+		}
+		x = 5
+		y = 19
+
+	}
+	focus = {
+		id = 영국과_교류
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 만주전선_요새화
+		}
+		x = 7
+		y = 19
+
+	}
+	focus = {
+		id = 초중고의무교육화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 이승만_대통령
+		}
+		x = 6
+		y = 17
+
+	}
+	focus = {
+		id = 만주전선_요새화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 초중고의무교육화
+		}
+		x = 6
+		y = 18
+
+	}
+	focus = {
+		id = 3국조약_제안
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 미국과_교류
+			focus = 영국과_교류
+		}
+		x = 6
+		y = 20
+
+	}
+	focus = {
+		id = 아시아_민주주의_등불
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 영국과_교류
+			focus = 미국과_교류
+		}
+		x = 8
+		y = 20
+
+	}
+	focus = {
+		id = 아시아의_마지막_희망
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 미국과_교류
+			focus = 영국과_교류
+		}
+		x = 4
+		y = 20
+
+	}
+	focus = {
+		id = 늘어나는_민족주의자들 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 아시아의_마지막_희망
+			focus = 아시아_민주주의_등불
+			focus = 3국조약_제안
+		}
+		x = 6
+		y = 21
+
+	}
+	focus = {
+		id = 민족주의자들을_수용소에
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 늘어나는_민족주의자들 
+		}
+		mutually_exclusive = {
+			focus = 민족주의자들을_내버려두자
+		}
+		x = 4
+		y = 22
+
+	}
+	focus = {
+		id = 민족주의자들을_내버려두자
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 늘어나는_민족주의자들 
+		}
+		mutually_exclusive = {
+			focus = 민족주의자들을_수용소에
+		}
+		x = 8
+		y = 22
+
+	}
+	focus = {
+		id = 민주주의_홍보
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 민족주의자들을_수용소에
+			focus = 민족주의자들을_내버려두자
+		}
+		x = 6
+		y = 23
+
+	}
+	focus = {
+		id = 민주주의_중요성_홍보
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 민주주의_홍보
+		}
+		x = 6
+		y = 24
+
+	}
+	focus = {
+		id = 신분평등제도
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 박헌영_대통령
+		}
+		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = 아시아_코뮌_연방기획
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 사회주의결속조약
+		}
+		x = 17
+		y = 20
+
+	}
+	focus = {
+		id = 사회주의결속조약
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = 소련과_교류
+		}
+		x = 17
+		y = 19
+
+	}
+	focus = {
+		id = 아시아의_대표코뮌
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 사회주의결속조약
+		}
+		x = 19
+		y = 19
+
+	}
+	focus = {
+		id = 대한민국_유지
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 치안_문제
+		}
+		mutually_exclusive = {
+			focus = 대한아시아연합국
+		}
+		x = 3
+		y = 26
+
+	}
+	focus = {
+		id = 대한아시아연합국
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 치안_문제
+		}
+		mutually_exclusive = {
+			focus = 대한민국_유지
+		}
+		x = 9
+		y = 26
+
+	}
+	focus = {
+		id = 민주주의자_숙청
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 소련과_교류
+		}
+		x = 15
+		y = 19
+
+	}
+	focus = {
+		id = 조선족_수용소
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 넘어오는_조선족들
+		}
+		mutually_exclusive = {
+			focus = 조선족_환영
+		}
+		x = 14
+		y = 22
+
+	}
+	focus = {
+		id = 넘어오는_조선족들
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 아시아_코뮌_연방기획
+		}
+		x = 17
+		y = 21
+
+	}
+	focus = {
+		id = 조선족_착취
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 넘어오는_조선족들
+		}
+		mutually_exclusive = {
+			focus = 조선족_환영
+		}
+		x = 20
+		y = 22
+
+	}
+	focus = {
+		id = 조선족_환영
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 넘어오는_조선족들
+		}
+		mutually_exclusive = {
+			focus = 조선족_착취
+			focus = 조선족_수용소
+		}
+		x = 17
+		y = 22
+
+	}
+	focus = {
+		id = 치안문제
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 10.00
+		prerequisite = {
+			focus = 조선족_수용소
+			focus = 조선족_환영
+			focus = 조선족_착취
+		}
+		x = 17
+		y = 23
+
+	}
+	focus = {
+		id = 치안_문제
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 민주주의_중요성_홍보
+		}
+		x = 6
+		y = 25
+
+	}
+	focus = {
+		id = 국경_요새화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한민국_유지
+		}
+		x = 3
+		y = 27
+
+	}
+	focus = {
+		id = 한반도_방어체계_형성
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 국경_요새화
+		}
+		x = 3
+		y = 28
+
+	}
+	focus = {
+		id = 작전명_복수
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한아시아연합국
+		}
+		x = 8
+		y = 27
+
+	}
+	focus = {
+		id = 작전명_허를찌르다
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한아시아연합국
+		}
+		x = 10
+		y = 27
+
+	}
+	focus = {
+		id = 작전명_역지사지
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_복수
+			focus = 작전명_허를찌르다
+		}
+		x = 9
+		y = 28
+
+	}
+	focus = {
+		id = 작전명_1231년의_복수
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_역지사지
+		}
+		x = 9
+		y = 29
+
+	}
+	focus = {
+		id = 아시아_통일
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_1231년의_복수
+		}
+		x = 9
+		y = 30
+
+	}
+	focus = {
+		id = 경찰_대규모_채용
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 치안문제
+		}
+		x = 17
+		y = 24
+
+	}
+	focus = {
+		id = 조선민주주의인민공화국_유지
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 경찰_대규모_채용
+		}
+		mutually_exclusive = {
+			focus = 아시아코뮌연방
+		}
+		x = 15
+		y = 25
+
+	}
+	focus = {
+		id = 아시아코뮌연방
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 경찰_대규모_채용
+		}
+		mutually_exclusive = {
+			focus = 조선민주주의인민공화국_유지
+		}
+		x = 19
+		y = 25
+
+	}
+	focus = {
+		id = 작전명_쪽바리
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 아시아코뮌연방
+		}
+		x = 18
+		y = 26
+
+	}
+	focus = {
+		id = 작전명_만주벌판
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 아시아코뮌연방
+		}
+		x = 20
+		y = 26
+
+	}
+	focus = {
+		id = 작전명_중국통일
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_쪽바리
+			focus = 작전명_만주벌판
+		}
+		x = 19
+		y = 27
+
+	}
+	focus = {
+		id = 작전명_말대가리
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_중국통일
+		}
+		x = 19
+		y = 28
+
+	}
+	focus = {
+		id = 아시아_통일
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 작전명_1231년의_복수
+		}
+		x = 19
+		y = 29
+
+	}
+	focus = {
+		id = 국경_요새화
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 대한민국_유지
+		}
+		x = 15
+		y = 26
+
+	}
+	focus = {
+		id = 한반도_방어체계_형성
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 국경_요새화
+		}
+		x = 15
+		y = 27
+
+	}
+	focus = {
+		id = 일본인_거주구역 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 조선인_차별_심화유도
+		}
+		x = 37
+		y = 5
+
+	}
+}

@@ -1,0 +1,53 @@
+﻿l_english:
+
+ #인물
+ UIC_Rene_Robin:0 "르네 로벵" #법학 박사 #총독 대행
+ UIC_jean_decoux:0 "장 드쿠"
+ UIC_jean_decoux_navy:0 "장 드쿠"
+ UIC_Georges_Catroux:0 "조르주 카트루"
+
+ #장군
+ UIC_Maurice_Martin:0 "모리스 마틴"
+ UIC_Jules_Antoine_Buhrer:0 "쥘 앙투안 뷔러" #인도차이나 총사령관
+ UIC_Raoul_Salan:0 "라울 살란" #44년
+ UIC_Marcel_Alessandri:0 "마르셀 알레산드리"
+
+ #제독
+ UIC_Georges_Thierry_d_Argenlieu:0 "조지 티에리 다르장리우" #45년
+
+ #정당
+ UIC_fascism_party:0 "인도차이나 총독부"
+ UIC_fascism_party_long:0 "인도차이나 총독부"
+ #UIC_fascism_party:0 "대월국가사회당" #Đại Việt Quốc gia Xã hội Đảng #친일
+ UIC_democratic_party:0 "인도차이나 총독부"
+ UIC_democratic_party_long:0 "인도차이나 총독부"
+ UIC_communism_party:0 "인도차이나 공산당"
+ UIC_communism_party_long:0 "인도차이나 공산당"
+ UIC_neutrality_party:0 "인도차이나 총독부" #Phủ Toàn quyền Đông Dương
+ UIC_neutrality_party_long:0 "인도차이나 총독부"
+
+ #국명
+ UIC_fascism:0 "인도차이나 제국"
+ UIC_fascism_DEF:0 "인도차이나 제국"
+ UIC_democratic:0 "인도차이나 연합"
+ UIC_democratic_DEF:0 "인도차이나 연합"
+ UIC_neutrality:0 "인도차이나 연합"
+ UIC_neutrality_DEF:0 "인도차이나 연합"
+ UIC_communism:0 "인도차이나 연방"
+ UIC_communism_DEF:0 "인도차이나 연방"
+ UIC_fascism_ADJ:0 "인도차이나"
+ UIC_democratic_ADJ:0 "인도차이나"
+ UIC_neutrality_ADJ:0 "인도차이나"
+ UIC_communism_ADJ:0 "인도차이나"
+ UIC:0 "인도차이나"
+ UIC_DEF:0 "인도차이나"
+ UIC_ADJ:0 "인도차이나"
+
+ UIC_fra_neutrality:0 "프랑스령 인도차이나"
+ UIC_fra_fascism:0 "프랑스령 인도차이나"
+ UIC_fra_democratic:0 "프랑스령 인도차이나"
+ UIC_fra_communism:0 "프랑스령 인도차이나"
+
+ #중점
+ UIC_the_medals_of_french_indochina:0 "훈장에 대한 새로운 규정" #프랑스령 인도차이나에 대한 새로운 규정
+ UIC_the_medals_of_french_indochina_desc:0 "우리는 현지 노동자와 자국민을 위해서 노동에 대한 보상으로 명예훈장을 수여할 것입니다."

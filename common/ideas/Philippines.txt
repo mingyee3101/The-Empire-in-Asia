@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+
+		PHI_army_not_created = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = tfv_can_conscription_crisis
+
+			rule = {
+				can_not_declare_war = no
+			}
+			
+			modifier = {
+				custom_modifier_tooltip = PHI_army_not_created_tt
+			}
+		}
+
+	}
+}

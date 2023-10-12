@@ -1,0 +1,500 @@
+focus_tree = {
+	id = mon_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MON
+		}
+	}
+	default = no
+	focus = {
+		id = MON_new_mon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 17
+		y = 0
+
+                            completion_reward = {
+                                         add_political_power = 100
+                            }
+	}
+	focus = {
+		id = MON_san
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 3
+		y = 0
+
+	}
+	focus = {
+		id = MON_dan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 27
+		y = 0
+
+                            completion_reward = {
+			army_experience = 35
+                            }
+
+	}
+	focus = {
+		id = MON_gi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_san
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = MON_yon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_gi
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = MON_2yon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_yon
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = MON_min
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_san
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = MON_min2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_min
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = MON_gon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_min2
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = MON_gon2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_gon
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = MON_party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_new_mon
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = MON_sov
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_party
+		}
+		mutually_exclusive = {
+			focus = MON_eng
+			focus = MON_mon_empire
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = MON_many_people
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_sov
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = MON_com
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_sov
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = MON_sov_won
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_com
+			focus = MON_many_people
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = MON_war_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_sov_won
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = MON_ger_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_war_2
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = MON_ita_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_war_2
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = MON_eng
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_party
+		}
+		mutually_exclusive = {
+			focus = MON_sov
+			focus = MON_mon_empire
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = MON_allied
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_eng
+		}
+		mutually_exclusive = {
+			focus = MON_swi
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = MON_2pl
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_allied
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = MON_chi_p
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_2pl
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = MON_swi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_eng
+		}
+		mutually_exclusive = {
+			focus = MON_allied
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = MON_tao
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_swi
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = MON_swe_invite
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tao
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = MON_mon_empire
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_party
+		}
+		mutually_exclusive = {
+			focus = MON_sov
+			focus = MON_eng
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = MON_stages
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_mon_empire
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = MON_military_ervice
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_mon_empire
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = MON_strong
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_military_ervice
+		}
+		prerequisite = {
+			focus = MON_stages
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = MON_tan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_strong
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = MON_tur_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tan
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = MON_chi_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tan
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = MON_jap
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tan
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = MON_sov_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tan
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = MON_ta
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_dan
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = MON_pol_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_tan
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = MON_im
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_dan
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = MON_blop
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_im
+		}
+		prerequisite = {
+			focus = MON_ta
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = MON_fol
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_blop
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = MON_war_end
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_jap
+		}
+		prerequisite = {
+			focus = MON_sov_war
+		}
+		prerequisite = {
+			focus = MON_pol_war
+		}
+		prerequisite = {
+			focus = MON_chi_war
+		}
+		prerequisite = {
+			focus = MON_tur_war
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = MON_war2_end
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MON_ger_war
+		}
+		prerequisite = {
+			focus = MON_ita_war
+		}
+		x = 13
+		y = 7
+
+	}
+}

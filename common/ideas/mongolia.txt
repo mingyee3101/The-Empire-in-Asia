@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+
+		MON_very_employment = {
+			picture = GFX_idea_FRA_liberte_egalite_solidarite
+			allowed = {
+				original_tag = MON
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = MON
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                                                        consumer_goods_factor = 0.05
+			}
+		}
+
+		mon_spo4 = {
+		
+			picture = GFX_idea_FRA_liberte_egalite_solidarite
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+			}
+		}

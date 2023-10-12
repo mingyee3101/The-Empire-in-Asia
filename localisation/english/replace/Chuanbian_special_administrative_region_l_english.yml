@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #인물
+ CSR_Liu_Wenhui:0 "류원후이"
+
+
+ #정당
+ CSR_fascism_party:0 "국민당"
+ CSR_fascism_party_long:0 "국민당"
+ CSR_democratic_party:0 "국민당"
+ CSR_democratic_party_long:0 "국민당"
+ CSR_communism_party:0 "국민당"
+ CSR_communism_party_long:0 "국민당"
+ CSR_neutrality_party:0 "국민당"
+ CSR_neutrality_party_long:0 "국민당"
+
+ #국명
+ CSR_fascism:0 "천변특별행정구"
+ CSR_fascism_DEF:0 "천변특별행정구"
+ CSR_democratic:0 "천변특별행정구"
+ CSR_democratic_DEF:0 "천변특별행정구"
+ CSR_neutrality:0 "천변특별행정구"
+ CSR_neutrality_DEF:0 "천변특별행정구"
+ CSR_communism:0 "천변특별행정구"
+ CSR_communism_DEF:0 "천변특별행정구"
+ CSR_fascism_ADJ:0 "천변"
+ CSR_democratic_ADJ:0 "천변"
+ CSR_neutrality_ADJ:0 "천변"
+ CSR_communism_ADJ:0 "천변"
+ CSR:0 "천변"
+ CSR_DEF:0 "천변"
+ CSR_ADJ:0 "천변"

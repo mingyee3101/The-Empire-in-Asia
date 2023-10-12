@@ -1,0 +1,285 @@
+asia_formable_nation_decisions_category = {
+	
+	form_yuan_dynasty = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			is_subject = no
+			# 탄누투바
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_tan_required_states_tt
+				controls_state = 329
+			}
+
+			# 러시아
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_sov_required_states_tt
+				controls_state = 654
+				controls_state = 569
+				controls_state = 568
+				controls_state = 567
+				controls_state = 566
+				controls_state = 564
+				controls_state = 563
+				controls_state = 561
+				controls_state = 560
+				controls_state = 657
+				controls_state = 409
+				controls_state = 408
+			}
+
+			# 북한
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_kor_required_states_tt
+				controls_state = 527
+			}
+
+			# 다롄, 동허베이, 만주국, 몽강
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_jap_required_states_tt
+				controls_state = 745
+				controls_state = 609
+
+				controls_state = 761
+				controls_state = 714
+				controls_state = 715
+				controls_state = 716
+				controls_state = 717
+				controls_state = 328
+				controls_state = 609
+
+				controls_state = 611
+				controls_state = 612
+			}
+
+			# 중국
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_chi_required_states_tt
+
+				# 신강
+				controls_state = 619
+				controls_state = 287
+				controls_state = 759
+				controls_state = 760
+
+				# 산서
+				controls_state = 621
+				controls_state = 746
+				controls_state = 615
+
+				# 중국 공산당
+				controls_state = 622
+
+				# 서북삼마
+				controls_state = 753
+				controls_state = 754
+				controls_state = 755
+				controls_state = 756
+				controls_state = 283
+				controls_state = 616
+				controls_state = 604
+
+				# 티베트
+				controls_state = 322
+				controls_state = 758
+				controls_state = 757
+
+				# 운남
+				controls_state = 325
+				controls_state = 747
+
+				# 광서
+				controls_state = 591
+				controls_state = 592
+				controls_state = 593
+				controls_state = 594
+				controls_state = 599
+
+				# 광저우만, 마카오, 홍콩
+				controls_state = 728
+			#	controls_state = 729
+				controls_state = 326
+
+				#중국
+				controls_state = 608
+				controls_state = 614
+				controls_state = 597
+				controls_state = 743
+				controls_state = 607
+				controls_state = 598
+				controls_state = 606
+				controls_state = 613
+				controls_state = 749
+				controls_state = 596
+				controls_state = 744
+				controls_state = 620
+				controls_state = 600
+				controls_state = 595
+				controls_state = 602
+				controls_state = 750
+				controls_state = 605
+				controls_state = 748
+				controls_state = 603
+				controls_state = 751
+				controls_state = 752
+				controls_state = 601
+			}
+
+			# 인도, 부탄
+			custom_trigger_tooltip = {
+				tooltip = form_country_yuan_raj_required_states_tt
+				controls_state = 787
+				controls_state = 441
+				controls_state = 324
+				controls_state = 434
+			}
+
+		}
+
+		visible = {
+			original_tag = MON
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = MON_YUA
+			# 탄누투바
+			329 = { add_core_of = ROOT }
+			# 소련
+			654 = { add_core_of = ROOT }
+			569 = { add_core_of = ROOT }
+			568 = { add_core_of = ROOT }
+			567 = { add_core_of = ROOT }
+			566 = { add_core_of = ROOT }
+			564 = { add_core_of = ROOT }
+			563 = { add_core_of = ROOT }
+			561 = { add_core_of = ROOT }
+			560 = { add_core_of = ROOT }
+			657 = { add_core_of = ROOT }
+			409 = { add_core_of = ROOT }
+			408 = { add_core_of = ROOT }
+			# 북한
+			527 = { add_core_of = ROOT }
+			custom_effect_tooltip = form_country_chi_coring_states_tt
+			hidden_effect = {
+				# 신강
+				619 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				759 = { add_core_of = ROOT }
+				760 = { add_core_of = ROOT }
+
+				#다롄, 동허베이
+				745 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+
+				#만주국
+				every_state = {
+				limit = {
+					is_core_of = MAN
+				}
+					add_core_of = ROOT
+				}
+
+				#몽강
+				every_state = {
+				limit = {
+					is_core_of = MEN
+				}
+					add_core_of = ROOT
+				}
+
+				#산서
+				621 = { add_core_of = ROOT }
+				746 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+
+				#중국 공산당
+				622 = { add_core_of = ROOT }
+
+				# 산서
+				621 = { add_core_of = ROOT }
+				746 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+
+				# 중국 공산당
+				622 = { add_core_of = ROOT }
+
+				# 서북삼마
+				753 = { add_core_of = ROOT }
+				754 = { add_core_of = ROOT }
+				755 = { add_core_of = ROOT }
+				756 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+
+				# 티베트
+				322 = { add_core_of = ROOT }
+				758 = { add_core_of = ROOT }
+				757 = { add_core_of = ROOT }
+
+				# 운남
+				325 = { add_core_of = ROOT }
+				747 = { add_core_of = ROOT }
+
+				# 광서
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+
+				#인도, 부탄
+				787 = { add_core_of = ROOT }
+				441 = { add_core_of = ROOT }
+				324 = { add_core_of = ROOT }
+				434 = { add_core_of = ROOT }
+
+				#중국
+				608 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				743 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				749 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				744 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				750 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				748 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				751 = { add_core_of = ROOT }
+				752 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+
+				#광저우만, 홍콩, 마카오
+				728 = { add_core_of = ROOT }
+				729 = { add_core_of = ROOT }
+				326 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				#news_event = { id = wtt_news.53 hours = 6 }
+				set_global_flag = form_yua_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	#인도차이나
+
+	SpriteType = {
+		name = "GFX_ICU_the_medals_of_french_indochina"
+		texturefile = "gfx/interface/goals/focus_ICU_the_medals_of_french_indochina.png"	
+	}
+
+}

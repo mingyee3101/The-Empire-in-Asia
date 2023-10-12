@@ -1,0 +1,27 @@
+characters = {
+
+	############지도자############
+
+	SDC_Han_Fuju = {
+		name = SDC_Han_Fuju
+		portraits = {
+			army={
+				large = "gfx/leaders/SDC/Portrait_Han_Fuju.png"
+				small = "gfx/interface/ideas/SDC/SDC_Han_Fuju.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

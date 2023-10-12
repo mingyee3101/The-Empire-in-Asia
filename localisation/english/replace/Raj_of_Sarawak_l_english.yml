@@ -1,0 +1,31 @@
+﻿l_english:
+
+ #인물
+ ROS_Charles_Vyner_Brooke:0 "찰스 바이너 브룩"
+
+ #정당
+ #ROS_fascism_party:0 ""
+ #ROS_fascism_party_long:0 ""
+ #ROS_democratic_party:0 ""
+ #ROS_democratic_party_long:0 ""
+ #ROS_communism_party:0 ""
+ #ROS_communism_party_long:0 ""
+ ROS_neutrality_party:0 "브룩 왕조"
+ ROS_neutrality_party_long:0 "브룩 왕조"
+
+ #국명
+ ROS_fascism:0 "사라왁"
+ ROS_fascism_DEF:0 "사라왁"
+ ROS_democratic:0 "사라왁"
+ ROS_democratic_DEF:0 "사라왁"
+ ROS_neutrality:0 "사라왁 왕국"
+ ROS_neutrality_DEF:0 "사라왁 왕국"
+ ROS_communism:0 "사라왁"
+ ROS_communism_DEF:0 "사라왁"
+ ROS_fascism_ADJ:0 "사라왁"
+ ROS_democratic_ADJ:0 "사라왁"
+ ROS_neutrality_ADJ:0 "사라왁"
+ ROS_communism_ADJ:0 "사라왁"
+ ROS:0 "사라왁"
+ ROS_DEF:0 "사라왁"
+ ROS_ADJ:0 "사라왁"

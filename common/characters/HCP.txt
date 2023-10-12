@@ -1,0 +1,26 @@
+characters = {
+
+	############지도자############
+
+	HCP_Song_Zheyuan = {
+		name = HCP_Song_Zheyuan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HCP/Portrait_Song_Zheyuan.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

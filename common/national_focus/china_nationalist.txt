@@ -1,0 +1,641 @@
+﻿focus_tree = {
+	id = china_nationalist_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+
+
+	#내부의 적을 우선
+	focus = {
+		id = CHI_Prioritize_On_Internal_Enemy
+		icon = GFX_goal_generic_national_unity
+		mutually_exclusive = { focus = CHI_Prioritize_On_External_Enemy }
+		cost = 10
+		x = 5
+		y = 0
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CHI_Decresased_Factionalism
+		icon = GFX_goal_generic_military_deal
+		cost = 10
+		prerequisite = {
+			focus = CHI_Prioritize_On_Internal_Enemy
+		}
+		x = 0
+		y = 1
+        relative_position_id = CHI_Prioritize_On_Internal_Enemy
+
+	}
+	focus = {
+		id = CHI_Cooperation_with_Factions
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 10
+		prerequisite = {
+			focus = CHI_Decresased_Factionalism
+		}
+		mutually_exclusive = {
+			focus = CHI_The_Long_March_of_Mao
+		}
+		x = -2
+		y = 1
+        relative_position_id = CHI_Decresased_Factionalism
+
+	}
+	focus = {
+		id = CHI_Building_a_United_Front
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = CHI_Cooperation_with_Factions
+		}
+		x = 0
+		y = 2
+        relative_position_id = CHI_Cooperation_with_Factions
+
+	}
+
+	focus = {
+		id = CHI_The_Long_March_of_Mao
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 10
+		prerequisite = {
+			focus = CHI_Decresased_Factionalism
+		}
+		mutually_exclusive = {
+			focus = CHI_Cooperation_with_Factions
+		}
+		x = 0
+		y = 1
+        relative_position_id = CHI_Decresased_Factionalism
+
+	}
+	focus = {
+		id = CHI_Warlord_Subjugation
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		prerequisite = {
+			focus = CHI_The_Long_March_of_Mao
+		}
+		x = 0
+		y = 2
+        relative_position_id = CHI_The_Long_March_of_Mao
+
+	}
+	focus = {
+		id = CHI_Reunification_of_China
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10
+		prerequisite = { focus = CHI_Building_a_United_Front focus = CHI_Warlord_Subjugation }
+		x = 0
+		y = 1
+        relative_position_id = CHI_Warlord_Subjugation
+
+	}
+
+	focus = {
+		id = CHI_Recapture_of_Manchuria
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10
+		prerequisite = { focus = CHI_Prioritize_On_Internal_Enemy focus = CHI_Prioritize_On_External_Enemy }
+		x = 2
+		y = 2
+        relative_position_id = CHI_Prioritize_On_Internal_Enemy
+
+	}
+
+	#외부의 적을 우선
+	focus = {
+		id = CHI_Prioritize_On_External_Enemy
+		icon = GFX_goal_generic_national_unity
+		mutually_exclusive = { focus = CHI_Prioritize_On_Internal_Enemy }
+		cost = 10
+		x = 4
+		y = 0
+		relative_position_id = CHI_Prioritize_On_Internal_Enemy
+
+	}
+	focus = {
+		id = CHI_Fortification_of_Beijing
+		icon = GFX_goal_generic_fortify_city
+		cost = 10
+		prerequisite = {
+			focus = CHI_Prioritize_On_External_Enemy
+		}
+		x = 0
+		y = 1
+		relative_position_id = CHI_Prioritize_On_External_Enemy
+
+	}
+	focus = {
+		id = CHI_Coastal_Fortification
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10
+		prerequisite = {
+			focus = CHI_Prioritize_On_External_Enemy
+		}
+		x = 2
+		y = 1
+		relative_position_id = CHI_Prioritize_On_External_Enemy
+
+	}
+	focus = {
+		id = CHI_Total_Mobilization
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 10
+		prerequisite = {
+			focus = CHI_Fortification_of_Beijing
+		}
+		x = 0
+		y = 4
+		relative_position_id = CHI_Fortification_of_Beijing
+
+	}
+
+	#군사위원회
+	focus = {
+		id = CHI_Military_Committee
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 7
+		y = 0
+        relative_position_id = CHI_Prioritize_On_External_Enemy
+
+	}
+	focus = {
+		id = CHI_Chinese_military
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		prerequisite = {
+			focus = CHI_Military_Committee
+		}
+		x = -2
+		y = 1
+        relative_position_id = CHI_Military_Committee
+
+	}
+	focus = {
+		id = CHI_Equipment_Capture
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = CHI_Chinese_military
+		}
+		x = 0
+		y = 1
+        relative_position_id = CHI_Chinese_military
+
+	}
+
+	#산업
+	focus  = {
+		id = CHI_golden_decade
+		icon = GFX_focus_generic_concessions
+		mutually_exclusive = { focus = CHI_local_development_plan }
+		relative_position_id = CHI_Military_Committee
+		x = 10
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 85
+		}
+	}
+
+	focus  = {
+		id = CHI_National_Reconstruction
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = CHI_golden_decade }
+		x = -2
+		y = 1
+		relative_position_id = CHI_golden_decade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Sustaining_the_National_Economic_Development_Movement
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+		x = 2
+		y = 1
+		relative_position_id = CHI_golden_decade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus  = {
+		id = CHI_currency_reform
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+		x = 6
+		y = 1
+		relative_position_id = CHI_golden_decade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Taiyuan_Arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+		x = 0
+		y = 2
+		relative_position_id = CHI_golden_decade
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Develop_The_Hanyan_Arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+		x = 4
+		y = 0
+		relative_position_id = CHI_Taiyuan_Arsenal
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Mining_Comminssion
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_Taiyuan_Arsenal }
+		prerequisite = { focus = CHI_Develop_The_Hanyan_Arsenal }
+		x = 2
+		y = 2
+		relative_position_id = CHI_Taiyuan_Arsenal
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Financial_Policy
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = CHI_Mining_Comminssion }
+		x = 0
+		y = 1
+		relative_position_id = CHI_Mining_Comminssion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Grain_Tax
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = CHI_Financial_Policy }
+		x = 0
+		y = 1
+		relative_position_id = CHI_Financial_Policy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_infrastructure_planning_continues
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+		x = 0
+		y = 2
+		relative_position_id = CHI_local_development_plan
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Xi_lan_Xihan_and_Han_ning_Expressway_opened
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = CHI_infrastructure_planning_continues }
+		x = -2
+		y = 1
+		relative_position_id = CHI_infrastructure_planning_continues
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_The_opening_of_the_Yue_han_railway
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = CHI_infrastructure_planning_continues }
+		x = 2
+		y = 1
+		relative_position_id = CHI_infrastructure_planning_continues
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	focus  = {
+		id = CHI_Connected_to_Guang_shen_railway
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = CHI_The_opening_of_the_Yue_han_railway }
+		x = 0
+		y = 1
+		relative_position_id = CHI_The_opening_of_the_Yue_han_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+
+	#지방 개발
+	focus  = {
+		id = CHI_local_development_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		mutually_exclusive = { focus = CHI_golden_decade }
+		x = 8
+		y = 0
+		relative_position_id = CHI_golden_decade
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+	}
+}

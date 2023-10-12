@@ -1,0 +1,369 @@
+﻿UIC_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { UIC }
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_GAR_01 }
+
+	fallback_name = "제%d보병사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d보병사단" }
+	}
+}
+
+UIC_CAV_01 = 
+{
+	name = "Cavalry Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn ca be %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn ca be %d" }
+		2 = { "Su đoàn ca be %d" }
+		3 = { "Su đoàn ca be %d" }
+		4 = { "Su đoàn ca be %d" }
+		5 = { "Su đoàn ca be %d" }
+		6 = { "Su đoàn ca be %d" }
+		7 = { "Su đoàn ca be %d" }
+		8 = { "Su đoàn ca be %d" }
+		9 = { "Su đoàn ca be %d" }
+		10 = { "Su đoàn ca be %d" }
+
+	}
+}
+
+UIC_MOT_01 = 
+{
+	name = "Motorised Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%d보병사단"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%d보병사단" }
+
+	}
+}
+
+UIC_ARM_01 = 
+{
+	name = "Armored Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn xe tăng %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn xe tăng %d" }
+		2 = { "Su đoàn xe tăng %d" }
+		3 = { "Su đoàn xe tăng %d" }
+		4 = { "Su đoàn xe tăng %d" }
+		5 = { "Su đoàn xe tăng %d" }
+		6 = { "Su đoàn xe tăng %d" }
+		7 = { "Su đoàn xe tăng %d" }
+		8 = { "Su đoàn xe tăng %d" }
+		9 = { "Su đoàn xe tăng %d" }
+		10 = { "Su đoàn xe tăng %d" }
+
+	}
+}
+
+UIC_MEC_01 = 
+{
+	name = "Mechanized Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "mechanized"  }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn %d" }
+		2 = { "Su đoàn %d" }
+		3 = { "Su đoàn %d" }
+		5 = { "Su đoàn %d" }
+		7 = { "Su đoàn %d" }
+		9 = { "Su đoàn %d" }
+		304 = { "Su đoàn %d" }
+		308 = { "Su đoàn %d" }
+		312 = { "Su đoàn %d" }
+		320 = { "Su đoàn %d" }
+		321 = { "Su đoàn 320B" }
+		324 = { "Su đoàn %dB" }
+		325 = { "Su đoàn %dC" }
+		711 = { "Su đoàn %d" }
+		390 = { "Su đoàn %d" }
+		367 = { "Su đoàn %d" }
+		673 = { "Su đoàn %d" }
+		71 = { "Su đoàn %d" }
+		10 = { "Su đoàn %d" }
+		11 = { "Su đoàn %d" }
+		12 = { "Su đoàn %d" }
+		13 = { "Su đoàn %d" }
+		14 = { "Su đoàn %d" }
+		15 = { "Su đoàn %d" }
+		16 = { "Su đoàn %d" }
+		17 = { "Su đoàn %d" }
+		18 = { "Su đoàn %d" }
+		19 = { "Su đoàn %d" }
+		20 = { "Su đoàn %d" }
+		21 = { "Su đoàn %d" }
+		22 = { "Su đoàn %d" }
+		23 = { "Su đoàn %d" }
+		24 = { "Su đoàn %d" }
+		25 = { "Su đoàn %d" }
+		26 = { "Su đoàn %d" }
+		27 = { "Su đoàn %d" }
+		28 = { "Su đoàn %d" }
+		29 = { "Su đoàn %d" }
+		30 = { "Su đoàn %d" }
+		31 = { "Su đoàn %d" }
+		32 = { "Su đoàn %d" }
+		33 = { "Su đoàn %d" }
+		34 = { "Su đoàn %d" }
+		35 = { "Su đoàn %d" }
+		36 = { "Su đoàn %d" }
+		37 = { "Su đoàn %d" }
+		38 = { "Su đoàn %d" }
+		39 = { "Su đoàn %d" }
+		40 = { "Su đoàn %d" }
+		41 = { "Su đoàn %d" }
+		42 = { "Su đoàn %d" }
+		43 = { "Su đoàn %d" }
+
+	}
+}
+
+UIC_GAR_01 = 
+{
+	name = "Garrison Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn %d" }
+		2 = { "Su đoàn %d" }
+		3 = { "Su đoàn %d" }
+		5 = { "Su đoàn %d" }
+		7 = { "Su đoàn %d" }
+		9 = { "Su đoàn %d" }
+		304 = { "Su đoàn %d" }
+		308 = { "Su đoàn %d" }
+		312 = { "Su đoàn %d" }
+		320 = { "Su đoàn %d" }
+		321 = { "Su đoàn 320B" }
+		324 = { "Su đoàn %dB" }
+		325 = { "Su đoàn %dC" }
+		711 = { "Su đoàn %d" }
+		390 = { "Su đoàn %d" }
+		367 = { "Su đoàn %d" }
+		673 = { "Su đoàn %d" }
+		71 = { "Su đoàn %d" }
+		10 = { "Su đoàn %d" }
+		11 = { "Su đoàn %d" }
+		12 = { "Su đoàn %d" }
+		13 = { "Su đoàn %d" }
+		14 = { "Su đoàn %d" }
+		15 = { "Su đoàn %d" }
+		16 = { "Su đoàn %d" }
+		17 = { "Su đoàn %d" }
+		18 = { "Su đoàn %d" }
+		19 = { "Su đoàn %d" }
+		20 = { "Su đoàn %d" }
+		21 = { "Su đoàn %d" }
+		22 = { "Su đoàn %d" }
+		23 = { "Su đoàn %d" }
+		24 = { "Su đoàn %d" }
+		25 = { "Su đoàn %d" }
+		26 = { "Su đoàn %d" }
+		27 = { "Su đoàn %d" }
+		28 = { "Su đoàn %d" }
+		29 = { "Su đoàn %d" }
+		30 = { "Su đoàn %d" }
+		31 = { "Su đoàn %d" }
+		32 = { "Su đoàn %d" }
+		33 = { "Su đoàn %d" }
+		34 = { "Su đoàn %d" }
+		35 = { "Su đoàn %d" }
+		36 = { "Su đoàn %d" }
+		37 = { "Su đoàn %d" }
+		38 = { "Su đoàn %d" }
+		39 = { "Su đoàn %d" }
+		40 = { "Su đoàn %d" }
+		41 = { "Su đoàn %d" }
+		42 = { "Su đoàn %d" }
+		43 = { "Su đoàn %d" }
+
+	}
+}
+
+UIC_MAR_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn o bien %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn o bien %d" }
+		2 = { "Su đoàn o bien %d" }
+		3 = { "Su đoàn o bien %d" }
+		4 = { "Su đoàn o bien %d" }
+		5 = { "Su đoàn o bien %d" }
+		6 = { "Su đoàn o bien %d" }
+		7 = { "Su đoàn o bien %d" }
+		8 = { "Su đoàn o bien %d" }
+		9 = { "Su đoàn o bien %d" }
+		10 = { "Su đoàn o bien %d" }
+
+	}
+}
+
+UIC_MTN_01 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Su đoàn đông to %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Su đoàn đông to %d" }
+		2 = { "Su đoàn đông to %d" }
+		3 = { "Su đoàn đông to %d" }
+		4 = { "Su đoàn đông to %d" }
+		5 = { "Su đoàn đông to %d" }
+		6 = { "Su đoàn đông to %d" }
+		7 = { "Su đoàn đông to %d" }
+		8 = { "Su đoàn đông to %d" }
+		9 = { "Su đoàn đông to %d" }
+		10 = { "Su đoàn đông to %d" }
+
+	}
+}
+
+UIC_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { UIC }
+
+	division_types = { "paratrooper" }
+
+	can_use = { has_government = communism }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "Sư đoàn Không quân %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Sư đoàn Không quân %d" }
+		2 = { "Sư đoàn Không quân %d" }
+		3 = { "Sư đoàn Không quân %d" }
+		4 = { "Sư đoàn Không quân %d" }
+		5 = { "Sư đoàn Không quân %d" }
+		6 = { "Sư đoàn Không quân %d" }
+		7 = { "Sư đoàn Không quân %d" }
+		8 = { "Sư đoàn Không quân %d" }
+		9 = { "Sư đoàn Không quân %d" }
+		10 = { "Sư đoàn Không quân %d" }
+
+	}
+}
+
+UIC_COL_01 = 
+{
+	name = "Colonial Division"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "%dème d'Infanterie Coloniale"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Division de Tonkin" }
+		2 = { "Division de Cochinchine-Cambodge" }
+		3 = { "%dère Div. d'Infanterie Coloniale" }
+	}
+}

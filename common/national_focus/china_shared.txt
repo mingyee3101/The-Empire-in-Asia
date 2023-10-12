@@ -1,0 +1,175 @@
+﻿#난징 개발
+shared_focus = {
+	id = CHI_golden_decade
+	icon = GFX_focus_generic_concessions
+	mutually_exclusive = { focus = CHI_local_development_plan }
+	x = 20
+	y = 0
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 85
+	}
+}
+
+shared_focus = {
+	id = CHI_national_economic_construction_movement_foc
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+	x = 2
+	y = 1
+	relative_position_id = CHI_golden_decade
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	search_filters = { FOCUS_FILTER_STABILITY }
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = CHI_ncurrency_reform
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+	x = 6
+	y = 1
+	relative_position_id = CHI_golden_decade
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	search_filters = { FOCUS_FILTER_STABILITY }
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = CHI_infrastructure_planning_continues
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = CHI_golden_decade focus = CHI_local_development_plan }
+	x = 4
+	y = 2
+	relative_position_id = CHI_golden_decade
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	search_filters = { FOCUS_FILTER_STABILITY }
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+#지방 개발
+shared_focus = {
+	id = CHI_local_development_plan
+	icon = GFX_goal_generic_construction
+	mutually_exclusive = { focus = CHI_golden_decade }
+	x = 8
+	y = 0
+	relative_position_id = CHI_golden_decade
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	complete_tooltip = {
+
+	}
+
+	search_filters = { FOCUS_FILTER_STABILITY }
+	completion_reward = {
+		add_stability = 0.05
+	}
+}

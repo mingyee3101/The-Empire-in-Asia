@@ -1,0 +1,16 @@
+﻿#AIRCRAFT
+air_wings = {
+	609 = { 
+		medium_plane_airframe_0 =  {
+			owner = "PGC" 
+			creator = "SOV"
+			amount = 1
+			version_name = "DB-3"
+		}
+		transport_plane_equipment_1 = {
+			owner = "PGC" 
+			creator = "JAP"
+			amount = 2
+		}
+	}
+}

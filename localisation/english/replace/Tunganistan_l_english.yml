@@ -1,0 +1,34 @@
+﻿l_english:
+
+ #인물
+ TGS_Ma_Hushan:0 "마후샨"
+
+ #특성
+ King_of_Tunganistan:0 "둥가니스탄의 왕"
+
+ #정당
+ TGS_fascism_party:0 "국민당"
+ TGS_fascism_party_long:0 "국민당"
+ TGS_democratic_party:0 "국민당"
+ TGS_democratic_party_long:0 "국민당"
+ TGS_communism_party:0 "국민당"
+ TGS_communism_party_long:0 "국민당"
+ TGS_neutrality_party:0 "국민당"
+ TGS_neutrality_party_long:0 "국민당"
+
+ #국명
+ TGS_fascism:0 "둥가니스탄"
+ TGS_fascism_DEF:0 "둥가니스탄"
+ TGS_democratic:0 "둥가니스탄"
+ TGS_democratic_DEF:0 "둥가니스탄"
+ TGS_neutrality:0 "둥가니스탄"
+ TGS_neutrality_DEF:0 "둥가니스탄"
+ TGS_communism:0 "둥가니스탄"
+ TGS_communism_DEF:0 "둥가니스탄"
+ TGS_fascism_ADJ:0 "둥가니스탄"
+ TGS_democratic_ADJ:0 "둥가니스탄"
+ TGS_neutrality_ADJ:0 "둥가니스탄"
+ TGS_communism_ADJ:0 "둥가니스탄"
+ TGS:0 "둥가니스탄"
+ TGS_DEF:0 "둥가니스탄"
+ TGS_ADJ:0 "둥가니스탄"

@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_teia_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//teia_album_art.png"
+		noOfFrames = 2
+	}
+}

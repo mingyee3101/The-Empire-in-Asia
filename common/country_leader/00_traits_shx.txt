@@ -1,0 +1,27 @@
+leader_traits = {
+
+	nodding_doll = {
+		random = no
+		democratic_acceptance = 30
+		communism_acceptance = 30
+		fascism_acceptance = 30
+		neutrality_acceptance = 30
+		improve_relations_maintain_cost_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	model_governor = {
+		random = no
+		stability_factor = 0.05
+		research_speed_factor = 0.03
+		production_speed_buildings_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

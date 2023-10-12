@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #인물
+ HCP_Song_Zheyuan:0 "쑹저위안"
+
+
+ #정당
+ HCP_fascism_party:0 "국민당"
+ HCP_fascism_party_long:0 "국민당"
+ HCP_democratic_party:0 "국민당"
+ HCP_democratic_party_long:0 "국민당"
+ HCP_communism_party:0 "국민당"
+ HCP_communism_party_long:0 "국민당"
+ HCP_neutrality_party:0 "국민당"
+ HCP_neutrality_party_long:0 "국민당"
+
+ #국명
+ HCP_fascism:0 "기찰정무위원회"
+ HCP_fascism_DEF:0 "기찰정무위원회"
+ HCP_democratic:0 "기찰정무위원회"
+ HCP_democratic_DEF:0 "기찰정무위원회"
+ HCP_neutrality:0 "기찰정무위원회"
+ HCP_neutrality_DEF:0 "기찰정무위원회"
+ HCP_communism:0 "기찰정무위원회"
+ HCP_communism_DEF:0 "기찰정무위원회"
+ HCP_fascism_ADJ:0 "기찰정무위원회"
+ HCP_democratic_ADJ:0 "기찰정무위원회"
+ HCP_neutrality_ADJ:0 "기찰정무위원회"
+ HCP_communism_ADJ:0 "기찰정무위원회"
+ HCP:0 "기찰정무위원회"
+ HCP_DEF:0 "기찰정무위원회"
+ HCP_ADJ:0 "기찰정무위원회"

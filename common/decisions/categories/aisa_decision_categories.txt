@@ -1,0 +1,3 @@
+asia_formable_nation_decisions_category = {
+	icon = generic_research
+}

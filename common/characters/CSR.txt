@@ -1,0 +1,31 @@
+characters = {
+
+	############지도자############
+
+	CSR_Liu_Wenhui = {
+		name = CSR_Liu_Wenhui
+		portraits = {
+			army={
+				large = "gfx/leaders/CSR/Portrait_Liu_Wenhui.png"
+				small = "gfx/interface/ideas/CSR/CSR_Liu_Wenhui.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+		country_leader={
+			ideology=marxism
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

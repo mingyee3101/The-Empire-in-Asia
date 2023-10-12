@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+
+		warlord_army = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_army_corruption2
+			
+			modifier = {
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+			}
+		}
+
+	}
+}

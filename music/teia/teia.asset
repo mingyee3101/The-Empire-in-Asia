@@ -1,0 +1,298 @@
+############ 일본 ############
+
+music = {
+	name = "Gunkan_March"
+	file = "Gunkan_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Miya_San_Miya_San"
+	file = "Miya_San_Miya_San.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Roei_no_Uta"
+	file = "Roei_no_Uta.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Rabauru_kouta"
+	file = "Rabauru_kouta.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Battotai"
+	file = "Battotai.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hohei_no_Honryo"
+	file = "Hohei_no_Honryo.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_the_Kamikaze_Pilots"
+	file = "Song_of_the_Kamikaze_Pilots.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Japanese_Army_March"
+	file = "Japanese_Army_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Pacific_Ocean_March"
+	file = "The_Pacific_Ocean_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Naval_Ensign"
+	file = "The_Naval_Ensign.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "March_The_Battle_of_Tsushima"
+	file = "March_The_Battle_of_Tsushima.ogg"
+	volume = 0.75
+}
+
+############ 중국 ############
+
+music = {
+	name = "March_of_the_Volunteers"
+	file = "March_of_the_Volunteers.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Victory_Song"
+	file = "Victory_Song.ogg"
+	volume = 0.75
+}
+
+############ 중국 국민당 ############
+
+music = {
+	name = "The_Sword_March"
+	file = "The_Sword_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ode_to_the_Republic_of_China"
+	file = "Ode_to_the_Republic_of_China.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Night_Raid"
+	file = "Night_Raid.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Banners_are_Fluttering"
+	file = "The_Banners_are_Fluttering.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Whampoa_men_is_the_most_grand_and_heroic"
+	file = "Whampoa_men_is_the_most_grand_and_heroic.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Immortal_China"
+	file = "Immortal_China.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "I_have_a_rifle"
+	file = "I_have_a_rifle.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_the_Great_Wall_Troops"
+	file = "Song_of_the_Great_Wall_Troops.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Defend_the_Yellow_River"
+	file = "Defend_the_Yellow_River.ogg"
+	volume = 0.75
+}
+
+############ 중국 공산당 ############
+
+music = {
+	name = "March_of_the_Eighth_Route_Army"
+	file = "March_of_the_Eighth_Route_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	file = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "When_that_day_comes"
+	file = "When_that_day_comes.ogg"
+	volume = 0.75
+}
+
+############ 중국 군벌 ############
+
+music = {
+	name = "Song_of_the_Guangxi_Army"
+	file = "Song_of_the_Guangxi_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Korean_Independence_Army"
+	file = "Song_of_Korean_Independence_Army.ogg"
+	volume = 0.75
+}
+
+############ 한국 ############
+
+music = {
+	name = "The_Torch_of_the_Annihilation_of_Communism"
+	file = "The_Torch_of_the_Annihilation_of_Communism.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Korean_Independence_Army"
+	file = "Song_of_Korean_Independence_Army.ogg"
+	volume = 0.75
+}
+
+############ 북한 ############
+
+music = {
+	name = "Aegukga_DPRK"
+	file = "Aegukga_DPRK.ogg"
+	volume = 0.75
+}
+
+############ 베트남 ############
+
+############ 일반 ############
+
+music = {
+	name = "Noi_Vong_Tay_Lon"
+	file = "Noi_Vong_Tay_Lon.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bac_dang_Cung_Chung_Chau_Hanh_Quan"
+	file = "Bac_dang_Cung_Chung_Chau_Hanh_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_Ca_Ho_Chi_Minh"
+	file = "Bai_Ca_Ho_Chi_Minh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Giai_Phong_Mien_Nam"
+	file = "Giai_Phong_Mien_Nam.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hanh_Khuc_Giai_Phong"
+	file = "Hanh_Khuc_Giai_Phong.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Quoc_te_ca"
+	file = "Quoc_te_ca.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tieng_goi_thanh_nien"
+	file = "Tieng_goi_thanh_nien.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tien_Ve_Sai_Gon"
+	file = "Tien_Ve_Sai_Gon.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Dat_Nuoc_Tron_Niem_Vui"
+	file = "Dat_Nuoc_Tron_Niem_Vui.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_ca_nguoi_linh"
+	file = "Bai_ca_nguoi_linh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hat_mai_khuc_quan_hanh"
+	file = "Hat_mai_khuc_quan_hanh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Sai_Gon_Quat_Khoi"
+	file = "Sai_Gon_Quat_Khoi.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "tieu_doan_307"
+	file = "tieu_doan_307.ogg"
+	volume = 0.75
+}
+
+############ 평화 ############
+
+music = {
+	name = "Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh"
+	file = "Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Cung_nhau_ta_di_len"
+	file = "Cung_nhau_ta_di_len.ogg"
+	volume = 0.75
+}
+
+
+############ 전쟁 #############
+
+music = {
+	name = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam"
+	file = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam.ogg"
+	volume = 1
+}

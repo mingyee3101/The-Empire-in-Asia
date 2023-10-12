@@ -1,0 +1,51 @@
+﻿l_english:
+
+ #인물
+ PGC_Yin_Ju_keng:0 "인루겅"
+ PGC_Sun_Liangcheng:0 "쑨량청"
+ PGC_Wu_Huawen:0 "우화원"
+ PGC_Zhang_Lanfeng:0 "장란펑"
+ PGC_Pang_Bingxun:0 "팡빙순"
+
+
+ #정당
+ #PGC_fascism_party:0 "중화민국 합동위원회" #中華民国政府联合委員会
+
+ PGC_fascism_party:0 "지둥방공자치위원회"
+ PGC_fascism_party_long:0 "지둥방공자치위원회"
+ PGC_democratic_party:0 "지둥방공자치위원회"
+ PGC_democratic_party_long:0 "지둥방공자치위원회"
+ PGC_communism_party:0 "지둥방공자치위원회"
+ PGC_communism_party_long:0 "지둥방공자치위원회"
+ PGC_neutrality_party:0 "지둥방공자치위원회"
+ PGC_neutrality_party_long:0 "지둥방공자치위원회"
+
+ #국명
+ PGC_fascism:0 "중화민국 임시정부"
+ PGC_fascism_DEF:0 "중화민국 임시정부"
+ PGC_democratic:0 "중화민국 임시정부"
+ PGC_democratic_DEF:0 "중화민국 임시정부"
+ PGC_neutrality:0 "중화민국 임시정부"
+ PGC_neutrality_DEF:0 "중화민국 임시정부"
+ PGC_communism:0 "중화민국 임시정부"
+ PGC_communism_DEF:0 "중화민국 임시정부"
+ PGC_fascism_ADJ:0 "중화민국 임시정부"
+ PGC_democratic_ADJ:0 "중화민국 임시정부"
+ PGC_neutrality_ADJ:0 "중화민국 임시정부"
+ PGC_communism_ADJ:0 "중화민국 임시정부"
+ PGC:0 "중화민국"
+ PGC_DEF:0 "중화민국"
+ PGC_ADJ:0 "중화민국"
+
+ PGC_EHA_neutrality:0 "지둥방공자치정부"
+ PGC_EHA_fascism:0 "지둥방공자치정부"
+ PGC_EHA_democratic:0 "지둥방공자치정부"
+ PGC_EHA_communism:0 "지둥방공자치정부"
+
+ RRC_neutrality:0 "중화민국"
+ RRC_fascism:0 "중화민국"
+ RRC_democratic:0 "중화민국"
+ RRC_communism:0 "중화민국"
+
+ #국민정신
+ PGC_returning_of_an_evacuated_government:0 "환도"

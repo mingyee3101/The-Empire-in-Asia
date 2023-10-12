@@ -1,0 +1,28 @@
+﻿l_english:
+
+ #인물 #정당
+ KMK_fascism_party:0 "국민당"
+ KMK_fascism_party_long:0 "국민당"
+ KMK_democratic_party:0 "국민당"
+ KMK_democratic_party_long:0 "국민당"
+ KMK_communism_party:0 "국민당"
+ KMK_communism_party_long:0 "국민당"
+ KMK_neutrality_party:0 "국민당"
+ KMK_neutrality_party_long:0 "국민당"
+
+ #국명
+ KMK_fascism:0 "쿠물 칸국"
+ KMK_fascism_DEF:0 "쿠물 칸국"
+ KMK_democratic:0 "쿠물 칸국"
+ KMK_democratic_DEF:0 "쿠물 칸국"
+ KMK_neutrality:0 "쿠물 칸국"
+ KMK_neutrality_DEF:0 "쿠물 칸국"
+ KMK_communism:0 "쿠물 칸국"
+ KMK_communism_DEF:0 "쿠물 칸국"
+ KMK_fascism_ADJ:0 "쿠물 칸국"
+ KMK_democratic_ADJ:0 "쿠물 칸국"
+ KMK_neutrality_ADJ:0 "쿠물 칸국"
+ KMK_communism_ADJ:0 "쿠물 칸국"
+ KMK:0 "쿠물 칸국"
+ KMK_DEF:0 "쿠물 칸국"
+ KMK_ADJ:0 "쿠물 칸국"

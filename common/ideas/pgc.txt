@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+
+		PGC_returning_of_an_evacuated_government = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+
+	}
+}

@@ -1,0 +1,104 @@
+characters = {
+
+	############지도자############
+
+	PGC_Yin_Ju_keng = {
+		name = PGC_Yin_Ju_keng
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PGC/Portrait_Yin_Ju_keng.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+	############장군############
+
+	PGC_Sun_Liangcheng={
+		name=PGC_Sun_Liangcheng
+		portraits={
+			army={
+				large = "gfx/leaders/PGC/Portrait_Sun_Liangcheng.png"
+				small = "gfx/interface/ideas/PGC/PGC_Sun_Liangcheng.png"
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+
+	PGC_Wu_Huawen={
+		name=PGC_Wu_Huawen
+		portraits={
+			army={
+				large = "gfx/leaders/PGC/Portrait_Wu_Huawen.png"
+				small = "gfx/interface/ideas/PGC/PGC_Wu_Huawen.png"
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+	PGC_Zhang_Lanfeng={
+		name=PGC_Zhang_Lanfeng
+		portraits={
+			army={
+				large = "gfx/leaders/PGC/Portrait_Zhang_Lanfeng.png"
+				small = "gfx/interface/ideas/PGC/PGC_Zhang_Lanfeng.png"
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	PGC_Pang_Bingxun={
+		name=PGC_Pang_Bingxun
+		portraits={
+			army={
+				large = "gfx/leaders/PGC/Portrait_Pang_Bingxun.png"
+				small = "gfx/interface/ideas/PGC/PGC_Pang_Bingxun.png"
+			}
+		}
+
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+}

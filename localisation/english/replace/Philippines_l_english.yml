@@ -1,0 +1,51 @@
+﻿l_english:
+
+ #인물
+ PHI_Frank_Murphy:0 "프랭크 머피"
+
+ #국명
+ PHI_fascism:0 "가납 필리핀"
+ PHI_fascism_DEF:0 "가납 필리핀"
+ PHI_democratic:0 "필리핀"
+ PHI_democratic_DEF:0 "필리핀"
+ PHI_neutrality:0 "독립 필리핀"
+ PHI_neutrality_DEF:0 "독립 필리핀"
+ PHI_communism:0 "필리핀 후크 공동체"
+ PHI_communism_DEF:0 "필리핀 후크 공동체"
+ PHI_fascism_ADJ:0 "필리핀"
+ PHI_democratic_ADJ:0 "필리핀"
+ PHI_neutrality_ADJ:0 "필리핀"
+ PHI_communism_ADJ:0 "필리핀"
+ PHI:0 "필리핀"
+ PHI_DEF:0 "필리핀"
+ PHI_ADJ:0 "필리핀"
+
+ PHI_IG_fascism:0 "필리핀 자치령"
+ PHI_IG_fascism_DEF:0 "필리핀 자치령"
+ PHI_IG_democratic:0 "필리핀 자치령"
+ PHI_IG_democratic_DEF:0 "필리핀 자치령"
+ PHI_IG_neutrality:0 "필리핀 자치령"
+ PHI_IG_neutrality_DEF:0 "필리핀 자치령"
+ PHI_IG_communism:0 "필리핀 자치령"
+ PHI_IG_communism_DEF:0 "필리핀 자치령"
+ PHI_IG_fascism_ADJ:0 "필리핀"
+ PHI_IG_democratic_ADJ:0 "필리핀"
+ PHI_IG_neutrality_ADJ:0 "필리핀"
+ PHI_IG_communism_ADJ:0 "필리핀"
+ PHI_IG:0 "필리핀"
+ PHI_IG_DEF:0 "필리핀"
+ PHI_IG_ADJ:0 "필리핀"
+
+ #정당
+ PHI_fascism_party:0 "가납당"
+ PHI_fascism_party_long:0 "가납당"
+ PHI_democratic_party:0 "국민당"
+ PHI_democratic_party_long:0 "국민당"
+ PHI_communism_party:0 "필리핀 공산당"
+ PHI_communism_party_long:0 "필리핀 공산당"
+ PHI_neutrality_party:0 "도민청정"
+ PHI_neutrality_party_long:0 "도민청정"
+
+ #국민정신
+ PHI_army_not_created:0 "창설되지 않은 군대"
+ PHI_army_not_created_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"

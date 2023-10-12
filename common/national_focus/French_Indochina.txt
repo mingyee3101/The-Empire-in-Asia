@@ -1,0 +1,20 @@
+focus_tree = {
+	id = fic_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = UIC
+		}
+	}
+	default = no
+	focus = {
+		id = UIC_the_medals_of_french_indochina
+		icon = GFX_ICU_the_medals_of_french_indochina
+		cost = 10
+		x = 3
+		y = 0
+		#정치력 100 추가
+		#이벤트 추가
+	}
+}

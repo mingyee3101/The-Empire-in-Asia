@@ -1,0 +1,27 @@
+characters = {
+
+	############지도자############
+
+	SCC_Liu_Xiang = {
+		name = SCC_Liu_Xiang
+		portraits = {
+			army={
+				large = "gfx/leaders/SCC/Portrait_Liu_Xiang.png"
+				small = "gfx/interface/ideas/SCC/SCC_Liu_Xiang.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

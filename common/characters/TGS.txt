@@ -1,0 +1,26 @@
+characters = {
+
+	############지도자############
+
+	TGS_Ma_Hushan = {
+		name = TGS_Ma_Hushan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TGS/Portrait_Ma_Hushan.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

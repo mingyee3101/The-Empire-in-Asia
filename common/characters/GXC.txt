@@ -1,0 +1,27 @@
+characters = {
+
+	############지도자############
+
+	GXC_li_zongren = {
+		name = GXC_li_zongren
+		portraits = {
+			army={
+				large = "gfx/leaders/GXC/GXC_Li_Zongren.png"
+				small = ""
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

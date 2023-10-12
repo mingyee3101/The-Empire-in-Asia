@@ -1,0 +1,10 @@
+﻿l_english:
+  asia_formable_nation_decisions_category:0 "몽골 제국 재건"
+  form_yuan_dynasty:0 "몽골 제국 재건"
+  form_country_yuan_tan_required_states_tt:0 "§Y탄누투바§! 전역 지배."
+  form_country_yuan_sov_required_states_tt:0 "소련의 §Y[654.GetName]§!, §Y[569.GetName]§!, §Y[568.GetName]§!, §Y[567.GetName]§!, §Y[566.GetName]§!, §Y[564.GetName]§!, §Y[563.GetName]§!, §Y[561.GetName]§!, §Y[560.GetName]§!, §Y[657.GetName]§!, §Y[409.GetName]§!, 그리고 §Y[408.GetName]§! 지배."
+  form_country_yuan_kor_required_states_tt:0 "§Y북한§! 지배."
+  form_country_yuan_jap_required_states_tt:0 "일본의 §Y[745.GetName]§!과 §Y[609.GetName]§! 그리고 §Y만주국§!과 §Y몽강§! 전역 지배."
+  form_country_yuan_chi_required_states_tt:0 "§Y신강§!의 일부 지역과 §Y타이완§!을 제외한 §Y중국§!과 §Y티베트§! 전역 지배."
+  form_country_yuan_raj_required_states_tt:0 "§Y카슈미르§!와 §Y부탄§! 그리고 §Y아루나찰프라데시§! 지배."
+  form_country_chi_coring_states_tt:0 "§Y신강§!의 일부 지역과 §Y타이완§!을 제외한 §Y중국§!과 §Y티베트§! 전역에 대한 핵심 주 획득.\n"

@@ -1,0 +1,598 @@
+focus_tree = {
+	id = jap_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	default = no
+
+	#해가 뜨는 제국
+	focus = {
+		id = The_Empire_of_Rising_Sun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 19
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#황도파 숙청
+	focus = {
+		id = Purge_the_kodoha_faction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = The_Empire_of_Rising_Sun
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = Liaison_conferance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Purge_the_kodoha_faction
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			add_ideas = JAP_liaison_conference
+			every_army_leader = {
+				add_planning = 1
+			}
+		}
+
+	}
+	focus = {
+		id = Sign_Tripartite_Pact
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Liaison_conferance
+		}
+		x = 8
+		y = 6
+
+		available = {
+			any_country = {
+				original_tag = GER
+				has_government = fascism
+				NOT = { has_war_with = ROOT }
+			}
+			any_country = {
+				original_tag = ITA
+				has_government = fascism
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		bypass = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = JAP_sign_tripartite_pact_bypass_tt
+					OR = {
+						NOT = {
+							any_country = {
+								original_tag = GER
+								has_government = fascism
+							}
+						}
+						any_country = {
+							original_tag = GER
+							has_government = fascism
+							has_war_with = ROOT
+						}
+						NOT = {
+							any_country = {
+								original_tag = ITA
+								has_government = fascism
+							}
+						}
+						any_country = {
+							original_tag = ITA
+							has_government = fascism
+							has_war_with = ROOT
+						}	
+					}	
+				}
+				AND = {
+					GER = {
+						has_government = fascism
+						has_war_with = ITA
+					}
+					ITA = {
+						has_government = fascism
+						has_war_with = GER
+					}
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			random_country = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+				}
+				country_event = { id = wtt_japan.109 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = Guide_the_Zaibatsus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Purge_the_kodoha_faction
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = Military_Investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Guide_the_Zaibatsus
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			if = { #간토
+				limit = {
+					282 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				282 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = { #규슈
+				limit = {
+					528 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				528 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = Communist_Purge
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Military_Investment
+		}
+		prerequisite = {
+			focus = Sign_Tripartite_Pact
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = Long_live_the_emperor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Communist_Purge
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = Inner_Mongolia_Autonomous_Region_surrendered_to_Manchukuo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Long_live_the_emperor
+		}
+		mutually_exclusive = {
+			focus = Forced_annexation_of_Manchukuo
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = Forced_annexation_of_Manchukuo
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Long_live_the_emperor
+		}
+		mutually_exclusive = {
+			focus = Inner_Mongolia_Autonomous_Region_surrendered_to_Manchukuo
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = battle_with_mongols
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Inner_Mongolia_Autonomous_Region_surrendered_to_Manchukuo
+			focus = Forced_annexation_of_Manchukuo
+		}
+		mutually_exclusive = {
+			focus = Mongol_demand_for_subordination
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = Mongol_demand_for_subordination
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Inner_Mongolia_Autonomous_Region_surrendered_to_Manchukuo
+			focus = Forced_annexation_of_Manchukuo
+		}
+		mutually_exclusive = {
+			focus = battle_with_mongols
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = annexation_of_Tibet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Mongol_demand_for_subordination
+			focus = battle_with_mongols
+		}
+		mutually_exclusive = {
+			focus = Friendship_with_Tibet
+		}
+		x = 8
+		y = 11
+
+	}
+	focus = {
+		id = Friendship_with_Tibet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Mongol_demand_for_subordination
+			focus = battle_with_mongols
+		}
+		mutually_exclusive = {
+			focus = annexation_of_Tibet
+		}
+		x = 12
+		y = 11
+
+	}
+	focus = {
+		id = The_Empire_of_East
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Friendship_with_Tibet
+			focus = annexation_of_Tibet
+		}
+		x = 10
+		y = 12
+
+	}
+
+	#대동아공영권
+	focus = {
+		id = Greater_East_asian_co_prosperity_sphere
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 22
+		y = 13
+
+	}
+
+	#중국 계획
+	focus = {
+		id = Planning_for_China 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Greater_East_asian_co_prosperity_sphere
+		}
+		x = 15
+		y = 15
+
+	}
+	focus = {
+		id = plan_to_secure_China
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Planning_for_China 
+		}
+		mutually_exclusive = {
+			focus = friendship_with_China
+		}
+		x = 13
+		y = 16
+
+	}
+	focus = {
+		id = Marco_Polo_Bridge_Incident
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = plan_to_secure_China
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = Escalate_war_in_china
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Marco_Polo_Bridge_Incident
+		}
+		x = 13
+		y = 18
+
+	}
+	focus = {
+		id = operation_ichigo
+		icon = GFX_goal_unknown
+		cost = 35.00
+		prerequisite = {
+			focus = Escalate_war_in_china
+		}
+		x = 13
+		y = 19
+
+	}
+	focus = {
+		id = Capture_of_China_complete
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = operation_ichigo
+		}
+		x = 13
+		y = 20
+
+	}
+	focus = {
+		id = friendship_with_China
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Planning_for_China 
+		}
+		mutually_exclusive = {
+			focus = plan_to_secure_China
+		}
+		x = 17
+		y = 16
+
+	}
+	focus = {
+		id = Injecting_fascism_into_China
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = friendship_with_China
+		}
+		x = 17
+		y = 17
+
+	}
+
+	#아시아 계획
+	focus = {
+		id = Plan_to_take_over_Asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Greater_East_asian_co_prosperity_sphere
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = Indochina_Dependencies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Plan_to_take_over_Asia
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = Fate_of_Siam
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Indochina_Dependencies
+		}
+		x = 22
+		y = 17
+
+	}
+	focus = {
+		id = Securing_the_rubber
+		icon = GFX_goal_unknown
+		cost = 35.00
+		prerequisite = {
+			focus = Fate_of_Siam
+		}
+		x = 22
+		y = 18
+
+	}
+	focus = {
+		id = Battle_of_Imphal
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = Securing_the_rubber
+		}
+		x = 22
+		y = 19
+
+	}
+	focus = {
+		id = Second_Russo_Japanese_War
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Battle_of_Imphal
+		}
+		x = 22
+		y = 20
+
+	}
+
+	#미국 계획
+	focus = {
+		id = Plan_to_occupy_the_United_States
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Greater_East_asian_co_prosperity_sphere
+		}
+		x = 27
+		y = 15
+
+	}
+
+	#해군을 중점
+	focus = {
+		id = Focus_on_the_Navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = Focus_on_the_Army
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = Aircraft_Carrier_main_force
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Focus_on_the_Navy
+		}
+		mutually_exclusive = {
+			focus = ultimate_battleship
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = aircraft_carrier_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Aircraft_Carrier_main_force
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = ultimate_battleship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Focus_on_the_Navy
+		}
+		mutually_exclusive = {
+			focus = Aircraft_Carrier_main_force
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = Developing_a_cannon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ultimate_battleship
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = navy_is_great
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Developing_a_cannon
+			focus = aircraft_carrier_development
+		}
+		x = 35
+		y = 4
+
+	}
+
+	#육군을 중점
+	focus = {
+		id = Focus_on_the_Army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = Focus_on_the_Navy
+		}
+		x = 46
+		y = 1
+
+	}
+}

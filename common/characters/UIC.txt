@@ -1,0 +1,195 @@
+characters = {
+
+	############지도자############
+
+	UIC_Rene_Robin = {
+		name = UIC_Rene_Robin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UIC/Portrait_Rene_Robin.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1945.6.9.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1945.6.9.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1945.6.9.1"
+		}
+	}
+
+	UIC_jean_decoux={
+		name=UIC_jean_decoux
+		portraits={
+			civilian = {
+				large = "gfx/leaders/UIC/Portrait_jean_decoux.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1963.10.21.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1963.10.21.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1963.10.21.1"
+		}
+	}
+
+	UIC_jean_decoux_navy={
+		name=UIC_jean_decoux_navy
+		portraits={
+			army={
+				small="GFX_idea_jean_decoux"
+				large = "gfx/leaders/UIC/Portrait_jean_decoux_navy.png"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = UIC_jean_decoux_theorist
+			ledger = navy
+			available = {
+				NOT = { 
+					has_idea = UIC_jean_decoux_navy_chief
+				}
+			}
+			traits = { naval_theorist }
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = UIC_jean_decoux_navy_chief
+			available = {
+				NOT = { 
+					has_idea = UIC_jean_decoux_theorist
+				}
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer cruiser_captain }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=3
+		}	
+	}
+
+	UIC_Georges_Catroux={
+		name=UIC_Georges_Catroux
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Georges_Catroux.png"
+				small = "gfx/interface/ideas/UIC/UIC_Georges_Catroux.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1963.10.21.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1963.10.21.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1963.10.21.1"
+		}	
+
+		corps_commander={
+			traits={ war_hero career_officer desert_fox }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#장군
+
+	UIC_Jules_Antoine_Buhrer={
+		name=UIC_Jules_Antoine_Buhrer
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Jules_Antoine_Buhrer.png"
+				small = "gfx/interface/ideas/UIC/UIC_Jules_Antoine_Buhrer.png"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = UIC_Jules_Antoine_Buhrer
+			ledger = army
+			allowed = {
+				original_tag = UIC
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+
+		corps_commander={
+			traits={ war_hero career_officer jungle_rat }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+
+	UIC_Maurice_Martin={
+		name=UIC_Maurice_Martin
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Maurice_Martin.png"
+				small = "gfx/interface/ideas/UIC/UIC_Maurice_Martin.png"
+			}
+		}
+
+		corps_commander={
+			traits={ war_hero }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+	UIC_Marcel_Alessandri={
+		name=UIC_Marcel_Alessandri
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Marcel_Alessandri.png"
+				small = "gfx/interface/ideas/UIC/UIC_Marcel_Alessandri.png"
+			}
+		}
+
+		corps_commander={
+			traits={ war_hero infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+}

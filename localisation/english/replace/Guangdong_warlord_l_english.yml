@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #인물
+ GDC_Chen_Jitang:0 "첸지탕"
+
+
+ #정당
+ GDC_fascism_party:0 "국민당"
+ GDC_fascism_party_long:0 "국민당"
+ GDC_democratic_party:0 "국민당"
+ GDC_democratic_party_long:0 "국민당"
+ GDC_communism_party:0 "국민당"
+ GDC_communism_party_long:0 "국민당"
+ GDC_neutrality_party:0 "국민당"
+ GDC_neutrality_party_long:0 "국민당"
+
+ #국명
+ GDC_fascism:0 "광동군벌"
+ GDC_fascism_DEF:0 "광동군벌"
+ GDC_democratic:0 "광동군벌"
+ GDC_democratic_DEF:0 "광동군벌"
+ GDC_neutrality:0 "광동군벌"
+ GDC_neutrality_DEF:0 "광동군벌"
+ GDC_communism:0 "광동군벌"
+ GDC_communism_DEF:0 "광동군벌"
+ GDC_fascism_ADJ:0 "광동"
+ GDC_democratic_ADJ:0 "광동"
+ GDC_neutrality_ADJ:0 "광동"
+ GDC_communism_ADJ:0 "광동"
+ GDC:0 "광동"
+ GDC_DEF:0 "광동"
+ GDC_ADJ:0 "광동"
