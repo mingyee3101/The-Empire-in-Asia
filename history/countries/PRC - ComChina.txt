@@ -1,16 +1,6 @@
 ﻿capital = 622
 
 oob = "PRC_1936"
-IF = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	set_power_balance = {
-		id = PRC_centralization_bop
-		set_default = yes
-		default = no
-	}
-}
 
 # Starting tech
 set_technology = {
@@ -199,6 +189,9 @@ if = {
 		PRC_low_popular_support_3
 		PRC_power_struggles
 		PRC_red_army_weakened
+		PRC_low_quality_army
+		PRC_Zhang_Guotao_failure
+		PRC_28_Bolsheviks
 	}
 }
 
