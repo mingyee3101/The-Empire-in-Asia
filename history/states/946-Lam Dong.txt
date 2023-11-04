@@ -1,0 +1,26 @@
+state={
+	id=946
+	name="STATE_946"
+
+	history={
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #부온마투옷
+			1400 1
+		}
+		victory_points = { #달랏
+			7271 5
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		1400 1605 7271 12109 12150 12176 
+	}
+	manpower=1913178 #2,125,753
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

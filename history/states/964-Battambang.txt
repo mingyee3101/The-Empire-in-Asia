@@ -1,0 +1,27 @@
+state={
+	id=964
+	name="STATE_964"
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #파일린
+			10134 5
+		}
+		victory_points = { #바탐방
+			10177 10
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		1353 10134 10177 12191 
+	}
+	manpower=996305 #1,107,005
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

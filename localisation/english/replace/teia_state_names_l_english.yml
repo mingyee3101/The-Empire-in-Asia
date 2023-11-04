@@ -1,0 +1,45 @@
+﻿l_english:
+ #베트남
+ STATE_286:0 "타인포호찌민" #Đòng Nam Bộ 동남부 지방
+ STATE_671:0 "하노이" #Đồng Bằng Sông Hồng 홍강 삼각주
+ STATE_935:0 "하이퐁" #Hai Phong
+ STATE_936:0 "랑선" #Lang Son
+ STATE_937:0 "타이응우옌" #Thai Nguyen
+ STATE_938:0 "디엔비엔" #Dien Bien
+ STATE_939:0 "타인호아" #Thanh Hoa
+ STATE_940:0 "하띤" #Ha Tinh
+ STATE_941:0 "투아티엔후에" #Thua Thien Hue
+ STATE_942:0 "꽝남" #Quang Nam
+ STATE_943:0 "빈딘" #Binh Dinh
+ STATE_944:0 "카인호아" #Khanh Hoa
+ STATE_945:0 "닥락" #Dak Lak
+ STATE_946:0 "럼동" #Lam Dong
+ STATE_947:0 "껀터" #Can Tho #서부의 수도라는 별명이 있음 Tây Đô
+ STATE_948:0 "푸꾸옥" #dao phu quoc
+
+ #라오스
+ STATE_670:0 "비엔티안" #Vientiane
+ STATE_949:0 "퐁살리" #Phongsali
+ STATE_950:0 "우돔사이" #Oudomxay
+ STATE_951:0 "루앙프라방" #Louang Prabang
+ STATE_952:0 "사이냐불리" #Sainyabuli #란창(태국) Lan Chang
+ STATE_953:0 "후아판" #Houaphan
+ STATE_954:0 "볼리캄사이" #Bolikhamxai
+ STATE_955:0 "캄무안" #Khammouan
+ STATE_956:0 "사완나켓" #Savannakhet
+ STATE_957:0 "살라완" #Salavan
+ STATE_958:0 "세콩" #Sekong
+ STATE_959:0 "앗따쁘" #Attapu
+ STATE_960:0 "팍세" #Pakse
+ STATE_961:0 "참파사크" #Champasak
+
+ #캄보디아
+ STATE_741:0 "프놈펜" #Phnom Penh
+ STATE_962:0 "시아누크빌" #Sihanoukville
+ STATE_963:0 "칸달" #Kandal
+ STATE_964:0 "바탐방" #Battambang
+ STATE_965:0 "반테아이메안체이" #Banteay Meanchey
+ STATE_966:0 "캄퐁참" #Kampong Cham 캄보디아에서 인구가 가장 많음
+ STATE_967:0 "프레아비헤아르" #Preah Vihear
+ STATE_968:0 "몬둘키리" #Mondulkiri
+ STATE_969:0 "라타나키리" #Ratanakiri

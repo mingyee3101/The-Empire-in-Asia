@@ -1,0 +1,25 @@
+	state={
+	id=966
+	name="STATE_966"
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #캄퐁참
+			4639 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1 #캄퐁치낭 #냄비생산
+		}
+	}
+	
+	provinces={
+		1324 4639 7319 12475 
+	}
+	manpower=2574637 #2,860,708
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

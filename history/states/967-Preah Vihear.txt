@@ -1,0 +1,24 @@
+state={
+	id=967
+	name="STATE_967"
+	resources={ #농업, 고무 #보수적인 농사 방식 #효율이 떨어짐
+		rubber=13
+	}
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		12447 12460 
+	}
+	manpower=153767 #170,852
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}
