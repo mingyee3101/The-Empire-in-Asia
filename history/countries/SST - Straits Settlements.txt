@@ -12,6 +12,27 @@ set_technology = {
 	basic_train = 1
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = FMS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = MAL
+		puppet = FMS
+	}
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
