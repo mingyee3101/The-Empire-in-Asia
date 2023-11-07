@@ -932,11 +932,6 @@ ROS = { #사라왁 왕국
 	color_ui = rgb { 252 209 22 }
 }
 
-FMS = { #말레이 비연합주
-	color = rgb { 150 56 93 }
-	color_ui = rgb { 150 56 93 }
-}
-
 SST = { #해협 식민지
 	color = rgb { 0 36 125 }
 	color_ui = rgb { 0 36 125 }
