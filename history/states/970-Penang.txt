@@ -8,8 +8,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = MAL
-		add_core_of = MAL
+		owner = SST
+		add_core_of = SST
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
