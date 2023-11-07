@@ -43,3 +43,15 @@
  STATE_967:0 "프레아비헤아르" #Preah Vihear
  STATE_968:0 "몬둘키리" #Mondulkiri
  STATE_969:0 "라타나키리" #Ratanakiri
+
+ #말레이
+ STATE_970:0 "페낭"
+ STATE_971:0 "딘딩"
+ STATE_972:0 "말라카"
+ STATE_973:0 "조호르"
+ STATE_974:0 "크다"
+ STATE_975:0 "클란탄"
+ STATE_976:0 "트렝가누"
+ STATE_977:0 "페락"
+ STATE_978:0 "파항"
+ STATE_979:0 "슬랑오르"
