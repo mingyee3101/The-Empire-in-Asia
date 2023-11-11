@@ -11,6 +11,12 @@
 				tag = SIK
 				tag = SHX
 				tag = XSM
+				tag = TGS
+				tag = HCP
+				tag = SDC
+				tag = GDC
+				tag = SCC
+				tag = CSR
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -1204,6 +1210,84 @@
 					character = SIK_sheng_shicai
 					gfx = GFX_portrait_sheng_shicai
 					traits = { politically_connected } # Studied political economy, played Stalin and Chiang against one another
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = TGS } }
+				add_field_marshal_role = {
+					character = TGS_Ma_Hushan
+					gfx = gfx/leaders/TGS/Portrait_Ma_Hushan.png
+					traits = { cavalry_officer }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = HCP } }
+				add_field_marshal_role = {
+					character = HCP_Song_Zheyuan
+					gfx = gfx/leaders/HCP/Portrait_Song_Zheyuan.png
+					traits = { war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = SDC } }
+				add_field_marshal_role = {
+					character = SDC_Han_Fuju
+					gfx = gfx/leaders/SDC/Portrait_Han_Fuju.png
+					traits = { war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = GDC } }
+				add_field_marshal_role = {
+					character = GDC_Chen_Jitang
+					gfx = gfx/leaders/GDC/Portrait_Chen_Jitang.png
+					traits = { war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = SCC } }
+				add_field_marshal_role = {
+					character = SCC_Liu_Xiang
+					gfx = gfx/leaders/SCC/Portrait_Liu_Xiang.png
+					traits = { war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+			else_if = {
+				limit = { ROOT = { tag = CSR } }
+				add_field_marshal_role = {
+					character = CSR_Liu_Wenhui
+					gfx = gfx/leaders/CSR/Portrait_Liu_Wenhui.png
+					traits = { war_hero }
 					skill = 3
 					attack_skill = 3
 					defense_skill = 3

@@ -1,18 +1,4 @@
 characters={
-	PRC_Revolutionary_Military_Council={
-		name=PRC_Revolutionary_Military_Council
-		portraits={
-			civilian={
-				large = "gfx/leaders/PRC/Portrait_Revolutionary_Military_Council.png"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	PRC_mao_zedong={
 		name=PRC_mao_zedong
 		portraits={

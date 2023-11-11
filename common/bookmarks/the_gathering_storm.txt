@@ -85,59 +85,159 @@ bookmarks = {
 				MAN_the_two_emperors
 			}
 		}
-
+		
 		"GXC"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
-				CHI_long_term_economic_planning
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
 				CHI_join_the_republican_government
-				CHI_power_struggle
-				CHI_heavy_weapons_development
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
 			}
 		}		
 		"YUN"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
-				CHI_long_term_economic_planning
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
 				CHI_join_the_republican_government
-				CHI_power_struggle
-				CHI_heavy_weapons_development
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}		
+		"SHX"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
 			}
 		}		
 		"XSM"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
-				CHI_long_term_economic_planning
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
 				CHI_join_the_republican_government
-				CHI_power_struggle
-				CHI_heavy_weapons_development
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
 			}
 		}		
 		"SIK"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = communism
 			ideas = {
-				CHI_long_term_economic_planning
-				CHI_ideological_education
-				CHI_land_value_tax
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
 				CHI_join_the_chinese_soviet
-				CHI_embrace_the_opium_trade
-				CHI_reform_the_administration
+			}
+		}
+		"TGS"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"HCP"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"SDC"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"GDC"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"SCC"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
+			}
+		}
+		"CSR"={
+			minor = yes
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+			}
+			focuses = {
+				CHI_join_the_republican_government
+				CHI_provoke_border_clashes
+				CHI_join_the_chinese_soviet
 			}
 		}
 		
@@ -172,6 +272,18 @@ bookmarks = {
 			minor = yes
 			history = "MON_GATHERING_STORM_DESC"
 			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"PHI"={
+			minor = yes
+			history = "PHI_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
 				
 			}

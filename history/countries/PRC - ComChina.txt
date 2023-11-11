@@ -9,8 +9,6 @@ set_technology = {
 }
 set_stability = 0.65
 set_war_support = 0.85
-
-recruit_character = PRC_Revolutionary_Military_Council
 recruit_character = PRC_mao_zedong
 recruit_character = PRC_zhu_de
 recruit_character = PRC_chen_yi

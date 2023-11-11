@@ -9,3 +9,20 @@
 
  #지도자
  PRC_Revolutionary_Military_Council:0 "군사 위원회"
+
+ #국명
+ PRC_fascism:0 "중화제국"
+ PRC_fascism_DEF:0 "중화제국"
+ PRC_democratic:0 "중화민국"
+ PRC_democratic_DEF:0 "중화민국"
+ PRC_neutrality:0 "중국"
+ PRC_neutrality_DEF:0 "중국"
+ PRC_communism:1 "중화소비에트공화국"
+ PRC_communism_DEF:1 "중화소비에트공화국"
+ PRC_fascism_ADJ:0 "중국"
+ PRC_democratic_ADJ:0 "중국"
+ PRC_neutrality_ADJ:0 "중국"
+ PRC_communism_ADJ:0 "중국"
+ PRC:0 "중국"
+ PRC_DEF:0 "중국"
+ PRC_ADJ:0 "중국"
