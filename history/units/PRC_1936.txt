@@ -1,108 +1,134 @@
-﻿division_template = {
-	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = PRC_INF_01
-									#	PRC divisions were well-trained in guerilla mountain tactics.
+﻿#division_template = {
+#	name = "중국공농홍군전선군"
+#	#2만~4만
+#	division_names_group = PRC_INF_02
+#	regiments = {
+#		infantry = { x = 0 y = 0 }
+#		infantry = { x = 0 y = 1 }
+#		infantry = { x = 0 y = 2 }
+#		infantry = { x = 0 y = 3 }
+#		infantry = { x = 1 y = 0 }
+#		infantry = { x = 1 y = 1 }
+#		infantry = { x = 1 y = 2 }
+#		infantry = { x = 1 y = 3 }
+#		infantry = { x = 2 y = 0 }
+#		infantry = { x = 2 y = 1 }
+#		infantry = { x = 2 y = 2 }
+#		infantry = { x = 2 y = 3 }
+#		infantry = { x = 3 y = 0 }
+#		infantry = { x = 3 y = 1 }
+#		infantry = { x = 3 y = 2 }
+#		infantry = { x = 3 y = 3 }
+#		infantry = { x = 4 y = 0 }
+#		infantry = { x = 4 y = 1 }
+#		infantry = { x = 4 y = 2 }
+#		infantry = { x = 4 y = 3 }
+#	}
+#	priority = 1
+#}
+division_template = {
+	name = "서로군"
+	#2만1천8백명
+	division_names_group = PRC_INF_03
 	regiments = {
-		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
 	}
-	priority = 0
+	priority = 1
 }
 division_template = {
-	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	name = "중국공농홍군군단"
+	#1만~4만
+	division_names_group = PRC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "중국공농홍군"	
 	division_names_group = PRC_GAR_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
 	}
-	priority = 1
+	priority = 0
 }
 
 units = {
-	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
+	##### 제1전선군 #####
 	division = {
-		name = "115 Bubing Shi"
-		location = 5007
-		division_template = "Juntuán"
+		name = "중국공농홍군제1군단"
+		location = 4939 #즈단
+		division_template = "중국공농홍군군단"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.35
+		start_equipment_factor = 0.5
 
 	}
-	division = {
-		name = "120 Bubing Shi"
-		location = 7208
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.35
-
-	}
-	division = {
-		name = "129 Bubing Shi"
-		location = 517
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.35
-
-	}
-	
-	### Provincial Forces ###
-	division = { #  "1 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 12156
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.35
-
-	}
-	division = { #  "2 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 10733
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.35
-
-	}
-	division = { #  "3 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 10733
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.35
-
-	}
-	division = { #  "4 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 8049
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.35
-
-	}
-	division = { #  "5 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 8049
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.35
-
-	}
+#	division = {
+#		name = "중국공농홍군제3군단" #->쭌이 회의 이후 제1군과 제4전선군에 들어감
+#		location = 7208
+#		division_template = "중국공농홍군군단"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.5
+#
+#	}
+#	division = {
+#		name = "중국공농홍군제5군단" #->서로군
+#		location = 517
+#		division_template = "중국공농홍군군단"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.5
+#
+#	}
+	##### 제2전선군 ##### #14,300명
+#	division = {
+#		name = "중국공농홍군제2선군"
+#		location = 8104 #간쯔
+#		division_template = "중국공농홍군전선군"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.5
+#
+#	}
+	##### 제4전선군 ##### #4만명 #->서로군
+#	division = {
+#		name = "중국공농홍군제2선군"
+#		location = 8104 #간쯔
+#		division_template = "중국공농홍군전선군"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.5
+#
+#	}
 }
 
 ##### STARTING PRODUCTION #####
