@@ -2,6 +2,31 @@
 
 oob = "PRC_1936"
 
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	partial_economic_mobilisation
+	PRC_red_army
+	illiteracy_0
+	PRC_separatism
+	PRC_poor_industry
+	PRC_communist_party_not_united
+}
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_the_long_march_1
+		PRC_low_popular_support_3
+		PRC_power_struggles
+		PRC_red_army_weakened
+		PRC_low_quality_army
+		PRC_Zhang_Guotao_failure
+		PRC_28_Bolsheviks
+	}
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -38,6 +63,7 @@ recruit_character = PRC_liu_shaoqi
 recruit_character = PRC_lin_bojiu
 recruit_character = PRC_dong_biwu
 recruit_character = PRC_he_yuandang
+recruit_character = PRC_liu_zhidan
 
 
 save_global_event_target_as = WTT_communist_china
@@ -167,30 +193,6 @@ set_politics = {
 }
 set_popularities = {
 	communism = 100
-}
-
-add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
-	PRC_guerrilla_warfare
-	illiteracy_0
-	PRC_separatism
-}
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
-		PRC_low_quality_army
-		PRC_Zhang_Guotao_failure
-		PRC_28_Bolsheviks
-	}
 }
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }

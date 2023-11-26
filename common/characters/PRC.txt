@@ -107,11 +107,11 @@ characters={
 		}
 		corps_commander={
 			traits={ infantry_officer trait_mountaineer }
-			skill=4
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=2
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -125,12 +125,31 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trait_mountaineer }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
+			traits={ infantry_officer trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	PRC_liu_zhidan={
+		name=PRC_liu_zhidan
+		portraits={
+			army={
+				large=GFX_portrait_PRC_liu_zhidan
+				small=GFX_portrait_PRC_liu_zhidan_small
+			}
+		}
+		corps_commander={
+			traits={ organizer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}

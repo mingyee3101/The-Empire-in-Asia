@@ -4,7 +4,7 @@ ideas = {
 
 		#고민
 
-		PRC_guerrilla_warfare = {
+		PRC_red_army = {
 
 			picture = chi_army_corruption
 
@@ -13,8 +13,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = 0.05
-				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.2
 				supply_consumption_factor = -0.15
 				equipment_capture_factor = 0.5
 			}
@@ -35,6 +35,20 @@ ideas = {
 			}
 		}
 
+		PRC_poor_industry = {
+
+			picture = chi_army_corruption
+
+			allowed = { original_tag = PRC }
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
 		PRC_low_quality_army = {
 
 			picture = chi_army_corruption
@@ -46,11 +60,25 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					instant = yes
-					build_cost_ic = -0.5
 					soft_attack = -0.1
 					hard_attack = -0.15
-					reliability = -0.5
+					reliability = -0.1
 				}
+			}
+		}
+
+		PRC_communist_party_not_united = {
+
+			picture = chi_army_corruption
+
+			allowed = { original_tag = PRC }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_factor = -0.25
 			}
 		}
 

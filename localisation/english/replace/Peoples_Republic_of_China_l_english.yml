@@ -1,14 +1,16 @@
 ﻿l_english:
 
  #국민정신
- PRC_guerrilla_warfare:0 "게릴라전"
+ PRC_red_army:0 "홍군"
  PRC_separatism:0 "분리주의"
+ PRC_communist_party_not_united:0 "단결되지 않은 공산당"
  PRC_low_quality_army:0 "질 낮은 군대"
  PRC_Zhang_Guotao_failure:0 "장궈타오의 실패"
  PRC_28_Bolsheviks:0 "28인의 볼셰비키"
+ PRC_poor_industry:0 "빈약한 산업"
 
  #지도자
- PRC_Revolutionary_Military_Council:0 "군사 위원회"
+ PRC_liu_zhidan:0 "류쯔단"
 
  #국명
  PRC_fascism:0 "중화제국"
