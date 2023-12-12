@@ -345,7 +345,7 @@ UIC_PAR_01 =
 
 UIC_COL_01 = 
 {
-	name = "Colonial Division"
+	name = "식민지 보병 연대"
 
 	for_countries = { UIC }
 
@@ -356,14 +356,130 @@ UIC_COL_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { UIC_INF_01 }
 
-	fallback_name = "%dème d'Infanterie Coloniale"
+	fallback_name = "제%식민지 보병 연대"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Division de Tonkin" }
-		2 = { "Division de Cochinchine-Cambodge" }
-		3 = { "%dère Div. d'Infanterie Coloniale" }
+		1 = { "제10식민지 보병 연대" }
+		2 = { "제11식민지 보병 연대" }
+		3 = { "제12식민지 보병 연대" }
+		4 = { "제12식민지 보병 연대" }
+	}
+}
+
+UIC_COL_02 = 
+{
+	name = "인도차이나 식민지군"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%식민지 연대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%식민지 연대" }
+	}
+}
+
+UIC_COL_03 = 
+{
+	name = "인도차이나 산악 식민지군"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%산악 식민지 대대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%산악 식민지 대대" }
+	}
+}
+
+UIC_COL_04 = 
+{
+	name = "인도차이나 스파이"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%스파이 연대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제%스파이 연대" }
+	}
+}
+
+UIC_COL_05 = 
+{
+	name = "인도차이나 스파이"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%해군 보병 연대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제9해군 보병 연대" }
+	}
+}
+
+UIC_COL_06 = 
+{
+	name = "식민지 포병 연대"
+
+	for_countries = { UIC }
+
+	can_use = { always = yes }
+
+	division_types = { "artillery_brigade" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { UIC_INF_01 }
+
+	fallback_name = "제%식민지 포병 연대"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "제4식민지 포병 연대" }
 	}
 }

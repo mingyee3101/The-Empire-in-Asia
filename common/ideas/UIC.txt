@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+
+		UIC_indochinese_resistance = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.5
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
+			}
+
+		}
+
+	}
+
+}

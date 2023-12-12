@@ -14,10 +14,6 @@ characters = {
 			expire = "1945.6.9.1"
 		}
 		country_leader = {
-			ideology = conservatism
-			expire = "1945.6.9.1"
-		}
-		country_leader = {
 			ideology = fascism_ideology
 			expire = "1945.6.9.1"
 		}
@@ -32,10 +28,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
-			expire = "1963.10.21.1"
-		}
-		country_leader = {
-			ideology = conservatism
 			expire = "1963.10.21.1"
 		}
 		country_leader = {
@@ -100,10 +92,6 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
-			expire = "1963.10.21.1"
-		}
-		country_leader = {
-			ideology = conservatism
 			expire = "1963.10.21.1"
 		}
 		country_leader = {

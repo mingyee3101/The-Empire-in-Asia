@@ -2,6 +2,7 @@
 
  #인물
  UIC_Rene_Robin:0 "르네 로벵" #법학 박사 #총독 대행
+ UIC_jules_brevie:0 "쥘 브레비예"
  UIC_jean_decoux:0 "장 드쿠"
  UIC_jean_decoux_navy:0 "장 드쿠"
  UIC_Georges_Catroux:0 "조르주 카트루"
@@ -19,8 +20,8 @@
  UIC_fascism_party:0 "인도차이나 총독부"
  UIC_fascism_party_long:0 "인도차이나 총독부"
  #UIC_fascism_party:0 "대월국가사회당" #Đại Việt Quốc gia Xã hội Đảng #친일
- UIC_democratic_party:0 "인도차이나 총독부"
- UIC_democratic_party_long:0 "인도차이나 총독부"
+ UIC_democratic_party:0 "인도차이나 민주당"
+ UIC_democratic_party_long:0 "인도차이나 민주당"
  UIC_communism_party:0 "인도차이나 공산당"
  UIC_communism_party_long:0 "인도차이나 공산당"
  UIC_neutrality_party:0 "인도차이나 총독부" #Phủ Toàn quyền Đông Dương
@@ -51,3 +52,21 @@
  #중점
  UIC_the_medals_of_french_indochina:0 "훈장에 대한 새로운 규정" #프랑스령 인도차이나에 대한 새로운 규정
  UIC_the_medals_of_french_indochina_desc:0 "우리는 현지 노동자와 자국민을 위해서 노동에 대한 보상으로 명예훈장을 수여할 것입니다."
+ 
+ #프랑스 총독의 통치
+ UIC_french_governor_generals_reign:0 "프랑스 총독의 통치"
+
+ #인도차이나인에게 자치권 부여
+ UIC_grant_autonomy_to_local_people:0 "현지인들에게 자치권 부여"
+ UIC_nguyen_van_thinh_reign:0 "응우옌반틴의 통치"
+ UIC_emperor_reign:0 "황제의 통치"
+
+ #독립
+ UIC_for_independence_and_freedom:0 "독립과 자유를 위하여"
+ 
+ #일본 괴뢰국
+ UIC_borrow_the_power_of_japan:0 "일본의 힘을 빌리자"
+
+ #국민정신
+ UIC_indochinese_resistance:0 "인도차이나인들의 저항"
+ UIC_indochinese_resistance_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"

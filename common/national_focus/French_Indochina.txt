@@ -8,13 +8,113 @@ focus_tree = {
 		}
 	}
 	default = no
+
+	#프랑스 총독의 통치
 	focus = {
-		id = UIC_the_medals_of_french_indochina
-		icon = GFX_ICU_the_medals_of_french_indochina
+		id = UIC_french_governor_generals_reign
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
+		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
+		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
 		cost = 10
 		x = 3
 		y = 0
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_the_medals_of_french_indochina
+		icon = GFX_ICU_the_medals_of_french_indochina
+		prerequisite = { focus = UIC_french_governor_generals_reign }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_french_governor_generals_reign
 		#정치력 100 추가
 		#이벤트 추가
+	}
+
+	#현지인들에게 자치권 부여
+	focus = {
+		id = UIC_grant_autonomy_to_local_people
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
+		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
+		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
+		cost = 10
+		x = 5
+		y = 0
+		relative_position_id = UIC_french_governor_generals_reign
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#응우옌 반 틴의 통치
+	focus = {
+		id = UIC_nguyen_van_thinh_reign
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_grant_autonomy_to_local_people }
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = UIC_grant_autonomy_to_local_people
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#황제의 통치
+	focus = {
+		id = UIC_emperor_reign
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_grant_autonomy_to_local_people }
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = UIC_grant_autonomy_to_local_people
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#독립과 자유를 위하여
+	focus = {
+		id = UIC_for_independence_and_freedom
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
+		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
+		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
+		cost = 10
+		x = 5
+		y = 0
+		relative_position_id = UIC_grant_autonomy_to_local_people
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#일본의 힘을 빌리자
+	focus = {
+		id = UIC_borrow_the_power_of_japan
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
+		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
+		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
+		cost = 10
+		x = 5
+		y = 0
+		relative_position_id = UIC_for_independence_and_freedom
+
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 }

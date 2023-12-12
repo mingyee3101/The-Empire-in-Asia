@@ -1,0 +1,89 @@
+characters = {
+
+	############지도자############
+
+	VIN_nguyen_van_thinh={
+		name=VIN_nguyen_van_thinh
+		portraits={
+			army={
+				small = "gfx/interface/ideas/VIN/VIN_nguyen_van_thinh.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1945.6.9.1"
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_nguyen_van_thinh
+			allowed = {
+				OR = {
+					original_tag = VIN
+					original_tag = UIC
+				}
+			}
+			available = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+			visible = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+	############정치고문############
+
+	VIN_bui_quang_chieu={
+		name=VIN_bui_quang_chieu
+		portraits={
+			army={
+				small = "gfx/interface/ideas/VIN/VIN_bui_quang_chieu.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_bui_quang_chieu
+			allowed = {
+				OR = {
+					original_tag = VIN
+					original_tag = UIC
+				}
+			}
+			available = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+			visible = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+}

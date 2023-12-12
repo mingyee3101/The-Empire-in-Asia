@@ -1,74 +1,292 @@
-﻿division_template = {
-	name = "Division Coloniale"
-
+﻿#프랑스군
+division_template = {
+	name = "식민지 보병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
 	division_names_group = UIC_COL_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		artillery = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
 	}
 	priority = 1
 }
 division_template = {
-	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
-	division_names_group = UIC_COL_01
+	name = "식민지 포병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
+	division_names_group = UIC_COL_06
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "해군 보병 연대"
+	division_names_group = UIC_COL_05
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	priority = 2
+}
+#식민지군
+division_template = {
+	name = "인도차이나 식민지군" #Tirailleurs indochinois
+	division_names_group = UIC_COL_02
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "인도차이나 산악 식민지군" #Tirailleurs indochinois
+	division_names_group = UIC_COL_03
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "인도차이나 스파이" #Tirailleurs indochinois
+	division_names_group = UIC_COL_04
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
 	priority = 0
 }
 
 units = {
 	##### Indochina Theatre #####
-	### Army Group: Troupes d'Indochine ### -- Saigon
-	division= {	# "Division de Tonkin"
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 4401
-		division_template = "Division Coloniale"	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
+		division_template = "해군 보병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division= {	# "Division de Cochinchine-Cambodge"
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4379 #후에
+		division_template = "식민지 보병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 4075
-		division_template = "Division Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
+		location = 4401 #사이공
+		division_template = "식민지 보병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "Brigade d'Annam-Laos"	
-		location = 7376
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12133 #코친차이나
+		division_template = "식민지 보병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4075 #통킹
+		division_template = "식민지 보병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075 #통킹
+		division_template = "식민지 포병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#통킹
+	division= {	# 제1식민지 연대 1er régiment de tirailleurs tonkinois
+		name = "통킹 제1식민지 연대"	
+		location = 12048 #'박닌', 랑선, 까오방
+		division_template = "인도차이나 식민지군"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제2식민지 연대
+		name = "통킹 제2식민지 연대"	
+		location = 4119 #하이퐁
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제3식민지 연대
+		name = "통킹 제3식민지 연대"	
+		location = 9948 #박닌, '랑선', 까오방
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제4식민지 연대
+		name = "통킹 제4식민지 연대"	
+		location = 1185 #남딘
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제5식민지 연대
+		name = "통킹 제5식민지 연대"	
+		location = 11981 #광저우만
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 통킹 스파이
+		name = "통킹 스파이"	
+		location = 4075
+		division_template = "인도차이나 스파이"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	#코친차이나
+	division= {	# 코친차이나 스파이
+		name = "코친차이나 스파이"	
+		location = 4379
+		division_template = "인도차이나 스파이"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	#안남
+	division= {	# 제1식민지 연대
+		name = "안남 제1식민지 연대"	
+		location = 4401 #사이공
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제2식민지 연대
+		name = "안남 제2식민지 연대"	
+		location = 12133
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# 제1식민지 연대 #Bataillon de tirailleurs montagnards du Sud-Annam
+		name = "안남 제1산악 식민지 대대"	
+		location = 7238
+		division_template = "인도차이나 산악 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#캄보디아
+	division= {	#
+		name = "캄보디아 제1식민지 대대"	
+		location = 10177
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	#
+		name = "캄보디아 제2식민지 대대"	
+		location = 4639
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	#태국인
+	division= {	#
+		name = "태국 제1식민지 대대"	
+		location = 10496
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	#
+		name = "태국 제2식민지 대대"	
+		location = 1592
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	#
+		name = "태국 제3식민지 대대"	
+		location = 4529
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	#중국인
+	division= {	#
+		name = "중국 제1식민지 대대"	
+		location = 7518
+		division_template = "인도차이나 식민지군"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 	}
 }
 

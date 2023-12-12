@@ -1,0 +1,65 @@
+﻿l_english:
+
+  #####인물
+  ###민주주의
+
+  #정치고문
+  VIN_bui_quang_chieu:0 "부이꽝찌에우"
+  VIN_nguyen_van_thinh:0 "응우옌반틴"
+
+  ###공산주의
+  #지도자
+
+  #장군
+
+  #제독
+
+  #공군
+
+  #이론가
+
+  #정치고문
+
+  ###비동맹주의
+  VIN_Bao_Dai:0 "바오다이"
+
+  #기업
+
+  #특성
+
+
+  #정당
+  VIN_fascism_party:0 "혁명군사위원회" #Hội đồng Quân nhân Cách mạng
+  VIN_fascism_party_long:0 "혁명군사위원회"
+  VIN_democratic_party:0 "베트남 국민당"
+  VIN_democratic_party_long:0 "베트남 국민당"
+  VIN_communism_party:0 "베트남 공산당"
+  VIN_communism_party_long:0 "베트남 공산당"
+  VIN_neutrality_party:0 "응우옌 왕조"
+  VIN_neutrality_party_long:0 "응우옌 왕조"
+
+  #국명
+  VIN_fascism:0 "베트남 공화국"
+  VIN_fascism_DEF:0 "베트남 공화국"
+  VIN_democratic:0 "베트남 공화국"
+  VIN_democratic_DEF:0 "베트남 공화국"
+  VIN_neutrality:0 "베트남 왕국"
+  VIN_neutrality_DEF:0 "베트남 왕국"
+  VIN_communism:0 "베트남 민주 공화국"
+  VIN_communism_DEF:0 "베트남 민주 공화국"
+  VIN_fascism_ADJ:0 "베트남"
+  VIN_democratic_ADJ:0 "베트남"
+  VIN_neutrality_ADJ:0 "베트남"
+  VIN_communism_ADJ:0 "베트남"
+  VIN:0 "베트남"
+  VIN_DEF:0 "베트남"
+  VIN_ADJ:0 "베트남"
+
+  #중점
+
+  ###결정###
+
+
+  ###이벤트###
+
+  #국민정신

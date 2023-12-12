@@ -4,6 +4,12 @@ oob = "UIC_1936"
 
 set_cosmetic_tag = UIC_fra
 
+country_lock_all_division_template = yes
+
+add_ideas = {
+	UIC_indochinese_resistance
+}
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -81,6 +87,11 @@ add_ideas = {
 recruit_character = UIC_Rene_Robin
 recruit_character = UIC_Georges_Catroux #드골과 비슷함
 recruit_character = UIC_jean_decoux
+
+recruit_character = VIN_nguyen_van_thinh
+
+#정치고문
+recruit_character = VIN_bui_quang_chieu
 
 #장군
 recruit_character = UIC_Jules_Antoine_Buhrer #중장
