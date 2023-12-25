@@ -135,12 +135,12 @@ characters={
 		}
 	}
 
-	PRC_liu_zhidan={
-		name=PRC_liu_zhidan
+	PRC_Liu_Zhidan={
+		name=PRC_Liu_Zhidan
 		portraits={
 			army={
-				large=GFX_portrait_PRC_liu_zhidan
-				small=GFX_portrait_PRC_liu_zhidan_small
+				large = "gfx/leaders/PRC/portrait_Liu_Zhidan.png"
+				small= "gfx/interface/ideas/PRC/PRC_Liu_Zhidan.png"
 			}
 		}
 		corps_commander={
@@ -698,6 +698,25 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+		}
+	}
+
+	PRC_Xi_Zhongxun={
+		name=PRC_Xi_Zhongxun
+		portraits={
+			civilian={
+				small= "gfx/interface/ideas/PRC/PRC_Xi_Zhongxun.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Xi_Zhongxun
+			allowed  = {
+				original_tag = PRC
+			}
+			traits  = {
+				national_unificationist war_industrialist captain_of_industry
 			}
 		}
 	}

@@ -10,7 +10,12 @@
  PRC_poor_industry:0 "빈약한 산업"
 
  #지도자
- PRC_liu_zhidan:0 "류쯔단"
+
+ #장군
+ PRC_Liu_Zhidan:0 "류쯔단"
+
+ #정치고문
+ PRC_Xi_Zhongxun:0 "시중쉰"
 
  #국명
  PRC_fascism:0 "중화제국"
@@ -28,3 +33,6 @@
  PRC:0 "중국"
  PRC_DEF:0 "중국"
  PRC_ADJ:0 "중국"
+
+ #특성
+ national_unificationist:0 "국민통일주의자"

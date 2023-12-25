@@ -1,0 +1,14 @@
+leader_traits = {
+
+	national_unificationist = {
+		random = no
+		political_power_cost = -0.15
+		stability_weekly = 0.01
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
