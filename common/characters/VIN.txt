@@ -5,6 +5,9 @@ characters = {
 	VIN_nguyen_van_thinh={
 		name=VIN_nguyen_van_thinh
 		portraits={
+			civilian = {
+				large = "gfx/leaders/VIN/Portrait_nguyen_van_thinh.png"
+			}
 			army={
 				small = "gfx/interface/ideas/VIN/VIN_nguyen_van_thinh.png"
 			}
@@ -45,14 +48,19 @@ characters = {
 		}
 	}
 
-	############정치고문############
-
 	VIN_bui_quang_chieu={
 		name=VIN_bui_quang_chieu
 		portraits={
+			civilian = {
+				large = "gfx/leaders/VIN/Portrait_bui_quang_chieu.png"
+			}
 			army={
 				small = "gfx/interface/ideas/VIN/VIN_bui_quang_chieu.png"
 			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1945.9.29.1"
 		}
 		advisor={
 			cost = 150
@@ -85,5 +93,7 @@ characters = {
 			}
 		}
 	}
+
+	############정치고문############
 
 }

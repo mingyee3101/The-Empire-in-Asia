@@ -23,7 +23,7 @@ characters = {
 		name=UIC_jean_decoux
 		portraits={
 			civilian = {
-				large = "gfx/leaders/UIC/Portrait_jean_decoux.png"
+				large = "gfx/leaders/UIC/Portrait_Jean_Decoux.png"
 			}
 		}
 		country_leader = {
@@ -40,8 +40,8 @@ characters = {
 		name=UIC_jean_decoux_navy
 		portraits={
 			army={
-				small="GFX_idea_jean_decoux"
-				large = "gfx/leaders/UIC/Portrait_jean_decoux_navy.png"
+				large = "gfx/leaders/UIC/Portrait_Jean_Decoux.png"
+				small = "gfx/interface/ideas/UIC/UIC_Jean_Decoux.png"
 			}
 		}
 		advisor={
