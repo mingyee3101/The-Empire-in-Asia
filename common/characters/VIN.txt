@@ -7,8 +7,6 @@ characters = {
 		portraits={
 			civilian = {
 				large = "gfx/leaders/VIN/Portrait_nguyen_van_thinh.png"
-			}
-			army={
 				small = "gfx/interface/ideas/VIN/VIN_nguyen_van_thinh.png"
 			}
 		}
@@ -53,8 +51,6 @@ characters = {
 		portraits={
 			civilian = {
 				large = "gfx/leaders/VIN/Portrait_bui_quang_chieu.png"
-			}
-			army={
 				small = "gfx/interface/ideas/VIN/VIN_bui_quang_chieu.png"
 			}
 		}

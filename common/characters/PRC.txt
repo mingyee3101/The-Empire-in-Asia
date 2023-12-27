@@ -3,12 +3,12 @@ characters={
 		name=PRC_mao_zedong
 		portraits={
 			army={
-				large="GFX_portrait_prc_mao_zedong"
-				small=GFX_portrait_PRC_mao_zedong_small
+				large = "gfx/leaders/PRC/Portrait_Mao_Zedong.png"
+				small = "gfx/interface/ideas/PRC/PRC_Mao_Zedong.png"
 			}
 			civilian={
-				large="GFX_portrait_prc_mao_zedong"
-				small=GFX_portrait_PRC_mao_zedong_small
+				large = "gfx/leaders/PRC/Portrait_Mao_Zedong.png"
+				small = "gfx/interface/ideas/PRC/PRC_Mao_Zedong.png"
 			}
 		}
 		field_marshal={
