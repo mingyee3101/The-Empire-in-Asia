@@ -11,4 +11,26 @@ leader_traits = {
 		}
 	}
 
+	minister_of_finance = {
+		random = no
+		supply_consumption_factor = -0.1
+		consumer_goods_factor = -0.1
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	five_elders = {
+		random = no
+		political_power_cost = -0.05
+		stability_factor = 0.05
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

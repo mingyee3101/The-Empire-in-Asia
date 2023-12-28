@@ -13,9 +13,15 @@
 
  #장군
  PRC_Liu_Zhidan:0 "류쯔단"
+ PRC_He_Long:0 "허룽"
+ PRC_Otto_Braun:0 "리더"
 
  #정치고문
  PRC_Xi_Zhongxun:0 "시중쉰"
+ PRC_Lin_Boqu:0 "린보취"
+
+ #정보원
+ PRC_Li_Kenong:0 "리커농"
 
  #국명
  PRC_fascism:0 "중화제국"
@@ -36,3 +42,5 @@
 
  #특성
  national_unificationist:0 "국민통일주의자"
+ minister_of_finance:0 "재무부장관"
+ five_elders:0 "오장로"

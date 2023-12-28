@@ -154,6 +154,58 @@ characters={
 		}
 	}
 
+	PRC_He_Long={
+		name=PRC_He_Long
+		portraits={
+			army={
+				large = "gfx/leaders/PRC/portrait_He_Long.png"
+				small= "gfx/interface/ideas/PRC/PRC_He_Long.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	PRC_Otto_Braun={
+		name=PRC_Otto_Braun
+		portraits={
+			army={
+				large = "gfx/leaders/PRC/portrait_Otto_Braun.png"
+				small= "gfx/interface/ideas/PRC/PRC_Otto_Braun.png"
+			}
+		}
+		corps_commander={
+			traits={ fast_planner }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			cost = 150
+
+			slot = theorist
+			idea_token = PRC_otto_braun
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+
+			traits = {
+				mass_assault_expert
+			}
+		}
+	}
+
 	PRC_kwong_hu={
 		name=PRC_kwong_hu
 		portraits={
@@ -295,28 +347,6 @@ characters={
 				army_chief_reform_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	PRC_otto_braun={
-		name=PRC_otto_braun
-		portraits={
-			army={
-				small="GFX_idea_PRC_otto_braun"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = PRC_otto_braun
-			allowed = {
-				original_tag = PRC
-			}
-			traits = {
-				army_chief_old_guard
-			}
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -716,7 +746,26 @@ characters={
 				original_tag = PRC
 			}
 			traits  = {
-				national_unificationist war_industrialist captain_of_industry
+				national_unificationist war_industrialist
+			}
+		}
+	}
+
+	PRC_Lin_Boqu={
+		name=PRC_Lin_Boqu
+		portraits={
+			civilian={
+				small= "gfx/interface/ideas/PRC/PRC_Lin_Boqu.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Lin_Boqu
+			allowed  = {
+				original_tag = PRC
+			}
+			traits  = {
+				minister_of_finance five_elders
 			}
 		}
 	}
