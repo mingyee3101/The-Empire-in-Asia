@@ -15,7 +15,7 @@ characters={
 		name="Manuel Luis Quezón"
 		portraits={
 			civilian={
-				large=GFX_portrait_Manuel_Luis_Quezon
+				large = "gfx/leaders/PHI/Portrait_Manuel_L_Quezon.png"
 			}
 		}
 		country_leader={

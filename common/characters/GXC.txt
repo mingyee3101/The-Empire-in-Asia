@@ -7,7 +7,7 @@ characters = {
 		portraits = {
 			army={
 				large = "gfx/leaders/GXC/GXC_Li_Zongren.png"
-				small = ""
+				small = "gfx/interface/ideas/GXC/GXC_Li_Zongren.png"
 			}
 		}
 		country_leader = {
