@@ -23,8 +23,8 @@ characters={
 		name=MAN_zhang_haipeng
 		portraits={
 			army={
-				large="GFX_portrait_man_zhang_haipeng"
-				small="GFX_idea_MAN_zhang_haipeng"
+				large = "gfx/leaders/MAN/Portrait_Zhang_Haipeng.png"
+				small = "gfx/interface/ideas/MAN/MAN_Zhang_Haipeng.png"
 			}
 		}
 		corps_commander={
@@ -40,8 +40,12 @@ characters={
 		name=MAN_zhang_jinghui
 		portraits={
 			army={
-				large="GFX_portrait_man_zhang_jinghui"
-				small="GFX_idea_MAN_zhang_jinghui"
+				large = "gfx/leaders/MAN/Portrait_Zhang_Jinghui.png"
+				small = "gfx/interface/ideas/MAN/MAN_Zhang_Jinghui.png"
+			}
+			civilian={
+				large = "gfx/leaders/MAN/Portrait_Zhang_Jinghui.png"
+				small = "gfx/interface/ideas/MAN/MAN_Zhang_Jinghui.png"
 			}
 		}
 		corps_commander={
@@ -58,8 +62,8 @@ characters={
 		name=MAN_aisin_gioro_xiqia
 		portraits={
 			army={
-				large="GFX_portrait_man_aisin_gioro_xiqia"
-				small="GFX_idea_MAN_aisin_gioro_xiqia"
+				large = "gfx/leaders/MAN/Portrait_Aisin_Gioro_Xiqia.png"
+				small = "gfx/interface/ideas/MAN/MAN_Aisin_Gioro_Xiqia.png"
 			}
 		}
 		corps_commander={
@@ -76,8 +80,8 @@ characters={
 		name=MAN_yoshiko_kawashima
 		portraits={
 			army={
-				large="GFX_portrait_man_yoshiko_kawashima"
-				small="GFX_idea_MAN_yoshiko_kawashima"
+				large = "gfx/leaders/MAN/Portrait_Yoshiko_Kawashima.png"
+				small = "gfx/interface/ideas/MAN/MAN_Yoshiko_Kawashima.png"
 			}
 		}
 		gender = female
