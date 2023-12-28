@@ -1,0 +1,44 @@
+characters = {
+
+	############지도자############
+
+	############장군############
+
+	KOR_Mu_Chong={ #공산
+		name=KOR_Mu_Chong
+		portraits={
+			army={
+				large = "gfx/leaders/KOR/portrait_Mu_Chong.png"
+				small = "gfx/interface/ideas/KOR/KOR_Mu_Chong.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = KOR_Mu_Chong
+			ledger = army
+			allowed = {
+				OR = {
+					original_tag = KOR
+					original_tag = PRC
+				}
+			}
+			traits = {
+				army_artillery_2
+			}
+				cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

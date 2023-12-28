@@ -182,7 +182,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ fast_planner }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -203,6 +203,25 @@ characters={
 			traits = {
 				mass_assault_expert
 			}
+		}
+	}
+
+	PRC_Xu_Haidong={
+		name=PRC_Xu_Haidong
+		portraits={
+			army={
+				large = "gfx/leaders/PRC/portrait_Xu_Haidong.png"
+				small= "gfx/interface/ideas/PRC/PRC_Xu_Haidong.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 		}
 	}
 

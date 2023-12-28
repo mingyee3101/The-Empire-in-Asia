@@ -1,6 +1,6 @@
 characters={
 	SIA_phraya_phahon={
-		name="Phraya Phahon"
+		name=SIA_phraya_phahon
 		portraits={
 			civilian={
 				large = "gfx/leaders/SIA/Portrait_Phraya_Phahon.png"
@@ -66,6 +66,42 @@ characters={
 			id=-1
 		}
 	}
+
+	#제독
+	SIA_Luang_Sindhu_Songkhramchai={
+		name=SIA_Luang_Sindhu_Songkhramchai
+		portraits={
+			army={
+				large = "gfx/leaders/SIA/Portrait_Luang_Sindhu_Songkhramchai.png"
+				small = "gfx/interface/ideas/SIA/SIA_Luang_Sindhu_Songkhramchai.png"
+			}
+		}
+		advisor={			
+			slot = high_command
+			idea_token = SIA_luang_sinthusongkhramchai
+			ledger = navy
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					air_naval_strike_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		navy_leader={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
 	SIA_tianliang_huntrakool={
 		advisor={
 			
@@ -112,32 +148,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	SIA_luang_sinthusongkhramchai={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = SIA_luang_sinthusongkhramchai
-			ledger = navy
-				allowed = {
-					original_tag = SIA
-				}
-				traits = {
-					air_naval_strike_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Luang Sinthusongkhramchai"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_1"
 			}
 		}
 	}

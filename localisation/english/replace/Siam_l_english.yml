@@ -1,5 +1,12 @@
 ﻿l_english:
 
+ #인물
+ #지도자
+ SIA_phraya_phahon:0 "파혼 폰파유하세나"
+
+ #제독
+ SIA_Luang_Sindhu_Songkhramchai:0 "루앙 신두 송크람차이"
+
  #중점
  SIA_new_ju:0 "새로운 정당"
  SIA_fasi:0 "새로운 파시스트"

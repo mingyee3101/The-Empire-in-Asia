@@ -50,7 +50,6 @@ recruit_character = PRC_liu_bocheng
 recruit_character = PRC_chen_geng
 recruit_character = PRC_gao_qiu
 recruit_character = PRC_liang_shen
-recruit_character = PRC_otto_braun
 recruit_character = PRC_gao_gang
 recruit_character = PRC_fang_zeyi
 recruit_character = PRC_xu_xiangqian
@@ -66,6 +65,9 @@ recruit_character = PRC_he_yuandang
 
 #장군
 recruit_character = PRC_Liu_Zhidan
+recruit_character = PRC_otto_braun
+recruit_character = PRC_Xu_Haidong
+recruit_character = KOR_Mu_Chong #한국
 
 #정치고문
 recruit_character = PRC_Xi_Zhongxun
