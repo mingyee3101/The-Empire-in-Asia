@@ -12,24 +12,6 @@ characters = {
 				small = "gfx/interface/ideas/KOR/KOR_Mu_Chong.png"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = KOR_Mu_Chong
-			ledger = army
-			allowed = {
-				OR = {
-					original_tag = KOR
-					original_tag = PRC
-				}
-			}
-			traits = {
-				army_artillery_2
-			}
-				cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		corps_commander={
 			traits={ trait_mountaineer }
 			skill=2

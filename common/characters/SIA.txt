@@ -54,16 +54,26 @@ characters={
 		}
 	}
 	SIA_plaek_phibunsongkhram={
-		name="Plaek Phibunsongkhram"
+		name=SIA_plaek_phibunsongkhram
 		portraits={
 			civilian={
-				large=GFX_portrait_Plaek_Phibunsongkhram
+				large = "gfx/leaders/SIA/Portrait_Plaek_Phibunsongkhram.png"
+				small = "gfx/interface/ideas/SIA/SIA_Plaek_Phibunsongkhram.png"
 			}
 		}
 		country_leader={
 			ideology=fascism_ideology
 			expire="1953.1.1.12"
 			id=-1
+		}
+		corps_commander={
+			traits={ career_officer media_personality }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 
@@ -93,10 +103,10 @@ characters={
 		}
 		navy_leader={
 			traits={  }
-			skill=1
+			skill=2
 			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
+			defense_skill=2
+			maneuvering_skill=2
 			coordination_skill=1
 			legacy_id=0
 		}

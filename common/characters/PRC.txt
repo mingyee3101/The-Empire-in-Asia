@@ -32,8 +32,8 @@ characters={
 		name=PRC_zhu_de
 		portraits={
 			army={
-				large="GFX_portrait_prc_zhu_de"
-				small="GFX_idea_PRC_zhu_de"
+				large = "gfx/leaders/PRC/Portrait_Zhu_De.png"
+				small = "gfx/interface/ideas/PRC/PRC_Zhu_De.png"
 			}
 		}
 		advisor={
@@ -101,8 +101,8 @@ characters={
 		name=PRC_peng_dehuai
 		portraits={
 			army={
-				large="GFX_portrait_prc_peng_dehuai"
-				small=GFX_portrait_PRC_peng_dehuai_small
+				large = "gfx/leaders/PRC/Portrait_Peng_Dehuai.png"
+				small = "gfx/interface/ideas/PRC/PRC_Peng_Dehuai.png"
 			}
 		}
 		corps_commander={
