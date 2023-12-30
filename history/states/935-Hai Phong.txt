@@ -2,7 +2,7 @@ state={
 	id=935
 	name="STATE_935"
 	resources={
-		aluminium=20 #하이즈엉성 #20만톤
+		aluminium=10 #하이즈엉성 #20만톤
 	}
 
 	history={
@@ -10,7 +10,7 @@ state={
 		add_core_of = UIC
 		owner = UIC
 		victory_points = { #하이퐁
-			4119 10 
+			4119 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -25,7 +25,7 @@ state={
 	provinces={
 		4119 12048 
 	}
-	manpower=4940505 #5,489,450
+	manpower=1646835 #5,489,450
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -2,8 +2,7 @@ state={
 	id=286
 	name="STATE_286"
 	resources={
-		rubber=20
-		oil=18 #Nam Con Son Basin, 붕따우(Binh đoàn 318 dầu khí)
+		rubber=10
 	}
 
 	history={
@@ -11,7 +10,7 @@ state={
 		add_core_of = UIC
 		owner = UIC
 		victory_points = {
-			4401 3 
+			4401 10 
 		}
 		buildings = {
 			infrastructure = 2
@@ -29,7 +28,7 @@ state={
 	provinces={
 		1396 4401 7238 7347 10261 12232
 	}
-	manpower=13675353
+	manpower=4558451
 	buildings_max_level_factor=1.000
 	state_category=town
 

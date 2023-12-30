@@ -3,7 +3,7 @@ state={
 	id=941
 	name="STATE_941"
 	resources={
-		steel=8.000
+		steel=4.000
 	}
 
 	history={
@@ -14,7 +14,7 @@ state={
 			1302 1 
 		}
 		victory_points = { #후에
-			4379 15 
+			4379 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -33,7 +33,7 @@ state={
 	provinces={
 		1302 4379
 	}
-	manpower=1519110 #1,687,900
+	manpower=506370 #1,687,900
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

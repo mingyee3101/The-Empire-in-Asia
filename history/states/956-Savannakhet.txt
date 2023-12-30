@@ -7,7 +7,7 @@ state={
 		owner = UIC
 		add_core_of = LAO
 		victory_points = { #까이손폼위한
-			4539 10
+			4539 5
 		}
 		buildings = {
 			infrastructure = 1
@@ -17,7 +17,7 @@ state={
 	provinces={
 		4539 10195 10238 
 	}
-	manpower=649350 #721,500
+	manpower=216450 #721,500
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = rural

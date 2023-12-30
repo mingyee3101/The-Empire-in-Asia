@@ -2,7 +2,7 @@ state={
 	id=944
 	name="STATE_944"
 	resources={
-		oil=3 #4 #Phú Khánh
+		oil=2 #4 #Phú Khánh
 	}
 
 	history={
@@ -10,7 +10,7 @@ state={
 		add_core_of = UIC
 		owner = UIC
 		victory_points = { #냐짱
-			10162 5
+			10162 3
 		}
 		victory_points = { #판티엣
 			10232 3
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1285 10162 10232 12204 
 	}
-	manpower=2947818 #3,275,353
+	manpower=982606 #3,275,353
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

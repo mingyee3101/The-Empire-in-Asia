@@ -27,7 +27,7 @@ state={
 	provinces={
 		1388 1415 4214 4233 4350 4368 4423 7325 7439 10167 10252 10280 10298 12253 
 	}
-	manpower=2010656
+	manpower=1465186 #2010656-북부루손
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

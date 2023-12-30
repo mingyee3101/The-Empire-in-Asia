@@ -10,7 +10,7 @@ state={
 			1400 1
 		}
 		victory_points = { #달랏
-			7271 5
+			7271 3
 		}
 		buildings = {
 			infrastructure = 3
@@ -20,7 +20,7 @@ state={
 	provinces={
 		1400 1605 7271 12109 12150 12176 
 	}
-	manpower=1913178 #2,125,753
+	manpower=637726 #2,125,753
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
