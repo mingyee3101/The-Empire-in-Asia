@@ -5,3 +5,30 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 }
+
+#중국 공산당
+spriteTypes = {
+	spriteType = {
+		name = "GFX_prc_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//prc_album_art.png"
+		noOfFrames = 2
+	}
+}
+
+#한국
+spriteTypes = {
+	spriteType = {
+		name = "GFX_kor_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//kor_album_art.png"
+		noOfFrames = 2
+	}
+}
+
+#동남아시아
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sea_album_art"
+		texturefile = "gfx//interface//topbar//musicplayer//sea_album_art.png"
+		noOfFrames = 2
+	}
+}

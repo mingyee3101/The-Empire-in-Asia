@@ -1,0 +1,31 @@
+############ 중국 공산당 ############
+
+music = {
+	song = "March_of_the_Eighth_Route_Army"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "When_that_day_comes"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}

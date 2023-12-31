@@ -1,0 +1,21 @@
+music_station = "prc"
+
+############ 중국 공산당 ############
+
+music = {
+	name = "March_of_the_Eighth_Route_Army"
+	file = "March_of_the_Eighth_Route_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	file = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "When_that_day_comes"
+	file = "When_that_day_comes.ogg"
+	volume = 0.75
+}

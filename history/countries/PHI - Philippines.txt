@@ -54,6 +54,9 @@ recruit_character = PHI_emilio_aguinaldo
 recruit_character = PHI_juan_sumulong
 recruit_character = PHI_sergio_osmena
 
+activate_advisor = PHI_Frank_Murphy
+activate_advisor = PHI_sergio_osmena
+
 1939.1.1 = {
 
 	add_political_power = 1198

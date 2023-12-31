@@ -1,0 +1,13 @@
+leader_traits = {
+
+	high_commissioner = {
+		random = no
+		stability_factor = 0.05
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

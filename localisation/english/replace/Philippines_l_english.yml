@@ -2,6 +2,7 @@
 
  #인물
  PHI_Frank_Murphy:0 "프랭크 머피"
+ PHI_Sergio_Osmena:0 "세르히오 오스메냐"
 
  #국명
  PHI_fascism:0 "가납 필리핀"
@@ -49,3 +50,6 @@
  #국민정신
  PHI_army_not_created:0 "창설되지 않은 군대"
  PHI_army_not_created_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"
+
+ #특성
+ high_commissioner:0 "고등판무관"

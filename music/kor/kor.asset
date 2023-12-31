@@ -1,0 +1,21 @@
+############ 한국 ############
+
+music = {
+	name = "The_Torch_of_the_Annihilation_of_Communism"
+	file = "The_Torch_of_the_Annihilation_of_Communism.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Korean_Independence_Army"
+	file = "Song_of_Korean_Independence_Army.ogg"
+	volume = 0.75
+}
+
+############ 북한 ############
+
+music = {
+	name = "Aegukga_DPRK"
+	file = "Aegukga_DPRK.ogg"
+	volume = 0.75
+}

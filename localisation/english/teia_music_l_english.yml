@@ -2,6 +2,10 @@
 
   teia_TITLE:0 "아시아 방송국"
 
+  chi_TITLE:0 "충칭 라디오 기지국"
+
+  jap_TITLE:0 "대정익찬회 도쿄 기지국"
+
   ############ 일본 ############
   Gunkan_March:0 "군함행진곡" #軍艦行進曲
   Miya_San_Miya_San:0 "왕자님 왕자님" #宮さん宮さん
@@ -28,43 +32,7 @@
   Immortal_China:0 "불멸의 중국" #死不了的中國
   I_have_a_rifle:0 "나는 총 한 자루를 가지고 있다" #我有一支槍
   Song_of_the_Great_Wall_Troops:0 "장성부대가" #長城部隊歌
-  Defend_the_Yellow_River:0 "황하를 지켜라" #保衛黃河
-
-  ############ 중국 공산당 ############
-  March_of_the_Eighth_Route_Army:0 "팔로군행진곡" #八路軍進行曲
-  Military_Anthem_of_the_Chinese_Peoples_Liberation_Army:0 "중국인민해방군군가" #中国人民解放军军歌
-  When_that_day_comes:0 "그 날이 오면" #当那一天来临
+  Defend_the_Yellow_River:0 "황하를 지켜라" #保衛黃河 
 
   ############ 중국 군벌 ############
   Song_of_the_Guangxi_Army:0 "광시군군가" #廣西軍軍歌
-
-  ############ 한국 ############
-  The_Torch_of_the_Annihilation_of_Communism:0 "멸공의 횃불"
-  Song_of_Korean_Independence_Army:0 "독립군가"
-
-  ############ 북한 ############
-  Aegukga_DPRK:0 "애국가 - 조선민주주의인민공화국"
-
-  ############ 베트남 ############
-  ############ 일반 ############
-  Noi_Vong_Tay_Lon:0 "손을 잡아 큰 원을 만들자"
-  Bac_dang_Cung_Chung_Chau_Hanh_Quan:0 "호 아저씨는 우리와 같이 행군한다"
-  Bai_Ca_Ho_Chi_Minh:0 "호찌민의 노래"
-  Giai_Phong_Mien_Nam:0 "남부 해방"
-  Hanh_Khuc_Giai_Phong:0 "해방 행진" #Liberation-March
-  Quoc_te_ca:0 "인터내셔널가 - 베트남"
-  Tieng_goi_thanh_nien:0 "청년의 외침"
-  Tien_Ve_Sai_Gon:0 "사이공을 향하여"
-  Dat_Nuoc_Tron_Niem_Vui:0 "기쁨이 가득한 나라"
-  Bai_ca_nguoi_linh:0 "군인의 노래"
-  Hat_mai_khuc_quan_hanh:0 "행진곡을 계속 부르자"
-  Sai_Gon_Quat_Khoi:0 "사이공 봉기"
-  tieu_doan_307:0 "307 대대"
-
-  ############ 평화 ############
-  Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh:0 "호찌민시의 봄"
-  Cung_nhau_ta_di_len:0 "우리 함께 올라가자"
-
-  ############ 전쟁 #############
-  Hay_tiep_tuc_doan_ket_voi_Viet_Nam:0 "베트남과 함께 단결하자" #중국이랑 전쟁할때?
-  #A song about the Sino-Vietnamese war of 1979, where a much larger and stronger power, China, invaded its smaller neighbour, Vietnam, but failed to capture any strategic goals

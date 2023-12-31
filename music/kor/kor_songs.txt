@@ -1,0 +1,39 @@
+music_station = "kor"
+
+############ 한국 ############
+
+music = {
+	song = "The_Torch_of_the_Annihilation_of_Communism"
+	modifier = {
+		original_tag = KOR
+		NOT = {
+			has_government = communism
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_Korean_Independence_Army"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 북한 ############
+
+music = {
+	song = "Aegukga_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
