@@ -1,23 +1,6 @@
 ﻿l_english:
 
-  teia_TITLE:0 "아시아 방송국"
-
   chi_TITLE:0 "충칭 라디오 기지국"
-
-  jap_TITLE:0 "대정익찬회 도쿄 기지국"
-
-  ############ 일본 ############
-  Gunkan_March:0 "군함행진곡" #軍艦行進曲
-  Miya_San_Miya_San:0 "왕자님 왕자님" #宮さん宮さん
-  Roei_no_Uta:0 "야영의 노래" #露営の歌
-  Rabauru_kouta:0 "라바울 속요" #ラバウル小唄
-  Battotai:0 "발도대" #抜刀隊
-  Hohei_no_Honryo:0 "보병의 본령" #步兵の本領
-  Song_of_the_Kamikaze_Pilots:0 "특공대 타령" #特攻隊節
-  Japanese_Army_March:0 "육군분열행진곡" #陸軍分列行進曲
-  The_Pacific_Ocean_March:0 "태평양행진곡" #太平洋行進曲
-  The_Naval_Ensign:0 "군함기" #軍艦旗
-  March_The_Battle_of_Tsushima:0 "쓰시마 해전" #日本海海戦
 
   ############ 중국 ############
   March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲
