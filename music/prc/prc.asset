@@ -1,31 +1,19 @@
 ############ 중국 공산당 ############
 
 music = {
-	song = "March_of_the_Eighth_Route_Army"
-	modifier = {
-		original_tag = PRC
-	}
-	chance = {
-		factor = 1
-	}	
+	name = "March_of_the_Eighth_Route_Army"
+	file = "March_of_the_Eighth_Route_Army.ogg"
+	volume = 0.75
 }
 
 music = {
-	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
-	modifier = {
-		original_tag = PRC
-	}
-	chance = {
-		factor = 1
-	}	
+	name = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	file = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army.ogg"
+	volume = 0.75
 }
 
 music = {
-	song = "When_that_day_comes"
-	modifier = {
-		original_tag = PRC
-	}
-	chance = {
-		factor = 1
-	}	
+	name = "When_that_day_comes"
+	file = "When_that_day_comes.ogg"
+	volume = 0.75
 }
