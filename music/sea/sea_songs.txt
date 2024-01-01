@@ -152,6 +152,39 @@ music = {
 	}	
 }
 
+music = {
+	song = "March_Under_the_Banner"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Quan_Doi_Ta_Quan_Doi_Anh_Hung"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Muoi_chin_thang_Tam"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 평화 ############
 
 music = {

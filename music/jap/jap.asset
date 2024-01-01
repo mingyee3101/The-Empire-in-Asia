@@ -65,3 +65,9 @@ music = {
 	file = "March_The_Battle_of_Tsushima.ogg"
 	volume = 0.75
 }
+
+music = {
+	name = "Song_of_Youth_League"
+	file = "Song_of_Youth_League.ogg"
+	volume = 0.75
+}

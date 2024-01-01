@@ -17,3 +17,39 @@ music = {
 	file = "When_that_day_comes.ogg"
 	volume = 0.75
 }
+
+music = {
+	name = "March_of_the_Peoples_Volunteer_Army"
+	file = "March_of_the_Peoples_Volunteer_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "If_War_Breaks_Out_Today"
+	file = "If_War_Breaks_Out_Today.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Red_Sun_Must_Illuminate_Taiwan"
+	file = "The_Red_Sun_Must_Illuminate_Taiwan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Komsomol_Song"
+	file = "Komsomol_Song.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Socialism_is_Good"
+	file = "Socialism_is_Good.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Learn_From_Lei_Fengs_Good_Example"
+	file = "Learn_From_Lei_Fengs_Good_Example.ogg"
+	volume = 1
+}

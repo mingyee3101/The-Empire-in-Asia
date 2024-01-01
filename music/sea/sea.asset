@@ -80,6 +80,24 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "March_Under_the_Banner"
+	file = "March_Under_the_Banner.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Quan_Doi_Ta_Quan_Doi_Anh_Hung"
+	file = "Quan_Doi_Ta_Quan_Doi_Anh_Hung.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Muoi_chin_thang_Tam"
+	file = "Muoi_chin_thang_Tam.ogg"
+	volume = 0.75
+}
+
 ############ 평화 ############
 
 music = {

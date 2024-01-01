@@ -68,6 +68,30 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Return_to_our_lost_land"
+	file = "Return_to_our_lost_land.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Kinmen_Bombs"
+	file = "The_Kinmen_Bombs.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Struggling_in_the_Southeast"
+	file = "Struggling_in_the_Southeast.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ambitions_to_the_sky"
+	file = "Ambitions_to_the_sky.ogg"
+	volume = 0.75
+}
+
 ############ 중국 군벌 ############
 
 music = {

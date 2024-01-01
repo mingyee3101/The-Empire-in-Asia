@@ -111,3 +111,14 @@ music = {
 		factor = 1
 	}	
 }
+
+music = {
+	song = "Song_of_Youth_League"
+	modifier = {
+		original_tag = JAP
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}

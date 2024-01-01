@@ -25,6 +25,16 @@ music = {
 	}	
 }
 
+music = {
+	song = "Song_of_bravely_marching"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 북한 ############
 
 music = {

@@ -12,6 +12,12 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Song_of_bravely_marching"
+	file = "Song_of_bravely_marching.ogg"
+	volume = 0.75
+}
+
 ############ 북한 ############
 
 music = {

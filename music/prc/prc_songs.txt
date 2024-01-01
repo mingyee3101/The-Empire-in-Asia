@@ -31,3 +31,63 @@ music = {
 		factor = 1
 	}	
 }
+
+music = {
+	song = "March_of_the_Peoples_Volunteer_Army"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "If_War_Breaks_Out_Today"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Red_Sun_Must_Illuminate_Taiwan"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Komsomol_Song"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Socialism_is_Good"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Learn_From_Lei_Fengs_Good_Example"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}

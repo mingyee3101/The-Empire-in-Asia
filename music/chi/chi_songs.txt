@@ -121,6 +121,46 @@ music = {
 	}	
 }
 
+music = {
+	song = "Return_to_our_lost_land"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Kinmen_Bombs"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Struggling_in_the_Southeast"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Ambitions_to_the_sky"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 중국 군벌 ############
 
 music = {
