@@ -185,6 +185,28 @@ music = {
 	}	
 }
 
+music = {
+	song = "Doan_Ve_Quoc_Quan"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Buoc_Chan_Tren_Day_Truong_Son"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 평화 ############
 
 music = {
@@ -224,5 +246,20 @@ music = {
 			factor = 2
 			has_war = yes
 		}	
+	}	
+}
+
+############ 전쟁 #############
+
+music = {
+	song = "Ca_Nuoc_Dau_Tranh"
+	modifier = {
+		original_tag = VIN
+		not = {
+			has_government = communism
+		}
+	}
+	chance = {
+		factor = 1
 	}	
 }

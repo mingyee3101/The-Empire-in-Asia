@@ -91,3 +91,23 @@ music = {
 		factor = 1
 	}	
 }
+
+music = {
+	song = "Tunnel_warfare"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Boundless_Longevity_to_Chairman_Mao"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}

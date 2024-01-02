@@ -53,3 +53,15 @@ music = {
 	file = "Learn_From_Lei_Fengs_Good_Example.ogg"
 	volume = 1
 }
+
+music = {
+	name = "Tunnel_warfare"
+	file = "Tunnel_warfare.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Boundless_Longevity_to_Chairman_Mao"
+	file = "Boundless_Longevity_to_Chairman_Mao.ogg"
+	volume = 0.75
+}

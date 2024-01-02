@@ -92,7 +92,38 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Three_Principles_of_the_People"
+	file = "Three_Principles_of_the_People.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "National_Banner_Song_of_the_Republic_of_China"
+	file = "National_Banner_Song_of_the_Republic_of_China.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Military_Anthem_of_the_Republic_of_China_Army"
+	file = "Military_Anthem_of_the_Republic_of_China_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "March_of_Three_Peoples_Principles_youth"
+	file = "March_of_Three_Peoples_Principles_youth.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Five_Races_Under_One_Union"
+	file = "Song_of_Five_Races_Under_One_Union.ogg"
+	volume = 0.75
+}
+
 ############ 중국 군벌 ############
+############ 광서 군벌 ############
 
 music = {
 	name = "Song_of_the_Guangxi_Army"
@@ -101,7 +132,15 @@ music = {
 }
 
 music = {
-	name = "Song_of_Korean_Independence_Army"
-	file = "Song_of_Korean_Independence_Army.ogg"
+	name = "Song_of_Guangxi_student_soldiers"
+	file = "Song_of_Guangxi_student_soldiers.ogg"
+	volume = 0.75
+}
+
+############ 운남 군벌 ############
+
+music = {
+	name = "Military_Song_of_the_Sixtyth_Army"
+	file = "Military_Song_of_the_Sixtyth_Army.ogg"
 	volume = 0.75
 }

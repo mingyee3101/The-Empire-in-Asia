@@ -1,0 +1,57 @@
+#Titles 이벤트 이름
+defined_text = {
+    name = teia_get_super_event_title
+
+    text = {
+        trigger = {
+            has_global_flag = Second_Sino_Vietnamese_War
+        }
+        localization_key = "sp_event_Second_Sino_Vietnamese_War"
+    }
+}
+
+#Quotes 이벤트 설명
+defined_text = {
+    name = teia_get_super_event_quote
+
+    text = {
+        trigger = {
+            has_global_flag = Second_Sino_Vietnamese_War
+        }
+        localization_key = "sp_event_Second_Sino_Vietnamese_War_QUOTE"
+    }
+}
+
+#Remarks 버튼 설명
+defined_text = {
+    name = teia_get_super_event_remark
+
+    text = { 
+        trigger = {
+            has_global_flag = Second_Sino_Vietnamese_War
+            NOT = {
+                OR = {
+                    tag = PRC
+                    tag = VIN
+                }
+            }
+        }
+        localization_key = "sp_event_Second_Sino_Vietnamese_War_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Second_Sino_Vietnamese_War
+            tag = PRC
+        }
+        localization_key = "sp_event_Second_Sino_Vietnamese_War_prc_REMARK"
+    }
+
+    text = { 
+        trigger = {
+            has_global_flag = Second_Sino_Vietnamese_War
+            tag = VIN
+        }
+        localization_key = "sp_event_Second_Sino_Vietnamese_War_vin_REMARK"
+    }
+}

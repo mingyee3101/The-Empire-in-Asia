@@ -35,6 +35,36 @@ music = {
 	}	
 }
 
+music = {
+	song = "Amnok_River_March"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_the_Third_Division_of_Korean_Liberation_Army"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Go_to_the_sea"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 북한 ############
 
 music = {

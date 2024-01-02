@@ -98,6 +98,18 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Doan_Ve_Quoc_Quan"
+	file = "Doan_Ve_Quoc_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Buoc_Chan_Tren_Day_Truong_Son"
+	file = "Buoc_Chan_Tren_Day_Truong_Son.ogg"
+	volume = 0.75
+}
+
 ############ 평화 ############
 
 music = {
@@ -119,4 +131,12 @@ music = {
 	name = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam"
 	file = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam.ogg"
 	volume = 1
+}
+
+############ 베트남 공화국 #############
+
+music = {
+	name = "Ca_Nuoc_Dau_Tranh"
+	file = "Ca_Nuoc_Dau_Tranh.ogg"
+	volume = 0.75
 }

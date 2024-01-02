@@ -161,12 +161,85 @@ music = {
 	}	
 }
 
+music = {
+	song = "Three_Principles_of_the_People"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "National_Banner_Song_of_the_Republic_of_China"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Military_Anthem_of_the_Republic_of_China_Army"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "March_of_Three_Peoples_Principles_youth"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_Five_Races_Under_One_Union"
+	modifier = {
+		original_tag = CHI
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 중국 군벌 ############
+############ 광서 군벌 ############
 
 music = {
 	song = "Song_of_the_Guangxi_Army"
 	modifier = {
 		original_tag = GXC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_of_Guangxi_student_soldiers"
+	modifier = {
+		original_tag = GXC
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 운남 군벌 ############
+
+music = {
+	song = "Military_Song_of_the_Sixtyth_Army"
+	modifier = {
+		original_tag = YUN
 	}
 	chance = {
 		factor = 1

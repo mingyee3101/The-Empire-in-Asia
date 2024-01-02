@@ -1,0 +1,81 @@
+guiTypes = {
+# x가 커지면 오른쪽 작아지면 왼쪽 y가 커지면 아래로 작아지면 위로
+
+	containerWindowType = {
+		name = "teia_sp_event_window"	
+		position = { x = 0 y = -30 }	
+		size = { width = 668 height = 502 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_teia_sp_event_window"
+		}
+
+		###슈퍼이벤트 이미지
+
+		iconType = {
+			name = "Super_Event_Image_Second_Sino_Vietnamese_War"
+			spriteType = "GFX_teia_sp_event_Second_Sino_Vietnamese_War"
+			position = {x = 0 y = 0}
+		}
+
+		###건들지 말기
+		
+		###############
+		###INTERFACE###
+		###############
+		
+		iconType = {
+			name = "teia_sp_event_text_underlay"
+			spriteType = "GFX_teia_sp_event_underlay"
+			position = { x = 0 y = 380 }
+		}
+		
+		instantTextboxType = {
+			name = "teia_super_title"
+			position = { x = -20 y = 35 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0} #건들지 말기
+			text = "[teia_get_super_event_title]" #이벤트 이름
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "teia_super_quote"
+			position = { x = 160 y = 425 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0} #건들지 말기
+			text = "[teia_get_super_event_quote]" #이벤트 설명
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = center #right
+		}
+		
+		buttonType = {
+			name = "teia_sp_event_close_button"
+			spriteType = "GFX_teia_sp_event_close_button" #버튼 이미지
+			position = { x = 12 y = 500 }
+		}
+
+		instantTextBoxType = {
+			name = "teia_super_quote_button"
+			position = { x = 160 y = 505 }
+			font = "hoi_36header"
+			text = "[teia_get_super_event_remark]" #버튼 설명
+			borderSize = {x = 0 y = 0} #건들지 말기
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = center #right
+		}
+	}
+}

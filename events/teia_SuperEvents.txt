@@ -1,0 +1,31 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = super
+
+country_event = {
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_super_event_picture
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		date > 1936.1.1 #테스트
+		date < 1936.1.3 #테스트
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = Second_Sino_Vietnamese_War
+		set_global_flag = Super_Event_Visible
+		play_song = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam"
+	}
+}

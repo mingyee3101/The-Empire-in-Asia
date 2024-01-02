@@ -18,6 +18,24 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Amnok_River_March"
+	file = "Amnok_River_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_the_Third_Division_of_Korean_Liberation_Army"
+	file = "Song_of_the_Third_Division_of_Korean_Liberation_Army.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Go_to_the_sea"
+	file = "Go_to_the_sea.ogg"
+	volume = 0.75
+}
+
 ############ 북한 ############
 
 music = {
