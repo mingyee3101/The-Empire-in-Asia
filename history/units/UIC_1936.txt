@@ -2,6 +2,7 @@
 division_template = {
 	name = "식민지 보병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
 	division_names_group = UIC_COL_01
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,8 +17,9 @@ division_template = {
 	priority = 1
 }
 division_template = {
-	name = "식민지 포병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
+	name = "식민지 포병 연대"
 	division_names_group = UIC_COL_06
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -52,7 +54,7 @@ division_template = {
 	priority = 0
 }
 division_template = {
-	name = "인도차이나 산악 식민지군" #Tirailleurs indochinois
+	name = "인도차이나 산악 식민지군"
 	division_names_group = UIC_COL_03
 
 	regiments = {
@@ -62,8 +64,9 @@ division_template = {
 	priority = 1
 }
 division_template = {
-	name = "인도차이나 스파이" #Tirailleurs indochinois
+	name = "인도차이나 스파이"
 	division_names_group = UIC_COL_04
+	is_locked = yes
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

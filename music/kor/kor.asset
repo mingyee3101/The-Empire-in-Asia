@@ -43,3 +43,115 @@ music = {
 	file = "Aegukga_DPRK.ogg"
 	volume = 0.75
 }
+
+music = {
+	name = "The_General_Uses_Warp"
+	file = "The_General_Uses_Warp.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Chollima_On_The_Wing"
+	file = "Chollima_On_The_Wing.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Peace_is_On_Our_Bayonets"
+	file = "Peace_is_On_Our_Bayonets.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Defend_the_Headquarters_of_the_Revolution"
+	file = "Defend_the_Headquarters_of_the_Revolution.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Red_Flag"
+	file = "The_Red_Flag.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "We_will_travel_one_road_forever"
+	file = "We_will_travel_one_road_forever.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Long_Live_The_Workers_Party_Of_Korea"
+	file = "Long_Live_The_Workers_Party_Of_Korea.ogg"
+	volume = 0.75
+}
+
+############ 소련 ############
+
+music = {
+	name = "Footsteps_DPRK"
+	file = "Footsteps_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Sacred_war_DPRK"
+	file = "The_Sacred_war_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Partisans_of_Amur_DPRK"
+	file = "The_Partisans_of_Amur_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Internationale_DPRK"
+	file = "The_Internationale_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Lets_go_DPRK"
+	file = "Lets_go_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_About_Disturbed_Youth_DPRK"
+	file = "Song_About_Disturbed_Youth_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Oh_the_roads_DPRK"
+	file = "Oh_the_roads_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Wide_is_My_Motherland_DPRK"
+	file = "Wide_is_My_Motherland_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Victory_day_DPRK"
+	file = "Victory_day_DPRK.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "My_Moscow_DPRK"
+	file = "My_Moscow_DPRK.ogg"
+	volume = 0.75
+}
+
+############ 평화 ############
+
+music = {
+	name = "Potato_Pride"
+	file = "Potato_Pride.ogg"
+	volume = 0.75
+}

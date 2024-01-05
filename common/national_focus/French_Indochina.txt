@@ -9,15 +9,20 @@ focus_tree = {
 	}
 	default = no
 
-	#프랑스 총독의 통치
+	shared_focus = generic_shared_army_effort
+	shared_focus = generic_shared_aviation_effort
+	shared_focus = generic_shared_naval_effort
+	shared_focus = generic_shared_industrial_effort
+	#shared_focus = generic_shared_political_effort
+
+	#르네 로벵
+
 	focus = {
-		id = UIC_french_governor_generals_reign
+		id = UIC_Rene_Robins_reign_continues
 		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
-		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
-		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
+		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
 		cost = 10
-		x = 3
+		x = 18
 		y = 0
 
 		completion_reward = {
@@ -26,92 +31,43 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UIC_the_medals_of_french_indochina
-		icon = GFX_ICU_the_medals_of_french_indochina
-		prerequisite = { focus = UIC_french_governor_generals_reign }
+		id = UIC_no_negotiation
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues }
 		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = UIC_french_governor_generals_reign
-		#정치력 100 추가
-		#이벤트 추가
+		x = 0
+		y = 2
+		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 
-	#현지인들에게 자치권 부여
+	#쥘 브레비예
+
 	focus = {
-		id = UIC_grant_autonomy_to_local_people
+		id = UIC_The_reign_of_jules_brevie
 		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
-		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
-		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
+		mutually_exclusive = { focus = UIC_Rene_Robins_reign_continues }
 		cost = 10
 		x = 5
 		y = 0
-		relative_position_id = UIC_french_governor_generals_reign
+		relative_position_id = UIC_Rene_Robins_reign_continues
 
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
 
-	#응우옌 반 틴의 통치
 	focus = {
-		id = UIC_nguyen_van_thinh_reign
+		id = UIC_labor_law_amendments
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_grant_autonomy_to_local_people }
+		prerequisite = { focus = UIC_The_reign_of_jules_brevie }
 		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = UIC_grant_autonomy_to_local_people
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	#황제의 통치
-	focus = {
-		id = UIC_emperor_reign
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_grant_autonomy_to_local_people }
-		cost = 10
-		x = 2
-		y = 1
-		relative_position_id = UIC_grant_autonomy_to_local_people
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	#독립과 자유를 위하여
-	focus = {
-		id = UIC_for_independence_and_freedom
-		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
-		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
-		mutually_exclusive = { focus = UIC_borrow_the_power_of_japan }
-		cost = 10
-		x = 5
-		y = 0
-		relative_position_id = UIC_grant_autonomy_to_local_people
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	#일본의 힘을 빌리자
-	focus = {
-		id = UIC_borrow_the_power_of_japan
-		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = UIC_french_governor_generals_reign }
-		mutually_exclusive = { focus = UIC_grant_autonomy_to_local_people }
-		mutually_exclusive = { focus = UIC_for_independence_and_freedom }
-		cost = 10
-		x = 5
-		y = 0
-		relative_position_id = UIC_for_independence_and_freedom
+		x = 0
+		y = 2
+		relative_position_id = UIC_The_reign_of_jules_brevie
 
 		completion_reward = {
 			add_political_power = 120

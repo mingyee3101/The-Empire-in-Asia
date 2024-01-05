@@ -77,3 +77,206 @@ music = {
 		factor = 1
 	}	
 }
+
+music = {
+	song = "The_General_Uses_Warp"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Chollima_On_The_Wing"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Peace_is_On_Our_Bayonets"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Defend_the_Headquarters_of_the_Revolution"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Red_Flag"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "We_will_travel_one_road_forever"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Long_Live_The_Workers_Party_Of_Korea"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 소련 ############
+
+music = {
+	song = "Footsteps_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Sacred_war_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Partisans_of_Amur_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Internationale_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Lets_go_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Song_About_Disturbed_Youth_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Oh_the_roads_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Wide_is_My_Motherland_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Victory_day_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "My_Moscow_DPRK"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 평화 ############
+
+music = {
+	song = "Potato_Pride"
+	modifier = {
+		original_tag = KOR
+		has_government = communism
+		has_war = no
+	}
+	chance = {
+		factor = 1
+	}	
+}

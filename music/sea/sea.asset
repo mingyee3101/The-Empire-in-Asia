@@ -33,12 +33,6 @@ music = {
 }
 
 music = {
-	name = "Quoc_te_ca"
-	file = "Quoc_te_ca.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "Tieng_goi_thanh_nien"
 	file = "Tieng_goi_thanh_nien.ogg"
 	volume = 0.75
@@ -110,6 +104,104 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Anh_van_hanh_quan"
+	file = "Anh_van_hanh_quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_hat_Giai_phong_Quan"
+	file = "Bai_hat_Giai_phong_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh"
+	file = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "Co_Gai_Vot_Chong"
+	file = "Co_Gai_Vot_Chong.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Dang_ca_Dang_Cong_san_Viet_Nam"
+	file = "Dang_ca_Dang_Cong_san_Viet_Nam.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Duong_chung_ta_di"
+	file = "Duong_chung_ta_di.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hay_yen_long_me_oi"
+	file = "Hay_yen_long_me_oi.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Mien_nam_oi_Chung_toi_da_san_sang"
+	file = "Mien_nam_oi_Chung_toi_da_san_sang.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Khong_Phan_Boi_Que_Huong"
+	file = "The_Khong_Phan_Boi_Que_Huong.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tien_ve_Ha_Noi"
+	file = "Tien_ve_Ha_Noi.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Toi_Nguoi_Lai_Xe"
+	file = "Toi_Nguoi_Lai_Xe.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Viet_Nam_quyet_chien_thang"
+	file = "Viet_Nam_quyet_chien_thang.ogg"
+	volume = 0.75
+}
+
+############ 소련노래 ############
+
+music = {
+	name = "Quoc_te_ca"
+	file = "Quoc_te_ca.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ca_Chiu_Sa"
+	file = "Ca_Chiu_Sa.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hanh_khuc_Vac_xa_va"
+	file = "Hanh_khuc_Vac_xa_va.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Thoi_thanh_nien_soi_noi"
+	file = "Thoi_thanh_nien_soi_noi.ogg"
+	volume = 0.75
+}
+
 ############ 평화 ############
 
 music = {
@@ -138,5 +230,11 @@ music = {
 music = {
 	name = "Ca_Nuoc_Dau_Tranh"
 	file = "Ca_Nuoc_Dau_Tranh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tieng_Goi_Cong_Dan"
+	file = "Tieng_Goi_Cong_Dan.ogg"
 	volume = 0.75
 }

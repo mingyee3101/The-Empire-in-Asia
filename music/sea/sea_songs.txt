@@ -60,23 +60,6 @@ music = {
 }
 
 music = {
-	song = "Quoc_te_ca"
-	chance = {
-		factor = 1
-		modifier = {
-			original_tag = VIN
-			has_government = communism
-		}
-	}
-	chance = {
-		modifier = {
-			factor = 0.5
-			has_government = communism
-		}
-	}
-}
-
-music = {
 	song = "Tieng_goi_thanh_nien"
 	modifier = {
 		original_tag = VIN
@@ -207,6 +190,179 @@ music = {
 	}	
 }
 
+music = {
+	song = "Anh_van_hanh_quan"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Bai_hat_Giai_phong_Quan"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Co_Gai_Vot_Chong"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Dang_ca_Dang_Cong_san_Viet_Nam"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Duong_chung_ta_di"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Hay_yen_long_me_oi"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Mien_nam_oi_Chung_toi_da_san_sang"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Tien_ve_Ha_Noi"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Toi_Nguoi_Lai_Xe"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Viet_Nam_quyet_chien_thang"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 소련노래 ############
+
+music = {
+	song = "Quoc_te_ca"
+	chance = {
+		factor = 1
+		modifier = {
+			original_tag = VIN
+			has_government = communism
+		}
+	}
+	chance = {
+		modifier = {
+			factor = 0.5
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "Ca_Chiu_Sa"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Hanh_khuc_Vac_xa_va"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Thoi_thanh_nien_soi_noi"
+	modifier = {
+		original_tag = VIN
+		has_government = communism
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 평화 ############
 
 music = {
@@ -249,10 +405,36 @@ music = {
 	}	
 }
 
-############ 전쟁 #############
+############ 베트남 공화국 #############
 
 music = {
 	song = "Ca_Nuoc_Dau_Tranh"
+	modifier = {
+		original_tag = VIN
+		not = {
+			has_government = communism
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Tieng_Goi_Cong_Dan"
+	modifier = {
+		original_tag = VIN
+		not = {
+			has_government = communism
+		}
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "The_Khong_Phan_Boi_Que_Huong"
 	modifier = {
 		original_tag = VIN
 		not = {
