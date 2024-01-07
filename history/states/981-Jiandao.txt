@@ -1,0 +1,26 @@
+
+state={
+	id=981
+	name="STATE_981"
+	manpower = 0
+	
+	state_category = rural
+
+
+	history={
+		owner = MAN
+		add_core_of = CHI
+		add_core_of = MAN
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			#industrial_complex = 1
+		}
+
+	}
+	provinces={
+		927 944 973 3929 3944 6806 6964 9897 11823 11862
+	}
+
+	local_supplies=0.0 
+}

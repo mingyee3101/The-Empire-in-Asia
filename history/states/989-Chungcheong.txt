@@ -1,0 +1,24 @@
+state={
+	id=989
+	name="STATE_989"
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			13278 1 
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		1100 7175 7204 11992 13283 13284 13285 
+	}
+	manpower=3784105
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.0 
+}

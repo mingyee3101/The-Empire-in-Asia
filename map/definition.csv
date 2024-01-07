@@ -13281,3 +13281,19 @@
 13277;80;132;86;land;true;hills;6 #페낭 #말레이
 13278;123;140;132;land;true;jungle;6 #딘딩 #말레이
 13279;135;87;25;land;true;jungle;6 #말라까 #말레이
+
+#####
+13280;233;179;100;land;false;plains;6 #경기 13280
+13281;67;79;100;land;false;plains;6 #13281
+
+13282;12;55;44;land;false;mountain;6 #강원 #13282
+
+13283;66;66;66;land;false;hills;6 #충북 #13283
+13284;111;111;111;land;false;hills;6 #13284
+
+13285;213;31;15;land;false;hills;6 #충남 13285
+
+13286;61;31;15;land;true;plains;6 #전북 13286
+13287;33;131;125;land;false;plains;6 #13287
+
+13288;72;96;22;land;true;plains;6 #경북-울릉 13288
