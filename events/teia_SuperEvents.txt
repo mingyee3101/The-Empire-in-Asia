@@ -17,8 +17,8 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		date > 1936.1.1 #테스트
-		date < 1936.1.3 #테스트
+		date > 1956.1.1 #테스트
+		date < 1956.1.3 #테스트
 	}
 
 	option = {

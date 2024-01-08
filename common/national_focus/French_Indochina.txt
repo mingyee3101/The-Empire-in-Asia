@@ -25,6 +25,16 @@ focus_tree = {
 		x = 18
 		y = 0
 
+		available = {
+			NOT = {
+				FRA = {
+					has_country_leader = {
+						character = FRA_leon_blum
+					}
+				}
+			}	
+		}
+
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -36,8 +46,64 @@ focus_tree = {
 		prerequisite = { focus = UIC_Rene_Robins_reign_continues }
 		cost = 10
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_pay_cut
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_no_negotiation }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_no_negotiation
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_the_medals_of_french_indochina
+		icon = GFX_ICU_the_medals_of_french_indochina
+		prerequisite = { focus = UIC_pay_cut }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_pay_cut
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_prohibit_party
+		icon = GFX_the_medals_of_french_indochina
+		prerequisite = { focus = UIC_pay_cut }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_pay_cut
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_suppression_of_rebellion
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_the_medals_of_french_indochina focus = UIC_prohibit_party }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_the_medals_of_french_indochina
 
 		completion_reward = {
 			add_political_power = 120
@@ -55,8 +121,22 @@ focus_tree = {
 		y = 0
 		relative_position_id = UIC_Rene_Robins_reign_continues
 
+		bypass = {
+			has_country_leader = {
+				character = FRA_leon_blum
+			}
+		}
+
 		completion_reward = {
-			add_political_power = 120
+			retire_ideology_leader = neutrality
+			add_country_leader_role = {
+				character = UIC_jules_brevie
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
 		}
 	}
 
@@ -66,8 +146,51 @@ focus_tree = {
 		prerequisite = { focus = UIC_The_reign_of_jules_brevie }
 		cost = 10
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = UIC_The_reign_of_jules_brevie
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_deregulation_of_political_parties
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_labor_law_amendments }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_labor_law_amendments
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_pardon_political_offender
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_labor_law_amendments }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_labor_law_amendments
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_granting_freedom_to_the_press
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_deregulation_of_political_parties }
+		prerequisite = { focus = UIC_pardon_political_offender }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_deregulation_of_political_parties
 
 		completion_reward = {
 			add_political_power = 120

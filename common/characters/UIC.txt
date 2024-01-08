@@ -19,6 +19,15 @@ characters = {
 		}
 	}
 
+	UIC_jules_brevie = {
+		name = UIC_jules_brevie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UIC/Portrait_jules_brevie.png"
+			}
+		}
+	}
+
 	UIC_jean_decoux={
 		name=UIC_jean_decoux
 		portraits={

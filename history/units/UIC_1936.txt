@@ -32,6 +32,7 @@ division_template = {
 division_template = {
 	name = "해군 보병 연대"
 	division_names_group = UIC_COL_05
+	is_locked = yes
 
 	regiments = {
 		marine = { x = 0 y = 0 }

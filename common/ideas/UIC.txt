@@ -13,7 +13,6 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				war_support_factor = -0.5
-				custom_modifier_tooltip = UIC_indochinese_resistance_tt
 			}
 
 		}
