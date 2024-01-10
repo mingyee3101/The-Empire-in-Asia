@@ -2,6 +2,8 @@
 
   #####인물
   ###민주주의
+  #지도자
+  VIN_Ngo_Dinh_Diem:0 "응오딘지엠"
 
   #정치고문
   VIN_bui_quang_chieu:0 "부이꽝찌에우"
@@ -9,6 +11,7 @@
 
   ###공산주의
   #지도자
+  VIN_Ho_Chi_Minh:0 "호찌민"
 
   #장군
 
@@ -23,14 +26,15 @@
   ###비동맹주의
   VIN_Bao_Dai:0 "바오다이"
 
-  #기업
+  ###파시즘
+  VIN_Tran_Trong_Kim:0 "쩐쫑낌"
 
   #특성
 
 
   #정당
-  VIN_fascism_party:0 "혁명군사위원회" #Hội đồng Quân nhân Cách mạng
-  VIN_fascism_party_long:0 "혁명군사위원회"
+  VIN_fascism_party:0 "대월국가사회당"
+  VIN_fascism_party_long:0 "대월국가사회당"
   VIN_democratic_party:0 "베트남 국민당"
   VIN_democratic_party_long:0 "베트남 국민당"
   VIN_communism_party:0 "베트남 공산당"
@@ -39,8 +43,8 @@
   VIN_neutrality_party_long:0 "응우옌 왕조"
 
   #국명
-  VIN_fascism:0 "베트남 공화국"
-  VIN_fascism_DEF:0 "베트남 공화국"
+  VIN_fascism:0 "베트남 제국"
+  VIN_fascism_DEF:0 "베트남 제국"
   VIN_democratic:0 "베트남 공화국"
   VIN_democratic_DEF:0 "베트남 공화국"
   VIN_neutrality:0 "베트남 왕국"
