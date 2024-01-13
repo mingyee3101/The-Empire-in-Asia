@@ -99,6 +99,8 @@ recruit_character = UIC_Jules_Antoine_Buhrer #중장
 recruit_character = UIC_Maurice_Martin #군단장 Army corps general
 recruit_character = UIC_Marcel_Alessandri #중령
 
+recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
+
 #제독
 recruit_character = UIC_jean_decoux_navy
 

@@ -1,6 +1,6 @@
-﻿capital = 671 #Hanoi
+﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
 
-oob = "VIN_1936"
+oob = "LAO_1936"
 
 set_research_slots = 3
 
@@ -12,13 +12,13 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_mountaineers = 1
-	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
@@ -31,12 +31,15 @@ if = {
 		early_bomber = 1
 		tactical_bomber1 = 1
 		CAS1 = 1
+		
 	}
 }
 
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
+		NOT = {
+			has_dlc = "No Step Back"
+		}
 	}
 	set_technology = {
 		gwtank = 1
@@ -46,7 +49,9 @@ if = {
 }
 if = {
 	limit = {
+		
 		has_dlc = "No Step Back"
+		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -91,30 +96,12 @@ if = {
 	}
 }
 
-#지도자
-recruit_character = VIN_Ho_Chi_Minh
-recruit_character = VIN_Ngo_Dinh_Diem
-recruit_character = VIN_Bao_Dai
-recruit_character = VIN_Tran_Trong_Kim
+recruit_character = LAO_Sisavang_Vong
+recruit_character = LAO_Souvanna_Phouma
+recruit_character = LAO_Souphanouvong
 
-#장군
-recruit_character = VIN_Vo_Nguyen_Giap
-recruit_character = VIN_Hoang_Van_Thai
-recruit_character = VIN_Le_Trong_Tan
-recruit_character = VIN_Chu_Huy_Man
-recruit_character = VIN_Vuong_Thua_Vu
-
-#recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = no
-}
 set_popularities = {
-	democratic = 30
-	fascism = 10
+	democratic = 25
 	communism = 35
-	neutrality = 25
+	neutrality = 40
 }

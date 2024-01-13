@@ -6,7 +6,7 @@ state={
 		add_core_of = UIC
 		owner = UIC
 		victory_points = {
-			7376 1
+			7376 10
 		}
 		buildings = {
 			infrastructure = 1

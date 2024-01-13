@@ -1,0 +1,61 @@
+characters = {
+
+	############지도자############
+
+	CAM_Sisowath_Monivong = {
+		name = CAM_Sisowath_Monivong
+		portraits = {
+			army={
+				large = "gfx/leaders/CAM/Portrait_Sisowath_Monivong.png"
+				small = "gfx/interface/ideas/CAM/CAM_Sisowath_Monivong.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	CAM_Sisowath_Youtevong = {
+		name = CAM_Sisowath_Youtevong
+		portraits = {
+			army={
+				large = "gfx/leaders/CAM/Portrait_Sisowath_Youtevong.png"
+				small = "gfx/interface/ideas/CAM/CAM_Sisowath_Youtevong.png"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	CAM_Son_Ngoc_Minh = {
+		name = CAM_Son_Ngoc_Minh
+		portraits = {
+			army={
+				large = "gfx/leaders/CAM/Portrait_Son_Ngoc_Minh.png"
+				small = "gfx/interface/ideas/CAM/CAM_Son_Ngoc_Minh.png"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	CAM_Tou_Samouth = {
+		name = CAM_Tou_Samouth
+		portraits = {
+			army={
+				large = "gfx/leaders/CAM/Portrait_Tou_Samouth.png"
+				small = "gfx/interface/ideas/CAM/CAM_Tou_Samouth.png"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

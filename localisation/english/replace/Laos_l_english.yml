@@ -1,0 +1,62 @@
+﻿l_english:
+
+  #####인물
+  ###민주주의
+  LAO_Souvanna_Phouma:0 "수바나 푸마"
+  #지도자
+
+  ###공산주의
+  #지도자
+  LAO_Souphanouvong:0 "수파누봉"
+
+  #장군
+
+  #제독
+
+  #공군
+
+  #이론가
+
+  #정치고문
+
+  ###비동맹주의
+  LAO_Sisavang_Vong:0 "시사방봉"
+
+  #특성
+
+
+  #정당
+  #LAO_fascism_party:0 ""
+  #LAO_fascism_party_long:0 ""
+  LAO_democratic_party:0 "라오스 국민진보당"
+  LAO_democratic_party_long:0 "라오스 국민진보당"
+  LAO_communism_party:0 "라오인민혁명당"
+  LAO_communism_party_long:0 "라오인민혁명당"
+  LAO_neutrality_party:0 "쿤 로"
+  LAO_neutrality_party_long:0 "쿤 로"
+
+  #국명
+  #LAO_fascism:0 "라오스 제국"
+  #LAO_fascism_DEF:0 "라오스 제국"
+  LAO_democratic:0 "라오스 왕국"
+  LAO_democratic_DEF:0 "라오스 왕국"
+  LAO_neutrality:0 "라오스 왕국"
+  LAO_neutrality_DEF:0 "라오스 왕국"
+  LAO_communism:0 "라오 인민 민주 공화국"
+  LAO_communism_DEF:0 "라오 인민 민주 공화국"
+  LAO_fascism_ADJ:0 "라오스"
+  LAO_democratic_ADJ:0 "라오스"
+  LAO_neutrality_ADJ:0 "라오스"
+  LAO_communism_ADJ:0 "라오스"
+  LAO:0 "라오스"
+  LAO_DEF:0 "라오스"
+  LAO_ADJ:0 "라오스"
+
+  #중점
+
+  ###결정###
+
+
+  ###이벤트###
+
+  #국민정신

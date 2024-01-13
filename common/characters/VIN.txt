@@ -94,6 +94,8 @@ characters = {
 
 	#베트남
 
+	#공산주의
+
 	VIN_Ho_Chi_Minh = {
 		name = VIN_Ho_Chi_Minh
 		portraits = {
@@ -107,6 +109,118 @@ characters = {
 			expire = "1969.9.2.1"
 		}
 	}
+	
+	VIN_Vo_Nguyen_Giap={
+		name=VIN_Vo_Nguyen_Giap
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Vo_Nguyen_Giap.png"
+				small = "gfx/interface/ideas/VIN/VIN_Vo_Nguyen_Giap.png"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trickster ranger }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	VIN_Hoang_Van_Thai={
+		name=VIN_Hoang_Van_Thai
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Hoang_Van_Thai.png"
+				small = "gfx/interface/ideas/VIN/VIN_Hoang_Van_Thai.png"
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_cautious }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	VIN_Le_Trong_Tan={ #인도차이나 군 복무-44년 베트민 가입
+		name=VIN_Le_Trong_Tan
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Le_Trong_Tan.png"
+				small = "gfx/interface/ideas/VIN/VIN_Le_Trong_Tan.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	VIN_Chu_Huy_Man={ #1930 붉은 자위청년대 응에띤 소비에트 봉기
+		name=VIN_Chu_Huy_Man
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Chu_Huy_Man.png"
+				small = "gfx/interface/ideas/VIN/VIN_Chu_Huy_Man.png"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	VIN_Vuong_Thua_Vu={ #37 황포군관학교-> 국민당의 공산당숙청피해 베트남왔음
+		name=VIN_Vuong_Thua_Vu
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Vuong_Thua_Vu.png"
+				small = "gfx/interface/ideas/VIN/VIN_Vuong_Thua_Vu.png"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	#민주주의
+	
+	VIN_Nguyen_Van_Xuan={
+		name=VIN_Nguyen_Van_Xuan
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Van_Xuan.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Xuan.png"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
+
+	#민주주의
 
 	VIN_Ngo_Dinh_Diem = {
 		name = VIN_Ngo_Dinh_Diem
@@ -122,6 +236,8 @@ characters = {
 		}
 	}
 
+	#비동맹주의
+
 	VIN_Bao_Dai = {
 		name = VIN_Bao_Dai
 		portraits = {
@@ -135,6 +251,8 @@ characters = {
 			expire = "1997.7.31.1"
 		}
 	}
+
+	#파시즘
 
 	VIN_Tran_Trong_Kim = {
 		name = VIN_Tran_Trong_Kim

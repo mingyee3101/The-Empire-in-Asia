@@ -1,0 +1,47 @@
+characters = {
+
+	############지도자############
+
+	LAO_Sisavang_Vong = {
+		name = LAO_Sisavang_Vong
+		portraits = {
+			army={
+				large = "gfx/leaders/LAO/Portrait_Sisavang_Vong.png"
+				small = "gfx/interface/ideas/LAO/LAO_Sisavang_Vong.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	LAO_Souvanna_Phouma = {
+		name = LAO_Souvanna_Phouma
+		portraits = {
+			army={
+				large = "gfx/leaders/LAO/Portrait_Souvanna_Phouma.png"
+				small = "gfx/interface/ideas/LAO/LAO_Souvanna_Phouma.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	LAO_Souphanouvong = {
+		name = LAO_Souphanouvong
+		portraits = {
+			army={
+				large = "gfx/leaders/LAO/Portrait_Souphanouvong.png"
+				small = "gfx/interface/ideas/LAO/LAO_Souphanouvong.png"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

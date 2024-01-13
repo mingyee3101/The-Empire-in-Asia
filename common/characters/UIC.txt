@@ -84,10 +84,10 @@ characters = {
 		navy_leader={
 			traits={ navy_career_officer cruiser_captain }
 			skill=3
-			attack_skill=2
+			attack_skill=3
 			defense_skill=3
-			maneuvering_skill=2
-			coordination_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
 		}	
 	}
 
@@ -110,10 +110,10 @@ characters = {
 
 		corps_commander={
 			traits={ war_hero career_officer desert_fox }
-			skill=3
+			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=2
+			defense_skill=4
+			planning_skill=3
 			logistics_skill=2
 		}
 	}
@@ -142,7 +142,7 @@ characters = {
 		}
 
 		corps_commander={
-			traits={ war_hero career_officer jungle_rat }
+			traits={ career_officer jungle_rat }
 			skill=3
 			attack_skill=1
 			defense_skill=4
@@ -161,7 +161,7 @@ characters = {
 		}
 
 		corps_commander={
-			traits={ war_hero }
+			traits={ }
 			skill=2
 			attack_skill=1
 			defense_skill=3
@@ -180,7 +180,7 @@ characters = {
 		}
 
 		corps_commander={
-			traits={ war_hero infantry_leader }
+			traits={ infantry_leader }
 			skill=1
 			attack_skill=1
 			defense_skill=1

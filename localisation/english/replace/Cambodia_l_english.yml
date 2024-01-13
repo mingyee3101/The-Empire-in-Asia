@@ -1,0 +1,68 @@
+﻿l_english:
+
+  #####인물
+  ###민주주의
+  #지도자
+  CAM_Sisowath_Youtevong:0 "시소와스 유티봉"
+
+  #정치고문
+  CAM_Hem_Chieu:0 "헴 치에우" #캄보디아 민족 영웅
+
+  ###공산주의
+  #지도자
+  CAM_Son_Ngoc_Minh:0 "손 응옥 민"
+  CAM_Tou_Samouth:0 "투 사무스"
+
+  #장군
+
+  #제독
+
+  #공군
+
+  #이론가
+
+  #정치고문
+
+  ###비동맹주의
+  #지도자
+  CAM_Sisowath_Monivong:0 "시소와스 모니봉"
+
+  #특성
+
+
+  #정당
+  #CAM_fascism_party:0 ""
+  #CAM_fascism_party_long:0 ""
+  CAM_democratic_party:0 "캄보디아 민주당" #사회주의
+  CAM_democratic_party_long:0 "캄보디아 민주당"
+  CAM_communism_party:0 "캄푸치아인민혁명당"
+  CAM_communism_party_long:0 "캄푸치아인민혁명당"
+  CAM_neutrality_party:0 "시소와스 왕가"
+  CAM_neutrality_party_long:0 "시소와스 왕가"
+  #CAM_neutrality_party:0 "노로돔 왕가"
+
+  #국명
+  #CAM_fascism:0 "크메르 제국"
+  #CAM_fascism_DEF:0 "크메르 제국"
+  CAM_democratic:0 "캄보디아 공화국"
+  CAM_democratic_DEF:0 "캄보디아 공화국"
+  CAM_neutrality:0 "캄보디아 왕국"
+  CAM_neutrality_DEF:0 "캄보디아 왕국"
+  CAM_communism:0 "민주 캄푸치아"
+  CAM_communism_DEF:0 "민주 캄푸치아"
+  CAM_fascism_ADJ:0 "캄보디아"
+  CAM_democratic_ADJ:0 "캄보디아"
+  CAM_neutrality_ADJ:0 "캄보디아"
+  CAM_communism_ADJ:0 "캄보디아"
+  CAM:0 "캄보디아"
+  CAM_DEF:0 "캄보디아"
+  CAM_ADJ:0 "캄보디아"
+
+  #중점
+
+  ###결정###
+
+
+  ###이벤트###
+
+  #국민정신

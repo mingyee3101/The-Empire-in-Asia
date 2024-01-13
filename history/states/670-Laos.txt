@@ -10,7 +10,7 @@ state={
 		owner = UIC
 		add_core_of = LAO
 		victory_points = {
-			1464 1
+			1464 10
 		}
 		buildings = {
 			infrastructure = 1

@@ -5,6 +5,9 @@
   #지도자
   VIN_Ngo_Dinh_Diem:0 "응오딘지엠"
 
+  #장군
+  VIN_Nguyen_Van_Xuan:0 "응우옌반쑤언" #45년 Quan năm(Đại tá) 대령~준장 사이
+
   #정치고문
   VIN_bui_quang_chieu:0 "부이꽝찌에우"
   VIN_nguyen_van_thinh:0 "응우옌반틴"
@@ -14,6 +17,11 @@
   VIN_Ho_Chi_Minh:0 "호찌민"
 
   #장군
+  VIN_Vo_Nguyen_Giap:0 "보응우옌잡"
+  VIN_Hoang_Van_Thai:0 "호앙반타이"
+  VIN_Le_Trong_Tan:0 "레쫑떤"
+  VIN_Chu_Huy_Man:0 "추후이먼"
+  VIN_Vuong_Thua_Vu:0 "브엉트어부"
 
   #제독
 
@@ -22,6 +30,8 @@
   #이론가
 
   #정치고문
+  VIN_Le_Duan:0 "레주언"
+  VIN_Truong_Chinh:0 "쯔엉찐"
 
   ###비동맹주의
   VIN_Bao_Dai:0 "바오다이"
@@ -37,8 +47,8 @@
   VIN_fascism_party_long:0 "대월국가사회당"
   VIN_democratic_party:0 "베트남 국민당"
   VIN_democratic_party_long:0 "베트남 국민당"
-  VIN_communism_party:0 "베트남 공산당"
-  VIN_communism_party_long:0 "베트남 공산당"
+  VIN_communism_party:0 "베트남 독립동맹회" #베트남 공산당
+  VIN_communism_party_long:0 "베트남 독립동맹회"
   VIN_neutrality_party:0 "응우옌 왕조"
   VIN_neutrality_party_long:0 "응우옌 왕조"
 
