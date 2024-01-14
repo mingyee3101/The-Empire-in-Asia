@@ -1,0 +1,136 @@
+focus_tree = {
+	id = xsm_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = XSM
+		}
+	}
+	default = no
+
+	focus = {
+		id = XSM_The_fate_of_a_warlord
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 29
+		y = 0
+
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+
+	#공산당
+	focus = {
+		id = XSM_Cooperation_with_the_Communist_Party
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 5
+		prerequisite = {
+			focus = XSM_The_fate_of_a_warlord
+		}
+		mutually_exclusive = {
+			focus = XSM_Warlord_rule_continues
+		}
+		x = -10
+		y = 2
+		relative_position_id = XSM_The_fate_of_a_warlord
+
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+
+	#군벌
+	focus = {
+		id = XSM_Warlord_rule_continues
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 5
+		prerequisite = {
+			focus = XSM_The_fate_of_a_warlord
+		}
+		mutually_exclusive = {
+			focus = XSM_cooperation_with_the_Kuomintang
+			focus = XSM_Cooperation_with_the_Communist_Party
+		}
+		relative_position_id = XSM_The_fate_of_a_warlord
+		x = 0
+		y = 2
+
+		completion_reward = {
+			add_ideas = XSM_Warlord_rule_continues
+		}
+
+	}
+
+	focus = {
+		id = XSM_Army_reinforcement
+		icon = GFX_focus_SWE_bicycle
+		cost = 5
+		prerequisite = {
+			focus = XSM_Warlord_rule_continues
+		}
+		x = 0
+		y = 3
+		relative_position_id = XSM_Warlord_rule_continues
+
+		completion_reward = {
+			add_timed_idea = { idea = XSM_Army_reinforcement days = 365 }
+		}
+
+	}
+
+	focus = {
+		id = XSM_quiet_preparation
+		icon = GFX_goal_unknown
+		cost = 7.1
+		prerequisite = {
+			focus = XSM_Army_reinforcement
+		}
+		mutually_exclusive = {
+			focus = XSM_Contact_with_Eastern_Empires
+		}
+		relative_position_id = XSM_Army_reinforcement
+		x = -2
+		y = 4
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+
+	}
+
+	focus = {
+		id = XSM_Contact_with_Eastern_Empires
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 7.1 #50
+		prerequisite = {
+			focus = XSM_Army_reinforcement
+		}
+		mutually_exclusive = {
+			focus = XSM_quiet_preparation
+		}
+		relative_position_id = XSM_Army_reinforcement
+		x = 2
+		y = 4
+
+	}
+
+	#국민당
+	focus = {
+		id = XSM_cooperation_with_the_Kuomintang
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 5
+		prerequisite = {
+			focus = XSM_The_fate_of_a_warlord
+		}
+		mutually_exclusive = {
+			focus = XSM_Warlord_rule_continues
+		}
+		x = 10
+		y = 2
+		relative_position_id = XSM_The_fate_of_a_warlord
+
+	}
+}

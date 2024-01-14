@@ -3,10 +3,6 @@
  #인물
  SHX_fu_zuoyi:0 "푸쭤이"
 
- #특성
- nodding_doll:0 "오뚝이"
- model_governor:0 "모범 장관"
-
  #정당
  SHX_fascism_party:0 "국민당"
  SHX_fascism_party_long:0 "국민당"

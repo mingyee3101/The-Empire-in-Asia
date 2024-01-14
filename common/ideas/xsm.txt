@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+
+		XSM_Warlord_rule_continues = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		XSM_Army_reinforcement = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				training_time_army_factor = -0.05
+			}
+		}
+
+	}
+}

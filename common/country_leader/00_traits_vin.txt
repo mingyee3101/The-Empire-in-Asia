@@ -1,0 +1,14 @@
+leader_traits = {
+
+	revolutionary_leader = {
+		random = no
+		sprite = 13
+
+		communism_drift = 0.05
+		war_support_factor = 0.05
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1
+		resistance_target_on_our_occupied_states = 0.1
+		resistance_decay_on_our_occupied_states = -0.1
+	}
+
+}

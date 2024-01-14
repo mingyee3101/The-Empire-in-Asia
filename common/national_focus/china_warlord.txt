@@ -10,7 +10,6 @@
 				tag = YUN
 				tag = SIK
 				tag = SHX
-				tag = XSM
 				tag = TGS
 				tag = HCP
 				tag = SDC

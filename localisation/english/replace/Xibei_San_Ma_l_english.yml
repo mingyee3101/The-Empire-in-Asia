@@ -1,0 +1,24 @@
+﻿l_english:
+
+ #중점
+ #xsm_focus:0 "서북삼마 중점계통도"
+ XSM_The_fate_of_a_warlord:0 "군벌의 운명"
+ XSM_The_fate_of_a_warlord_desc:0 "중국 대륙은 공산당과 국민당이 대립하고 있으며 일본또한 중국대륙을 호시탐탐 노리고 있습니다 우리 서북삼마는 더이상 시간을 끌지말고 이제 결정해야될 시간이 왔습니다."
+ 
+ #공산당
+ XSM_Cooperation_with_the_Communist_Party:0 "공산당과의 협력"
+ XSM_Cooperation_with_the_Communist_Party_desc:0 "공산당의 힘은 날이갈수록 커져가고 있습니다 우리는 이 공산당과 협력해야 될것입니다."
+
+ #군벌
+ XSM_Warlord_rule_continues:0 "군벌통치 지속"
+ XSM_Warlord_rule_continues_desc:0 "서북삼마를 지키려면 군대는 강력한 통치권이 있어야 합니다 그리고 우리는 중국 공산당 과 중국 국민당 그 누구와도 협력하면 안됩니다."
+ XSM_Army_reinforcement:0 "육군강화"
+ XSM_Army_reinforcement_desc:0 "우리의 적인 공산당과 국민당의 대항하려면 서구의 열강만큼은 아니여여도 강력한 육군이 필요할것입니다."
+ XSM_quiet_preparation:0 "조용한 준비"
+ XSM_quiet_preparation_desc:0 "최근 세계정새로 봐서는 우리는 아무도 믿을수 없습니다 우리의 작전을 조용히 혼자 준비해야 됩니다"
+ XSM_Contact_with_Eastern_Empires:0 "동방의 제국과 함께"
+ XSM_Contact_with_Eastern_Empires_desc:0 "최근 들리는 소문에 이하면 일본이 중국대륙을 노리고 있다고 합니다 만약 우리가 일본과 접촉한다면 우리의 목적을 달성할수도 있습니다."
+
+ #국민당
+ XSM_cooperation_with_the_Kuomintang:0 "국민당과 협력"
+ XSM_cooperation_with_the_Kuomintang_desc:0 "공산당의 위헙은 계속되고 있습니다 우리는 이를 타개하기 위해 국민당과 협력해야 됩니다."

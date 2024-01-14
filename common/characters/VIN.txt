@@ -1,8 +1,8 @@
 characters = {
 
-	############지도자############
+	############인도차이나############
 
-	#인도차이나
+	############지도자############
 
 	VIN_nguyen_van_thinh={
 		name=VIN_nguyen_van_thinh
@@ -92,9 +92,31 @@ characters = {
 		}
 	}
 
-	#베트남
+	############장군############
+	
+	VIN_Nguyen_Van_Xuan={
+		name=VIN_Nguyen_Van_Xuan
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Van_Xuan.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Xuan.png"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
 
-	#공산주의
+	############베트남############
+
+	############공산주의############
+
+	############지도자############
 
 	VIN_Ho_Chi_Minh = {
 		name = VIN_Ho_Chi_Minh
@@ -109,6 +131,8 @@ characters = {
 			expire = "1969.9.2.1"
 		}
 	}
+
+	############장군############
 	
 	VIN_Vo_Nguyen_Giap={
 		name=VIN_Vo_Nguyen_Giap
@@ -200,27 +224,115 @@ characters = {
 		}
 	}
 
-	#민주주의
-	
-	VIN_Nguyen_Van_Xuan={
-		name=VIN_Nguyen_Van_Xuan
+	############정치고문############
+
+	VIN_Le_Duan={
+		name=VIN_Le_Duan
 		portraits={
-			army={
-				large = "gfx/leaders/VIN/Portrait_Nguyen_Van_Xuan.png"
-				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Xuan.png"
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Le_Duan.png"
 			}
 		}
-		corps_commander={
-			traits={ career_officer }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Le_Duan
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				revolutionary_leader
+			}
 		}
 	}
 
-	#민주주의
+	VIN_Truong_Chinh={
+		name=VIN_Truong_Chinh
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Truong_Chinh.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Truong_Chinh
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+
+	VIN_Pham_Van_dong={
+		name=VIN_Pham_Van_dong
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Pham_Van_dong.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Pham_Van_dong
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+	VIN_Nguyen_Van_Linh={
+		name=VIN_Nguyen_Van_Linh
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Linh.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Nguyen_Van_Linh
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				compassionate_gentleman #captain_of_industry #베트남의 고르바초프 #시장경제화, 중,미 관계개선
+			}
+		}
+	}
+
+	VIN_Hoang_Minh_Dao={
+		name=VIN_Hoang_Minh_Dao
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Hoang_Minh_Dao.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Hoang_Minh_Dao
+			available = {
+				has_intelligence_agency = yes 
+			}
+			allowed = {
+				original_tag = VIN
+				has_dlc = "La Resistance"
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+
+	############민주주의############
+
+	############지도자############
 
 	VIN_Ngo_Dinh_Diem = {
 		name = VIN_Ngo_Dinh_Diem
@@ -236,7 +348,31 @@ characters = {
 		}
 	}
 
-	#비동맹주의
+	############정치고문############
+
+	VIN_Tran_Van_Van={
+		name=VIN_Tran_Van_Van
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Tran_Van_Van.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Tran_Van_Van
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				economic_organizer
+			}
+		}
+	}
+
+	############비동맹주의############
+
+	############지도자############
 
 	VIN_Bao_Dai = {
 		name = VIN_Bao_Dai
@@ -252,7 +388,9 @@ characters = {
 		}
 	}
 
-	#파시즘
+	############파시즘############
+
+	############지도자############
 
 	VIN_Tran_Trong_Kim = {
 		name = VIN_Tran_Trong_Kim
@@ -267,7 +405,5 @@ characters = {
 			expire = "1953.12.2.1"
 		}
 	}
-
-	############정치고문############
 
 }
