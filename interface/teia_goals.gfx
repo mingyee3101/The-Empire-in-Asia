@@ -7,4 +7,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_ICU_the_medals_of_french_indochina.png"	
 	}
 
+	#만주국
+
+	SpriteType = { 
+		name = "GFX_MAN_an_unexpected_choice-426"
+		texturefile = "gfx/interface/goals/GFX_MAN_an_unexpected_choice-426.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_MAN_ilbonyiceongnara-70"
+		texturefile = "gfx/interface/goals/GFX_MAN_ilbonyiceongnara-70.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_MAN_bogjong-59"
+		texturefile = "gfx/interface/goals/GFX_MAN_bogjong-59.dds"
+	}
+
 }
