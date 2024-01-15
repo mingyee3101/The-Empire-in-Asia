@@ -1,0 +1,247 @@
+add_namespace = xsm
+
+country_event = {
+	id = xsm.1
+	title = xsm.1.t
+	desc = xsm.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.1.a
+		ai_chance = {
+			base = 10
+		}
+		XSM = { country_event = { id = xsm.2 } }
+	}
+
+	option = {
+		name = xsm.1.b
+		ai_chance = {
+			base = 0
+		}
+		XSM = { country_event = { id = xsm.3 } }
+	}
+}
+
+country_event = {
+	id = xsm.2
+	title = xsm.2.t
+	desc = xsm.2.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.2.a
+		ai_chance = {
+			base = 10
+		}
+		give_guarantee = PRC
+		give_military_access = PRC
+		diplomatic_relation = {
+			country = PRC
+			relation = non_aggression_pact
+			active = yes
+		}
+		#마오쩌둥주의중점 set_country_flag = 
+	}
+}
+
+country_event = {
+	id = xsm.3
+	title = xsm.3.t
+	desc = xsm.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.3.a
+		ai_chance = {
+			base = 10
+		}
+		#스탈린주의중점 set_country_flag = 
+	}
+}
+
+country_event = {
+	id = xsm.4
+	title = xsm.4.t
+	desc = xsm.4.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.4.a
+		ai_chance = {
+			base = 10
+		}
+		XSM = { country_event = { id = xsm.5 } }
+	}
+}
+
+country_event = {
+	id = xsm.5
+	title = xsm.5.t
+	desc = xsm.5.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.5.a
+		ai_chance = {
+			base = 10
+		}
+		give_guarantee = CHI
+		give_military_access = CHI
+		diplomatic_relation = {
+			country = CHI
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = {
+	id = xsm.6
+	title = xsm.6.t
+	desc = xsm.6.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.6.a
+		ai_chance = {
+			base = 0
+		}
+		XSM = { country_event = { id = xsm.7 } }
+	}
+
+	option = {
+		name = xsm.6.a
+		ai_chance = {
+			base = 0
+		}
+		XSM = { country_event = { id = xsm.8 } }
+	}
+
+	option = {
+		name = xsm.6.a
+		ai_chance = {
+			base = 10
+		}
+		XSM = { country_event = { id = xsm.9 } }
+	}
+}
+
+country_event = { #일본의 협력 수락!
+	id = xsm.7
+	title = xsm.7.t
+	desc = xsm.7.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.7.a
+		ai_chance = {
+			base = 10
+		}
+		give_guarantee = JAP
+		give_military_access = JAP
+		diplomatic_relation = {
+			country = JAP
+			relation = non_aggression_pact
+			active = yes
+		}
+		#일본이 중국에게 선전포고를 한다면 자동으로 전쟁에 참여합니다 만약 일본이 이미 중국하고 전쟁중이라면 이밴트가 수락되는 즉시 전쟁에 참여합니다
+	}
+}
+
+country_event = { #일본의 거부
+	id = xsm.8
+	title = xsm.8.t
+	desc = xsm.8.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.8.a
+		ai_chance = {
+			base = 10
+		}
+		#이제 일본에 대한 반격 중점을 찍을수 있습니다
+		add_timed_idea = { idea = XSM_japan_refuse days = 140 }
+	}
+}
+
+country_event = { #일본의 조건 추가
+	id = xsm.9
+	title = xsm.9.t
+	desc = xsm.9.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.9.a
+		ai_chance = {
+			base = 10
+		}
+		JAP = { country_event = { id = xsm.10 } }
+	}
+
+	option = {
+		name = xsm.9.b
+		ai_chance = {
+			base = 0
+		}
+		JAP = { country_event = { id = xsm.11 } }
+	}
+}
+
+country_event = { #서북삼마의 요구 수락
+	id = xsm.10
+	title = xsm.10.t
+	desc = xsm.10.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.10.a
+		ai_chance = {
+			base = 10
+		}
+		JAP = { set_autonomy = { target = XSM autonomy_state = autonomy_wtt_imperial_subject } }
+	}
+}
+
+country_event = { #서북삼마의 요구 거부
+	id = xsm.11
+	title = xsm.11.t
+	desc = xsm.11.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.11.a
+		ai_chance = {
+			base = 10
+		}
+		#서북삼마에 전쟁 목표
+		JAP = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = XSM
+			}
+		}
+	}
+}

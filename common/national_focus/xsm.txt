@@ -30,7 +30,7 @@ focus_tree = {
 			focus = XSM_The_fate_of_a_warlord
 		}
 		mutually_exclusive = {
-			focus = XSM_Warlord_rule_continues
+			focus = XSM_Warlord_rule_continues focus = XSM_cooperation_with_the_Kuomintang
 		}
 		x = -10
 		y = 2
@@ -38,6 +38,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 20
+			PRC = { country_event = { id = xsm.1 } }
 		}
 	}
 
@@ -115,6 +116,10 @@ focus_tree = {
 		x = 2
 		y = 4
 
+		completion_reward = {
+			JAP = { country_event = { id = xsm.6 } }
+		}
+
 	}
 
 	#국민당
@@ -126,11 +131,16 @@ focus_tree = {
 			focus = XSM_The_fate_of_a_warlord
 		}
 		mutually_exclusive = {
+			focus = XSM_Cooperation_with_the_Communist_Party
 			focus = XSM_Warlord_rule_continues
 		}
 		x = 10
 		y = 2
 		relative_position_id = XSM_The_fate_of_a_warlord
+
+		completion_reward = {
+			CHI = { country_event = { id = xsm.4 } }
+		}
 
 	}
 }

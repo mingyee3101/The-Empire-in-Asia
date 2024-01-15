@@ -27,5 +27,19 @@ ideas = {
 			}
 		}
 
+		XSM_japan_refuse = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
 	}
 }
