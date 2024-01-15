@@ -91,23 +91,32 @@ if = {
 	}
 }
 
-#지도자
+###지도자###
+#공산
 recruit_character = VIN_Ho_Chi_Minh
+
+#민주
 recruit_character = VIN_Ngo_Dinh_Diem
+recruit_character = VIN_Tran_Van_Huong
+
+#비동맹
 recruit_character = VIN_Bao_Dai
+
+#파시즘
 recruit_character = VIN_Tran_Trong_Kim
 
-#장군
+###장군###
 #공산
 recruit_character = VIN_Vo_Nguyen_Giap
 recruit_character = VIN_Hoang_Van_Thai
 recruit_character = VIN_Le_Trong_Tan
 recruit_character = VIN_Chu_Huy_Man
 recruit_character = VIN_Vuong_Thua_Vu
+recruit_character = VIN_Nguyen_Binh
 
 #recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
 
-#정치고문
+###정치고문###
 #공산
 recruit_character = VIN_Le_Duan
 recruit_character = VIN_Truong_Chinh
@@ -117,6 +126,8 @@ recruit_character = VIN_Hoang_Minh_Dao
 
 #민주
 recruit_character = VIN_Tran_Van_Van
+recruit_character = VIN_Ngo_Dinh_Nhu
+recruit_character = VIN_Tran_Le_Xuan
 
 set_politics = {
 	ruling_party = democratic

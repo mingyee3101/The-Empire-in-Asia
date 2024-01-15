@@ -11,6 +11,10 @@
 
   #필리핀
   high_commissioner:0 "고등판무관"
-  
+
   #베트남
   revolutionary_leader:0 "혁명 지도자"
+  liberal_politician:0 "자유주의 정치가"
+  dictator_Ngo_Dinh_Diem:0 "독재자"
+  co_van_chinh_tri:0 "정치고문"
+  dragon_lady:0 "드래곤 레이디"

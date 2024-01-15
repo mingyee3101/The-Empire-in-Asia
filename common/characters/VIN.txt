@@ -161,7 +161,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ trickster trait_cautious }
+			traits={ trickster }
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -216,6 +216,24 @@ characters = {
 		}
 		corps_commander={
 			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	VIN_Nguyen_Binh={ #48년 중장 #베트남 인민군 최초 중장
+		name=VIN_Nguyen_Binh
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Binh.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Binh.png"
+			}
+		}
+		corps_commander={
+			traits={ militias_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -345,12 +363,53 @@ characters = {
 		country_leader = {
 			ideology = conservatism
 			expire = "1963.11.2.1"
+			traits = {
+				anti_communist
+				dictator_Ngo_Dinh_Diem
+			}
+		}
+	}
+
+	VIN_Tran_Van_Huong={ #부흥당
+		name=VIN_Tran_Van_Huong
+		portraits={
+			civilian={
+				large = "gfx/leaders/VIN/Portrait_VIN_Tran_Van_Huong.png"
+				small = "gfx/interface/ideas/VIN/VIN_Tran_Van_Huong.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Tran_Van_Huong
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = democratic
+				not = {
+					has_country_leader = {
+						character = VIN_Ngo_Dinh_Diem
+					}
+				}
+				is_country_leader = no
+			}
+			traits = {
+				liberal_politician
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1982.1.27.1"
+			traits = {
+				liberal_politician
+			}
 		}
 	}
 
 	############정치고문############
 
-	VIN_Tran_Van_Van={
+	VIN_Tran_Van_Van={ #부흥당
 		name=VIN_Tran_Van_Van
 		portraits={
 			civilian={
@@ -364,9 +423,70 @@ characters = {
 			allowed = {
 				original_tag = VIN
 			}
+			available = {
+				has_government = democratic
+				not = {
+					has_country_leader = {
+						character = VIN_Ngo_Dinh_Diem
+					}
+				}
+			}
 			traits = {
 				economic_organizer
 			}
+		}
+	}
+
+	VIN_Ngo_Dinh_Nhu={ #근로인격혁명당
+		name=VIN_Ngo_Dinh_Nhu
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Ngo_Dinh_Nhu.png"
+			}
+		}
+		advisor={
+			cost = 50
+			slot = political_advisor
+			idea_token = VIN_Ngo_Dinh_Nhu
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_country_leader = {
+					character = VIN_Ngo_Dinh_Diem
+				}
+			}
+			traits = {
+				co_van_chinh_tri
+			}
+			can_be_fired = no
+		}
+	}
+
+	VIN_Tran_Le_Xuan={ #근로인격혁명당
+		name=VIN_Tran_Le_Xuan
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Tran_Le_Xuan.png"
+			}
+		}
+		advisor={
+			cost = 0
+			slot = political_advisor
+			idea_token = VIN_Tran_Le_Xuan
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_country_leader = {
+					character = VIN_Ngo_Dinh_Diem
+				}
+				has_idea = VIN_Ngo_Dinh_Nhu
+			}
+			traits = {
+				dragon_lady
+			}
+			can_be_fired = no
 		}
 	}
 

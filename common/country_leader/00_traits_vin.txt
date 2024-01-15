@@ -11,4 +11,37 @@ leader_traits = {
 		resistance_decay_on_our_occupied_states = -0.1
 	}
 
+	liberal_politician = {
+		random = no
+		sprite = 13
+
+		democratic_drift = 0.05
+		stability_factor = 0.2
+	}
+
+	dictator_Ngo_Dinh_Diem = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.2
+		war_support_factor = -0.05
+		political_power_factor = 0.1
+	}
+
+	co_van_chinh_tri = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.1
+		political_power_factor = 0.15
+	}
+
+	dragon_lady = {
+		random = no
+		sprite = 13
+
+		stability_factor = -0.05
+		political_power_factor = 0.1
+	}
+
 }

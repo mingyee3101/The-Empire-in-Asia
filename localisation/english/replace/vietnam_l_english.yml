@@ -12,6 +12,9 @@
   VIN_bui_quang_chieu:0 "부이꽝찌에우"
   VIN_nguyen_van_thinh:0 "응우옌반틴"
   VIN_Tran_Van_Van:0 "쩐반반"
+  VIN_Tran_Van_Huong:0 "쩐반흐엉"
+  VIN_Ngo_Dinh_Nhu:0 "응오딘뉴"
+  VIN_Tran_Le_Xuan:0 "쩐레쑤언"
 
   ###공산주의
   #지도자
@@ -23,6 +26,7 @@
   VIN_Le_Trong_Tan:0 "레쫑떤"
   VIN_Chu_Huy_Man:0 "추후이먼"
   VIN_Vuong_Thua_Vu:0 "브엉트어부"
+  VIN_Nguyen_Binh:0 "응우옌빈"
 
   #제독
 
@@ -46,8 +50,8 @@
   #정당
   VIN_fascism_party:0 "대월국가사회당"
   VIN_fascism_party_long:0 "대월국가사회당"
-  VIN_democratic_party:0 "베트남 국민당"
-  VIN_democratic_party_long:0 "베트남 국민당"
+  VIN_democratic_party:0 "근로인격혁명당"
+  VIN_democratic_party_long:0 "근로인격혁명당"
   VIN_communism_party:0 "베트남 독립동맹회" #베트남 공산당
   VIN_communism_party_long:0 "베트남 독립동맹회"
   VIN_neutrality_party:0 "응우옌 왕조"
