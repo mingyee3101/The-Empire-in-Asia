@@ -258,6 +258,9 @@ characters = {
 			allowed = {
 				original_tag = VIN
 			}
+			available = {
+				has_government = communism
+			}
 			traits = {
 				revolutionary_leader
 			}
@@ -277,6 +280,9 @@ characters = {
 			idea_token = VIN_Truong_Chinh
 			allowed = {
 				original_tag = VIN
+			}
+			available = {
+				has_government = communism
 			}
 			traits = {
 				communist_revolutionary
@@ -298,6 +304,9 @@ characters = {
 			allowed = {
 				original_tag = VIN
 			}
+			available = {
+				has_government = communism
+			}
 			traits = {
 				silent_workhorse
 			}
@@ -318,6 +327,9 @@ characters = {
 			allowed = {
 				original_tag = VIN
 			}
+			available = {
+				has_government = communism
+			}
 			traits = {
 				compassionate_gentleman #captain_of_industry #베트남의 고르바초프 #시장경제화, 중,미 관계개선
 			}
@@ -336,7 +348,8 @@ characters = {
 			slot = political_advisor
 			idea_token = VIN_Hoang_Minh_Dao
 			available = {
-				has_intelligence_agency = yes 
+				has_intelligence_agency = yes
+				has_government = communism
 			}
 			allowed = {
 				original_tag = VIN
@@ -344,6 +357,29 @@ characters = {
 			}
 			traits = {
 				head_of_intelligence
+			}
+		}
+	}
+
+	VIN_Pham_Ngoc_Thach={
+		name=VIN_Pham_Ngoc_Thach
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Pham_Ngoc_Thach.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Pham_Ngoc_Thach
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				bo_truong_bo_y_te
 			}
 		}
 	}
@@ -505,6 +541,31 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			expire = "1997.7.31.1"
+		}
+	}
+
+	############정치고문############
+
+	VIN_Nguyen_Phuc_Buu_Loc={
+		name=VIN_Nguyen_Phuc_Buu_Loc
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Phuc_Buu_Loc.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Nguyen_Phuc_Buu_Loc
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				staunch_monarchist
+			}
 		}
 	}
 

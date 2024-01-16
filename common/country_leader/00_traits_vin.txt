@@ -44,4 +44,15 @@ leader_traits = {
 		political_power_factor = 0.1
 	}
 
+	bo_truong_bo_y_te = {
+		random = no
+		monthly_population = 0.1
+		army_morale_factor = 0.1
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

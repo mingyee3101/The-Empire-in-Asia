@@ -61,7 +61,15 @@ characters = {
 			available = {
 				NOT = { 
 					has_idea = UIC_jean_decoux_navy_chief
+					has_government = communism
 				}
+				UIC = { is_subject_of = FRA }
+			}
+			visible = {
+				NOT ={
+					has_government = communism
+					}
+				UIC = { is_subject_of = FRA }
 			}
 			traits = { naval_theorist }
 		}
@@ -71,7 +79,15 @@ characters = {
 			available = {
 				NOT = { 
 					has_idea = UIC_jean_decoux_theorist
+					has_government = communism
 				}
+				UIC = { is_subject_of = FRA }
+			}
+			visible = {
+				NOT ={
+					has_government = communism
+					}
+				UIC = { is_subject_of = FRA }
 			}
 			traits = {
 				navy_chief_decisive_battle_2
@@ -136,6 +152,24 @@ characters = {
 			allowed = {
 				original_tag = UIC
 			}
+			available = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
+			visible = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
 			traits = {
 				army_chief_defensive_2
 			}
@@ -186,6 +220,46 @@ characters = {
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
+		}
+	}
+
+	#정치고문
+
+	UIC_Rene_schneyder={ #반비시프랑스-승진 거부함
+		name=UIC_Rene_schneyder
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/UIC/UIC_Rene_schneyder.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = UIC_Rene_schneyder
+			allowed = {
+				original_tag = UIC
+			}
+			available = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
+			visible = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
+			traits = {
+				silent_workhorse
+			}
 		}
 	}
 

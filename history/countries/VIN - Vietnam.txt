@@ -96,8 +96,8 @@ if = {
 recruit_character = VIN_Ho_Chi_Minh
 
 #민주
-recruit_character = VIN_Ngo_Dinh_Diem
-recruit_character = VIN_Tran_Van_Huong
+recruit_character = VIN_Ngo_Dinh_Diem #근로인격혁명당
+recruit_character = VIN_Tran_Van_Huong #부흥당
 
 #비동맹
 recruit_character = VIN_Bao_Dai
@@ -123,11 +123,15 @@ recruit_character = VIN_Truong_Chinh
 recruit_character = VIN_Pham_Van_dong
 recruit_character = VIN_Nguyen_Van_Linh
 recruit_character = VIN_Hoang_Minh_Dao
+recruit_character = VIN_Pham_Ngoc_Thach
 
 #민주
 recruit_character = VIN_Tran_Van_Van
 recruit_character = VIN_Ngo_Dinh_Nhu
 recruit_character = VIN_Tran_Le_Xuan
+
+#비동맹
+recruit_character = VIN_Nguyen_Phuc_Buu_Loc
 
 set_politics = {
 	ruling_party = democratic

@@ -93,6 +93,7 @@ recruit_character = VIN_nguyen_van_thinh
 
 #정치고문
 recruit_character = VIN_bui_quang_chieu
+recruit_character = UIC_Rene_schneyder
 
 #장군
 recruit_character = UIC_Jules_Antoine_Buhrer #중장
