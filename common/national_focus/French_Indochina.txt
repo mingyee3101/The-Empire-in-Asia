@@ -99,7 +99,7 @@ focus_tree = {
 	focus = {
 		id = UIC_suppression_of_rebellion
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_the_medals_of_french_indochina focus = UIC_prohibit_party }
+		prerequisite = { focus = UIC_prohibit_party }
 		cost = 10
 		x = 1
 		y = 1

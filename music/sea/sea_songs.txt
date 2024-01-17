@@ -377,17 +377,6 @@ music = {
 	}	
 }
 
-music = {
-	song = "Cung_nhau_ta_di_len"
-	modifier = {
-		original_tag = VIN
-		has_government = communism
-	}
-	chance = {
-		factor = 1
-	}	
-}
-
 ############ 전쟁 #############
 
 music = {

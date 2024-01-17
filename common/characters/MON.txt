@@ -1,6 +1,6 @@
 characters={
 	MON_anandyn_amar={
-		name="Anandyn Amar"
+		name=MON_anandyn_amar
 		portraits={
 			civilian={
 				large = "gfx/leaders/MON/Portrait_Anandyn_Amar.png"

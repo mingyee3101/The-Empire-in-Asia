@@ -892,11 +892,6 @@ HCP = { #기찰정무위원회
 	color_ui = rgb { 0 33 107 }
 }
 
-KMK = { #쿠물 칸국
-	color = rgb { 38 155 252 }
-	color_ui = rgb { 38 155 252 }
-}
-
 TGS = { #둥가니스탄
 	color = rgb { 218 37 29 }
 	color_ui = rgb { 218 37 29 }
@@ -918,11 +913,6 @@ SDC = { #산둥군벌
 }
 
 CSR = { #천변특별행정구
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
-}
-
-HSR = { #해남특별행정구
 	color = rgb { 0 33 107 }
 	color_ui = rgb { 0 33 107 }
 }

@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #인물
+ MEN_prince_demchugdongrub:0 "데므치그돈로브"
+
+
+ #정당
+ MEN_fascism_party:0 "몽강연합자치정부"
+ MEN_fascism_party_long:0 "몽강연합자치정부"
+ #MEN_democratic_party:0 ""
+ #MEN_democratic_party_long:0 ""
+ MEN_communism_party:0 "몽골 인민당"
+ MEN_communism_party_long:0 "몽골 인민당"
+ MEN_neutrality_party:0 "몽고지방자치정무위원회"
+ MEN_neutrality_party_long:0 "몽고지방자치정무위원회"
+
+ #국명
+ MEN_fascism:0 "몽강연합자치정부"
+ MEN_fascism_DEF:0 "몽강연합자치정부"
+ MEN_democratic:0 "몽강 공화국"
+ MEN_democratic_DEF:0 "몽강 공화국"
+ MEN_neutrality:0 "몽골지방자치정무위원회"
+ MEN_neutrality_DEF:0 "몽골지방자치정무위원회"
+ MEN_communism:0 "인민 몽강"
+ MEN_communism_DEF:0 "인민 몽강"
+ MEN_fascism_ADJ:0 "몽강"
+ MEN_democratic_ADJ:0 "몽강"
+ MEN_neutrality_ADJ:0 "몽강"
+ MEN_communism_ADJ:0 "몽강"
+ MEN:0 "몽강"
+ MEN_DEF:0 "몽강"
+ MEN_ADJ:0 "몽강"

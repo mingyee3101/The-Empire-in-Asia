@@ -1,5 +1,10 @@
 ﻿l_english:
 
+ #정당
+ GXC_neutrality_party:0 "국민당"
+ GXC_communism_party:0 "중국 공산당"
+ GXC_communism_party_long:0 "중국 공산당"
+
  #중점
  gxc_nagomin_ageu:0 "광시군벌의 미래"
  gxc_nagomin_ageu_desc:0 "리쭝런이 광시군벌을 통치합니다"

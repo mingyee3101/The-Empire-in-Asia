@@ -210,13 +210,6 @@ music = {
 	volume = 0.75
 }
 
-music = {
-	name = "Cung_nhau_ta_di_len"
-	file = "Cung_nhau_ta_di_len.ogg"
-	volume = 0.75
-}
-
-
 ############ 전쟁 #############
 
 music = {

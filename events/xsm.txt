@@ -39,7 +39,13 @@ country_event = {
 			base = 10
 		}
 		give_guarantee = PRC
+		PRC = {
+			give_guarantee = SHX
+		}
 		give_military_access = PRC
+		PRC = {
+			give_military_access = SHX
+		}
 		diplomatic_relation = {
 			country = PRC
 			relation = non_aggression_pact
@@ -243,5 +249,50 @@ country_event = { #서북삼마의 요구 거부
 			    target = XSM
 			}
 		}
+	}
+}
+
+country_event = {
+	id = xsm.12
+	title = xsm.12.t
+	desc = xsm.12.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.12.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_war_with = XSM
+			}
+		}
+		XSM = { country_event = { id = xsm.13 } }
+	}
+
+	option = {
+		name = xsm.12.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = xsm.13
+	title = xsm.13.t
+	desc = xsm.13.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = xsm.13.a
+		ai_chance = {
+			base = 10
+		}
+		#서북삼마가 중국이랑 전쟁할시 군벌도 전쟁을 선포합니다
 	}
 }
