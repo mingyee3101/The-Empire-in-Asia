@@ -42,6 +42,9 @@
   VIN_Hoang_Minh_Dao:0 "호앙민다오"
   VIN_Pham_Ngoc_Thach:0 "팜응옥타익"
 
+  ###트로츠키
+  VIN_Ta_Thu_Thau:0 "따투터우"
+
   ###비동맹주의
   VIN_Bao_Dai:0 "바오다이"
 
@@ -56,10 +59,10 @@
   VIN_fascism_party_long:0 "대월국가사회당"
   VIN_democratic_party:0 "대월부흥회" #Đại Việt Phục hưng Hội
   VIN_democratic_party_long:0 "대월부흥회"
-  VIN_communism_party:0 "베트남 독립동맹회" #베트남 공산당
-  VIN_communism_party_long:0 "베트남 독립동맹회"
-  VIN_neutrality_party:0 "응우옌 왕조"
-  VIN_neutrality_party_long:0 "응우옌 왕조"
+  VIN_communism_party:0 "베트남 공산당"
+  VIN_communism_party_long:0 "베트남 공산당"
+  VIN_neutrality_party:0 "응우옌 가문"
+  VIN_neutrality_party_long:0 "응우옌 가문"
 
   #국명
   VIN_fascism:0 "베트남 제국"

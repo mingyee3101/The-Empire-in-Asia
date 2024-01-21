@@ -43,6 +43,11 @@ spriteTypes = {
 		name = "GFX_ideology_social_democracy"
 		texturefile = "gfx/interface/ideologies/socialdemocracy.png"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_christian_democratic"
+		texturefile = "gfx/interface/ideologies/christian_democratic.png"
+	}
 	
 	#공산주의
 
@@ -69,6 +74,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_anarchist_communism"
 		texturefile = "gfx/interface/ideologies/anarchist_communism.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_trotskyism"
+		texturefile = "gfx/interface/ideologies/trotskyism.png"
 	}
 	
 	spriteType = {
@@ -266,11 +276,6 @@ spriteTypes = {
 		name = "GFX_ideology_UIC_conservatism"
 		texturefile = "gfx/interface/ideologies/uic_dlhdd.png"
 	}
-	
-	#spriteType = {
-	#	name = "GFX_ideology_UIC_leninism"
-	#	texturefile = "gfx/interface/ideologies/uic_cpi.png"
-	#}
 
 	#베트남
 	

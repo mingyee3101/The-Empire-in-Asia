@@ -37,9 +37,9 @@
   CAM_democratic_party_long:0 "캄보디아 민주당"
   CAM_communism_party:0 "캄푸치아인민혁명당"
   CAM_communism_party_long:0 "캄푸치아인민혁명당"
-  CAM_neutrality_party:0 "시소와스 왕가"
-  CAM_neutrality_party_long:0 "시소와스 왕가"
-  #CAM_neutrality_party:0 "노로돔 왕가"
+  CAM_neutrality_party:0 "시소와스 가문"
+  CAM_neutrality_party_long:0 "시소와스 가문"
+  #CAM_neutrality_party:0 "노로돔 가문"
 
   #국명
   #CAM_fascism:0 "크메르 제국"
