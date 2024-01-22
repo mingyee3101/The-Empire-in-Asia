@@ -2,6 +2,8 @@
 
 oob = "GDC_1936"
 
+set_cosmetic_tag = CHI_KMT
+
 recruit_character = GDC_Chen_Jitang
 
 # Starting tech

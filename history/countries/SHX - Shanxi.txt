@@ -2,6 +2,8 @@
 
 oob = "SHX_1936"
 
+set_cosmetic_tag = CHI_KMT
+
 set_stability = 0.7
 set_war_support = 0.4
 # Starting tech

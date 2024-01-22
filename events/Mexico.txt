@@ -1803,7 +1803,7 @@ country_event = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
-					ideology = trotskyism
+					ideology = trotskyism #트로츠키주의
 					expire = "1965.1.1.1"
 					traits = {
 						exiled_revolutionary

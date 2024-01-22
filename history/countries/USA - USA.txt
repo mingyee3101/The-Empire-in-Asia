@@ -330,7 +330,7 @@ add_ideas = {
 
 
 # DIPLOMACY
-set_autonomy = {
+set_autonomy = { #괴뢰국 수정
 	target = PHI
 	autonomous_state =  autonomy_puppet
 }

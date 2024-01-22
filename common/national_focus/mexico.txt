@@ -3987,7 +3987,7 @@ focus_tree = {
 					character = MEX_leon_trotsky
 					country_leader = {
 						expire = "1965.1.1"
-						ideology = trotskyism
+						ideology = trotskyism #트로츠키주의
 						traits = {
 							exiled_revolutionary
 						}

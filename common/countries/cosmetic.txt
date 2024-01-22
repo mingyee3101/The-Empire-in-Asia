@@ -994,6 +994,11 @@ PGC_EHA ={ #지둥방공자치정부
 	color_ui = hsv { 0.05 0.25 1.2 }
 }
 
+CHI_KMT = {
+	color = rgb { 0 33 107 }
+	color_ui = rgb { 0 33 107 }
+}
+
 
 PHI_IG = {
 	color = rgb { 152 130 191 }

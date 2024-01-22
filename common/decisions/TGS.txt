@@ -1,0 +1,44 @@
+TGS_preparing_for_rebellion_category = {
+	TGS_preparing_for_rebellion = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = TGS
+		}
+
+		available = {
+			or = {
+				has_war_with = SIK
+				NOT = {
+					country_exists = SIK
+				}
+			}
+		}
+
+		days_mission_timeout = 485
+
+		fire_only_once = no
+
+		is_good = yes
+
+		activation = {
+			or = {
+				NOT = {
+					has_war_with = SIK
+				}
+				country_exists = SIK
+			}
+		}
+
+		timeout_effect = {
+			SIK = {
+				country_event = { id = tgs.1 }
+			}
+			declare_war_on = {
+			    target = SIK
+			    type = annex_everything
+			}
+		}
+	}
+}

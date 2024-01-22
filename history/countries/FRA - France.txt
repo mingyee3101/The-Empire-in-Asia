@@ -7,7 +7,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	set_autonomy = {
+	set_autonomy = { #괴뢰국 추가
 		target = UIC
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35

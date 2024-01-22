@@ -314,8 +314,8 @@ PRC = {
 }
 
 GXC = {
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
 }
 
 SHX = {
@@ -898,23 +898,23 @@ TGS = { #둥가니스탄
 }
 
 GDC = { #광동군벌
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
+	color = rgb { 90 130 120 }
+	color_ui = rgb { 100 160 150 }
 }
 
-SCC = { #쓰촨군벌
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
+SCC = { #사천군벌
+	color = rgb { 150 150 100 }
+	color_ui = rgb { 150 150 100 }
 }
 
-SDC = { #산둥군벌
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
+SDC = { #산동군벌
+	color = rgb { 180 200 110 }
+	color_ui = rgb { 180 200 110 }
 }
 
 CSR = { #천변특별행정구
-	color = rgb { 0 33 107 }
-	color_ui = rgb { 0 33 107 }
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
 }
 
 ROS = { #사라왁 왕국

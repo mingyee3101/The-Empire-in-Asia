@@ -32,3 +32,6 @@
  TGS:0 "둥가니스탄"
  TGS_DEF:0 "둥가니스탄"
  TGS_ADJ:0 "둥가니스탄"
+
+ #결정
+ TGS_preparing_for_rebellion:0 "반란 준비"

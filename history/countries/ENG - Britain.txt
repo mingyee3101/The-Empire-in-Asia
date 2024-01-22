@@ -189,7 +189,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	set_autonomy = {
+	set_autonomy = { #괴뢰국 추가
 		target = SST
 		autonomous_state = autonomy_integrated_puppet
 	}

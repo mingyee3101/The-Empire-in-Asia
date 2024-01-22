@@ -1,40 +1,34 @@
-﻿capital = 594
+﻿capital = 754 #Was 604, but should be Xining
 
-oob = "GXC_1936"
+oob = "XSM_1936"
 
 set_cosmetic_tag = CHI_KMT
 
-set_stability = 0.6
-set_war_support = 0.4
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	mass_assault = 1
 }
 
-add_ideas = {
-	warlord_army
-}
-
-recruit_character = GXC_li_zongren
-recruit_character = GXC_chen_jitang
-recruit_character = GXC_liu_peng
-recruit_character = GXC_zhang_lu
-recruit_character = GXC_li_ting
-recruit_character = GXC_bai_yeung
-recruit_character = GXC_heng_lo
-recruit_character = GXC_yu_hanmou
-recruit_character = GXC_zha_zemin
-recruit_character = GXC_huo_duyi
-recruit_character = GXC_niu_keung
-recruit_character = GXC_bai_chongxi
-recruit_character = GXC_teng_qingshan
-recruit_character = GXC_do_liang
-recruit_character = GXC_huang_shaohong
-recruit_character = GXC_yang_hulin
-recruit_character = GXC_wang_shuming
-recruit_character = GXC_li_jishen
-recruit_character = GXC_lei_zhong
+recruit_character = XSM_ma_bufang
+recruit_character = XSM_ma_hongbin
+recruit_character = XSM_mao_sun
+recruit_character = XSM_hsia_sun
+recruit_character = XSM_hsia_jin
+recruit_character = XSM_au_yongrui
+recruit_character = XSM_ho_tengfei
+recruit_character = XSM_lian_zenguang
+recruit_character = XSM_chun_minsheng
+recruit_character = XSM_ma_donghai
+recruit_character = XSM_ma_hongkui
+recruit_character = XSM_wu_qi
+recruit_character = XSM_keng_gui
+recruit_character = XSM_may_chongan
+recruit_character = XSM_keng_shoushan
+recruit_character = XSM_ma_buqing
+recruit_character = XSM_li_shiqun
+recruit_character = XSM_fang_jing
+recruit_character = XSM_zi_shen
 
 
 if = {
@@ -48,8 +42,6 @@ if = {
 }
 
 1939.1.1 = {
-	
-	oob = "GXC_1939"
 
 	add_political_power = 1198
 	add_command_power = 100
@@ -77,26 +69,62 @@ if = {
 		complete_national_focus = CHI_root_out_corruption
 		complete_national_focus = CHI_land_reform
 		complete_national_focus = CHI_reform_the_administration
-		complete_national_focus = CHI_heavy_weapons_development
-		else = {
+		else = {	
 			#generic focuses
 			complete_national_focus = army_effort
 			complete_national_focus = equipment_effort
 			complete_national_focus = motorization_effort
 			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
+			complete_national_focus = construction_effort_2
+			complete_national_focus = production_effort_2
+			complete_national_focus = infrastructure_effort
 			complete_national_focus = industrial_effort
 			complete_national_focus = construction_effort
 			complete_national_focus = production_effort
 		}
 	}
 
+
+	add_ideas = {
+		#laws
+		tot_economic_mobilisation
+		service_by_requirement
+		closed_economy
+	}
+
+	oob = "XSM_1939"
+	
+	set_technology = {
+		#doctrines
+		air_superiority = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
 }
-
-
-
-set_convoys = 5
 
 set_politics = {
 	ruling_party = neutrality
