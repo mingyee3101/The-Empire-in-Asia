@@ -1,0 +1,43 @@
+SIK_preparing_for_rebellion_category = {
+
+	SIK_preparing_for_rebellion_dummy = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SIK
+		}
+
+		available = {
+			or = {
+				has_war_with = TGS
+				NOT = {
+					country_exists = SIK
+				}
+				NOT = {
+					country_exists = TGS
+				}
+			}
+		}
+
+		days_mission_timeout = 485
+
+		fire_only_once = yes
+
+		is_good = no
+
+		visible = {
+			or = {
+				NOT = {
+					has_war_with = TGS
+				}
+				country_exists = SIK
+				country_exists = TGS
+			}
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = SIK_preparing_for_rebellion_dummy_tt
+		}
+	}
+}

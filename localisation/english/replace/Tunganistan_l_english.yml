@@ -34,4 +34,25 @@
  TGS_ADJ:0 "둥가니스탄"
 
  #결정
+ TGS_preparing_for_rebellion_category:0 "반란 준비"
  TGS_preparing_for_rebellion:0 "반란 준비"
+
+ #이벤트
+ tgs.1.t:0 "[TGS.GetLeader]의 반란"
+ tgs.1.d:0 "[TGS.GetLeader]이 반란을 일으켰습니다. 이번 기회에 그들을 신강에서 쫒아냅시다."
+ tgs.1.a:0 "네놈들의 머리통을 다 날려버리겠어!"
+
+ tgs.2.t:0 "신강에서 [TGS.GetLeader]의 반란"
+ tgs.2.d:0 "[TGS.GetLeader]이 신강에서 반란을 일으켰습니다. 우리는 [SIK.GetLeader]를 도와 [TGS.GetLeader]을 몰아내야할까요?"
+ tgs.2.a:0 "그래, 최대한 지원해 주자"
+ tgs.2.b:0 "무기정도만 보내줘라"
+ tgs.2.c:0 "우리와 상관없는 일이다"
+
+ tgs.3.t:0 "[SOV.GetLeader]의 지원"
+ tgs.3.d:0 "[SOV.GetLeader]이 우리를 위해 병력과 무기를 보내줬습니다."
+ tgs.3.a:0 "저놈들을 쓸어버리자!"
+
+ tgs.4.t:0 "[SOV.GetLeader]의 무기 지원"
+ tgs.4.d:0 "[SOV.GetLeader]이 우리를 위해 무기를 보내줬습니다."
+ tgs.4.a:0 "무기라도 보내준 게 어디냐"
+ tgs_soviet_support_tt:0 "§Y2개의 경전차§! 대대와 §Y4개의 차량화§! 대대로 구성된 1부대 그리고 §Y4개의 보병§! 대대로 구성된 2부대를 얻습니다."

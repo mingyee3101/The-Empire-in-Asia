@@ -6,8 +6,8 @@
 
  #국명
 
- #이벤트
- sik.1.t:0 "[TGS.GetLeader]의 반란"
- sik.1.d:0 "[TGS.GetLeader]이 반란을 일으켰습니다. 이번 기회에 그들을 신강에서 쫒아냅시다."
- sik.1.a:0 "좋다"
- sik.1.b:0 "소련의 지원을 받자"
+ #결정
+ SIK_preparing_for_rebellion_category:0 "반란"
+ SIK_preparing_for_rebellion_dummy:0 "[TGS.GetLeader]의 반란 모의"
+ SIK_preparing_for_rebellion_dummy_desc:0 "[TGS.GetLeader]이 우리를 상대로 반란을 모의하고 있습니다."
+ SIK_preparing_for_rebellion_dummy_tt:0 "§Y[TGS.GetName]§!의 §Y[SIK.GetName]§!에 대한 선전포고."

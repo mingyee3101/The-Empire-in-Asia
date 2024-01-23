@@ -1,0 +1,10 @@
+SIK_preparing_for_rebellion_category = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		original_tag = SIK
+	}
+}

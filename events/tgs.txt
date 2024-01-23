@@ -1,0 +1,169 @@
+add_namespace = tgs
+
+country_event = {
+	id = tgs.1
+	title = tgs.1.t
+	desc = tgs.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = tgs.1.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = tgs.2
+	title = tgs.2.t
+	desc = tgs.2.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = tgs.2.a #지원
+		ai_chance = {
+			base = 10
+		}
+		SIK = { country_event = { id = tgs.3 hours = 24 } }
+	}
+
+	option = {
+		name = tgs.2.b #지원
+		ai_chance = {
+			base = 0
+		}
+		SIK = { country_event = { id = tgs.4 hours = 24 } }
+	}
+
+	option = {
+		name = tgs.2.c #거절
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = tgs.3
+	title = tgs.3.t
+	desc = tgs.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = tgs.3.a
+		ai_chance = {
+			base = 10
+		}
+
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 150
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 200
+				producer = SOV
+			}
+			add_equipment_to_stockpile = { type = small_plane_airframe_0 amount = 40 producer = SOV variant_name = "I-15"}
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 150 producer = SOV variant_name = "T-26TU mod. 1933"}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_sent_us_weapons
+			}
+		}
+		custom_effect_tooltip = tgs_soviet_support_tt
+
+		hidden_effect = {
+		division_template = {
+				name = "소총 군단"
+				division_names_group = SOV_INF_01
+				priority = 1
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1. 소총 군단\" division_template = \"소총 군단\" start_experience_factor = 0.2 start_equipment_factor = 0.85" 
+					owner = SIK
+				}
+				create_unit = {
+					division = "name = \"2. 소총 군단\" division_template = \"소총 군단\" start_experience_factor = 0.2 start_equipment_factor = 0.85" 
+					owner = SIK
+				}
+			}
+			division_template = {
+				name = "기계화 군단"
+				division_names_group = SOV_MEC_01
+				priority = 1
+				is_locked = yes
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }	
+					motorized = { x = 1 y = 0 }		
+					motorized = { x = 1 y = 1 }	
+					motorized = { x = 1 y = 2 }		
+					motorized = { x = 1 y = 3 }	
+					}
+			}
+			capital_scope = {
+						create_unit = {
+							division = "name = \"1. 기계화 군단\" division_template = \"기계화 군단\" start_experience_factor = 0.2 start_equipment_factor = 0.85 force_equipment_variants = { light_tank_chassis_1 = { creator = \"SOV\" version_name = \"T-26TU mod. 1933\"} }" 
+							owner = ROOT
+						}
+					}
+			}
+	}
+}
+
+country_event = {
+	id = tgs.4
+	title = tgs.4.t
+	desc = tgs.4.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = tgs.4.a
+		ai_chance = {
+			base = 10
+		}
+
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = SOV
+			}
+			add_equipment_to_stockpile = { type = small_plane_airframe_0 amount = 40 producer = SOV variant_name = "I-15"}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_sent_us_weapons
+			}
+		}
+	}
+}
