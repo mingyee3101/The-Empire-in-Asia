@@ -13,10 +13,6 @@ characters = {
 			ideology = despotism
 			expire = "1945.6.9.1"
 		}
-		country_leader = {
-			ideology = fascism_ideology
-			expire = "1945.6.9.1"
-		}
 	}
 
 	UIC_jules_brevie = {
@@ -28,20 +24,34 @@ characters = {
 		}
 	}
 
+	UIC_Georges_Catroux={
+		name=UIC_Georges_Catroux
+		portraits={
+			civilian = {
+				large = "gfx/leaders/UIC/Portrait_Georges_Catroux.png"
+			}
+			army={
+				large = "gfx/leaders/UIC/Portrait_Georges_Catroux.png"
+				small = "gfx/interface/ideas/UIC/UIC_Georges_Catroux.png"
+			}
+		}
+
+		corps_commander={
+			traits={ war_hero career_officer desert_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
 	UIC_jean_decoux={
 		name=UIC_jean_decoux
 		portraits={
 			civilian = {
 				large = "gfx/leaders/UIC/Portrait_Jean_Decoux.png"
 			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1963.10.21.1"
-		}
-		country_leader = {
-			ideology = fascism_ideology
-			expire = "1963.10.21.1"
 		}
 	}
 
@@ -105,33 +115,6 @@ characters = {
 			maneuvering_skill=3
 			coordination_skill=4
 		}	
-	}
-
-	UIC_Georges_Catroux={
-		name=UIC_Georges_Catroux
-		portraits={
-			army={
-				large = "gfx/leaders/UIC/Portrait_Georges_Catroux.png"
-				small = "gfx/interface/ideas/UIC/UIC_Georges_Catroux.png"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1963.10.21.1"
-		}
-		country_leader = {
-			ideology = fascism_ideology
-			expire = "1963.10.21.1"
-		}	
-
-		corps_commander={
-			traits={ war_hero career_officer desert_fox }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
-		}
 	}
 
 	#장군
@@ -258,7 +241,7 @@ characters = {
 				UIC = { is_subject_of = FRA }
 			}
 			traits = {
-				silent_workhorse
+				UIC_silent_workhorse
 			}
 		}
 	}

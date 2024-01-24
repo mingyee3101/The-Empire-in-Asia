@@ -21,7 +21,7 @@ focus_tree = {
 		id = UIC_Rene_Robins_reign_continues
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
-		cost = 10
+		cost = 5
 		x = 18
 		y = 0
 
@@ -100,10 +100,47 @@ focus_tree = {
 		id = UIC_suppression_of_rebellion
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_prohibit_party }
+		mutually_exclusive = { focus = UIC_indochinese_leader }
 		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_the_medals_of_french_indochina
+
+		completion_reward = {
+			remove_ideas = UIC_indochinese_resistance_i
+		}
+	}
+
+	#
+
+	focus = {
+		id = UIC_supplying_materials_to_china
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		available = {
+			#중국(군벌, 공산당)이 존재, 중국과 영토가 닿아있음
+		}
+
+		completion_reward = {
+			#unlock_decision_tooltip = teia_teia_supplying_materials_to_china
+			unlock_decision_category_tooltip = teia_foreign_support_category
+		}
+	}
+
+	focus = {
+		id = UIC_indochinese_leader
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_prohibit_party }
+		mutually_exclusive = { focus = UIC_suppression_of_rebellion }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_prohibit_party
 
 		completion_reward = {
 			add_political_power = 120
@@ -116,15 +153,19 @@ focus_tree = {
 		id = UIC_The_reign_of_jules_brevie
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { focus = UIC_Rene_Robins_reign_continues }
-		cost = 10
-		x = 5
+		cost = 5
+		x = 6
 		y = 0
 		relative_position_id = UIC_Rene_Robins_reign_continues
 
-		bypass = {
-			has_country_leader = {
-				character = FRA_leon_blum
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
 			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
 		}
 
 		completion_reward = {
@@ -149,8 +190,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = UIC_The_reign_of_jules_brevie
 
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
 		completion_reward = {
-			add_political_power = 120
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_i
+				add_idea = UIC_indochinese_resistance_ii
+			}
 		}
 	}
 
@@ -163,8 +217,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = UIC_labor_law_amendments
 
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
 		completion_reward = {
-			add_political_power = 120
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_ii
+				add_idea = UIC_indochinese_resistance_iii
+			}
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
 		}
 	}
 
@@ -177,8 +247,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = UIC_labor_law_amendments
 
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
 		completion_reward = {
-			add_political_power = 120
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
 		}
 	}
 
@@ -192,8 +274,115 @@ focus_tree = {
 		y = 1
 		relative_position_id = UIC_deregulation_of_political_parties
 
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			remove_ideas = UIC_indochinese_resistance_iii
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
+			add_stability = 0.05
+		}
+	}
+
+	#조르주 카트루의 통치
+
+	focus = {
+		id = UIC_The_reign_of_georges_catroux
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_granting_freedom_to_the_press }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_granting_freedom_to_the_press
+
+		completion_reward = {
+			add_country_leader_role = {
+				character = UIC_georges_catroux
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
+		}
+	}
+
+	#
+
+	focus = {
+		id = UIC_participating_in_the_research_institute_for_development
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
+		completion_reward = {
+			is_in_tech_sharing_group = research_institute_for_development
+		}
+	}
+
+	#장 드쿠의 통치
+
+	focus = {
+		id = UIC_continue_cooperation_with_china
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		mutually_exclusive = { focus = UIC_negotiations_with_japan }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
 		completion_reward = {
 			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_negotiations_with_japan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		mutually_exclusive = { focus = UIC_continue_cooperation_with_china }
+		cost = 10
+		x = -3
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_The_reign_of_jean_decoux
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_negotiations_with_japan }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_negotiations_with_japan
+
+		completion_reward = {
+			add_country_leader_role = {
+				character = UIC_jean_decoux
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
+			#조르주 카트루는 프랑스에 합류
 		}
 	}
 }

@@ -2,7 +2,22 @@ ideas = {
 
 	country = {
 
-		UIC_indochinese_resistance = {
+		UIC_indochinese_resistance_i = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.4
+			}
+
+		}
+
+		UIC_indochinese_resistance_ii = {
 			
 			allowed = {
 				original_tag = UIC
@@ -12,7 +27,22 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.3
-				war_support_factor = -0.5
+				war_support_factor = -0.2
+			}
+
+		}
+
+		UIC_indochinese_resistance_iii = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
 			}
 
 		}

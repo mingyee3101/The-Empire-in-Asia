@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_research_institute_for_development"
+		texturefile = "gfx/interface/technology_sharing/research_institute_for_development.png"
+	}
+
+}

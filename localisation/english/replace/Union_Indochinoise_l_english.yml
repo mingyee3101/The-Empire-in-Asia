@@ -20,8 +20,8 @@
  UIC_Georges_Thierry_d_Argenlieu:0 "조지 티에리 다르장리우" #45년
 
  #정당
- UIC_fascism_party:0 "인도차이나 총독부"
- UIC_fascism_party_long:0 "인도차이나 총독부"
+ UIC_fascism_party:0 "대월국가사회당"
+ UIC_fascism_party_long:0 "대월국가사회당"
  #UIC_fascism_party:0 "대월국가사회당" #Đại Việt Quốc gia Xã hội Đảng #친일
  UIC_democratic_party:0 "인도차이나 민주당"
  UIC_democratic_party_long:0 "인도차이나 민주당"
@@ -63,10 +63,17 @@
  UIC_pay_cut_desc:0 "물가가 증가함에 따라 우리는 노동자들의 급여를 삭감할 수밖에 없습니다."
  UIC_the_medals_of_french_indochina:0 "훈장에 대한 새로운 규정" #프랑스령 인도차이나에 대한 새로운 규정
  UIC_the_medals_of_french_indochina_desc:0 "인도차이나 전역이 불안해지고 있습니다. 노동자들에게 훈장을 수여하여 그들을 달래야합니다." #우리는 현지 노동자와 자국민을 위해서 노동에 대한 보상으로 명예훈장을 수여할 것입니다.
- UIC_prohibit_party:0 "정당 금지"
+ UIC_prohibit_party:0 "민족주의 정당 금지"
  UIC_prohibit_party_desc:0 "인도차이나인들이 선동을 할 수 없도록 정당을 금지할 것입니다."
  UIC_suppression_of_rebellion:0 "반란 진압"
  UIC_suppression_of_rebellion_desc:0 "30년에 두번의 큰 반란이 있었지만 우리는 모두 진압하였습니다. 반란 세력은 전멸했고 그들의 독립 의지는 사라졌습니다."
+
+ UIC_supplying_materials_to_china:0 "중국에 물자 공급"
+ UIC_supplying_materials_to_china_desc:0 ""
+ UIC_indochinese_leader:0 "인도차이나인 지도자"
+ UIC_indochinese_leader_desc:0 ""
+ UIC_participating_in_the_research_institute_for_development:0 "프랑스 개발연구소에 참여"
+ UIC_participating_in_the_research_institute_for_development_desc:0 ""
 
  #쥘 브레비예
  UIC_The_reign_of_jules_brevie:0 "쥘 브레비예의 통치"
@@ -80,7 +87,30 @@
  UIC_pardon_political_offender_desc:0 ""
  UIC_granting_freedom_to_the_press:0 "언론에 자유 부여"
  UIC_granting_freedom_to_the_press_desc:0 ""
+ jules_brevie_retirement:0 "쥘 브레비예의 은퇴"
+
+ #조르주 카트루
+ UIC_The_reign_of_georges_catroux:0 "조르주 카트루의 통치"
+ UIC_The_reign_of_georges_catroux_desc:0 "쥘 브레비예총독이 은퇴하면서 조르주 카트루가 새로운 총독으로 임명되었습니다. 그는 앞으로 위기를 잘 이겨낼 수 있을까요?"
+
+ #장 드쿠
+ UIC_negotiations_with_japan:0 "일본과 협상"
+ UIC_negotiations_with_japan_desc:0 ""
+ UIC_continue_cooperation_with_china:0 "중국과 협력 지속"
+ UIC_continue_cooperation_with_china_desc:0 ""
+ UIC_The_reign_of_jean_decoux:0 "장 드쿠의 통치"
+ UIC_The_reign_of_jean_decoux_desc:0 ""
 
  #국민정신
- UIC_indochinese_resistance:0 "인도차이나인들의 저항"
+ UIC_indochinese_resistance_i:0 "인도차이나인들의 저항"
+ UIC_indochinese_resistance_ii:0 "인도차이나인들의 저항"
+ UIC_indochinese_resistance_iii:0 "인도차이나인들의 저항"
  #UIC_indochinese_resistance_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"
+
+ #결정
+ teia_foreign_support_category:0 "중국 지원"
+ teia_supplying_materials_to_china:0 "중국에 물자 공급"
+
+ #기술공유그룹
+ research_institute_for_development_name:0 "개발연구소"
+ research_institute_for_development_desc:0 "개발연구소"

@@ -7,7 +7,12 @@ set_cosmetic_tag = UIC_fra
 #country_lock_all_division_template = yes
 
 add_ideas = {
-	UIC_indochinese_resistance
+	#법
+	volunteer_only
+	low_economic_mobilisation
+
+	#국민정신
+	UIC_indochinese_resistance_i
 }
 
 set_technology = {
@@ -74,14 +79,6 @@ if = {
 #starting_train_buffer = 4 #30
 #set_convoys = 200
 
-add_ideas = {
-	#법
-	volunteer_only
-	low_economic_mobilisation
-
-	#국민정신
-}
-
 #프랑스령 인도차이나
 #지도자
 recruit_character = UIC_Rene_Robin
@@ -92,6 +89,8 @@ recruit_character = UIC_jules_brevie
 recruit_character = VIN_nguyen_van_thinh
 
 recruit_character = VIN_Ta_Thu_Thau
+
+recruit_character = VIN_Tran_Trong_Kim
 
 #정치고문
 recruit_character = VIN_bui_quang_chieu
@@ -115,7 +114,7 @@ set_politics = {
 }
 set_popularities = {
 	fascism = 8
-	democratic = 32
-	communism = 32
-	neutrality = 28
+	democratic = 12
+	communism = 12
+	neutrality = 68
 }

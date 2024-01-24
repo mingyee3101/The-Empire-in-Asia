@@ -103,7 +103,7 @@ recruit_character = VIN_Tran_Van_Huong #부흥당
 recruit_character = VIN_Bao_Dai
 
 #파시즘
-recruit_character = VIN_Tran_Trong_Kim
+#recruit_character = VIN_Tran_Trong_Kim
 
 ###장군###
 #공산

@@ -1,0 +1,72 @@
+teia_foreign_support_category = {
+
+	teia_supplying_materials_to_china = {
+		icon = generic_construction
+
+		allowed = {
+			OR = {
+				original_tag = UIC
+				original_tag = LAO
+				original_tag = VIN
+			}
+		}
+
+		available = {
+			OR = {
+				controls_state = 936
+				controls_state = 937
+				controls_state = 938
+				controls_state = 949
+				controls_state = 950
+			}
+			NOT = {
+				OR = {
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+			}
+			has_equipment = { infantry_equipment > 999 }
+			country_exists = CHI
+		}
+		visible = {
+			OR = {
+				controls_state = 936
+				controls_state = 937
+				controls_state = 938
+				controls_state = 949
+				controls_state = 950
+			}
+			UIC = {
+				has_completed_focus = UIC_supplying_materials_to_china
+			}
+		}
+		days_re_enable = 120
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.6
+				}
+				add_war_support = 0.05
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		remove_effect = {
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = UIC
+				}
+			}
+		}
+	}
+	
+}

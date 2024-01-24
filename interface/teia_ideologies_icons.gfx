@@ -268,11 +268,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_UIC_fascism_ideology"
-		texturefile = "gfx/interface/ideologies/uic_gfi.png"
-	}
-	
-	spriteType = {
 		name = "GFX_ideology_UIC_conservatism"
 		texturefile = "gfx/interface/ideologies/uic_dlhdd.png"
 	}
