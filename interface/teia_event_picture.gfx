@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_event_February_incident"
+		texturefile = "gfx/event_picture/February_incident.tga"
+	}
+}

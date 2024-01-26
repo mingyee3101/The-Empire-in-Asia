@@ -1,0 +1,62 @@
+add_namespace = aejapan
+add_namespace = jap226
+
+country_event = {
+	id = jap226.1
+	title = jap226.1.t
+	desc = jap226.1.d
+	picture = GFX_report_event_election_vote
+
+    fire_only_once = yes
+    is_triggered_only = no
+	
+    trigger = {
+		tag = JAP
+		date > 1936.2.17
+	}
+	mean_time_to_happen = { days = 3 }
+	immediate = {
+		hidden_effect = {
+			country_event = { days = 9 id = jap226.3 }
+		}
+	}
+
+	option = {
+		name = jap226.1.a
+		hidden_effect = {
+			country_event = { days = 1 id =  jap226.2 }
+		}
+	}
+}
+country_event = {
+	id = jap226.2
+	title = jap226.2.t
+	desc = jap226.2.d
+	picture = GFX_report_event_hitler_handshake
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap226.2.a
+
+	}
+}
+country_event = {
+	id = jap226.3
+	title = jap226.3.t
+	desc = jap226.3.d
+	picture = GFX_event_February_incident
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap226.3.a
+        set_country_flag = February_incident
+	}
+	option = {
+		name = jap226.3.b
+
+	}
+}

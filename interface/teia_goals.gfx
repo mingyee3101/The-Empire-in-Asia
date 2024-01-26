@@ -23,5 +23,10 @@ spriteTypes = {
 		name = "GFX_MAN_bogjong-59"
 		texturefile = "gfx/interface/goals/GFX_MAN_bogjong-59.dds"
 	}
+    #일본
+	SpriteType = { 
+		name = "GFX_goal_JAP_Konoe_Cabinet"
+		texturefile = "gfx/interface/goals/JAP_Konoe_Cabinet.tga"
+	}
 
 }
