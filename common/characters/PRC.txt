@@ -225,6 +225,58 @@ characters={
 		}
 	}
 
+	PRC_Luo_Ronghuan={
+		name=PRC_Luo_Ronghuan
+		portraits={
+			army={
+				large = "gfx/leaders/PRC/portrait_Luo_Ronghuan.png"
+				small= "gfx/interface/ideas/PRC/PRC_Luo_Ronghuan.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	PRC_Liu_Bocheng={
+		name=PRC_Liu_Bocheng
+		portraits={
+			army={
+				large = "gfx/leaders/PRC/portrait_Liu_Bocheng.png"
+				small= "gfx/interface/ideas/PRC/PRC_Liu_Bocheng.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trickster guerilla_fighter }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_liu_bocheng
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
 	PRC_kwong_hu={
 		name=PRC_kwong_hu
 		portraits={
@@ -273,29 +325,6 @@ characters={
 	### THEORISTS ###
 
 	#Claire Lee Chennault in shared file
-
-	PRC_liu_bocheng={
-		name=PRC_liu_bocheng
-		portraits={
-			army={
-				small="GFX_idea_PRC_liu_bocheng"
-			}
-		}
-		advisor={
-			cost = 100
-
-			slot = theorist
-			idea_token = PRC_liu_bocheng
-			ledger = army
-			allowed = {
-				original_tag = PRC
-			}
-
-			traits = {
-				military_theorist
-			}
-		}
-	}
 
 	PRC_hsia_tian={
 		name=PRC_hsia_tian

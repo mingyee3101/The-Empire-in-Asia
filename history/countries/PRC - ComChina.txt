@@ -68,10 +68,11 @@ recruit_character = PRC_Liu_Zhidan
 recruit_character = PRC_otto_braun
 recruit_character = PRC_Xu_Haidong
 recruit_character = KOR_Mu_Chong #한국
+recruit_character = 
 
 #정치고문
 recruit_character = PRC_Xi_Zhongxun
-recruit_character = PRC_Lin_Boqu
+recruit_character = PRC_Luo_Ronghuan
 
 if = {
 	limit = { has_dlc = "La Resistance" }

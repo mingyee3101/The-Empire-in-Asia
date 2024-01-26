@@ -328,7 +328,7 @@ focus_tree = {
 		relative_position_id = UIC_The_reign_of_georges_catroux
 
 		completion_reward = {
-			is_in_tech_sharing_group = research_institute_for_development
+			add_to_tech_sharing_group = research_institute_for_development
 		}
 	}
 
