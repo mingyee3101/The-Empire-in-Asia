@@ -1,7 +1,7 @@
 
 state={
-	id=717
-	name="STATE_717"
+	id=715
+	name="STATE_715"
 
 	history={
 		owner = MAN
@@ -10,16 +10,18 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
 
 		}
 
 	}
 
 	provinces={
-		783 1571 3791 3815 4551 5427 6811 6863 7569 7670 9623 9766 9798 10215 10376 10463 10503 10519 10521 11893 11906 12342 12355 12443 12482 12500 
+		1499 1508 1558 1627 1638 3877 3978 4561 4633 6893 7812 10429 11836 11903 12337 12469 12478 
 	}
-	manpower=5224174
+	manpower=3643373
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 	local_supplies=0.000
 }
