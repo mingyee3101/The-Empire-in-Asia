@@ -1,24 +1,15 @@
 
 state={
-	id=591
-	name="STATE_591"
+	id=756
+	name="STATE_756"
 
 	history={
-		owner = GDC
-		add_core_of = GDC
-		add_core_of = GXC
+		owner = XSM
+		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PRC
-		victory_points = {
-			1070 1 
-		}
 		buildings = {
 			infrastructure = 1
-			air_base = 1
-			1070 = {
-				naval_base = 2
-
-			}
 
 		}
 		1938.10.25 = {
@@ -30,24 +21,22 @@ state={
 					}
 
 				}
-				remove_core_of = GDC
 				CHI = {
 					transfer_state = PREV
 
 				}
 
 			}
-			controller = JAP
 
 		}
 
 	}
 
 	provinces={
-		994 1038 1070 11963 11990 
+		4783 7727 7803 8102 10770 10899 
 	}
-	manpower=4350000
+	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }
