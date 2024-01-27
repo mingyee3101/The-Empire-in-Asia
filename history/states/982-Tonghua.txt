@@ -2,10 +2,6 @@
 state={
 	id=982
 	name="STATE_982"
-	manpower = 0
-	
-	state_category = rural
-
 
 	history={
 		owner = MAN
@@ -14,13 +10,16 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			#industrial_complex = 1
+
 		}
 
 	}
-	provinces={
-		800 861 945 3888 3949 6868 6905 9759 9803 9841 9848 9866 11781 11850
-	}
 
-	local_supplies=0.0 
+	provinces={
+		800 861 945 3949 9759 9803 9841 9848 11781 11850 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
