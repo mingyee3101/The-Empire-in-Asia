@@ -8,7 +8,7 @@ ideas = {
 				original_tag = UIC
 			}
 
-			picture = FRA_factory_strikes
+			picture = POL_the_peasants_strike
 			
 			modifier = {
 				stability_factor = -0.5
@@ -23,7 +23,7 @@ ideas = {
 				original_tag = UIC
 			}
 
-			picture = FRA_factory_strikes
+			picture = POL_the_peasants_strike
 			
 			modifier = {
 				stability_factor = -0.3
@@ -38,11 +38,27 @@ ideas = {
 				original_tag = UIC
 			}
 
-			picture = FRA_factory_strikes
+			picture = POL_the_peasants_strike
 			
 			modifier = {
 				stability_factor = -0.15
 				war_support_factor = -0.1
+			}
+
+		}
+
+		UIC_unprepared_army_i = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = generic_neglected_military
+			
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.2
+				army_org_factor = -0.1
 			}
 
 		}

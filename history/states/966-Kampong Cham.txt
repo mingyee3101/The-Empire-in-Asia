@@ -7,7 +7,10 @@
 		add_core_of = UIC
 		owner = UIC
 		victory_points = { #캄퐁참
-			4639 10
+			4639 5
+		}
+		victory_points = { #시엠레아프
+			1324 5
 		}
 		buildings = {
 			infrastructure = 3

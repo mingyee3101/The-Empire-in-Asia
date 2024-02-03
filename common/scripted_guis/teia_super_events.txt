@@ -11,22 +11,10 @@ scripted_gui = {
 		############
 		###BUTTON###
 		############
-		
-		triggers = {
-			Super_Event_Image_1988_Summer_Olympics_visible = {
-				has_global_flag = 1988_Summer_Olympics
-			}
-		}
 
 		triggers = {
 			Super_Event_Image_Second_Sino_Vietnamese_War_visible = {
 				has_global_flag = Second_Sino_Vietnamese_War
-			}
-		}
-
-		triggers = {
-			Super_Event_Image_Chernobyl_Nuclear_Power_Plant_Accident_visible = {
-				has_global_flag = Chernobyl_Nuclear_Power_Plant_Accident
 			}
 		}
 		
@@ -37,39 +25,12 @@ scripted_gui = {
 		effects = {
 			teia_sp_event_close_button_click = {
 				clr_global_flag = Super_Event_Visible
-				
-				if = {
-					limit = {
-						has_global_flag = 1988_Summer_Olympics
-					}
-					clr_global_flag = 1988_Summer_Olympics
-				}
 
 				if = {
 					limit = {
 						has_global_flag = Second_Sino_Vietnamese_War
 					}
 					clr_global_flag = Second_Sino_Vietnamese_War
-				}
-
-				if = {
-					limit = {
-						has_global_flag = Chernobyl_Nuclear_Power_Plant_Accident
-						NOT = {
-							tag = SOV
-						}
-					}
-					clr_global_flag = Chernobyl_Nuclear_Power_Plant_Accident
-				}
-
-
-				if = {
-					limit = {
-						has_global_flag = Chernobyl_Nuclear_Power_Plant_Accident
-						tag = SOV
-					}
-					add_stability = -0.1
-					clr_global_flag = Chernobyl_Nuclear_Power_Plant_Accident
 				}
 			}
 		}

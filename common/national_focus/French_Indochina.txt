@@ -133,6 +133,92 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UIC_flood_preparedness
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = UIC_supplying_materials_to_china
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_strengthening_public_works
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = UIC_flood_preparedness
+
+		available = {
+			#홍수가 남
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_construction_of_irrigation_facilities
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_flood_preparedness focus = UIC_strengthening_public_works }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_flood_preparedness
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_hlm_construction_program
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_flood_preparedness focus = UIC_strengthening_public_works }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_strengthening_public_works
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			every_owned_state = {
+                limit = {
+                    is_fully_controlled_by = ROOT
+                    NOT = { has_state_category = wasteland }
+                    NOT = { has_state_category = enclave }
+                    NOT = { has_state_category = pastoral }
+                    NOT = { has_state_category = tiny_island }
+                    NOT = { has_state_category = small_island }
+                    NOT = { has_state_category = rural }
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+		}
+	}
+
+	#인도차이나인 지도자
+
+	focus = {
 		id = UIC_indochinese_leader
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_prohibit_party }
@@ -154,7 +240,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { focus = UIC_Rene_Robins_reign_continues }
 		cost = 5
-		x = 6
+		x = 10
 		y = 0
 		relative_position_id = UIC_Rene_Robins_reign_continues
 

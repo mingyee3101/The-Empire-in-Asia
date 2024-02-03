@@ -13,6 +13,7 @@ add_ideas = {
 
 	#국민정신
 	UIC_indochinese_resistance_i
+	UIC_unprepared_army_i
 }
 
 set_technology = {
@@ -106,6 +107,19 @@ recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준�
 #제독
 recruit_character = UIC_jean_decoux_navy
 
+#정보원
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = { #자유프랑스
+		name = "UIC_Louis_Camille_Huchet" #https://fr.wikipedia.org/wiki/Louis_Camille_Huchet
+		#GFX = "gfx/leaders/PRC/Portrait_Li_Kenong.png"
+		traits = {  }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { UIC FRA }
+	}
+}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.7.23"
@@ -118,3 +132,7 @@ set_popularities = {
 	communism = 12
 	neutrality = 68
 }
+
+
+#country_event = { id = uic.1 days = 1 }
+country_event = { id = uic.1 days = 590 } #37년 8월말

@@ -1,0 +1,16 @@
+add_namespace = uic
+
+country_event = {
+	id = uic.1
+	title = uic.1.t
+	desc = uic.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.1.a
+		
+        
+	}
+}

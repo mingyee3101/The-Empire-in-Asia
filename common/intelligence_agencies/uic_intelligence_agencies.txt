@@ -1,0 +1,18 @@
+intelligence_agency = {
+	
+	intelligence_agency = {
+
+		picture = GFX_intelligence_agency_logo_fra
+		names = { "Deuxième Bureau" }
+	
+		default = {
+			tag = UIC
+			is_subject_of = FRA
+		}
+		available = {
+			original_tag = UIC
+			is_subject_of = FRA
+		}
+	}
+
+}

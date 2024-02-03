@@ -9,9 +9,6 @@ state={
 		victory_points = { #시소폰
 			4251 1
 		}
-		victory_points = { #시엠레아프
-			4302 5
-		}
 		victory_points = { #삼라웅
 			10467 1
 		}
