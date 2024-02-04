@@ -10,3 +10,21 @@ teia_foreign_support_category = {
 		}
 	}
 }
+
+### Balance of Power
+UIC_centralization_balance_of_power_category = { 
+
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		tag = UIC
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		# always = no 
+	}
+}

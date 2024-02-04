@@ -1,0 +1,7 @@
+#########################################
+########### UIC BOP MODIFIERS ###########
+#########################################
+
+UIC_increase_the_power_of_the_french_power_balance = {
+	power_balance_daily = -0.001
+}

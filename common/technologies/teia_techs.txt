@@ -1,0 +1,18 @@
+technologies = {
+
+	PRC_mountaineers_tech = {
+			research_cost = 1
+	
+			allow = {
+				always = no
+			}
+
+			mountaineers = {
+				supply_consumption = -0.1
+				soft_attack = 0.05
+				hard_attack = 0.05
+				defense = 0.10
+			}
+		}
+
+}

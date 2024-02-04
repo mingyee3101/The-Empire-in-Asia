@@ -29,6 +29,8 @@ if = {
 
 # Starting tech
 set_technology = {
+	#PRC_mountaineers_tech #안쓰면 빼기
+
 	infantry_weapons = 1
 	mass_assault = 1
 }

@@ -70,3 +70,89 @@ teia_foreign_support_category = {
 	}
 	
 }
+
+UIC_centralization_balance_of_power_category = {
+
+	#프랑스
+
+	UIC_bop_french_supplies_support = {
+		
+		icon = GFX_decision_SWI_focus_on_swiss_unity
+
+		allowed = { original_tag = UIC }
+
+		visible = {
+			always = yes
+			is_subject_of = FRA
+		}
+
+		available = {
+			
+		}
+
+		days_re_enable = 300
+		cost = 0	
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = UIC_centralization_balance
+				value = -0.05
+			}		
+			add_political_power = 50
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	UIC_bop_increase_the_power_of_the_french = {
+		
+		icon = GFX_decision_SWI_focus_on_swiss_unity
+
+		allowed = { original_tag = UIC }
+
+		visible = {
+			always = yes
+			has_country_leader = {
+				character = UIC_Rene_Robin
+			}
+			is_subject_of = FRA
+		}
+
+		available = {
+
+		}
+
+		days_remove = 30
+		days_re_enable = 300
+		cost = 10
+
+		modifier = {
+			stability_weekly = -0.001
+		}
+
+		complete_effect = {
+			add_power_balance_modifier = {
+				id = UIC_centralization_balance
+				modifier = UIC_increase_the_power_of_the_french_power_balance
+			}		
+		}
+
+		remove_effect = {
+			remove_power_balance_modifier = {
+				id = UIC_centralization_balance
+				modifier = UIC_increase_the_power_of_the_french_power_balance
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+
+	}
+
+	#인도차이나
+}

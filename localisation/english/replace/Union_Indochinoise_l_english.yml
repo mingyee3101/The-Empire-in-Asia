@@ -74,14 +74,6 @@
 
  UIC_supplying_materials_to_china:0 "중국에 물자 공급"
  UIC_supplying_materials_to_china_desc:0 ""
- UIC_flood_preparedness:0 "홍수 대비"
- UIC_flood_preparedness_desc:0 "인도차이나는 비가 많이 내리는 지역입니다. 우리는 홍수를 대비하기 위해 제방을 보강하고 벼 종자를 비축해야 합니다."
- UIC_strengthening_public_works:0 "공공사업 강화"
- UIC_strengthening_public_works_desc:0 "홍수의 피해를 해결하기위해 가난한 농민들에게 봉급을 지급하고 도로를 건설해야합니다."
- UIC_construction_of_irrigation_facilities:0 "관개시설 구축"
- UIC_construction_of_irrigation_facilities_desc:0 "우리는 관개시설을 구축하여 쌀 생산량을 늘려 식량 안보를 확보하고 정치적 안정을 유지할 것입니다."
- UIC_hlm_construction_program:0 "HLM 건설 계획"
- UIC_hlm_construction_program_desc:0 "도시에서 노동자들은 매우 적은 급여를 받으며 초가집에서 거주하거나 직장해서 생활하고 있습니다. 우리는 저임대 주택을 건설하여 이를 해결해야 합니다."
  UIC_indochinese_leader:0 "인도차이나인 지도자"
  UIC_indochinese_leader_desc:0 ""
  UIC_participating_in_the_research_institute_for_development:0 "프랑스 개발연구소에 참여"
@@ -113,13 +105,59 @@
  UIC_The_reign_of_jean_decoux:0 "장 드쿠의 통치"
  UIC_The_reign_of_jean_decoux_desc:0 ""
 
+ #인도차이나 경제
+ UIC_indochina_economy:0 "인도차이나 경제"
+ UIC_agricultural_exploitation:0 "농업 착취"
+ UIC_agricultural_development_support:0 "농업 개발 지원"
+ UIC_forced_to_grow_cash_crops:0 "현금작물 재배 강요"
+ UIC_cash_crop_regulations:0 "현금작물 규제"
+ UIC_food_plunder:0 "식량 수탈"
+ UIC_prohibition_of_opium_cultivation:0 "아편 재배 금지"
+ UIC_encouraging_opium_cultivation:0 "아편 재배 장려"
+ UIC_flood_preparedness:0 "홍수 대비"
+ UIC_flood_preparedness_desc:0 "인도차이나는 비가 많이 내리는 지역입니다. 우리는 홍수를 대비하기 위해 제방을 보강하고 벼 종자를 비축해야 합니다."
+ UIC_strengthening_public_works:0 "공공사업 강화"
+ UIC_strengthening_public_works_desc:0 "홍수의 피해를 해결하기위해 가난한 농민들에게 봉급을 지급하고 도로를 건설해야합니다."
+ UIC_construction_of_irrigation_facilities:0 "관개시설 구축"
+ UIC_construction_of_irrigation_facilities_desc:0 "우리는 관개시설을 구축하여 쌀 생산량을 늘려 식량 안보를 확보하고 정치적 안정을 유지할 것입니다."
+ UIC_hlm_construction_program:0 "HLM 건설 계획"
+ UIC_hlm_construction_program_desc:0 "도시에서 노동자들은 매우 적은 급여를 받으며 초가집에서 거주하거나 직장해서 생활하고 있습니다. 우리는 저임대 주택을 건설하여 이를 해결해야 합니다."
+
+ #인도차이나 보호
+ UIC_protecting_indochina:0 "인도차이나 보호"
+ UIC_tonkin_fortification:0 "통킹 요새화"
+ UIC_request_for_military_reinforcements_and_equipment:0 "장비와 군 증원 요청"
+
  #국민정신
+ UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
  UIC_indochinese_resistance_i:0 "인도차이나인들의 저항"
  UIC_indochinese_resistance_ii:0 "인도차이나인들의 저항"
  UIC_indochinese_resistance_iii:0 "인도차이나인들의 저항"
  #UIC_indochinese_resistance_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"
  UIC_unprepared_army_i:0 "준비되지 않은 군대" #결정으로 프랑스의 지원을 받아 풀 수 있음
  UIC_unprepared_army_i_desc:0 "우리의 군대는 아직 약합니다. 프랑스의 지원을 받아 외부 위협에 대비해야 합니다."
+ UIC_indochinese_exploitation_i:0 "인도차이나인의 노동"
+ UIC_indochinese_exploitation_ii:0 "인도차이나인의 노동"
+ UIC_indochinese_exploitation_iii:0 "인도차이나인의 노동"
+
+ #권력의 균형
+ UIC_centralization_balance:0 "권력의 균형"
+ UIC_balance_range:0 "정치적 균형"
+ UIC_french_side:0 "프랑스인의 정치 통제"
+ UIC_indochinese_side:0 "인도차이나인의 정치 통제"
+ UIC_french_total_control_range:0 "프랑스인이 정치를 통제함"
+ UIC_french_dominant_range:0 "프랑스인이 정치를 지배함"
+ UIC_french_power_range:0 "많은 프랑스인이 정계에 영향을 주고 있음"
+ UIC_french_influence_range:0 "프랑스인이 정계에 영향을 주고 있음"
+ UIC_indochinese_influence_range:0 "인도차이나인이 정계에 영향을 주고 있음"
+ UIC_indochinese_power_range:0 "많은 인도차이나인이 정계에 영향을 주고 있음"
+ UIC_indochinese_dominant_range:0 "인도차이나인이 정치를 지배함"
+ UIC_indochinese_total_control_range:0 "인도차이나인이 정치를 통제함"
+ #결정
+ UIC_bop_french_supplies_support:0 "프랑스의 물자 지원"
+ UIC_bop_increase_the_power_of_the_french:0 "프랑스인의 권한 강화"
+ #모디파이어
+ UIC_increase_the_power_of_the_french_power_balance:0 "프랑스의 권한이 강화됨"
 
  #결정
  teia_foreign_support_category:0 "중국 지원"

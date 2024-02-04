@@ -3,8 +3,18 @@ spriteTypes = {
 	#인도차이나
 
 	SpriteType = {
-		name = "GFX_ICU_the_medals_of_french_indochina"
-		texturefile = "gfx/interface/goals/focus_ICU_the_medals_of_french_indochina.png"	
+		name = "GFX_UIC_the_medals_of_french_indochina"
+		texturefile = "gfx/interface/goals/focus_UIC_the_medals_of_french_indochina.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_UIC_prohibit_party"
+		texturefile = "gfx/interface/goals/focus_UIC_prohibit_party.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_UIC_supplying_materials_to_china"
+		texturefile = "gfx/interface/goals/focus_UIC_supplying_materials_to_china.png"
 	}
 
 	#만주국

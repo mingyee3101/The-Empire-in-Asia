@@ -81,6 +81,9 @@
   VIN_DEF:0 "베트남"
   VIN_ADJ:0 "베트남"
 
+  #mio
+  VIN_saigon_arsenal:0 "사이공 병기창"
+
   #중점
 
   ###결정###
