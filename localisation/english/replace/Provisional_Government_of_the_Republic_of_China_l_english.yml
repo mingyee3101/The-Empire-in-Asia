@@ -49,3 +49,40 @@
 
  #국민정신
  PGC_returning_of_an_evacuated_government:0 "환도"
+ PGC_ban_communism:0 "공산주의 금지"
+ PGC_expanded_propaganda_machine:0 "확장된 선전기구"
+ PGC_authoritarianism:0 "권위주의"
+ PGC_exhibition_tax:0 "전시세금"
+ PGC_japanese_military_advisory_group:0 "일본 군사고문단"
+
+ #중점
+ PGC_1:0 "일본 지원 모색"
+
+ PGC_14:0 "권력 강화"
+ PGC_19:0 "반공주의"
+ PGC_20:0 "공공 사업"
+ PGC_21:0 "선전기구 확장"
+ PGC_22:0 "무기 몰수"
+ PGC_23:0 "개인의 지도력"
+ PGC_15:0 "노동 개혁"
+ PGC_16:0 "국내 군수공장"
+ PGC_17:0 "합작의 이익"
+ PGC_18:0 "전쟁세"
+
+ PGC_2:0 "군대 확장"
+ PGC_24:0 "자전거 대대"
+ PGC_10:0 "국내 무기 생산"
+ PGC_11:0 "지방 민병대"
+ PGC_12:0 "무기 동원"
+ PGC_13:0 "신속 동원령"
+ PGC_4:0 "일본 육군고문단초청"
+ PGC_5:0 "소화기 연구"
+
+ PGC_3:0 "경제 개발"
+ PGC_6:0 "장기적인 경제 계획"
+ PGC_8:0 "기반시설 개발"
+ PGC_7:0 "공교육 개혁"
+ PGC_9:0 "연구 공유"
+ PGC_support_equipment_development:0 "지원장비 개발"
+ PGC_tank_research:0 "전차 연구"
+ PGC_regime_reorganization:0 "정권 재조직"

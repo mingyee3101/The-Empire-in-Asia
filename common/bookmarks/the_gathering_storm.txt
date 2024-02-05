@@ -85,6 +85,17 @@ bookmarks = {
 				MAN_the_two_emperors
 			}
 		}
+		"PGC"={
+			minor = yes
+			history = "PGC_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
 		
 		"GXC"={
 			minor = yes

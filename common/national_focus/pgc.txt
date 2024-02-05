@@ -1,0 +1,577 @@
+focus_tree = {
+	id = pgc_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PGC
+		}
+	}
+	default = no
+	focus = {
+		id = PGC_1
+		icon = GFX_focus_FIN_parmis_devils
+		cost = 10.00
+		x = 8
+		y = 1
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+
+	}
+	#권력 강화
+	focus = {
+		id = PGC_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_1
+		}
+		x = -6
+		y = 1
+		relative_position_id = PGC_1
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = PGC_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_14
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_14
+
+		completion_reward = {
+			add_ideas = PGC_ban_communism
+			add_popularity = { ideology = communism popularity = -0.25 }
+		}
+
+	}
+	focus = {
+		id = PGC_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_14
+		}
+		x = 2
+		y = 1
+		relative_position_id = PGC_14
+
+		completion_reward = {
+			add_ideas = PGC_20
+		}
+
+	}
+	focus = {
+		id = PGC_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_14
+		}
+		x = 1
+		y = 2
+		relative_position_id = PGC_14
+
+		completion_reward = {
+			add_ideas = PGC_expanded_propaganda_machine
+		}
+
+	}
+	focus = {
+		id = PGC_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_21
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_21
+
+		completion_reward = {
+			add_ideas = PGC_22
+		}
+
+	}
+	focus = {
+		id = PGC_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_22
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_22
+
+		completion_reward = {
+			add_ideas = PGC_authoritarianism
+		}
+
+	}
+	focus = {
+		id = PGC_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_2
+		}
+		prerequisite = {
+			focus = PGC_14
+		}
+		x = -2
+		y = 1
+		relative_position_id = PGC_2
+
+		completion_reward = {
+			add_ideas = PGC_15
+		}
+
+	}
+	focus = {
+		id = PGC_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_15
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_15
+
+		completion_reward = {
+			add_ideas = PGC_16
+		}
+
+	}
+	focus = {
+		id = PGC_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_21
+		}
+		prerequisite = {
+			focus = PGC_16
+		}
+		x = -1
+		y = 1
+		relative_position_id = PGC_16
+
+		completion_reward = {
+			add_ideas = PGC_17
+		}
+
+	}
+	focus = {
+		id = PGC_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_17
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_17
+
+		completion_reward = {
+			add_ideas = PGC_exhibition_tax
+		}
+
+	}
+	#군대 확장
+	focus = {
+		id = PGC_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_1
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_1
+
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 30
+		}
+
+	}
+	focus = {
+		id = PGC_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_2
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_2
+
+		completion_reward = {
+			set_technology = { bicycle_infantry = 1 }
+		}
+
+	}
+	focus = {
+		id = PGC_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_2
+		}
+		x = 2
+		y = 1
+		relative_position_id = PGC_2
+
+		available = {
+			has_full_control_of_state = 609
+		}
+
+		cancel = {
+			NOT = {
+				has_full_control_of_state = 609
+			}
+		}
+
+		complete_tooltip = {
+			609 = {
+				limit = { has_state_flag = PGC_10 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			609 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = PGC_10
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_10
+		}
+		prerequisite = {
+			focus = PGC_4
+		}
+		x = -1
+		y = 1
+		relative_position_id = PGC_10
+
+		completion_reward = {
+			add_ideas = PGC_11
+		}
+
+	}
+	focus = {
+		id = PGC_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_11
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_11
+
+		completion_reward = {
+			add_timed_idea = { idea = PGC_12 days = 70 }
+		}
+
+	}
+	focus = {
+		id = PGC_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_12
+		}
+		x = -1
+		y = 1
+		relative_position_id = PGC_12
+
+		completion_reward = {
+			add_ideas = PGC_13
+		}
+
+	}
+	focus = {
+		id = PGC_4
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_2
+		}
+		prerequisite = {
+			focus = PGC_3
+		}
+		x = 4
+		y = 1
+		relative_position_id = PGC_2
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = PGC_japanese_military_advisory_group
+		}
+
+	}
+	focus = {
+		id = PGC_5
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_4
+		}
+		x = -1
+		y = 1
+		relative_position_id = PGC_4
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_support_equipment_development
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_5
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_5
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_tank_research
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_support_equipment_development
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_support_equipment_development
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_1
+		}
+		x = 7
+		y = 1
+		relative_position_id = PGC_1
+
+		available = {
+			has_full_control_of_state = 609
+		}
+
+		cancel = {
+			NOT = {
+				has_full_control_of_state = 609
+			}
+		}
+
+		complete_tooltip = {
+			609 = {
+				limit = { has_state_flag = PGC_10 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			609 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = PGC_10
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_6
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_3
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_3
+
+		completion_reward = {
+			add_ideas = PGC_6
+		}
+
+	}
+	focus = {
+		id = PGC_8
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_6
+		}
+		x = 0
+		y = 2
+		relative_position_id = PGC_6
+
+		available = {
+			has_full_control_of_state = 609
+		}
+
+		cancel = {
+			NOT = {
+				has_full_control_of_state = 609
+			}
+		}
+
+		completion_reward = {
+			609 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			609 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = PGC_7
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_6
+		}
+		x = -1
+		y = 1
+		relative_position_id = PGC_6
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = PGC_9
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_7
+		}
+		x = 0
+		y = 2
+		relative_position_id = PGC_7
+
+		completion_reward = {
+			add_to_tech_sharing_group = japanese_research #나중에 수정 필요하면 수정
+		}
+
+	}
+	focus = {
+		id = PGC_regime_reorganization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PGC_13
+		}
+		prerequisite = {
+			focus = PGC_9
+		}
+		prerequisite = {
+			focus = PGC_23
+		}
+		x = 0
+		y = 1
+		relative_position_id = PGC_13
+
+	}
+}
