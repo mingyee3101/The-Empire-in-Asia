@@ -1,4 +1,18 @@
 characters={
+	JAP_Okada_Keisuke={
+		name=JAP_Okada_Keisuke
+		portraits={
+			civilian={
+				large = "gfx/leaders/JAP/JAP_Okada_Keisuke.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={

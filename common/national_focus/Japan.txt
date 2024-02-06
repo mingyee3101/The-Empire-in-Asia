@@ -15,12 +15,13 @@ focus_tree = {
         text = The_Empire_of_Rising_Sun
 		icon = GFX_goal_rhineland
 		cost = 10.00
-        select_effect = {
-            #add_political_power = 120
-        }
+
         available = {
             has_country_flag = February_incident
         }
+		ai_will_do = {
+			factor = 90
+		}
 		x = 19
 		y = 0
 		completion_reward = {
@@ -30,25 +31,39 @@ focus_tree = {
 	focus = {
 		id = JAP_Kodoha_faction_purge
 		icon = GFX_focus_AST_war_japan
-		cost = 7.00
+		cost = 5.00
 		prerequisite = { focus = JAP_The_Empire_of_Rising_Sun }
         relative_position_id = JAP_The_Empire_of_Rising_Sun
 		x = -1
 		y = 1
+		ai_will_do = {
+			factor = 90
+		}
 		completion_reward = {
-
+            add_manpower = -10000
 		}
 	}
 	focus = {
 		id = JAP_pressure_pm_focus
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		cost = 7.00
+		cost = 5.00
 		prerequisite = { focus = JAP_The_Empire_of_Rising_Sun }
         relative_position_id = JAP_The_Empire_of_Rising_Sun
 		x = 1
 		y = 1
+		ai_will_do = {
+			factor = 90
+		}
 		completion_reward = {
-
+			retire_country_leader = yes
+			create_country_leader = {
+				name = Senjuro_Hayashi
+				desc = "POLITICS_Senjuro_Hayashi_DESC"
+				picture = "gfx/leaders/JAP/JAP_Hayashi_Senjuro.png"
+				expire = "1989.1.1"
+				ideology = despotism
+				traits = { dictator }
+			}
 		}
 	}
 	focus = {
@@ -61,7 +76,16 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-
+			add_political_power = 100 
+				create_country_leader = {
+					name = fumimaro_konoe
+					desc = "POLITICS_Fumimaro_Konoe_DESC"
+					picture = "JAP_Konoe_Fumimaro.png"
+					expire = "1989.1.1"
+					id = 6001
+					ideology = despotism
+					traits = { popular_figurehead }
+				}
 		}
 	}
 	focus = {
@@ -216,9 +240,57 @@ focus_tree = {
 			has_idea = war_economy 
 		}
 	}
+	focus = {
+		id = JAP_test_the_chinese
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				date < 1936.7.15
+			}
+		}
+		prerequisite = {
+			focus = JAP_The_Empire_of_Rising_Sun
+		}
+		relative_position_id = JAP_The_Empire_of_Rising_Sun
+		x = -4
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_aggressive_china_politics_focus
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				date < 1937.4.1
+			}
+		}
+		prerequisite = {
+			focus = JAP_The_Empire_of_Rising_Sun
+		}
+        mutually_exclusive = {
+            focus = JAP_test_the_chinese
+        }
+		relative_position_id = JAP_The_Empire_of_Rising_Sun
+		x = -6
+		y = 1
+		completion_reward = {
+		}
+	}
 
 
-
+    ################
+    #####군사중점####
+    ################
     focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
@@ -299,7 +371,6 @@ focus_tree = {
 		id = JAP_supremacy_of_technology
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = JAP_small_arms_modernization }
-		mutually_exclusive = { focus = JAP_supremacy_of_will }
 		x = 0
 		y = 1
 		relative_position_id = JAP_small_arms_modernization
@@ -479,7 +550,6 @@ focus_tree = {
 		id = JAP_supremacy_of_will
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = JAP_army_expansion }
-		mutually_exclusive = { focus = JAP_supremacy_of_technology }
 		x = 0
 		y = 1
 		relative_position_id = JAP_army_expansion

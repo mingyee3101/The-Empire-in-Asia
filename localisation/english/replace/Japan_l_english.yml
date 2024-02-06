@@ -1,16 +1,33 @@
 ﻿l_english:
-
+ JAP_fascism:0 "대일본제국"
+ JAP_fascism_DEF:0 "대일본제국"
+ JAP_democratic:0 "대일본제국"
+ JAP_democratic_DEF:0 "대일본제국"
+ JAP_neutrality:0 "대일본제국"
+ JAP_neutrality_DEF:0 "대일본제국"
+ JAP_communism:0 "일본인민공화국"
+ JAP_communism_DEF:0 "일본인민공화국"
+ JAP_fascism_ADJ:0 "일본"
+ JAP_democratic_ADJ:0 "일본"
+ JAP_neutrality_ADJ:0 "일본"
+ JAP_communism_ADJ:0 "일본"
+ JAP:0 "대일본제국"
+ JAP_DEF:0 "일본"
+ JAP_ADJ:0 "일본"
  #중점
  The_Empire_of_Rising_Sun:0 "군부 회유"
  The_Empire_of_Rising_Sun_desc:0 ""
  JAP_pressure_pm_focus: "총리 압박"
  JAP_pressure_pm_focus_desc: ""
- JAP_Kodoha_faction_purge: "군 숙청"
+ JAP_Kodoha_faction_purge: "황도파 숙청"
  JAP_Kodoha_faction_purge_desc: ""
  JAP_konoe_cabinet_focus: "고노에 내각"
  JAP_konoe_cabinet_focus_desc: "훈1등 서보장의 수훈자이며 귀족원의장인 고노에 후미마로는 군과 일반 대중 모두에서 인기있는 인물입니다. 고노에 주도의 내각은 일본의 정치적 안정성을 보장할수 있을 것입니다."
  JAP_nat_mob_law: "국가총동원법"
  JAP_nat_mob_law_desc: ""
+
+ JAP_test_the_chinese: "화북분리공작"
+ JAP_aggressive_china_politics_focus: "중국과의 전쟁 준비"
 
  #이벤트
  jap226.1.t: "1936년 일본 총선"
@@ -28,4 +45,7 @@
 
  
  February_incident: "§Y2.26사건§!이 발생함"
+
+
+ JAP_Okada_Keisuke: "오카다 게이스케"
  

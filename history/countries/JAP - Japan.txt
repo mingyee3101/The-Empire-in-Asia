@@ -2,17 +2,18 @@
 
 
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
-set_war_support = 0.8
+set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.3
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
 
+	state_shintoism
+    JAP_hirohito_idea
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
@@ -425,15 +426,20 @@ if = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	democratic = 52
+    neutrality = 41
+    fascism = 6
+    communism = 1
 }
-
+### MODDED
+recruit_character = JAP_Okada_Keisuke
+### MODDED
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
 recruit_character = JAP_emperor_hirohito
@@ -502,6 +508,8 @@ recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
 recruit_character = JAP_kijuro_shidehara
+
+
 
 
 if = {
