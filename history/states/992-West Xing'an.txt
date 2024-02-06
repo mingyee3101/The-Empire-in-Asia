@@ -1,12 +1,10 @@
 state={
-	id=714
-	name="STATE_714"
-
+	id=992
+	name="STATE_992"
 	provinces={
-		1847 4809 4876 7873 7894 10567
+		1508 3978 10429 10499 12469 12478 
 	}
-	manpower=2724174
-	buildings_max_level_factor=1.000
+	manpower=1724174
 	state_category=rural
 	history={
 		owner = MAN
@@ -16,9 +14,11 @@ state={
 		
 		buildings = {
 			infrastructure = 2 #was 3
+
 		}
 
 	}
+	buildings_max_level_factor=1.000
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }
