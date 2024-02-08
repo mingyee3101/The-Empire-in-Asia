@@ -159,6 +159,38 @@ ideas = {
 
 		}
 
+		#인도차이나 보호
+		UIC_indochina_conservation_plan_i = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+
+		}
+
+		UIC_indochina_conservation_plan_ii = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+				production_speed_anti_air_building_factor = 0.3
+			}
+
+		}
+
 	}
 
 }

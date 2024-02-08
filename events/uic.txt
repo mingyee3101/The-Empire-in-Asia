@@ -10,7 +10,146 @@ country_event = {
 
 	option = {
 		name = uic.1.a
-		
-        
+		ai_chance = {
+			factor = 100
+		}
+
+		JAP = {
+			country_event = { id = uic.2 }
+		}
+		CHI = {
+			country_event = { id = uic.2 }
+		}
+		SOV = {
+			country_event = { id = uic.2 }
+		}
+		FRA = {
+			country_event = { id = uic.2 }
+		}
+		ENG = {
+			country_event = { id = uic.2 }
+		}
+		GER = {
+			country_event = { id = uic.2 }
+		}
+		ITA = {
+			country_event = { id = uic.2 }
+		}
+		USA = {
+			country_event = { id = uic.2 }
+		}
+		RAJ = {
+			country_event = { id = uic.2 }
+		}
+		AST = {
+			country_event = { id = uic.2 }
+		}
+
+		#홍수 디버프
+	}
+}
+
+country_event = {
+	id = uic.2
+	title = uic.2.t
+	desc = uic.2.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.2.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				original_tag = CHI
+				PREV = {
+					is_subject_of = ROOT
+				}
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value > 75
+					}
+				}
+			}
+		}
+		PREV = {
+			country_event = { id = uic.3 }
+		}
+		#관계개선
+		#소비재 10% 120일
+	}
+
+	option = {
+		name = uic.2.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				original_tag = JAP
+				original_tag = SOV
+				original_tag = FRA
+				original_tag = ENG
+				original_tag = ITA
+				original_tag = USA
+				original_tag = RAJ
+				original_tag = AST
+			}
+		}
+
+		PREV = {
+			country_event = { id = uic.4 }
+		}
+		#관계개선
+		#소비재 5% 120일
+	}
+
+	option = {
+		name = uic.2.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 50
+				has_war_with = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uic.3
+	title = uic.3.t
+	desc = uic.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.3.a
+		ai_chance = {
+			factor = 100
+		}
+
+		#디버프 제거
+		#안정도 증가
+	}
+}
+
+country_event = {
+	id = uic.3
+	title = uic.3.t
+	desc = uic.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.3.a
+		ai_chance = {
+			factor = 100
+		}
+		#안정도 증가
 	}
 }

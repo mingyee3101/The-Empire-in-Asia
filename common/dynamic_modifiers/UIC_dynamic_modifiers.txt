@@ -1,0 +1,8 @@
+#국민정신
+
+UIC_indochina_economy = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	consumer_goods_factor = UIC_indochina_economy_consumer_goods_factor
+	monthly_population = UIC_indochina_economy_monthly_population
+}

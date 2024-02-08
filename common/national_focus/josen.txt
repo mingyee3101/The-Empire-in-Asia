@@ -1,2066 +1,1873 @@
 focus_tree = {
-	id = New_file
+	id = josen
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 20
 			tag = kor
 		}
 	}
+	continuous_focus_position = { x = 1000 y = 500 }
 	default = no
 	focus = {
-		id = 총독부 유지
+		id = kr_1
 		icon = GFX_goal_unknown
 		cost = 10.00
 		mutually_exclusive = {
-			focus = 조선독립
+			focus = kr_49
 		}
-		x = 7
+		x = 5
 		y = 2
 
 	}
 	focus = {
-		id = 조선독립
+		id = kr_44
 		icon = GFX_goal_unknown
 		cost = 10.00
-		mutually_exclusive = {
-			focus = 총독부 유지
-		}
-		x = 26
-		y = 2
-
-	}
-	focus = {
-		id = 조선건국 준비위원회
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 7
+		x = 5
 		y = 25
 
 	}
 	focus = {
-		id = 재침략 대비
+		id = kr_49
 		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 20
-		y = 32
+		mutually_exclusive = {
+			focus = kr_1
+		}
+		x = 28
+		y = 2
 
 	}
 	focus = {
-		id = 조선은 일본의 개
+		id = kr_2
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 총독부 유지
+			focus = kr_1
 		}
-		x = 7
+		x = 5
 		y = 3
 
 	}
 	focus = {
-		id = 미나미 지로 총독
+		id = kr_4
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 조선은 일본의 개
+			focus = kr_2
 		}
-		x = 7
+		x = 5
 		y = 4
 
 	}
 	focus = {
-		id = 창씨개명 시행
+		id = kr_6
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 미나미 지로 총독
+			focus = kr_4
 		}
-		x = 7
+		x = 5
 		y = 5
 
 	}
 	focus = {
-		id = 조선도로령 공포
+		id = kr_15
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 창씨개명 시행
+			focus = kr_6
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = kr_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_6
 		}
 		x = 5
 		y = 6
 
 	}
 	focus = {
-		id = 민족운동 탄압
+		id = kr_8
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 창씨개명 시행
+			focus = kr_7
 		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = 경제적 수탈 실시
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 민족운동 탄압
-		}
-		x = 7
+		x = 5
 		y = 7
 
 	}
 	focus = {
-		id = 민족문화 말살정책
+		id = kr_9
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 경제적 수탈 실시
+			focus = kr_8
 		}
-		x = 7
+		x = 5
 		y = 8
 
 	}
 	focus = {
-		id = 내선일체
-		icon = GFX_focus_jap_pacific_guardian
+		id = kr_16
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 민족문화 말살정책
+			focus = kr_9
 		}
-		x = 7
+		x = 5
 		y = 9
 
 	}
 	focus = {
-		id = 고이소 구니아키 총독
+		id = kr_17
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 내선일체
+			focus = kr_16
 		}
-		x = 7
+		x = 5
 		y = 10
 
 	}
 	focus = {
-		id = 조선 농업정책
+		id = kr_18
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 고이소 구니아키 총독
+			focus = kr_17
 		}
-		x = 7
+		x = 5
 		y = 11
 
 	}
 	focus = {
-		id = 산미증식계획
+		id = kr_19
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 조선 농업정책
+			focus = kr_18
 		}
-		x = 7
+		x = 5
 		y = 12
 
 	}
 	focus = {
-		id = 육지면 재배 장려
+		id = kr_20
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 산미증식계획
+			focus = kr_19
 		}
-		x = 7
+		x = 5
 		y = 13
 
 	}
 	focus = {
-		id = 우량잠종 보급
+		id = kr_21
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 육지면 재배 장려
+			focus = kr_20
 		}
-		x = 7
+		x = 5
 		y = 14
 
 	}
 	focus = {
-		id = 식민지 경제정책
+		id = kr_29
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 우량잠종 보급
+			focus = kr_21
 		}
-		x = 7
+		x = 5
 		y = 15
 
 	}
 	focus = {
-		id = 조선공업화정책
+		id = kr_30
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 식민지 경제정책
+			focus = kr_29
+		}
+		x = 4
+		y = 16
+
+	}
+	focus = {
+		id = kr_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_29
 		}
 		x = 6
 		y = 16
 
 	}
 	focus = {
-		id = 뽕나무 재배면적 확대
+		id = kr_34
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 식민지 경제정책
+			focus = kr_33
 		}
-		x = 8
-		y = 16
-
-	}
-	focus = {
-		id = 쌀증산정책 실시
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 뽕나무 재배면적 확대
-		}
-		x = 8
+		x = 6
 		y = 17
 
 	}
 	focus = {
-		id = 임업착취
+		id = kr_35
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 쌀증산정책 실시
+			focus = kr_34
 		}
-		x = 8
+		x = 6
 		y = 18
 
 	}
 	focus = {
-		id = 중일전쟁을 위한 조선 병참기지화
+		id = kr_3
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 총독부 유지
+			focus = kr_2
 		}
-		x = 9
-		y = 3
-
-	}
-	focus = {
-		id = 병참기지화 가속
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 중일전쟁을 위한 조선 병참기지화
-		}
-		x = 9
+		x = 7
 		y = 4
 
 	}
 	focus = {
-		id = 황국신민서사 암송 강요
+		id = kr_5
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 창씨개명 시행
+			focus = kr_3
 		}
-		x = 9
-		y = 6
-
-	}
-	focus = {
-		id = 궁성 요배 강요
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 황국신민서사 암송 강요
-		}
-		x = 9
-		y = 7
-
-	}
-	focus = {
-		id = 신사 참배 강요
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 궁성 요배 강요
-		}
-		x = 9
-		y = 8
-
-	}
-	focus = {
-		id = 군인 강간행위 방지
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 고이소 구니아키 총독
-		}
-		x = 9
-		y = 11
-
-	}
-	focus = {
-		id = 군인 성병감염 방지
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 군인 강간행위 방지
-		}
-		x = 9
-		y = 12
-
-	}
-	focus = {
-		id = 위안부 설치
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 군인 성병감염 방지
-		}
-		x = 9
-		y = 13
-
-	}
-	focus = {
-		id = 징병제 실시
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 재침략 대비
-		}
-		x = 17
-		y = 33
-
-	}
-	focus = {
-		id = 해안요새 건설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 징병제 실시
-		}
-		x = 21
-		y = 34
-
-	}
-	focus = {
-		id = 미해군 구축함 구매
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 해안요새 건설
-		}
-		x = 21
-		y = 35
-
-	}
-	focus = {
-		id = 미해군 잠수함 구매
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 미해군 구축함 구매
-		}
-		x = 21
-		y = 36
-
-	}
-	focus = {
-		id = 첩보전
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 재침략 대비
-		}
-		x = 24
-		y = 33
-
-	}
-	focus = {
-		id = 중앙정보부 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 첩보전
-		}
-		x = 24
-		y = 34
-
-	}
-	focus = {
-		id = 국내범죄조직 소탕
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 중앙정보부 창설
-		}
-		x = 23
-		y = 35
-
-	}
-	focus = {
-		id = 요원 추가모집
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 중앙정보부 창설
-		}
-		x = 25
-		y = 35
-
-	}
-	focus = {
-		id = 잔존하는 일본인 퇴치
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내범죄조직 소탕
-			focus = 요원 추가모집
-		}
-		x = 24
-		y = 36
-
-	}
-	focus = {
-		id = 광복군 조선으로 이동
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 조선독립
-		}
-		x = 26
-		y = 3
-
-	}
-	focus = {
-		id = 중국제 총기 밀수
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 광복군 조선으로 이동
-		}
-		x = 26
-		y = 4
-
-	}
-	focus = {
-		id = 소련제 총기밀수
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 중국제 총기 밀수
-		}
-		x = 26
+		x = 7
 		y = 5
 
 	}
 	focus = {
-		id = 중국 용병
+		id = kr_10
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 소련제 총기밀수
+			focus = kr_6
 		}
-		x = 26
+		x = 7
 		y = 6
 
 	}
 	focus = {
-		id = 전라남도 비밀기지
+		id = kr_11
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 중국 용병
+			focus = kr_10
 		}
-		x = 26
+		x = 7
 		y = 7
 
 	}
 	focus = {
-		id = 경상남도 비밀기지
+		id = kr_12
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 전라남도 비밀기지
+			focus = kr_11
 		}
-		x = 26
+		x = 7
 		y = 8
 
 	}
 	focus = {
-		id = 민간공업 회유
+		id = kr_26
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 경상남도 비밀기지
+			focus = kr_17
 		}
-		x = 26
-		y = 9
-
-	}
-	focus = {
-		id = 조선인 광복군 모집
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 민간공업 회유
-		}
-		x = 26
-		y = 10
-
-	}
-	focus = {
-		id = 금융조합 회유
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 조선인 광복군 모집
-		}
-		x = 26
+		x = 7
 		y = 11
 
 	}
 	focus = {
-		id = 독립전쟁!
-		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		id = kr_27
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 금융조합 회유
+			focus = kr_26
 		}
-		x = 26
+		x = 7
 		y = 12
 
 	}
 	focus = {
-		id = 독립전쟁 성공
+		id = kr_28
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 독립전쟁!
+			focus = kr_27
 		}
-		x = 26
+		x = 7
 		y = 13
 
 	}
 	focus = {
-		id = 자유민주국가 대한민국
+		id = kr_50
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 독립전쟁 성공
+			focus = kr_49
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = kr_51
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_50
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = kr_52
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_51
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = kr_53
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_52
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = kr_54
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_53
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = kr_55
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_54
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = kr_56
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_55
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = kr_57
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_56
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = kr_58
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_57
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = kr_59
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_58
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = kr_60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_59
 		}
 		mutually_exclusive = {
-			focus = 민족과 조국을 위한 대한민국
+			focus = kr_61
 		}
 		x = 19
-		y = 14
+		y = 13
 
 	}
 	focus = {
-		id = 민족과 조국을 위한 대한민국
+		id = kr_61
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 독립전쟁 성공
+			focus = kr_59
 		}
 		mutually_exclusive = {
-			focus = 자유민주국가 대한민국
+			focus = kr_60
 		}
-		x = 33
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = kr_85
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_61
+		}
+		x = 37
 		y = 14
 
 	}
 	focus = {
-		id = 김구 대통령
+		id = kr_86
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 민족과 조국을 위한 대한민국
+			focus = kr_85
 		}
-		x = 33
+		x = 37
 		y = 15
 
 	}
 	focus = {
-		id = 초중고 의무교육화 실행
+		id = kr_87
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 김구 대통령
+			focus = kr_86
 		}
-		x = 33
+		x = 35
 		y = 16
 
 	}
 	focus = {
-		id = 한국어교육실시
+		id = kr_89
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 초중고 의무교육화 실행
+			focus = kr_86
 		}
-		x = 31
+		x = 37
+		y = 16
+
+	}
+	focus = {
+		id = kr_90
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_89
+		}
+		x = 37
 		y = 17
 
 	}
 	focus = {
-		id = 반일교육
+		id = kr_91
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 초중고 의무교육화 실행
+			focus = kr_90
 		}
-		x = 33
-		y = 17
-
-	}
-	focus = {
-		id = 일제건물 철거
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 반일교육
-		}
-		x = 33
+		x = 37
 		y = 18
 
 	}
 	focus = {
-		id = 대한민족교육
+		id = kr_92
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 일제건물 철거
-		}
-		x = 33
-		y = 19
-
-	}
-	focus = {
-		id = 농업개혁
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 대한민족교육
-		}
-		x = 32
-		y = 20
-
-	}
-	focus = {
-		id = 공업개혁
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 대한민족교육
-		}
-		x = 34
-		y = 20
-
-	}
-	focus = {
-		id = 출산정책 제정
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 농업개혁
-			focus = 공업개혁
-		}
-		x = 33
-		y = 21
-
-	}
-	focus = {
-		id = 민족주의교육
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 공업개혁
-		}
-		x = 35
-		y = 21
-
-	}
-	focus = {
-		id = 공업장려정책
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 출산정책 제정
-			focus = 민족주의교육
-		}
-		x = 34
-		y = 22
-
-	}
-	focus = {
-		id = 어업장려정책
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 민족주의교육
-			focus = 출산정책 제정
+			focus = kr_91
 		}
 		x = 36
-		y = 22
-
-	}
-	focus = {
-		id = 국도,지방도,부도 설정
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 조선도로령 공포
-		}
-		x = 5
-		y = 7
-
-	}
-	focus = {
-		id = 읍/면도 구분
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국도,지방도,부도 설정
-		}
-		x = 5
-		y = 8
-
-	}
-	focus = {
-		id = 강제 징용 실시
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		cost = 10.00
-		prerequisite = {
-			focus = 고이소 구니아키 총독
-		}
-		x = 5
-		y = 11
-
-	}
-	focus = {
-		id = 노동력 착취
-		icon = GFX_focus_DEN_no_regulations
-		cost = 10.00
-		prerequisite = {
-			focus = 강제 징용 실시
-		}
-		x = 5
-		y = 12
-
-	}
-	focus = {
-		id = 학도 지원병 제도
-		icon = GFX_focus_ITA_corpo_volontari_della_liberta
-		cost = 10.00
-		prerequisite = {
-			focus = 노동력 착취
-		}
-		x = 5
-		y = 13
-
-	}
-	focus = {
-		id = 징병제도 실시
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
-		prerequisite = {
-			focus = 학도 지원병 제도
-		}
-		x = 5
-		y = 14
-
-	}
-	focus = {
-		id = 석탄채굴
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 조선공업화정책
-		}
-		x = 6
-		y = 17
-
-	}
-	focus = {
-		id = 전력공업지대 설정
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 석탄채굴
-		}
-		x = 6
-		y = 18
-
-	}
-	focus = {
-		id = 어업,광업 착취정책
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 전력공업지대 설정
-			focus = 임업착취
-		}
-		x = 7
 		y = 19
 
 	}
 	focus = {
-		id = 금융조합,노공은행 통제
+		id = kr_93
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 어업,광업 착취정책
+			focus = kr_91
+		}
+		x = 38
+		y = 19
+
+	}
+	focus = {
+		id = kr_94
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_93
+		}
+		prerequisite = {
+			focus = kr_92
+		}
+		x = 37
+		y = 20
+
+	}
+	focus = {
+		id = kr_96
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_93
+		}
+		x = 39
+		y = 20
+
+	}
+	focus = {
+		id = kr_99
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_96
+		}
+		x = 38
+		y = 21
+
+	}
+	focus = {
+		id = kr_100
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_96
+		}
+		x = 40
+		y = 21
+
+	}
+	focus = {
+		id = kr_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_14
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = kr_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_15
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = kr_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_23
+		}
+		x = 3
+		y = 14
+
+	}
+	focus = {
+		id = kr_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_24
+		}
+		x = 3
+		y = 13
+
+	}
+	focus = {
+		id = kr_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_25
+		}
+		x = 3
+		y = 12
+
+	}
+	focus = {
+		id = kr_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_17
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = kr_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_30
+		}
+		x = 4
+		y = 17
+
+	}
+	focus = {
+		id = kr_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_31
+		}
+		x = 4
+		y = 18
+
+	}
+	focus = {
+		id = kr_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_32
+		}
+		prerequisite = {
+			focus = kr_35
+		}
+		x = 5
+		y = 19
+
+	}
+	focus = {
+		id = kr_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_36
+		}
+		x = 4
+		y = 20
+
+	}
+	focus = {
+		id = kr_38
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_36
 		}
 		x = 6
 		y = 20
 
 	}
 	focus = {
-		id = 민족기업 규제
+		id = kr_39
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 어업,광업 착취정책
+			focus = kr_38
 		}
-		x = 8
-		y = 20
+		prerequisite = {
+			focus = kr_37
+		}
+		x = 5
+		y = 21
 
 	}
 	focus = {
-		id = 회사령 제정, 공포 
+		id = kr_40
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 금융조합,노공은행 통제
-			focus = 민족기업 규제
+			focus = kr_38
 		}
 		x = 7
 		y = 21
 
 	}
 	focus = {
-		id = 아베 노부유키 총독
+		id = kr_41
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 회사령 제정, 공포 
+			focus = kr_39
 		}
-		x = 7
+		x = 5
 		y = 22
 
 	}
 	focus = {
-		id = 관세 폐지
+		id = kr_42
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 민족기업 규제
+			focus = kr_41
 		}
-		x = 9
-		y = 21
-
-	}
-	focus = {
-		id = 회사령 완화
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 아베 노부유키 총독
-		}
-		x = 7
+		x = 5
 		y = 23
 
 	}
 	focus = {
-		id = 대일본제국의 패망...
+		id = kr_43
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 회사령 완화
+			focus = kr_42
 		}
-		x = 7
+		x = 5
 		y = 24
 
 	}
 	focus = {
-		id = 대한민국
+		id = kr_45
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 조선건국 준비위원회
+			focus = kr_44
 		}
 		mutually_exclusive = {
-			focus = 조선인민공화국
+			focus = kr_46
 		}
-		x = 5
+		x = 3
 		y = 26
 
 	}
 	focus = {
-		id = 조선인민공화국
+		id = kr_46
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 조선건국 준비위원회
+			focus = kr_44
 		}
 		mutually_exclusive = {
-			focus = 대한민국
+			focus = kr_45
 		}
-		x = 9
+		x = 7
 		y = 26
 
 	}
 	focus = {
-		id = 재조선미육군사령부군정청
+		id = kr_47
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 대한민국
+			focus = kr_45
 		}
-		x = 5
+		x = 3
 		y = 27
 
 	}
 	focus = {
-		id = 소비에트 민정청
+		id = kr_48
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 조선인민공화국
+			focus = kr_46
 		}
-		x = 9
+		x = 7
 		y = 27
 
 	}
 	focus = {
-		id = 이승만 대통령
+		id = kr_62
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 자유민주국가 대한민국
+			focus = kr_60
 		}
 		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = kr_63
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_62
+		}
+		x = 16
 		y = 15
 
 	}
 	focus = {
-		id = 초중고 의무교육화 실시
+		id = kr_64
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 이승만 대통령
+			focus = kr_63
 		}
 		x = 16
 		y = 16
 
 	}
 	focus = {
-		id = 일제 잔해 철거
+		id = kr_65
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 초중고 의무교육화 실시
+			focus = kr_64
 		}
-		x = 16
+		x = 15
 		y = 17
 
 	}
 	focus = {
-		id = 농업 장려정책
+		id = kr_66
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 일제 잔해 철거
-		}
-		x = 15
-		y = 18
-
-	}
-	focus = {
-		id = 공업 장려정책
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 일제 잔해 철거
+			focus = kr_64
 		}
 		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = kr_67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_65
+		}
+		prerequisite = {
+			focus = kr_66
+		}
+		x = 16
 		y = 18
 
 	}
 	focus = {
-		id = 반일주의
+		id = kr_68
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 농업 장려정책
-			focus = 공업 장려정책
+			focus = kr_66
+		}
+		x = 18
+		y = 18
+
+	}
+	focus = {
+		id = kr_69
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_65
+		}
+		x = 14
+		y = 18
+
+	}
+	focus = {
+		id = kr_70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_67
+		}
+		prerequisite = {
+			focus = kr_69
+		}
+		prerequisite = {
+			focus = kr_68
 		}
 		x = 16
 		y = 19
 
 	}
 	focus = {
-		id = 자유민주주의 확산
+		id = kr_71
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 공업 장려정책
-		}
-		x = 18
-		y = 19
-
-	}
-	focus = {
-		id = 반공주의
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 농업 장려정책
-		}
-		x = 14
-		y = 19
-
-	}
-	focus = {
-		id = 농지개혁법 제정
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 반일주의
-			focus = 자유민주주의 확산
-			focus = 반공주의
+			focus = kr_70
 		}
 		x = 16
 		y = 20
 
 	}
 	focus = {
-		id = 한미상호방위조약
+		id = kr_72
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 농지개혁법 제정
+			focus = kr_71
 		}
 		x = 16
 		y = 21
 
 	}
 	focus = {
-		id = 근대적 생활양식
+		id = kr_73
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한미상호방위조약
+			focus = kr_72
 		}
 		x = 16
 		y = 22
 
 	}
 	focus = {
-		id = 한국어 교육 의무화
+		id = kr_74
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한미상호방위조약
-		}
-		x = 13
-		y = 22
-
-	}
-	focus = {
-		id = 문맹퇴치
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 한국어 교육 의무화
-		}
-		x = 13
-		y = 23
-
-	}
-	focus = {
-		id = 근대기술및기계 배우기
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 근대적 생활양식
-		}
-		x = 16
-		y = 23
-
-	}
-	focus = {
-		id = 만주전선 요새 건설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 징병제 실시
-		}
-		x = 16
-		y = 34
-
-	}
-	focus = {
-		id = 미전차 라이센스생산
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 만주전선 요새 건설
-		}
-		x = 17
-		y = 35
-
-	}
-	focus = {
-		id = 미국 무기 라이센스 생산
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 만주전선 요새 건설
-		}
-		x = 15
-		y = 35
-
-	}
-	focus = {
-		id = 하늘위의 요새
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 징병제 실시
-		}
-		x = 19
-		y = 34
-
-	}
-	focus = {
-		id = 미국 항공기 라이센스 생산
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 대공포 건설
-		}
-		x = 19
-		y = 36
-
-	}
-	focus = {
-		id = 자주국방시행
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내무기생산
-		}
-		x = 18
-		y = 38
-
-	}
-	focus = {
-		id = 국내무기생산
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 현대로템 설립
-			focus = 미국 항공기 라이센스 생산
-			focus = 미해군 잠수함 구매
-		}
-		x = 18
-		y = 37
-
-	}
-	focus = {
-		id = 치안문제
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 근대기술및기계 배우기
-		}
-		x = 15
-		y = 24
-
-	}
-	focus = {
-		id = 국내 경찰대거모집
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 치안문제
-		}
-		x = 15
-		y = 25
-
-	}
-	focus = {
-		id = 기마경찰대 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내 경찰대거모집
-		}
-		x = 13
-		y = 26
-
-	}
-	focus = {
-		id = 전투경찰 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내 경찰대거모집
-		}
-		x = 15
-		y = 26
-
-	}
-	focus = {
-		id = 해안경찰 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내 경찰대거모집
-		}
-		x = 17
-		y = 26
-
-	}
-	focus = {
-		id = 경찰특공대 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 전투경찰 창설
-			focus = 기마경찰대 창설
+			focus = kr_71
 		}
 		x = 14
-		y = 27
+		y = 21
 
 	}
 	focus = {
-		id = 한강순찰대 창설
+		id = kr_75
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 전투경찰 창설
-			focus = 해안경찰 창설
+			focus = kr_74
+		}
+		x = 14
+		y = 22
+
+	}
+	focus = {
+		id = kr_76
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_75
+		}
+		x = 14
+		y = 23
+
+	}
+	focus = {
+		id = kr_77
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_73
+		}
+		x = 16
+		y = 23
+
+	}
+	focus = {
+		id = kr_78
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_77
+		}
+		x = 16
+		y = 24
+
+	}
+	focus = {
+		id = kr_79
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_78
+		}
+		x = 16
+		y = 25
+
+	}
+	focus = {
+		id = kr_80
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_78
+		}
+		x = 14
+		y = 25
+
+	}
+	focus = {
+		id = kr_81
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_78
+		}
+		x = 18
+		y = 25
+
+	}
+	focus = {
+		id = kr_82
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_80
+		}
+		x = 15
+		y = 26
+
+	}
+	focus = {
+		id = kr_83
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_81
+		}
+		x = 17
+		y = 26
+
+	}
+	focus = {
+		id = kr_84
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_82
+		}
+		prerequisite = {
+			focus = kr_83
 		}
 		x = 16
 		y = 27
 
 	}
 	focus = {
-		id = 치안유지
+		id = kr_88
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 경찰특공대 창설
-			focus = 한강순찰대 창설
+			focus = kr_87
 		}
-		x = 15
-		y = 28
+		x = 35
+		y = 17
 
 	}
 	focus = {
-		id = 문맹퇴치
+		id = kr_95
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한국어 교육 의무화
+			focus = kr_92
 		}
-		x = 31
-		y = 18
+		x = 35
+		y = 20
 
 	}
 	focus = {
-		id = 역사교육
+		id = kr_97
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 농업개혁
+			focus = kr_95
 		}
-		x = 31
+		x = 34
 		y = 21
 
 	}
 	focus = {
-		id = 민족주의확산
+		id = kr_98
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 출산정책 제정
-			focus = 역사교육
+			focus = kr_95
 		}
-		x = 32
+		x = 36
+		y = 21
+
+	}
+	focus = {
+		id = kr_101
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_98
+		}
+		prerequisite = {
+			focus = kr_99
+		}
+		x = 37
 		y = 22
 
 	}
 	focus = {
-		id = 농업장려정책
+		id = kr_102
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 역사교육
-			focus = 출산정책 제정
-		}
-		x = 30
-		y = 22
-
-	}
-	focus = {
-		id = 이북지역 석탄채굴
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 미국건설사 초청
-		}
-		x = 31
-		y = 24
-
-	}
-	focus = {
-		id = 석탄발전소 건설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 이북지역 석탄채굴
-		}
-		x = 31
-		y = 25
-
-	}
-	focus = {
-		id = 청평수력발전소 건설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 미국건설사 초청
-		}
-		x = 33
-		y = 24
-
-	}
-	focus = {
-		id = 제1,2,3발전소 준공
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 청평수력발전소 건설
-		}
-		x = 33
-		y = 25
-
-	}
-	focus = {
-		id = 식료품공업
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 미국건설사 초청
+			focus = kr_101
 		}
 		x = 35
-		y = 24
-
-	}
-	focus = {
-		id = 경공업
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 식료품공업
-		}
-		x = 35
-		y = 25
-
-	}
-	focus = {
-		id = 미국과 외교
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 제1,2,3발전소 준공
-			focus = 석탄발전소 건설
-			focus = 경공업
-		}
-		x = 33
-		y = 26
-
-	}
-	focus = {
-		id = 미국건설사 초청
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 어업장려정책
-			focus = 공업장려정책
-			focus = 민족주의확산
-			focus = 농업장려정책
-		}
-		x = 33
 		y = 23
 
 	}
 	focus = {
-		id = 미국식 건물
+		id = kr_103
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 미국과 외교
+			focus = kr_102
 		}
-		x = 33
+		x = 35
+		y = 24
+
+	}
+	focus = {
+		id = kr_104
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_101
+		}
+		x = 37
+		y = 23
+
+	}
+	focus = {
+		id = kr_105
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_104
+		}
+		x = 37
+		y = 24
+
+	}
+	focus = {
+		id = kr_106
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_101
+		}
+		x = 39
+		y = 23
+
+	}
+	focus = {
+		id = kr_107
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_106
+		}
+		x = 39
+		y = 24
+
+	}
+	focus = {
+		id = kr_108
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_103
+		}
+		prerequisite = {
+			focus = kr_107
+		}
+		prerequisite = {
+			focus = kr_105
+		}
+		x = 37
+		y = 25
+
+	}
+	focus = {
+		id = kr_109
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_108
+		}
+		x = 37
+		y = 26
+
+	}
+	focus = {
+		id = kr_110
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_109
+		}
+		x = 37
 		y = 27
 
 	}
 	focus = {
-		id = 거세지는 선거요구시위
+		id = kr_111
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 미국식 건물
+			focus = kr_110
 		}
-		x = 33
+		x = 44
 		y = 28
 
 	}
 	focus = {
-		id = 임기6년 재임가능한 직선제
+		id = kr_112
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 거세지는 선거요구시위
+			focus = kr_111
 		}
-		x = 38
+		x = 44
 		y = 29
 
 	}
 	focus = {
-		id = 높아지는 범죄율
+		id = kr_113
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 거세지는 선거요구시위
+			focus = kr_112
 		}
-		x = 32
+		x = 44
 		y = 30
 
 	}
 	focus = {
-		id = 기마경찰대 창설
+		id = kr_114
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 국내 경찰대거모집
+			focus = kr_113
 		}
-		x = 30
+		x = 44
 		y = 31
 
 	}
 	focus = {
-		id = 전투경찰 창설
+		id = kr_115
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 국내 경찰대거모집
-		}
-		x = 32
-		y = 31
-
-	}
-	focus = {
-		id = 해안경찰 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 국내 경찰대거모집
-		}
-		x = 34
-		y = 31
-
-	}
-	focus = {
-		id = 경찰특공대 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 전투경찰 창설
-			focus = 기마경찰대 창설
-		}
-		x = 31
-		y = 32
-
-	}
-	focus = {
-		id = 한강순찰대 창설
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 전투경찰 창설
-			focus = 해안경찰 창설
-		}
-		x = 33
-		y = 32
-
-	}
-	focus = {
-		id = 치안유지
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 경찰특공대 창설
-			focus = 한강순찰대 창설
-		}
-		x = 32
-		y = 33
-
-	}
-	focus = {
-		id = 박정희 대통령
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 임기6년 재임가능한 직선제
-		}
-		x = 43
-		y = 30
-
-	}
-	focus = {
-		id = 경부고속도로 개통
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 박정희 대통령
-		}
-		x = 43
-		y = 31
-
-	}
-	focus = {
-		id = 서울지하철 개통
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 경부고속도로 개통
+			focus = kr_114
 		}
 		x = 43
 		y = 32
 
 	}
 	focus = {
-		id = 새마을운동 실행
+		id = kr_116
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 서울지하철 개통
+			focus = kr_114
 		}
-		x = 42
-		y = 33
+		x = 45
+		y = 32
 
 	}
 	focus = {
-		id = 대규모 중화학 공업 건설
+		id = kr_117
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 서울지하철 개통
+			focus = kr_116
+		}
+		prerequisite = {
+			focus = kr_115
 		}
 		x = 44
 		y = 33
 
 	}
 	focus = {
-		id = 산림녹화 사업
+		id = kr_118
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 새마을운동 실행
+			focus = kr_116
+		}
+		x = 46
+		y = 33
+
+	}
+	focus = {
+		id = kr_119
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_115
+		}
+		x = 42
+		y = 33
+
+	}
+	focus = {
+		id = kr_120
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_119
 		}
 		x = 41
 		y = 34
 
 	}
 	focus = {
-		id = 식량 자급자족
+		id = kr_121
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 대규모 중화학 공업 건설
-			focus = 새마을운동 실행
+			focus = kr_119
 		}
 		x = 43
 		y = 34
 
 	}
 	focus = {
-		id = 군 현대화 사업
+		id = kr_122
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 대규모 중화학 공업 건설
+			focus = kr_118
 		}
 		x = 45
 		y = 34
 
 	}
 	focus = {
-		id = 문화재 복원사업
+		id = kr_123
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 산림녹화 사업
-			focus = 식량 자급자족
+			focus = kr_118
 		}
-		x = 42
-		y = 35
+		x = 47
+		y = 34
 
 	}
 	focus = {
-		id = 문화재관리국 설치
+		id = kr_124
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 식량 자급자족
-			focus = 군 현대화 사업
+			focus = kr_121
+		}
+		prerequisite = {
+			focus = kr_122
 		}
 		x = 44
 		y = 35
 
 	}
 	focus = {
-		id = 대한민국 교육부 창설
+		id = kr_125
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 산림녹화 사업
+			focus = kr_124
 		}
-		x = 40
-		y = 35
-
-	}
-	focus = {
-		id = 무형문화재 제도
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 군 현대화 사업
-		}
-		x = 46
-		y = 35
-
-	}
-	focus = {
-		id = 강남 개발
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 문화재 복원사업
-			focus = 문화재관리국 설치
-		}
-		x = 43
+		x = 44
 		y = 36
 
 	}
 	focus = {
-		id = 부가가치세 도입
+		id = kr_126
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 의료보험법
-		}
-		x = 42
-		y = 38
-
-	}
-	focus = {
-		id = 근로기준법 제정
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 의료보험법
-		}
-		x = 44
-		y = 38
-
-	}
-	focus = {
-		id = 산재보험
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 부가가치세 도입
-		}
-		x = 41
-		y = 39
-
-	}
-	focus = {
-		id = 국민건강보험
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 부가가치세 도입
-			focus = 근로기준법 제정
-		}
-		x = 43
-		y = 39
-
-	}
-	focus = {
-		id = 의료보험
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 근로기준법 제정
-		}
-		x = 45
-		y = 39
-
-	}
-	focus = {
-		id = 사회의료보험 도입
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 산재보험
-			focus = 의료보험
-			focus = 국민건강보험
-		}
-		x = 43
-		y = 40
-
-	}
-	focus = {
-		id = 의료보험법
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 강남 개발
+			focus = kr_125
 		}
 		x = 43
 		y = 37
 
 	}
 	focus = {
-		id = 농어촌 전화사업
+		id = kr_127
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 사회의료보험 도입
+			focus = kr_125
 		}
-		x = 43
+		x = 45
+		y = 37
+
+	}
+	focus = {
+		id = kr_128
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_127
+		}
+		x = 44
+		y = 38
+
+	}
+	focus = {
+		id = kr_129
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_127
+		}
+		x = 46
+		y = 38
+
+	}
+	focus = {
+		id = kr_130
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_126
+		}
+		x = 42
+		y = 38
+
+	}
+	focus = {
+		id = kr_131
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_128
+		}
+		x = 44
+		y = 39
+
+	}
+	focus = {
+		id = kr_132
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_131
+		}
+		x = 44
+		y = 40
+
+	}
+	focus = {
+		id = kr_133
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_132
+		}
+		x = 44
 		y = 41
 
 	}
 	focus = {
-		id = 한국전력주식회사 설립
+		id = kr_134
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 농어촌 전화사업
+			focus = kr_133
 		}
-		x = 43
+		x = 44
 		y = 42
 
 	}
 	focus = {
-		id = 한국수자원공사 설립
+		id = kr_135
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한국전력주식회사 설립
+			focus = kr_134
 		}
-		x = 43
+		x = 44
 		y = 43
 
 	}
 	focus = {
-		id = 제주관광종합개발계획
+		id = kr_136
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한국수자원공사 설립
+			focus = kr_135
 		}
 		x = 43
 		y = 44
 
 	}
 	focus = {
-		id = 감귤재배 독점 특별지시
+		id = kr_137
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 제주관광종합개발계획
+			focus = kr_135
+		}
+		x = 45
+		y = 44
+
+	}
+	focus = {
+		id = kr_138
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_137
 		}
 		x = 44
 		y = 45
 
 	}
 	focus = {
-		id = 5.16도로 건설
+		id = kr_139
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 제주관광종합개발계획
+			focus = kr_138
 		}
-		x = 42
-		y = 45
-
-	}
-	focus = {
-		id = 과학기술 개발
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = 5.16도로 건설
-			focus = 감귤재배 독점 특별지시
-		}
-		x = 43
+		x = 44
 		y = 46
 
 	}
 	focus = {
-		id = 과학계 인력 괴국
+		id = kr_140
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 과학기술 개발
+			focus = kr_139
 		}
-		x = 43
+		x = 44
 		y = 47
 
 	}
 	focus = {
-		id = 과학기술연구소 출범
+		id = kr_141
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 과학계 인력 괴국
+			focus = kr_140
 		}
-		x = 43
+		x = 44
 		y = 48
 
 	}
 	focus = {
-		id = 국영 과학연구소 KIST
+		id = kr_142
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 과학기술연구소 출범
+			focus = kr_141
 		}
-		x = 43
+		x = 44
 		y = 49
 
 	}
 	focus = {
-		id = 과학기술진흥법 제정
+		id = kr_143
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 국영 과학연구소 KIST
+			focus = kr_142
 		}
-		x = 43
+		x = 44
 		y = 50
 
 	}
 	focus = {
-		id = 카이스트 설립
+		id = kr_144
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 과학기술진흥법 제정
+			focus = kr_143
 		}
-		x = 43
+		x = 44
 		y = 51
 
 	}
 	focus = {
-		id = 대덕연구개발특구
+		id = kr_145
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 카이스트 설립
+			focus = kr_143
 		}
-		x = 41
-		y = 52
+		x = 46
+		y = 51
 
 	}
 	focus = {
-		id = 한국전자통신연구원
+		id = kr_146
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 카이스트 설립
+			focus = kr_143
+		}
+		x = 42
+		y = 51
+
+	}
+	focus = {
+		id = kr_147
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_146
+		}
+		prerequisite = {
+			focus = kr_144
 		}
 		x = 43
 		y = 52
 
 	}
 	focus = {
-		id = 국방과학연구소
+		id = kr_148
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 카이스트 설립
+			focus = kr_145
 		}
 		x = 45
 		y = 52
 
 	}
 	focus = {
-		id = 중학입시시험 폐지
+		id = kr_149
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 대덕연구개발특구
-			focus = 한국전자통신연구원
+			focus = kr_148
 		}
-		x = 42
-		y = 53
-
-	}
-	focus = {
-		id = 국공립중학교증설
-		icon = GFX_goal_unknown
-		cost = 10.00
 		prerequisite = {
-			focus = 한국전자통신연구원
-			focus = 국방과학연구소
+			focus = kr_147
 		}
 		x = 44
 		y = 53
 
 	}
 	focus = {
-		id = 고등학교기관확충계획
+		id = kr_150
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 중학입시시험 폐지
-			focus = 국공립중학교증설
+			focus = kr_149
 		}
-		x = 43
+		x = 44
 		y = 54
 
 	}
 	focus = {
-		id = 대학입학예비고사
+		id = kr_151
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 고등학교기관확충계획
+			focus = kr_150
 		}
-		x = 43
+		x = 44
 		y = 55
 
 	}
 	focus = {
-		id = 중화학공업화
+		id = kr_152
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 대학입학예비고사
+			focus = kr_151
 		}
-		x = 43
+		x = 44
 		y = 56
 
 	}
 	focus = {
-		id = 직업훈련제도
+		id = kr_153
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 중화학공업화
+			focus = kr_152
 		}
-		x = 43
+		x = 44
 		y = 57
 
 	}
 	focus = {
-		id = 한강의 기적
+		id = kr_154
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 직업훈련제도
+			focus = kr_153
 		}
-		x = 43
+		x = 44
 		y = 58
 
 	}
 	focus = {
-		id = 그린벨트 지정
+		id = kr_155
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 한강의 기적
+			focus = kr_154
 		}
-		x = 43
+		x = 44
 		y = 59
 
 	}
 	focus = {
-		id = 경주관광종합개발계획
+		id = kr_156
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 그린벨트 지정
+			focus = kr_155
 		}
-		x = 43
+		x = 44
 		y = 60
 
 	}
 	focus = {
-		id = 군 기강 강화
+		id = kr_157
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 경주관광종합개발계획
+			focus = kr_156
 		}
-		x = 43
+		x = 44
 		y = 61
 
 	}
 	focus = {
-		id = 방산비리 감시
+		id = kr_158
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 군 기강 강화
+			focus = kr_110
 		}
-		x = 43
-		y = 62
+		x = 35
+		y = 28
 
 	}
 	focus = {
-		id = 대공포 건설
+		id = kr_159
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 하늘위의 요새
+			focus = kr_158
 		}
-		x = 19
-		y = 35
+		x = 35
+		y = 29
 
 	}
 	focus = {
-		id = 현대로템 설립
+		id = kr_160
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = 미전차 라이센스생산
-			focus = 미국 무기 라이센스 생산
+			focus = kr_158
 		}
-		x = 16
-		y = 36
+		x = 37
+		y = 29
+
+	}
+	focus = {
+		id = kr_161
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_158
+		}
+		x = 33
+		y = 29
+
+	}
+	focus = {
+		id = kr_162
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_161
+		}
+		prerequisite = {
+			focus = kr_159
+		}
+		x = 34
+		y = 30
+
+	}
+	focus = {
+		id = kr_163
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_160
+		}
+		x = 36
+		y = 30
+
+	}
+	focus = {
+		id = kr_164
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_163
+		}
+		prerequisite = {
+			focus = kr_162
+		}
+		x = 35
+		y = 31
 
 	}
 }
