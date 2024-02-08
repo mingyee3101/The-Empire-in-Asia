@@ -127,37 +127,87 @@ focus_tree = {
 		id = UIC_completion_of_North_South_railway
 		icon = GFX_focus_UIC_completion_of_North_South_railway
 		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
-		cost = 10
+		cost = 5
 		x = 3
 		y = 1
 		relative_position_id = UIC_Rene_Robins_reign_continues
 
 		available = {
 			#베트남 전역 점령중
-			has_full_control_of_state = 671
+			custom_trigger_tooltip = {
+				tooltip = complete_control_over_Vietnam_tt
+				hidden_trigger = {
+					has_full_control_of_state = 286
+					has_full_control_of_state = 671
+					has_full_control_of_state = 935
+					has_full_control_of_state = 936
+					has_full_control_of_state = 937
+					has_full_control_of_state = 938
+					has_full_control_of_state = 939
+					has_full_control_of_state = 940
+					has_full_control_of_state = 941
+					has_full_control_of_state = 942
+					has_full_control_of_state = 943
+					has_full_control_of_state = 944
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
 			has_war = no
 		}
 
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			build_railway = { #하노이 - 하이퐁
-				path = { 4075 4119 }
+			custom_effect_tooltip = UIC_completion_of_North_South_railway_tt
+			hidden_effect = {
+				build_railway = { #하노이 - 하이퐁
+					path = { 4075 4119 }
+				}
+				build_railway = { #하노이 - 난닝
+					path = { 4075 12048 7015 9948 4121 4177 7137 }
+				}
+				build_railway = { #꽝응아이 - 냐짱
+					path = { 10137 4255 1300 4334 4405 10162 }
+				}
+				build_railway = { #탑짬 - 달랏
+					path = { 12204 7271 }
+				}
+				build_railway = { #사이공 - 록닌
+					path = { 4401 7238 }
+				}
+				build_railway = { #사이공 - 미토
+					path = { 4401 1396 1423 }
+				}
 			}
-			build_railway = { #하노이 - 난닝
-				path = { 4075 12048 7015 9948 4121 4177 7137 }
+			remove_ideas = UIC_North_South_railwayunder_construction
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+					    modifier = UIC_indochina_economy
+					}
+				}
+				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_i_tt
+				hidden_effect = {
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
+				}
 			}
-			build_railway = { #꽝응아이 - 냐짱
-				path = { 10137 4255 1300 4334 4405 10162 }
-			}
-			build_railway = { #탑짬 - 달랏
-				path = { 12204 7271 }
-			}
-			build_railway = { #사이공 - 록닌
-				path = { 4401 7238 }
-			}
-			build_railway = { #사이공 - 미토
-				path = { 4401 1396 1423 }
+			else_if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+					    	modifier = UIC_indochina_economy
+						}
+					}
+				}
+				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_ii_tt
+				hidden_effect = {
+					add_dynamic_modifier = {
+		                modifier = UIC_indochina_economy
+		            }
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
+				}
 			}
 		}
 	}
@@ -256,6 +306,10 @@ focus_tree = {
 				remove_idea = UIC_indochinese_resistance_i
 				add_idea = UIC_indochinese_resistance_ii
 			}
+			swap_ideas = {
+				remove_idea = UIC_indochinese_exploitation_i
+				add_idea = UIC_Indochinese_labor
+			}
 		}
 	}
 
@@ -350,10 +404,15 @@ focus_tree = {
 		id = UIC_The_reign_of_georges_catroux
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_granting_freedom_to_the_press }
-		cost = 5
+		cost = 0
 		x = 0
 		y = 1
 		relative_position_id = UIC_granting_freedom_to_the_press
+
+		available = {
+			has_country_flag = jules_brevie_retirement
+			hidden_trigger = { always = no }
+		}
 
 		completion_reward = {
 			add_country_leader_role = {
@@ -447,14 +506,35 @@ focus_tree = {
 		y = 0
 
 		completion_reward = {
-			custom_effect_tooltip = UIC_indochina_economy_tt
-			hidden_effect = {
-				add_dynamic_modifier = {
-	                modifier = UIC_indochina_economy
-	            }
-	            add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.05 }
-	            add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
-            }
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+					    modifier = UIC_indochina_economy
+					}
+				}
+				custom_effect_tooltip = UIC_indochina_economy_i_tt
+				hidden_effect = {
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.05 }
+	           		add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+					    	modifier = UIC_indochina_economy
+						}
+					}
+				}
+				custom_effect_tooltip = UIC_indochina_economy_ii_tt
+				hidden_effect = {
+					add_dynamic_modifier = {
+		                modifier = UIC_indochina_economy
+		            }
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.05 }
+	            	add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+				}
+			}
 		}
 	}
 
@@ -572,7 +652,7 @@ focus_tree = {
 		relative_position_id = UIC_indochina_economy
 
 		available = {
-			
+			#홍수 이벤트 뜨면 스킵됨
 		}
 
 		completion_reward = {

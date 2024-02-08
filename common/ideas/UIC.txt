@@ -82,7 +82,23 @@ ideas = {
 
 		}
 
-		#인도차이나인 착취
+		#인도차이나인 노동
+
+		UIC_Indochinese_labor = {
+			
+			allowed = {
+				original_tag = UIC
+			}
+
+			picture = Indochinese_labor
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+		}
 
 		UIC_indochinese_exploitation_i = {
 			
@@ -93,11 +109,8 @@ ideas = {
 			picture = generic_oppression
 			
 			modifier = {
-				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 			}
 
 		}
@@ -111,11 +124,9 @@ ideas = {
 			picture = generic_oppression
 			
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 				political_power_factor = 0.1
 			}
 
@@ -174,19 +185,16 @@ ideas = {
 
 		}
 
-		UIC_indochina_conservation_plan_ii = {
+		UIC_North_South_railwayunder_construction = {
 			
 			allowed = {
 				original_tag = UIC
 			}
 
-			picture = generic_oppression
+			picture = generic_build_infrastructure
 			
 			modifier = {
-				army_core_defence_factor = 0.1
-				production_speed_bunker_factor = 0.3
-				production_speed_coastal_bunker_factor = 0.3
-				production_speed_anti_air_building_factor = 0.3
+				consumer_goods_factor = 0.2
 			}
 
 		}

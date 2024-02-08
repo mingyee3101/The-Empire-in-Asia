@@ -67,12 +67,16 @@
  UIC_pay_cut_desc:0 "물가가 증가함에 따라 우리는 노동자들의 급여를 삭감할 수밖에 없습니다."
  UIC_the_medals_of_french_indochina:0 "훈장에 대한 새로운 규정" #프랑스령 인도차이나에 대한 새로운 규정
  UIC_the_medals_of_french_indochina_desc:0 "인도차이나 전역이 불안해지고 있습니다. 노동자들에게 훈장을 수여하여 그들을 달래야합니다." #우리는 현지 노동자와 자국민을 위해서 노동에 대한 보상으로 명예훈장을 수여할 것입니다.
- UIC_prohibit_party:0 "민족주의 정당 금지"
+ UIC_prohibit_party:0 "민족주의 정당 금지" #트로츠키주의의 힘이 약해짐
  UIC_prohibit_party_desc:0 "인도차이나인들이 선동을 할 수 없도록 정당을 금지할 것입니다."
  UIC_suppression_of_rebellion:0 "반란 진압"
  UIC_suppression_of_rebellion_desc:0 "30년에 두번의 큰 반란이 있었지만 우리는 모두 진압하였습니다. 반란 세력은 전멸했고 그들의 독립 의지는 사라졌습니다."
 
  UIC_completion_of_North_South_railway:0 "남북선 완공"
+ complete_control_over_Vietnam_tt:0 "§Y베트남 전역§!을 완전히 지배함"
+ UIC_completion_of_North_South_railway_tt:0 "§Y코친차이나§!의 §Y미토§!부터 §Y광서§!의 §Y난닝§!까지 연결되는 철도를 건설합니다."
+ UIC_completion_of_North_South_railway_dm_i_tt:0 "\n§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$ §G-10%§!\n\n"
+ UIC_completion_of_North_South_railway_dm_ii_tt:0 "($MODIFIER_CONSUMER_GOODS_FACTOR$: §G-10.0%§!) 효과를 부여하는 §Y인도차이나 경제§! 추가."
  UIC_supplying_materials_to_china:0 "중국에 물자 공급"
  UIC_supplying_materials_to_china_desc:0 ""
  UIC_indochinese_leader:0 "인도차이나인 지도자"
@@ -86,9 +90,9 @@
  UIC_The_reign_of_jules_brevie_tt:0 "§Y[UIC.GetNeutralLeader]§!\n은퇴 §Y쥘 브레비예§!(은)는 §Y비동맹주의§! 정당의 지도자가 됩니다."
  UIC_labor_law_amendments:0 "노동법 개정"
  UIC_labor_law_amendments_desc:0 ""
- UIC_deregulation_of_political_parties:0 "민족주의정당 규제 완화"
+ UIC_deregulation_of_political_parties:0 "민족주의 정당 규제 완화" #트로츠키주의의 힘이 강해짐
  UIC_deregulation_of_political_parties_desc:0 "극도로 긴장된 정치적 상황을 완화시키기 위해선 규제를 완화시키고 의견들 들어야 합니다."
- UIC_pardon_political_offender:0 "정치범 사면"
+ UIC_pardon_political_offender:0 "정치범 사면" #연결해서 뭔가 넣기
  UIC_pardon_political_offender_desc:0 ""
  UIC_granting_freedom_to_the_press:0 "언론에 자유 부여"
  UIC_granting_freedom_to_the_press_desc:0 ""
@@ -108,6 +112,8 @@
 
  #인도차이나 경제
  UIC_indochina_economy:0 "인도차이나 경제"
+ UIC_indochina_economy_i_tt:0 "\n§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$ §G-10%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G30%§!\n\n"
+ UIC_indochina_economy_ii_tt:0 "($MODIFIER_CONSUMER_GOODS_FACTOR$: §G-0.05§!, $MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G30%§!) 효과를 부여하는 §Y인도차이나 경제§! 추가."
  UIC_agricultural_exploitation:0 "농업 착취"
  UIC_agricultural_development_support:0 "농업 개발 지원"
  UIC_forced_to_grow_cash_crops:0 "현금작물 재배 강요"
@@ -153,13 +159,15 @@
  #UIC_indochinese_resistance_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"
  UIC_unprepared_army_i:0 "준비되지 않은 군대" #결정으로 프랑스의 지원을 받아 풀 수 있음
  UIC_unprepared_army_i_desc:0 "우리의 군대는 아직 약합니다. 프랑스의 지원을 받아 외부 위협에 대비해야 합니다."
+ UIC_Indochinese_labor:0 "인도차이나인의 노동"
  UIC_indochinese_exploitation_i:0 "인도차이나인의 노동"
  UIC_indochinese_exploitation_ii:0 "인도차이나인의 노동"
  UIC_indochinese_exploitation_iii:0 "인도차이나인의 노동"
  UIC_indochina_conservation_plan_i:0 "인도차이나 보호 계획"
  UIC_indochina_conservation_plan_ii:0 "인도차이나 보호 계획"
+ UIC_North_South_railwayunder_construction:0 "남북선 건설"
+ UIC_North_South_railwayunder_construction_desc:0 "1899년부터 건설중인 남북선은 곧 완공될 예정입니다. 남북선이 완공되면 베트남 남부부터 북부까지 갈 수 있을 뿐만 아니라 중국까지 갈 수 있습니다. 이 철도가 완공되면 경제뿐만 아니라 프랑스로 물자를 옮기기 더 좋을 것입니다."
 
- UIC_indochina_economy_tt:0 "(소비재 공장 변동치: §G-0.05§!, 매월 인구: §G30%§!)효과를 부여하는 §Y인도차이나 경제§! 추가."
 
  #권력의 균형
  UIC_centralization_balance:0 "권력의 균형"

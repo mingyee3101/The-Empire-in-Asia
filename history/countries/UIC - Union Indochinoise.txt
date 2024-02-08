@@ -15,6 +15,7 @@ add_ideas = {
 	UIC_indochinese_resistance_i
 	UIC_unprepared_army_i
 	UIC_indochinese_exploitation_i
+	UIC_North_South_railwayunder_construction
 }
 
 set_technology = {
