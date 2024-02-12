@@ -199,6 +199,26 @@ ideas = {
 
 		}
 
+		UIC_flood_relief_i = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+
+		}
+
+		UIC_flood_relief_i = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
 	}
 
 }

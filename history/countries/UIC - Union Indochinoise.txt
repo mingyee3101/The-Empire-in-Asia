@@ -4,7 +4,8 @@ oob = "UIC_1936"
 
 set_cosmetic_tag = UIC_fra
 
-#country_lock_all_division_template = yes
+country_lock_all_division_template = yes
+#현지인 군대는 내전시 해당 국가의 군대로 들어갈 수도 있음
 
 add_ideas = {
 	#법
@@ -124,7 +125,7 @@ if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = { #자유프랑스
 		name = "UIC_Louis_Camille_Huchet" #https://fr.wikipedia.org/wiki/Louis_Camille_Huchet
-		#GFX = "gfx/leaders/PRC/Portrait_Li_Kenong.png"
+		GFX = GFX_portrait_europe_generic_operative_male_1
 		traits = {  }
 		bypass_recruitment = no
 		available_to_spy_master = yes

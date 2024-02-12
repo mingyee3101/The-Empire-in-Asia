@@ -653,10 +653,16 @@ focus_tree = {
 
 		available = {
 			#홍수 이벤트 뜨면 스킵됨
+			NOT = {
+				has_country_flag = UIC_flood_occurs
+			}
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = UIC_flood_preparedness_tt
+			hidden_effect = {
+				set_country_flag = UIC_flood_preparedness_cf
+			}
 		}
 	}
 
@@ -747,50 +753,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UIC_eastern_operation_plan
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_indochina_conservation_plan }
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = UIC_indochina_conservation_plan
-
-		available = {
-			#NOT = {
-			#	일본의 계획 철회 요청을 수락함
-			#}
-		}
-
-		cancelable = no
-
-		select_effect = { 
-			#JAP = {
-			#	country_event = {
-			#		id = 
-			#		days = 7
-			#	}
-			#}
-			#CHI = {
-			#	country_event = {
-			#		id = 
-			#		days = 7
-			#	}
-			#}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = UIC_eastern_operation_plan_tt
-		}
-	}
-
-	focus = {
 		id = UIC_western_operation_plan
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
-		x = -11
-		y = 1
-		relative_position_id = UIC_indochina_conservation_plan
+		x = -3
+		y = 0
+		relative_position_id = UIC_fort_construction_plan
 
 		available = {
 			#NOT = {
@@ -806,11 +775,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = UIC_eastern_operation_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = 3
+		y = 0
+		relative_position_id = UIC_local_conscription
+
+		available = {
+			#NOT = {
+			#	일본의 계획 철회 요청을 수락함
+			#}
+		}
+
+		cancelable = no
+
+		select_effect = {
+			JAP = {
+				country_event = { id = uic.5 }
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_eastern_operation_plan_tt
+		}
+	}
+
+	focus = {
 		id = UIC_fort_construction_plan
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
-		x = -7
+		x = -6
 		y = 1
 		relative_position_id = UIC_indochina_conservation_plan
 
@@ -819,6 +816,134 @@ focus_tree = {
 				remove_idea = UIC_indochina_conservation_plan_i
 				add_idea = UIC_indochina_conservation_plan_ii
 			}
+		}
+	}
+
+	focus = {
+		id = UIC_local_conscription
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochina_conservation_plan_i
+				add_idea = UIC_indochina_conservation_plan_ii
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_cambodia_fortification
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_fort_construction_plan }
+		prerequisite = { focus = UIC_western_operation_plan }
+		cost = 10
+		x = -6
+		y = 1
+		relative_position_id = UIC_fort_construction_plan
+
+		available = {
+			or = {
+				741 = { #프놈펜
+					is_fully_controlled_by = ROOT
+				}
+				962 = { #시아누크빌
+					is_fully_controlled_by = ROOT
+				}
+				963 = { #칸달
+					is_fully_controlled_by = ROOT
+				}
+				964 = { #바탐방
+					is_fully_controlled_by = ROOT
+				}
+				965 = { #반테아이메안체이
+					is_fully_controlled_by = ROOT
+				}
+				966 = { #캄퐁참
+					is_fully_controlled_by = ROOT
+				}
+				967 = { #프레아비헤아르
+					is_fully_controlled_by = ROOT
+				}
+				968 = { #몬둘키리
+					is_fully_controlled_by = ROOT
+				}
+				969 = { #라타나키리
+					is_fully_controlled_by = ROOT
+				}
+			}
+			#요새를 건설하고 있지 않음
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_laos_fortification
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_fort_construction_plan }
+		prerequisite = { focus = UIC_western_operation_plan }
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = UIC_fort_construction_plan
+
+		available = {
+			or = {
+				670 = { #비엔티안
+					is_fully_controlled_by = ROOT
+				}
+				949 = { #
+					is_fully_controlled_by = ROOT
+				}
+				950 = { #
+					is_fully_controlled_by = ROOT
+				}
+				951 = { #
+					is_fully_controlled_by = ROOT
+				}
+				952 = { #
+					is_fully_controlled_by = ROOT
+				}
+				953 = { #
+					is_fully_controlled_by = ROOT
+				}
+				954 = { #
+					is_fully_controlled_by = ROOT
+				}
+				955 = { #
+					is_fully_controlled_by = ROOT
+				}
+				956 = { #
+					is_fully_controlled_by = ROOT
+				}
+				957 = { #
+					is_fully_controlled_by = ROOT
+				}
+				958 = { #
+					is_fully_controlled_by = ROOT
+				}
+				959 = { #
+					is_fully_controlled_by = ROOT
+				}
+				960 = { #
+					is_fully_controlled_by = ROOT
+				}
+				961 = { #
+					is_fully_controlled_by = ROOT
+				}
+			}
+			#요새를 건설하고 있지 않음
+		}
+
+		completion_reward = {
+			
 		}
 	}
 
@@ -1058,7 +1183,7 @@ focus_tree = {
 		prerequisite = { focus = UIC_fort_construction_plan }
 		prerequisite = { focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = 10
+		x = 8
 		y = 1
 		relative_position_id = UIC_fort_construction_plan
 

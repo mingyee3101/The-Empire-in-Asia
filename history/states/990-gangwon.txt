@@ -12,7 +12,7 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			13275 1
+			13282 1
 		}
 		add_core_of = KOR
 

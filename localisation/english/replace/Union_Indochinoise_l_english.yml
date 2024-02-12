@@ -123,6 +123,7 @@
  UIC_encouraging_opium_cultivation:0 "아편 재배 장려"
  UIC_flood_preparedness:0 "홍수 대비"
  UIC_flood_preparedness_desc:0 "인도차이나는 비가 많이 내리는 지역입니다. 우리는 홍수를 대비하기 위해 제방을 보강하고 벼 종자를 비축해야 합니다."
+ UIC_flood_preparedness_tt:0 "홍수가 발생했을 때 피해를 최소화할 수 있습니다."
  UIC_strengthening_public_works:0 "공공사업 강화"
  UIC_strengthening_public_works_desc:0 "홍수의 피해를 해결하기위해 가난한 농민들에게 봉급을 지급하고 도로를 건설해야합니다."
  UIC_construction_of_irrigation_facilities:0 "관개시설 구축"
@@ -136,20 +137,24 @@
  UIC_fort_construction_plan:0 "요새 건설 계획"
  UIC_fort_construction_plan_desc:0 "일본은 중국뿐만 아니라 인도차이나도 자신들의 손안에 넣고 싶어 합니다. 우리는 일본에 맞서 싸울 수 있도록 요새를 건설해야 합니다."
 
- UIC_eastern_operation_plan:0 "동부 작전계획" #일본과 중국에 이벤트가 감, 중국과 일본 관계도 하락 #일본의 항의 -> 인도차이나 수락 -> 중점 취소
+ UIC_western_operation_plan:0 "서부 작전계획" #태국에 이벤트가 감, 태국 관계도 하락 #태국의 항의 -> 인도차이나 수락 -> 중점 취소
+ UIC_cambodia_fortification:0 "캄보디아 요새화"
+ UIC_laos_fortification:0 "라오스 요새화"
+ UIC_local_conscription:0 "현지인 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
+
+ UIC_eastern_operation_plan:0 "동부 작전계획" #일본에 이벤트가 감, 중국과 일본 관계도 하락 #일본의 항의 -> 인도차이나 수락 -> 중점 취소 #관계도에 따라 ai가 수락할수도 있음
  UIC_eastern_operation_plan_tt:0 "§Y일본의 요구§!를 수락시 §Y동부 작전계획§! 중점은 §R취소§!될 것입니다."
  UIC_tonkin_fortification:0 "통킹과 라오스 요새화" #모든 요새화 중점은 이벤트로 만들기
  UIC_annam_fortification:0 "안남과 코친차이나 요새화"
  UIC_guangzhouwan_fortification:0 "광저우만 요새화" #이벤트 없음
 
- UIC_western_operation_plan:0 "서부 작전계획" #태국에 이벤트가 감, 태국 관계도 하락 #태국의 항의 -> 인도차이나 수락 -> 중점 취소
- UIC_cambodia_fortification:0 "캄보디아 요새화"
- UIC_laos_fortification:0 "라오스 요새화"
- UIC_thai_conscription:0 "태국인 징병" #권력의 균형 ->
-
  UIC_request_for_military_reinforcements_and_equipment:0 "장비와 군 증원 요청"
  UIC_request_for_investment_in_france:0 "프랑스에 투자 요청"
  UIC_attracting_french_companies:0 "프랑스 기업 유치"
+
+ #country_flag
+ UIC_flood_occurs:0 "홍수 발생"
+ UIC_flood_preparedness_cf:0 "홍수를 대비함"
 
  #국민정신
  UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
@@ -167,7 +172,11 @@
  UIC_indochina_conservation_plan_ii:0 "인도차이나 보호 계획"
  UIC_North_South_railwayunder_construction:0 "남북선 건설"
  UIC_North_South_railwayunder_construction_desc:0 "1899년부터 건설중인 남북선은 곧 완공될 예정입니다. 남북선이 완공되면 베트남 남부부터 북부까지 갈 수 있을 뿐만 아니라 중국까지 갈 수 있습니다. 이 철도가 완공되면 경제뿐만 아니라 프랑스로 물자를 옮기기 더 좋을 것입니다."
+ UIC_Indochina_flood:0 "홍수"
+ UIC_flood_relief_i:0 "홍수 구호"
+ UIC_flood_relief_ii:0 "홍수 구호"
 
+ #opinion_modifiers
 
  #권력의 균형
  UIC_centralization_balance:0 "권력의 균형"
@@ -201,6 +210,26 @@
  uic.2.a:0 "많은 구호품을 보내자."
  uic.2.b:0 "구호품을 보내자."
  uic.2.c:0 "보낼 구호품이 없다."
+ uic.3.t:0 "많은 구호품을 보내준 [PREV.GetLeader]"
+ uic.3.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [PREV.GetLeader](은)는 많은 구호품을 보내줬습니다."
+ uic.3.a:0 "큰 빚을 졌구만"
+ uic.4.t:0 "구호품을 보내준 [PREV.GetLeader]"
+ uic.4.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [PREV.GetLeader](은)는 구호품을 보내줬습니다."
+ uic.4.a:0 "고맙소"
+ uic.5.t:0 "인도차이나의 동부 작전계획"
+ uic.5.d:0 "[UIC.GetLeader](은)는 우리가 그들을 정복할 것이라며 작전을 계획하고 있습니다."
+ uic.5.a:0 "항의하자"
+ uic.5.b:0 "관심없다"
+ uic.6.t:0 "우리에게 항의하는 [JAP.GetLeader]"
+ uic.6.d:0 "[JAP.GetLeader](은)는 우리의 계획이 무례하다고 항의해왔습니다. 우리는 계획을 멈춰야 할까요?"
+ uic.6.a:0 "어림도 없는 소리"
+ uic.6.b:0 "상황을 악화시키고 싶지 않다"
+ uic.7.t:0 "거절한 [UIC.GetLeader]"
+ uic.7.d:0 ""
+ uic.7.a:0 "두고보자"
+ uic.8.t:0 "계획을 철회한 [UIC.GetLeader]"
+ uic.8.d:0 ""
+ uic.8.a:0 "좋았어"
  #인도차이나의 동부 작전계획
  #인도차이나정부는 우리가 그들을 정복할 것이라며 작전을 계획하고 있습니다.
  #무례하다, 계획을 철회하라 #정치력 -50
