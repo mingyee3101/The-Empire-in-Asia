@@ -1,4 +1,5 @@
 ﻿l_english:
+ THIS_IS_HISTORICAL_TT: "§C역사적 선택§!입니다."
  JAP_fascism:0 "대일본제국"
  JAP_fascism_DEF:0 "대일본제국"
  JAP_democratic:0 "대일본제국"
@@ -25,11 +26,10 @@
  JAP_konoe_cabinet_focus_desc: "훈1등 서보장의 수훈자이며 귀족원의장인 고노에 후미마로는 군과 일반 대중 모두에서 인기있는 인물입니다. 고노에 주도의 내각은 일본의 정치적 안정성을 보장할수 있을 것입니다."
  JAP_nat_mob_law: "국가총동원법"
  JAP_nat_mob_law_desc: ""
-
  JAP_test_the_chinese: "화북분리공작"
  JAP_aggressive_china_politics_focus: "중국과의 전쟁 준비"
 
- #이벤트
+#이벤트
  jap226.1.t: "1936년 일본 총선"
  jap226.1.d: "총선일이 다가왔습니다. 이는 이누카이 쓰요시 전 총리의 암살 이래의 첫 선거이기도 합니다. 군부 내의 국수주의의 확산으로 인해 이번 선거가 더 이상 의미 없어 보일 수도 있지만, 일각에서는 이번 총선이 일본 민주주의의 새로운 희망이 될 수 있을 것이라고도 합니다. 결국, 어떤 운명이 일본을 기다리고 있을지에 대해서는 그 누구도 알지 못합니다."
  jap226.1.a: "유권자들이 결정하도록 놔두자."
@@ -45,7 +45,12 @@
 
  
  February_incident: "§Y2.26사건§!이 발생함"
-
-
+# 국민정신
+ JAP_strong_military: "강한 군부의 영향력"
+# 인물 이름
  JAP_Okada_Keisuke: "오카다 게이스케"
+ Senjuro_Hayashi: "하야시 센주로"
+ fumimaro_konoe: "고노에 후미마로"
+ JAP_Hirota_Koki: "히로타 고키"
+ JAP_Hirota_Koki_trait: "마뜩잖은 총리"
  

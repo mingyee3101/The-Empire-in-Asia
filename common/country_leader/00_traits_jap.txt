@@ -1,0 +1,8 @@
+leader_traits = {
+    JAP_Hirota_Koki_trait = {
+		random = no
+		sprite = 13
+        
+        stability_factor = -0.05
+	}
+}

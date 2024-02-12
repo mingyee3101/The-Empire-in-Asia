@@ -50,13 +50,37 @@ country_event = {
 
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect ={
+			if = {
+				limit = { is_ai = no }
+				sound_effect = enemy_declare_war				
+			}
+		}
+	}
 
 	option = {
 		name = jap226.3.a
         set_country_flag = February_incident
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+        custom_effect_tooltip = THIS_IS_HISTORICAL_TT
+		create_country_leader = {
+			name = JAP_Hirota_Koki
+			desc = "POLITICS_Senjuro_Hayashi_DESC"
+			picture = "gfx/leaders/JAP/JAP_Hirota_Koki.png"
+			expire = "1989.1.1"
+			ideology = despotism
+			traits = { JAP_Hirota_Koki_trait }
+		}
+        set_politics = {
+			ruling_party = neutrality
+        }
 	}
-	option = {
-		name = jap226.3.b
-
-	}
+	#option = {
+	#	name = jap226.3.b
+    #
+	#}
 }

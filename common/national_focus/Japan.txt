@@ -15,7 +15,7 @@ focus_tree = {
         text = The_Empire_of_Rising_Sun
 		icon = GFX_goal_rhineland
 		cost = 10.00
-
+        cancelable = no
         available = {
             has_country_flag = February_incident
         }
@@ -26,6 +26,9 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			#add_stability = 0.05
+			add_command_power = 50
+			add_political_power = 50
+            add_ideas = JAP_strong_military
 		}
 	}
 	focus = {
@@ -40,7 +43,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-            add_manpower = -10000
+            add_manpower = -1200
 		}
 	}
 	focus = {
@@ -55,6 +58,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.15
+            }
 			retire_country_leader = yes
 			create_country_leader = {
 				name = Senjuro_Hayashi
@@ -80,7 +87,7 @@ focus_tree = {
 				create_country_leader = {
 					name = fumimaro_konoe
 					desc = "POLITICS_Fumimaro_Konoe_DESC"
-					picture = "JAP_Konoe_Fumimaro.png"
+					picture = "gfx/leaders/JAP/JAP_Konoe_Fumimaro.png"
 					expire = "1989.1.1"
 					id = 6001
 					ideology = despotism
