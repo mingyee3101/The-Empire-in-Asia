@@ -38,15 +38,19 @@ music = {
 	volume = 0.75
 }
 
-music = {
-	name = "Quand_jesus_christ_crea_la_coloniale"
-	file = "Quand_jesus_christ_crea_la_coloniale.ogg"
-	volume = 0.75
-}
+############ 비시프랑스 ############
 
 music = {
 	name = "Marechal_nous_voila"
 	file = "Marechal_nous_voila.ogg"
+	volume = 0.75
+}
+
+############ 전쟁 #############
+
+music = {
+	name = "Quand_jesus_christ_crea_la_coloniale"
+	file = "Quand_jesus_christ_crea_la_coloniale.ogg"
 	volume = 0.75
 }
 

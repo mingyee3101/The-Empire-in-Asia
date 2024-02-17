@@ -284,10 +284,15 @@ music = {
 
 music = {
 	song = "Military_Song_of_the_Sixtyth_Army"
-	modifier = {
-		original_tag = YUN
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 10
+			is_china_nc_tag = yes
+		}
+		modifier = {
+			add = 10
+			original_tag = YUN
+		}
 	}	
 }

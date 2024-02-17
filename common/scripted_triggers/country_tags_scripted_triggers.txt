@@ -2,11 +2,33 @@ is_china_tag = {
 	OR = {
 		original_tag = CHI
 		original_tag = PRC
+		original_tag = HCP
+		original_tag = SDC
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = TGS
+		original_tag = SCC
+		original_tag = CSR
+		original_tag = YUN
+		original_tag = GXC
+		original_tag = GDC
 	}
 }
 is_china_nc_tag = { #공산주의가 아님
 	OR = {
 		original_tag = CHI
+		original_tag = HCP
+		original_tag = SDC
+		original_tag = SHX
+		original_tag = XSM
+		original_tag = SIK
+		original_tag = TGS
+		original_tag = SCC
+		original_tag = CSR
+		original_tag = YUN
+		original_tag = GXC
+		original_tag = GDC
 	}
 	not = {
 		has_government = communism

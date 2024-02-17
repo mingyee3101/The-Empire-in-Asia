@@ -4,146 +4,164 @@ music_station = "jap"
 
 music = {
 	song = "Gunkan_March"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Miya_San_Miya_San"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Roei_no_Uta"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Rabauru_kouta"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Battotai"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Hohei_no_Honryo"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Song_of_the_Kamikaze_Pilots"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Japanese_Army_March"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "The_Pacific_Ocean_March"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "The_Naval_Ensign"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "March_The_Battle_of_Tsushima"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 music = {
 	song = "Song_of_the_stationing_French_Indochina"
-	modifier = {
-		original_tag = JAP
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = JAP
+		}
+	}
 }
 
 ############ 공산주의 ############
 
 music = {
 	song = "Song_of_Youth_League"
-	modifier = {
-		original_tag = JAP
-		has_government = communism
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = JAP
+				has_government = communism
+			}
+		}
 	}	
 }
 
 music = {
 	song = "Listen_workers_of_the_world"
-	modifier = {
-		original_tag = JAP
-		has_government = communism
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = JAP
+				has_government = communism
+			}
+		}
+	}
 }
 
 ############ 만주국 ############
@@ -151,11 +169,14 @@ music = {
 
 music = {
 	song = "Anthem_of_the_Beiyang_Fleet"
-	modifier = {
-		original_tag = MAN
-		has_government = neutrality
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = MAN
+				has_government = neutrality
+			}
+		}
 	}	
 }

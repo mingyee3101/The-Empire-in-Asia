@@ -101,22 +101,7 @@ music = {
 	}	
 }
 
-music = {
-	song = "Quand_jesus_christ_crea_la_coloniale"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = UIC
-				NOT = {
-					has_government = communism
-				}
-				is_subject_of = FRA
-			}
-		}
-	}	
-}
+############ 비시프랑스 ############
 
 music = {
 	song = "Marechal_nous_voila"
@@ -134,6 +119,36 @@ music = {
 			}
 		}
 	}
+}
+
+############ 전쟁 #############
+
+music = {
+	song = "Quand_jesus_christ_crea_la_coloniale"
+	chance = {
+		base = 0
+		modifier = {
+			add = 10
+			AND = {
+				original_tag = UIC
+				NOT = {
+					has_government = communism
+				}
+				is_subject_of = FRA
+				has_war = yes
+			}
+		}
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = UIC
+				NOT = {
+					has_government = communism
+				}
+				is_subject_of = FRA
+			}
+		}
+	}	
 }
 
 ############ 베트남 ############
@@ -600,7 +615,7 @@ music = {
 	chance = {
 		base = 0
 		modifier = {
-			add = 20
+			add = 10
 			AND = {
 				original_tag = VIN
 				has_government = communism
@@ -612,7 +627,6 @@ music = {
 			AND = {
 				original_tag = VIN
 				has_government = communism
-				has_war = yes
 			}
 		}
 	}	

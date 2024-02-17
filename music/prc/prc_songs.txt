@@ -4,120 +4,132 @@ music_station = "prc"
 
 music = {
 	song = "March_of_the_Eighth_Route_Army"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "When_that_day_comes"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "March_of_the_Peoples_Volunteer_Army"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "If_War_Breaks_Out_Today"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "The_Red_Sun_Must_Illuminate_Taiwan"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Komsomol_Song"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Socialism_is_Good"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Learn_From_Lei_Fengs_Good_Example"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Tunnel_warfare"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Boundless_Longevity_to_Chairman_Mao"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
 
 music = {
 	song = "Song_Of_The_Autumn_Harvest_Uprising"
-	modifier = {
-		original_tag = PRC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
 }
