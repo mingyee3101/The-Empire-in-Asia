@@ -67,7 +67,30 @@ music = {
 }
 
 music = {
+	name = "Song_of_the_stationing_French_Indochina"
+	file = "Song_of_the_stationing_French_Indochina.ogg"
+	volume = 0.75
+}
+
+############ 공산주의 ############
+
+music = {
 	name = "Song_of_Youth_League"
 	file = "Song_of_Youth_League.ogg"
 	volume = 0.75
+}
+
+music = {
+	name = "Listen_workers_of_the_world"
+	file = "Listen_workers_of_the_world.ogg"
+	volume = 0.75
+}
+
+############ 만주국 ############
+############ 청나라 ############
+
+music = {
+	name = "Anthem_of_the_Beiyang_Fleet"
+	file = "Anthem_of_the_Beiyang_Fleet.ogg"
+	volume = 0.9
 }

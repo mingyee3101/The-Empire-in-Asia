@@ -5,7 +5,7 @@ oob = "PRC_1936"
 add_ideas = {
 	closed_economy
 	service_by_requirement
-	partial_economic_mobilisation
+	mobilize_everything
 	PRC_red_army
 	illiteracy_0
 	PRC_separatism

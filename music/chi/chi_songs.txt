@@ -4,28 +4,35 @@ music_station = "chi"
 
 music = {
 	song = "March_of_the_Volunteers"
-	modifier = {
-		OR = {
-			original_tag = CHI
-			original_tag = PRC
-		}
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Victory_Song"
-	modifier = {
-		OR = {
-			original_tag = CHI
-			original_tag = PRC
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_tag = yes
 		}
 	}
+}
+
+music = {
+	song = "Drop_the_Handkerchief_Game"
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			is_china_tag = yes
+		}
+	}
 }
 
 
@@ -33,181 +40,210 @@ music = {
 
 music = {
 	song = "The_Sword_March"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
 }
 
 music = {
 	song = "Ode_to_the_Republic_of_China"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Night_Raid"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "The_Banners_are_Fluttering"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Whampoa_men_is_the_most_grand_and_heroic"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Immortal_China"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "I_have_a_rifle"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Song_of_the_Great_Wall_Troops"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Defend_the_Yellow_River"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Return_to_our_lost_land"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "The_Kinmen_Bombs"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Struggling_in_the_Southeast"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Ambitions_to_the_sky"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Three_Principles_of_the_People"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "National_Banner_Song_of_the_Republic_of_China"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Military_Anthem_of_the_Republic_of_China_Army"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "March_of_Three_Peoples_Principles_youth"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
 music = {
 	song = "Song_of_Five_Races_Under_One_Union"
-	modifier = {
-		original_tag = CHI
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}	
+}
+
+music = {
+	song = "cute_sailor"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
 	}	
 }
 
@@ -216,22 +252,32 @@ music = {
 
 music = {
 	song = "Song_of_the_Guangxi_Army"
-	modifier = {
-		original_tag = GXC
-	}
 	chance = {
-		factor = 1
+		base = 0
+		modifier = {
+			add = 10
+			is_china_nc_tag = yes
+		}
+		modifier = {
+			add = 10
+			original_tag = GXC
+		}
 	}	
 }
 
 music = {
 	song = "Song_of_Guangxi_student_soldiers"
-	modifier = {
-		original_tag = GXC
-	}
 	chance = {
-		factor = 1
-	}	
+		base = 0
+		modifier = {
+			add = 10
+			is_china_nc_tag = yes
+		}
+		modifier = {
+			add = 10
+			original_tag = GXC
+		}
+	}
 }
 
 ############ 운남 군벌 ############

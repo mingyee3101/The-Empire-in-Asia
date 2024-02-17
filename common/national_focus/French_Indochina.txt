@@ -758,8 +758,8 @@ focus_tree = {
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
 		x = -3
-		y = 0
-		relative_position_id = UIC_fort_construction_plan
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
 
 		available = {
 			#NOT = {
@@ -779,9 +779,9 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
-		x = 3
-		y = 0
-		relative_position_id = UIC_local_conscription
+		x = -1
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
 
 		available = {
 			#NOT = {
@@ -805,11 +805,11 @@ focus_tree = {
 	focus = {
 		id = UIC_fort_construction_plan
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_indochina_conservation_plan }
+		prerequisite = { focus = UIC_western_operation_plan focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = -6
+		x = 1
 		y = 1
-		relative_position_id = UIC_indochina_conservation_plan
+		relative_position_id = UIC_western_operation_plan
 
 		completion_reward = {
 			swap_ideas = {
@@ -820,412 +820,44 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UIC_local_conscription
+		id = UIC_ask_for_outside_help
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_indochina_conservation_plan }
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = UIC_indochina_conservation_plan
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = UIC_indochina_conservation_plan_i
-				add_idea = UIC_indochina_conservation_plan_ii
-			}
-		}
-	}
-
-	focus = {
-		id = UIC_cambodia_fortification
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_fort_construction_plan }
-		prerequisite = { focus = UIC_western_operation_plan }
-		cost = 10
-		x = -6
-		y = 1
-		relative_position_id = UIC_fort_construction_plan
-
-		available = {
-			or = {
-				741 = { #프놈펜
-					is_fully_controlled_by = ROOT
-				}
-				962 = { #시아누크빌
-					is_fully_controlled_by = ROOT
-				}
-				963 = { #칸달
-					is_fully_controlled_by = ROOT
-				}
-				964 = { #바탐방
-					is_fully_controlled_by = ROOT
-				}
-				965 = { #반테아이메안체이
-					is_fully_controlled_by = ROOT
-				}
-				966 = { #캄퐁참
-					is_fully_controlled_by = ROOT
-				}
-				967 = { #프레아비헤아르
-					is_fully_controlled_by = ROOT
-				}
-				968 = { #몬둘키리
-					is_fully_controlled_by = ROOT
-				}
-				969 = { #라타나키리
-					is_fully_controlled_by = ROOT
-				}
-			}
-			#요새를 건설하고 있지 않음
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = UIC_laos_fortification
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_fort_construction_plan }
-		prerequisite = { focus = UIC_western_operation_plan }
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = UIC_fort_construction_plan
-
-		available = {
-			or = {
-				670 = { #비엔티안
-					is_fully_controlled_by = ROOT
-				}
-				949 = { #
-					is_fully_controlled_by = ROOT
-				}
-				950 = { #
-					is_fully_controlled_by = ROOT
-				}
-				951 = { #
-					is_fully_controlled_by = ROOT
-				}
-				952 = { #
-					is_fully_controlled_by = ROOT
-				}
-				953 = { #
-					is_fully_controlled_by = ROOT
-				}
-				954 = { #
-					is_fully_controlled_by = ROOT
-				}
-				955 = { #
-					is_fully_controlled_by = ROOT
-				}
-				956 = { #
-					is_fully_controlled_by = ROOT
-				}
-				957 = { #
-					is_fully_controlled_by = ROOT
-				}
-				958 = { #
-					is_fully_controlled_by = ROOT
-				}
-				959 = { #
-					is_fully_controlled_by = ROOT
-				}
-				960 = { #
-					is_fully_controlled_by = ROOT
-				}
-				961 = { #
-					is_fully_controlled_by = ROOT
-				}
-			}
-			#요새를 건설하고 있지 않음
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = UIC_tonkin_fortification
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_fort_construction_plan }
 		prerequisite = { focus = UIC_eastern_operation_plan }
 		cost = 10
 		x = 2
-		y = 1
+		y = 0
 		relative_position_id = UIC_fort_construction_plan
 
-		available = {
-			or = {
-				935 = { #하이퐁
-					is_fully_controlled_by = ROOT
-				}
-				936 = { #랑선
-					is_fully_controlled_by = ROOT
-				}
-				937 = { #타이응우옌
-					is_fully_controlled_by = ROOT
-				}
-				938 = { #디엔비엔
-					is_fully_controlled_by = ROOT
-				}
-				949 = { #퐁살리
-					is_fully_controlled_by = ROOT
-				}
-				671 = { #하노이
-					is_fully_controlled_by = ROOT
-				}
-			}
-			#요새를 건설하고 있지 않음
-		}
-
 		completion_reward = {
-			if = {
-				limit = { has_full_control_of_state = 671 }
-				671 = { #하노이
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 1185 #
-						}
-						level = 3
-						instant_build = yes
-					}
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 4075 #하노이
-						}
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 3
-						instant_build = yes
-					}			
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 935 }
-				935 = { #하이퐁
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 4119 #하이퐁
-						}
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}			
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 936 }
-				936 = { #랑선
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 7093
-							id = 9948
-						}
-						level = 3
-						instant_build = yes
-					}		
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 937 }
-				937 = { #타이응우옌
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 12065
-							id = 7518
-							id = 12008
-						}
-						level = 3
-						instant_build = yes
-					}		
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 938 }
-				938 = { #디엔비엔
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 12319
-						}
-						level = 3
-						instant_build = yes
-					}		
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 949 }
-				949 = { #퐁살리
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 12392
-						}
-						level = 3
-						instant_build = yes
-					}		
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 950 }
-				950 = { #우돔사이
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 7103
-							id = 4568
-						}
-						level = 3
-						instant_build = yes
-					}		
-				}
-			}
+
 		}
 	}
 
 	focus = {
-		id = UIC_annam_fortification
+		id = UIC_saigon_dockyard_expansion
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_fort_construction_plan }
-		prerequisite = { focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = 6
+		x = -1
 		y = 1
 		relative_position_id = UIC_fort_construction_plan
 
-
-		available = {
-			or = {
-				941 = {
-					is_fully_controlled_by = ROOT
-				}
-				942 = {
-					is_fully_controlled_by = ROOT
-				}
-			}
-			#요새를 건설하고 있지 않음
-		}
-
 		completion_reward = {
-			if = {
-				limit = { has_full_control_of_state = 941 }
-				941 = { #투아티엔후에
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 4379 #후에
-						}
-						level = 3
-						instant_build = yes
-					}
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 1302 #동하
-						}
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}		
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 942 }
-				942 = { #꽝남
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 10309 #토우라네 다낭
-						}
-						level = 3
-						instant_build = yes
-					}
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 10137 #꽝응아이
-						}
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}			
-				}
-			}
+
 		}
 	}
 
 	focus = {
-		id = UIC_guangzhouwan_fortification
+		id = UIC_guangzhouwan_port_expansion
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_fort_construction_plan }
-		prerequisite = { focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = 8
+		x = 1
 		y = 1
 		relative_position_id = UIC_fort_construction_plan
 
 		completion_reward = {
-			728 = {
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = { has_full_control_of_state = 728 }
-				728 = {
-					set_building_level = {
-						type = coastal_bunker
-						province = {
-							id = 11981
-						}
-						level = 3
-						instant_build = yes
-					}
-					set_building_level = {
-						type = bunker
-						province = {
-							id = 11981
-						}
-						level = 3
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 11981
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}	
-				}
-			}
+		
 		}
 	}
 
@@ -1234,7 +866,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 5
-		x = 6
+		x = 2
 		y = 1
 		relative_position_id = UIC_indochina_conservation_plan
 
@@ -1268,6 +900,37 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = UIC_local_conscription
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = 4
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochina_conservation_plan_i
+				add_idea = UIC_indochina_conservation_plan_ii
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_cooperation_with_local_nationalists
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_local_conscription }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_local_conscription
+
+		completion_reward = {
+		
 		}
 	}
 }

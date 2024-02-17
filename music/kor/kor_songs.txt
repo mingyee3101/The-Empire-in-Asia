@@ -65,6 +65,39 @@ music = {
 	}	
 }
 
+music = {
+	song = "Going_to_the_Front"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+music = {
+	song = "Comradeship"
+	modifier = {
+		original_tag = KOR
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
+############ 대한제국 ############
+
+music = {
+	song = "Korean_Empire_Anthem"
+	modifier = {
+		original_tag = KOR
+		has_government = neutrality
+	}
+	chance = {
+		factor = 1
+	}	
+}
+
 ############ 북한 ############
 
 music = {

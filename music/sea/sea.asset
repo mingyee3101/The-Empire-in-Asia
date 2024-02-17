@@ -1,3 +1,55 @@
+############ 시암 태국 ############
+
+music = {
+	name = "Greater_Thailand"
+	file = "Greater_Thailand.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Burapha_County"
+	file = "Burapha_County.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Siammanusati"
+	file = "Siammanusati.ogg"
+	volume = 0.75
+}
+
+############ 프랑스령 인도차이나 ############
+
+music = {
+	name = "La_Marseillaise"
+	file = "La_Marseillaise.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Les_combats_de_Tu_Le"
+	file = "Les_combats_de_Tu_Le.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Opium"
+	file = "Opium.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Quand_jesus_christ_crea_la_coloniale"
+	file = "Quand_jesus_christ_crea_la_coloniale.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Marechal_nous_voila"
+	file = "Marechal_nous_voila.ogg"
+	volume = 0.75
+}
+
 ############ 베트남 ############
 
 ############ 일반 ############

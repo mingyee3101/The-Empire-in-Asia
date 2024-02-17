@@ -18,11 +18,20 @@
   The_Pacific_Ocean_March:0 "태평양행진곡" #太平洋行進曲
   The_Naval_Ensign:0 "군함기" #軍艦旗
   March_The_Battle_of_Tsushima:0 "쓰시마 해전" #日本海海戦
+  Song_of_the_stationing_French_Indochina:0 "후쓰인 진출의 노래" #仏印進駐の歌
+
+  ############ 공산주의 ############
   Song_of_Youth_League:0 "청년동맹의 노래" #青年同盟の歌
+  Listen_workers_of_the_world:0 "들어라 만국의 노동자" #聞け、万国の労働者
+
+  ############ 만주국 ############
+  ############ 청나라 ############
+  Anthem_of_the_Beiyang_Fleet:0 "북양수사군가" #北洋水师军歌
 
   ############ 중국 ############
   March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲
   Victory_Song:0 "승리의 노래" #勝利之歌
+  Drop_the_Handkerchief_Game:0 "수건 돌려라" #丢手绢
 
   ############ 중국 국민당 ############
   The_Sword_March:0 "대도행진곡" #大刀進行曲
@@ -43,6 +52,7 @@
   Military_Anthem_of_the_Republic_of_China_Army:0 "중화민국 육군군가" #中華民國 陸軍軍歌
   March_of_Three_Peoples_Principles_youth:0 "삼민주의청년진행곡" #三民主義靑年進行曲
   Song_of_Five_Races_Under_One_Union:0 "오족공화가" #五族共和歌
+  cute_sailor:0 "사랑스러운 수병" #可愛的水兵
 
   ############ 중국 공산당 ############
   March_of_the_Eighth_Route_Army:0 "팔로군행진곡" #八路軍進行曲
@@ -56,6 +66,7 @@
   Learn_From_Lei_Fengs_Good_Example:0 "레이펑의 좋은 모습을 본받자" #學習雷鋒好榜樣
   Tunnel_warfare:0 "땅굴전" #地道战
   Boundless_Longevity_to_Chairman_Mao:0 "마오 주석의 만수무강을 축복하자" #祝福毛主席万寿无疆
+  Song_Of_The_Autumn_Harvest_Uprising:0 "추수기의가" #秋收起义歌
 
   ############ 중국 군벌 ############
   ############ 광서 군벌 ############
@@ -72,6 +83,11 @@
   Amnok_River_March:0 "압록강 행진곡"
   Song_of_the_Third_Division_of_Korean_Liberation_Army:0 "광복군 제3지대가"
   Go_to_the_sea:0 "바다로 가자"
+  Going_to_the_Front:0 "전선을 간다"
+  Comradeship:0 "전우"
+
+  ############ 대한제국 ############
+  Korean_Empire_Anthem:0 "황실가"
 
   ############ 북한 ############
   Aegukga_DPRK:0 "애국가 - 조선"
@@ -95,6 +111,18 @@
   My_Moscow_DPRK:0 "나의 모스크바 - 조선"
 
   Potato_Pride:0 "감자자랑"
+
+  ############ 시암 태국 ############
+  Burapha_County:0 "부라파군" #มณฑลบูรพา
+  Greater_Thailand:0 "위대한 태국" #มหาอาณาจักรไทย
+  Siammanusati:0 "시암마누사티" #สยามมานุสสติ #왕실의 시
+
+  ############ 프랑스령 인도차이나 ############
+  La_Marseillaise:0 "라 마르세예즈"
+  Les_combats_de_Tu_Le:0 "뚜레 전투"
+  Opium:0 "아편"
+  Quand_jesus_christ_crea_la_coloniale:0 "예수 그리스도께서 식민지를 창조하셨을 때" #Quand jésus-christ créa la coloniale
+  Marechal_nous_voila:0 "원수여, 우리는 여기에 있습니다!"
 
   ############ 베트남 ############
   ############ 일반 ############

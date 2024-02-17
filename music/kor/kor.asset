@@ -36,6 +36,26 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Going_to_the_Front"
+	file = "Going_to_the_Front.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Comradeship"
+	file = "Comradeship.ogg"
+	volume = 0.75
+}
+
+############ 대한제국 ############
+
+music = {
+	name = "Korean_Empire_Anthem"
+	file = "Korean_Empire_Anthem.ogg"
+	volume = 0.75
+}
+
 ############ 북한 ############
 
 music = {

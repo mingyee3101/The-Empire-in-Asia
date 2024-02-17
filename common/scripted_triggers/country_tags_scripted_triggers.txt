@@ -1,0 +1,14 @@
+is_china_tag = {
+	OR = {
+		original_tag = CHI
+		original_tag = PRC
+	}
+}
+is_china_nc_tag = { #공산주의가 아님
+	OR = {
+		original_tag = CHI
+	}
+	not = {
+		has_government = communism
+	}
+}

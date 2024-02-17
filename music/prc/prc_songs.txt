@@ -111,3 +111,13 @@ music = {
 		factor = 1
 	}	
 }
+
+music = {
+	song = "Song_Of_The_Autumn_Harvest_Uprising"
+	modifier = {
+		original_tag = PRC
+	}
+	chance = {
+		factor = 1
+	}	
+}

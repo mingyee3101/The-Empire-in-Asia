@@ -12,6 +12,12 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Drop_the_Handkerchief_Game"
+	file = "Drop_the_Handkerchief_Game.ogg"
+	volume = 0.75
+}
+
 ############ 중국 국민당 ############
 
 music = {
@@ -119,6 +125,12 @@ music = {
 music = {
 	name = "Song_of_Five_Races_Under_One_Union"
 	file = "Song_of_Five_Races_Under_One_Union.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "cute_sailor"
+	file = "cute_sailor.ogg"
 	volume = 0.75
 }
 

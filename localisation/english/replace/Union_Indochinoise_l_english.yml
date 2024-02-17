@@ -134,23 +134,24 @@
  #인도차이나 보호
  UIC_indochina_conservation_plan:0 "인도차이나 보호 계획"
  UIC_protecting_indochina_desc:0 "유럽과 아시아에서 심상치 않은 움직임이 보입니다. 혹시 모를 전쟁을 대비해야 합니다."
- UIC_fort_construction_plan:0 "요새 건설 계획"
- UIC_fort_construction_plan_desc:0 "일본은 중국뿐만 아니라 인도차이나도 자신들의 손안에 넣고 싶어 합니다. 우리는 일본에 맞서 싸울 수 있도록 요새를 건설해야 합니다."
 
  UIC_western_operation_plan:0 "서부 작전계획" #태국에 이벤트가 감, 태국 관계도 하락 #태국의 항의 -> 인도차이나 수락 -> 중점 취소
- UIC_cambodia_fortification:0 "캄보디아 요새화"
- UIC_laos_fortification:0 "라오스 요새화"
- UIC_local_conscription:0 "현지인 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
 
  UIC_eastern_operation_plan:0 "동부 작전계획" #일본에 이벤트가 감, 중국과 일본 관계도 하락 #일본의 항의 -> 인도차이나 수락 -> 중점 취소 #관계도에 따라 ai가 수락할수도 있음
  UIC_eastern_operation_plan_tt:0 "§Y일본의 요구§!를 수락시 §Y동부 작전계획§! 중점은 §R취소§!될 것입니다."
- UIC_tonkin_fortification:0 "통킹과 라오스 요새화" #모든 요새화 중점은 이벤트로 만들기
- UIC_annam_fortification:0 "안남과 코친차이나 요새화"
- UIC_guangzhouwan_fortification:0 "광저우만 요새화" #이벤트 없음
+
+ UIC_fort_construction_plan:0 "요새 건설 계획"
+ UIC_fort_construction_plan_desc:0 "일본은 중국뿐만 아니라 인도차이나도 자신들의 손안에 넣고 싶어 합니다. 우리는 일본에 맞서 싸울 수 있도록 요새를 건설해야 합니다."
+ UIC_ask_for_outside_help:0 "외부에 도움 요청"
+ UIC_saigon_dockyard_expansion:0 "사이공 조선소 확장"
+ UIC_guangzhouwan_port_expansion:0 "광저우만 항구 확장"
 
  UIC_request_for_military_reinforcements_and_equipment:0 "장비와 군 증원 요청"
  UIC_request_for_investment_in_france:0 "프랑스에 투자 요청"
  UIC_attracting_french_companies:0 "프랑스 기업 유치"
+
+ UIC_local_conscription:0 "현지인 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
+ UIC_cooperation_with_local_nationalists:0 "현지 민족주의자와 협력"
 
  #country_flag
  UIC_flood_occurs:0 "홍수 발생"
