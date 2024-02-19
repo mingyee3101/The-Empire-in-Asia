@@ -71,6 +71,63 @@ teia_foreign_support_category = {
 	
 }
 
+political_actions = {
+
+	UIC_improving_working_conditions_for_indochinese_people = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = jules_brevie_retirement
+			#르네로벵의 퇴임 #장드쿠 지도자
+			NOT = {
+				OR = {
+					has_idea = UIC_indochinese_resistance_rene_robins_i
+					has_idea = UIC_indochinese_resistance_rene_robins_ii
+					has_idea = UIC_indochinese_resistance_rene_robins_iii
+				}
+			}
+		}
+		modifier = {
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.10
+			industrial_capacity_factory = -0.1
+		}
+		days_remove = 180
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 100
+		days_remove = 180
+		remove_effect = {
+			IF = {
+				limit = {
+					has_idea = UIC_indochinese_resistance_i
+				}
+				swap_ideas = {
+					remove_idea = UIC_indochinese_resistance_i
+					add_idea = UIC_indochinese_resistance_ii
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_state_category = UIC_indochinese_resistance_ii
+				}
+				swap_ideas = {
+					remove_idea = UIC_indochinese_resistance_ii
+					add_idea = UIC_indochinese_resistance_ii
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_state_category = UIC_indochinese_resistance_iii
+				}
+				remove_ideas = UIC_indochinese_resistance_iii
+			}
+		}
+	}
+
+}
+
 UIC_centralization_balance_of_power_category = {
 
 	#프랑스

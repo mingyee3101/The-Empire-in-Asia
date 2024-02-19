@@ -113,8 +113,8 @@
   Potato_Pride:0 "감자자랑"
 
   ############ 시암 태국 ############
-  Burapha_County:0 "부라파군" #มณฑลบูรพา
-  Greater_Thailand:0 "위대한 태국" #มหาอาณาจักรไทย
+  Burapha_County:0 "부라파성" #มณฑลบูรพา #มณฑล/บูรพา
+  Greater_Thailand:0 "대타이왕국" #มหาอาณาจักรไทย
   Siammanusati:0 "시암마누사티" #สยามมานุสสติ #왕실의 시
 
   ############ 프랑스령 인도차이나 ############
@@ -127,7 +127,7 @@
   ############ 베트남 ############
   ############ 일반 ############
   Noi_Vong_Tay_Lon:0 "손을 잡아 큰 원을 만들자" #Nối Vòng Tay Lớn
-  Bac_dang_Cung_Chung_Chau_Hanh_Quan:0 "호 아저씨는 우리와 같이 행군한다" #Bác Đang Cùng Chúng Cháu Hành Quân
+  Bac_dang_Cung_Chung_Chau_Hanh_Quan:0 "호 아저씨는 우리와 함께 행군한다" #Bác Đang Cùng Chúng Cháu Hành Quân
   Bai_Ca_Ho_Chi_Minh:0 "호찌민의 노래" #Bài Ca Hồ Chí Minh
   Giai_Phong_Mien_Nam:0 "남부 해방" #Giải Phóng Miền Nam
   Hanh_Khuc_Giai_Phong:0 "해방 행진" #Hành Khúc Giải Phóng
@@ -149,7 +149,7 @@
   Co_Gai_Vot_Chong:0 "아가씨의 트랩"  #Cô Gái Vót Chông
   Dang_ca_Dang_Cong_san_Viet_Nam:0 "베트남 공산당 당가"  #Đảng ca Đảng Cộng sản Việt Nam
   Duong_chung_ta_di:0 "우리가 가는 길" #Đường chúng ta đi
-  Hay_yen_long_me_oi:0 "어머니 안심하세요"  #Hãy yên lòng mẹ ơi
+  Hay_yen_long_me_oi:0 "어머니 걱정 마세요"  #Hãy yên lòng mẹ ơi
   Mien_nam_oi_Chung_toi_da_san_sang:0 "남부여! 우리는 준비되었다" #Miền nam ơi! Chúng tôi đã sẵn sàng
   Tien_ve_Ha_Noi:0 "하노이를 향하여" #Tiến về Hà Nội
   Toi_Nguoi_Lai_Xe:0 "나의 운전사" #Tôi Người Lái Xe
