@@ -1,0 +1,55 @@
+spriteTypes = {
+
+	######메이저######
+
+	###미국###
+
+	spriteType = {
+		name = "GFX_portrait_USA_franklin_delano_roosevelt"
+		texturefile = "gfx/leaders/USA/Portrait_Franklin_Roosevelt.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_USA_dwight_d_eisenhower"
+		texturefile = "gfx/leaders/USA/Portrait_Dwight_D_Eisenhower.png"
+	}
+
+	###영국###
+
+	spriteType = {
+		name = "GFX_portrait_ENG_stanley_baldwin"
+		texturefile = "gfx/leaders/ENG/portrait_Stanley_Baldwin.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ENG_winston_churchill"
+		texturefile = "gfx/leaders/ENG/portrait_Winston_Churchill.png"
+	}
+
+	###프랑스###
+
+	spriteType = {
+		name = "GFX_portrait_FRA_charles_de_gaulle"
+		texturefile = "gfx/leaders/FRA/portrait_Charles_de_Gaulle.png"
+	}
+
+	###독일###
+
+	spriteType = {
+		name = "GFX_portrait_GER_adolf_hitler"
+		texturefile = "gfx/leaders/GER/portrait_Adolf_Hitler.png"
+	}
+
+	###이탈리아###
+
+	spriteType = {
+		name = "GFX_portrait_ITA_benito_mussolini"
+		texturefile = "gfx/leaders/ITA/portrait_Benito_Mussolini.png"
+	}
+
+	###소련###
+
+	######마이너######
+
+
+}
