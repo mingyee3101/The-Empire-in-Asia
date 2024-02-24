@@ -251,50 +251,11 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}
-		
-		"UIC"={
-			minor = yes
-			history = "UIC_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"RAJ"={
-			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				RAJ_agrarian_society
-				RAJ_princely_states
-			}
-			focuses = {
-				RAJ_all_india_forward_bloc
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
-			}
-		}
 
 		"MON"={
 			minor = yes
 			history = "MON_GATHERING_STORM_DESC"
 			ideology = communism
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-
-		"PHI"={
-			minor = yes
-			history = "PHI_GATHERING_STORM_DESC"
-			ideology = democratic
 			ideas = {
 				
 			}

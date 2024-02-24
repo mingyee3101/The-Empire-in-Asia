@@ -2,7 +2,7 @@
 division_template = {
 	name = "식민지 보병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
 	division_names_group = UIC_COL_01
-	is_locked = yes
+	#is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,7 +19,7 @@ division_template = {
 division_template = {
 	name = "식민지 포병 연대"
 	division_names_group = UIC_COL_06
-	is_locked = yes
+	#is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -32,7 +32,7 @@ division_template = {
 division_template = {
 	name = "해군 보병 연대"
 	division_names_group = UIC_COL_05
-	is_locked = yes
+	#is_locked = yes
 
 	regiments = {
 		marine = { x = 0 y = 0 }
@@ -67,7 +67,7 @@ division_template = {
 division_template = {
 	name = "인도차이나 스파이"
 	division_names_group = UIC_COL_04
-	is_locked = yes
+	#is_locked = yes
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

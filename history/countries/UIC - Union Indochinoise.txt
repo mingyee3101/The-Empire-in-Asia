@@ -4,19 +4,10 @@ oob = "UIC_1936"
 
 set_cosmetic_tag = UIC_fra
 
-country_lock_all_division_template = yes
-#현지인 군대는 내전시 해당 국가의 군대로 들어갈 수도 있음
-
 add_ideas = {
 	#법
 	volunteer_only
 	low_economic_mobilisation
-
-	#국민정신
-	UIC_indochinese_resistance_i
-	UIC_unprepared_army_i
-	UIC_indochinese_exploitation_i
-	UIC_North_South_railwayunder_construction
 }
 
 set_technology = {
@@ -145,7 +136,3 @@ set_popularities = {
 	communism = 12
 	neutrality = 68
 }
-
-
-#country_event = { id = uic.1 days = 1 }
-country_event = { id = uic.1 days = 590 } #37년 8월말
