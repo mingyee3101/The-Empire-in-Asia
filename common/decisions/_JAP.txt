@@ -1,0 +1,65 @@
+JAP_North_China_Buffer_State_Strategy = {
+	JAP_NCBSS_decision = {
+		icon = GFX_decision_infiltrate_state
+		allowed = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    	available = {
+    	} 
+		
+
+		visible = {
+		}
+		cancel_trigger = {
+			has_country_flag = JAP_sevenseven_flag
+		}
+		
+		fire_only_once = yes
+        days_remove = 50 
+		complete_effect = {
+            add_political_power = 25 
+            custom_effect_tooltip = JAP_Marco_Polo_Bridge_Incident
+			hidden_effect = {
+				country_event = { id = JAP77.1 days = 25 }
+			}
+		}
+	}
+	JAP_NCBSS_2_decision = {
+		icon = GFX_decision_SWI_elect_confederation_president
+		allowed = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    	available = {
+    	} 
+		cost = 150
+		
+
+		visible = {
+		}
+		
+		fire_only_once = yes
+		complete_effect = {
+			custom_effect_tooltip = JAP_NCBSS_2_decision_tt
+			set_country_flag = JAP_nbss_2_flag
+		}
+	}
+}
+political_actions = {
+	CHI_Ryusan_sungmyung = {
+		allowed = { original_tag = CHI }
+		icon = GFX_decision_eng_trade_unions_support
+	 	priority = 9999
+        fire_only_once = yes
+	 	ai_will_do = { base = 9999 }
+		visible = {
+			has_global_flag = JAP_sevenseven_global_flag
+		}
+		complete_effect = {
+
+		}
+	}
+}

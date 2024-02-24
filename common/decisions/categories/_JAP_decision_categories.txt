@@ -1,0 +1,13 @@
+JAP_North_China_Buffer_State_Strategy = {
+    picture = GFX_decision_cat_picture_chi_infiltration
+	icon = generic_political_actions
+    priority = 60
+	allowed = {
+        tag = JAP
+	}
+    visible = {
+        tag = JAP
+        has_completed_focus = JAP_test_the_chinese
+    }
+	visible_when_empty = yes
+}

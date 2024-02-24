@@ -1,5 +1,6 @@
 add_namespace = aejapan
 add_namespace = jap226
+add_namespace = JAP77
 
 country_event = {
 	id = jap226.1
@@ -83,4 +84,52 @@ country_event = {
 	#	name = jap226.3.b
     #
 	#}
+}
+country_event = {
+	id = JAP77.1
+	title = JAP77.1.t
+	desc = JAP77.1.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.1.a
+		set_country_flag = JAP_sevenseven_flag
+		set_global_flag = JAP_sevenseven_global_flag
+		hidden_effect = {
+			country_event = { id = JAP77.2 days = 3 }
+			news_event = { id = news.1 hours = 1}
+		}
+	}
+}
+country_event = {
+	id = JAP77.2
+	title = JAP77.2.t
+	desc = JAP77.2.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.2.a
+
+	}
+}
+country_event = {
+	id = JAP77.3
+	title = JAP77.3.t
+	desc = JAP77.3.d
+	picture = GFX_event_Lushan_declaratin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.3.a
+		add_political_power = 120
+		add_war_support = 0.05
+	}
 }
