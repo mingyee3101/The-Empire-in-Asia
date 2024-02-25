@@ -10,8 +10,8 @@
  #ROS_democratic_party_long:0 ""
  #ROS_communism_party:0 ""
  #ROS_communism_party_long:0 ""
- ROS_neutrality_party:0 "브룩 왕조"
- ROS_neutrality_party_long:0 "브룩 왕조"
+ ROS_neutrality_party:0 "사라왁 라자" #브룩 왕조
+ ROS_neutrality_party_long:0 "사라왁 라자"
 
  #국명
  ROS_fascism:0 "사라왁"

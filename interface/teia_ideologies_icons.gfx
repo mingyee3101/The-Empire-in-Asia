@@ -310,6 +310,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/ros_sor.png"
 	}
 
+	#필리핀
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_conservatism"
+		texturefile = "gfx/interface/ideologies/phi_np.png"
+	}
+
 	#남아시아
 
 	#부탄

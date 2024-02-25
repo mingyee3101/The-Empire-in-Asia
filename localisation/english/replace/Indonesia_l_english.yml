@@ -1,0 +1,43 @@
+﻿l_english:
+
+ #인물
+ INS_a_t_van_starkenborgh_stachouwer:0 "알리디우스 차르다 판 스타켄보르 스타추베르"
+
+ #정당
+ INS_fascism_party:0 "신질서"
+ INS_democratic_party:0 "인도네시아 국민당"
+ INS_communism_party:0 "인도네시아 공산당"
+ INS_neutrality_party:0 "네덜란드 동인도 총독부"
+
+ #국명
+ INS_fascism:0 "인도네시아 결사단"
+ INS_fascism_DEF:0 "인도네시아 결사단"
+ INS_democratic:0 "인도네시아 공화국"
+ INS_democratic_DEF:0 "인도네시아 공화국"
+ INS_neutrality:0 "인도네시아"
+ INS_neutrality_DEF:0 "인도네시아"
+ INS_communism:1 "말레이 제도 인민공화국"
+ INS_communism_DEF:1 "말레이 제도 인민공화국"
+ INS_fascism_ADJ:0 "인도네시아"
+ INS_democratic_ADJ:0 "인도네시아"
+ INS_neutrality_ADJ:0 "인도네시아"
+ INS_communism_ADJ:1 "말레이"
+ INS:0 "인도네시아"
+ INS_DEF:0 "인도네시아"
+ INS_ADJ:0 "인도네시아"
+
+ INS_HOL_fascism:0 "네덜란드령 동인도"
+ INS_HOL_fascism_DEF:0 "네덜란드령 동인도"
+ INS_HOL_democratic:0 "네덜란드령 동인도"
+ INS_HOL_democratic_DEF:0 "네덜란드령 동인도"
+ INS_HOL_neutrality:0 "네덜란드령 동인도"
+ INS_HOL_neutrality_DEF:0 "네덜란드령 동인도"
+ INS_HOL_communism:0 "네덜란드령 동인도"
+ INS_HOL_communism_DEF:0 "네덜란드령 동인도"
+ INS_HOL_fascism_ADJ:0 "네덜란드령 동인도"
+ INS_HOL_democratic_ADJ:0 "네덜란드령 동인도"
+ INS_HOL_neutrality_ADJ:0 "네덜란드령 동인도"
+ INS_HOL_communism_ADJ:0 "네덜란드령 동인도"
+ INS_HOL:0 "네덜란드령 동인도"
+ INS_HOL_DEF:0 "네덜란드령 동인도"
+ INS_HOL_ADJ:0 "네덜란드령 동인도"

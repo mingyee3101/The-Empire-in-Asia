@@ -189,10 +189,6 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	set_autonomy = { #괴뢰국 추가
-		target = SST
-		autonomous_state = autonomy_integrated_puppet
-	}
 	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
@@ -218,9 +214,19 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	#괴뢰국 추가
+	set_autonomy = {
+		target = SST
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
-		puppet = SST
 		puppet = RAJ
+		puppet = SST
+		puppet = MAL
 	}
 }
 

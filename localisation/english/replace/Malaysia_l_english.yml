@@ -1,12 +1,20 @@
 ﻿l_english:
 
  #인물
+ MAL_Hugh_Fraser:0 "휴 프레이저"
+ 
+ SST_shenton_thomas:0 "셴튼 토머스"
 
  #정당
  MAL_fascism_party:0 "범오세아시아 연합주의자"
  MAL_democratic_party:0 "통일말레이국민조직"
  MAL_communism_party:0 "말라야 공산당"
- MAL_neutrality_party:0 "말레이 청년연맹"
+ MAL_neutrality_party:0 "말레이 연합주 총독부" #연방장관
+
+ SST_fascism_party:0 "해협 식민지 총독부"
+ SST_democratic_party:0 "해협 식민지 총독부"
+ SST_communism_party:0 "해협 식민지 총독부"
+ SST_neutrality_party:0 "해협 식민지 총독부" #고등판무관
 
  #국명
  MAL_fascism:0 "말레이시아"
