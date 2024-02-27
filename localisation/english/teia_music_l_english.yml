@@ -1,4 +1,7 @@
 ﻿l_english:
+  ######################################################
+  ###### 순서는 첫 번째에는 국가 그다음부턴 가나다순 ######
+  ######################################################
 
   jap_TITLE:0 "대정익찬회 도쿄 기지국"
   chi_TITLE:0 "충칭 라디오 기지국"
@@ -6,167 +9,253 @@
   kor_TITLE:0 "한국 라디오"
   sea_TITLE:0 "동남아시아 라디오"
 
+  maintheme:0 "보병의 본령"
+  maintheme_2:0 "주제곡 - 연합국 (Main Theme - Allies)"
+
   ############ 일본 ############
+  Kimigayo:0 "기미가요" #국가
+  The_Naval_Ensign:0 "군함기" #軍艦旗
   Gunkan_March:0 "군함행진곡" #軍艦行進曲
-  Miya_San_Miya_San:0 "왕자님 왕자님" #宮さん宮さん
-  Roei_no_Uta:0 "야영의 노래" #露営の歌
   Rabauru_kouta:0 "라바울 속요" #ラバウル小唄
   Battotai:0 "발도대" #抜刀隊
   Hohei_no_Honryo:0 "보병의 본령" #步兵の本領
-  Song_of_the_Kamikaze_Pilots:0 "특공대 타령" #特攻隊節
+  March_The_Battle_of_Tsushima:0 "쓰시마 해전" #日本海海戦
+  Roei_no_Uta:0 "야영의 노래" #露営の歌
+  Miya_San_Miya_San:0 "왕자님 왕자님" #宮さん宮さん
   Japanese_Army_March:0 "육군분열행진곡" #陸軍分列行進曲
   The_Pacific_Ocean_March:0 "태평양행진곡" #太平洋行進曲
-  The_Naval_Ensign:0 "군함기" #軍艦旗
-  March_The_Battle_of_Tsushima:0 "쓰시마 해전" #日本海海戦
+  Song_of_the_Kamikaze_Pilots:0 "특공대 타령" #特攻隊節
   Song_of_the_stationing_French_Indochina:0 "후쓰인 진출의 노래" #仏印進駐の歌
 
   ############ 공산주의 ############
-  Song_of_Youth_League:0 "청년동맹의 노래" #青年同盟の歌
   Listen_workers_of_the_world:0 "들어라 만국의 노동자" #聞け、万国の労働者
+  Song_of_Youth_League:0 "청년동맹의 노래" #青年同盟の歌
 
   ############ 만주국 ############
   ############ 청나라 ############
   Anthem_of_the_Beiyang_Fleet:0 "북양수사군가" #北洋水师军歌
 
   ############ 중국 ############
-  March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲
-  Victory_Song:0 "승리의 노래" #勝利之歌
   Drop_the_Handkerchief_Game:0 "수건 돌려라" #丢手绢
+  Victory_Song:0 "승리의 노래" #勝利之歌
+  March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲
 
   ############ 중국 국민당 ############
-  The_Sword_March:0 "대도행진곡" #大刀進行曲
-  Ode_to_the_Republic_of_China:0 "중화민국송" #中華民國頌
-  Night_Raid:0 "야습" #夜襲
-  The_Banners_are_Fluttering:0 "깃발은 펄럭인다" #旗正飄飄
-  Whampoa_men_is_the_most_grand_and_heroic:0 "황포의 남아는 가장 호장하다" #黃埔男兒最豪壯
-  Immortal_China:0 "불멸의 중국" #死不了的中國
-  I_have_a_rifle:0 "나는 총 한 자루를 가지고 있다" #我有一支槍
-  Song_of_the_Great_Wall_Troops:0 "장성부대가" #長城部隊歌
-  Defend_the_Yellow_River:0 "황하를 지켜라" #保衛黃河
-  Return_to_our_lost_land:0 "우리 강산을 되찾자" #還我河山
+  Three_Principles_of_the_People:0 "삼민주의가" #三民主義歌 #중화민국 국가
   The_Kinmen_Bombs:0 "823 포전" #八二三炮戰
+  The_Banners_are_Fluttering:0 "깃발은 펄럭인다" #旗正飄飄
+  I_have_a_rifle:0 "나는 총 한 자루를 가지고 있다" #我有一支槍
+  The_Sword_March:0 "대도행진곡" #大刀進行曲
   Struggling_in_the_Southeast:0 "동남고행산" #東南苦行山
-  Ambitions_to_the_sky:0 "큰 뜻이 하늘을 찌른다" #壯志凌霄
-  Three_Principles_of_the_People:0 "삼민주의가" #三民主義歌
+  Immortal_China:0 "불멸의 중국" #死不了的中國
+  cute_sailor:0 "사랑스러운 수병" #可愛的水兵
+  March_of_Three_Peoples_Principles_youth:0 "삼민주의청년진행곡" #三民主義靑年進行曲
+  Night_Raid:0 "야습" #夜襲
+  Song_of_Five_Races_Under_One_Union:0 "오족공화가" #五族共和歌
+  Return_to_our_lost_land:0 "우리 강산을 되찾자" #還我河山
+  Song_of_the_Great_Wall_Troops:0 "장성부대가" #長城部隊歌
   National_Banner_Song_of_the_Republic_of_China:0 "중화민국 국기가" #中華民國國旗歌
   Military_Anthem_of_the_Republic_of_China_Army:0 "중화민국 육군군가" #中華民國 陸軍軍歌
-  March_of_Three_Peoples_Principles_youth:0 "삼민주의청년진행곡" #三民主義靑年進行曲
-  Song_of_Five_Races_Under_One_Union:0 "오족공화가" #五族共和歌
-  cute_sailor:0 "사랑스러운 수병" #可愛的水兵
+  Ode_to_the_Republic_of_China:0 "중화민국송" #中華民國頌
+  Ambitions_to_the_sky:0 "큰 뜻이 하늘을 찌른다" #壯志凌霄
+  Whampoa_men_is_the_most_grand_and_heroic:0 "황포의 남아는 가장 호장하다" #黃埔男兒最豪壯
+  Defend_the_Yellow_River:0 "황하를 지켜라" #保衛黃河
 
   ############ 중국 공산당 ############
-  March_of_the_Eighth_Route_Army:0 "팔로군행진곡" #八路軍進行曲
-  Military_Anthem_of_the_Chinese_Peoples_Liberation_Army:0 "중국인민해방군군가" #中国人民解放军军歌
+  Komsomol_Song:0 "공청단원의 노래" #共青团员之歌
   When_that_day_comes:0 "그 날이 오면" #当那一天来临
-  March_of_the_Peoples_Volunteer_Army:0 "중국인민지원군 전가" #中国人民志愿军战歌
+  Tunnel_warfare:0 "땅굴전" #地道战
+  Learn_From_Lei_Fengs_Good_Example:0 "레이펑의 좋은 모습을 본받자" #學習雷鋒好榜樣
+  Boundless_Longevity_to_Chairman_Mao:0 "마오 주석의 만수무강을 축복하자" #祝福毛主席万寿无疆
   If_War_Breaks_Out_Today:0 "만일 오늘 전쟁이 발발한다면" #假如战争今天爆发
   The_Red_Sun_Must_Illuminate_Taiwan:0 "붉은 태양은 반드시 대만을 비추리라" #红太阳一定要照亮台湾
-  Komsomol_Song:0 "공청단원의 노래" #共青团员之歌
   Socialism_is_Good:0 "사회주의 좋다" #社會主義好
-  Learn_From_Lei_Fengs_Good_Example:0 "레이펑의 좋은 모습을 본받자" #學習雷鋒好榜樣
-  Tunnel_warfare:0 "땅굴전" #地道战
-  Boundless_Longevity_to_Chairman_Mao:0 "마오 주석의 만수무강을 축복하자" #祝福毛主席万寿无疆
+  March_of_the_Peoples_Volunteer_Army:0 "중국인민지원군 전가" #中国人民志愿军战歌
+  Military_Anthem_of_the_Chinese_Peoples_Liberation_Army:0 "중국인민해방군군가" #中国人民解放军军歌
   Song_Of_The_Autumn_Harvest_Uprising:0 "추수기의가" #秋收起义歌
+  March_of_the_Eighth_Route_Army:0 "팔로군행진곡" #八路軍進行曲
 
   ############ 중국 군벌 ############
   ############ 광서 군벌 ############
-  Song_of_the_Guangxi_Army:0 "광시군군가" #廣西軍軍歌
+  Song_of_the_Guangxi_Army:0 "광서군군가" #廣西軍軍歌
   Song_of_Guangxi_student_soldiers:0 "광서학생군 군가" #廣西學生軍軍歌
 
   ############ 운남 군벌 ############
   Military_Song_of_the_Sixtyth_Army:0 "국민혁명군 제60군 군가" #六十軍軍歌
 
   ############ 한국 ############
-  The_Torch_of_the_Annihilation_of_Communism:0 "멸공의 횃불"
-  Song_of_Korean_Independence_Army:0 "독립군가"
-  Song_of_bravely_marching:0 "용진가"
-  Amnok_River_March:0 "압록강 행진곡"
+  Aegukga_ROK:0 "애국가 - 한국"
   Song_of_the_Third_Division_of_Korean_Liberation_Army:0 "광복군 제3지대가"
+  Song_of_Korean_Independence_Army:0 "독립군가"
+  Korea_Independence_Army_Song_Medley:0 "독립군가 메들리" #영웅추도가, 거국가, 독립군가, 광복군 행진곡, 광복군 제2지대가, 압록강 행진곡
+  Here_Come_Fierce_Tigers:0 "맹호들은 간다"
+  The_Torch_of_the_Annihilation_of_Communism:0 "멸공의 횃불"
   Go_to_the_sea:0 "바다로 가자"
+  Arirang_Nation:0 "아리랑 겨레"
+  Amnok_River_March:0 "압록강 행진곡"
+  Song_of_bravely_marching:0 "용진가"
   Going_to_the_Front:0 "전선을 간다"
   Comradeship:0 "전우"
+  Military_Anthem_of_the_ROK_Navy:0 "해군가"
+  Song_of_Homeland_Defence:0 "향토방위의 노래"
 
   ############ 대한제국 ############
   Korean_Empire_Anthem:0 "황실가"
 
   ############ 북한 ############
-  Aegukga_DPRK:0 "애국가 - 조선"
-  The_General_Uses_Warp:0 "장군님 축지법 쓰신다"
-  Chollima_On_The_Wing:0 "천리마 달린다"
-  Peace_is_On_Our_Bayonets:0 "우리의 총창우에 평화가 있다"
-  Defend_the_Headquarters_of_the_Revolution:0 "혁명의 수뇌부 결사옹위하리라!"
-  The_Red_Flag:0 "적기가"
+  Aegukga_DPRK:0 "애국가 - 조선" #국가
+  Potato_Pride:0 "감자자랑"
+  Long_live_Generalissimo_Kim_Il_Sung:0 "김일성대원수 만만세"
+  No_Motherland_Without_You:0 "당신이 없으면, 조국도 없다!"
   We_will_travel_one_road_forever:0 "영원히 한길을 가리라"
+  We_Will_Follow_You_Only:0 "우리는 당신밖에 모른다!"
+  Peace_is_On_Our_Bayonets:0 "우리의 총창우에 평화가 있다"
+  The_General_Uses_Warp:0 "장군님 축지법 쓰신다"
+  The_Red_Flag:0 "적기가"
   Long_Live_The_Workers_Party_Of_Korea:0 "조선로동당만세!"
+  Korea_Does_What_its_Determined_to_do:0 "조선은 결심하면 한다"
+  Chollima_On_The_Wing:0 "천리마 달린다"
+  Defend_the_Headquarters_of_the_Revolution:0 "혁명의 수뇌부 결사옹위하리라!"
 
+  Oh_the_roads_DPRK:0 "길 - 조선"
+  My_Moscow_DPRK:0 "나의 모스크바 - 조선"
   Footsteps_DPRK:0 "발걸음 - 조선"
   The_Sacred_war_DPRK:0 "성스러운 전쟁 - 조선"
+  Victory_day_DPRK:0 "승리의 날 - 조선"
   The_Partisans_of_Amur_DPRK:0 "아무르빨찌산의 노래 - 조선"
   The_Internationale_DPRK:0 "인터내셔널가 - 조선"
+  Wide_is_My_Motherland_DPRK:0 "저 넓은 땅은 나의 조국이라 - 조선"
   Lets_go_DPRK:0 "진격 - 조선"
   Song_About_Disturbed_Youth_DPRK:0 "험난한 청춘의 노래 - 조선"
-  Oh_the_roads_DPRK:0 "길 - 조선"
-  Wide_is_My_Motherland_DPRK:0 "저 넓은 땅은 나의 조국이라 - 조선"
-  Victory_day_DPRK:0 "승리의 날 - 조선"
-  My_Moscow_DPRK:0 "나의 모스크바 - 조선"
-
-  Potato_Pride:0 "감자자랑"
 
   ############ 시암 태국 ############
-  Burapha_County:0 "부라파성" #มณฑลบูรพา #มณฑล/บูรพา
+  Phleng_Chat_Thai:0 "플렝 찻 타이" #국가
+  Song_of_Thai_National_Day_June_24th:0 "6월 24일" #เพลง/วันชาติ 24 มิถุนา #1932년 시암 혁명
   Greater_Thailand:0 "대타이왕국" #มหาอาณาจักรไทย
+  Burapha_County:0 "부라파" #มณฑลบูรพา
   Siammanusati:0 "시암마누사티" #สยามมานุสสติ #왕실의 시
+  Love_Thailand:0 "조국 태국" #รักเมืองไทย
+  Thai_Military_Juniors_March:0 "청년군의 행진" #มาร์ชยุวชนทหาร
+  Under_the_Thai_Flag:0 "태국 국기 아래" #ใต้ร่มธงไทย
+  Royal_Thai_Army_March:0 "태국왕립육군의 행진" #มาร์ช/กองทัพบก
+  Thais_Friends:0 "태국의 친구" #เพื่อนไทย
+  Thai_unity:0 "태국인들이여 단합하자" #ไทย/รวม/กำลัง
+  Phama_Prates:0 "파마프라테" #พม่า/ประเทศ
+  March_March_March:0 "행진, 행진, 행진" #เดิน เดิน เดิน
+
+  ############ 공산주의 ############
+  LInternationale_in_Thai:0 "인터내셔널가 - 태국" #อินเตอร์เนชั่นแนล
 
   ############ 프랑스령 인도차이나 ############
-  La_Marseillaise:0 "라 마르세예즈"
-  Les_combats_de_Tu_Le:0 "뚜레 전투"
+  La_Marseillaise:0 "라 마르세예즈" #국가
   Opium:0 "아편"
   Quand_jesus_christ_crea_la_coloniale:0 "예수 그리스도께서 식민지를 창조하셨을 때" #Quand jésus-christ créa la coloniale
-  Marechal_nous_voila:0 "원수여, 우리는 여기에 있습니다!"
+  #프랑스 본토
+  Le_reve_passe:0 "꿈은 지나간다" #Le rêve passe
+  Verdun_On_ne_passe_pas:0 "베르됭! 너희는 못 지나간다" #Verdun! On ne passe pas
+  Les_Hussards_de_Bercheny:0 "베르슈니의 경기병" #Les Hussards de Bercheny
+  Vous_naurez_pas_lAlsace_et_la_Lorraine:0 "알자스와 로렌은 없을 것입니다" #Vous n'aurez pas l'Alsace et la Lorraine
+  Lhymne_a_la_Liberte:0 "자유를 위한 찬송가" #L'hymne à la Liberté
+  Ahcaira:0 "잘 되리라" #Ah' ça ira
+  La_Carmagnole:0 "카르마뇰" #파시즘, 비동맹주의X #La Carmagnole
+
+  ############ 비시프랑스 ############
+  Marechal_nous_voila:0 "원수여, 우리는 여기에 있습니다!" #국가
+  Ah_Que_la_France_est_belle:0 "아! 아름다운 프랑스" #Ah! Que la France est belle
+
+  ############ 전쟁 #############
+  Les_combats_de_Tu_Le:0 "뚜레 전투"
 
   ############ 베트남 ############
   ############ 일반 ############
-  Noi_Vong_Tay_Lon:0 "손을 잡아 큰 원을 만들자" #Nối Vòng Tay Lớn
-  Bac_dang_Cung_Chung_Chau_Hanh_Quan:0 "호 아저씨는 우리와 함께 행군한다" #Bác Đang Cùng Chúng Cháu Hành Quân
-  Bai_Ca_Ho_Chi_Minh:0 "호찌민의 노래" #Bài Ca Hồ Chí Minh
-  Giai_Phong_Mien_Nam:0 "남부 해방" #Giải Phóng Miền Nam
-  Hanh_Khuc_Giai_Phong:0 "해방 행진" #Hành Khúc Giải Phóng
-  Tieng_goi_thanh_nien:0 "청년에게 고함" #Tiếng Gọi Thanh Niên
-  Tien_Ve_Sai_Gon:0 "사이공을 향하여" #Tiến về Sài Gòn
-  Dat_Nuoc_Tron_Niem_Vui:0 "기쁨이 가득한 나라" #Đất Nước Trọn Niềm Vui
-  Bai_ca_nguoi_linh:0 "군인의 노래" #Bài Ca Người Lính
-  Hat_mai_khuc_quan_hanh:0 "행진곡을 계속 부르자" #Hát mãi khúc quân hành
-  Sai_Gon_Quat_Khoi:0 "사이공 봉기" #Sài Gòn Quật Khởi
+  Tien_Quan_Ca:0 "진군가" #Tiến Quân Ca #베트남 국가
+  Giai_Phong_Mien_Nam:0 "남부해방" #Giải Phóng Miền Nam #남베트남 공화국 국가
   tieu_doan_307:0 "307 대대" #Tiểu Đoàn 307
-  March_Under_the_Banner:0 "깃발 아래 행진하라!" #Tiến Bước Dưới Quân Kỳ
-  Quan_Doi_Ta_Quan_Doi_Anh_Hung:0 "우리의 군대는 영웅의 군대" #Quân Đội Ta Quân Đội Anh Hùng
   Muoi_chin_thang_Tam:0 "8월 19일" #Mười chín tháng Tám
-  Doan_Ve_Quoc_Quan:0 "호국군" #Đoàn Vệ Quốc Quân 위국군
-  Buoc_Chan_Tren_Day_Truong_Son:0 "쯔엉선산맥을 걸으며" #Bước Chân Trên Dãy Trường Sơn
+  La_co_thang_Tam:0 "8월의 깃발" #Lá cờ tháng Tám
+  LEN_DANG:0 "거리로 나가자" #LÊN ĐÀNG
+  Du_kich_ca:0 "게릴라가" #Du kích ca
+  Bai_ca_nguoi_linh:0 "군인의 노래" #Bài Ca Người Lính
   Anh_van_hanh_quan:0 "그는 여전히 행진한다" #Anh vẫn hành quân
-  Bai_hat_Giai_phong_Quan:0 "해방군의 노래"  #Bài hát Giải phóng Quân
-  Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh:0 "우리는 레딘친의 전우입니다"  #Chúng tôi là đồng đội của Lê Đình Chinh
-  Co_Gai_Vot_Chong:0 "아가씨의 트랩"  #Cô Gái Vót Chông
-  Dang_ca_Dang_Cong_san_Viet_Nam:0 "베트남 공산당 당가"  #Đảng ca Đảng Cộng sản Việt Nam
-  Duong_chung_ta_di:0 "우리가 가는 길" #Đường chúng ta đi
-  Hay_yen_long_me_oi:0 "어머니 걱정 마세요"  #Hãy yên lòng mẹ ơi
-  Mien_nam_oi_Chung_toi_da_san_sang:0 "남부여! 우리는 준비되었다" #Miền nam ơi! Chúng tôi đã sẵn sàng
-  Tien_ve_Ha_Noi:0 "하노이를 향하여" #Tiến về Hà Nội
+  March_Under_the_Banner:0 "깃발 아래 행진하라!" #Tiến Bước Dưới Quân Kỳ
   Toi_Nguoi_Lai_Xe:0 "나의 운전사" #Tôi Người Lái Xe
+  Mien_nam_oi_Chung_toi_da_san_sang:0 "남부여! 우리는 준비되었다" #Miền nam ơi! Chúng tôi đã sẵn sàng
+  CONG_DOAN_CA:0 "노동조합가" #CÔNG ĐOÀN CA
+  Dang_ca_Dang_Cong_san_Viet_Nam:0 "베트남 공산당 당가"  #Đảng ca Đảng Cộng sản Việt Nam
   Viet_Nam_quyet_chien_thang:0 "베트남은 반드시 승리한다" #Việt Nam quyết chiến thắng
+  Chien_si_Viet_Nam:0 "베트남의 전사" #Chiến sĩ Việt Nam
+  Viet_Nam_oi_Mua_xuan_den_roi:0 "베트남이여! 봄이 왔습니다" #Việt Nam ơi! Mùa xuân đến rồi
+  Sai_Gon_Quat_Khoi:0 "사이공 봉기" #Sài Gòn Quật Khởi
+  Tien_Ve_Sai_Gon:0 "사이공을 향하여" #Tiến về Sài Gòn
+  Noi_Vong_Tay_Lon:0 "손을 잡아 큰 원을 만들자" #Nối Vòng Tay Lớn
+  Co_Gai_Vot_Chong:0 "아가씨의 트랩"  #Cô Gái Vót Chông
+  Hay_yen_long_me_oi:0 "어머니 걱정마세요"  #Hãy yên lòng mẹ ơi
+  Duong_chung_ta_di:0 "우리가 가는 길" #Đường chúng ta đi
+  Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh:0 "우리는 레딘친의 전우입니다"  #Chúng tôi là đồng đội của Lê Đình Chinh
+  Quan_Doi_Ta_Quan_Doi_Anh_Hung:0 "우리의 군대는 영웅의 군대" #Quân Đội Ta Quân Đội Anh Hùng
+  Buoc_Chan_Tren_Day_Truong_Son:0 "쯔엉선산맥을 걸으며" #Bước Chân Trên Dãy Trường Sơn
+  Truong_chinh_ca:0 "쯔엉찐가" #Trường chinh ca
+  Tieng_goi_thanh_nien:0 "청년에게 고함" #Tiếng Gọi Thanh Niên
+  Tien_ve_Ha_Noi:0 "하노이를 향하여" #Tiến về Hà Nội
+  Hanh_Khuc_Giai_Phong:0 "해방 행진" #Hành Khúc Giải Phóng
+  Bai_hat_Giai_phong_Quan:0 "해방군의 노래"  #Bài hát Giải phóng Quân
+  Hat_mai_khuc_quan_hanh:0 "행진곡을 계속 부르자" #Hát mãi khúc quân hành
+  Bac_dang_Cung_Chung_Chau_Hanh_Quan:0 "호 아저씨는 우리와 함께 행군한다" #Bác Đang Cùng Chúng Cháu Hành Quân
+  Doan_Ve_Quoc_Quan:0 "호국군" #Đoàn Vệ Quốc Quân 위국군
+  Bai_Ca_Ho_Chi_Minh:0 "호찌민의 노래" #Bài Ca Hồ Chí Minh
 
-  Quoc_te_ca:0 "인터내셔널가 - 베트남" #Quốc tế ca
-  Ca_Chiu_Sa:0 "카츄샤 - 베트남"  #Ca-Chiu-Sa
   Hanh_khuc_Vac_xa_va:0 "바르샤바 행진 - 베트남"  #Hành khúc Vác-xa-va
   Thoi_thanh_nien_soi_noi:0 "씩씩한 청년시절 - 베트남" #Thời thanh niên sôi nổi
+  Quoc_te_ca:0 "인터내셔널가 - 베트남" #Quốc tế ca
+  Ca_Chiu_Sa:0 "카츄샤 - 베트남"  #Ca-Chiu-Sa
 
   ############ 평화 ############
+  Dat_Nuoc_Tron_Niem_Vui:0 "기쁨이 가득한 나라" #Đất Nước Trọn Niềm Vui
+  Tu_Mot_Nga_Tu_Duong_Pho:0 "사거리에서" #Từ Một Ngã Tư Đường Phố
   Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh:0 "호찌민시의 봄"
+
   ############ 전쟁 #############
+  No_Xuong_Mau:0 "목숨의 빚" #Nợ Xương Máu
   Hay_tiep_tuc_doan_ket_voi_Viet_Nam:0 "베트남과 함께 단결하자" #중국이랑 전쟁할때? #Hãy tiếp tục đoàn kết với Việt Nam
   #A song about the Sino-Vietnamese war of 1979, where a much larger and stronger power, China, invaded its smaller neighbour, Vietnam, but failed to capture any strategic goals
 
   ############ 베트남 공화국 #############
+  Tieng_Goi_Cong_Dan:0 "공민에게 고함" #Tiếng Gọi Công Dân #베트남 공화국 국가
+  Thuc_quan:0 "군의 요구" #Thúc quân
+  Nguoi_Hung_Biet_Cach_Du_81:0 "멀리 떠나버린 81연대의 영웅들" #Liên đoàn 81 Biệt cách Nhảy dù #Người Hùng Biệt Cách Dù 81 #Liên đoàn 81 Biệt cách Nhảy dù
+  Gio_Phan_Cong:0 "반격의 시간" #Giờ Phản Công
+  Ta_Da_Thay_Gi_Trong_Dem_Nay:0 "밤에 우리는 무언갈 봤습니다" #Ta Đã Thấy Gì Trong Đêm Nay
+  Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc:0 "베트남공화국육군의 행진" #Lục Quân Việt Nam Cộng Hòa Hành Khúc
+  Bai_Ca_Chien_Thang:0 "승리의 노래" #Bài Ca Chiến Thắng
+  Bai_Ca_Ve_Nguon:0 "원천의 노래" #Bài Ca Về Nguồn
+  The_Chien_Thang_Quan_Thu:0 "적에 대한 승리를 맹세합니다" #Thề Chiến Thắng Quân Thù
   Ca_Nuoc_Dau_Tranh:0 "전국투쟁" #Cả Nước Đấu Tranh
-  Tieng_Goi_Cong_Dan:0 "공민에게 고함" #Tiếng Gọi Công Dân
   The_Khong_Phan_Boi_Que_Huong:0 "조국을 배반하지 않겠다고 맹세합니다" #Thề Không Phản Bội Quê Hương
+  Tien_Quan:0 "진군" #Tiến Quân
+
+  #베트남 국민당
+  Co_Sao_Trang:0 "백성기" #Cờ Sao Trắng #베트남 국민당
+
+  ############ 베트남 왕국 #############
+  Dang_Dan_cung:0 "등단궁" #베트남왕국 국가 #Đăng đàn cung
+  Quang_Trung_dai_pha_Quan_Thanh:0 "꽝쭝황제께서 청나라 군대를 격파하셨네" #Quang Trung đại phá Quân Thanh
+
+  ############ 베트남 제국 #############
+  Viet_Nam_minh_chau_troi_dong:0 "베트남 - 동양의 진주" #베트남제국 국가 #Việt Nam minh châu trời đông
+
+  ############ 라오스 #############
+  Pheng_Xat_Lao:0 "펭 삿 라오" #ເພງຊາດລາວ #라오스의 국가 #라오스왕국, 라오 인민 민주 공화국
+
+  ############ 공산주의 #############
+  Congratulations_Comrade:0 "동지 축하합니다" #ຊົມເຊີຍອ້າຍຊ່າງແສງ
+  Laotian_Land:0 "라오스의 영토" #ແດນດີນ/ຖີ່ນ/ລາວ
+  The_Lao_Peoples_Revolutionary_Party:0 "라오인민혁명당" #ພັກປະຊາຊົນປະຕິວັດລາວ
+  In_the_Liberated_Zone:0 "자유의 땅" #ແດນ/ແຫ່ງ/ອິດສະຫຼະ 
+  Fighting_Spirit:0 "투지" #ຊີວິດນັກກູ້ຊາດ
+
+  ############ 캄보디아 #############
+  Song_of_the_Khmer_Republic:0 "크메르 공화국의 국가" #បទចំរៀងនៃសាធារណរដ្ឋខ្មែរ
+
+  ############ 공산주의 #############
+  National_Anthem_of_Democratic_Kampuchea:0 "영광스러운 4월 17일" #민주 캄푸치아 국가 #ដប់ប្រាំពីរមេសាមហាជោគជ័យ
+  The_Red_Flag_of_Revolution:0 "혁명의 붉은 깃발" #ទង់ក្រហមបដិវត្ត

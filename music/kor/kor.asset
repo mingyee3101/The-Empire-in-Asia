@@ -1,6 +1,12 @@
 ############ 한국 ############
 
 music = {
+	name = "Aegukga_ROK"
+	file = "Aegukga_ROK.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "The_Torch_of_the_Annihilation_of_Communism"
 	file = "The_Torch_of_the_Annihilation_of_Communism.ogg"
 	volume = 0.75
@@ -45,6 +51,36 @@ music = {
 music = {
 	name = "Comradeship"
 	file = "Comradeship.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Korea_Independence_Army_Song_Medley"
+	file = "Korea_Independence_Army_Song_Medley.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Arirang_Nation"
+	file = "Arirang_Nation.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Military_Anthem_of_the_ROK_Navy"
+	file = "Military_Anthem_of_the_ROK_Navy.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Homeland_Defence"
+	file = "Song_of_Homeland_Defence.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Here_Come_Fierce_Tigers"
+	file = "Here_Come_Fierce_Tigers.ogg"
 	volume = 0.75
 }
 
@@ -103,6 +139,30 @@ music = {
 music = {
 	name = "Long_Live_The_Workers_Party_Of_Korea"
 	file = "Long_Live_The_Workers_Party_Of_Korea.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "We_Will_Follow_You_Only"
+	file = "We_Will_Follow_You_Only.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Korea_Does_What_its_Determined_to_do"
+	file = "Korea_Does_What_its_Determined_to_do.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Long_live_Generalissimo_Kim_Il_Sung"
+	file = "Long_live_Generalissimo_Kim_Il_Sung.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "No_Motherland_Without_You"
+	file = "No_Motherland_Without_You.ogg"
 	volume = 0.75
 }
 

@@ -1,14 +1,8 @@
 ############ 중국 공산당 ############
 
 music = {
-	name = "March_of_the_Eighth_Route_Army"
-	file = "March_of_the_Eighth_Route_Army.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
-	file = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army.ogg"
+	name = "Komsomol_Song"
+	file = "Komsomol_Song.ogg"
 	volume = 0.75
 }
 
@@ -19,8 +13,20 @@ music = {
 }
 
 music = {
-	name = "March_of_the_Peoples_Volunteer_Army"
-	file = "March_of_the_Peoples_Volunteer_Army.ogg"
+	name = "Tunnel_warfare"
+	file = "Tunnel_warfare.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Learn_From_Lei_Fengs_Good_Example"
+	file = "Learn_From_Lei_Fengs_Good_Example.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Boundless_Longevity_to_Chairman_Mao"
+	file = "Boundless_Longevity_to_Chairman_Mao.ogg"
 	volume = 0.75
 }
 
@@ -37,37 +43,31 @@ music = {
 }
 
 music = {
-	name = "Komsomol_Song"
-	file = "Komsomol_Song.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "Socialism_is_Good"
 	file = "Socialism_is_Good.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Learn_From_Lei_Fengs_Good_Example"
-	file = "Learn_From_Lei_Fengs_Good_Example.ogg"
-	volume = 1
-}
-
-music = {
-	name = "Tunnel_warfare"
-	file = "Tunnel_warfare.ogg"
+	name = "March_of_the_Peoples_Volunteer_Army"
+	file = "March_of_the_Peoples_Volunteer_Army.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Boundless_Longevity_to_Chairman_Mao"
-	file = "Boundless_Longevity_to_Chairman_Mao.ogg"
+	name = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	file = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army.ogg"
 	volume = 0.75
 }
 
 music = {
 	name = "Song_Of_The_Autumn_Harvest_Uprising"
 	file = "Song_Of_The_Autumn_Harvest_Uprising.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "March_of_the_Eighth_Route_Army"
+	file = "March_of_the_Eighth_Route_Army.ogg"
 	volume = 0.75
 }

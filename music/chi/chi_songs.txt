@@ -3,14 +3,14 @@ music_station = "chi"
 ############ 중국 ############
 
 music = {
-	song = "March_of_the_Volunteers"
+	song = "Drop_the_Handkerchief_Game"
 	chance = {
 		base = 0
 		modifier = {
 			add = 20
 			is_china_tag = yes
 		}
-	}	
+	}
 }
 
 music = {
@@ -25,21 +25,174 @@ music = {
 }
 
 music = {
-	song = "Drop_the_Handkerchief_Game"
+	song = "March_of_the_Volunteers"
 	chance = {
 		base = 0
 		modifier = {
 			add = 20
 			is_china_tag = yes
 		}
-	}
+	}	
 }
 
 
 ############ 중국 국민당 ############
 
+#국가
+music = {
+	song = "Three_Principles_of_the_People"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "The_Kinmen_Bombs"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "The_Banners_are_Fluttering"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "I_have_a_rifle"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
 music = {
 	song = "The_Sword_March"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "Struggling_in_the_Southeast"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Immortal_China"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "cute_sailor"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "March_of_Three_Peoples_Principles_youth"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Night_Raid"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Song_of_Five_Races_Under_One_Union"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Return_to_our_lost_land"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Song_of_the_Great_Wall_Troops"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "National_Banner_Song_of_the_Republic_of_China"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_nc_tag = yes
+		}
+	}
+}
+
+music = {
+	song = "Military_Anthem_of_the_Republic_of_China_Army"
 	chance = {
 		base = 0
 		modifier = {
@@ -57,117 +210,7 @@ music = {
 			add = 20
 			is_china_nc_tag = yes
 		}
-	}	
-}
-
-music = {
-	song = "Night_Raid"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "The_Banners_are_Fluttering"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Whampoa_men_is_the_most_grand_and_heroic"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Immortal_China"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "I_have_a_rifle"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Song_of_the_Great_Wall_Troops"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Defend_the_Yellow_River"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Return_to_our_lost_land"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "The_Kinmen_Bombs"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Struggling_in_the_Southeast"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
+	}
 }
 
 music = {
@@ -178,73 +221,29 @@ music = {
 			add = 20
 			is_china_nc_tag = yes
 		}
-	}	
+	}
 }
 
 music = {
-	song = "Three_Principles_of_the_People"
+	song = "Whampoa_men_is_the_most_grand_and_heroic"
 	chance = {
 		base = 0
 		modifier = {
 			add = 20
 			is_china_nc_tag = yes
 		}
-	}	
+	}
 }
 
 music = {
-	song = "National_Banner_Song_of_the_Republic_of_China"
+	song = "Defend_the_Yellow_River"
 	chance = {
 		base = 0
 		modifier = {
 			add = 20
 			is_china_nc_tag = yes
 		}
-	}	
-}
-
-music = {
-	song = "Military_Anthem_of_the_Republic_of_China_Army"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "March_of_Three_Peoples_Principles_youth"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "Song_of_Five_Races_Under_One_Union"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
-}
-
-music = {
-	song = "cute_sailor"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_nc_tag = yes
-		}
-	}	
+	}
 }
 
 ############ 중국 군벌 ############

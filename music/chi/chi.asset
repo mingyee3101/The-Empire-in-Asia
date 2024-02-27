@@ -1,8 +1,8 @@
 ############ 중국 ############
 
 music = {
-	name = "March_of_the_Volunteers"
-	file = "March_of_the_Volunteers.ogg"
+	name = "Drop_the_Handkerchief_Game"
+	file = "Drop_the_Handkerchief_Game.ogg"
 	volume = 0.75
 }
 
@@ -13,28 +13,16 @@ music = {
 }
 
 music = {
-	name = "Drop_the_Handkerchief_Game"
-	file = "Drop_the_Handkerchief_Game.ogg"
+	name = "March_of_the_Volunteers"
+	file = "March_of_the_Volunteers.ogg"
 	volume = 0.75
 }
 
 ############ 중국 국민당 ############
 
 music = {
-	name = "The_Sword_March"
-	file = "The_Sword_March.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Ode_to_the_Republic_of_China"
-	file = "Ode_to_the_Republic_of_China.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Night_Raid"
-	file = "Night_Raid.ogg"
+	name = "The_Kinmen_Bombs"
+	file = "The_Kinmen_Bombs.ogg"
 	volume = 0.75
 }
 
@@ -45,44 +33,14 @@ music = {
 }
 
 music = {
-	name = "Whampoa_men_is_the_most_grand_and_heroic"
-	file = "Whampoa_men_is_the_most_grand_and_heroic.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Immortal_China"
-	file = "Immortal_China.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "I_have_a_rifle"
 	file = "I_have_a_rifle.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Song_of_the_Great_Wall_Troops"
-	file = "Song_of_the_Great_Wall_Troops.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Defend_the_Yellow_River"
-	file = "Defend_the_Yellow_River.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Return_to_our_lost_land"
-	file = "Return_to_our_lost_land.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "The_Kinmen_Bombs"
-	file = "The_Kinmen_Bombs.ogg"
+	name = "The_Sword_March"
+	file = "The_Sword_March.ogg"
 	volume = 0.75
 }
 
@@ -93,14 +51,50 @@ music = {
 }
 
 music = {
-	name = "Ambitions_to_the_sky"
-	file = "Ambitions_to_the_sky.ogg"
+	name = "Immortal_China"
+	file = "Immortal_China.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "cute_sailor"
+	file = "cute_sailor.ogg"
 	volume = 0.75
 }
 
 music = {
 	name = "Three_Principles_of_the_People"
 	file = "Three_Principles_of_the_People.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "March_of_Three_Peoples_Principles_youth"
+	file = "March_of_Three_Peoples_Principles_youth.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Night_Raid"
+	file = "Night_Raid.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Five_Races_Under_One_Union"
+	file = "Song_of_Five_Races_Under_One_Union.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Return_to_our_lost_land"
+	file = "Return_to_our_lost_land.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_the_Great_Wall_Troops"
+	file = "Song_of_the_Great_Wall_Troops.ogg"
 	volume = 0.75
 }
 
@@ -117,20 +111,26 @@ music = {
 }
 
 music = {
-	name = "March_of_Three_Peoples_Principles_youth"
-	file = "March_of_Three_Peoples_Principles_youth.ogg"
+	name = "Ode_to_the_Republic_of_China"
+	file = "Ode_to_the_Republic_of_China.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Song_of_Five_Races_Under_One_Union"
-	file = "Song_of_Five_Races_Under_One_Union.ogg"
+	name = "Ambitions_to_the_sky"
+	file = "Ambitions_to_the_sky.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "cute_sailor"
-	file = "cute_sailor.ogg"
+	name = "Whampoa_men_is_the_most_grand_and_heroic"
+	file = "Whampoa_men_is_the_most_grand_and_heroic.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Defend_the_Yellow_River"
+	file = "Defend_the_Yellow_River.ogg"
 	volume = 0.75
 }
 

@@ -2,46 +2,9 @@ music_station = "kor"
 
 ############ 한국 ############
 
+#국가
 music = {
-	song = "The_Torch_of_the_Annihilation_of_Communism"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Song_of_Korean_Independence_Army"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = KOR
-		}
-	}
-}
-
-music = {
-	song = "Song_of_bravely_marching"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = KOR
-		}
-	}
-}
-
-music = {
-	song = "Amnok_River_March"
+	song = "Aegukga_ROK"
 	chance = {
 		base = 0
 		modifier = {
@@ -63,7 +26,84 @@ music = {
 }
 
 music = {
+	song = "Song_of_Korean_Independence_Army"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Korea_Independence_Army_Song_Medley"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Here_Come_Fierce_Tigers"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "The_Torch_of_the_Annihilation_of_Communism"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}	
+}
+
+music = {
 	song = "Go_to_the_sea"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Arirang_Nation"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Amnok_River_March"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Song_of_bravely_marching"
 	chance = {
 		base = 0
 		modifier = {
@@ -95,6 +135,28 @@ music = {
 	}
 }
 
+music = {
+	song = "Military_Anthem_of_the_ROK_Navy"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
+music = {
+	song = "Song_of_Homeland_Defence"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = KOR
+		}
+	}
+}
+
 ############ 대한제국 ############
 
 music = {
@@ -113,6 +175,7 @@ music = {
 
 ############ 북한 ############
 
+#국가
 music = {
 	song = "Aegukga_DPRK"
 	chance = {
@@ -128,7 +191,21 @@ music = {
 }
 
 music = {
-	song = "The_General_Uses_Warp"
+	song = "Potato_Pride"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}
+}
+
+music = {
+	song = "Long_live_Generalissimo_Kim_Il_Sung"
 	chance = {
 		base = 0
 		modifier = {
@@ -142,49 +219,7 @@ music = {
 }
 
 music = {
-	song = "Chollima_On_The_Wing"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Peace_is_On_Our_Bayonets"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Defend_the_Headquarters_of_the_Revolution"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "The_Red_Flag"
+	song = "No_Motherland_Without_You"
 	chance = {
 		base = 0
 		modifier = {
@@ -212,6 +247,62 @@ music = {
 }
 
 music = {
+	song = "We_Will_Follow_You_Only"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Peace_is_On_Our_Bayonets"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "The_General_Uses_Warp"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "The_Red_Flag"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
 	song = "Long_Live_The_Workers_Party_Of_Korea"
 	chance = {
 		base = 0
@@ -225,7 +316,77 @@ music = {
 	}	
 }
 
+music = {
+	song = "Korea_Does_What_its_Determined_to_do"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Chollima_On_The_Wing"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Defend_the_Headquarters_of_the_Revolution"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
 ############ 소련 ############
+
+music = {
+	song = "Oh_the_roads_DPRK"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "My_Moscow_DPRK"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
 
 music = {
 	song = "Footsteps_DPRK"
@@ -243,6 +404,20 @@ music = {
 
 music = {
 	song = "The_Sacred_war_DPRK"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
+	song = "Victory_day_DPRK"
 	chance = {
 		base = 0
 		modifier = {
@@ -284,6 +459,20 @@ music = {
 }
 
 music = {
+	song = "Wide_is_My_Motherland_DPRK"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = KOR
+				has_government = communism
+			}
+		}
+	}	
+}
+
+music = {
 	song = "Lets_go_DPRK"
 	chance = {
 		base = 0
@@ -303,86 +492,6 @@ music = {
 		base = 0
 		modifier = {
 			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Oh_the_roads_DPRK"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Wide_is_My_Motherland_DPRK"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "Victory_day_DPRK"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-music = {
-	song = "My_Moscow_DPRK"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			AND = {
-				original_tag = KOR
-				has_government = communism
-			}
-		}
-	}	
-}
-
-############ 평화 ############
-
-music = {
-	song = "Potato_Pride"
-	chance = {
-		base = 0
-		modifier = {
-			add = 10
-			AND = {
-				original_tag = KOR
-				has_government = communism
-				has_war = no
-			}
-		}
-		modifier = {
-			add = 10
 			AND = {
 				original_tag = KOR
 				has_government = communism

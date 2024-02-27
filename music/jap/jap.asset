@@ -1,20 +1,20 @@
 ############ 일본 ############
 
 music = {
+	name = "Kimigayo"
+	file = "Kimigayo.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Naval_Ensign"
+	file = "The_Naval_Ensign.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Gunkan_March"
 	file = "Gunkan_March.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Miya_San_Miya_San"
-	file = "Miya_San_Miya_San.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Roei_no_Uta"
-	file = "Roei_no_Uta.ogg"
 	volume = 0.75
 }
 
@@ -37,8 +37,20 @@ music = {
 }
 
 music = {
-	name = "Song_of_the_Kamikaze_Pilots"
-	file = "Song_of_the_Kamikaze_Pilots.ogg"
+	name = "March_The_Battle_of_Tsushima"
+	file = "March_The_Battle_of_Tsushima.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Roei_no_Uta"
+	file = "Roei_no_Uta.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Miya_San_Miya_San"
+	file = "Miya_San_Miya_San.ogg"
 	volume = 0.75
 }
 
@@ -55,14 +67,8 @@ music = {
 }
 
 music = {
-	name = "The_Naval_Ensign"
-	file = "The_Naval_Ensign.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "March_The_Battle_of_Tsushima"
-	file = "March_The_Battle_of_Tsushima.ogg"
+	name = "Song_of_the_Kamikaze_Pilots"
+	file = "Song_of_the_Kamikaze_Pilots.ogg"
 	volume = 0.75
 }
 
@@ -75,22 +81,13 @@ music = {
 ############ 공산주의 ############
 
 music = {
-	name = "Song_of_Youth_League"
-	file = "Song_of_Youth_League.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "Listen_workers_of_the_world"
 	file = "Listen_workers_of_the_world.ogg"
 	volume = 0.75
 }
 
-############ 만주국 ############
-############ 청나라 ############
-
 music = {
-	name = "Anthem_of_the_Beiyang_Fleet"
-	file = "Anthem_of_the_Beiyang_Fleet.ogg"
-	volume = 0.9
+	name = "Song_of_Youth_League"
+	file = "Song_of_Youth_League.ogg"
+	volume = 0.75
 }

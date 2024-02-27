@@ -3,18 +3,7 @@ music_station = "prc"
 ############ 중국 공산당 ############
 
 music = {
-	song = "March_of_the_Eighth_Route_Army"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = PRC
-		}
-	}
-}
-
-music = {
-	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
+	song = "Komsomol_Song"
 	chance = {
 		base = 0
 		modifier = {
@@ -36,7 +25,29 @@ music = {
 }
 
 music = {
-	song = "March_of_the_Peoples_Volunteer_Army"
+	song = "Tunnel_warfare"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
+}
+
+music = {
+	song = "Learn_From_Lei_Fengs_Good_Example"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
+}
+
+music = {
+	song = "Boundless_Longevity_to_Chairman_Mao"
 	chance = {
 		base = 0
 		modifier = {
@@ -69,17 +80,6 @@ music = {
 }
 
 music = {
-	song = "Komsomol_Song"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = PRC
-		}
-	}
-}
-
-music = {
 	song = "Socialism_is_Good"
 	chance = {
 		base = 0
@@ -91,7 +91,7 @@ music = {
 }
 
 music = {
-	song = "Learn_From_Lei_Fengs_Good_Example"
+	song = "March_of_the_Peoples_Volunteer_Army"
 	chance = {
 		base = 0
 		modifier = {
@@ -102,18 +102,7 @@ music = {
 }
 
 music = {
-	song = "Tunnel_warfare"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = PRC
-		}
-	}
-}
-
-music = {
-	song = "Boundless_Longevity_to_Chairman_Mao"
+	song = "Military_Anthem_of_the_Chinese_Peoples_Liberation_Army"
 	chance = {
 		base = 0
 		modifier = {
@@ -125,6 +114,17 @@ music = {
 
 music = {
 	song = "Song_Of_The_Autumn_Harvest_Uprising"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			original_tag = PRC
+		}
+	}
+}
+
+music = {
+	song = "March_of_the_Eighth_Route_Army"
 	chance = {
 		base = 0
 		modifier = {

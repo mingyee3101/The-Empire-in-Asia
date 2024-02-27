@@ -1,9 +1,21 @@
 ############ 시암 태국 ############
 
 music = {
+	name = "Phleng_Chat_Thai"
+	file = "Phleng_Chat_Thai.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Song_of_Thai_National_Day_June_24th"
+	file = "Song_of_Thai_National_Day_June_24th.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Greater_Thailand"
 	file = "Greater_Thailand.ogg"
-	volume = 0.75
+	volume = 0.8
 }
 
 music = {
@@ -15,6 +27,62 @@ music = {
 music = {
 	name = "Siammanusati"
 	file = "Siammanusati.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Love_Thailand"
+	file = "Love_Thailand.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Thai_Military_Juniors_March"
+	file = "Thai_Military_Juniors_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Under_the_Thai_Flag"
+	file = "Under_the_Thai_Flag.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Royal_Thai_Army_March"
+	file = "Royal_Thai_Army_March.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Thais_Friends"
+	file = "Thais_Friends.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Thai_unity"
+	file = "Thai_unity.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Phama_Prates"
+	file = "Phama_Prates.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "March_March_March"
+	file = "March_March_March.ogg"
+	volume = 0.75
+}
+
+############ 공산주의 ############
+
+music = {
+	name = "LInternationale_in_Thai"
+	file = "LInternationale_in_Thai.ogg"
 	volume = 0.75
 }
 
@@ -27,14 +95,58 @@ music = {
 }
 
 music = {
-	name = "Les_combats_de_Tu_Le"
-	file = "Les_combats_de_Tu_Le.ogg"
+	name = "Opium"
+	file = "Opium.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Opium"
-	file = "Opium.ogg"
+	name = "Quand_jesus_christ_crea_la_coloniale"
+	file = "Quand_jesus_christ_crea_la_coloniale.ogg"
+	volume = 0.75
+}
+
+############ 프랑스령 인도차이나 ############
+
+music = {
+	name = "Le_reve_passe"
+	file = "Le_reve_passe.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Verdun_On_ne_passe_pas"
+	file = "Verdun_On_ne_passe_pas.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Les_Hussards_de_Bercheny"
+	file = "Les_Hussards_de_Bercheny.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Vous_naurez_pas_lAlsace_et_la_Lorraine"
+	file = "Vous_naurez_pas_lAlsace_et_la_Lorraine.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Lhymne_a_la_Liberte"
+	file = "Lhymne_a_la_Liberte.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ahcaira"
+	file = "Ahcaira.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "La_Carmagnole"
+	file = "La_Carmagnole.ogg"
 	volume = 0.75
 }
 
@@ -46,81 +158,33 @@ music = {
 	volume = 0.75
 }
 
+music = {
+	name = "Ah_Que_la_France_est_belle"
+	file = "Ah_Que_la_France_est_belle.ogg"
+	volume = 0.75
+}
+
 ############ 전쟁 #############
 
 music = {
-	name = "Quand_jesus_christ_crea_la_coloniale"
-	file = "Quand_jesus_christ_crea_la_coloniale.ogg"
+	name = "Les_combats_de_Tu_Le"
+	file = "Les_combats_de_Tu_Le.ogg"
 	volume = 0.75
 }
 
 ############ 베트남 ############
 
+music = {
+	name = "Tien_Quan_Ca"
+	file = "Tien_Quan_Ca.ogg"
+	volume = 0.75
+}
+
 ############ 일반 ############
-
-music = {
-	name = "Noi_Vong_Tay_Lon"
-	file = "Noi_Vong_Tay_Lon.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Bac_dang_Cung_Chung_Chau_Hanh_Quan"
-	file = "Bac_dang_Cung_Chung_Chau_Hanh_Quan.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Bai_Ca_Ho_Chi_Minh"
-	file = "Bai_Ca_Ho_Chi_Minh.ogg"
-	volume = 0.75
-}
 
 music = {
 	name = "Giai_Phong_Mien_Nam"
 	file = "Giai_Phong_Mien_Nam.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Hanh_Khuc_Giai_Phong"
-	file = "Hanh_Khuc_Giai_Phong.ogg"
-	volume = 0.9
-}
-
-music = {
-	name = "Tieng_goi_thanh_nien"
-	file = "Tieng_goi_thanh_nien.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Tien_Ve_Sai_Gon"
-	file = "Tien_Ve_Sai_Gon.ogg"
-	volume = 0.8
-}
-
-music = {
-	name = "Dat_Nuoc_Tron_Niem_Vui"
-	file = "Dat_Nuoc_Tron_Niem_Vui.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Bai_ca_nguoi_linh"
-	file = "Bai_ca_nguoi_linh.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Hat_mai_khuc_quan_hanh"
-	file = "Hat_mai_khuc_quan_hanh.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Sai_Gon_Quat_Khoi"
-	file = "Sai_Gon_Quat_Khoi.ogg"
 	volume = 0.75
 }
 
@@ -131,32 +195,32 @@ music = {
 }
 
 music = {
-	name = "March_Under_the_Banner"
-	file = "March_Under_the_Banner.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "Quan_Doi_Ta_Quan_Doi_Anh_Hung"
-	file = "Quan_Doi_Ta_Quan_Doi_Anh_Hung.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "Muoi_chin_thang_Tam"
 	file = "Muoi_chin_thang_Tam.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Doan_Ve_Quoc_Quan"
-	file = "Doan_Ve_Quoc_Quan.ogg"
+	name = "La_co_thang_Tam"
+	file = "La_co_thang_Tam.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Buoc_Chan_Tren_Day_Truong_Son"
-	file = "Buoc_Chan_Tren_Day_Truong_Son.ogg"
+	name = "LEN_DANG"
+	file = "LEN_DANG.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Du_kich_ca"
+	file = "Du_kich_ca.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_ca_nguoi_linh"
+	file = "Bai_ca_nguoi_linh.ogg"
 	volume = 0.75
 }
 
@@ -167,20 +231,26 @@ music = {
 }
 
 music = {
-	name = "Bai_hat_Giai_phong_Quan"
-	file = "Bai_hat_Giai_phong_Quan.ogg"
+	name = "March_Under_the_Banner"
+	file = "March_Under_the_Banner.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh"
-	file = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh.ogg"
-	volume = 0.7
+	name = "Toi_Nguoi_Lai_Xe"
+	file = "Toi_Nguoi_Lai_Xe.ogg"
+	volume = 1
 }
 
 music = {
-	name = "Co_Gai_Vot_Chong"
-	file = "Co_Gai_Vot_Chong.ogg"
+	name = "Mien_nam_oi_Chung_toi_da_san_sang"
+	file = "Mien_nam_oi_Chung_toi_da_san_sang.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "CONG_DOAN_CA"
+	file = "CONG_DOAN_CA.ogg"
 	volume = 0.75
 }
 
@@ -191,8 +261,44 @@ music = {
 }
 
 music = {
-	name = "Duong_chung_ta_di"
-	file = "Duong_chung_ta_di.ogg"
+	name = "Viet_Nam_quyet_chien_thang"
+	file = "Viet_Nam_quyet_chien_thang.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Chien_si_Viet_Nam"
+	file = "Chien_si_Viet_Nam.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Viet_Nam_oi_Mua_xuan_den_roi"
+	file = "Viet_Nam_oi_Mua_xuan_den_roi.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Sai_Gon_Quat_Khoi"
+	file = "Sai_Gon_Quat_Khoi.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tien_Ve_Sai_Gon"
+	file = "Tien_Ve_Sai_Gon.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Noi_Vong_Tay_Lon"
+	file = "Noi_Vong_Tay_Lon.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Co_Gai_Vot_Chong"
+	file = "Co_Gai_Vot_Chong.ogg"
 	volume = 0.75
 }
 
@@ -203,14 +309,38 @@ music = {
 }
 
 music = {
-	name = "Mien_nam_oi_Chung_toi_da_san_sang"
-	file = "Mien_nam_oi_Chung_toi_da_san_sang.ogg"
+	name = "Duong_chung_ta_di"
+	file = "Duong_chung_ta_di.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "The_Khong_Phan_Boi_Que_Huong"
-	file = "The_Khong_Phan_Boi_Que_Huong.ogg"
+	name = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh"
+	file = "Chung_toi_la_dong_doi_cua_Le_Dinh_Chinh.ogg"
+	volume = 0.7
+}
+
+music = {
+	name = "Quan_Doi_Ta_Quan_Doi_Anh_Hung"
+	file = "Quan_Doi_Ta_Quan_Doi_Anh_Hung.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Buoc_Chan_Tren_Day_Truong_Son"
+	file = "Buoc_Chan_Tren_Day_Truong_Son.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Truong_chinh_ca"
+	file = "Truong_chinh_ca.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tieng_goi_thanh_nien"
+	file = "Tieng_goi_thanh_nien.ogg"
 	volume = 0.75
 }
 
@@ -221,14 +351,38 @@ music = {
 }
 
 music = {
-	name = "Toi_Nguoi_Lai_Xe"
-	file = "Toi_Nguoi_Lai_Xe.ogg"
+	name = "Hanh_Khuc_Giai_Phong"
+	file = "Hanh_Khuc_Giai_Phong.ogg"
 	volume = 0.9
 }
 
 music = {
-	name = "Viet_Nam_quyet_chien_thang"
-	file = "Viet_Nam_quyet_chien_thang.ogg"
+	name = "Bai_hat_Giai_phong_Quan"
+	file = "Bai_hat_Giai_phong_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Hat_mai_khuc_quan_hanh"
+	file = "Hat_mai_khuc_quan_hanh.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bac_dang_Cung_Chung_Chau_Hanh_Quan"
+	file = "Bac_dang_Cung_Chung_Chau_Hanh_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Doan_Ve_Quoc_Quan"
+	file = "Doan_Ve_Quoc_Quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_Ca_Ho_Chi_Minh"
+	file = "Bai_Ca_Ho_Chi_Minh.ogg"
 	volume = 0.75
 }
 
@@ -237,7 +391,7 @@ music = {
 music = {
 	name = "Quoc_te_ca"
 	file = "Quoc_te_ca.ogg"
-	volume = 0.75
+	volume = 0.70
 }
 
 music = {
@@ -255,10 +409,22 @@ music = {
 music = {
 	name = "Thoi_thanh_nien_soi_noi"
 	file = "Thoi_thanh_nien_soi_noi.ogg"
-	volume = 0.75
+	volume = 0.70
 }
 
 ############ 평화 ############
+
+music = {
+	name = "Dat_Nuoc_Tron_Niem_Vui"
+	file = "Dat_Nuoc_Tron_Niem_Vui.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tu_Mot_Nga_Tu_Duong_Pho"
+	file = "Tu_Mot_Nga_Tu_Duong_Pho.ogg"
+	volume = 0.75
+}
 
 music = {
 	name = "Mua_Xuan_tren_Thanh_Pho_Ho_Chi_Minh"
@@ -269,6 +435,12 @@ music = {
 ############ 전쟁 #############
 
 music = {
+	name = "No_Xuong_Mau"
+	file = "No_Xuong_Mau.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam"
 	file = "Hay_tiep_tuc_doan_ket_voi_Viet_Nam.ogg"
 	volume = 1
@@ -277,13 +449,171 @@ music = {
 ############ 베트남 공화국 #############
 
 music = {
+	name = "Tieng_Goi_Cong_Dan"
+	file = "Tieng_Goi_Cong_Dan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Thuc_quan"
+	file = "Thuc_quan.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Nguoi_Hung_Biet_Cach_Du_81"
+	file = "Nguoi_Hung_Biet_Cach_Du_81.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Gio_Phan_Cong"
+	file = "Gio_Phan_Cong.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Ta_Da_Thay_Gi_Trong_Dem_Nay"
+	file = "Ta_Da_Thay_Gi_Trong_Dem_Nay.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc"
+	file = "Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_Ca_Chien_Thang"
+	file = "Bai_Ca_Chien_Thang.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Bai_Ca_Ve_Nguon"
+	file = "Bai_Ca_Ve_Nguon.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Chien_Thang_Quan_Thu"
+	file = "The_Chien_Thang_Quan_Thu.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Ca_Nuoc_Dau_Tranh"
 	file = "Ca_Nuoc_Dau_Tranh.ogg"
 	volume = 0.75
 }
 
 music = {
-	name = "Tieng_Goi_Cong_Dan"
-	file = "Tieng_Goi_Cong_Dan.ogg"
+	name = "The_Khong_Phan_Boi_Que_Huong"
+	file = "The_Khong_Phan_Boi_Que_Huong.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Khong_Phan_Boi_Que_Huong"
+	file = "The_Khong_Phan_Boi_Que_Huong.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Tien_Quan"
+	file = "Tien_Quan.ogg"
+	volume = 0.75
+}
+
+#베트남 국민당
+
+music = {
+	name = "Co_Sao_Trang"
+	file = "Co_Sao_Trang.ogg"
+	volume = 0.75
+}
+
+############ 베트남 왕국 #############
+
+music = {
+	name = "Dang_Dan_cung"
+	file = "Dang_Dan_cung.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Quang_Trung_dai_pha_Quan_Thanh"
+	file = "Quang_Trung_dai_pha_Quan_Thanh.ogg"
+	volume = 0.75
+}
+
+############ 베트남 제국 #############
+
+music = {
+	name = "Viet_Nam_minh_chau_troi_dong"
+	file = "Viet_Nam_minh_chau_troi_dong.ogg"
+	volume = 0.75
+}
+
+############ 라오스 ############
+
+music = {
+	name = "Pheng_Xat_Lao"
+	file = "Pheng_Xat_Lao.ogg"
+	volume = 0.75
+}
+
+############ 공산주의 ############
+
+music = {
+	name = "Congratulations_Comrade"
+	file = "Congratulations_Comrade.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Laotian_Land"
+	file = "Laotian_Land.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Lao_Peoples_Revolutionary_Party"
+	file = "The_Lao_Peoples_Revolutionary_Party.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "In_the_Liberated_Zone"
+	file = "In_the_Liberated_Zone.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "Fighting_Spirit"
+	file = "Fighting_Spirit.ogg"
+	volume = 0.75
+}
+
+############ 캄보디아 ############
+
+music = {
+	name = "Song_of_the_Khmer_Republic"
+	file = "Song_of_the_Khmer_Republic.ogg"
+	volume = 0.75
+}
+
+############ 공산주의 #############
+
+music = {
+	name = "National_Anthem_of_Democratic_Kampuchea"
+	file = "National_Anthem_of_Democratic_Kampuchea.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "The_Red_Flag_of_Revolution"
+	file = "The_Red_Flag_of_Revolution.ogg"
 	volume = 0.75
 }
