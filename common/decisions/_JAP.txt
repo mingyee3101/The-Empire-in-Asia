@@ -22,7 +22,28 @@ JAP_North_China_Buffer_State_Strategy = {
             add_political_power = 25 
             custom_effect_tooltip = JAP_Marco_Polo_Bridge_Incident
 			hidden_effect = {
-				country_event = { id = JAP77.1 days = 25 }
+				if = {
+					limit = {
+						is_historical_focus_on = yes
+					}
+					country_event = { id = JAP77.1 days = 25 }
+					CHI = {
+						country_event = { id = JAP77.7 days = 25 }
+					}
+				}
+				if = {
+					limit = {
+						is_historical_focus_on = No
+					}
+					random_list = {
+						1 = {
+							country_event = { id = JAP77.1 days = 25 }
+						}
+						1 = {
+							country_event = { id = JAP77.1 days = 25 }
+						}
+					}
+				}
 			}
 		}
 	}

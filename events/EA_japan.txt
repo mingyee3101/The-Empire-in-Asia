@@ -85,7 +85,7 @@ country_event = {
     #
 	#}
 }
-country_event = {
+country_event = { # 루거우차오 사건
 	id = JAP77.1
 	title = JAP77.1.t
 	desc = JAP77.1.d
@@ -104,7 +104,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { # 중일정전협정
 	id = JAP77.2
 	title = JAP77.2.t
 	desc = JAP77.2.d
@@ -118,7 +118,7 @@ country_event = {
 
 	}
 }
-country_event = {
+country_event = { # 루산 성명
 	id = JAP77.3
 	title = JAP77.3.t
 	desc = JAP77.3.d
@@ -131,5 +131,97 @@ country_event = {
 		name = JAP77.3.a
 		add_political_power = 120
 		add_war_support = 0.05
+		hidden_effect = {
+			JAP = { 
+				country_event = JAP77.4
+			}
+		}
+	}
+}
+country_event = { # 루산성명 반응
+	id = JAP77.4
+	title = JAP77.4.t
+	desc = JAP77.4.d
+	picture = GFX_event_Lushan_declaratin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.4.a
+		add_opinion_modifier = {
+			target = CHI
+			modifier = hostile_status
+		}
+		CHI = {
+			country_event = { id = JAP77.5 days = 1 }
+		}
+	}
+}
+country_event = { # 중국의 반응 
+	id = JAP77.5
+	title = JAP77.5.t
+	desc = JAP77.5.d
+	picture = GFX_report_event_chinese_soldiers_running
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.5.a
+		ai_chance = {
+			base = 25
+		}
+		add_opinion_modifier = {
+			target = JAP
+			modifier = hostile_status
+		}
+		hidden_effect = {
+			JAP = { id = JAP77.6 hours = 12 }
+		}
+	}
+	option = {
+		name = JAP77.5.b
+		add_political_power = -150
+		add_war_support = -0.05
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+	}
+}
+country_event = { # 중일정전협정
+	id = JAP77.6
+	title = JAP77.6.t
+	desc = JAP77.6.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.6.a
+		add_war_support = 0.05
+		create_wargoal = {
+			target = CHI
+			type = puppet_wargoal_focus
+		}
+	}
+}
+country_event = { # 루거우차오 사건
+	id = JAP77.7
+	title = JAP77.7.t
+	desc = JAP77.7.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAP77.1.a
+		hidden_effect = {
+
+		}
 	}
 }
