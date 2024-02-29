@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	######메이저######
+
+	######마이너######
+
+	######오세아니아######
+
+	###호주###
+
+	spriteType = {
+		name = "GFX_portrait_AST_john_curtin"
+		texturefile = "gfx/leaders/AST/Portrait_John_Curtin.png"
+	}
+
+	###뉴질랜드###
+
+	spriteType = {
+		name = "GFX_NZL_michael_joseph_savage"
+		texturefile = "gfx/leaders/NZL/Portrait_Michael_Savage.png"
+	}
+
+	######동아시아######
+
+	###한국###
+
+	spriteType = {
+		name = "GFX_portrait_Syngman_Rhee"
+		texturefile = "gfx/leaders/KOR/portrait_Syngman_Rhee.png"
+	}
+
+	###탄누투바###
+
+	spriteType = {
+		name = "GFX_portrait_Salchak_Toka"
+		texturefile = "gfx/leaders/TAN/portrait_Salchak_Toka.png"
+	}
+
+	######남아시아######
+
+	###부탄###
+
+	spriteType = {
+		name = "GFX_portrait_buthan_jigme_wangchuk"
+		texturefile = "gfx/leaders/BHU/Portrait_Jigme_Wangchuck.png"
+	}
+
+	###네팔###
+
+	spriteType = {
+		name = "GFX_portrait_nepal_portrait_juddah_rana"
+		texturefile = "gfx/leaders/NEP/Portrait_Juddha_Rana.png"
+	}
+
+	###인도###
+
+	spriteType = {
+		name = "GFX_portrait_RAJ_lord_linlithgow"
+		texturefile = "gfx/leaders/RAJ/Portrait_Linlithgow.png"
+	}
+
+}
