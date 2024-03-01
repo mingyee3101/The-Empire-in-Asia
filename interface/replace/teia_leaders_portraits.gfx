@@ -8,9 +8,132 @@ spriteTypes = {
 
 	###호주###
 
+	#지도자
+
 	spriteType = {
 		name = "GFX_portrait_AST_john_curtin"
 		texturefile = "gfx/leaders/AST/Portrait_John_Curtin.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_earle_page"
+		texturefile = "gfx/leaders/AST/Portrait_Earle_Page.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_eric_campbell"
+		texturefile = "gfx/leaders/AST/Portrait_Eric_Campbell.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_richard_dixon"
+		texturefile = "gfx/leaders/AST/Portrait_Richard_Dixon.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_rod_hull"
+		texturefile = "gfx/leaders/AST/Portrait_Rod_Hull.png"
+	}
+
+	#장군
+
+	spriteType = {
+		name = "GFX_AST_alan_vasey"
+		texturefile = "gfx/leaders/AST/Portrait_Alan_Vasey.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_alan_vasey_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Alan_Vasey.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_henry_wynter"
+		texturefile = "gfx/leaders/AST/Portrait_Henry_Wynter.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_henry_wynter_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Henry_Wynter.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_horace_robertson"
+		texturefile = "gfx/leaders/AST/Portrait_Horace_Robertson.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_horace_robertson_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Horace_Robertson.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_iven_mackay"
+		texturefile = "gfx/leaders/AST/Portrait_Iven_Mackay.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_iven_mackay_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Iven_Mackay.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_john_northcott"
+		texturefile = "gfx/leaders/AST/Portrait_John_Northcott.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_john_northcott_small"
+		texturefile = "gfx/interface/ideas/AST/AST_John_Northcott.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_leslie_morshead"
+		texturefile = "gfx/leaders/AST/Portrait_Leslie_Morshead.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_leslie_morshead_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Leslie_Morshead.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_thomas_blamey"
+		texturefile = "gfx/leaders/AST/Portrait_Thomas_Blamey.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_thomas_blamey_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Thomas_Blamey.png"
+	}
+
+	#제독
+
+	spriteType = {
+		name = "GFX_AST_harold_farncomb"
+		texturefile = "gfx/leaders/AST/Portrait_Harold_Farncomb.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_harold_farncomb_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Harold_Farncomb.png"
+	}
+
+	spriteType = {
+		name = "GFX_AST_victor_crutchley"
+		texturefile = "gfx/leaders/AST/Portrait_Victor_Crutchley.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AST_victor_crutchley_small"
+		texturefile = "gfx/interface/ideas/AST/AST_Victor_Crutchley.png"
+	}
+
+	#정치고문
+
+	spriteType = {
+		name = "GFX_idea_AST_alexander_hore_ruthven"
+		texturefile = "gfx/interface/ideas/AST/AST_Alexander_Hore_Ruthven.png"
 	}
 
 	###뉴질랜드###
