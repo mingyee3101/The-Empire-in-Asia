@@ -136,12 +136,160 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AST/AST_Alexander_Hore_Ruthven.png"
 	}
 
+	spriteType = {
+		name = "GFX_idea_AST_arthur_allen"
+		texturefile = "gfx/interface/ideas/AST/AST_Arthur_Allen.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_arthur_calwell"
+		texturefile = "gfx/interface/ideas/AST/AST_Arthur_Calwell.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_arthur_drakeford"
+		texturefile = "gfx/interface/ideas/AST/AST_Arthur_Drakeford.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_ben_chifley"
+		texturefile = "gfx/interface/ideas/AST/AST_Ben_Chifley.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_cederic_hicks"
+		texturefile = "gfx/interface/ideas/AST/AST_Cederic_Hicks.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_charles_burnett"
+		texturefile = "gfx/interface/ideas/AST/AST_Charles_Burnett.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_edmund_herring"
+		texturefile = "gfx/interface/ideas/AST/AST_Edmund_Herring.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_herbert_v_evatt"
+		texturefile = "gfx/interface/ideas/AST/AST_Herbert_V_Evatt.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_jack_beasley"
+		texturefile = "gfx/interface/ideas/AST/AST_Jack_Beasley.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_jack_crace"
+		texturefile = "gfx/interface/ideas/AST/AST_Jack_Crace.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_james_fairbairn"
+		texturefile = "gfx/interface/ideas/AST/AST_James_Fairbairn.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_john_collins"
+		texturefile = "gfx/interface/ideas/AST/AST_John_Collins.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_john_lavarack"
+		texturefile = "gfx/interface/ideas/AST/AST_John_Collins.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_norman_makin"
+		texturefile = "gfx/interface/ideas/AST/AST_Norman_Makin.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_norman_makin"
+		texturefile = "gfx/interface/ideas/AST/AST_Norman_Makin.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_ragnar_colvin"
+		texturefile = "gfx/interface/ideas/AST/AST_Ragnar_Colvin.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_richard_williams"
+		texturefile = "gfx/interface/ideas/AST/AST_Richard_Williams.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_robert_g_menzies"
+		texturefile = "gfx/interface/ideas/AST/AST_Robert_Gordon_Menzies.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_sydney_rowell"
+		texturefile = "gfx/interface/ideas/AST/AST_Sydney_Rowell.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_AST_vernon_sturdee"
+		texturefile = "gfx/interface/ideas/AST/AST_Sydney_Rowell.png"
+	}
+
 	###뉴질랜드###
+
+	#지도자
 
 	spriteType = {
 		name = "GFX_NZL_michael_joseph_savage"
 		texturefile = "gfx/leaders/NZL/Portrait_Michael_Savage.png"
 	}
+
+	spriteType = {
+		name = "GFX_NZL_elsie_farrelly"
+		texturefile = "gfx/leaders/NZL/Portrait_Elsie_Farrelly.png"
+	}
+
+	spriteType = {
+		name = "GFX_NZL_john_ormond"
+		texturefile = "gfx/leaders/NZL/Portrait_John_Ormond.png"
+	}
+
+	#장군
+
+	spriteType = {
+		name = "GFX_NZL_bernard_freyberg"
+		texturefile = "gfx/leaders/NZL/Portrait_Bernard_Freyberg.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_bernard_freyberg_small"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Bernard_Freyberg.png"
+	}
+
+	#제독
+
+	spriteType = {
+		name = "GFX_NZL_peter_phipps"
+		texturefile = "gfx/leaders/NZL/Portrait_Peter_Phipps.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_peter_phipps_small"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Peter_Phipps.png"
+	}
+
+	spriteType = {
+		name = "GFX_NZL_edmund_drummond"
+		texturefile = "gfx/leaders/NZL/Portrait_Edmund_Drummond.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_peter_phipps_small"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Edmund_Drummond.png"
+	}
+
+	#정치고문
 
 	######동아시아######
 

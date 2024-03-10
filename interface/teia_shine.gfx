@@ -36,10 +36,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_UIC_prohibit_party_shine"
-		texturefile = "gfx/interface/goals/focus_focus_UIC_prohibit_party.png"
+		texturefile = "gfx/interface/goals/focus_UIC_prohibit_party.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_UIC_prohibit_party.png"
+			animationmaskfile = "gfx/interface/goals/focus_UIC_prohibit_party.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -52,7 +52,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_focus_UIC_prohibit_party.png"
+			animationmaskfile = "gfx/interface/goals/focus_UIC_prohibit_party.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

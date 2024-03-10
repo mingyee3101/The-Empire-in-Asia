@@ -1,0 +1,24 @@
+state={
+	id=1014
+	name="STATE_1014"
+	provinces={
+		4412 7427 10297 
+	}
+	history={
+		victory_points = {
+			10297 1 
+		}
+		buildings = {
+			infrastructure = 1
+			10297 = {
+				naval_base = 5
+			}
+		}
+		owner = MAL
+		add_core_of = MAL
+	}
+	manpower=1803600 #7,214,400
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

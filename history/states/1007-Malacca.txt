@@ -1,0 +1,18 @@
+state={
+	id=1007
+	name="STATE_1007"
+	provinces={
+		13367 
+	}
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+		owner = SST
+		add_core_of = SST
+	}
+	manpower=256875 #1,027,500
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

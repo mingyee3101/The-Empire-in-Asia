@@ -25,10 +25,8 @@ set_technology = {
 set_cosmetic_tag = PHI_IG
 
 add_ideas = {
-	PHI_army_not_created
+	
 }
-
-country_lock_all_division_template = yes
 
 set_convoys = 5
 

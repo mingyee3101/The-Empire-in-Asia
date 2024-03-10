@@ -1,7 +1,7 @@
 characters={
 	SIK_sheng_shicai={
 		name=SIK_sheng_shicai
-		portraits={=
+		portraits={
 			army={
 				large = "gfx/leaders/SIK/Portrait_Sheng_Shicai.png"
 				small = "gfx/interface/ideas/SIK/SIK_Sheng_Shicai.png"

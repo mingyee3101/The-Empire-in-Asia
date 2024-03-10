@@ -48,6 +48,16 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = SHX_fu_zuoyi
+			allowed  = {
+				original_tag  = SHX
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
 	}
 
 	SHX_wang_jingguo={
@@ -435,25 +445,6 @@ characters={
 			}
 			traits  = {
 				fortification_engineer 
-			}
-		}
-	}
-
-	SHX_fu_zuoyi={
-		name=SHX_fu_zuoyi
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SHX_fu_zuoyi
-			allowed  = {
-				original_tag  = SHX
-			}
-			traits  = {
-				silent_workhorse 
 			}
 		}
 	}

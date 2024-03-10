@@ -1,0 +1,26 @@
+state={
+	id=975
+	name="STATE_975"
+
+	history={
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #동허이
+			7280 1
+		}
+		victory_points = { #하띤
+			12297 3 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		4397 7280 12297 
+	}
+	manpower=623490 #2,078,300
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

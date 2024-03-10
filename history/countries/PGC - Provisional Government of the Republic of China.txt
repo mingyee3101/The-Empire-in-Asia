@@ -11,7 +11,7 @@ recruit_character = PGC_Zhang_Lanfeng
 recruit_character = PGC_Pang_Bingxun
 
 add_ideas = {
-	PGC_returning_of_an_evacuated_government
+	
 }
 
 if = {

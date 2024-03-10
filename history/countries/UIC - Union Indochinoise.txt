@@ -68,16 +68,6 @@ if = {
 	}
 }
 
-IF = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	set_power_balance = {
-		id = UIC_centralization_balance
-		set_default = yes
-	}
-}
-
 #set_research_slots = 3
 #set_stability = 0.5
 #set_war_support = 0.5

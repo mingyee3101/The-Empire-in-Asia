@@ -1,0 +1,37 @@
+
+state={
+	id=972
+	name="STATE_972"
+	resources={
+		chromium=3.000
+		tungsten=14.000
+		steel=13 #타이응우옌, 까오방, 하장
+	}
+
+	history={
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #타이응우옌
+			1073 3 
+		}
+		victory_points = { #하장
+			7518 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		1073 7518 12008 12065 
+	}
+	manpower=1094613 #3,648,710
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

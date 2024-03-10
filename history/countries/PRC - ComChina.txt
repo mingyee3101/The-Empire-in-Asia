@@ -70,7 +70,6 @@ recruit_character = PRC_Liu_Zhidan
 recruit_character = PRC_otto_braun
 recruit_character = PRC_Xu_Haidong
 recruit_character = KOR_Mu_Chong #한국
-recruit_character = 
 
 #정치고문
 recruit_character = PRC_Xi_Zhongxun
@@ -82,6 +81,18 @@ if = {
 		name = "PRC_Li_Kenong"
 		GFX = "gfx/leaders/PRC/Portrait_Li_Kenong.png"
 		traits = { operative_natural_orator operative_escape_artist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { PRC }
+	}
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "PRC_Dong_Jianwu"
+		GFX = "gfx/leaders/PRC/Portrait_Dong_Jianwu.png"
+		traits = { operative_natural_orator operative_well_groomed }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { PRC }

@@ -1,0 +1,40 @@
+
+state={
+	id=976
+	name="STATE_976"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #동하
+			1302 1 
+		}
+		victory_points = { #후에
+			4379 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+			4379 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1302 4379
+	}
+	manpower=506370 #1,687,900
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
