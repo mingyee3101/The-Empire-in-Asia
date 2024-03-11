@@ -999,8 +999,12 @@ CHI_KMT = {
 	color_ui = rgb { 0 33 107 }
 }
 
+ROS_UK = {
+    color = rgb { 181 36 73 }
+    color_ui = rgb { 235 53 101 }
+}
 
-PHI_IG = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+NBR_UK = {
+    color = rgb { 221 76 113 }
+    color_ui = rgb { 255 93 141 }
 }

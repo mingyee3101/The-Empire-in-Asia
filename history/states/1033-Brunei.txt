@@ -1,0 +1,30 @@
+state={
+	id=1033
+	name="STATE_1033"
+
+	history={
+		owner = BRU
+		victory_points = {
+			7387 3 #반다르스리브가완
+		}
+		buildings = {
+			infrastructure = 2
+			7371 = {
+				naval_base = 1
+			}
+			7387 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BRU
+
+	}
+
+	provinces={
+		7371 7387 
+	}
+	manpower=45000 #1949
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -16,6 +16,11 @@
  SST_communism_party:0 "해협 식민지 총독부"
  SST_neutrality_party:0 "해협 식민지 총독부" #고등판무관
 
+ #SIN_fascism_party:0 " "
+ #SIN_democratic_party:0 " "
+ #SIN_communism_party:0 " "
+ #SIN_neutrality_party:0 " "
+
  #국명
  MAL_fascism:0 "말레이시아"
  MAL_fascism_DEF:0 "말레이시아"
@@ -64,3 +69,19 @@
  SST:0 "해협 식민지"
  SST_DEF:0 "해협 식민지"
  SST_ADJ:0 "해협 식민지"
+
+ SIN_fascism:0 "싱가포르"
+ SIN_fascism_DEF:0 "싱가포르"
+ SIN_democratic:0 "싱가포르 공화국"
+ SIN_democratic_DEF:0 "싱가포르 공화국"
+ SIN_neutrality:0 "싱가포르"
+ SIN_neutrality_DEF:0 "싱가포르"
+ SIN_communism:0 "싱가포르"
+ SIN_communism_DEF:0 "싱가포르"
+ SIN_fascism_ADJ:0 "싱가포르"
+ SIN_democratic_ADJ:0 "싱가포르"
+ SIN_neutrality_ADJ:0 "싱가포르"
+ SIN_communism_ADJ:0 "싱가포르"
+ SIN:0 "싱가포르"
+ SIN_DEF:0 "싱가포르"
+ SIN_ADJ:0 "싱가포르"

@@ -926,3 +926,23 @@ SST = { #해협 식민지
 	color = rgb { 0 36 125 }
 	color_ui = rgb { 0 36 125 }
 }
+
+BRU = { #브루나이
+	color = rgb { 247  22  23 }
+	color_ui = rgb { 247  22  23 }
+}
+
+NBR = { #북보르네오
+	color = rgb { 119  205  255 }
+	color_ui = rgb { 119  205  255 }
+}
+
+DTM = {
+	color = rgb { 87  170  38 }
+	color_ui = rgb { 87  170  38 }
+}
+
+SIN = {
+	color = rgb { 237  41  57 }
+	color_ui = rgb { 237  41  57 }
+}

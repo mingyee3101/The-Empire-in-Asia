@@ -223,10 +223,19 @@ if = {
 		target = MAL
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = BRU
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = NBR
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = RAJ
 		puppet = SST
 		puppet = MAL
+		puppet = NBR
 	}
 }
 

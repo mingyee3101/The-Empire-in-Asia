@@ -1,0 +1,47 @@
+characters = {
+
+	############지도자############
+
+	NBR_Douglas_James_Jardine = {
+		name = NBR_Douglas_James_Jardine
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NBR/Portrait_Douglas_James_Jardine.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+	}
+
+	NBR_Jamalul_Kiram_II = {
+		name = NBR_Jamalul_Kiram_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NBR/Portrait_Charles_Vyner_Brooke.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = NBR_Jamalul_Kiram_II
+			allowed = {
+				original_tag = NBR
+			}
+			available = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+
+}

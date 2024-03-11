@@ -1,0 +1,18 @@
+characters = {
+
+	############지도자############
+
+	BRU_Ahmad_Tajuddin = {
+		name = BRU_Ahmad_Tajuddin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRU/Portrait_Ahmad_Tajuddin.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+	}
+
+}

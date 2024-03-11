@@ -4,8 +4,9 @@ oob = "MAL_1936"
 
 set_research_slots = 3
 
-recruit_character = MAL_Hugh_Fraser
+set_cosmetic_tag = MAL_UK # British Malaya
 
+recruit_character = MAL_Hugh_Fraser
 
 # Starting tech
 # clone of UK
@@ -114,6 +115,3 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-
-set_cosmetic_tag = MAL_UK # British Malaya

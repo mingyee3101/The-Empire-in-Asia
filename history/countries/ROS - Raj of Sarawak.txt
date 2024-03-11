@@ -2,6 +2,12 @@
 
 oob = "ROS_1936"
 
+#set_cosmetic_tag = ROS_UK
+
+add_ideas = {
+	#이민계획 #경제 활성화를 위해 중국인 노동자의 이주를 환영함 #https://en.wikipedia.org/wiki/Raj_of_Sarawak#Demography	
+}
+
 recruit_character = ROS_Charles_Vyner_Brooke
 
 # Starting tech

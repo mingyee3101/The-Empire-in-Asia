@@ -233,7 +233,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_AST_vernon_sturdee"
-		texturefile = "gfx/interface/ideas/AST/AST_Sydney_Rowell.png"
+		texturefile = "gfx/interface/ideas/AST/AST_Vernon_Sturdee.png"
 	}
 
 	###뉴질랜드###
@@ -255,6 +255,16 @@ spriteTypes = {
 		texturefile = "gfx/leaders/NZL/Portrait_John_Ormond.png"
 	}
 
+	spriteType = {
+		name = "GFX_NZL_sidney_holland"
+		texturefile = "gfx/leaders/NZL/Portrait_Sidney_Holland.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_peter_fraser"
+		texturefile = "gfx/leaders/NZL/Portrait_Peter_Fraser.png"
+	}
+
 	#장군
 
 	spriteType = {
@@ -265,6 +275,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_NZL_bernard_freyberg_small"
 		texturefile = "gfx/interface/ideas/NZL/NZL_Bernard_Freyberg.png"
+	}
+
+	spriteType = {
+		name = "GFX_NZL_robert_row"
+		texturefile = "gfx/leaders/NZL/Portrait_Robert_Row.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_robert_row_small"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Robert_Row.png"
+	}
+
+	spriteType = {
+		name = "GFX_NZL_william_stevens"
+		texturefile = "gfx/leaders/NZL/Portrait_William_Stevens.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_NZL_william_stevens_small"
+		texturefile = "gfx/interface/ideas/NZL/NZL_William_Stevens.png"
 	}
 
 	#제독
@@ -290,6 +320,61 @@ spriteTypes = {
 	}
 
 	#정치고문
+
+	spriteType = {
+		name = "GFX_idea_NZL_a_j_stallworthy"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Arthur_Stallworthy.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_edward_puttick"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Edward_Puttick.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_h_d_mcgregor"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Hector_Douglas_McGregor.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_j_c_nichols"
+		texturefile = "gfx/interface/ideas/NZL/NZL_j_c_nichols.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_j_e_duigan"
+		texturefile = "gfx/interface/ideas/NZL/NZL_John_Evelyn_Duigan.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_keith_j_holyoake"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Keith_Holyoake.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_n_weir"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Norman_Weir.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_norris_stephen_falla"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Norris_Stephen_Falla.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_r_a_cochrane"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Ralph_Alexander_Cochrane.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_walter_nash"
+		texturefile = "gfx/interface/ideas/NZL/NZL_Walter_Nash.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_william_sinclair_burgess"
+		texturefile = "gfx/interface/ideas/NZL/NZL_William_Sinclair_Burgess.png"
+	}
 
 	######동아시아######
 

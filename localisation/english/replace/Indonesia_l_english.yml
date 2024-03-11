@@ -9,6 +9,11 @@
  INS_communism_party:0 "인도네시아 공산당"
  INS_neutrality_party:0 "네덜란드 동인도 총독부"
 
+ DTM_fascism_party:0 " "
+ DTM_democratic_party:0 " "
+ DTM_communism_party:0 " "
+ DTM_neutrality_party:0 " "
+
  #국명
  INS_fascism:0 "인도네시아 결사단"
  INS_fascism_DEF:0 "인도네시아 결사단"
@@ -41,3 +46,19 @@
  INS_HOL:0 "네덜란드령 동인도"
  INS_HOL_DEF:0 "네덜란드령 동인도"
  INS_HOL_ADJ:0 "네덜란드령 동인도"
+ 
+ DTM_fascism:0 "동티모르"
+ DTM_fascism_DEF:0 "동티모르"
+ DTM_democratic:0 "동티모르 민주공화국"
+ DTM_democratic_DEF:0 "동티모르 민주공화국"
+ DTM_neutrality:0 "동티모르"
+ DTM_neutrality_DEF:0 "동티모르"
+ DTM_communism:0 "동티모르"
+ DTM_communism_DEF:0 "동티모르"
+ DTM_fascism_ADJ:0 "동티모르"
+ DTM_democratic_ADJ:0 "동티모르"
+ DTM_neutrality_ADJ:0 "동티모르"
+ DTM_communism_ADJ:0 "동티모르"
+ DTM:0 "동티모르"
+ DTM_DEF:0 "동티모르"
+ DTM_ADJ:0 "동티모르"

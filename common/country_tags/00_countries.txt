@@ -268,3 +268,7 @@ SDC = "countries/Shandong.txt"
 CSR = "countries/Chuanbian special administrative region.txt"
 ROS = "countries/Raj of Sarawak.txt"
 SST = "countries/Straits Settlements.txt"
+BRU = "countries/Brunei.txt" #브루나이
+NBR = "countries/North Borneo.txt" #북보르네오
+DTM = "countries/East Timor.txt" #동티모르
+SIN = "countries/Singapore.txt" #싱가포르
