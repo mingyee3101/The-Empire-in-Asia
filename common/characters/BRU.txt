@@ -2,6 +2,19 @@ characters = {
 
 	############지도자############
 
+	BRU_Roland_Evelyn_Turnbull = {
+		name = BRU_Roland_Evelyn_Turnbull
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRU/Portrait_Roland_Evelyn_Turnbull.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+	}
+
 	BRU_Ahmad_Tajuddin = {
 		name = BRU_Ahmad_Tajuddin
 		portraits = {

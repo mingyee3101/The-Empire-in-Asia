@@ -16,7 +16,7 @@ characters={
 		name = SST_shenton_thomas
 		portraits={
 			civilian = {
-				large = "gfx/leaders/SST/Portrait_shenton_thomas.png"
+				large = "gfx/leaders/SST/Portrait_Shenton_Thomas.png"
 			}
 		}
 		country_leader={

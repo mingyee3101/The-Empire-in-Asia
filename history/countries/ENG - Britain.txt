@@ -225,7 +225,7 @@ if = {
 	}
 	set_autonomy = {
 		target = BRU
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = NBR
@@ -235,6 +235,7 @@ if = {
 		puppet = RAJ
 		puppet = SST
 		puppet = MAL
+		puppet = BRU
 		puppet = NBR
 	}
 }

@@ -2,6 +2,9 @@
 
 oob = "BRU_1936"
 
+set_cosmetic_tag = BRU_UK
+
+recruit_character = BRU_Roland_Evelyn_Turnbull
 recruit_character = BRU_Ahmad_Tajuddin
 
 # Starting tech

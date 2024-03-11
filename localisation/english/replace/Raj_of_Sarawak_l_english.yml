@@ -3,6 +3,7 @@
  #인물
  ROS_Charles_Vyner_Brooke:0 "찰스 바이너 브룩"
 
+ BRU_Roland_Evelyn_Turnbull:0 "롤랜드 에벌린 턴불"
  BRU_Ahmad_Tajuddin:0 "아흐마드 타주딘"
 
  NBR_Douglas_James_Jardine:0 "더글러스 제임스 자딘"
@@ -22,7 +23,8 @@
  #BRU_fascism_party:0 " "
  #BRU_democratic_party:0 " "
  #BRU_communism_party:0 " "
- BRU_neutrality_party:0 "볼키아 왕조"
+ BRU_neutrality_party:0 "브루나이 행정부"
+ #BRU_neutrality_party:0 "볼키아 왕조"
 
  #NBR_fascism_party:0 " "
  #NBR_democratic_party:0 " "
@@ -77,6 +79,22 @@
  BRU:0 "브루나이"
  BRU_DEF:0 "브루나이"
  BRU_ADJ:0 "브루나이"
+
+ BRU_UK_fascism:0 "브루나이 보호령"
+ BRU_UK_fascism_DEF:0 "브루나이 보호령"
+ BRU_UK_democratic:0 "브루나이 보호령"
+ BRU_UK_democratic_DEF:0 "브루나이 보호령"
+ BRU_UK_neutrality:0 "브루나이 보호령"
+ BRU_UK_neutrality_DEF:0 "브루나이 보호령"
+ BRU_UK_communism:0 "브루나이 보호령"
+ BRU_UK_communism_DEF:0 "브루나이 보호령"
+ BRU_UK_fascism_ADJ:0 "브루나이 보호령"
+ BRU_UK_democratic_ADJ:0 "브루나이 보호령"
+ BRU_UK_neutrality_ADJ:0 "브루나이 보호령"
+ BRU_UK_communism_ADJ:0 "브루나이 보호령"
+ BRU_UK:0 "브루나이"
+ BRU_UK_DEF:0 "브루나이"
+ BRU_UK_ADJ:0 "브루나이"
 
  NBR_fascism:0 "북보르네오"
  NBR_fascism_DEF:0 "북보르네오"
