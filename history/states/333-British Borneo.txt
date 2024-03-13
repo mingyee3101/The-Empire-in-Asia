@@ -3,8 +3,8 @@ state={
 	id=333
 	name="STATE_333"
 	resources={
-		rubber=40.000
-		oil=12.000
+		rubber=52.000 #1940년 26,167,140 수출
+		oil=16.000 #15,211 bopd(barrels per day) #1929
 	}
 
 	history={

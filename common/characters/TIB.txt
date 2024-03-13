@@ -1,6 +1,6 @@
 characters={
 	TIB_jamphel_yeshe_gyaltsen={
-		name="Jamphel Yeshe Gyaltsen"
+		name = TIB_jamphel_yeshe_gyaltsen
 		portraits={
 			civilian={
 				large = "gfx/leaders/TIB/Portrait_Jamphel_Yeshe_Gyaltsen.png"

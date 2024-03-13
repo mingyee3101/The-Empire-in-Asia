@@ -231,14 +231,20 @@ if = {
 		target = NBR
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = BHU
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = RAJ
 		puppet = SST
 		puppet = MAL
 		puppet = BRU
 		puppet = NBR
+		puppet = BHU
 	}
 }
+give_guarantee = NEP #Nepal–Britain Treaty of 1923
 
 
 if = {

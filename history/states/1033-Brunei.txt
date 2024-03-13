@@ -1,6 +1,10 @@
 state={
 	id=1033
 	name="STATE_1033"
+	resources={
+		rubber=12
+		oil=20.000 #240,000 barrels per day #1979
+	}
 
 	history={
 		owner = BRU

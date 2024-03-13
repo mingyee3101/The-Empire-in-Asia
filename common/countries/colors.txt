@@ -918,8 +918,8 @@ CSR = { #천변특별행정구
 }
 
 ROS = { #사라왁 왕국
-	color = rgb { 252 255 22 }
-	color_ui = rgb { 252 255 22 }
+	color = rgb { 252 225 22 }
+	color_ui = rgb { 252 225 22 }
 }
 
 SST = { #해협 식민지

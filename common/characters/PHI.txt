@@ -22,11 +22,11 @@ characters={
 			traits  = {
 				high_commissioner
 			}
-			can_be_fired = no
+			#can_be_fired = no
 		}
 	}
 	PHI_manuel_luis_quezón={
-		name="Manuel Luis Quezón"
+		name = PHI_manuel_luis_quezon
 		portraits={
 			civilian={
 				large = "gfx/leaders/PHI/Portrait_Manuel_L_Quezon.png"

@@ -1,9 +1,9 @@
 state={
 	id=979
 	name="STATE_979"
-	resources={
-		oil=2 #4 #Phú Khánh
-	}
+	#resources={
+	#	oil=2 #4 #Phú Khánh
+	#}
 
 	history={
 		add_core_of = VIN
