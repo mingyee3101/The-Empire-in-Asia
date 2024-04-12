@@ -1,6 +1,7 @@
 add_namespace = aejapan
 add_namespace = jap226
 add_namespace = JAP77
+add_namespace = jap_news
 
 country_event = {
 	id = jap226.1
@@ -15,7 +16,7 @@ country_event = {
 		tag = JAP
 		date > 1936.2.17
 	}
-	mean_time_to_happen = { days = 3 }
+    mean_time_to_happen = { days = 3 }
 	immediate = {
 		hidden_effect = {
 			country_event = { days = 9 id = jap226.3 }
@@ -63,27 +64,52 @@ country_event = {
 	option = {
 		name = jap226.3.a
         set_country_flag = February_incident
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.1
-            }
         custom_effect_tooltip = THIS_IS_HISTORICAL_TT
-		create_country_leader = {
-			name = JAP_Hirota_Koki
-			desc = "POLITICS_Senjuro_Hayashi_DESC"
-			picture = "gfx/leaders/JAP/JAP_Hirota_Koki.png"
-			expire = "1989.1.1"
-			ideology = despotism
-			traits = { JAP_Hirota_Koki_trait }
-		}
-        set_politics = {
-			ruling_party = neutrality
-        }
+        country_event = { id = jap226.4 days = 10 }
+        news_event = { id = jap_news.1 }
 	}
 	#option = {
 	#	name = jap226.3.b
     #
 	#}
+}
+country_event = {
+	id = jap226.4
+	title = jap226.4.t
+	desc = jap226.4.d
+	picture = GFX_event_February_incident
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap226.4.a
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+        JAP_Hirota_Koki = {
+            add_country_leader_role = {
+                country_leader = {
+                    expire = "1965.1.1"
+                    ideology = despotism
+                    traits = {
+                        JAP_Hirota_Koki_trait
+                    }
+                }
+                promote_leader = yes
+            }
+        }
+        set_politics = {
+			ruling_party = neutrality
+        }
+        add_ideas = JAP_weak_military
+        set_party_name = {
+            ideology = neutrality
+            long_name = JAPAN_Hirota_Koki_goverment
+			name = JAPAN_Hirota_Koki_goverment
+        }
+	}
 }
 country_event = { # 루거우차오 사건
 	id = JAP77.1
@@ -223,5 +249,21 @@ country_event = { # 루거우차오 사건
 		hidden_effect = {
 
 		}
+	}
+}
+
+
+news_event = {
+	id = jap_news.1
+	title = jap_news.1.t
+	desc = jap_news.1.d
+	picture = GFX_news_event_olympics_1940
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap_news.1.a
+
 	}
 }

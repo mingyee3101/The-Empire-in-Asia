@@ -10,7 +10,31 @@ characters={
 			ideology=liberalism
 			traits={  }
 			expire="1989.1.1.1"
-			id=700
+			id=701
+		}
+	}
+	JAP_Hirota_Koki={
+		name=JAP_Hirota_Koki
+		portraits={
+			civilian={
+				large = "gfx/leaders/JAP/JAP_Hirota_Koki.png"
+			}
+		}
+	}
+	JAP_Hayashi_Senjuro={
+		name=JAP_Hayashi_Senjuro
+		portraits={
+			civilian={
+				large = "gfx/leaders/JAP/JAP_Hayashi_Senjuro.png"
+			}
+		}
+	}
+	JAP_Konoe_Fumimaro={
+		name=JAP_Konoe_Fumimaro
+		portraits={
+			civilian={
+				large = "gfx/leaders/JAP/JAP_Konoe_Fumimaro.png"
+			}
 		}
 	}
 	JAP_emperor_hirohito={

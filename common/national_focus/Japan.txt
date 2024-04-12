@@ -15,7 +15,6 @@ focus_tree = {
         text = The_Empire_of_Rising_Sun
 		icon = GFX_goal_rhineland
 		cost = 10.00
-        cancelable = no
         available = {
             has_country_flag = February_incident
         }
@@ -28,7 +27,10 @@ focus_tree = {
 			#add_stability = 0.05
 			add_command_power = 50
 			add_political_power = 50
-            add_ideas = JAP_strong_military
+            swap_ideas = {
+                add_idea = JAP_strong_military
+                remove_idea = JAP_weak_military
+            }
 		}
 	}
 	focus = {
@@ -43,7 +45,8 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-            add_manpower = -1200
+            add_manpower = -500
+            army_experience = 25
 		}
 	}
 	focus = {
@@ -62,15 +65,18 @@ focus_tree = {
                 ideology = neutrality
                 popularity = 0.15
             }
-			retire_country_leader = yes
-			create_country_leader = {
-				name = Senjuro_Hayashi
-				desc = "POLITICS_Senjuro_Hayashi_DESC"
-				picture = "gfx/leaders/JAP/JAP_Hayashi_Senjuro.png"
-				expire = "1989.1.1"
-				ideology = despotism
-				traits = { dictator }
-			}
+            JAP_Hayashi_Senjuro = {
+                add_country_leader_role = {
+                    country_leader = {
+                        expire = "1965.1.1"
+                        ideology = despotism
+                        traits = {
+                            dictator
+                        }
+                    }
+                    promote_leader = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -84,15 +90,19 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_political_power = 100 
-				create_country_leader = {
-					name = fumimaro_konoe
-					desc = "POLITICS_Fumimaro_Konoe_DESC"
-					picture = "gfx/leaders/JAP/JAP_Konoe_Fumimaro.png"
-					expire = "1989.1.1"
-					id = 6001
-					ideology = despotism
-					traits = { popular_figurehead }
-				}
+            JAP_Konoe_Fumimaro = {
+                add_country_leader_role = {
+                    country_leader = {
+                        expire = "1965.1.1"
+                        ideology = despotism
+                        traits = {
+                            popular_figurehead
+                            incompetent_leader
+                        }
+                    }
+                    promote_leader = yes
+                }
+            }
 		}
 	}
 	focus = {
@@ -215,6 +225,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_nat_mob_law
+        text = JAP_national_mobilization_law
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
@@ -240,11 +251,39 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_war_support = 0.1
-			add_ideas = war_economy
+			if = {
+				limit = {	
+					has_war_support < 0.5
+				}
+				add_war_support = 0.1
+			}
+			else_if = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = war_economy
+			}
 		}
-		bypass = {
-			has_idea = war_economy 
+	}
+	focus = {
+		id = JAP_warrior_spirit
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_nat_mob_law
+		}
+		x = 0
+		y = 1
+		relative_position_id = JAP_nat_mob_law
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = warrior_traditions_idea
 		}
 	}
 	focus = {
@@ -301,8 +340,8 @@ focus_tree = {
     focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
-		x = 16
-		y = 1
+		x = 7
+		y = 0
 		relative_position_id = JAP_The_Empire_of_Rising_Sun 
 
 		cost = 10
@@ -311,7 +350,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_completed_focus = JAP_support_the_kodoha_faction
+				has_completed_focus = JAP_konoe_cabinet_focus
 			}
 		}
 
@@ -951,7 +990,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_completed_focus = JAP_purge_the_kodoha_faction
+				has_completed_focus = JAP_konoe_cabinet_focus
 			}
 		}
 

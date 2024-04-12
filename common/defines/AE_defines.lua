@@ -1,0 +1,1 @@
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 20							-- Vanilla is 20

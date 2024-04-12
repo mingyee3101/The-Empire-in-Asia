@@ -12,13 +12,22 @@ ideas = {
 			}
 		}
 		JAP_strong_military = {
-            picture = MEX_revolutionary_army
 			modifier = {
 				political_power_gain = -0.2
 				stability_factor = -0.05
 				army_morale_factor = 0.15
 				army_org_factor = -0.05
-				research_speed_factor = -0.01
+				ai_join_ally_desire_factor = -5000
+				ai_get_ally_desire_factor = -5000
+			}
+		}
+		JAP_weak_military = {
+            picture = JAP_strong_military
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.01
+				army_morale_factor = 0.1
+				army_org_factor = -0.01
 				ai_join_ally_desire_factor = -5000
 				ai_get_ally_desire_factor = -5000
 			}

@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_idea_marxism_leninism"
 		texturefile = "gfx/interface/ideas/PRC/idea_marxism_leninism.png"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_strong_military"
+		texturefile = "gfx/interface/ideas/JAP_strong_military.tga"
+	}
 
 	spriteType = {
 		name = "GFX_idea_Indochinese_labor"
