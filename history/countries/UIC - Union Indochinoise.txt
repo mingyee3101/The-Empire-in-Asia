@@ -4,10 +4,23 @@ oob = "UIC_1936"
 
 set_cosmetic_tag = UIC_fra
 
+country_lock_all_division_template = yes
+
+#set_research_slots = 3
+#set_stability = 0.5
+#set_war_support = 0.5
+#starting_train_buffer = 4 #30
+#set_convoys = 200
+
 add_ideas = {
 	#법
 	volunteer_only
-	low_economic_mobilisation
+	civilian_economy
+	
+	UIC_indochinese_resistance_i
+	UIC_unprepared_army_i
+	UIC_indochinese_exploitation_i
+	UIC_North_South_railwayunder_construction
 }
 
 set_technology = {
@@ -68,12 +81,6 @@ if = {
 	}
 }
 
-#set_research_slots = 3
-#set_stability = 0.5
-#set_war_support = 0.5
-#starting_train_buffer = 4 #30
-#set_convoys = 200
-
 #프랑스령 인도차이나
 #지도자
 recruit_character = UIC_Rene_Robin
@@ -81,22 +88,28 @@ recruit_character = UIC_Georges_Catroux #드골과 비슷함
 recruit_character = UIC_jean_decoux
 recruit_character = UIC_jules_brevie
 
-recruit_character = VIN_nguyen_van_thinh
+#recruit_character = VIN_nguyen_van_thinh
 
-recruit_character = VIN_Ta_Thu_Thau
+#recruit_character = VIN_Ta_Thu_Thau
 
-recruit_character = VIN_Tran_Trong_Kim
+#recruit_character = VIN_Tran_Trong_Kim
 
 #정치고문
-recruit_character = VIN_bui_quang_chieu
+#recruit_character = VIN_bui_quang_chieu
 recruit_character = UIC_Rene_schneyder
+
+#총사령관
+recruit_character = UIC_Georges_Ayme
 
 #장군
 recruit_character = UIC_Jules_Antoine_Buhrer #중장
 recruit_character = UIC_Maurice_Martin #군단장 Army corps general
+recruit_character = UIC_Eugene_Mordant
+recruit_character = UIC_Gabriel_Sabattier
 recruit_character = UIC_Marcel_Alessandri #중령
 
-recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
+#recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
+#recruit_character = VIN_Nguyen_Van_Hinh
 
 #제독
 recruit_character = UIC_jean_decoux_navy
@@ -126,3 +139,7 @@ set_popularities = {
 	communism = 12
 	neutrality = 68
 }
+
+
+#country_event = { id = uic.1 days = 1 }
+country_event = { id = uic.1 days = 590 } #37년 8월말

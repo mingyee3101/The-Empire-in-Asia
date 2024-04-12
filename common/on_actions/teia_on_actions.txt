@@ -1,0 +1,78 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = indochina_colonization_status
+						option = DEFAULT
+					}
+				}
+				UIC = {
+					transfer_state = 670
+					transfer_state = 671
+					transfer_state = 741
+				}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = indochina_colonization_status
+						option = INDOCHINA_DECOLONIZED
+					}
+				}
+				UIC = {
+					release = VIN
+					release = CAM
+					release = LAO
+				}
+				#CHI = {
+				#	transfer_state = 728
+				#}
+			}
+
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = indochina_colonization_status
+						option = INDOCHINA_VIETMAN
+					}
+				}
+				VIN = { scoped_play_song = "Tien_Quan_Ca" }
+				UIC = {
+					release = VIN
+					release = CAM
+					release = LAO
+				}
+				VIN = {
+					set_politics = { ruling_party = communism elections_allowed = no }
+					add_popularity = {
+							ideology = communism
+							popularity = 0.3
+					}
+				}
+				VIN = {
+					puppet = CAM
+					set_autonomy = { target = CAM autonomy_state = autonomy_colony }
+				}
+				VIN = {
+					puppet = LAO
+					set_autonomy = { target = LAO autonomy_state = autonomy_colony }
+				}
+				CHI = {
+					transfer_state = 728
+				}
+				VIN = {
+					transfer_state = 983
+				}
+				983 = { add_core_of = VIN }
+			}
+
+		}
+
+	}
+
+}

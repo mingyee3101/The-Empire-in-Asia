@@ -7,8 +7,11 @@
   VIN_Tran_Van_Huong:0 "쩐반흐엉" #부흥당 #Đảng Phục hưng
 
   #장군
-  VIN_Nguyen_Van_Xuan:0 "응우옌반쑤언" #45년 Quan năm(Đại tá) 대령~준장 사이
-  VIN_Nguyen_Van_Hinh:0 "응우옌반힝" #36년 프랑스 공군 입대 44년 중위 #폭격기 #추가하기
+  VIN_Nguyen_Van_Xuan:0 "응우옌반쑤언" #39 대령 45년 Quan năm(Đại tá) 대령~준장 사이 47 준장
+  VIN_Le_Van_Ty:0 "레반띠" #30년 초 준위 34 소위 40 중위
+  VIN_Nguyen_Giac_Ngo:0 "응우옌지악응오" #추가하기 40 중위 #호아하오교
+  VIN_Nguyen_Van_Van:0 "응우옌반번" #추가하기 #41 소위 43 중위 45 대위
+  VIN_Nguyen_Van_Hinh:0 "응우옌반힝" #36년 프랑스 공군 입대 37년 준위 48년 중위 #폭격기
 
   #정치고문
   VIN_bui_quang_chieu:0 "부이꽝찌에우" #인도차이나 입헌당 #Đảng Lập hiến Đông Dương
@@ -31,6 +34,7 @@
   VIN_Nguyen_Son:0 "응우옌선" #중국 홍군 유일 외국인 장교 #48년 소장 #추가하기
 
   #제독
+  VIN_Ta_Xuan_Thu:0 "따쑤언투"
 
   #공군
 
@@ -49,6 +53,7 @@
 
   ###비동맹주의
   VIN_Bao_Dai:0 "바오다이"
+  VIN_Duy_Tan:0 "주이떤"
 
   #정치고문
   VIN_Nguyen_Phuc_Buu_Loc:0 "응우옌푹부록"
@@ -85,6 +90,20 @@
 
   #mio
   VIN_saigon_arsenal:0 "사이공 병기창"
+  VIN_Cam_Ranh_arsenal:0 "깜라인 병기창"
+  VIN_nha_may_z111:0 "Z111 병기창"
+  VIN_thaco:0 "타코"
+  VIN_xi_nghiep_lien_hop_z751:0 "Z751 복합기업"
+  #
+  VIN_Saigon_Naval_Shipyard:0 "사이공 조선소"
+  VIN_Z173_Shipyard:0 "Z173 조선소" #Ban Ca No
+  VIN_Z189_Shipyard:0 "189 조선소"
+  VIN_tong_cong_ty_song_thu:0 "송투공사" #Tổng công ty Sông Thu #경비정 건조
+  #
+  VIN_viettle:0 "비엣텔"
+  VIN_vingroup:0 "빈그룹"
+  VIN_petrovietnam:0 "페트로베트남"
+  #VIN_vietsovpetro:0 "비엣소브페트로" #베트남-소련 합작 회사 #석유
 
   #중점
 

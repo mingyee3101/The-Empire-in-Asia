@@ -1,0 +1,1028 @@
+focus_tree = {
+	id = uic_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = UIC
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1200 } 
+
+	#르네 로벵
+
+	focus = {
+		id = UIC_Rene_Robins_reign_continues
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
+		cost = 5
+		x = 16
+		y = 0
+
+		available = {
+			NOT = {
+				FRA = {
+					has_country_leader = {
+						character = FRA_leon_blum
+					}
+				}
+			}	
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_no_negotiation
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_i
+				add_idea = UIC_indochinese_resistance_rene_robins_i
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_pay_cut
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = UIC_no_negotiation }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_no_negotiation
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochinese_exploitation_i
+				add_idea = UIC_indochinese_exploitation_ii
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_the_medals_of_french_indochina
+		icon = GFX_UIC_the_medals_of_french_indochina
+		prerequisite = { focus = UIC_pay_cut }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_pay_cut
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochinese_exploitation_ii
+				add_idea = UIC_indochinese_exploitation_iii
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = UIC_prohibit_party
+		icon = GFX_focus_UIC_prohibit_party
+		prerequisite = { focus = UIC_pay_cut }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_pay_cut
+
+		completion_reward = {
+			add_ideas = UIC_prohibit_party
+		}
+	}
+
+	focus = {
+		id = UIC_suppression_of_rebellion
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = UIC_prohibit_party }
+		mutually_exclusive = { focus = UIC_indochinese_leader }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_the_medals_of_french_indochina
+		
+		available = {
+			has_country_flag = UIC_suppression_a_rebellion
+		}
+
+		completion_reward = {
+			remove_ideas = UIC_indochinese_resistance_i
+		}
+	}
+
+	#
+
+	focus = {
+		id = UIC_completion_of_North_South_railway
+		icon = GFX_focus_UIC_completion_of_North_South_railway
+		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		available = {
+			#베트남 전역 점령중
+			custom_trigger_tooltip = {
+				tooltip = complete_control_over_Vietnam_tt
+				hidden_trigger = {
+					has_full_control_of_state = 286
+					has_full_control_of_state = 671
+					has_full_control_of_state = 970
+					has_full_control_of_state = 971
+					has_full_control_of_state = 972
+					has_full_control_of_state = 973
+					has_full_control_of_state = 974
+					has_full_control_of_state = 975
+					has_full_control_of_state = 976
+					has_full_control_of_state = 977
+					has_full_control_of_state = 978
+					has_full_control_of_state = 979
+					has_full_control_of_state = 980
+					has_full_control_of_state = 981
+					has_full_control_of_state = 982
+				}
+			}
+			has_war = no
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_completion_of_North_South_railway_tt
+			hidden_effect = {
+				build_railway = { #하노이 - 하이퐁
+					path = { 4075 4119 }
+				}
+				build_railway = { #하노이 - 난닝
+					path = { 4075 12048 7015 9948 4121 4177 7137 }
+				}
+				build_railway = { #꽝응아이 - 냐짱
+					path = { 10137 4255 1300 4334 4405 10162 }
+				}
+				build_railway = { #탑짬 - 달랏
+					path = { 12204 7271 }
+				}
+				build_railway = { #사이공 - 록닌
+					path = { 4401 7238 }
+				}
+				build_railway = { #사이공 - 미토
+					path = { 4401 1396 1423 }
+				}
+			}
+			remove_ideas = UIC_North_South_railwayunder_construction
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+					    modifier = UIC_indochina_economy
+					}
+				}
+				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_i_tt
+				hidden_effect = {
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+					    	modifier = UIC_indochina_economy
+						}
+					}
+				}
+				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_ii_tt
+				hidden_effect = {
+					add_dynamic_modifier = {
+		                modifier = UIC_indochina_economy
+		            }
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_supplying_materials_to_china
+		icon = GFX_focus_UIC_supplying_materials_to_china
+		prerequisite = { focus = UIC_completion_of_North_South_railway }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_completion_of_North_South_railway
+
+		available = {
+			#중국(군벌, 공산당)이 존재, 중국과 영토가 닿아있음
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = UIC_foreign_support_category
+			hidden_effect = {
+				set_global_flag = UIC_supplying_materials_to_china
+			}
+		}
+	}
+
+	#인도차이나인 지도자
+
+	#focus = {
+	#	id = UIC_indochinese_leader
+	#	icon = GFX_goal_generic_intelligence_exchange
+	#	prerequisite = { focus = UIC_prohibit_party }
+	#	mutually_exclusive = { focus = UIC_suppression_of_rebellion }
+	#	cost = 5
+	#	x = 1
+	#	y = 1
+	#	relative_position_id = UIC_prohibit_party
+
+	#	completion_reward = {
+	#		add_political_power = 120
+	#	}
+	#}
+
+	#쥘 브레비예
+
+	focus = {
+		id = UIC_The_reign_of_jules_brevie
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = UIC_Rene_Robins_reign_continues }
+		cost = 5
+		x = 6
+		y = 0
+		relative_position_id = UIC_Rene_Robins_reign_continues
+
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			retire_ideology_leader = neutrality
+			add_country_leader_role = {
+				character = UIC_jules_brevie
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_labor_law_amendments
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = UIC_The_reign_of_jules_brevie }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_The_reign_of_jules_brevie
+
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_i
+				add_idea = UIC_indochinese_resistance_ii
+			}
+			swap_ideas = {
+				remove_idea = UIC_indochinese_exploitation_i
+				add_idea = UIC_Indochinese_labor
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_deregulation_of_political_parties
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = UIC_labor_law_amendments }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_labor_law_amendments
+
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_ii
+				add_idea = UIC_indochinese_resistance_iii
+			}
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
+		}
+	}
+
+	focus = {
+		id = UIC_pardon_political_offender
+		icon = GFX_focus_generic_court
+		prerequisite = { focus = UIC_labor_law_amendments }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_labor_law_amendments
+
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
+		}
+	}
+
+	focus = {
+		id = UIC_granting_freedom_to_the_press
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = UIC_deregulation_of_political_parties }
+		prerequisite = { focus = UIC_pardon_political_offender }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_deregulation_of_political_parties
+
+		available = {
+			NOT = {
+				has_country_flag = jules_brevie_retirement
+			}
+		}
+
+		bypass = {
+			has_country_flag = jules_brevie_retirement
+		}
+
+		completion_reward = {
+			remove_ideas = UIC_indochinese_resistance_iii
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_popularity = { ideology = communism popularity = 0.03 }
+			add_stability = 0.05
+		}
+	}
+
+	#조르주 카트루의 통치
+
+	focus = {
+		id = UIC_The_reign_of_georges_catroux
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_granting_freedom_to_the_press }
+		cost = 0
+		x = 0
+		y = 1
+		relative_position_id = UIC_granting_freedom_to_the_press
+
+		available = {
+			has_country_flag = jules_brevie_retirement
+			hidden_trigger = { always = no }
+		}
+
+		completion_reward = {
+			add_country_leader_role = {
+				character = UIC_georges_catroux
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
+		}
+	}
+
+	#
+
+	focus = {
+		id = UIC_participating_in_the_research_institute_for_development
+		icon = GFX_focus_research2
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
+		completion_reward = {
+			add_to_tech_sharing_group = research_institute_for_development
+		}
+	}
+
+	#장 드쿠의 통치
+
+	focus = {
+		id = UIC_continue_cooperation_with_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		mutually_exclusive = { focus = UIC_negotiations_with_japan }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_negotiations_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		mutually_exclusive = { focus = UIC_continue_cooperation_with_china }
+		cost = 10
+		x = -3
+		y = 1
+		relative_position_id = UIC_The_reign_of_georges_catroux
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_The_reign_of_jean_decoux
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_negotiations_with_japan }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_negotiations_with_japan
+
+		completion_reward = {
+			add_country_leader_role = {
+				character = UIC_jean_decoux
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+			        expire = "1965.1.1.1"
+				}
+			}
+			#조르주 카트루는 프랑스에 합류
+		}
+	}
+
+	#인도차이나 경제
+
+	focus = {
+		id = UIC_indochina_economy
+		icon = GFX_focus_mex_privatisation
+		cost = 5
+		x = 6 #32
+		y = 0
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+					    modifier = UIC_indochina_economy
+					}
+				}
+				custom_effect_tooltip = UIC_indochina_economy_i_tt
+				hidden_effect = {
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.05 }
+	           		add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+					    	modifier = UIC_indochina_economy
+						}
+					}
+				}
+				custom_effect_tooltip = UIC_indochina_economy_ii_tt
+				hidden_effect = {
+					add_dynamic_modifier = {
+		                modifier = UIC_indochina_economy
+		            }
+					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.05 }
+	            	add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_agricultural_exploitation
+		icon = GFX_focus_generic_agricultural_subsidies
+		prerequisite = { focus = UIC_indochina_economy }
+		mutually_exclusive = { focus = UIC_agricultural_development_support }
+		cost = 5
+		x = -5
+		y = 1
+		relative_position_id = UIC_indochina_economy
+
+		completion_reward = {
+			add_political_power = 50
+			FRA = {
+				add_political_power = 50
+			}
+			#이벤트로 뜨게하기
+			custom_effect_tooltip = UIC_agricultural_exploitation_tt
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = -0.2 }
+	        	add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.2 }
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_agricultural_development_support
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = UIC_indochina_economy }
+		mutually_exclusive = { focus = UIC_agricultural_exploitation }
+		cost = 10
+		x = 4
+		y = 0
+		relative_position_id = UIC_agricultural_exploitation
+
+		completion_reward = {
+			add_political_power = -50
+			custom_effect_tooltip = UIC_agricultural_development_support_tt
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = 0.1 }
+				add_to_variable = { UIC_indochina_economy_production_speed_buildings_factor = 0.1 }
+	        	add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_forced_to_grow_cash_crops
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
+		mutually_exclusive = { focus = UIC_cash_crop_regulations }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_agricultural_exploitation
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_indochina_famine_tt
+			custom_effect_tooltip = UIC_forced_to_grow_cash_crops_tt
+			hidden_effect = {
+	        	add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.05 }
+	        	add_to_variable = { UIC_indochina_economy_supply_consumption_factor = -0.1 }
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_cash_crop_regulations
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
+		mutually_exclusive = { focus = UIC_forced_to_grow_cash_crops }
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = UIC_forced_to_grow_cash_crops
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_food_plunder
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_forced_to_grow_cash_crops focus = UIC_cash_crop_regulations }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_forced_to_grow_cash_crops
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_indochina_famine_tt
+		}
+	}
+
+	focus = {
+		id = UIC_prohibition_of_opium_cultivation
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_cash_crop_regulations }
+		#mutually_exclusive = { focus = UIC_encouraging_opium_cultivation }
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = UIC_food_plunder
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#focus = {
+	#	id = UIC_encouraging_opium_cultivation
+	#	icon = GFX_goal_generic_intelligence_exchange
+	#	prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
+	#	mutually_exclusive = { focus = UIC_prohibition_of_opium_cultivation }
+	#	cost = 10
+	#	x = 1
+	#	y = 1
+	#	relative_position_id = UIC_agricultural_development_support
+
+	#	completion_reward = {
+	#		custom_effect_tooltip = UIC_indochina_famine_tt
+	#	}
+	#}
+
+	focus = {
+		id = UIC_flood_preparedness
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_economy }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_indochina_economy
+
+		available = {
+			#홍수 이벤트 뜨면 스킵됨
+			NOT = {
+				has_country_flag = UIC_flood_occurs
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_flood_preparedness_tt
+			hidden_effect = {
+				set_country_flag = UIC_flood_preparedness_cf
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_strengthening_public_works
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_economy }
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = UIC_indochina_economy
+
+		available = {
+			has_country_flag = UIC_flood_occurs #홍수가 남
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_construction_of_irrigation_facilities
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_flood_preparedness focus = UIC_strengthening_public_works }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_flood_preparedness
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = UIC_flood_preparedness_tt
+		}
+	}
+
+	focus = {
+		id = UIC_hlm_construction_program
+		icon = GFX_focus_SWE_hygienic_housing
+		prerequisite = { focus = UIC_flood_preparedness focus = UIC_strengthening_public_works }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_strengthening_public_works
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			every_owned_state = {
+                limit = {
+                    is_fully_controlled_by = ROOT
+                    NOT = { has_state_category = wasteland }
+                    NOT = { has_state_category = enclave }
+                    NOT = { has_state_category = pastoral }
+                    NOT = { has_state_category = tiny_island }
+                    NOT = { has_state_category = small_island }
+                    NOT = { has_state_category = rural }
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+		}
+	}
+
+	focus = {
+		id = UIC_local_investment_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_economy }
+		cost = 10
+		x = 5
+		y = 1
+		relative_position_id = UIC_indochina_economy
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_factory_modernization_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_local_investment_plan }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_local_investment_plan
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#인도차이나 보호
+
+	focus = {
+		id = UIC_indochina_conservation_plan
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		x = 6 #24
+		y = 4
+
+		completion_reward = {
+			add_ideas = UIC_indochina_conservation_plan_i
+			add_doctrine_cost_reduction = {
+				name = UIC_indochina_conservation_plan
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_western_operation_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = -4
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		available = {
+			#NOT = {
+			#	태국의 계획 철회 요청을 수락함
+			#}
+		}
+
+		#cancelable = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_eastern_operation_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		available = {
+			#NOT = {
+			#	일본의 계획 철회 요청을 수락함
+			#}
+		}
+
+		#cancelable = no
+
+		select_effect = {
+			JAP = {
+				country_event = { id = uic.5 }
+			}
+		}
+
+		completion_reward = {
+			#custom_effect_tooltip = UIC_eastern_operation_plan_tt
+		}
+	}
+
+	focus = {
+		id = UIC_naval_base_construction_plan
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		available = {
+			
+		}
+
+		select_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_fort_construction_plan
+		icon = GFX_focus_SWE_hedgehog_defense
+		prerequisite = { focus = UIC_western_operation_plan focus = UIC_eastern_operation_plan }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_western_operation_plan
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochina_conservation_plan_i
+				add_idea = UIC_indochina_conservation_plan_ii
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_ask_for_outside_help
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_eastern_operation_plan }
+		cost = 10
+		x = 2
+		y = 0
+		relative_position_id = UIC_fort_construction_plan
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = UIC_saigon_dockyard_expansion
+		icon = GFX_focus_SWE_italian_destroyers
+		prerequisite = { focus = UIC_fort_construction_plan }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_fort_construction_plan
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = UIC_guangzhouwan_port_expansion
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = UIC_fort_construction_plan }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_fort_construction_plan
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = UIC_request_for_military_reinforcements_and_equipment
+		icon = GFX_focus_SWI_issue_war_bonds
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		completion_reward = {
+			unlock_decision_category_tooltip = UIC_request_for_military_reinforcements_and_equipment_category
+		}
+	}
+
+	focus = {
+		id = UIC_request_for_investment_in_france
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_request_for_military_reinforcements_and_equipment }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_request_for_military_reinforcements_and_equipment
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_attracting_french_companies
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_request_for_investment_in_france }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_request_for_investment_in_france
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UIC_local_conscription
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_conservation_plan }
+		cost = 10
+		x = 4
+		y = 1
+		relative_position_id = UIC_indochina_conservation_plan
+
+		available = {
+			NOT = {
+				has_completed_focus = UIC_Rene_Robins_reign_continues
+			}	
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = UIC_indochina_conservation_plan_i
+				add_idea = UIC_indochina_conservation_plan_ii
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_cooperation_with_local_nationalists
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = UIC_local_conscription }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_local_conscription
+
+		available = {
+			NOT = {
+				has_completed_focus = UIC_Rene_Robins_reign_continues
+			}	
+		}
+
+		completion_reward = {
+		
+		}
+	}
+}

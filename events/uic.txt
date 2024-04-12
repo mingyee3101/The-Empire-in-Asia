@@ -1,0 +1,300 @@
+add_namespace = uic
+
+country_event = {
+	id = uic.1
+	title = uic.1.t
+	desc = uic.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.1.a
+		ai_chance = {
+			factor = 100
+		}
+
+		JAP = {
+			country_event = { id = uic.2 }
+		}
+		CHI = {
+			country_event = { id = uic.2 }
+		}
+		SOV = {
+			country_event = { id = uic.2 }
+		}
+		FRA = {
+			country_event = { id = uic.2 }
+		}
+		ENG = {
+			country_event = { id = uic.2 }
+		}
+		GER = {
+			country_event = { id = uic.2 }
+		}
+		ITA = {
+			country_event = { id = uic.2 }
+		}
+		USA = {
+			country_event = { id = uic.2 }
+		}
+		if = {
+			limit = {
+				has_country_flag = UIC_flood_preparedness_cf
+			}
+			add_dynamic_modifier = { idea = UIC_Indochina_flood days = 240 }
+			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = 0.2 }
+			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.3 }
+			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.3 }
+			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.3 }
+			add_to_variable = { UIC_Indochina_stability_factor = -0.1 }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = UIC_flood_preparedness_cf
+				}
+			}
+			add_dynamic_modifier = { idea = UIC_Indochina_flood days = 360 }
+			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = 0.3 }
+			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.5 }
+			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.5 }
+			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.5 }
+			add_to_variable = { UIC_Indochina_stability_factor = -0.3 }
+		}
+		hidden_effect = {
+			set_country_flag = UIC_flood_occurs
+		}
+	}
+}
+
+country_event = {
+	id = uic.2
+	title = uic.2.t
+	desc = uic.2.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.2.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				original_tag = CHI
+				PREV = {
+					is_subject_of = ROOT
+				}
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value > 75
+					}
+				}
+			}
+		}
+		PREV = {
+			country_event = { id = uic.3 }
+		}
+		#관계개선
+		#소비재 10% 120일
+		add_timed_idea = { idea = UIC_flood_relief_i days = 120 }
+		add_political_power = -100
+		ROOT = {
+			add_opinion_modifier = {
+				target = UIC
+				modifier = UIC_flood_relief_i
+			}
+		}
+	}
+
+	option = {
+		name = uic.2.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				original_tag = JAP
+				original_tag = SOV
+				original_tag = FRA
+				original_tag = ENG
+				original_tag = USA
+			}
+		}
+
+		PREV = {
+			country_event = { id = uic.4 }
+		}
+		#관계개선
+		#소비재 5% 120일
+		add_timed_idea = { idea = UIC_flood_relief_ii days = 120 }
+		add_political_power = -50
+		ROOT = {
+			add_opinion_modifier = {
+				target = UIC
+				modifier = UIC_flood_relief_ii
+			}
+		}
+	}
+
+	option = {
+		name = uic.2.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 100
+				has_war_with = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uic.3
+	title = uic.3.t
+	desc = uic.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_dynamic_modifier = { idea = UIC_Indochina_flood days = -30 }
+		add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.02 }
+		add_to_variable = { UIC_Indochina_flood_monthly_population = -0.02 }
+		add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.2 }
+		add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.2 }
+		add_stability = 0.03
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = uic.4
+	title = uic.4.t
+	desc = uic.4.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.4.a
+		ai_chance = {
+			factor = 100
+		}
+		add_dynamic_modifier = { idea = UIC_Indochina_flood days = -10 }
+			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.01 }
+			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.01 }
+			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.01 }
+			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.01 }
+		add_stability = 0.01
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = uic.5
+	title = uic.5.t
+	desc = uic.5.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.5.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value < -50
+					}
+				}
+			}
+		}
+		PREV = {
+			country_event = { id = uic.6 }
+		}
+		add_political_power = -50
+	}
+
+	option = {
+		name = uic.5.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = uic.6
+	title = uic.6.t
+	desc = uic.6.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.6.a
+		ai_chance = {
+			base = 10
+		}
+		PREV = {
+			country_event = { id = uic.7 }
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = UIC
+				modifier = UIC_refusal_of_request
+			}
+		}
+	}
+
+	option = {
+		name = uic.6.b
+		ai_chance = {
+			base = 0
+		}
+		PREV = {
+			country_event = { id = uic.8 }
+		}
+	}
+}
+
+country_event = {
+	id = uic.7
+	title = uic.7.t
+	desc = uic.7.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.7.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = uic.8
+	title = uic.8.t
+	desc = uic.8.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.8.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}

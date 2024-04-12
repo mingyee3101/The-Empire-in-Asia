@@ -1,0 +1,72 @@
+ideas = {
+
+	industrial_concern = {
+
+		VIN_viettle = {
+			
+			picture = vin_viettle
+
+			allowed = {
+				original_tag = VIN
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_developer }
+		}
+
+		VIN_vingroup = {
+			
+			picture = vin_vingroup
+		
+			allowed = {
+				original_tag = VIN
+			}	
+
+			visible = {
+				
+			}
+
+			available = {
+				
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }		
+		}
+
+		VIN_petrovietnam = {
+			
+			picture = vin_petrovietnam
+		
+			allowed = {
+				original_tag = VIN
+			}	
+
+			visible = {
+				
+			}
+
+			available = {
+				
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }		
+		}
+	}
+
+}

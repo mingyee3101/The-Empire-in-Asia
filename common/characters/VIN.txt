@@ -104,11 +104,97 @@ characters = {
 		}
 		corps_commander={
 			traits={ career_officer }
-			skill=4
-			attack_skill=3
+			skill=3
+			attack_skill=2
 			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	VIN_Le_Van_Ty={
+		name=VIN_Le_Van_Ty
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Le_Van_Ty.png"
+				small = "gfx/interface/ideas/VIN/VIN_Le_Van_Ty.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	VIN_Nguyen_Giac_Ngo={
+		name=VIN_Nguyen_Giac_Ngo
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Giac_Ngo.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Giac_Ngo.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	VIN_Nguyen_Van_Van={
+		name=VIN_Nguyen_Van_Van
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Van_Van.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Van.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	VIN_Nguyen_Van_Hinh={
+		name=VIN_Nguyen_Van_Hinh
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Van_Hinh.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Van_Hinh.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = VIN_Nguyen_Van_Hinh
+			allowed = {
+				or = {
+					original_tag = VIN
+					original_tag = UIC
+				}
+			}
+			traits = {
+				air_naval_strike_1
+			}
+			cost = 100
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
 		}
 	}
 
@@ -129,6 +215,9 @@ characters = {
 		country_leader = {
 			ideology = marxism
 			expire = "1969.9.2.1"
+			traits = {
+				bac_ho
+			}
 		}
 	}
 
@@ -142,12 +231,24 @@ characters = {
 				small = "gfx/interface/ideas/VIN/VIN_Vo_Nguyen_Giap.png"
 			}
 		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = VIN_Vo_Nguyen_Giap
+			ledger = army
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
 		corps_commander={
 			traits={ brilliant_strategist trickster ranger }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
 			logistics_skill=2
 		}
 	}
@@ -239,6 +340,37 @@ characters = {
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=1
+		}
+	}
+
+	############제독############
+	
+	VIN_Ta_Xuan_Thu={
+		name=VIN_Ta_Xuan_Thu
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Ta_Xuan_Thu.png"
+				small = "gfx/interface/ideas/VIN/VIN_Ta_Xuan_Thu.png"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = VIN_Ta_Xuan_Thu
+			allowed = {
+				original_tag = VIN
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+			cost = 100
+		}
+		navy_leader={
+			traits={ big_guns_expert }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
 		}
 	}
 
@@ -398,6 +530,11 @@ characters = {
 		}
 		country_leader = {
 			ideology = trotskyism
+	
+	spriteType = {
+		name = "GFX_ideology_VIN_marxism"
+		texturefile = "gfx/interface/ideologies/vin_cpv.png"
+	} #trotskyism
 			expire = "1989.1.1.1"
 		}
 	}
@@ -415,7 +552,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = christian_democratic
+			ideology = conservatism #christian_democratic
 			expire = "1963.11.2.1"
 			traits = {
 				anti_communist
@@ -428,7 +565,7 @@ characters = {
 		name=VIN_Tran_Van_Huong
 		portraits={
 			civilian={
-				large = "gfx/leaders/VIN/Portrait_VIN_Tran_Van_Huong.png"
+				large = "gfx/leaders/VIN/Portrait_Tran_Van_Huong.png"
 				small = "gfx/interface/ideas/VIN/VIN_Tran_Van_Huong.png"
 			}
 		}
@@ -559,6 +696,23 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			expire = "1997.7.31.1"
+		}
+	}
+
+	VIN_Duy_Tan = {
+		name = VIN_Duy_Tan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIN/Portrait_Duy_Tan.png"
+				small = "gfx/interface/ideas/VIN/VIN_Duy_Tan.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1990.9.19.1"
+			traits = {
+				respected_emperor
+			}
 		}
 	}
 

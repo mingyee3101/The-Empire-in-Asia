@@ -1,0 +1,21 @@
+UIC_request_for_military_reinforcements_and_equipment_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = UIC
+	}
+}
+
+UIC_foreign_support_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		OR = {
+			original_tag = UIC
+			original_tag = LAO
+			original_tag = VIN
+		}
+	}
+}

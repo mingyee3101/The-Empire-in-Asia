@@ -2,6 +2,54 @@
 # available trigger will determine if the logo is in the list of available logos or not
 # names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
 
+#나고민
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_fra
+	names = { "Deuxième Bureau" }
+	
+	#default = { tag = FRA }
+	#available = { original_tag = FRA }
+	
+	default = {
+		or = {
+			tag = FRA
+			and = {
+				tag = UIC
+				is_subject_of = FRA
+			}
+		}
+	}
+	available = {
+		or = {
+			original_tag = FRA
+			and = {
+				original_tag = UIC
+				is_subject_of = FRA
+			}
+		}
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_GDDI
+	names = { "GDDI" }
+	
+	available = {
+		original_tag = VIN
+		has_government = communism
+	}
+	
+	default = { 
+		tag = VIN
+		has_government = communism
+	}
+}
+
+#나고민
+
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_usa
@@ -421,53 +469,5 @@ intelligence_agency = {
 	}
 	
 	default = { always = yes } 
-}
-
-#나고민
-
-intelligence_agency = {
-
-	picture = GFX_intelligence_agency_logo_fra
-	names = { "Deuxième Bureau" }
-	
-	#default = { tag = FRA }
-	#available = { original_tag = FRA }
-	
-	default = {
-		or = {
-			tag = FRA
-			and = {
-				tag = UIC
-				is_subject_of = FRA
-			}
-		}
-	}
-	available = {
-		or = {
-			original_tag = FRA
-			and = {
-				original_tag = UIC
-				is_subject_of = FRA
-			}
-		}
-	}
-}
-
-intelligence_agency = {
-	
-	picture = GFX_intelligence_agency_logo_TC2
-	names = { "TC2" }
-	
-	default = { tag = VIN }
-	available = { original_tag = VIN }
-	
-	default = { 
-		tag = VIN 
-		has_government = communism
-	} 
-	available = { 
-		original_tag = VIN 
-		has_government = communism
-	}
 }
 

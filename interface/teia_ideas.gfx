@@ -10,4 +10,51 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/UIC/idea_Indochinese_labor.png"
 	}
 
+	#mio
+
+	spriteType = {
+		name = "GFX_idea_vin_viettle"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_viettle.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_vingroup"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_vingroup.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_petrovietnam"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_petrovietnam.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_thaco"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_thaco.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_nha_may_z111"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_nha_may_z111.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_xi_nghiep_lien_hop_z751"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_xi_nghiep_lien_hop_z751.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_Z173_Shipyard"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_Z173_Shipyard.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_Z189_Shipyard"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_Z189_Shipyard.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vin_tong_cong_ty_song_thu"
+		texturefile = "gfx/interface/ideas/VIN/idea_vin_tong_cong_ty_song_thu.png"
+	}
+
 }

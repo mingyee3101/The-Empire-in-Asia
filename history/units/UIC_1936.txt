@@ -1,6 +1,6 @@
 ﻿#프랑스군
 division_template = {
-	name = "식민지 보병 연대"			# Represents: 2xRgt colonial forces and , usually with old equipment
+	name = "식민지 보병 연대"	 #Infanterie de marine
 	division_names_group = UIC_COL_01
 	#is_locked = yes
 
@@ -17,8 +17,8 @@ division_template = {
 	priority = 1
 }
 division_template = {
-	name = "식민지 포병 연대"
-	division_names_group = UIC_COL_06
+	name = "식민지 포병 연대" #Artillerie de marine
+	division_names_group = UIC_COL_02
 	#is_locked = yes
 
 	regiments = {
@@ -29,41 +29,7 @@ division_template = {
 	}
 	priority = 1
 }
-division_template = {
-	name = "해군 보병 연대"
-	division_names_group = UIC_COL_05
-	#is_locked = yes
-
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-	}
-	priority = 2
-}
 #식민지군
-division_template = {
-	name = "인도차이나 식민지군" #Tirailleurs indochinois
-	division_names_group = UIC_COL_02
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "인도차이나 산악 식민지군"
-	division_names_group = UIC_COL_03
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-	}
-	priority = 1
-}
 division_template = {
 	name = "인도차이나 스파이"
 	division_names_group = UIC_COL_04
@@ -76,6 +42,28 @@ division_template = {
 	}
 	priority = 0
 }
+#인도차이나군
+division_template = {
+	name = "인도차이나 식민지군" #Tirailleurs indochinois
+	division_names_group = UIC_COL_05
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "인도차이나 산악 식민지군"
+	division_names_group = UIC_COL_06
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+	}
+	priority = 1
+}
 
 units = {
 	##### Indochina Theatre #####
@@ -84,8 +72,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4401
-		division_template = "해군 보병 연대"
+		location = 4075 #하노이
+		division_template = "식민지 보병 연대" #9
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
@@ -93,24 +81,10 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 4379 #후에
-		division_template = "식민지 보병 연대"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 4401 #사이공
-		division_template = "식민지 보병 연대"
+		location = 4379 #후에
+		division_template = "식민지 보병 연대" #10
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
@@ -123,8 +97,29 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 12133 #코친차이나
-		division_template = "식민지 보병 연대"
+		location = 4401 #사이공
+		division_template = "식민지 보병 연대" #11
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#division= {	
+	#	division_name = {
+	#		is_name_ordered = yes
+	#		name_order = 4
+	#	}
+	#	division_template = "식민지 보병 연대" #12 #해산
+	#}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11981 #중국
+		division_template = "식민지 보병 연대" #16
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
@@ -135,10 +130,10 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 5
 		}
-		location = 4075 #통킹
-		division_template = "식민지 보병 연대"
+		location = 4119 #하이퐁
+		division_template = "식민지 보병 연대" #19
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
@@ -152,6 +147,18 @@ units = {
 			name_order = 1
 		}
 		location = 4075 #통킹
+		division_template = "식민지 포병 연대"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4401 #사이공
 		division_template = "식민지 포병 연대"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }

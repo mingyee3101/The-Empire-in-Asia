@@ -95,15 +95,19 @@ if = {
 #공산
 recruit_character = VIN_Ho_Chi_Minh
 
+#트로츠키
+recruit_character = VIN_Ta_Thu_Thau
+
 #민주
 recruit_character = VIN_Ngo_Dinh_Diem #근로인격혁명당
 recruit_character = VIN_Tran_Van_Huong #부흥당
 
 #비동맹
 recruit_character = VIN_Bao_Dai
+recruit_character = VIN_Duy_Tan
 
 #파시즘
-#recruit_character = VIN_Tran_Trong_Kim
+recruit_character = VIN_Tran_Trong_Kim
 
 ###장군###
 #공산
@@ -115,6 +119,13 @@ recruit_character = VIN_Vuong_Thua_Vu
 recruit_character = VIN_Nguyen_Binh
 
 #recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
+
+#인도차이나
+recruit_character = VIN_Nguyen_Van_Xuan
+recruit_character = VIN_Le_Van_Ty
+recruit_character = VIN_Nguyen_Giac_Ngo
+recruit_character = VIN_Nguyen_Van_Van
+recruit_character = VIN_Nguyen_Van_Hinh
 
 ###정치고문###
 #공산
@@ -130,11 +141,27 @@ recruit_character = VIN_Tran_Van_Van
 recruit_character = VIN_Ngo_Dinh_Nhu
 recruit_character = VIN_Tran_Le_Xuan
 
+#인도차이나
+recruit_character = VIN_nguyen_van_thinh
+recruit_character = VIN_bui_quang_chieu
+
 #비동맹
 recruit_character = VIN_Nguyen_Phuc_Buu_Loc
 
+###제독###
+#공산
+recruit_character = VIN_Ta_Xuan_Thu
+
+#인물 설정
+VIN_Ta_Thu_Thau = { set_nationality = UIC }
+VIN_Tran_Trong_Kim = { set_nationality = UIC }
+VIN_Nguyen_Van_Xuan = { set_nationality = UIC }
+VIN_Nguyen_Van_Hinh = { set_nationality = UIC }
+VIN_nguyen_van_thinh = { set_nationality = UIC }
+VIN_bui_quang_chieu = { set_nationality = UIC }
+
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no

@@ -271,12 +271,27 @@ spriteTypes = {
 		name = "GFX_ideology_UIC_conservatism"
 		texturefile = "gfx/interface/ideologies/uic_dlhdd.png"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_UIC_trotskyism"
+		texturefile = "gfx/interface/ideologies/vin_ptv.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_UIC_gen_nazism"
+		texturefile = "gfx/interface/ideologies/vin_dvqxd.png"
+	}
 
 	#베트남
 	
 	spriteType = {
-		name = "GFX_ideology_VIN_leninism"
+		name = "GFX_ideology_VIN_marxism"
 		texturefile = "gfx/interface/ideologies/vin_cpv.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_VIN_trotskyism"
+		texturefile = "gfx/interface/ideologies/vin_ptv.png"
 	}
 	
 	spriteType = {
@@ -287,6 +302,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_VIN_despotism"
 		texturefile = "gfx/interface/ideologies/vin_nguyen.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_VIN_gen_nazism"
+		texturefile = "gfx/interface/ideologies/vin_dvqxd.png"
 	}
 
 	#캄보디아

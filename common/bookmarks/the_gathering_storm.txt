@@ -181,63 +181,7 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}
-		"HCP"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
-		"SDC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
 		"GDC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
-		"SCC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
-		"CSR"={
 			minor = yes
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -256,6 +200,18 @@ bookmarks = {
 			minor = yes
 			history = "MON_GATHERING_STORM_DESC"
 			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"UIC"={
+			minor = yes
+			history = "UIC_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 				
 			}

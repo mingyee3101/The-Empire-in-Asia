@@ -181,9 +181,47 @@ characters = {
 			traits={ }
 			skill=2
 			attack_skill=1
-			defense_skill=3
+			defense_skill=2
 			planning_skill=1
 			logistics_skill=2
+		}
+	}
+
+	UIC_Eugene_Mordant={
+		name=UIC_Eugene_Mordant
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Eugene_Mordant.png"
+				small = "gfx/interface/ideas/UIC/UIC_Eugene_Mordant.png"
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	UIC_Gabriel_Sabattier={
+		name=UIC_Gabriel_Sabattier
+		portraits={
+			army={
+				large = "gfx/leaders/UIC/Portrait_Gabriel_Sabattier.png"
+				small = "gfx/interface/ideas/UIC/UIC_Gabriel_Sabattier.png"
+			}
+		}
+
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 
@@ -203,6 +241,32 @@ characters = {
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
+		}
+	}
+
+	#최고사령부
+
+	UIC_Georges_Ayme={
+		name=UIC_Georges_Ayme
+		portraits={
+			army={
+				small = "gfx/interface/ideas/UIC/UIC_Georges_Ayme.png"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UIC_Georges_Ayme
+			ledger = army
+			allowed = {
+				original_tag = UIC
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2
+			}
 		}
 	}
 

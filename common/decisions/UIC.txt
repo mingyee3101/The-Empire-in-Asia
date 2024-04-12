@@ -1,0 +1,333 @@
+UIC_request_for_military_reinforcements_and_equipment_category = {
+
+	UIC_infanterie_de_marine_reinforcements = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			OR = {
+				controls_state = 286 #사이공
+				controls_state = 997 #시아누크빌
+				controls_state = 979 #카인호아 냐짱
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_supplying_materials_to_china
+			}
+		}
+		#days_remove = 30
+		#days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		complete_effect = {
+			#소비재 디버프
+			#프랑스 소비재 버프
+			if = {
+				limit = {
+					has_full_control_of_state = 286
+				}
+				286 = {
+					create_unit = {
+						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 997
+				}
+				997 = {
+					create_unit = {
+						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 979
+				}
+				979 = {
+					create_unit = {
+						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	UIC_artillerie_de_marine_reinforcements = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			OR = {
+				controls_state = 286 #사이공
+				controls_state = 997 #시아누크빌
+				controls_state = 979 #카인호아 냐짱
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_supplying_materials_to_china
+			}
+		}
+		#days_remove = 30
+		#days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			#소비재 디버프
+			#프랑스 소비재 버프
+			if = {
+				limit = {
+					has_full_control_of_state = 286
+				}
+				286 = {
+					create_unit = {
+						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 997
+				}
+				997 = {
+					create_unit = {
+						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 979
+				}
+				979 = {
+					create_unit = {
+						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+}
+
+UIC_foreign_support_category = {
+
+	UIC_supplying_materials_to_china = {
+		icon = generic_construction
+
+		allowed = {
+			OR = {
+				original_tag = UIC
+				original_tag = LAO
+				original_tag = VIN
+			}
+		}
+
+		available = {
+			OR = {
+				#베트남
+				controls_state = 971 #랑선
+				controls_state = 972 #타이응우옌
+				controls_state = 973 #디엔비엔
+				#라오스
+				controls_state = 974 #퐁살리
+				controls_state = 975 #우돔사이
+			}
+			NOT = {
+				OR = {
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+			}
+			has_equipment = { infantry_equipment > 999 }
+			#country_exists = CHI #중국 존재
+		}
+		visible = {
+			OR = {
+				#베트남
+				controls_state = 971 #랑선
+				controls_state = 972 #타이응우옌
+				controls_state = 973 #디엔비엔
+				#라오스
+				controls_state = 974 #퐁살리
+				controls_state = 975 #우돔사이
+			}
+			CHI = {
+				has_war_with = JAP
+			}
+		}
+		days_re_enable = 100
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 25
+		days_remove = 50
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.6
+				}
+				add_war_support = 0.05
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		remove_effect = {
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = UIC
+				}
+			}
+		}
+	}
+
+	UIC_supplying_materials_to_china_foc = {
+		icon = generic_construction
+
+		allowed = {
+			OR = {
+				original_tag = UIC
+				original_tag = VIN
+			}
+		}
+
+		available = {
+			OR = {
+				#베트남
+				controls_state = 971 #랑선
+				controls_state = 972 #타이응우옌
+				controls_state = 973 #디엔비엔
+			}
+			NOT = {
+				OR = {
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+			}
+			has_equipment = { infantry_equipment > 1999 }
+			country_exists = CHI
+		}
+		visible = {
+			OR = {
+				#베트남
+				controls_state = 971 #랑선
+				controls_state = 972 #타이응우옌
+				controls_state = 973 #디엔비엔
+			}
+			#UIC = {
+			#	has_completed_focus = UIC_supplying_materials_to_china
+			#}
+			has_global_flag = UIC_supplying_materials_to_china
+		}
+		days_re_enable = 60
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		days_remove = 10
+		complete_effect = {
+			if = {
+				limit = {
+					has_war_support < 0.6
+				}
+				add_war_support = 0.05
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+		}
+		remove_effect = {
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = UIC
+				}
+			}
+		}
+	}
+	
+}
+
+political_actions = {
+
+	UIC_improving_working_conditions_for_indochinese_people = {
+		icon = generic_construction
+
+		visible = {
+			has_country_flag = jules_brevie_retirement
+			#르네로벵의 퇴임 #장드쿠 지도자
+			NOT = {
+				OR = {
+					has_idea = UIC_indochinese_resistance_rene_robins_i
+					has_idea = UIC_indochinese_resistance_rene_robins_ii
+					has_idea = UIC_indochinese_resistance_rene_robins_iii
+				}
+			}
+		}
+		modifier = {
+			stability_weekly = 0.005
+			consumer_goods_factor = 0.10
+			industrial_capacity_factory = -0.1
+		}
+		days_remove = 180
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 100
+		days_remove = 180
+		remove_effect = {
+			IF = {
+				limit = {
+					has_idea = UIC_indochinese_resistance_i
+				}
+				swap_ideas = {
+					remove_idea = UIC_indochinese_resistance_i
+					add_idea = UIC_indochinese_resistance_ii
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_state_category = UIC_indochinese_resistance_ii
+				}
+				swap_ideas = {
+					remove_idea = UIC_indochinese_resistance_ii
+					add_idea = UIC_indochinese_resistance_ii
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_state_category = UIC_indochinese_resistance_iii
+				}
+				remove_ideas = UIC_indochinese_resistance_iii
+			}
+		}
+	}
+
+}

@@ -49,10 +49,17 @@ leader_traits = {
 		monthly_population = 0.1
 		army_morale_factor = 0.1
 		sprite = 13
-		
-		ai_will_do = {
-			factor = 1
-		}
+	}
+
+	respected_emperor = {
+		random = no
+		stability_factor = 0.2
+		war_support_factor = 0.1
+	}
+
+	bac_ho = {
+		random = no
+		stability_factor = 0.2
 	}
 
 }

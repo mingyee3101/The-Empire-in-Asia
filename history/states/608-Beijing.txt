@@ -7,7 +7,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = HCP
+		owner = CHI
 		add_core_of = HCP
 		add_core_of = CHI
 		add_core_of = PRC
