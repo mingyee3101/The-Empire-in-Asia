@@ -114,20 +114,25 @@
 
  #인도차이나 경제
  UIC_indochina_famine_tt:0 "인도차이나에 §R기근§!이 발생했을 때 더욱 §R치명적§!일 것입니다."
+ UIC_indochina_prevent_famine_tt:0 "인도차이나에 §R기근§!이 발생했을 때 §Y피해§!를 줄일 수 있습니다."
  UIC_indochina_economy:0 "인도차이나 경제"
- UIC_indochina_economy_i_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$ §Y-10%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n\n"
- UIC_indochina_economy_ii_tt:0 "($MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-0.05§!, $MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!) 효과를 부여하는 §Y인도차이나 경제§! 추가."
+ UIC_indochina_economy_i_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$ §Y-10.0%§!\n\n"
+ UIC_indochina_economy_ii_tt:0 "($MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!, $MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-5.0§!) 효과를 부여하는 §Y인도차이나 경제§! 추가."
  UIC_agricultural_exploitation:0 "농업 착취"
- UIC_agricultural_exploitation_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §G-10%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10%§!\n\n"
+ UIC_agricultural_exploitation_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §R-10.00%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+10.00%§!\n\n"
  UIC_agricultural_development_support:0 "농업 개발 지원"
- UIC_agricultural_development_support_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §G+10%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+10.00%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n\n"
+ UIC_agricultural_development_support_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §G+10.00%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+10.00%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n\n"
+ UIC_agricultural_development_support_teia_upgrade_state_category_tt:0 "§Y핵심 주§!인 모든 §Y농촌§!과 §Y목축§! 지역은 한 등급 §R상승§!합니다."
  UIC_forced_to_grow_cash_crops:0 "현금작물 재배 강요" #산업작물? cây kỹ nghệ
  UIC_forced_to_grow_cash_crops_desc:0 "우리는 경제와 전쟁을 위한 산업작물이 필요합니다. 쌀대신 현금작물과 구황작물을 심게 해야 합니다."
- UIC_forced_to_grow_cash_crops_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-5%§!\n$MODIFIER_SUPPLY_CONSUMPTION_FACTOR$: §G-10.0%§!\n\n"
+ UIC_forced_to_grow_cash_crops_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10.0%§!\n$MODIFIER_SUPPLY_CONSUMPTION_FACTOR$: §R+10.0%§!\n\n"
  UIC_cash_crop_regulations:0 "현금작물 규제"
+ UIC_cash_crop_regulations_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y10.0%§!\n$MODIFIER_STABILITY_FACTOR$: §G+10.00%§!\n\n"
  UIC_food_plunder:0 "식량 수탈"
+ UIC_food_plunder_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §R-10.00%§!\n$MODIFIER_CIC_TO_OVERLORD_FACTOR$: §G30.00%§!\n\n"
  UIC_prohibition_of_opium_cultivation:0 "아편 재배 금지"
- UIC_encouraging_opium_cultivation:0 "아편 재배 장려"
+ UIC_prohibition_of_opium_cultivation_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_POLITICAL_POWER_FACTOR$: §G+10.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y10.0%§!\n$MODIFIER_STABILITY_FACTOR$: §G+10.00%§!\n\n"
+ #UIC_encouraging_opium_cultivation:0 "아편 재배 장려"
  UIC_flood_preparedness:0 "홍수 대비"
  UIC_flood_preparedness_desc:0 "인도차이나는 비가 많이 내리는 지역입니다. 우리는 홍수를 대비하기 위해 제방을 보강하고 벼 종자를 비축해야 합니다."
  UIC_flood_preparedness_tt:0 "§R홍수§!가 발생했을 때 §Y피해§!를 줄일 수 있습니다."
@@ -162,6 +167,33 @@
  UIC_local_conscription:0 "현지인 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
  UIC_cooperation_with_local_nationalists:0 "현지 민족주의자와 협력"
 
+ #군사 중점
+ #육군
+ UIC_tirailleurs_indochinois:0 "인도차이나 식민지군"
+ UIC_maintain_existing_tactics:0 "기존 전술 유지"
+ UIC_maintain_existing_tactics.tt:0 "§Y인도차이나 식민지군§! 변동치\n$MODIFIER_MAX_PLANNING$: §G+10.0%§!\n$MODIFIER_COMMAND_POWER_GAIN$: §G+0.25%§!\n\n"
+ UIC_great_war_analysis:0 "대전쟁 분석"
+ UIC_perfect_defense:0 "완벽한 방어"
+ UIC_mountain_training:0 "산악 훈련"
+ UIC_jungle_training:0 "정글 훈련"
+ UIC_artillery_production:0 "포 생산"
+ UIC_supply_of_quality_equipment:0 "질 좋은 장비 보급"
+ UIC_tank_armament:0 "전차 무장"
+ UIC_new_tactics:0 "새로운 전술"
+ UIC_infantry_combat:0 "보병 전투" #수정하기
+ UIC_infantry_combat_desc:0 "좋은 장비와 뛰어난 기술이 없는 우리는 보병을 잘 활용하여 전투를 해야합니다."
+ UIC_colonial_army_training:0 "식민지군 훈련"
+ UIC_colonial_army_training_desc:0 "새로운 훈련 방식을 도입하고 더 많은 식민지군을 훈련하여 적을 막을 것입니다."
+ UIC_colonial_army_modernization:0 "식민지군 현대화"
+ UIC_colonial_army_modernization_desc:0 "우리 군은 많은 발전을 하였고 어떤 적과도 맞서 싸울 수 있습니다."
+ UIC_ecole_superieure_de_guerre:0 "극동 전쟁 대학교 설립"
+ #공군
+ UIC_indochina_air_force:0 "인도차이나 공군"
+ UIC_ecole_superieure_de_guerre_aerienne:0 "공중전 대학교 분리"
+ UIC_ecole_superieure_de_guerre_aerienne_desc:0 "공중전 대학교는 극동 전쟁 대학교에 속해있지만 둘을 분리하여 교육하는 것이 더 좋을 것입니다."
+ #해군
+ UIC_far_east_squadron:0 "극동 해군"
+
  #country_flag
  UIC_flood_occurs:0 "홍수 발생"
  UIC_flood_preparedness_cf:0 "홍수를 대비함"
@@ -186,8 +218,21 @@
  UIC_Indochina_flood:0 "홍수"
  UIC_flood_relief_i:0 "홍수 구호"
  UIC_flood_relief_ii:0 "홍수 구호"
+ UIC_flood_relief_iii:0 "홍수 구호"
+ UIC_flood_relief_iv:0 "홍수 구호"
+ UIC_flood_relief_v:0 "홍수 구호"
+ UIC_profits_in_indochina_i:0 "인도차이나에서의 이익"
+ UIC_profits_in_indochina_ii:0 "인도차이나에서의 이익"
+ UIC_profits_in_indochina_iii:0 "인도차이나에서의 이익"
+ UIC_profits_in_indochina_iv:0 "인도차이나에서의 이익"
+ UIC_profits_in_indochina_v:0 "인도차이나에서의 이익"
+ UIC_profit_growth_tt:0 "이익 §G증가§!.\n"
+ UIC_profit_decreases_tt:0 "이익 §R감소§!.\n"
+ UIC_tirailleurs_indochinois_fake:0 "인도차이나 식민지군"
+ UIC_tirailleurs_indochinois_ns_intro: "§Y$UIC_tirailleurs_indochinois$§! 변동치"
 
  #opinion_modifiers
+ UIC_profits_in_indochina:0 "인도차이나에서의 이익"
 
  #권력의 균형
  UIC_centralization_balance:0 "권력의 균형"

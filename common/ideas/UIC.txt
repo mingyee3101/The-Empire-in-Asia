@@ -209,12 +209,82 @@ ideas = {
 
 		}
 
-		UIC_flood_relief_i = {
+		UIC_flood_relief_ii = {
 
 			picture = generic_build_infrastructure
 			
 			modifier = {
 				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		UIC_profits_in_indochina_i = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+
+		}
+
+		UIC_profits_in_indochina_ii = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+
+		UIC_profits_in_indochina_iii = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+
+		}
+
+		UIC_profits_in_indochina_iv = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+			}
+
+		}
+
+		UIC_profits_in_indochina_v = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.3
+			}
+
+		}
+
+		UIC_tirailleurs_indochinois_fake = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				experience_gain_army_factor = 0.05
+				acclimatization_hot_climate_gain_factor = 0.05
 			}
 
 		}

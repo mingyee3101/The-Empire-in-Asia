@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
 		cost = 5
-		x = 16
+		x = 38
 		y = 0
 
 		available = {
@@ -160,6 +160,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			overlord = {
+				UIC_profits_in_indochina_level_up = yes
+			}
 			custom_effect_tooltip = UIC_completion_of_North_South_railway_tt
 			hidden_effect = {
 				build_railway = { #하노이 - 하이퐁
@@ -551,16 +554,16 @@ focus_tree = {
 		relative_position_id = UIC_indochina_economy
 
 		completion_reward = {
-			add_political_power = 50
-			FRA = {
-				add_political_power = 50
+			add_political_power = 100
+			overlord = {
+				UIC_profits_in_indochina_level_up = yes
+			}
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = -0.1 }
+	        	add_to_variable = { UIC_indochina_economy_production_speed_buildings_factor = 0.1 }
 			}
 			#이벤트로 뜨게하기
 			custom_effect_tooltip = UIC_agricultural_exploitation_tt
-			hidden_effect = {
-				add_to_variable = { UIC_indochina_economy_stability_factor = -0.2 }
-	        	add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.2 }
-			}
 		}
 	}
 
@@ -574,13 +577,23 @@ focus_tree = {
 		y = 0
 		relative_position_id = UIC_agricultural_exploitation
 
-		completion_reward = {
+		completion_reward = { #시간이 지나면 이벤트가 뜨면서 주 유형이나 기반시설을 줄수도
 			add_political_power = -50
 			custom_effect_tooltip = UIC_agricultural_development_support_tt
 			hidden_effect = {
 				add_to_variable = { UIC_indochina_economy_stability_factor = 0.1 }
 				add_to_variable = { UIC_indochina_economy_production_speed_buildings_factor = 0.1 }
 	        	add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+			}
+			custom_effect_tooltip = UIC_agricultural_development_support_teia_upgrade_state_category_tt
+			every_core_state = {
+				limit = {
+					or = {
+						has_state_category = pastoral
+						has_state_category = rural
+					}
+				}
+				teia_upgrade_state_category = yes
 			}
 		}
 	}
@@ -596,11 +609,15 @@ focus_tree = {
 		relative_position_id = UIC_agricultural_exploitation
 
 		completion_reward = {
+			add_political_power = 100
+			overlord = {
+				UIC_profits_in_indochina_level_up = yes
+			}
 			custom_effect_tooltip = UIC_indochina_famine_tt
 			custom_effect_tooltip = UIC_forced_to_grow_cash_crops_tt
 			hidden_effect = {
-	        	add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.05 }
-	        	add_to_variable = { UIC_indochina_economy_supply_consumption_factor = -0.1 }
+	        	add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
+	        	add_to_variable = { UIC_indochina_economy_supply_consumption_factor = 0.1 }
 			}
 		}
 	}
@@ -616,7 +633,13 @@ focus_tree = {
 		relative_position_id = UIC_forced_to_grow_cash_crops
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_cash_crop_regulations_tt
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = 0.1 }
+	        	add_to_variable = { UIC_indochina_economy_consumer_goods_factor = 0.1 }
+	        	add_to_variable = { UIC_indochina_economy_monthly_population = 0.3 }
+			}
+			custom_effect_tooltip = UIC_indochina_prevent_famine_tt
 		}
 	}
 
@@ -630,7 +653,23 @@ focus_tree = {
 		relative_position_id = UIC_forced_to_grow_cash_crops
 
 		completion_reward = {
+			add_political_power = 100
+			overlord = {
+				UIC_profits_in_indochina_level_up = yes
+			}
 			custom_effect_tooltip = UIC_indochina_famine_tt
+			custom_effect_tooltip = UIC_food_plunder_tt
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = -0.1 }
+				add_to_variable = { UIC_indochina_economy_cic_to_overlord_factor = 0.3 }
+			}
+			#프랑스가 도와줄 확룔 증가
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = UIC_profits_in_indochina
+				}
+			}
 		}
 	}
 
@@ -645,7 +684,13 @@ focus_tree = {
 		relative_position_id = UIC_food_plunder
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_prohibition_of_opium_cultivation_tt
+			hidden_effect = {
+				add_to_variable = { UIC_indochina_economy_stability_factor = 0.1 }
+	        	add_to_variable = { UIC_indochina_economy_consumer_goods_factor = 0.1 }
+	        	add_to_variable = { UIC_indochina_economy_political_power_factor = 0.1 }
+			}
+			custom_effect_tooltip = UIC_indochina_prevent_famine_tt
 		}
 	}
 
@@ -1023,6 +1068,334 @@ focus_tree = {
 
 		completion_reward = {
 		
+		}
+	}
+
+	#군사 중점
+	#육군
+	focus = {
+		id = UIC_tirailleurs_indochinois
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		x = 17
+		y = 0
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			army_experience = 10
+			effect_tooltip = {
+				add_ideas = UIC_tirailleurs_indochinois_fake
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+		            modifier = UIC_tirailleurs_indochinois
+		        }
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_maintain_existing_tactics
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_tirailleurs_indochinois }
+		mutually_exclusive = { focus = UIC_new_tactics }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_tirailleurs_indochinois
+
+		available = {
+
+		}
+
+		completion_reward = {
+			#custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			custom_effect_tooltip = UIC_maintain_existing_tactics.tt
+			#add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 }
+			add_to_variable = { UIC_tirailleurs_indochinois_command_power_gain = 0.25}
+		}
+	}
+
+	focus = {
+		id = UIC_great_war_analysis
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_maintain_existing_tactics }
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = UIC_maintain_existing_tactics
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_perfect_defense
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_great_war_analysis }
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = UIC_great_war_analysis
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_mountain_training
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_maintain_existing_tactics focus = UIC_new_tactics }
+		mutually_exclusive = { focus = UIC_jungle_training }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_maintain_existing_tactics
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_jungle_training
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_maintain_existing_tactics focus = UIC_new_tactics }
+		mutually_exclusive = { focus = UIC_mountain_training }
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = UIC_mountain_training
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_artillery_production
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_mountain_training focus = UIC_jungle_training }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_mountain_training
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			army_experience = -10
+		}
+	}
+
+	focus = {
+		id = UIC_supply_of_quality_equipment
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_mountain_training focus = UIC_jungle_training }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_jungle_training
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			army_experience = -10
+		}
+	}
+
+	focus = {
+		id = UIC_tank_armament
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_artillery_production }
+		prerequisite = { focus = UIC_supply_of_quality_equipment }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_artillery_production
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = -100
+			army_experience = -30
+		}
+	}
+
+	focus = {
+		id = UIC_new_tactics
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_tirailleurs_indochinois }
+		mutually_exclusive = { focus = UIC_maintain_existing_tactics }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_tirailleurs_indochinois
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_infantry_combat
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_new_tactics }
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = UIC_new_tactics
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_colonial_army_training
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_infantry_combat }
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = UIC_infantry_combat
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_colonial_army_modernization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_perfect_defense focus = UIC_colonial_army_training }
+		prerequisite = { focus = UIC_tank_armament }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_tank_armament
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_ecole_superieure_de_guerre
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_tirailleurs_indochinois }	
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = UIC_tirailleurs_indochinois
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#공군
+	focus = {
+		id = UIC_indochina_air_force
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		x = 9
+		y = 0
+		relative_position_id = UIC_tirailleurs_indochinois
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_ecole_superieure_de_guerre_aerienne
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_ecole_superieure_de_guerre }
+		prerequisite = { focus = UIC_indochina_air_force }
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = UIC_ecole_superieure_de_guerre
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	#해군
+	focus = {
+		id = UIC_far_east_squadron
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 7
+		x = 7
+		y = 0
+		relative_position_id = UIC_indochina_air_force
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 }

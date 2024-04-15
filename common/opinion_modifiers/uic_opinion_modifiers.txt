@@ -12,4 +12,8 @@ opinion_modifiers = {
 		value = -30
 	}
 
+	UIC_profits_in_indochina = {
+		value = 50
+	}
+
 }

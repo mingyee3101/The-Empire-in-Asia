@@ -6,6 +6,11 @@ set_cosmetic_tag = UIC_fra
 
 country_lock_all_division_template = yes
 
+#인도차이나 식민지군
+set_variable = { UIC_tirailleurs_indochinois_experience_gain_army_factor = 0.05 }
+set_variable = { UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor = 0.05 }
+set_variable = { UIC_tirailleurs_indochinois_max_planning = 0 }
+
 #set_research_slots = 3
 #set_stability = 0.5
 #set_war_support = 0.5

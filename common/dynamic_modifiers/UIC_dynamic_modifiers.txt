@@ -3,11 +3,13 @@
 UIC_indochina_economy = {
 	icon = GFX_idea_generic_agrarian_reform
 
+	stability_factor = UIC_indochina_economy_stability_factor
 	consumer_goods_factor = UIC_indochina_economy_consumer_goods_factor
 	production_speed_buildings_factor = UIC_indochina_economy_production_speed_buildings_factor
 	monthly_population = UIC_indochina_economy_monthly_population
-	stability_factor = UIC_indochina_economy_stability_factor
 	supply_consumption_factor = UIC_indochina_economy_supply_consumption_factor
+	political_power_factor = UIC_indochina_economy_political_power_factor
+	cic_to_overlord_factor = UIC_indochina_economy_cic_to_overlord_factor
 }
 
 UIC_Indochina_flood = {
@@ -18,4 +20,13 @@ UIC_Indochina_flood = {
 	production_speed_buildings_factor = UIC_Indochina_flood_production_speed_buildings_factor
 	industrial_capacity_factory = UIC_Indochina_flood_industrial_capacity_factory
 	stability_factor = UIC_Indochina_flood_stability_factor
+}
+
+UIC_tirailleurs_indochinois = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	experience_gain_army_factor = UIC_tirailleurs_indochinois_experience_gain_army_factor
+	acclimatization_hot_climate_gain_factor = UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor
+	max_planning = UIC_tirailleurs_indochinois_max_planning
+	command_power_gain = UIC_tirailleurs_indochinois_command_power_gain
 }

@@ -1,0 +1,84 @@
+#인도차이나에서의 이익
+UIC_profits_in_indochina_clear_all = {
+	remove_ideas = {
+		UIC_profits_in_indochina_i
+		UIC_profits_in_indochina_ii
+		UIC_profits_in_indochina_iii
+		UIC_profits_in_indochina_iv
+		UIC_profits_in_indochina_v
+	}
+}
+
+#버프 증가
+UIC_profits_in_indochina_level_up = {
+	#custom_effect_tooltip = UIC_profit_growth_tt
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_iv }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_iv
+			add_idea = UIC_profits_in_indochina_v
+		}
+	}
+	else_if = {
+		limit = { has_idea = UIC_profits_in_indochina_iii }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_iii
+			add_idea = UIC_profits_in_indochina_iv
+		}
+	}
+	else_if = {
+		limit = { has_idea = UIC_profits_in_indochina_ii }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_ii
+			add_idea = UIC_profits_in_indochina_iii
+		}
+	}
+	else_if = {
+		limit = { has_idea = UIC_profits_in_indochina_i }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_i
+			add_idea = UIC_profits_in_indochina_ii
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = UIC_profits_in_indochina_i } }
+		add_ideas = UIC_profits_in_indochina_i
+	}
+}
+
+#버프 감소
+UIC_profits_in_indochina_level_down = {
+#custom_effect_tooltip = CHI_profit_decreases_tt
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_i }
+		remove_ideas = UIC_profits_in_indochina_i
+	}
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_ii }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_ii
+			add_idea = UIC_profits_in_indochina_i
+		}
+	}
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_iii }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_iii
+			add_idea = UIC_profits_in_indochina_ii
+		}
+	}
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_iv }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_iv
+			add_idea = UIC_profits_in_indochina_iii
+		}
+	}
+	if = {
+		limit = { has_idea = UIC_profits_in_indochina_v }
+		swap_ideas = {
+			remove_idea = UIC_profits_in_indochina_v
+			add_idea = UIC_profits_in_indochina_iv
+		}
+	}
+}
