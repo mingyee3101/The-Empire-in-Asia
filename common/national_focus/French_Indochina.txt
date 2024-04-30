@@ -28,7 +28,8 @@ focus_tree = {
 						character = FRA_leon_blum
 					}
 				}
-			}	
+			}
+			has_country_flag = UIC_wip
 		}
 
 		completion_reward = {
@@ -1299,7 +1300,7 @@ focus_tree = {
 		relative_position_id = UIC_infantry_combat
 
 		available = {
-				
+			has_completed_focus = UIC_local_conscription
 		}
 
 		completion_reward = {
@@ -1373,6 +1374,42 @@ focus_tree = {
 		relative_position_id = UIC_ecole_superieure_de_guerre
 
 		available = {
+			
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_indochinese_pilot_training
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_ecole_superieure_de_guerre_aerienne }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_ecole_superieure_de_guerre_aerienne
+
+		available = {
+			has_completed_focus = UIC_local_conscription
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_aircraft_production
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_indochina_air_force }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_indochina_air_force
+
+		available = {
 				
 		}
 
@@ -1384,8 +1421,8 @@ focus_tree = {
 	#해군
 	focus = {
 		id = UIC_far_east_squadron
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 7
+		icon = GFX_focus_UIC_far_east_squadron
+		cost = 5
 		x = 7
 		y = 0
 		relative_position_id = UIC_indochina_air_force

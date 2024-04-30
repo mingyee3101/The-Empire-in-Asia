@@ -19,6 +19,7 @@
   VIN_Tran_Van_Van:0 "쩐반반"
   VIN_Ngo_Dinh_Nhu:0 "응오딘뉴"
   VIN_Tran_Le_Xuan:0 "쩐레쑤언"
+  VIN_Phan_Boi_Chau:0 "판보이쩌우" #~1940 10 29 #민족주의자 #추가하기
 
   ###공산주의
   #지도자
@@ -32,6 +33,7 @@
   VIN_Vuong_Thua_Vu:0 "브엉트어부"
   VIN_Nguyen_Binh:0 "응우옌빈"
   VIN_Nguyen_Son:0 "응우옌선" #중국 홍군 유일 외국인 장교 #48년 소장 #추가하기
+  VIN_Huynh_Thuc_Khang:0 "후인툭캉" #미덕, 애국심 #추가하기
 
   #제독
   VIN_Ta_Xuan_Thu:0 "따쑤언투"

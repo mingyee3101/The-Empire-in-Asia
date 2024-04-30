@@ -22,6 +22,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_UIC_completion_of_North_South_railway.png"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_UIC_far_east_squadron"
+		texturefile = "gfx/interface/goals/focus_UIC_far_east_squadron.png"
+	}
+
 	#만주국
 
 	SpriteType = { 
