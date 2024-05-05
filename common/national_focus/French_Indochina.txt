@@ -846,7 +846,14 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
-			add_ideas = UIC_indochina_conservation_plan_i
+			effect_tooltip = {
+				add_ideas = UIC_indochina_conservation_plan_fake
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+		            modifier = UIC_indochina_conservation_plan
+		        }
+			}
 			add_doctrine_cost_reduction = {
 				name = UIC_indochina_conservation_plan
 				cost_reduction = 0.5
@@ -1039,16 +1046,23 @@ focus_tree = {
 		relative_position_id = UIC_indochina_conservation_plan
 
 		available = {
-			NOT = {
-				has_completed_focus = UIC_Rene_Robins_reign_continues
-			}	
+			or = {
+				#has_war_with = JAP
+				#has_war_with = CHI
+				any_enemy_country = {
+					is_major = yes
+					hidden_trigger = {
+						NOT = { original_tag = UIC }
+					}
+				}
+				surrender_progress > 0.1
+			}
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = UIC_indochina_conservation_plan_i
-				add_idea = UIC_indochina_conservation_plan_ii
-			}
+			custom_effect_tooltip = UIC_indochina_conservation_plan_ns_intro
+			add_to_variable = { UIC_indochina_conservation_plan_conscription_factor = 0.2 tooltip = conscription_factor_tt }
+			custom_effect_tooltip = UIC_indochina_revolution_foc_tt
 		}
 	}
 
@@ -1068,7 +1082,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
+			custom_effect_tooltip = UIC_indochina_revolution_big_foc_tt
 		}
 	}
 
@@ -1258,7 +1272,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_tirailleurs_indochinois }
 		mutually_exclusive = { focus = UIC_maintain_existing_tactics }
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_tirailleurs_indochinois
@@ -1269,6 +1283,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			#전술 개발 디버프
 		}
 	}
 
@@ -1276,7 +1291,7 @@ focus_tree = {
 		id = UIC_infantry_combat
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_new_tactics }
-		cost = 5
+		cost = 10
 		x = 2
 		y = 1
 		relative_position_id = UIC_new_tactics

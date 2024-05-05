@@ -1,0 +1,11 @@
+﻿#AIRCRAFT
+air_wings = {
+	671 = { 
+		small_plane_airframe_0 =  {
+			owner = "UIC" 
+			creator = "FRA"
+			amount = 80
+			version_name = "D.510"
+		}
+	}
+}

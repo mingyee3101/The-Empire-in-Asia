@@ -22,6 +22,13 @@ UIC_Indochina_flood = {
 	stability_factor = UIC_Indochina_flood_stability_factor
 }
 
+UIC_indochina_conservation_plan = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	army_core_defence_factor = UIC_indochina_conservation_plan_army_core_defence_factor
+	conscription_factor = UIC_indochina_conservation_plan_conscription_factor
+}
+
 UIC_tirailleurs_indochinois = {
 	icon = GFX_idea_generic_agrarian_reform
 

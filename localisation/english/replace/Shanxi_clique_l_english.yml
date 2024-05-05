@@ -29,3 +29,7 @@
  SHX:0 "산서"
  SHX_DEF:0 "산서"
  SHX_ADJ:0 "산서"
+
+ #특성
+ nodding_doll:0 "오뚝이"
+ model_governor:0 "모범 장관"

@@ -43,3 +43,8 @@
  PRC:0 "중국"
  PRC_DEF:0 "중국"
  PRC_ADJ:0 "중국"
+
+ #특성
+ national_unificationist:0 "국민통일주의자"
+ minister_of_finance:0 "재무부장관"
+ five_elders:0 "오장로"

@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ #북마크
+ UIC_GATHERING_STORM_DESC:0 "인도차이나"
+
  #인물
  UIC_Rene_Robin:0 "르네 로벵" #법학 박사 #총독 대행
  UIC_jules_brevie:0 "쥘 브레비예"
@@ -20,6 +23,9 @@
 
  #제독
  UIC_Georges_Thierry_d_Argenlieu:0 "조지 티에리 다르장리우" #45년
+
+ #특성
+ UIC_silent_workhorse:0 "조용한 일꾼"
 
  #정당
  UIC_fascism_party:0 "대월국가사회당"
@@ -164,7 +170,7 @@
  UIC_request_for_investment_in_france:0 "프랑스에 투자 요청"
  UIC_attracting_french_companies:0 "프랑스 기업 유치"
 
- UIC_local_conscription:0 "현지인 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
+ UIC_local_conscription:0 "현지인 추가 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
  UIC_cooperation_with_local_nationalists:0 "현지 민족주의자와 협력"
 
  #군사 중점
@@ -180,7 +186,7 @@
  UIC_supply_of_quality_equipment:0 "질 좋은 장비 보급"
  UIC_tank_armament:0 "전차 무장"
  UIC_new_tactics:0 "새로운 전술"
- UIC_infantry_combat:0 "보병 전투" #수정하기
+ UIC_infantry_combat:0 "전술 개혁" #수정하기
  UIC_infantry_combat_desc:0 "좋은 장비와 뛰어난 기술이 없는 우리는 보병을 잘 활용하여 전투를 해야합니다."
  UIC_colonial_army_training:0 "식민지군 훈련"
  UIC_colonial_army_training_desc:0 "새로운 훈련 방식을 도입하고 더 많은 식민지군을 훈련하여 적을 막을 것입니다."
@@ -203,6 +209,10 @@
  UIC_flood_preparedness_cf:0 "홍수를 대비함"
  UIC_suppression_a_rebellion:0 "반란을 진압함"
  UIC_wip:0 "§R개발 중§!"
+
+ #설명
+ UIC_indochina_revolution_foc_tt:0 "인도차이나에서 §R봉기§!가 발생하거나 §R주권§!을 갖는 국가가 생긴다면 §R치명적일§! 것입니다."
+ UIC_indochina_revolution_big_foc_tt:0 "인도차이나에서 §R봉기§!가 발생하거나 §R주권§!을 갖는 국가가 생긴다면 §R매우 치명적일§! 것입니다."
 
  #국민정신
  UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
@@ -233,6 +243,8 @@
  UIC_profits_in_indochina_v:0 "인도차이나에서의 이익"
  UIC_profit_growth_tt:0 "이익 §G증가§!.\n"
  UIC_profit_decreases_tt:0 "이익 §R감소§!.\n"
+ UIC_indochina_conservation_plan_fake:0 "인도차이나 보호 계획"
+ UIC_indochina_conservation_plan_ns_intro: "§Y$UIC_indochina_conservation_plan$§! 변동치"
  UIC_tirailleurs_indochinois_fake:0 "인도차이나 식민지군"
  UIC_tirailleurs_indochinois_ns_intro: "§Y$UIC_tirailleurs_indochinois$§! 변동치"
 
@@ -262,6 +274,9 @@
  UIC_foreign_support_category:0 "중국 지원"
  #UIC_supplying_materials_to_china:0 "중국에 물자 공급"
  UIC_supplying_materials_to_china_foc:0 "중국에 많은 물자 공급"
+ UIC_cooperation_with_warlords:0 "[From.GetName]과 협력"
+ #군벌에 자원지원+버프 주면서 영향력 행사(원정군 지원 받기 등)
+ UIC_supplying_supplies_to_warlords:0 "[From.GetName]에 물자 공급"
  UIC_improving_working_conditions_for_indochinese_people:0 "인도차이나인들의 노동 환경 개선"
  UIC_request_for_military_reinforcements_and_equipment_category:0 "장비와 군 증원 요청"
  UIC_infanterie_de_marine_reinforcements:0 "식민지 보병 연대 증원"

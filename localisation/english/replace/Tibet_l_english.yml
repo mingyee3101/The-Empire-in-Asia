@@ -1,8 +1,27 @@
 ﻿l_english:
 
  #인물
+ #티베트
  TIB_jamphel_yeshe_gyaltsen:0 "잠펠 예세 기아틀센"
  #부탄
  BHU_jigme_wangchuck:0 "지그메 왕축"
  #네팔
  NEP_juddha_rana:0 "주다 라나"
+
+ #국명
+ TIB_fascism:0 "티베트 제국"
+ TIB_fascism_DEF:0 "티베트 제국"
+ TIB_democratic:0 "티베트 공화국"
+ TIB_democratic_DEF:0 "티베트 공화국"
+ TIB_neutrality:0 "티베트"
+ TIB_neutrality_DEF:0 "티베트"
+ TIB_communism:0 "티베트 수도원 코뮌"
+ TIB_communism_DEF:0 "티베트 수도원 코뮌"
+ TIB_fascism_ADJ:0 "티베트"
+ TIB_democratic_ADJ:0 "티베트"
+ TIB_neutrality_ADJ:0 "티베트"
+ TIB_communism_ADJ:0 "티베트"
+ TIB:0 "티베트"
+ TIB_DEF:0 "티베트"
+ TIB_ADJ:0 "티베트"
+ #PRC_TIB_communism:0 "중화소비에트 중앙위원회 티베트 자치 정부" #中华苏维埃中央博巴自治政府

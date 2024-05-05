@@ -63,6 +63,16 @@
   ###파시즘
   VIN_Tran_Trong_Kim:0 "쩐쫑낌"
 
+  #특성
+  revolutionary_leader:0 "혁명 지도자"
+  liberal_politician:0 "자유주의 정치가"
+  dictator_Ngo_Dinh_Diem:0 "독재자"
+  co_van_chinh_tri:0 "정치고문"
+  dragon_lady:0 "드래곤 레이디"
+  bo_truong_bo_y_te:0 "보건부장관"
+  respected_emperor:0 "존경받는 황제"
+  bac_ho:0 "호 아저씨"
+
   #정당
   VIN_fascism_party:0 "대월국가사회당"
   VIN_fascism_party_long:0 "대월국가사회당"

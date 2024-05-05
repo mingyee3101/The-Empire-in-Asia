@@ -1,0 +1,40 @@
+﻿l_english:
+
+ #인물
+ #YUN_long_yun:0 "롱윈"
+ #정치고문
+ Miao Yuntai:0 "먀오윈타이" #缪云台 #운남주화 발행 #경제위원회 상임위원회 위원장(지역 산업 발전 기여)
+ #장군
+ An Enpu:0 "안언푸" #安恩溥 #삼훈(정직은 신성함, 근면은 전능함, 나는 다 악함)과 삼계명(자랑, 도박, 음행을 버리라)을 제정 #식수 오염 문제 해결
+
+
+ #정당
+ YUN_fascism_party:0 "국민당"
+ YUN_fascism_party_long:0 "국민당"
+ YUN_democratic_party:0 "국민당"
+ YUN_democratic_party_long:0 "국민당"
+ YUN_communism_party:0 "국민당"
+ YUN_communism_party_long:0 "국민당"
+ YUN_neutrality_party:0 "국민당"
+ YUN_neutrality_party_long:0 "국민당"
+
+ #국명
+ YUN_fascism:0 "운남제국"
+ YUN_fascism_DEF:0 "운남제국"
+ YUN_democratic:0 "운남독립공화국"
+ YUN_democratic_DEF:0 "운남독립공화국"
+ YUN_neutrality:0 "운남군벌"
+ YUN_neutrality_DEF:0 "운남군벌"
+ YUN_communism:1 "운남소비에트공화국"
+ YUN_communism_DEF:1 "운남소비에트공화국"
+ YUN_fascism_ADJ:0 "운남"
+ YUN_democratic_ADJ:0 "운남"
+ YUN_neutrality_ADJ:0 "운남"
+ YUN_communism_ADJ:0 "운남"
+ YUN:0 "운남"
+ YUN_DEF:0 "운남"
+ YUN_ADJ:0 "운남"
+ #PRC_YUN_communism:0 "운남 변경구" #边区
+
+ #특성
+ king_of_yunnan:0 "운남왕"

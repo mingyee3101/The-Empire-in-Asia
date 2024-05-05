@@ -132,6 +132,8 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 }
 
 UIC_foreign_support_category = {
+#중국 지원
+#지원으로 어느정도 영향력을 얻으면 새로운 요구를 할 수 있음
 
 	UIC_supplying_materials_to_china = {
 		icon = generic_construction
@@ -184,12 +186,6 @@ UIC_foreign_support_category = {
 		cost = 25
 		days_remove = 50
 		complete_effect = {
-			if = {
-				limit = {
-					has_war_support < 0.6
-				}
-				add_war_support = 0.05
-			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -1000
@@ -203,6 +199,7 @@ UIC_foreign_support_category = {
 					producer = UIC
 				}
 			}
+			#인도차이나에게 보상주기
 		}
 	}
 
@@ -251,12 +248,6 @@ UIC_foreign_support_category = {
 		cost = 10
 		days_remove = 10
 		complete_effect = {
-			if = {
-				limit = {
-					has_war_support < 0.6
-				}
-				add_war_support = 0.05
-			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -2000
@@ -270,7 +261,123 @@ UIC_foreign_support_category = {
 					producer = UIC
 				}
 			}
+			#인도차이나에게 보상주기
 		}
+	}
+
+	UIC_cooperation_with_warlords = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			FROM = {
+				is_neighbor_of = ROOT
+			}
+			has_global_flag = UIC_supplying_materials_to_china
+			not = {
+				has_global_flag = UIC_cooperation_with_warlords
+			}
+		}	
+
+		#fire_only_once = yes
+		#days_remove = 100
+
+		target_trigger = {
+			FROM = {
+				is_china_nc_tag = yes
+				not = {
+					has_war_with = UIC
+				}
+				not = {
+					original_tag = CHI
+				}
+			}
+		}
+
+		target_root_trigger = {
+			#중원을 지배하면 안됨
+		}
+
+		target_array = neighbors
+		
+		complete_effect = {
+			FROM = {
+				country_event = { id = uic.9 }
+			}
+		}	
+
+	}
+
+	UIC_supplying_supplies_to_warlords = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			FROM = {
+				is_neighbor_of = ROOT
+			}
+			has_global_flag = UIC_supplying_materials_to_china
+		}	
+
+		#fire_only_once = yes
+
+		target_root_trigger = {
+			has_country_flag = UIC_cooperation_with_warlords
+			#중원을 지배하면 안됨
+		}
+
+		target_trigger = {
+			FROM = {
+				is_china_nc_tag = yes
+				not = {
+					has_war_with = UIC
+				}
+				not = {
+					original_tag = CHI
+				}
+			}
+		}
+
+		target_array = neighbors
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		days_remove = 10
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = UIC
+				}
+			}
+			#인도차이나에게 보상주기
+		}
+
 	}
 	
 }
