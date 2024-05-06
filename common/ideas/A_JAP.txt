@@ -32,5 +32,12 @@ ideas = {
 				ai_get_ally_desire_factor = -5000
 			}
 		}
+		JAP_land_reform_idea = {
+            name = JAP_land_reform
+			modifier = {
+                production_speed_infrastructure_factor = 0.1
+                local_building_slots_factor = 0.15
+			}
+		}
 	}
 }
