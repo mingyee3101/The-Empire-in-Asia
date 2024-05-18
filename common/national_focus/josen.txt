@@ -3,11 +3,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = kor
 		}
 	}
-	continuous_focus_position = { x = 1000 y = 500 }
+	continuous_focus_position = { x = 800 y = 1500 } 
 	default = no
 	focus = {
 		id = kr_1
@@ -21,11 +21,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kr_44
+		id = kr_29
 		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 5
-		y = 25
+		x = 19
+		y = 5
 
 	}
 	focus = {
@@ -40,7 +40,23 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kr_2
+		id = kr_77
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 23
+		y = 22
+
+	}
+	focus = {
+		id = kr_158
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 47
+		y = 25
+
+	}
+	focus = {
+		id = kr_4
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -51,36 +67,25 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kr_4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_2
-		}
-		x = 5
-		y = 4
-
-	}
-	focus = {
-		id = kr_6
+		id = k3
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = kr_4
 		}
 		x = 5
-		y = 5
+		y = 4
 
 	}
 	focus = {
-		id = kr_15
+		id = k2
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_6
+			focus = k3
 		}
-		x = 3
-		y = 6
+		x = 5
+		y = 5
 
 	}
 	focus = {
@@ -88,10 +93,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_6
+			focus = k2
 		}
 		x = 5
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -102,7 +107,7 @@ focus_tree = {
 			focus = kr_7
 		}
 		x = 5
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -113,7 +118,7 @@ focus_tree = {
 			focus = kr_8
 		}
 		x = 5
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -124,7 +129,7 @@ focus_tree = {
 			focus = kr_9
 		}
 		x = 5
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -135,139 +140,205 @@ focus_tree = {
 			focus = kr_16
 		}
 		x = 5
-		y = 10
+		y = 11
 
 	}
 	focus = {
-		id = kr_18
+		id = kr_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_17
+		}
+		x = 3
+		y = 12
+
+	}
+	focus = {
+		id = kr_26
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = kr_17
 		}
 		x = 5
-		y = 11
-
-	}
-	focus = {
-		id = kr_19
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_18
-		}
-		x = 5
 		y = 12
 
 	}
 	focus = {
-		id = kr_20
+		id = kr_27
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_19
+			focus = kr_26
 		}
 		x = 5
 		y = 13
 
 	}
 	focus = {
-		id = kr_21
+		id = kr_28
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_20
+			focus = kr_27
 		}
 		x = 5
 		y = 14
 
 	}
 	focus = {
-		id = kr_29
+		id = kr_41
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_21
+			focus = kr_28
 		}
 		x = 5
-		y = 15
-
-	}
-	focus = {
-		id = kr_30
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_29
-		}
-		x = 4
 		y = 16
 
 	}
 	focus = {
-		id = kr_33
+		id = kr_42
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_29
+			focus = kr_41
 		}
-		x = 6
-		y = 16
-
-	}
-	focus = {
-		id = kr_34
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_33
-		}
-		x = 6
+		x = 5
 		y = 17
 
 	}
 	focus = {
-		id = kr_35
+		id = kr_43
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_34
+			focus = kr_42
 		}
-		x = 6
+		x = 5
 		y = 18
 
 	}
 	focus = {
-		id = kr_3
+		id = k5
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_2
+			focus = kr_43
 		}
-		x = 7
-		y = 4
+		x = 5
+		y = 19
 
 	}
 	focus = {
-		id = kr_5
+		id = k6
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_3
+			focus = k5
 		}
-		x = 7
-		y = 5
+		x = 5
+		y = 20
 
 	}
 	focus = {
-		id = kr_10
+		id = k7
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_6
+			focus = k6
+		}
+		x = 5
+		y = 21
+
+	}
+	focus = {
+		id = k8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k7
+		}
+		x = 5
+		y = 22
+
+	}
+	focus = {
+		id = k12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k8
+		}
+		x = 5
+		y = 23
+
+	}
+	focus = {
+		id = k9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k12
+		}
+		x = 5
+		y = 24
+
+	}
+	focus = {
+		id = kr_44
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k9
+		}
+		x = 5
+		y = 25
+
+	}
+	focus = {
+		id = k10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_44
+		}
+		x = 5
+		y = 26
+
+	}
+	focus = {
+		id = k11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k10
+		}
+		x = 5
+		y = 27
+
+	}
+	focus = {
+		id = k4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k2
 		}
 		x = 7
 		y = 6
+
+	}
+	focus = {
+		id = kr_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k4
+		}
+		x = 7
+		y = 7
 
 	}
 	focus = {
@@ -275,10 +346,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_10
+			focus = kr_6
 		}
 		x = 7
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -289,40 +360,299 @@ focus_tree = {
 			focus = kr_11
 		}
 		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = kr_48
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k11
+		}
+		mutually_exclusive = {
+			focus = kr_47
+		}
+		x = 7
+		y = 28
+
+	}
+	focus = {
+		id = kr_46
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_48
+		}
+		x = 7
+		y = 29
+
+	}
+	focus = {
+		id = kr_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_29
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = kr_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_30
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = kr_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_31
+		}
+		x = 16
 		y = 8
 
 	}
 	focus = {
-		id = kr_26
+		id = kr_33
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_17
+			focus = kr_29
 		}
-		x = 7
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = kr_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_33
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = kr_35
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_34
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = kr_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_32
+		}
+		prerequisite = {
+			focus = kr_35
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = kr_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_36
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = kr_38
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_36
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = kr_40
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_38
+		}
+		x = 19
 		y = 11
 
 	}
 	focus = {
-		id = kr_27
+		id = k1
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_26
+			focus = kr_29
 		}
-		x = 7
-		y = 12
+		x = 22
+		y = 6
 
 	}
 	focus = {
-		id = kr_28
+		id = kr_18
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_27
+			focus = k1
 		}
-		x = 7
-		y = 13
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = kr_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_18
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = kr_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_19
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = kr_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_20
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = kr_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k1
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = kr_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_15
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = kr_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_14
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = kr_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_13
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = kr_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = k1
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = kr_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_3
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = kr_78
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_77
+		}
+		x = 23
+		y = 23
+
+	}
+	focus = {
+		id = kr_81
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_78
+		}
+		x = 25
+		y = 24
+
+	}
+	focus = {
+		id = kr_83
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_81
+		}
+		x = 24
+		y = 25
 
 	}
 	focus = {
@@ -445,7 +775,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = kr_61
 		}
-		x = 19
+		x = 23
 		y = 13
 
 	}
@@ -599,25 +929,75 @@ focus_tree = {
 
 	}
 	focus = {
-		id = kr_13
+		id = kr_161
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_14
+			focus = kr_158
 		}
-		x = 3
-		y = 8
+		x = 45
+		y = 26
 
 	}
 	focus = {
-		id = kr_14
+		id = kr_159
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_15
+			focus = kr_158
 		}
-		x = 3
-		y = 7
+		x = 47
+		y = 26
+
+	}
+	focus = {
+		id = kr_162
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_161
+		}
+		prerequisite = {
+			focus = kr_159
+		}
+		x = 46
+		y = 27
+
+	}
+	focus = {
+		id = kr_160
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_158
+		}
+		x = 49
+		y = 26
+
+	}
+	focus = {
+		id = kr_163
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_160
+		}
+		x = 48
+		y = 27
+
+	}
+	focus = {
+		id = kr_164
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = kr_163
+		}
+		prerequisite = {
+			focus = kr_162
+		}
+		x = 47
+		y = 28
 
 	}
 	focus = {
@@ -636,90 +1016,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_24
-		}
-		x = 3
-		y = 13
-
-	}
-	focus = {
-		id = kr_24
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
 			focus = kr_25
 		}
 		x = 3
-		y = 12
-
-	}
-	focus = {
-		id = kr_25
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_17
-		}
-		x = 3
-		y = 11
-
-	}
-	focus = {
-		id = kr_31
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_30
-		}
-		x = 4
-		y = 17
-
-	}
-	focus = {
-		id = kr_32
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_31
-		}
-		x = 4
-		y = 18
-
-	}
-	focus = {
-		id = kr_36
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_32
-		}
-		prerequisite = {
-			focus = kr_35
-		}
-		x = 5
-		y = 19
-
-	}
-	focus = {
-		id = kr_37
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_36
-		}
-		x = 4
-		y = 20
-
-	}
-	focus = {
-		id = kr_38
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_36
-		}
-		x = 6
-		y = 20
+		y = 13
 
 	}
 	focus = {
@@ -732,52 +1032,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_37
 		}
-		x = 5
-		y = 21
-
-	}
-	focus = {
-		id = kr_40
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_38
-		}
-		x = 7
-		y = 21
-
-	}
-	focus = {
-		id = kr_41
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_39
-		}
-		x = 5
-		y = 22
-
-	}
-	focus = {
-		id = kr_42
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_41
-		}
-		x = 5
-		y = 23
-
-	}
-	focus = {
-		id = kr_43
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_42
-		}
-		x = 5
-		y = 24
+		x = 17
+		y = 11
 
 	}
 	focus = {
@@ -785,27 +1041,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_44
-		}
-		mutually_exclusive = {
-			focus = kr_46
+			focus = kr_47
 		}
 		x = 3
-		y = 26
-
-	}
-	focus = {
-		id = kr_46
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_44
-		}
-		mutually_exclusive = {
-			focus = kr_45
-		}
-		x = 7
-		y = 26
+		y = 29
 
 	}
 	focus = {
@@ -813,21 +1052,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = kr_45
+			focus = k11
+		}
+		mutually_exclusive = {
+			focus = kr_48
 		}
 		x = 3
-		y = 27
-
-	}
-	focus = {
-		id = kr_48
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_46
-		}
-		x = 7
-		y = 27
+		y = 28
 
 	}
 	focus = {
@@ -837,7 +1068,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_60
 		}
-		x = 19
+		x = 23
 		y = 14
 
 	}
@@ -848,7 +1079,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_62
 		}
-		x = 16
+		x = 20
 		y = 15
 
 	}
@@ -859,7 +1090,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_63
 		}
-		x = 16
+		x = 20
 		y = 16
 
 	}
@@ -870,7 +1101,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_64
 		}
-		x = 15
+		x = 19
 		y = 17
 
 	}
@@ -881,7 +1112,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_64
 		}
-		x = 17
+		x = 21
 		y = 17
 
 	}
@@ -895,7 +1126,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_66
 		}
-		x = 16
+		x = 20
 		y = 18
 
 	}
@@ -906,7 +1137,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_66
 		}
-		x = 18
+		x = 22
 		y = 18
 
 	}
@@ -917,7 +1148,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_65
 		}
-		x = 14
+		x = 18
 		y = 18
 
 	}
@@ -934,7 +1165,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_68
 		}
-		x = 16
+		x = 20
 		y = 19
 
 	}
@@ -945,7 +1176,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_70
 		}
-		x = 16
+		x = 20
 		y = 20
 
 	}
@@ -956,7 +1187,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_71
 		}
-		x = 16
+		x = 20
 		y = 21
 
 	}
@@ -967,7 +1198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_72
 		}
-		x = 16
+		x = 20
 		y = 22
 
 	}
@@ -978,7 +1209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_71
 		}
-		x = 14
+		x = 18
 		y = 21
 
 	}
@@ -989,7 +1220,7 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_74
 		}
-		x = 14
+		x = 18
 		y = 22
 
 	}
@@ -1000,30 +1231,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_75
 		}
-		x = 14
+		x = 18
 		y = 23
-
-	}
-	focus = {
-		id = kr_77
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_73
-		}
-		x = 16
-		y = 23
-
-	}
-	focus = {
-		id = kr_78
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_77
-		}
-		x = 16
-		y = 24
 
 	}
 	focus = {
@@ -1033,8 +1242,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_78
 		}
-		x = 16
-		y = 25
+		x = 23
+		y = 24
 
 	}
 	focus = {
@@ -1044,19 +1253,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_78
 		}
-		x = 14
-		y = 25
-
-	}
-	focus = {
-		id = kr_81
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_78
-		}
-		x = 18
-		y = 25
+		x = 21
+		y = 24
 
 	}
 	focus = {
@@ -1066,19 +1264,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_80
 		}
-		x = 15
-		y = 26
-
-	}
-	focus = {
-		id = kr_83
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_81
-		}
-		x = 17
-		y = 26
+		x = 22
+		y = 25
 
 	}
 	focus = {
@@ -1091,8 +1278,8 @@ focus_tree = {
 		prerequisite = {
 			focus = kr_83
 		}
-		x = 16
-		y = 27
+		x = 23
+		y = 26
 
 	}
 	focus = {
@@ -1785,89 +1972,6 @@ focus_tree = {
 		}
 		x = 44
 		y = 61
-
-	}
-	focus = {
-		id = kr_158
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_110
-		}
-		x = 35
-		y = 28
-
-	}
-	focus = {
-		id = kr_159
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_158
-		}
-		x = 35
-		y = 29
-
-	}
-	focus = {
-		id = kr_160
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_158
-		}
-		x = 37
-		y = 29
-
-	}
-	focus = {
-		id = kr_161
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_158
-		}
-		x = 33
-		y = 29
-
-	}
-	focus = {
-		id = kr_162
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_161
-		}
-		prerequisite = {
-			focus = kr_159
-		}
-		x = 34
-		y = 30
-
-	}
-	focus = {
-		id = kr_163
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_160
-		}
-		x = 36
-		y = 30
-
-	}
-	focus = {
-		id = kr_164
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = kr_163
-		}
-		prerequisite = {
-			focus = kr_162
-		}
-		x = 35
-		y = 31
 
 	}
 }

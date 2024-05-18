@@ -1,0 +1,4 @@
+﻿l_english:
+ production_speed_bunker_factor_tt: " $modifier_production_speed_bunker_factor$: $RIGHT|+=%1$" #요새 건설속도
+ industry_air_damage_factor_tt:0 " $MODIFIER_INDUSTRY_AIR_DAMAGE_FACTOR$: $RIGHT|-=%1$" #공장 폭격 취약도
+ naval_speed_factor_tt:0 " $MODIFIER_NAVAL_SPEED_FACTOR$: $RIGHT|+=%1$" #해군 속도

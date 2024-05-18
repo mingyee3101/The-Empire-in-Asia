@@ -1,4 +1,5 @@
 add_namespace = uic
+add_namespace = uicuprising
 
 country_event = {
 	id = uic.1
@@ -15,52 +16,62 @@ country_event = {
 		}
 
 		JAP = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		CHI = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		SOV = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		FRA = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		ENG = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		GER = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		ITA = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		USA = {
-			country_event = { id = uic.2 }
+			country_event = { id = uic.2 days = 5 }
 		}
 		if = {
 			limit = {
-				has_country_flag = UIC_flood_preparedness_cf
+				has_country_flag = UIC_flood_preparedness_ii
 			}
-			add_dynamic_modifier = { idea = UIC_Indochina_flood days = 240 }
-			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = 0.2 }
-			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.3 }
-			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.3 }
-			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.3 }
-			add_to_variable = { UIC_Indochina_stability_factor = -0.1 }
+			add_timed_idea = {
+				idea = UIC_Indochina_flood_iii
+				days = 150
+			}
 		}
-		if = {
+		else_if = {
 			limit = {
-				NOT = {
-					has_country_flag = UIC_flood_preparedness_cf
+				has_country_flag = UIC_flood_preparedness_i
+			}
+			add_timed_idea = {
+				idea = UIC_Indochina_flood_ii
+				days = 200
+			}
+			custom_effect_tooltip = UIC_preparing_for_an_uprising_i_tt
+		}
+		else_if = {
+			limit = {
+				or = {
+					not = {
+						has_country_flag = UIC_flood_preparedness_i
+						has_country_flag = UIC_flood_preparedness_ii
+					}
 				}
 			}
-			add_dynamic_modifier = { idea = UIC_Indochina_flood days = 360 }
-			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = 0.3 }
-			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.5 }
-			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.5 }
-			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.5 }
-			add_to_variable = { UIC_Indochina_stability_factor = -0.3 }
+			add_timed_idea = {
+				idea = UIC_Indochina_flood_i
+				days = 300
+			}
+			custom_effect_tooltip = UIC_preparing_for_an_uprising_ii_tt
 		}
 		hidden_effect = {
 			set_country_flag = UIC_flood_occurs
@@ -82,25 +93,26 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 50
-				original_tag = CHI
-				PREV = {
-					is_subject_of = ROOT
-				}
-				ROOT = {
-					has_opinion = {
-						target = PREV
-						value > 75
+				or = {
+					original_tag = CHI
+					FROM = {
+						is_subject_of = ROOT
+					}
+					ROOT = {
+						has_opinion = {
+							target = FROM
+							value > 75
+						}
 					}
 				}
 			}
 		}
-		PREV = {
-			country_event = { id = uic.3 }
+		FROM = {
+			country_event = { id = uic.3 days = 5 }
 		}
 		#관계개선
-		#소비재 10% 120일
-		add_timed_idea = { idea = UIC_flood_relief_i days = 120 }
-		add_political_power = -100
+		#소비재 10% 60일
+		add_timed_idea = { idea = UIC_flood_relief_i days = 60 }
 		ROOT = {
 			add_opinion_modifier = {
 				target = UIC
@@ -115,21 +127,22 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 30
-				original_tag = JAP
-				original_tag = SOV
-				original_tag = FRA
-				original_tag = ENG
-				original_tag = USA
+				or = {
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = USA
+				}
 			}
 		}
 
-		PREV = {
-			country_event = { id = uic.4 }
+		FROM = {
+			country_event = { id = uic.4 days = 5 }
 		}
 		#관계개선
-		#소비재 5% 120일
-		add_timed_idea = { idea = UIC_flood_relief_ii days = 120 }
-		add_political_power = -50
+		#소비재 5% 60일
+		add_timed_idea = { idea = UIC_flood_relief_ii days = 60 }
 		ROOT = {
 			add_opinion_modifier = {
 				target = UIC
@@ -145,6 +158,10 @@ country_event = {
 			modifier = {
 				factor = 100
 				has_war_with = PREV
+				has_opinion = {
+					target = UIC
+					value < -20
+				}
 			}
 		}
 	}
@@ -163,11 +180,39 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_dynamic_modifier = { idea = UIC_Indochina_flood days = -30 }
-		add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.02 }
-		add_to_variable = { UIC_Indochina_flood_monthly_population = -0.02 }
-		add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.2 }
-		add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.2 }
+		if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_iii
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_iii
+				days = -30
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_ii
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_ii
+				days = -30
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_i
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_i
+				days = -30
+			}
+		}
 		add_stability = 0.03
 		add_political_power = 50
 	}
@@ -186,11 +231,39 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_dynamic_modifier = { idea = UIC_Indochina_flood days = -10 }
-			add_to_variable = { UIC_Indochina_flood_consumer_goods_factor = -0.01 }
-			add_to_variable = { UIC_Indochina_flood_monthly_population = -0.01 }
-			add_to_variable = { UIC_Indochina_flood_production_speed_buildings_factor = -0.01 }
-			add_to_variable = { UIC_Indochina_flood_industrial_capacity_factory = -0.01 }
+		if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_iii
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_iii
+				days = -10
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_ii
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_ii
+				days = -10
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_Indochina_flood_i
+				}
+			}
+			modify_timed_idea = {
+				idea = UIC_Indochina_flood_i
+				days = -10
+			}
+		}
 		add_stability = 0.01
 		add_political_power = 20
 	}
@@ -358,7 +431,157 @@ country_event = {
 	option = {
 		name = uic.11.a
 		ai_chance = {
-			base = 11
+			base = 10
+		}
+	}
+}
+
+#해군기지 건설 계획
+country_event = {
+	id = uic.12
+	title = uic.12.t
+	desc = uic.12.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.12.a #타이만
+		ai_chance = {
+			base = 0
+		}
+		custom_effect_tooltip = UIC_indochina_conservation_plan_ns_intro
+		add_to_variable = { UIC_indochina_conservation_plan_naval_damage_factor = 0.15 tooltip = naval_damage_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_defense_factor = -0.05 tooltip = naval_defense_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_speed_factor = 0.05 tooltip = naval_speed_factor_tt }
+		if = {
+			limit = {
+				has_full_control_of_state = 982
+			}
+			#락자
+			982 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 4284
+				}
+			}
+		}
+	}
+
+	option = {
+		name = uic.12.b #하이퐁
+		ai_chance = {
+			base = 0
+		}
+		custom_effect_tooltip = UIC_indochina_conservation_plan_ns_intro
+		add_to_variable = { UIC_indochina_conservation_plan_naval_damage_factor = 0.1 tooltip = naval_damage_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_industry_air_damage_factor = 0.1 tooltip = industry_air_damage_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_defense_factor = 0.05 tooltip = naval_defense_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_speed_factor = 0.05 tooltip = naval_speed_factor_tt }
+		if = {
+			limit = {
+				has_full_control_of_state = 970
+			}
+			#하이퐁
+			970 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 4119
+				}
+			}
+		}
+	}
+
+	option = {
+		name = uic.12.c #카인호아
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = UIC_indochina_conservation_plan_ns_intro
+		add_to_variable = { UIC_indochina_conservation_plan_naval_damage_factor = 0.05 tooltip = naval_damage_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_industry_air_damage_factor = -0.1 tooltip = industry_air_damage_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_defense_factor = 0.1 tooltip = naval_defense_factor_tt }
+		add_to_variable = { UIC_indochina_conservation_plan_naval_speed_factor = 0.05 tooltip = naval_speed_factor_tt }
+		if = {
+			limit = {
+				has_full_control_of_state = 979
+			}
+			#냐짱
+			979 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 10162
+				}
+			}
+		}
+	}
+}
+
+#요새 건설 계획
+country_event = {
+	id = uic.13
+	title = uic.13.t
+	desc = uic.13.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.13.a
+		ai_chance = {
+			base = 13
+		}
+	}
+}
+
+#혁명 이벤트
+country_event = {
+	id = uicuprising.1
+	title = uicuprising.1.t
+	desc = uicuprising.1.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicuprising.1.a
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = { ideology = communism popularity = 0.05 }
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = uicuprising.1 days = 100 } #공산주의
+		}
+	}
+
+	option = {
+		name = uicuprising.1.b
+		ai_chance = {
+			base = 10
+		}
+		delete_unit_template_and_units = { division_template = "인도차이나 공산당 민병대" disband = no }
+		add_popularity = { ideology = communism popularity = -0.05 }
+		hidden_effect = {
+			delete_unit = { id = 1911 disband = no }
+		}
+	}
+
+	option = {
+		name = uicuprising.1.c
+		ai_chance = {
+			base = 10
+		}
+		delete_unit_template_and_units = { division_template = "인도차이나 공산당 민병대" disband = no }
+		add_popularity = { ideology = communism popularity = -0.1 }
+		hidden_effect = {
+			delete_unit = { id = 1911 disband = no }
 		}
 	}
 }

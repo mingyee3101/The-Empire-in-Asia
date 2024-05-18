@@ -217,7 +217,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
--1;-1;;-1;-1;-1;-1;-1;-1 
 
 #####
 13363;7432;sea;4240;-1;-1;-1;-1;;phu quoc-cambodia

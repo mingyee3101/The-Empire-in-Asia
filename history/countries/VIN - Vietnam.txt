@@ -117,6 +117,7 @@ recruit_character = VIN_Le_Trong_Tan
 recruit_character = VIN_Chu_Huy_Man
 recruit_character = VIN_Vuong_Thua_Vu
 recruit_character = VIN_Nguyen_Binh
+recruit_character = VIN_Nguyen_Son
 
 #recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이
 
@@ -135,11 +136,13 @@ recruit_character = VIN_Pham_Van_dong
 recruit_character = VIN_Nguyen_Van_Linh
 recruit_character = VIN_Hoang_Minh_Dao
 recruit_character = VIN_Pham_Ngoc_Thach
+recruit_character = VIN_Huynh_Thuc_Khang
 
 #민주
 recruit_character = VIN_Tran_Van_Van
 recruit_character = VIN_Ngo_Dinh_Nhu
 recruit_character = VIN_Tran_Le_Xuan
+recruit_character = VIN_Phan_Boi_Chau
 
 #인도차이나
 recruit_character = VIN_nguyen_van_thinh
@@ -147,6 +150,8 @@ recruit_character = VIN_bui_quang_chieu
 
 #비동맹
 recruit_character = VIN_Nguyen_Phuc_Buu_Loc
+recruit_character = VIN_Phan_Ke_Toai
+recruit_character = VIN_Nguyen_Xuan_Chu
 
 ###제독###
 #공산
@@ -159,6 +164,8 @@ VIN_Nguyen_Van_Xuan = { set_nationality = UIC }
 VIN_Nguyen_Van_Hinh = { set_nationality = UIC }
 VIN_nguyen_van_thinh = { set_nationality = UIC }
 VIN_bui_quang_chieu = { set_nationality = UIC }
+
+VIN_Nguyen_Son = { set_nationality = PRC }
 
 set_politics = {
 	ruling_party = neutrality

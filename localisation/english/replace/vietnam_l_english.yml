@@ -9,8 +9,8 @@
   #장군
   VIN_Nguyen_Van_Xuan:0 "응우옌반쑤언" #39 대령 45년 Quan năm(Đại tá) 대령~준장 사이 47 준장
   VIN_Le_Van_Ty:0 "레반띠" #30년 초 준위 34 소위 40 중위
-  VIN_Nguyen_Giac_Ngo:0 "응우옌지악응오" #추가하기 40 중위 #호아하오교
-  VIN_Nguyen_Van_Van:0 "응우옌반번" #추가하기 #41 소위 43 중위 45 대위
+  VIN_Nguyen_Giac_Ngo:0 "응우옌지악응오" 40 중위 #호아하오교
+  VIN_Nguyen_Van_Van:0 "응우옌반번" #41 소위 43 중위 45 대위
   VIN_Nguyen_Van_Hinh:0 "응우옌반힝" #36년 프랑스 공군 입대 37년 준위 48년 중위 #폭격기
 
   #정치고문
@@ -19,7 +19,8 @@
   VIN_Tran_Van_Van:0 "쩐반반"
   VIN_Ngo_Dinh_Nhu:0 "응오딘뉴"
   VIN_Tran_Le_Xuan:0 "쩐레쑤언"
-  VIN_Phan_Boi_Chau:0 "판보이쩌우" #~1940 10 29 #민족주의자 #추가하기
+  VIN_Phan_Boi_Chau:0 "판보이쩌우" #~1940 10 29 #민족주의자
+  VIN_Tran_Van_Do:0 "쩐반도" #추가하기 #외교부장관
 
   ###공산주의
   #지도자
@@ -32,8 +33,7 @@
   VIN_Chu_Huy_Man:0 "추후이먼"
   VIN_Vuong_Thua_Vu:0 "브엉트어부"
   VIN_Nguyen_Binh:0 "응우옌빈"
-  VIN_Nguyen_Son:0 "응우옌선" #중국 홍군 유일 외국인 장교 #48년 소장 #추가하기
-  VIN_Huynh_Thuc_Khang:0 "후인툭캉" #미덕, 애국심 #추가하기
+  VIN_Nguyen_Son:0 "응우옌선" #중국 홍군 유일 외국인 장교 #48년 소장
 
   #제독
   VIN_Ta_Xuan_Thu:0 "따쑤언투"
@@ -49,6 +49,7 @@
   VIN_Nguyen_Van_Linh:0 "응우옌반린"
   VIN_Hoang_Minh_Dao:0 "호앙민다오"
   VIN_Pham_Ngoc_Thach:0 "팜응옥타익"
+  VIN_Huynh_Thuc_Khang:0 "후인툭캉" #미덕, 애국심
 
   ###트로츠키
   VIN_Ta_Thu_Thau:0 "따투터우"
@@ -59,6 +60,8 @@
 
   #정치고문
   VIN_Nguyen_Phuc_Buu_Loc:0 "응우옌푹부록"
+  VIN_Phan_Ke_Toai:0 "판께또아이" #모든 이념 가능 #Phan Kế Toại #흠차대신
+  VIN_Nguyen_Xuan_Chu:0 "응우옌쑤언츠" #추가하기 #공산주의, 응오딘지엠 정부는 안됨 #정치최고위원회위원장
 
   ###파시즘
   VIN_Tran_Trong_Kim:0 "쩐쫑낌"
@@ -70,6 +73,9 @@
   co_van_chinh_tri:0 "정치고문"
   dragon_lady:0 "드래곤 레이디"
   bo_truong_bo_y_te:0 "보건부장관"
+  ardent_nationalist:0 "열렬한 민족주의자"
+  virtuous_patriot:0 "미덕적인 애국자"
+  supported_patriot:0 "지지받는 애국주의자"
   respected_emperor:0 "존경받는 황제"
   bac_ho:0 "호 아저씨"
 

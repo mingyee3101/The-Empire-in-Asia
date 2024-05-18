@@ -82,3 +82,373 @@ UIC_profits_in_indochina_level_down = {
 		}
 	}
 }
+
+#인도차이나 민족주의자 관리
+#Faction System Political Instability Update Effect - No longer ideology-limited
+UIC_political_instability_update_effect = {
+	hidden_effect = {
+		### MONARCHISTS ###
+		if = { #LOYAL MONARCHISTS
+			limit = {
+				check_variable = { UIC_monarchist_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_loyal_monarchists }
+				}
+				add_ideas = UIC_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_monarchists
+				}
+				remove_ideas = UIC_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_monarchists
+				}
+				remove_ideas = UIC_hostile_monarchists
+			}
+		}
+		else_if = { #FRIENDLY MONARCHISTS
+			limit = {
+				check_variable = { UIC_monarchist_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_friendly_monarchists }
+				}
+				add_ideas = UIC_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_monarchists
+				}
+				remove_ideas = UIC_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_monarchists
+				}
+				remove_ideas = UIC_hostile_monarchists
+			}
+		}
+		else_if = { #HOSTILE MONARCHISTS
+			limit = {
+				check_variable = { UIC_monarchist_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_hostile_monarchists }
+				}
+				add_ideas = UIC_hostile_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_monarchists
+				}
+				remove_ideas = UIC_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_monarchists
+				}
+				remove_ideas = UIC_friendly_monarchists
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL MONARCHISTS
+			if = {
+				limit = {
+					has_idea = UIC_loyal_monarchists
+				}
+				remove_ideas = UIC_loyal_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_monarchists
+				}
+				remove_ideas = UIC_friendly_monarchists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_monarchists
+				}
+				remove_ideas = UIC_hostile_monarchists
+			}
+		}
+
+		### REPUBLICANS ###
+		if = { #LOYAL REPUBLICANS
+			limit = {
+				check_variable = { UIC_republican_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_loyal_republicans }
+				}
+				add_ideas = UIC_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_republicans
+				}
+				remove_ideas = UIC_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_republicans
+				}
+				remove_ideas = UIC_hostile_republicans
+			}
+		}
+		else_if = { #FRIENDLY REPUBLICANS
+			limit = {
+				check_variable = { UIC_republican_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_friendly_republicans }
+				}
+				add_ideas = UIC_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_republicans
+				}
+				remove_ideas = UIC_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_republicans
+				}
+				remove_ideas = UIC_hostile_republicans
+			}
+		}
+		else_if = { #HOSTILE REPUBLICANS
+			limit = {
+				check_variable = { UIC_republican_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_hostile_republicans }
+				}
+				add_ideas = UIC_hostile_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_republicans
+				}
+				remove_ideas = UIC_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_republicans
+				}
+				remove_ideas = UIC_friendly_republicans
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL REPUBLICANS
+			if = {
+				limit = {
+					has_idea = UIC_loyal_republicans
+				}
+				remove_ideas = UIC_loyal_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_republicans
+				}
+				remove_ideas = UIC_friendly_republicans
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_republicans
+				}
+				remove_ideas = UIC_hostile_republicans
+			}
+		}
+
+		### COMMUNISTS ###
+		if = { #LOYAL COMMUNISTS
+			limit = {
+				check_variable = { UIC_communist_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_loyal_communists }
+				}
+				add_ideas = UIC_loyal_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_communists
+				}
+				remove_ideas = UIC_friendly_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_communists
+				}
+				remove_ideas = UIC_hostile_communists
+			}
+		}
+		else_if = { #FRIENDLY COMMUNISTS
+			limit = {
+				check_variable = { UIC_communist_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_friendly_communists }
+				}
+				add_ideas = UIC_friendly_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_communists
+				}
+				remove_ideas = UIC_loyal_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_communists
+				}
+				remove_ideas = UIC_hostile_communists
+			}
+		}
+		else_if = { #HOSTILE COMMUNISTS
+			limit = {
+				check_variable = { UIC_communist_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_hostile_communists }
+				}
+				add_ideas = UIC_hostile_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_communists
+				}
+				remove_ideas = UIC_loyal_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_communists
+				}
+				remove_ideas = UIC_friendly_communists
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL COMMUNISTS
+			if = {
+				limit = {
+					has_idea = UIC_loyal_communists
+				}
+				remove_ideas = UIC_loyal_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_communists
+				}
+				remove_ideas = UIC_friendly_communists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_communists
+				}
+				remove_ideas = UIC_hostile_communists
+			}
+		}
+
+		### FASCISTS ###
+		if = { #LOYAL FASCISTS
+			limit = {
+				check_variable = { UIC_fascist_loyalty = 2 compare = equals } #loyal
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_loyal_fascists }
+				}
+				add_ideas = UIC_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_fascists
+				}
+				remove_ideas = UIC_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_fascists
+				}
+				remove_ideas = UIC_hostile_fascists
+			}
+		}
+		else_if = { #FRIENDLY FASCISTS
+			limit = {
+				check_variable = { UIC_fascist_loyalty = 1 compare = equals } #friendly
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_friendly_fascists }
+				}
+				add_ideas = UIC_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_fascists
+				}
+				remove_ideas = UIC_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_fascists
+				}
+				remove_ideas = UIC_hostile_fascists
+			}
+		}
+		else_if = { #HOSTILE FASCISTS
+			limit = {
+				check_variable = { UIC_fascist_loyalty = -1 compare = equals } #hostile
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = UIC_hostile_fascists }
+				}
+				add_ideas = UIC_hostile_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_loyal_fascists
+				}
+				remove_ideas = UIC_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_fascists
+				}
+				remove_ideas = UIC_friendly_fascists
+			}
+		}
+		else = { #INDIFFERENT/INCONSEQUENTIAL FASCISTS
+			if = {
+				limit = {
+					has_idea = UIC_loyal_fascists
+				}
+				remove_ideas = UIC_loyal_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_friendly_fascists
+				}
+				remove_ideas = UIC_friendly_fascists
+			}
+			if = {
+				limit = {
+					has_idea = UIC_hostile_fascists
+				}
+				remove_ideas = UIC_hostile_fascists
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@ state={
 	name="STATE_670"
 	manpower = 354777
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		add_core_of = UIC

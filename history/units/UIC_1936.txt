@@ -2,7 +2,7 @@
 division_template = {
 	name = "식민지 보병 연대"	 #Infanterie de marine
 	division_names_group = UIC_COL_01
-	#is_locked = yes
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,7 +19,7 @@ division_template = {
 division_template = {
 	name = "식민지 포병 연대" #Artillerie de marine
 	division_names_group = UIC_COL_02
-	#is_locked = yes
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -30,18 +30,18 @@ division_template = {
 	priority = 1
 }
 #식민지군
-division_template = {
-	name = "인도차이나 스파이"
-	division_names_group = UIC_COL_04
-	#is_locked = yes
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-	}
-	priority = 0
-}
+#division_template = {
+#	name = "인도차이나 스파이"
+#	division_names_group = UIC_COL_04
+#	is_locked = yes
+#
+#	regiments = {
+#		cavalry = { x = 0 y = 0 }
+#		cavalry = { x = 0 y = 1 }
+#		cavalry = { x = 0 y = 2 }
+#	}
+#	priority = 0
+#}
 #인도차이나군
 division_template = {
 	name = "인도차이나 식민지군" #Tirailleurs indochinois
@@ -86,7 +86,7 @@ units = {
 		location = 4379 #후에
 		division_template = "식민지 보병 연대" #10
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_0 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -100,7 +100,7 @@ units = {
 		location = 4401 #사이공
 		division_template = "식민지 보병 연대" #11
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_0 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -121,7 +121,7 @@ units = {
 		location = 11981 #중국
 		division_template = "식민지 보병 연대" #16
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_0 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -135,7 +135,7 @@ units = {
 		location = 4119 #하이퐁
 		division_template = "식민지 보병 연대" #19
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		force_equipment_variants = { motorized_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { motorized_equipment_0 = { owner = "FRA" } }
 		force_equipment_variants = { artillery_equipment_1 = { owner = "FRA" } }
 		force_equipment_variants = { support_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -206,23 +206,23 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# 통킹 스파이
-		name = "통킹 스파이"	
-		location = 4075
-		division_template = "인도차이나 스파이"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
+	#division= {	# 통킹 스파이
+	#	name = "통킹 스파이"	
+	#	location = 4075
+	#	division_template = "인도차이나 스파이"
+	#	force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+	#	start_experience_factor = 0.1
+	#	start_equipment_factor = 0.5
+	#}
 	#코친차이나
-	division= {	# 코친차이나 스파이
-		name = "코친차이나 스파이"	
-		location = 4379
-		division_template = "인도차이나 스파이"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
+	#division= {	# 코친차이나 스파이
+	#	name = "코친차이나 스파이"	
+	#	location = 4379
+	#	division_template = "인도차이나 스파이"
+	#	force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+	#	start_experience_factor = 0.1
+	#	start_equipment_factor = 0.5
+	#}
 	#안남
 	division= {	# 제1식민지 연대
 		name = "안남 제1식민지 연대"	

@@ -19,3 +19,41 @@ UIC_foreign_support_category = {
 		}
 	}
 }
+
+UIC_local_investment_plan_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		OR = {
+			original_tag = UIC
+			original_tag = LAO
+			original_tag = VIN
+		}
+	}
+}
+
+UIC_faction_management_category = {
+	priority = 9
+	icon = gre_faction_management
+
+	scripted_gui = uic_internal_factions_decision_ui
+
+	allowed = {
+		original_tag = UIC
+	}
+}
+
+UIC_indochina_wars_category = {
+	priority = 8
+	icon = generic_political_actions
+
+	allowed = {
+		OR = {
+			original_tag = UIC
+			original_tag = LAO
+			original_tag = VIN
+			original_tag = CAM
+		}
+	}
+}

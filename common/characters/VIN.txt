@@ -87,7 +87,7 @@ characters = {
 				}
 			}
 			traits = {
-				silent_workhorse
+				democratic_reformer
 			}
 		}
 	}
@@ -342,6 +342,24 @@ characters = {
 			logistics_skill=1
 		}
 	}
+	
+	VIN_Nguyen_Son={ #중국 홍군 유일 외국인 장교 #48년 소장
+		name=VIN_Nguyen_Son
+		portraits={
+			army={
+				large = "gfx/leaders/VIN/Portrait_Nguyen_Son.png"
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Son.png"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 
 	############제독############
 	
@@ -516,6 +534,29 @@ characters = {
 		}
 	}
 
+	VIN_Huynh_Thuc_Khang={
+		name=VIN_Huynh_Thuc_Khang
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Huynh_Thuc_Khang.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Huynh_Thuc_Khang
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				virtuous_patriot
+			}
+		}
+	}
+
 	############트로츠키주의############
 
 	############지도자############
@@ -615,10 +656,12 @@ characters = {
 				original_tag = VIN
 			}
 			available = {
-				has_government = democratic
 				not = {
-					has_country_leader = {
-						character = VIN_Ngo_Dinh_Diem
+					or = {
+						has_country_leader = {
+							character = VIN_Ngo_Dinh_Diem
+						}
+						has_government = communism
 					}
 				}
 			}
@@ -678,6 +721,29 @@ characters = {
 				dragon_lady
 			}
 			can_be_fired = no
+		}
+	}
+
+	VIN_Phan_Boi_Chau={ #부흥당
+		name=VIN_Phan_Boi_Chau
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Phan_Boi_Chau.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Phan_Boi_Chau
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				
+			}
+			traits = {
+				ardent_nationalist
+			}
 		}
 	}
 
@@ -741,6 +807,59 @@ characters = {
 		}
 	}
 
+	VIN_Phan_Ke_Toai={ #공산주의
+		name=VIN_Phan_Ke_Toai
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Phan_Ke_Toai.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Phan_Ke_Toai
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+	VIN_Nguyen_Xuan_Chu={
+		name=VIN_Nguyen_Xuan_Chu
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Nguyen_Xuan_Chu.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Nguyen_Xuan_Chu
+			allowed = {
+				original_tag = VIN
+			}
+			#available = {
+			#	not = {
+			#		or = {
+			#			has_country_leader = {
+			#				character = VIN_Ngo_Dinh_Diem
+			#			}
+			#			has_government = communism
+			#		}
+			#	}
+			#}
+			traits = {
+				supported_patriot
+			}
+		}
+	}
+
 	############파시즘############
 
 	############지도자############
@@ -756,6 +875,20 @@ characters = {
 		country_leader = {
 			ideology = gen_nazism #fascism_ideology
 			expire = "1953.12.2.1"
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Nguyen_Xuan_Chu
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				fascist_demagogue
+			}
 		}
 	}
 

@@ -8,7 +8,7 @@ if = {
 
 set_cosmetic_tag = UIC_fra
 
-country_lock_all_division_template = yes
+#country_lock_all_division_template = yes
 
 #인도차이나 보호계획
 set_variable = { UIC_indochina_conservation_plan_army_core_defence_factor = 0.1 }
@@ -153,5 +153,12 @@ set_popularities = {
 }
 
 
-#country_event = { id = uic.1 days = 1 }
-country_event = { id = uic.1 days = 590 } #37년 8월말
+country_event = { id = uic.1 days = 1 }
+#country_event = { id = uic.1 days = 590 } #37년 8월말
+
+#민족주의자 관리
+set_variable = { var = UIC_monarchist_loyalty value = 2 }
+set_variable = { var = UIC_republican_loyalty value = 1 }
+set_variable = { var = UIC_communist_loyalty value = 0 }
+set_variable = { var = UIC_trotskyist_loyalty value = 0 }
+set_variable = { var = UIC_fascist_loyalty value = 0 }

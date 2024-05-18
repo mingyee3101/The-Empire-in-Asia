@@ -32,6 +32,25 @@ intelligence_agency = {
 	}
 }
 
+#intelligence_agency = {
+
+#	picture = GFX_intelligence_agency_logo_fra
+#	names = { "Sûreté général indochinoise" } #Sûreté général indochinoise
+	
+#	default = {
+#		and = {
+#			tag = UIC
+#			is_subject_of = FRA
+#		}
+#	}
+#	available = {
+#		and = {
+#			original_tag = UIC
+#			is_subject_of = FRA
+#		}
+#	}
+#}
+
 intelligence_agency = {
 	
 	picture = GFX_intelligence_agency_logo_GDDI

@@ -263,6 +263,60 @@ ideas = {
 
 		}
 
+		#홍수
+		UIC_Indochina_flood_i = {
+
+			picture = usa_great_depression_3
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.2
+				stability_factor = -0.3
+				local_resources_factor = -0.3
+				political_power_cost = 1
+			}
+
+		}
+
+		UIC_Indochina_flood_ii = {
+
+			picture = usa_great_depression_2
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				conscription_factor = -0.1
+				stability_factor = -0.2
+				local_resources_factor = -0.2
+				political_power_cost = 0.5
+			}
+
+		}
+
+		UIC_Indochina_flood_iii = {
+
+			picture = usa_great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.05
+				stability_factor = -0.1
+				local_resources_factor = -0.1
+			}
+
+		}
+
+		UIC_fort_construction_plan = {
+
+			picture = usa_great_depression
+			
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+				consumer_goods_factor = 0.1
+			}
+
+		}
+
 		#인도차이나 보호
 		UIC_indochina_conservation_plan_fake = {
 			

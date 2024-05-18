@@ -1,3 +1,622 @@
+#UICECE FACTION DECISIONS
+UIC_faction_management_category = {
+	UIC_befriend_monarchists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		days_remove = 200
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_monarchist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_monarchist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_befriend_monarchists_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_befriend_monarchists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_befriend_monarchists_variable = party_popularity@democratic }
+				divide_temp_variable = { UIC_befriend_monarchists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_befriend_monarchists_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_befriend_monarchists_variable = 3 }
+			}
+			multiply_temp_variable = { UIC_befriend_monarchists_variable = -1.00 }
+			add_stability = var:UIC_befriend_monarchists_variable
+			add_war_support = var:UIC_befriend_monarchists_variable
+		}
+
+		remove_effect = {
+			set_temp_variable = { UIC_allied_monarchists_variable = party_popularity@neutrality }
+			divide_temp_variable = { UIC_allied_monarchists_variable = 2 }
+			if = {
+				limit = {
+					neutrality > 0.5
+				}
+				divide_temp_variable = { UIC_allied_monarchists_variable = 3 }
+			}
+			add_stability = var:UIC_allied_monarchists_variable
+			add_war_support = var:UIC_allied_monarchists_variable
+			effect_tooltip = { add_ideas = UIC_friendly_monarchists }
+			hidden_effect = {
+				set_variable = { UIC_monarchist_loyalty = 1 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_crush_monarchists = {
+
+		icon = generic_police_action
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 150
+
+		fire_only_once = no
+
+		days_remove = 120
+
+		days_re_enable = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_monarchist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_monarchist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = { UIC_war_on_monarchists_variable = party_popularity@neutrality }
+			divide_temp_variable = { UIC_war_on_monarchists_variable = 2 }
+			multiply_temp_variable = { UIC_war_on_monarchists_variable = -1.00 }
+			add_stability = var:UIC_war_on_monarchists_variable
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_victorious_war_on_monarchists_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_victorious_war_on_monarchists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_victorious_war_on_monarchists_variable = party_popularity@democratic }
+				divide_temp_variable = { UIC_victorious_war_on_monarchists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_victorious_war_on_monarchists_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_victorious_war_on_monarchists_variable = 3 }
+			}
+			add_stability = var:UIC_victorious_war_on_monarchists_variable
+			add_war_support = var:UIC_victorious_war_on_monarchists_variable
+			hidden_effect = {
+				set_variable = { UIC_monarchist_loyalty = -2 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_befriend_republicans = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		days_remove = 200
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_republican_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_republican_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_befriend_republicans_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_befriend_republicans_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_befriend_republicans_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_befriend_republicans_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_befriend_republicans_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_befriend_republicans_variable = 3 }
+			}
+			multiply_temp_variable = { UIC_befriend_republicans_variable = -1.00 }
+			add_stability = var:UIC_befriend_republicans_variable
+			add_war_support = var:UIC_befriend_republicans_variable
+		}
+
+		remove_effect = {
+			set_temp_variable = { UIC_allied_republicans_variable = party_popularity@democratic }
+			divide_temp_variable = { UIC_allied_republicans_variable = 2 }
+			if = {
+				limit = {
+					democratic > 0.5
+				}
+				divide_temp_variable = { UIC_allied_republicans_variable = 3 }
+			}
+			add_stability = var:UIC_allied_republicans_variable
+			add_war_support = var:UIC_allied_republicans_variable
+			effect_tooltip = { add_ideas = UIC_friendly_republicans }
+			hidden_effect = {
+				set_variable = { UIC_republican_loyalty = 1 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_crush_republicans = {
+
+		icon = generic_police_action
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 150
+
+		fire_only_once = no
+
+		days_remove = 120
+
+		days_re_enable = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_republican_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_republican_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = { UIC_war_on_republicans_variable = party_popularity@democratic }
+			divide_temp_variable = { UIC_war_on_republicans_variable = 2 }
+			multiply_temp_variable = { UIC_war_on_republicans_variable = -1.00 }
+			add_stability = var:UIC_war_on_republicans_variable
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_victorious_war_on_republicans_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_victorious_war_on_republicans_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_victorious_war_on_republicans_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_victorious_war_on_republicans_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_victorious_war_on_republicans_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_victorious_war_on_republicans_variable = 3 }
+			}
+			add_stability = var:UIC_victorious_war_on_republicans_variable
+			add_war_support = var:UIC_victorious_war_on_republicans_variable
+			hidden_effect = {
+				set_variable = { UIC_republican_loyalty = -2 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_befriend_communists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_communist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_communist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_befriend_communists_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_befriend_communists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_befriend_communists_variable = party_popularity@democratic }
+				divide_temp_variable = { UIC_befriend_communists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_befriend_communists_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_befriend_communists_variable = 3 }
+			}
+			multiply_temp_variable = { UIC_befriend_communists_variable = -1.00 }
+			add_stability = var:UIC_befriend_communists_variable
+			add_war_support = var:UIC_befriend_communists_variable
+		}
+
+		remove_effect = {
+			set_temp_variable = { UIC_allied_communists_variable = party_popularity@communism }
+			divide_temp_variable = { UIC_allied_communists_variable = 2 }
+			if = {
+				limit = {
+					communism > 0.5
+				}
+				divide_temp_variable = { UIC_allied_communists_variable = 3 }
+			}
+			add_stability = var:UIC_allied_communists_variable
+			add_war_support = var:UIC_allied_communists_variable
+			effect_tooltip = { add_ideas = UIC_friendly_communists }
+			hidden_effect = {
+				set_variable = { UIC_communist_loyalty = 1 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_crush_communists = {
+
+		icon = generic_police_action
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 150
+
+		fire_only_once = no
+
+		days_remove = 120
+
+		days_re_enable = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_communist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_communist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = { UIC_war_on_communists_variable = party_popularity@communism }
+			divide_temp_variable = { UIC_war_on_communists_variable = 2 }
+			multiply_temp_variable = { UIC_war_on_communists_variable = -1.00 }
+			add_stability = var:UIC_war_on_communists_variable
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_victorious_war_on_communists_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_victorious_war_on_communists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_victorious_war_on_communists_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_victorious_war_on_communists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_temp_variable = { UIC_victorious_war_on_communists_variable = party_popularity@fascism }
+				divide_temp_variable = { UIC_victorious_war_on_communists_variable = 3 }
+			}
+			add_stability = var:UIC_victorious_war_on_communists_variable
+			add_war_support = var:UIC_victorious_war_on_communists_variable
+			hidden_effect = {
+				set_variable = { UIC_communist_loyalty = -2 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_befriend_fascists = {
+
+		icon = generic_political_rally
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		days_remove = 200
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_fascist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_fascist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_befriend_fascists_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_befriend_fascists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_befriend_fascists_variable = party_popularity@democratic }
+				divide_temp_variable = { UIC_befriend_fascists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_befriend_communists_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_befriend_fascists_variable = 3 }
+			}
+			multiply_temp_variable = { UIC_befriend_fascists_variable = -1.00 }
+			add_stability = var:UIC_befriend_fascists_variable
+			add_war_support = var:UIC_befriend_fascists_variable
+		}
+
+		remove_effect = {
+			set_temp_variable = { UIC_allied_fascists_variable = party_popularity@fascism }
+			divide_temp_variable = { UIC_allied_fascists_variable = 2 }
+			if = {
+				limit = {
+					fascism > 0.5
+				}
+				divide_temp_variable = { UIC_befriend_fascists_variable = 3 }
+			}
+			add_stability = var:UIC_allied_fascists_variable
+			add_war_support = var:UIC_allied_fascists_variable
+			effect_tooltip = { add_ideas = UIC_friendly_fascists }
+			hidden_effect = {
+				set_variable = { UIC_fascist_loyalty = 1 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+
+	UIC_crush_fascists = {
+
+		icon = generic_police_action
+
+		allowed = { 
+			original_tag = UIC
+		}
+
+		available = {
+			
+		}
+
+		cost = 150
+
+		fire_only_once = no
+
+		days_remove = 120
+
+		days_re_enable = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				check_variable = { UIC_fascist_loyalty = 0 compare = less_than_or_equals }
+			}
+			modifier = {
+				factor = 25
+				check_variable = { UIC_fascist_loyalty = -1 compare = less_than_or_equals }
+			}
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			set_temp_variable = { UIC_war_on_fascists_variable = party_popularity@fascism }
+			divide_temp_variable = { UIC_war_on_fascists_variable = 2 }
+			multiply_temp_variable = { UIC_war_on_fascists_variable = -1.00 }
+			add_stability = var:UIC_war_on_fascists_variable
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_temp_variable = { UIC_victorious_war_on_fascists_variable = party_popularity@neutrality }
+				divide_temp_variable = { UIC_victorious_war_on_fascists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_temp_variable = { UIC_victorious_war_on_fascists_variable = party_popularity@democratic }
+				divide_temp_variable = { UIC_victorious_war_on_fascists_variable = 3 }
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_temp_variable = { UIC_victorious_war_on_fascists_variable = party_popularity@communism }
+				divide_temp_variable = { UIC_victorious_war_on_fascists_variable = 3 }
+			}
+			add_stability = var:UIC_victorious_war_on_fascists_variable
+			add_war_support = var:UIC_victorious_war_on_fascists_variable
+			hidden_effect = {
+				set_variable = { UIC_fascist_loyalty = -2 }
+				UIC_political_instability_update_effect = yes
+			}
+		}
+	}
+}
+
 UIC_request_for_military_reinforcements_and_equipment_category = {
 
 	UIC_infanterie_de_marine_reinforcements = {
@@ -380,6 +999,171 @@ UIC_foreign_support_category = {
 
 	}
 	
+}
+
+UIC_local_investment_plan_category = {
+
+	UIC_local_investment_plan_decision = {
+		icon = generic_factory
+
+		#allowed = { always = no }
+		#ROOT = {
+		#	activate_targeted_decision = { target = PREV decision = UIC_local_investment_plan_decision }
+		#}
+
+		allowed = {
+			original_tag = UIC
+		}
+
+		state_target = yes
+
+		#on_map_mode = map_only
+
+		target_array = controlled_states
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				is_core_of = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				or = {
+					#has_state_category = rural
+					has_state_category = town
+					has_state_category = large_town
+					has_state_category = city
+					has_state_category = large_city
+				}
+			}
+		}
+
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_local_investment_plan
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		fire_only_once = yes
+		state_target = yes
+		cancel_if_not_visible = yes
+		cost = 50
+		days_remove = 100
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_political_power < 200
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		cancel_effect = {
+			not = {
+				FROM = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}
+
+UIC_indochina_wars_category = {
+	UIC_western_operation_plan_decision = {
+		icon = generic_factory
+		available = {
+			not = {	has_country_flag = UIC_in_operation }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_war_with = SIA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_western_operation_plan
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			has_country_flag = UIC_end_franco_thai_war
+		}
+		days_remove = 90
+		modifier = {
+			army_core_defence_factor = 0.1
+			training_time_factor = -0.1
+			max_dig_in_factor = 0.3
+			command_power_gain = 10
+			naval_defense_factor = 0.1
+		}
+		targeted_modifier = {
+			tag = SIA
+			army_defence_factor = 0.05
+			naval_damage_factor = 0.1
+			air_strategic_bomber_bombing_factor = 0.1
+		}
+	}
+
+	UIC_eastern_operation_plan_decision = {
+		icon = generic_factory
+		available = {
+			not = {	has_country_flag = UIC_in_operation }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_war_with = JAP
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_eastern_operation_plan
+			}
+		}
+		cancel_if_not_visible = yes
+		cancel_trigger = {
+			has_country_flag = UIC_end_franco_Japanese_war
+		}
+		days_remove = 90
+		modifier = {
+			army_core_defence_factor = 0.1
+			training_time_factor = -0.1
+			max_dig_in_factor = 0.3
+			command_power_gain = 10
+			naval_defense_factor = 0.1
+		}
+		targeted_modifier = {
+			tag = JAP
+			army_defence_factor = 0.05
+			army_morale_factor = 0.1
+			air_intercept_efficiency = 0.1
+		}
+	}
 }
 
 political_actions = {

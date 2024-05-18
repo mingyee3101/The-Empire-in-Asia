@@ -29,12 +29,11 @@
 
  #정당
  UIC_fascism_party:0 "대월국가사회당"
- UIC_fascism_party_long:0 "대월국가사회당"
- #UIC_fascism_party:0 "대월국가사회당" #Đại Việt Quốc gia Xã hội Đảng #친일
+ UIC_fascism_party_long:0 "대월국가사회당" #Đại Việt Quốc gia Xã hội Đảng #친일
  UIC_democratic_party:0 "인도차이나 민주당"
  UIC_democratic_party_long:0 "인도차이나 민주당"
- UIC_communism_party:0 "제4인터내셔널"
- UIC_communism_party_long:0 "제4인터내셔널"
+ UIC_communism_party:0 "베트남 제4인터내셔널"
+ UIC_communism_party_long:0 "베트남 제4인터내셔널"
  UIC_neutrality_party:0 "인도차이나 총독부" #Phủ Toàn quyền Đông Dương
  UIC_neutrality_party_long:0 "인도차이나 총독부"
 
@@ -125,7 +124,7 @@
  UIC_indochina_economy_i_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$ §Y-10.0%§!\n\n"
  UIC_indochina_economy_ii_tt:0 "($MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!, $MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-5.0§!) 효과를 부여하는 §Y인도차이나 경제§! 추가."
  UIC_agricultural_exploitation:0 "농업 착취"
- UIC_agricultural_exploitation_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §R-10.00%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+10.00%§!\n\n"
+ UIC_agricultural_exploitation_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10.0§!\n$MODIFIER_STABILITY_FACTOR$: §R-10.00%§!\n\n"
  UIC_agricultural_development_support:0 "농업 개발 지원"
  UIC_agricultural_development_support_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §G+10.00%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+10.00%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n\n"
  UIC_agricultural_development_support_teia_upgrade_state_category_tt:0 "§Y핵심 주§!인 모든 §Y농촌§!과 §Y목축§! 지역은 한 등급 §R상승§!합니다."
@@ -133,7 +132,7 @@
  UIC_forced_to_grow_cash_crops_desc:0 "우리는 경제와 전쟁을 위한 산업작물이 필요합니다. 쌀대신 현금작물과 구황작물을 심게 해야 합니다."
  UIC_forced_to_grow_cash_crops_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10.0%§!\n$MODIFIER_SUPPLY_CONSUMPTION_FACTOR$: §R+10.0%§!\n\n"
  UIC_cash_crop_regulations:0 "현금작물 규제"
- UIC_cash_crop_regulations_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y10.0%§!\n$MODIFIER_STABILITY_FACTOR$: §G+10.00%§!\n\n"
+ UIC_cash_crop_regulations_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+30.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y10.0%§!\n\n"
  UIC_food_plunder:0 "식량 수탈"
  UIC_food_plunder_tt:0 "§Y인도차이나 경제§! 변동치\n$MODIFIER_STABILITY_FACTOR$: §R-10.00%§!\n$MODIFIER_CIC_TO_OVERLORD_FACTOR$: §G30.00%§!\n\n"
  UIC_prohibition_of_opium_cultivation:0 "아편 재배 금지"
@@ -149,7 +148,8 @@
  UIC_hlm_construction_program:0 "HLM 건설 계획"
  UIC_hlm_construction_program_desc:0 "도시에서 노동자들은 매우 적은 급여를 받으며 초가집에서 거주하거나 직장해서 생활하고 있습니다. 우리는 저임대 주택을 건설하여 이를 해결해야 합니다."
  UIC_local_investment_plan:0 "지역 투자 계획"
- UIC_factory_modernization_plan:0 "공장 현대화 계획"
+ UIC_local_investment_plan_tt:0 "§Y투자§!하여 §Y민간공장§!을 건설할 수 있는 결정이 열립니다."
+ UIC_factory_modernization_plan:0 "군수공장 현대화 계획"
 
  #인도차이나 보호
  UIC_indochina_conservation_plan:0 "인도차이나 보호 계획"
@@ -172,6 +172,7 @@
 
  UIC_local_conscription:0 "현지인 추가 징병" #권력의 균형 -> #태국-프랑스 전쟁시 불이익 있을수도
  UIC_cooperation_with_local_nationalists:0 "현지 민족주의자와 협력"
+ UIC_cooperation_with_local_nationalists_tt:0 "몇몇 국가들이 인도차이나의 민족주의 정당을 성장시킬 수 있습니다."
 
  #군사 중점
  #육군
@@ -206,13 +207,16 @@
 
  #country_flag
  UIC_flood_occurs:0 "홍수 발생"
- UIC_flood_preparedness_cf:0 "홍수를 대비함"
+ UIC_flood_preparedness_i:0 "홍수를 대비함"
+ UIC_flood_preparedness_ii:0 "홍수를 대비함"
  UIC_suppression_a_rebellion:0 "반란을 진압함"
  UIC_wip:0 "§R개발 중§!"
 
  #설명
  UIC_indochina_revolution_foc_tt:0 "인도차이나에서 §R봉기§!가 발생하거나 §R주권§!을 갖는 국가가 생긴다면 §R치명적일§! 것입니다."
  UIC_indochina_revolution_big_foc_tt:0 "인도차이나에서 §R봉기§!가 발생하거나 §R주권§!을 갖는 국가가 생긴다면 §R매우 치명적일§! 것입니다."
+ UIC_preparing_for_an_uprising_i_tt:0 "민족주의자들의 영향력이 §R증가§!합니다."
+ UIC_preparing_for_an_uprising_ii_tt:0 "민족주의자들의 영향력이 §R매우 증가§!합니다."
 
  #국민정신
  UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
@@ -231,6 +235,9 @@
  UIC_North_South_railwayunder_construction:0 "남북선 건설"
  UIC_North_South_railwayunder_construction_desc:0 "1899년부터 건설중인 남북선은 곧 완공될 예정입니다. 남북선이 완공되면 베트남 남부부터 북부까지 갈 수 있을 뿐만 아니라 중국까지 갈 수 있습니다. 이 철도가 완공되면 경제뿐만 아니라 프랑스로 물자를 옮기기 더 좋을 것입니다."
  UIC_Indochina_flood:0 "홍수"
+ UIC_Indochina_flood_i:0 "홍수"
+ UIC_Indochina_flood_ii:0 "홍수"
+ UIC_Indochina_flood_iii:0 "홍수"
  UIC_flood_relief_i:0 "홍수 구호"
  UIC_flood_relief_ii:0 "홍수 구호"
  UIC_flood_relief_iii:0 "홍수 구호"
@@ -282,6 +289,74 @@
  UIC_infanterie_de_marine_reinforcements:0 "식민지 보병 연대 증원"
  UIC_artillerie_de_marine_reinforcements:0 "식민지 포병 연대 증원"
 
+ UIC_local_investment_plan_category:0 "지역 투자 계획"
+ UIC_local_investment_plan_decision:0 "[FROM.GetName] 토지개혁 실행"
+
+ UIC_indochina_wars_category:0 "인도차이나 전쟁"
+ UIC_western_operation_plan_decision:0 "$UIC_western_operation_plan$"
+ UIC_end_franco_thai_war:0 "프랑스-태국 전쟁이 끝남"
+ UIC_eastern_operation_plan_decision:0 "$UIC_eastern_operation_plan$"
+ UIC_end_franco_Japanese_war:0 "프랑스-일본 전쟁이 끝남"
+ UIC_in_operation:0 "작전 중"
+
+ #인도차이나 민족주의자 관리
+ UIC_faction_management_category:0 "인도차이나 민족주의 세력 관리"
+ UIC_faction_management_category_desc:2 "인도차이나의 민족주의 세력은 독립을 위해 힘을 키우고 있습니다. 그들을 집압하여 영향력을 줄여야합니다."
+ UIC_faction_loyal:1 "§G충성스러움§!"
+ UIC_faction_friendly:1 "§G우호적임§!"
+ UIC_faction_indifferent:1 "무관심함"
+ UIC_faction_hostile:1 "§R적대적임§!"
+ UIC_faction_inconsequential:1 "§g하찮음§!"
+ UIC_faction_friendly_effects:0 "\n§Y효과:§! §G안정도: +5% \n징병 가능 인구 획득치: +15%§!"
+ UIC_faction_indifferent_effects:0 "\n§Y효과:§! §W효과 없음.§!"
+ UIC_faction_hostile_effects:0 "\n§Y효과:§! §R안정도: -15%§!"
+ UIC_faction_loyal_effects:0 "\n§Y효과:§! §G안정도: +10% \n징병 가능 인구 획득치: +20%§!"
+ UIC_monarchists_name_text:0 "군주주의자"
+ UIC_republicans_name_text:0 "민주주의자"
+ UIC_communists_name_text:0 "공산주의자§R(금지됨)§!"
+ UIC_trotskyists_name_text:0 "트로츠키주의자"
+ UIC_fascists_name_text:0 "파시스트"
+ UIC_INFLUENCE_TOOLTIP:0 "§Y영향력§!은 각 세력이 인도차이나에서 얼마나 영향력이 있는지 나타냅니다. §Y영향력§!이 커질수록 우리에게 §R불이익§!이 생길 것입니다."
+ UIC_ui_attitude_header:0 "영향력"
+ UIC_monarchists_attitude_status_amount:0 "[ROOT.GetMonarchistLoyaltyLevel]"
+ UIC_republicans_attitude_status_amount:0 "[ROOT.GetRepublicanLoyaltyLevel]"
+ UIC_communists_attitude_status_amount:0 "[ROOT.GetCommunistLoyaltyLevel]"
+ UIC_trotskyists_attitude_status_amount:0 "[ROOT.GetTrotskyistLoyaltyLevel]"
+ UIC_fascists_attitude_status_amount:0 "[ROOT.GetFascistLoyaltyLevel]"
+ UIC_monarchists_stability_status_amount:0 "[ROOT.GetMonarchistStabilityBonus]"
+ UIC_republicans_stability_status_amount:0 "[ROOT.GetRepublicanStabilityBonus]"
+ UIC_communists_stability_status_amount:0 "[ROOT.GetCommunistStabilityBonus]"
+ UIC_trotskyists_stability_status_amount:0 "[ROOT.GetTrotskyistStabilityBonus]"
+ UIC_fascists_stability_status_amount:0 "[ROOT.GetFascistStabilityBonus]"
+ UIC_monarchists_manpower_status_amount:0 "[ROOT.GetMonarchistManpowerBonus]"
+ UIC_republicans_manpower_status_amount:0 "[ROOT.GetRepublicanManpowerBonus]"
+ UIC_communists_manpower_status_amount:0 "[ROOT.GetCommunistManpowerBonus]"
+ UIC_trotskyists_manpower_status_amount:0 "[ROOT.GetTrotskyistManpowerBonus]"
+ UIC_fascists_manpower_status_amount:0 "[ROOT.GetFascistManpowerBonus]"
+ UIC_STABILITY_TOOLTIP:0 "안정도 혜택"
+ UIC_MANPOWER_TOOLTIP:0 "인력 혜택"
+ UIC_faction_loyal_stability:0 "§G+10%§!"
+ UIC_faction_friendly_stability:0 "§G+5%§!"
+ UIC_faction_indifferent_stability:0 "0"
+ UIC_faction_hostile_stability:0 "§R-15%§!"
+ UIC_faction_loyal_manpower:0 "§G+20%§!"
+ UIC_faction_friendly_manpower:0 "§G+15%§!"
+ UIC_faction_indifferent_manpower:0 "0"
+ UIC_faction_hostile_manpower:0 "0"
+ UIC_befriend_monarchists:0 "친근한 £faction_uic_monarchist 군주주의자"
+ UIC_crush_monarchists:0 "분쇄된 £faction_uic_monarchist 군주주의자"
+ UIC_recruit_monarchist_general:0 "영입된 £faction_uic_monarchist 군주주의자 장군"
+ UIC_befriend_republicans:0 "친근한 £faction_uic_venezelist 공화주의자"
+ UIC_crush_republicans:0 "분쇄된 £faction_uic_venezelist 공화주의자"
+ UIC_recruit_republican_general:0 "영입된 £faction_uic_venezelist 공화주의자 장군"
+ UIC_befriend_communists:0 "친근한 £faction_uic_communist 공산주의자"
+ UIC_crush_communists:0 "분쇄된 £faction_uic_communist 공산주의자"
+ UIC_recruit_communist_general:0 "영입된 £faction_uic_communist 공산주의자 장군"
+ UIC_befriend_fascists:0 "친근한 £faction_uic_fascist 파시스트"
+ UIC_crush_fascists:0 "분쇄된 £faction_uic_fascist 파시스트"
+ UIC_recruit_fascist_general:0 "영입된 £faction_uic_fascist 파시스트 장군"
+ UIC_no_generals_left_tt:0 "우리는 가능한 모든 장군들을 영입했습니다."
+
  #이벤트
  uic.1.t:0 "인도차이나 전역에 홍수 발생"
  uic.1.d:0 "태풍이 인도차이나를 강타하면서 전 지역에 엄청난 비가 내렸습니다. 홍강은 범람하고 저지대의 논들을 모두 잠겨버렸습니다. 쌀들은 물에 떠내려가고 많은 사람들과 시설들은 피해를 입었습니다. 우리는 이를 해결하기 위해 구호를 요청해야합니다."
@@ -291,11 +366,11 @@
  uic.2.a:0 "많은 구호품을 보내자."
  uic.2.b:0 "구호품을 보내자."
  uic.2.c:0 "보낼 구호품이 없다."
- uic.3.t:0 "많은 구호품을 보내준 [PREV.GetLeader]"
- uic.3.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [PREV.GetLeader](은)는 많은 구호품을 보내줬습니다."
+ uic.3.t:0 "많은 구호품을 보내준 [FROM.GetLeader]"
+ uic.3.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [FROM.GetLeader](은)는 많은 구호품을 보내줬습니다."
  uic.3.a:0 "큰 빚을 졌구만"
- uic.4.t:0 "구호품을 보내준 [PREV.GetLeader]"
- uic.4.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [PREV.GetLeader](은)는 구호품을 보내줬습니다."
+ uic.4.t:0 "구호품을 보내준 [FROM.GetLeader]"
+ uic.4.d:0 "태풍과 홍수로 인해 많은 피해를 입은 우리를 위해 [FROM.GetLeader](은)는 구호품을 보내줬습니다."
  uic.4.a:0 "고맙소"
  uic.5.t:0 "인도차이나의 동부 작전계획"
  uic.5.d:0 "[UIC.GetLeader](은)는 우리가 그들을 정복할 것이라며 작전을 계획하고 있습니다."
@@ -315,3 +390,14 @@
  #인도차이나정부는 우리가 그들을 정복할 것이라며 작전을 계획하고 있습니다.
  #무례하다, 계획을 철회하라 #정치력 -50
  #그럴수도 있다
+ uic.12.t:0 "해군기지 건설"
+ #uic.12.d:0 "일본과 태국이 우리를 집어삼키려고 하고 있습니다. 어디에 해군기지를 건설하는것이 좋을까요? 타이만에 건설한다면 태국을 더 쉽게 제압할 수 있겠지만 일본에 쉽게 패배할 것입니다. 하이퐁은 통킹만에서 작전하기에는 이상적인 위치지만 중국 본토에서 오는 폭격기에 매우 취약해질 것입니다. 카인호아는 하이퐁보다 약간 아쉽지만 일본의 폭격기로부터 안전할 것입니다."
+ uic.12.a:0 "타이만에 건설하자"
+ uic.12.b:0 "하이퐁에 건설하자"
+ uic.12.c:0 "카인호아에 건설하자"
+
+ uicuprising.1.t:0 "혁명 활동을 하는 공산당의 민병대"
+ uicuprising.1.d:0 "공산당의 민병대들은 전투에 참여하기보단 마을의 주민들과 우리 군인들을 회유하고 있습니다. 그들을 어떻게 처리해야할까요?"
+ uicuprising.1.a:0 "우린 아직 그들의 도움이 필요하다."
+ uicuprising.1.a:0 "민병대원들을 체포한다." #공산당의 영향력 감소 #공산당의 영향력이 크면 내전
+ uicuprising.1.a:0 "민병대원들을 처형한다." #내전 발생 #일정 확률로 그들이 도망가거나 전투를 함(내전)

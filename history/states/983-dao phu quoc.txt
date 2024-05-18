@@ -4,6 +4,7 @@ state={
 	
 	history={
 		add_core_of = CAM
+		add_core_of = VIN
 		add_core_of = UIC
 		owner = UIC
 		buildings = {
