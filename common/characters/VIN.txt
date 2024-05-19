@@ -724,7 +724,7 @@ characters = {
 		}
 	}
 
-	VIN_Phan_Boi_Chau={ #부흥당
+	VIN_Phan_Boi_Chau={
 		name=VIN_Phan_Boi_Chau
 		portraits={
 			civilian={
@@ -743,6 +743,36 @@ characters = {
 			}
 			traits = {
 				ardent_nationalist
+			}
+		}
+	}
+
+	VIN_Tran_Van_Do={
+		name=VIN_Tran_Van_Do
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Tran_Van_Do.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Tran_Van_Do
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				not = {
+					or = {
+						has_country_leader = {
+							character = VIN_Ngo_Dinh_Diem
+						}
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				smooth_talking_charmer
 			}
 		}
 	}
@@ -844,16 +874,16 @@ characters = {
 			allowed = {
 				original_tag = VIN
 			}
-			#available = {
-			#	not = {
-			#		or = {
-			#			has_country_leader = {
-			#				character = VIN_Ngo_Dinh_Diem
-			#			}
-			#			has_government = communism
-			#		}
-			#	}
-			#}
+			available = {
+				not = {
+					or = {
+						has_country_leader = {
+							character = VIN_Ngo_Dinh_Diem
+						}
+						has_government = communism
+					}
+				}
+			}
 			traits = {
 				supported_patriot
 			}
@@ -879,7 +909,7 @@ characters = {
 		advisor={
 			cost = 150
 			slot = political_advisor
-			idea_token = VIN_Nguyen_Xuan_Chu
+			idea_token = VIN_Tran_Trong_Kim
 			allowed = {
 				original_tag = VIN
 			}

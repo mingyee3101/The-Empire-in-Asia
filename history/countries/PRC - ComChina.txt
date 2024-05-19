@@ -74,6 +74,9 @@ recruit_character = KOR_Mu_Chong #한국
 #정치고문
 recruit_character = PRC_Xi_Zhongxun
 recruit_character = PRC_Luo_Ronghuan
+recruit_character = PRC_Lin_Boqu
+recruit_character = PRC_Wu_Liping
+recruit_character = PRC_Tan_Kah_Kee
 
 if = {
 	limit = { has_dlc = "La Resistance" }

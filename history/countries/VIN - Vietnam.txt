@@ -143,6 +143,7 @@ recruit_character = VIN_Tran_Van_Van
 recruit_character = VIN_Ngo_Dinh_Nhu
 recruit_character = VIN_Tran_Le_Xuan
 recruit_character = VIN_Phan_Boi_Chau
+recruit_character = VIN_Tran_Van_Do
 
 #인도차이나
 recruit_character = VIN_nguyen_van_thinh

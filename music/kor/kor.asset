@@ -55,12 +55,6 @@ music = {
 }
 
 music = {
-	name = "Korea_Independence_Army_Song_Medley"
-	file = "Korea_Independence_Army_Song_Medley.ogg"
-	volume = 0.75
-}
-
-music = {
 	name = "Arirang_Nation"
 	file = "Arirang_Nation.ogg"
 	volume = 0.75

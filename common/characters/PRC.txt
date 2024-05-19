@@ -817,4 +817,42 @@ characters={
 			}
 		}
 	}
+
+	PRC_Wu_Liping={
+		name=PRC_Wu_Liping
+		portraits={
+			civilian={
+				small= "gfx/interface/ideas/PRC/PRC_Wu_Liping.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Wu_Liping
+			allowed  = {
+				original_tag = PRC
+			}
+			traits  = {
+				propaganda_expert
+			}
+		}
+	}
+
+	PRC_Tan_Kah_Kee={
+		name=PRC_Tan_Kah_Kee
+		portraits={
+			civilian={
+				small= "gfx/interface/ideas/PRC/PRC_Tan_Kah_Kee.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Tan_Kah_Kee
+			allowed  = {
+				original_tag = PRC
+			}
+			traits  = {
+				chinese_representative
+			}
+		}
+	}
 }

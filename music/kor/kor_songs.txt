@@ -37,17 +37,6 @@ music = {
 }
 
 music = {
-	song = "Korea_Independence_Army_Song_Medley"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			original_tag = KOR
-		}
-	}
-}
-
-music = {
 	song = "Here_Come_Fierce_Tigers"
 	chance = {
 		base = 0

@@ -22,10 +22,12 @@
  #정치고문
  PRC_Xi_Zhongxun:0 "시중쉰"
  PRC_Lin_Boqu:0 "린보취"
- PRC_Wu_Liping:0 "우량핑" #중앙선전부
+ PRC_Wu_Liping:0 "우량핑" #중앙선전부 #吳黎平
+ PRC_Tan_Kah_Kee:0 "탄칸키"
 
  #정보원
  PRC_Li_Kenong:0 "리커농"
+ PRC_Dong_Jianwu:0 "둥젠우"
 
  #국명
  PRC_fascism:0 "중화제국"
@@ -48,3 +50,4 @@
  national_unificationist:0 "국민통일주의자"
  minister_of_finance:0 "재무부장관"
  five_elders:0 "오장로"
+ chinese_representative:0 "화교대표"
