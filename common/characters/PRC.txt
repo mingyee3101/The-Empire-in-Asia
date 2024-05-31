@@ -831,6 +831,7 @@ characters={
 			allowed  = {
 				original_tag = PRC
 			}
+			cost = 75
 			traits  = {
 				propaganda_expert
 			}

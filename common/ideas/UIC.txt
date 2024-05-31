@@ -7,7 +7,7 @@ ideas = {
 		UIC_indochinese_resistance_rene_robins_i = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = POL_the_peasants_strike
@@ -22,7 +22,7 @@ ideas = {
 		UIC_indochinese_resistance_i = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = POL_the_peasants_strike
@@ -37,7 +37,7 @@ ideas = {
 		UIC_indochinese_resistance_ii = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = POL_the_peasants_strike
@@ -52,7 +52,7 @@ ideas = {
 		UIC_indochinese_resistance_iii = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = POL_the_peasants_strike
@@ -69,7 +69,7 @@ ideas = {
 		UIC_unprepared_army_i = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_neglected_military
@@ -87,7 +87,7 @@ ideas = {
 		UIC_Indochinese_labor = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = Indochinese_labor
@@ -103,7 +103,7 @@ ideas = {
 		UIC_indochinese_exploitation_i = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_oppression
@@ -118,7 +118,7 @@ ideas = {
 		UIC_indochinese_exploitation_ii = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_oppression
@@ -135,7 +135,7 @@ ideas = {
 		UIC_indochinese_exploitation_iii = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_oppression
@@ -156,7 +156,7 @@ ideas = {
 		UIC_prohibit_party = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_oppression
@@ -173,7 +173,7 @@ ideas = {
 		UIC_North_South_railwayunder_construction = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_build_infrastructure
@@ -307,12 +307,16 @@ ideas = {
 
 		UIC_fort_construction_plan = {
 
+			allowed = {
+				has_war = no
+			}
+
 			picture = usa_great_depression
 			
 			modifier = {
 				production_speed_bunker_factor = 0.3
 				production_speed_coastal_bunker_factor = 0.3
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 			}
 
 		}
@@ -321,7 +325,7 @@ ideas = {
 		UIC_indochina_conservation_plan_fake = {
 			
 			allowed = {
-				original_tag = UIC
+				
 			}
 
 			picture = generic_oppression

@@ -14,8 +14,8 @@ focus_tree = {
 	#르네 로벵
 
 	focus = {
-		id = UIC_Rene_Robins_reign_continues
-		icon = GFX_goal_generic_intelligence_exchange
+		id = UIC_no_negotiation
+		icon = GFX_goal_generic_dangerous_deal
 		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
 		cost = 5
 		x = 38
@@ -31,20 +31,6 @@ focus_tree = {
 			}
 			has_country_flag = UIC_wip
 		}
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	focus = {
-		id = UIC_no_negotiation
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = UIC_Rene_Robins_reign_continues }
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = UIC_Rene_Robins_reign_continues
 
 		completion_reward = {
 			swap_ideas = {
@@ -127,11 +113,15 @@ focus_tree = {
 	focus = {
 		id = UIC_completion_of_North_South_railway
 		icon = GFX_focus_UIC_completion_of_North_South_railway
-		prerequisite = { focus = UIC_Rene_Robins_reign_continues focus = UIC_The_reign_of_jules_brevie }
+		prerequisite = { focus = UIC_no_negotiation focus = UIC_The_reign_of_jules_brevie }
 		cost = 5
 		x = 3
 		y = 1
-		relative_position_id = UIC_Rene_Robins_reign_continues
+		relative_position_id = UIC_no_negotiation
+
+		bypass = {
+			has_country_flag = North_South_railway_opened
+		}
 
 		available = {
 			#베트남 전역 점령중
@@ -161,6 +151,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
+
+			hidden_effect = {
+				set_country_flag = North_South_railway_opened
+			}
 			overlord = {
 				UIC_profits_in_indochina_level_up = yes
 			}
@@ -183,34 +177,6 @@ focus_tree = {
 				}
 				build_railway = { #사이공 - 미토
 					path = { 4401 1396 1423 }
-				}
-			}
-			remove_ideas = UIC_North_South_railwayunder_construction
-			if = {
-				limit = {
-					has_dynamic_modifier = {
-					    modifier = UIC_indochina_economy
-					}
-				}
-				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_i_tt
-				hidden_effect = {
-					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_dynamic_modifier = {
-					    	modifier = UIC_indochina_economy
-						}
-					}
-				}
-				custom_effect_tooltip = UIC_completion_of_North_South_railway_dm_ii_tt
-				hidden_effect = {
-					add_dynamic_modifier = {
-		                modifier = UIC_indochina_economy
-		            }
-					add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
 				}
 			}
 		}
@@ -259,11 +225,11 @@ focus_tree = {
 	focus = {
 		id = UIC_The_reign_of_jules_brevie
 		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = UIC_Rene_Robins_reign_continues }
+		mutually_exclusive = { focus = UIC_no_negotiation }
 		cost = 5
 		x = 6
 		y = 0
-		relative_position_id = UIC_Rene_Robins_reign_continues
+		relative_position_id = UIC_no_negotiation
 
 		available = {
 			NOT = {
@@ -285,6 +251,7 @@ focus_tree = {
 			        expire = "1965.1.1.1"
 				}
 			}
+			add_stability = 0.05
 		}
 	}
 
@@ -404,76 +371,46 @@ focus_tree = {
 		}
 	}
 
-	#조르주 카트루의 통치
-
-	focus = {
-		id = UIC_The_reign_of_georges_catroux
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_granting_freedom_to_the_press }
-		cost = 0
-		x = 0
-		y = 1
-		relative_position_id = UIC_granting_freedom_to_the_press
-
-		available = {
-			has_country_flag = jules_brevie_retirement
-			hidden_trigger = { always = no }
-		}
-
-		completion_reward = {
-			add_country_leader_role = {
-				character = UIC_georges_catroux
-				promote_leader = yes
-				country_leader = {
-					ideology = despotism
-			        expire = "1965.1.1.1"
-				}
-			}
-		}
-	}
-
-	#
+	#일본의 위협
 
 	focus = {
 		id = UIC_participating_in_the_research_institute_for_development
 		icon = GFX_focus_research2
-		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_granting_freedom_to_the_press }
 		cost = 10
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = UIC_The_reign_of_georges_catroux
+		relative_position_id = UIC_granting_freedom_to_the_press
 
 		completion_reward = {
 			add_to_tech_sharing_group = research_institute_for_development
 		}
 	}
 
-	#장 드쿠의 통치
-
 	focus = {
-		id = UIC_continue_cooperation_with_china
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
-		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
-		mutually_exclusive = { focus = UIC_negotiations_with_japan }
+		id = UIC_japanese_threat
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_granting_freedom_to_the_press }
 		cost = 10
-		x = -1
+		x = -3
 		y = 1
-		relative_position_id = UIC_The_reign_of_georges_catroux
+		relative_position_id = UIC_granting_freedom_to_the_press
 
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
+
+	#일본과 협력
 
 	focus = {
 		id = UIC_negotiations_with_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_The_reign_of_georges_catroux }
-		mutually_exclusive = { focus = UIC_continue_cooperation_with_china }
+		prerequisite = { focus = UIC_japanese_threat }
 		cost = 10
 		x = -3
 		y = 1
-		relative_position_id = UIC_The_reign_of_georges_catroux
+		relative_position_id = UIC_japanese_threat
 
 		completion_reward = {
 			add_political_power = 120
@@ -481,24 +418,194 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UIC_The_reign_of_jean_decoux
-		icon = GFX_goal_generic_intelligence_exchange
+		id = UIC_Air_Force_base_construction
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = UIC_negotiations_with_japan }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_negotiations_with_japan
 
 		completion_reward = {
-			add_country_leader_role = {
-				character = UIC_jean_decoux
-				promote_leader = yes
-				country_leader = {
-					ideology = despotism
-			        expire = "1965.1.1.1"
-				}
-			}
-			#조르주 카트루는 프랑스에 합류
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_Haiphong_port_expansion
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = UIC_Air_Force_base_construction }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_Air_Force_base_construction
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_surrender_to_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = UIC_Haiphong_port_expansion }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_Haiphong_port_expansion
+
+		available = {
+			has_country_flag = UIC_wip
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#장드쿠
+
+	focus = {
+		id = UIC_additional_indochinese_people_appointed
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_japanese_threat }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_japanese_threat
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_fair_wages
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_additional_indochinese_people_appointed }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_additional_indochinese_people_appointed
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#조르주 카트루
+
+	focus = {
+		id = UIC_provide_information
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_japanese_threat }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_japanese_threat
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_cooperation_with_allies
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_provide_information }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_provide_information
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	#중국과 협력
+
+	focus = {
+		id = UIC_continue_cooperation_with_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_japanese_threat }
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = UIC_japanese_threat
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_fight_together_with_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_continue_cooperation_with_china }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_continue_cooperation_with_china
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_guardian_of_southern_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_fight_together_with_china }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_fight_together_with_china
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_tank_response
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_guardian_of_southern_china }
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = UIC_guardian_of_southern_china
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_supply_route_defense
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_guardian_of_southern_china }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_guardian_of_southern_china
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_china_indochina_cooperation
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = UIC_tank_response focus = UIC_supply_route_defense }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_tank_response
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
@@ -615,12 +722,12 @@ focus_tree = {
 			overlord = {
 				UIC_profits_in_indochina_level_up = yes
 			}
-			custom_effect_tooltip = UIC_indochina_famine_tt
 			custom_effect_tooltip = UIC_forced_to_grow_cash_crops_tt
 			hidden_effect = {
 	        	add_to_variable = { UIC_indochina_economy_consumer_goods_factor = -0.1 }
 	        	add_to_variable = { UIC_indochina_economy_supply_consumption_factor = 0.1 }
 			}
+			custom_effect_tooltip = UIC_indochina_famine_tt
 		}
 	}
 
@@ -658,7 +765,6 @@ focus_tree = {
 			overlord = {
 				UIC_profits_in_indochina_level_up = yes
 			}
-			custom_effect_tooltip = UIC_indochina_famine_tt
 			custom_effect_tooltip = UIC_food_plunder_tt
 			hidden_effect = {
 				add_to_variable = { UIC_indochina_economy_stability_factor = -0.1 }
@@ -671,6 +777,7 @@ focus_tree = {
 					modifier = UIC_profits_in_indochina
 				}
 			}
+			custom_effect_tooltip = UIC_indochina_famine_tt
 		}
 	}
 
@@ -1179,7 +1286,12 @@ focus_tree = {
 		relative_position_id = UIC_fort_construction_plan
 
 		completion_reward = {
-
+			custom_effect_tooltip = UIC_ask_for_outside_help_tt
+			#국가가 동의하면 버프 추가
+			#인도차이나가 비시프랑스편이고 이탈리아또는 독일이 보호를 약속하면 일본이 침공을 안함
+			#역사적은 보호해주는 국가 없음
+			#자유프랑스: 자유프랑스, 영국, 미국
+			#비시프랑스: 비시프랑스, 독일, 이탈리아, 미국
 		}
 	}
 
@@ -1289,9 +1401,6 @@ focus_tree = {
 		relative_position_id = UIC_indochina_conservation_plan
 
 		available = {
-			NOT = {
-				has_completed_focus = UIC_Rene_Robins_reign_continues
-			}
 			or = {
 				#has_war_with = JAP
 				#has_war_with = CHI
@@ -1323,7 +1432,7 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_completed_focus = UIC_Rene_Robins_reign_continues
+				has_completed_focus = UIC_no_negotiation
 			}
 			or = {
 				any_enemy_country = {
@@ -1749,6 +1858,136 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
+
+	focus = {
+		id = UIC_close_aircraft_support
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_aircraft_production }
+		mutually_exclusive = { focus = UIC_bomber_intercept focus = UIC_torpedo_bomber_support }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_aircraft_production
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_ground_support_specialization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_close_aircraft_support }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_close_aircraft_support
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_bomber_intercept
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_aircraft_production }
+		mutually_exclusive = { focus = UIC_close_aircraft_support focus = UIC_torpedo_bomber_support }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_aircraft_production
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_air_superiority
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_bomber_intercept }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_bomber_intercept
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_torpedo_bomber_support
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_aircraft_production }
+		mutually_exclusive = { focus = UIC_close_aircraft_support focus = UIC_bomber_intercept }
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = UIC_aircraft_production
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_naval_support_specialization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_torpedo_bomber_support }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_torpedo_bomber_support
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_air_force_modernization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_ground_support_specialization focus = UIC_air_superiority focus = UIC_naval_support_specialization }
+		prerequisite = { focus = UIC_indochinese_pilot_training }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_ground_support_specialization
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
 	
 	#해군
 	focus = {
@@ -1761,6 +2000,135 @@ focus_tree = {
 
 		available = {
 			
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_ship_construction
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_far_east_squadron }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_far_east_squadron
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_cruiser_focus
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_ship_construction }
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UIC_ship_construction
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_domination_of_the_gulf_of_thailand
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_cruiser_focus }
+		mutually_exclusive = { focus = UIC_east_sea_protection }
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = UIC_cruiser_focus
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_east_sea_protection
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_cruiser_focus }
+		mutually_exclusive = { focus = UIC_domination_of_the_gulf_of_thailand }
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = UIC_cruiser_focus
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_ecole_superieure_de_guerre_navale
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_far_east_squadron }
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = UIC_far_east_squadron
+
+		available = {
+				
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_local_naval_training
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_ecole_superieure_de_guerre_navale }
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = UIC_ecole_superieure_de_guerre_navale
+
+		available = {
+			has_completed_focus = UIC_local_conscription
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = UIC_naval_modernization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UIC_domination_of_the_gulf_of_thailand focus = UIC_east_sea_protection }
+		prerequisite = { focus = UIC_local_naval_training }
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = UIC_east_sea_protection
+
+		available = {
+				
 		}
 
 		completion_reward = {

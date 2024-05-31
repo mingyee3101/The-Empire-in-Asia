@@ -524,7 +524,7 @@ country_event = {
 }
 
 #요새 건설 계획
-country_event = {
+country_event = { #시작
 	id = uic.13
 	title = uic.13.t
 	desc = uic.13.d
@@ -533,10 +533,441 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = uic.13.a
-		ai_chance = {
-			base = 13
+		name = uic.13.a #동부
+		trigger = {
+			not = {
+				has_country_flag = eastern_fortress_construction_completed
+			}
 		}
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = uic.14 days = 150 }
+	}
+
+	option = {
+		name = uic.13.b #서부
+		trigger = {
+			not = {
+				has_country_flag = western_fortress_construction_completed
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = uic.15 days = 150 }
+	}
+}
+
+country_event = {
+	id = uic.14 #동부
+	title = uic.14.t
+	desc = uic.14.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.14.a #서부 건설
+		trigger = {
+			has_war = no
+			not = {
+				has_country_flag = eastern_fortress_construction_completed
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = uic.15 }
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		hidden_effect = {
+			set_country_flag = eastern_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.14.b #서부 건설 안함
+		trigger = {
+			has_war = no
+			not = {
+				has_country_flag = western_fortress_construction_completed
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		remove_ideas = UIC_fort_construction_plan
+		hidden_effect = {
+			set_country_flag = eastern_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.14.c #서부 이미 건설함
+		trigger = {
+			has_war = no
+			has_country_flag = western_fortress_construction_completed
+		}
+		ai_chance = {
+			base = 10
+		}
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		remove_ideas = UIC_fort_construction_plan
+		hidden_effect = {
+			set_country_flag = eastern_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.14.d #전쟁으로 건설이 취소됨
+		trigger = {
+			has_war = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+		remove_ideas = UIC_fort_construction_plan
+	}
+}
+
+country_event = {
+	id = uic.15 #서부
+	title = uic.15.t
+	desc = uic.15.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.15.a #동부 건설
+		trigger = {
+			has_war = no
+			not = {
+				has_country_flag = eastern_fortress_construction_completed
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		country_event = { id = uic.18 }
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		hidden_effect = {
+			set_country_flag = western_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.15.b #동부 건설 안함
+		trigger = {
+			has_war = no
+			not = {
+				has_country_flag = eastern_fortress_construction_completed
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		remove_ideas = UIC_fort_construction_plan
+		hidden_effect = {
+			set_country_flag = western_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.15.c #동부 이미 건설함
+		trigger = {
+			has_war = no
+			has_country_flag = eastern_fortress_construction_completed
+		}
+		ai_chance = {
+			base = 10
+		}
+		971 = {
+			add_building_construction = { type = bunker province = 7093 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 9948 level = 3 instant_build = yes }
+		}
+		972 = {
+			add_building_construction = { type = bunker province = 12065 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 7518 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12008 level = 3 instant_build = yes }
+		}
+		973 = {
+			add_building_construction = { type = bunker province = 12319 level = 3 instant_build = yes }
+		}
+		984 = {
+			add_building_construction = { type = bunker province = 12392 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 12433 level = 3 instant_build = yes }
+		}
+		985 = {
+			add_building_construction = { type = bunker province = 7103 level = 3 instant_build = yes }
+			add_building_construction = { type = bunker province = 4568 level = 3 instant_build = yes }
+		}
+		970 = {
+			add_building_construction = { type = coastal_bunker province = 4119 level = 3 instant_build = yes }
+		}
+		671 = {
+			add_building_construction = { type = coastal_bunker province = 1885 level = 3 instant_build = yes }
+		}
+		974 = {
+			add_building_construction = { type = coastal_bunker province = 10016 level = 3 instant_build = yes }
+		}
+		975 = {
+			add_building_construction = { type = coastal_bunker province = 12297 level = 3 instant_build = yes }
+		}
+		976 = {
+			add_building_construction = { type = coastal_bunker province = 4379 level = 3 instant_build = yes }
+		}
+		977 = {
+			add_building_construction = { type = coastal_bunker province = 10309 level = 3 instant_build = yes }
+		}
+		remove_ideas = UIC_fort_construction_plan
+		hidden_effect = {
+			set_country_flag = western_fortress_construction_completed
+		}
+	}
+
+	option = {
+		name = uic.15.d #전쟁으로 건설이 취소됨
+		trigger = {
+			has_war = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+		remove_ideas = UIC_fort_construction_plan
+	}
+}
+
+country_event = {
+	id = uic.16 #남북선 개통
+	title = uic.16.t
+	desc = uic.16.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = uic.16.a
+		ai_chance = {
+			factor = 100
+		}
+
+		hidden_effect = {
+			set_country_flag = North_South_railway_opened
+		}
+
+		overlord = {
+				UIC_profits_in_indochina_level_up = yes
+			}
+			custom_effect_tooltip = UIC_completion_of_North_South_railway_tt
+			hidden_effect = {
+				build_railway = { #하노이 - 하이퐁
+					path = { 4075 4119 }
+				}
+				build_railway = { #하노이 - 난닝
+					path = { 4075 12048 7015 9948 4121 4177 7137 }
+				}
+				build_railway = { #꽝응아이 - 냐짱
+					path = { 10137 4255 1300 4334 4405 10162 }
+				}
+				build_railway = { #탑짬 - 달랏
+					path = { 12204 7271 }
+				}
+				build_railway = { #사이공 - 록닌
+					path = { 4401 7238 }
+				}
+				build_railway = { #사이공 - 미토
+					path = { 4401 1396 1423 }
+				}
+			}
+		
 	}
 }
 

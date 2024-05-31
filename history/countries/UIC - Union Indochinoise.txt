@@ -32,7 +32,6 @@ add_ideas = {
 	UIC_indochinese_resistance_i
 	UIC_unprepared_army_i
 	UIC_indochinese_exploitation_i
-	UIC_North_South_railwayunder_construction
 }
 
 set_technology = {
@@ -153,8 +152,8 @@ set_popularities = {
 }
 
 
-country_event = { id = uic.1 days = 1 }
-#country_event = { id = uic.1 days = 590 } #37년 8월말
+country_event = { id = uic.1 days = 590 } #37년 8월말
+country_event = { id = uic.16 days = 275 } #10월 2일 #베트남 파편화 넣으면 거기에도 넣기 #독립할 경우를 대비해 결정으로도 넣기
 
 #민족주의자 관리
 set_variable = { var = UIC_monarchist_loyalty value = 2 }
