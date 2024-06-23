@@ -12,12 +12,6 @@ music = {
 	volume = 0.75
 }
 
-music = {
-	name = "March_of_the_Volunteers"
-	file = "March_of_the_Volunteers.ogg"
-	volume = 0.75
-}
-
 ############ 중국 국민당 ############
 
 music = {

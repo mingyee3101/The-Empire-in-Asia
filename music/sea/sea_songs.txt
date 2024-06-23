@@ -1174,6 +1174,22 @@ music = {
 }
 
 music = {
+	song = "VietNam_VietNam"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			AND = {
+				original_tag = VIN
+				not = {
+					has_government = communism
+				}
+			}
+		}
+	}
+}
+
+music = {
 	song = "Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc"
 	chance = {
 		base = 0

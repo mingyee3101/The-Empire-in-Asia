@@ -24,17 +24,6 @@ music = {
 	}
 }
 
-music = {
-	song = "March_of_the_Volunteers"
-	chance = {
-		base = 0
-		modifier = {
-			add = 20
-			is_china_tag = yes
-		}
-	}	
-}
-
 
 ############ 중국 국민당 ############
 

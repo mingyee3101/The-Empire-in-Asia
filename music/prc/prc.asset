@@ -1,6 +1,12 @@
 ############ 중국 공산당 ############
 
 music = {
+	name = "March_of_the_Volunteers"
+	file = "March_of_the_Volunteers.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Komsomol_Song"
 	file = "Komsomol_Song.ogg"
 	volume = 0.75

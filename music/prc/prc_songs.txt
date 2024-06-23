@@ -3,6 +3,17 @@ music_station = "prc"
 ############ 중국 공산당 ############
 
 music = {
+	song = "March_of_the_Volunteers"
+	chance = {
+		base = 0
+		modifier = {
+			add = 20
+			is_china_tag = yes
+		}
+	}	
+}
+
+music = {
 	song = "Komsomol_Song"
 	chance = {
 		base = 0

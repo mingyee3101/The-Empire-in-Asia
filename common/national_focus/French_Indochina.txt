@@ -93,7 +93,6 @@ focus_tree = {
 		id = UIC_suppression_of_rebellion
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = UIC_prohibit_party }
-		mutually_exclusive = { focus = UIC_indochinese_leader }
 		cost = 5
 		x = 1
 		y = 1

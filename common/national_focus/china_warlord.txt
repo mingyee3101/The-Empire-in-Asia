@@ -16,6 +16,7 @@
 				tag = GDC
 				tag = SCC
 				tag = CSR
+				tag = GXC
 			}
 			has_dlc = "Waking the Tiger"
 		}

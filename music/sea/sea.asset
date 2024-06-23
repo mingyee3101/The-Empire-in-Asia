@@ -479,6 +479,12 @@ music = {
 }
 
 music = {
+	name = "VietNam_VietNam"
+	file = "VietNam_VietNam.ogg"
+	volume = 0.75
+}
+
+music = {
 	name = "Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc"
 	file = "Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc.ogg"
 	volume = 0.75
@@ -505,12 +511,6 @@ music = {
 music = {
 	name = "Ca_Nuoc_Dau_Tranh"
 	file = "Ca_Nuoc_Dau_Tranh.ogg"
-	volume = 0.75
-}
-
-music = {
-	name = "The_Khong_Phan_Boi_Que_Huong"
-	file = "The_Khong_Phan_Boi_Que_Huong.ogg"
 	volume = 0.75
 }
 

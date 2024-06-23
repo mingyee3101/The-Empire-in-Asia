@@ -297,10 +297,3 @@ music = {
 		}		
 	}	
 }
-music = {
-	song = "may_i"
-	
-	chance = {
-		factor = 0
-	}	
-}

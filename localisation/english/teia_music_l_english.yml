@@ -38,7 +38,6 @@
   ############ 중국 ############
   Drop_the_Handkerchief_Game:0 "수건 돌려라" #丢手绢
   Victory_Song:0 "승리의 노래" #勝利之歌
-  March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲
 
   ############ 중국 국민당 ############
   Three_Principles_of_the_People:0 "삼민주의가" #三民主義歌 #중화민국 국가
@@ -62,6 +61,7 @@
   Defend_the_Yellow_River:0 "황하를 지켜라" #保衛黃河
 
   ############ 중국 공산당 ############
+  March_of_the_Volunteers:0 "의용군 진행곡" #義勇軍進行曲 #중화인민공화국 국가
   Komsomol_Song:0 "공청단원의 노래" #共青团员之歌
   When_that_day_comes:0 "그 날이 오면" #当那一天来临
   Tunnel_warfare:0 "땅굴전" #地道战
@@ -224,6 +224,7 @@
   Nguoi_Hung_Biet_Cach_Du_81:0 "멀리 떠나버린 81연대의 영웅들" #Liên đoàn 81 Biệt cách Nhảy dù #Người Hùng Biệt Cách Dù 81 #Liên đoàn 81 Biệt cách Nhảy dù
   Gio_Phan_Cong:0 "반격의 시간" #Giờ Phản Công
   Ta_Da_Thay_Gi_Trong_Dem_Nay:0 "밤에 우리는 무언갈 봤습니다" #Ta Đã Thấy Gì Trong Đêm Nay
+  VietNam_VietNam:0 "베트남 베트남"
   Luc_Quan_Viet_Nam_Cong_Hoa_Hanh_Khuc:0 "베트남공화국육군의 행진" #Lục Quân Việt Nam Cộng Hòa Hành Khúc
   Bai_Ca_Chien_Thang:0 "승리의 노래" #Bài Ca Chiến Thắng
   Bai_Ca_Ve_Nguon:0 "원천의 노래" #Bài Ca Về Nguồn

@@ -792,6 +792,9 @@ characters = {
 		country_leader = {
 			ideology = despotism
 			expire = "1997.7.31.1"
+			traits = {
+				unpopular_emperor
+			}
 		}
 	}
 
