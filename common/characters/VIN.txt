@@ -33,12 +33,17 @@ characters = {
 						has_government = communism
 					}
 				}
+				OR = {
+					original_tag = VIN
+					has_completed_focus = UIC_deregulation_of_political_parties
+				}
 			}
 			visible = {
 				OR = {
 					NOT ={
 						has_government = fascism
 						has_government = communism
+						has_completed_focus = UIC_prohibit_party
 					}
 				}
 			}
@@ -77,12 +82,17 @@ characters = {
 						has_government = communism
 					}
 				}
+				OR = {
+					original_tag = VIN
+					has_completed_focus = UIC_deregulation_of_political_parties
+				}
 			}
 			visible = {
 				OR = {
 					NOT ={
 						has_government = fascism
 						has_government = communism
+						has_completed_focus = UIC_prohibit_party
 					}
 				}
 			}

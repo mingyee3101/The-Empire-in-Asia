@@ -25,15 +25,15 @@ music = {
 }
 
 music = {
-	name = "Siammanusati"
-	file = "Siammanusati.ogg"
-	volume = 0.9
-}
-
-music = {
 	name = "Love_Thailand"
 	file = "Love_Thailand.ogg"
 	volume = 0.75
+}
+
+music = {
+	name = "Siammanusati"
+	file = "Siammanusati.ogg"
+	volume = 0.9
 }
 
 music = {

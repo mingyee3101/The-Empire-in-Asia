@@ -16,4 +16,12 @@ opinion_modifiers = {
 		value = 50
 	}
 
+	UIC_china_indochina_cooperation_chi = {
+		value = 30
+	}
+
+	UIC_china_indochina_cooperation_jap = {
+		value = -30
+	}
+
 }

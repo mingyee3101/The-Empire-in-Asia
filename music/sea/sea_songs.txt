@@ -60,7 +60,7 @@ music = {
 }
 
 music = {
-	song = "Siammanusati"
+	song = "Love_Thailand"
 	chance = {
 		base = 0
 		modifier = {
@@ -74,7 +74,7 @@ music = {
 }
 
 music = {
-	song = "Love_Thailand"
+	song = "Siammanusati"
 	chance = {
 		base = 0
 		modifier = {

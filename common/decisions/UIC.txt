@@ -794,8 +794,11 @@ UIC_foreign_support_category = {
 				controls_state = 974 #퐁살리
 				controls_state = 975 #우돔사이
 			}
-			CHI = {
-				has_war_with = JAP
+			or = {
+				CHI = {
+					has_war_with = JAP
+				}
+				has_completed_focus = UIC_supplying_materials_to_china
 			}
 		}
 		days_re_enable = 100
@@ -859,6 +862,12 @@ UIC_foreign_support_category = {
 			#	has_completed_focus = UIC_supplying_materials_to_china
 			#}
 			has_global_flag = UIC_supplying_materials_to_china
+			or = {
+				CHI = {
+					has_war_with = JAP
+				}
+				has_completed_focus = UIC_supplying_materials_to_china
+			}
 		}
 		days_re_enable = 60
 		ai_will_do = {

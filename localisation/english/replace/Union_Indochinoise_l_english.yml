@@ -100,6 +100,7 @@
  UIC_labor_law_amendments:0 "노동법 개정"
  UIC_labor_law_amendments_desc:0 ""
  UIC_deregulation_of_political_parties:0 "민족주의 정당 규제 완화" #트로츠키주의의 힘이 강해짐
+ UIC_deregulation_of_political_parties.tt:0 "§Y인도차이나인§! 정치고문을 사용할 수 있습니다."
  UIC_deregulation_of_political_parties_desc:0 "극도로 긴장된 정치적 상황을 완화시키기 위해선 규제를 완화시키고 의견들 들어야 합니다."
  UIC_pardon_political_offender:0 "정치범 사면" #연결해서 뭔가 넣기
  UIC_pardon_political_offender_desc:0 ""
@@ -116,6 +117,7 @@
  UIC_japanese_threat_desc:0 ""
  UIC_negotiations_with_japan:0 "일본과 협상"
  UIC_negotiations_with_japan_desc:0 ""
+ UIC_negotiations_with_japan_tt:0 "결정 제거: §Y$UIC_foreign_support_category$§!"
  UIC_Air_Force_base_construction:0 "공군기지 건설"
  UIC_Air_Force_base_construction_desc:0 ""
  UIC_Haiphong_port_expansion:0 "하이퐁 항구 확장"
@@ -341,9 +343,18 @@
  UIC_indochina_conservation_plan_ns_intro: "§Y$UIC_indochina_conservation_plan$§! 변동치"
  UIC_tirailleurs_indochinois_fake:0 "인도차이나 식민지군"
  UIC_tirailleurs_indochinois_ns_intro: "§Y$UIC_tirailleurs_indochinois$§! 변동치"
+ UIC_guardian_of_southern_china_1:0 "중국 남부 수호"
+ UIC_guardian_of_southern_china_2:0 "중국 남부 수호"
+ UIC_china_indochina_cooperation_1:0 "중국 남부 수호"
+ UIC_china_indochina_cooperation_2:0 "중국 남부 수호"
+ UIC_china_indochina_cooperation_3:0 "중인협력"
 
  #opinion_modifiers
  UIC_profits_in_indochina:0 "인도차이나에서의 이익"
+ UIC_japan_indochina_cooperation_jap:0 "일본-인도차이나 협력"
+ UIC_japan_indochina_cooperation_chi:0 "일본-인도차이나 협력"
+ UIC_china_indochina_cooperation_chi:0 "중국-인도차이나 협력"
+ UIC_china_indochina_cooperation_jap:0 "중국-인도차이나 협력"
 
  #권력의 균형
  UIC_centralization_balance:0 "권력의 균형"
