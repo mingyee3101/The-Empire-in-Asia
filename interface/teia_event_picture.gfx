@@ -7,4 +7,8 @@ spriteTypes = {
 		name = GFX_event_Lushan_declaratin
 		texturefile = "gfx/event_picture/Lushan_declaratin.tga"
 	}
+	SpriteType = {
+		name = GFX_event_konoe
+		texturefile = "gfx/event_picture/konoe.tga"
+	}
 }

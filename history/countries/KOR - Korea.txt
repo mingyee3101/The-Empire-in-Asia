@@ -69,3 +69,20 @@ create_country_leader = {
 		#
 	}
 }
+KOR = {
+	set_cosmetic_tag = KOR_government_general_of_chosen
+	JAP = {
+		JAP_Government_General_of_Chosen = {
+			set_nationality = KOR
+		}
+	}
+	add_country_leader_role = {
+		character = JAP_Government_General_of_Chosen
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = { }
+		}
+		promote_leader = yes
+	}
+}

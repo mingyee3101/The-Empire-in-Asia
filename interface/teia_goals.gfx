@@ -48,5 +48,9 @@ spriteTypes = {
 		name = "GFX_goal_JAP_Konoe_Cabinet"
 		texturefile = "gfx/interface/goals/JAP_Konoe_Cabinet.tga"
 	}
+	SpriteType = {
+		name = "GFX_goal_JAP_Konoe_Cabinet_shine"
+		texturefile = "gfx/interface/goals/JAP_Konoe_Cabinet.tga"
+	}
 
 }

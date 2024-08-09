@@ -410,6 +410,10 @@ if = {
 		target = PGC
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = KOR
+		autonomous_state = autonomy_puppet
+	}
 }
 if = {
 	limit = { 
@@ -421,6 +425,10 @@ if = {
 	}
 	set_autonomy = {
 		target = PGC
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+	set_autonomy = {
+		target = KOR
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
@@ -442,6 +450,7 @@ recruit_character = JAP_Okada_Keisuke
 recruit_character = JAP_Hirota_Koki
 recruit_character = JAP_Hayashi_Senjuro
 recruit_character = JAP_Konoe_Fumimaro
+recruit_character = JAP_Government_General_of_Chosen
 ### MODDED
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
@@ -511,9 +520,6 @@ recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
 recruit_character = JAP_kijuro_shidehara
-
-
-
 
 if = {
 	limit = {

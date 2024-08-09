@@ -37,6 +37,14 @@ characters={
 			}
 		}
 	}
+	JAP_Government_General_of_Chosen = {
+		name = JAP_Government_General_of_Chosen
+		portraits={
+			civilian={
+				large = "gfx/leaders/JAP/JAP_Ugaki_Kazushige.png"
+			}
+		}
+	}
 	JAP_emperor_hirohito={
 		name=JAP_emperor_hirohito
 		portraits={

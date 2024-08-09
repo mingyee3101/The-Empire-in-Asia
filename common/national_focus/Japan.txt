@@ -82,27 +82,15 @@ focus_tree = {
 	focus = {
 		id = JAP_konoe_cabinet_focus
 		icon = GFX_goal_JAP_Konoe_Cabinet
-		cost = 10.00
+		cost = 5.00
 		prerequisite = { focus = JAP_Kodoha_faction_purge }
 		prerequisite = { focus = JAP_pressure_pm_focus }
         relative_position_id = JAP_The_Empire_of_Rising_Sun
 		x = 0
 		y = 2
 		completion_reward = {
-			add_political_power = 100 
-            JAP_Konoe_Fumimaro = {
-                add_country_leader_role = {
-                    country_leader = {
-                        expire = "1965.1.1"
-                        ideology = despotism
-                        traits = {
-                            popular_figurehead
-                            incompetent_leader
-                        }
-                    }
-                    promote_leader = yes
-                }
-            }
+			add_political_power = 100
+            country_event = { id = JAPpm.1 }
 		}
 	}
 	focus = {
@@ -339,7 +327,7 @@ focus_tree = {
 	focus = {
 		id = JAP_Industrialisation
 		icon = GFX_focus_generic_industry_1
-		cost = 6
+		cost = 8
 		relative_position_id = JAP_The_Empire_of_Rising_Sun 
 
 		x = 6
@@ -384,6 +372,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            529 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            531 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -415,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = JAP_Northern_Development
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5
+		cost = 10
 		relative_position_id = JAP_Industrialisation 
         prerequisite = {
             focus = JAP_Industrialisation
@@ -435,18 +439,18 @@ focus_tree = {
 
 		completion_reward = {
             533 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
             534 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -536,7 +540,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            #add_ideas = JAP_idea
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {

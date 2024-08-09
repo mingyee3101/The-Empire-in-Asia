@@ -1,6 +1,7 @@
 add_namespace = aejapan
 add_namespace = jap226
 add_namespace = JAP77
+add_namespace = JAPpm
 add_namespace = jap_news
 
 country_event = {
@@ -249,6 +250,33 @@ country_event = { # 루거우차오 사건
 		hidden_effect = {
 
 		}
+	}
+}
+
+# 일본 정치
+country_event = {
+	id = JAPpm.1
+	title = JAPpm.1.t
+	desc = JAPpm.1.d
+	picture = GFX_event_konoe
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JAPpm.2.a
+            JAP_Konoe_Fumimaro = {
+                add_country_leader_role = {
+                    country_leader = {
+                        expire = "1965.1.1"
+                        ideology = despotism
+                        traits = {
+                            popular_figurehead
+                        }
+                    }
+                    promote_leader = yes
+                }
+            }
 	}
 }
 
