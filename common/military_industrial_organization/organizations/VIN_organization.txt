@@ -30,6 +30,7 @@ VIN_Saigon_Naval_Shipyard = {
 	}
 	available = {
 		owner = { controls_state = 286 } #사이공
+		has_completed_focus = UIC_ship_construction
 	}
 }
 
@@ -108,6 +109,21 @@ VIN_saigon_arsenal = {
 	}
 	available = {
 		owner = { controls_state = 286 } #사이공
+	}
+}
+
+VIN_saigon_arsenal_artillery = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+	allowed = { 
+		or = {
+			tag = UIC
+			tag = VIN
+		}
+	}
+	available = {
+		owner = { controls_state = 286 } #사이공
+		has_completed_focus = UIC_artillery_production
 	}
 }
 

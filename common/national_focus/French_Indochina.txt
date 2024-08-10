@@ -107,29 +107,6 @@ focus_tree = {
 		}
 	}
 
-	#
-
-	focus = {
-		id = UIC_supplying_materials_to_china
-		icon = GFX_focus_UIC_supplying_materials_to_china
-		prerequisite = { focus = UIC_no_negotiation focus = UIC_The_reign_of_jules_brevie }
-		cost = 5
-		x = 3
-		y = 1
-		relative_position_id = UIC_no_negotiation
-
-		available = {
-			#중국(군벌, 공산당)이 존재, 중국과 영토가 닿아있음
-		}
-
-		completion_reward = {
-			unlock_decision_category_tooltip = UIC_foreign_support_category
-			hidden_effect = {
-				set_global_flag = UIC_supplying_materials_to_china
-			}
-		}
-	}
-
 	#인도차이나인 지도자
 
 	#focus = {
@@ -299,7 +276,46 @@ focus_tree = {
 		}
 	}
 
-	#일본의 위협
+	#
+
+	focus = {
+		id = UIC_supplying_materials_to_china
+		icon = GFX_focus_UIC_supplying_materials_to_china
+		prerequisite = { focus = UIC_no_negotiation focus = UIC_The_reign_of_jules_brevie }
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = UIC_no_negotiation
+
+		available = {
+			#중국(군벌, 공산당)이 존재, 중국과 영토가 닿아있음
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = UIC_foreign_support_category
+			hidden_effect = {
+				set_global_flag = UIC_supplying_materials_to_china
+			}
+		}
+	}
+
+	focus = {
+		id = UIC_universite_indochinoise
+		icon = GFX_focus_research2
+		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_granting_freedom_to_the_press }
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = UIC_suppression_of_rebellion
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = UIC_participating_in_the_research_institute_for_development
@@ -319,17 +335,34 @@ focus_tree = {
 		}
 	}
 
+	#일본의 위협
+
 	focus = {
 		id = UIC_japanese_threat
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_granting_freedom_to_the_press }
-		cost = 10
+		cost = 0
 		x = -3
 		y = 1
 		relative_position_id = UIC_granting_freedom_to_the_press
 
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		bypass = {
+			or = {
+				JAP = {
+					has_war_with = CHI
+				}
+				JAP = {
+					has_war_with = UIC
+				}
+			}
+		}
+
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_japanese_threat_tt
 		}
 	}
 
@@ -377,6 +410,12 @@ focus_tree = {
 			has_full_control_of_state = 671
 		}
 
+		bypass = {
+			NOT = {
+				has_full_control_of_state = 671
+			}
+		}
+
 		completion_reward = {
 			671 = {
 				add_building_construction = {
@@ -402,6 +441,12 @@ focus_tree = {
 				character = UIC_jean_decoux
 			}
 			has_full_control_of_state = 970
+		}
+
+		bypass = {
+			NOT = {
+				has_full_control_of_state = 970
+			}
 		}
 
 		completion_reward = {
@@ -531,6 +576,9 @@ focus_tree = {
 		relative_position_id = UIC_japanese_threat
 
 		available = {
+			NOT = {
+				has_completed_focus = UIC_negotiations_with_japan
+			}
 			has_country_leader = {
 				character = UIC_Georges_Catroux
 			}
@@ -555,6 +603,9 @@ focus_tree = {
 		relative_position_id = UIC_provide_information
 
 		available = {
+			NOT = {
+				has_completed_focus = UIC_negotiations_with_japan
+			}
 			has_country_leader = {
 				character = UIC_Georges_Catroux
 			}
@@ -1501,7 +1552,7 @@ focus_tree = {
 		id = UIC_naval_base_construction_plan
 		icon = GFX_focus_POL_develop_polish_shipbuilding
 		prerequisite = { focus = UIC_indochina_conservation_plan }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_indochina_conservation_plan
@@ -1618,7 +1669,7 @@ focus_tree = {
 		id = UIC_request_for_military_reinforcements_and_equipment
 		icon = GFX_focus_SWI_issue_war_bonds
 		prerequisite = { focus = UIC_indochina_conservation_plan }
-		cost = 5
+		cost = 10
 		x = 2
 		y = 1
 		relative_position_id = UIC_indochina_conservation_plan
@@ -1632,13 +1683,90 @@ focus_tree = {
 		id = UIC_request_for_investment_in_france
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_request_for_military_reinforcements_and_equipment }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_request_for_military_reinforcements_and_equipment
 
+        complete_tooltip = {
+            random_state = {
+                limit = { has_state_flag = UIC_request_for_investment_in_france_1 }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_state = {
+                limit = { has_state_flag = UIC_request_for_investment_in_france_2 }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_state = {
+                limit = { has_state_flag = UIC_request_for_investment_in_france_3 }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
 		completion_reward = {
-			
+            random_owned_controlled_state = {
+                prioritize = { 286 979 741 }
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                set_state_flag = UIC_request_for_investment_in_france_1
+            }
+            random_owned_controlled_state = {
+                prioritize = { 286 979 741 }
+                limit = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                set_state_flag = UIC_request_for_investment_in_france_2
+            }
+            random_owned_controlled_state = {
+                prioritize = { 286 979 741 }
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                set_state_flag = UIC_request_for_investment_in_france_3
+            }
 		}
 	}
 
@@ -1646,13 +1774,21 @@ focus_tree = {
 		id = UIC_attracting_french_companies
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_request_for_investment_in_france }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_request_for_investment_in_france
 
 		completion_reward = {
-			
+			hidden_effect = { set_country_flag = has_invited_FRA_renault_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = FRA_renault_organization
+			hidden_effect = { set_country_flag = has_invited_FRA_bloch_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = FRA_bloch_organization
+			hidden_effect = { set_country_flag = has_invited_FRA_mas_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = FRA_mas_organization
 		}
 	}
 
@@ -1771,7 +1907,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			
+			has_completed_focus = UIC_indochina_conservation_plan
 		}
 
 		completion_reward = {
@@ -1804,11 +1940,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
-			custom_effect_tooltip = UIC_maintain_existing_tactics.tt
-			#add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 tooltip = max_planning_tt }
-			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 }
-			add_to_variable = { UIC_tirailleurs_indochinois_command_power_gain = 0.25}
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_command_power_gain = 0.25 tooltip = command_power_gain_tt }
 		}
 	}
 
@@ -1828,7 +1962,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.2 tooltip = max_planning_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_max_dig_in = 0.1 tooltip = max_dig_in_tt }
 		}
 	}
 
@@ -1848,7 +1984,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_dig_in_speed_factor = 0.1 tooltip = dig_in_speed_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
 		}
 	}
 
@@ -1869,7 +2007,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			set_technology = { UIC_mountain_training = 1 }
+			custom_effect_tooltip = UIC_mountain_training_tt
 		}
 	}
 
@@ -1890,7 +2029,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			set_technology = { UIC_jungle_training = 1 }
+			custom_effect_tooltip = UIC_jungle_training_tt
 		}
 	}
 
@@ -1908,8 +2048,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -50
-			army_experience = -10
+			add_tech_bonus = {
+				name = UIC_artillery_production
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = VIN_saigon_arsenal_artillery
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			has_idea = UIC_production_infantry_weapons
+			#		}
+			#	}
+			#	add_ideas = UIC_production_artillery
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_idea = UIC_production_infantry_weapons
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = UIC_production_infantry_weapons
+			#		add_idea = UIC_production_infantry_weapons_artillery
+			#	}
+			#}
 		}
 	}
 
@@ -1927,8 +2090,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -50
-			army_experience = -10
+			add_tech_bonus = {
+				name = UIC_supply_of_quality_equipment
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			has_idea = UIC_production_artillery
+			#		}
+			#	}
+			#	add_ideas = UIC_production_infantry_weapons
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_idea = UIC_production_artillery
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = UIC_production_artillery
+			#		add_idea = UIC_production_infantry_weapons_artillery
+			#	}
+			#}
 		}
 	}
 
@@ -1947,8 +2131,38 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -100
-			army_experience = -30
+			add_tech_bonus = {
+				name = UIC_tank_armament
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			AND = {
+			#				has_idea = UIC_aircraft_production
+			#				has_idea = UIC_ship_construction_ii
+			#			}
+			#		}
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = UIC_production_infantry_weapons_artillery
+			#		add_idea = UIC_production_armor
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		AND = {
+			#			has_idea = UIC_aircraft_production
+			#			has_idea = UIC_ship_construction_ii
+			#		}
+			#	}
+			#	remove_ideas = UIC_production_infantry_weapons_artillery
+			#	remove_ideas = UIC_aircraft_production
+			#	remove_ideas = UIC_ship_construction_ii
+			#	add_ideas = UIC_indochina_army_armament
+			#}
 		}
 	}
 
@@ -1957,7 +2171,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_tirailleurs_indochinois }
 		mutually_exclusive = { focus = UIC_maintain_existing_tactics }
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 		relative_position_id = UIC_tirailleurs_indochinois
@@ -1969,8 +2183,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
-			#전술 개발 디버프
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_army_org_factor = -0.1 tooltip = army_org_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = -0.2 tooltip = max_planning_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_planning_speed_factor = -0.3 tooltip = planning_speed_factor_tt }
 		}
 	}
 
@@ -1978,7 +2194,7 @@ focus_tree = {
 		id = UIC_infantry_combat
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = UIC_new_tactics }
-		cost = 10
+		cost = 15
 		x = 2
 		y = 1
 		relative_position_id = UIC_new_tactics
@@ -1986,11 +2202,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-				
+			NOT = {
+				has_idea = UIC_unprepared_army_i
+			}
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_army_org_factor = 0.1 tooltip = army_org_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.2 tooltip = max_planning_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_planning_speed_factor = 0.3 tooltip = planning_speed_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_recon_factor = 0.1 tooltip = recon_factor_tt }
 		}
 	}
 
@@ -2010,7 +2234,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_training_time_factor = 0.2 tooltip = training_time_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor = 0.05 tooltip = acclimatization_hot_climate_gain_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_heat_attrition = 0.1 tooltip = heat_attrition_tt }
+			#인도차이나 국가들이 독립하면 훈련 디버프가 사라짐
 		}
 	}
 
@@ -2029,7 +2259,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_colonial_army_modernization_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = UIC_maintain_existing_tactics
+						}
+					}
+					add_to_variable = { UIC_tirailleurs_indochinois_max_planning = 0.1 tooltip = max_planning_tt }
+					add_to_variable = { UIC_tirailleurs_indochinois_max_dig_in = 0.1 tooltip = max_dig_in_tt }
+					add_to_variable = { UIC_tirailleurs_indochinois_max_command_power = 20 tooltip = max_command_power_tt }
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = UIC_new_tactics
+					}
+					add_to_variable = { UIC_tirailleurs_indochinois_org_loss_when_moving = -0.1 tooltip = org_loss_when_moving_tt }
+					add_to_variable = { UIC_tirailleurs_indochinois_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+					add_to_variable = { UIC_tirailleurs_indochinois_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+					add_to_variable = { UIC_tirailleurs_indochinois_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
+				}
+			}
 		}
 	}
 
@@ -2047,7 +2298,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
+			add_to_variable = { UIC_tirailleurs_indochinois_training_time_factor = -0.1 tooltip = training_time_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_experience_gain_army_factor = 0.1 tooltip = experience_gain_army_factor_tt }
 		}
 	}
 
@@ -2061,11 +2314,18 @@ focus_tree = {
 		relative_position_id = UIC_tirailleurs_indochinois
 
 		available = {
-			
+			has_completed_focus = UIC_indochina_conservation_plan
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			effect_tooltip = {
+				add_ideas = UIC_indochina_air_force_fake
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+		            modifier = UIC_indochina_air_force
+		        }
+			}
 		}
 	}
 
@@ -2120,7 +2380,35 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			add_tech_bonus = {
+				name = UIC_supply_of_quality_equipment
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+			add_ideas = UIC_aircraft_production
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			AND = {
+			#				has_idea = UIC_production_armor
+			#				has_idea = UIC_ship_construction_ii
+			#			}
+			#		}
+			#	}
+			#	add_ideas = UIC_aircraft_production
+			#}
+			#else_if = {
+			#	limit = {
+			#		AND = {
+			#			has_idea = UIC_production_armor
+			#			has_idea = UIC_ship_construction_ii
+			#		}
+			#	}
+			#	remove_ideas = UIC_production_armor
+			#	remove_ideas = UIC_ship_construction_ii
+			#	add_ideas = UIC_indochina_army_armament
+			#}
 		}
 	}
 
@@ -2264,7 +2552,7 @@ focus_tree = {
 		relative_position_id = UIC_indochina_air_force
 
 		available = {
-			
+			has_completed_focus = UIC_indochina_conservation_plan
 		}
 
 		completion_reward = {
@@ -2286,7 +2574,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = VIN_Saigon_Naval_Shipyard
+			add_ideas = UIC_ship_construction_i
 		}
 	}
 
@@ -2304,7 +2594,39 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			add_tech_bonus = {
+				name = UIC_supply_of_quality_equipment
+				bonus = 1.0
+				uses = 2
+				category = cl_tech #경순
+				category = ca_tech #중순
+			}
+			#if = {
+			#	limit = {
+			#		NOT = {
+			#			AND = {
+			#				has_idea = UIC_production_armor
+			#				has_idea = UIC_aircraft_production
+			#			}
+			#		}
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = UIC_ship_construction_i
+			#		add_idea = UIC_ship_construction_ii
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		AND = {
+			#			has_idea = UIC_production_armor
+			#			has_idea = UIC_aircraft_production
+			#		}
+			#	}
+			#	remove_ideas = UIC_production_armor
+			#	remove_ideas = UIC_aircraft_production
+			#	remove_ideas = UIC_ship_construction_i
+			#	add_ideas = UIC_indochina_army_armament
+			#}
 		}
 	}
 

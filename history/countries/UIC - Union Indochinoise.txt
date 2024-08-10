@@ -18,6 +18,10 @@ set_variable = { UIC_tirailleurs_indochinois_experience_gain_army_factor = 0.05 
 set_variable = { UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor = 0.05 }
 set_variable = { UIC_tirailleurs_indochinois_max_planning = 0 }
 
+#인도차이나 공군
+set_variable = { UIC_indochina_air_force_experience_gain_air_factor = 0.05 }
+set_variable = { UIC_indochina_air_force_air_accidents_factor = -0.1 }
+
 #set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5

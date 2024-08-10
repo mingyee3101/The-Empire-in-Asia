@@ -82,6 +82,37 @@ ideas = {
 
 		}
 
+		UIC_unprepared_army_ii = {
+			
+			allowed = {
+				
+			}
+
+			picture = generic_neglected_military
+			
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+			}
+
+		}
+
+		UIC_unprepared_army_iii = {
+			
+			allowed = {
+				
+			}
+
+			picture = generic_neglected_military
+			
+			modifier = {
+				army_attack_factor = -0.1
+				army_org_factor = -0.1
+			}
+
+		}
+
 		#인도차이나인 노동
 
 		UIC_Indochinese_labor_2 = {
@@ -419,10 +450,21 @@ ideas = {
 
 		}
 
+		UIC_indochina_air_force_fake = {
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				experience_gain_air_factor = 0.05
+				air_accidents_factor = -0.1
+			}
+
+		}
+
 		UIC_china_indochina_cooperation_1 = {
 
 			allowed = {
-				has_war = no
+				
 			}
 
 			picture = usa_great_depression
@@ -438,7 +480,7 @@ ideas = {
 		UIC_china_indochina_cooperation_2 = {
 
 			allowed = {
-				has_war = no
+				
 			}
 
 			picture = usa_great_depression
@@ -455,7 +497,7 @@ ideas = {
 		UIC_china_indochina_cooperation_3 = {
 
 			allowed = {
-				has_war = no
+				
 			}
 
 			picture = usa_great_depression
@@ -466,6 +508,255 @@ ideas = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				industrial_capacity_factory = 0.1
+			}
+
+		}
+
+		UIC_production_infantry_weapons = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.1
+				}
+			}
+
+		}
+
+		UIC_production_artillery = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		UIC_production_infantry_weapons_artillery = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.1
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		UIC_production_armor = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.1
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				light_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		UIC_aircraft_production = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		UIC_ship_construction_i = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			
+			#equipment_bonus = {
+			#	ship_hull_light = {
+			#		instant = yes
+			#		build_cost_ic = -0.1
+			#	}
+			#}
+
+		}
+
+		UIC_ship_construction_ii = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				ship_hull_light = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		UIC_indochina_army_armament = {
+
+			allowed = {
+				
+			}
+
+			picture = usa_great_depression
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				light_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				heavy_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				ship_hull_light = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				ship_hull_cruiser = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
 			}
 
 		}

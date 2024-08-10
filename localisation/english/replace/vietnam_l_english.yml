@@ -32,7 +32,7 @@
   VIN_Le_Trong_Tan:0 "레쫑떤"
   VIN_Chu_Huy_Man:0 "추후이먼"
   VIN_Vuong_Thua_Vu:0 "브엉트어부"
-  VIN_Nguyen_Binh:0 "응우옌빈"
+  VIN_Nguyen_Binh:0 "응우옌빈" #베트남 국민당
   VIN_Nguyen_Son:0 "응우옌선" #중국 홍군 유일 외국인 장교 #48년 소장
 
   #제독
@@ -109,6 +109,7 @@
 
   #mio
   VIN_saigon_arsenal:0 "사이공 병기창"
+  VIN_saigon_arsenal_artillery:0 "사이공 병기창 - 야포 부문"
   VIN_Cam_Ranh_arsenal:0 "깜라인 병기창"
   VIN_nha_may_z111:0 "Z111 병기창"
   VIN_thaco:0 "타코"

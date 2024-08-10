@@ -1,18 +1,56 @@
 technologies = {
 
 	PRC_mountaineers_tech = {
-			research_cost = 1
+		research_cost = 1
 	
-			allow = {
-				always = no
-			}
+		allow = {
+			always = no
+		}
 
-			mountaineers = {
-				supply_consumption = -0.1
-				soft_attack = 0.05
-				hard_attack = 0.05
-				defense = 0.10
+		mountaineers = {
+			supply_consumption = -0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
+			defense = 0.10
+		}
+	}
+
+	UIC_mountain_training = {
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+
+		category_light_infantry = {
+			hills = {
+				attack = 0.1	
+				defence = 0.1
+			}
+			mountain = {
+				attack = 0.1	
+				defence = 0.1
 			}
 		}
+	}
+
+	UIC_jungle_training = {
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+
+		category_light_infantry = {
+			forest = {
+				attack = 0.1	
+				defence = 0.1
+			}
+			jungle = {
+				attack = 0.1	
+				defence = 0.1
+			}
+		}
+	}
 
 }

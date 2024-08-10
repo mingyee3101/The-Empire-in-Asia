@@ -619,6 +619,48 @@ UIC_faction_management_category = {
 
 UIC_request_for_military_reinforcements_and_equipment_category = {
 
+	UIC_army_reform = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_army_experience > 99
+			OR = {
+				has_idea = UIC_unprepared_army_ii
+				has_idea = UIC_unprepared_army_iii
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_idea = UIC_unprepared_army_ii
+				has_idea = UIC_unprepared_army_iii
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = UIC_unprepared_army_ii }
+				swap_ideas = {
+					remove_idea = UIC_unprepared_army_ii
+					add_idea = UIC_unprepared_army_iii
+				}
+			}
+			else_if = {
+				limit = { has_idea = UIC_unprepared_army_iii }
+				remove_ideas = UIC_unprepared_army_iii
+			}
+		}
+		complete_effect = {
+			army_experience = -100						
+		}		
+	}
+
 	UIC_infanterie_de_marine_reinforcements = {
 		allowed = {
 			original_tag = UIC
@@ -633,25 +675,36 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 		}
 		visible = {
 			UIC = {
-				has_completed_focus = UIC_supplying_materials_to_china
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
 			}
 		}
-		#days_remove = 30
-		#days_re_enable = 120
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
 		}
 		cost = 50
-		complete_effect = {
-			#소비재 디버프
-			#프랑스 소비재 버프
+		days_remove = 30
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = UIC_infanterie_de_marine_reinforcements
+			}
 			if = {
 				limit = {
 					has_full_control_of_state = 286
 				}
 				286 = {
 					create_unit = {
-						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
@@ -663,7 +716,17 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 				}
 				997 = {
 					create_unit = {
-						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
@@ -675,7 +738,17 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 				}
 				979 = {
 					create_unit = {
-						division = "name = \"식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 보병 연대\" division_template = \"식민지 보병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
@@ -698,24 +771,36 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 		}
 		visible = {
 			UIC = {
-				has_completed_focus = UIC_supplying_materials_to_china
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
 			}
 		}
-		#days_remove = 30
-		#days_re_enable = 120
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 0
 		}
-		complete_effect = {
-			#소비재 디버프
-			#프랑스 소비재 버프
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = UIC_artillerie_de_marine_reinforcements
+			}
 			if = {
 				limit = {
 					has_full_control_of_state = 286
 				}
 				286 = {
 					create_unit = {
-						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
@@ -727,7 +812,17 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 				}
 				997 = {
 					create_unit = {
-						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
@@ -739,11 +834,368 @@ UIC_request_for_military_reinforcements_and_equipment_category = {
 				}
 				979 = {
 					create_unit = {
-						division = "name = \"식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_experience_factor = 0.8" 
+						division = "name = \"제1식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제3식민지 포병 연대\" division_template = \"식민지 포병 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
 						owner = UIC
 						allow_spawning_on_enemy_provs = no
 					}
 				}
+			}
+		}
+	}
+
+	UIC_regiment_de_chars_de_combat_reinforcements = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			OR = {
+				controls_state = 286 #사이공
+				controls_state = 997 #시아누크빌
+				controls_state = 979 #카인호아 냐짱
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = UIC_unprepared_army_i
+				add_idea = UIC_unprepared_army_ii
+			}
+			division_template = { #501e régiment de chars de combat
+					name = "식민지 전차 연대"
+					priority = 1
+					division_names_group = UIC_COL_01
+					is_locked = yes
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+					}
+					support = {
+						mot_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+					}
+				}
+			if = {
+				limit = {
+					has_full_control_of_state = 286
+				}
+				286 = {
+					create_unit = {
+						division = "name = \"제1식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 997
+				}
+				997 = {
+					create_unit = {
+						division = "name = \"제1식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_full_control_of_state = 979
+				}
+				979 = {
+					create_unit = {
+						division = "name = \"제1식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"제2식민지 전차 연대\" division_template = \"식민지 전차 연대\" start_experience_factor = 0.3 start_equipment_factor = 0.8" 
+						owner = UIC
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	UIC_expanding_the_infanterie_de_marine = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			OR = {
+				controls_state = 286 #사이공
+				controls_state = 997 #시아누크빌
+				controls_state = 979 #카인호아 냐짱
+			}
+		}
+		visible = {
+			has_country_flag = UIC_infanterie_de_marine_reinforcements
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			add_units_to_division_template = {
+				template_name = "식민지 보병 연대"
+				regiments = {
+					infantry = 1
+					infantry = 1 
+				}
+				support = {
+					engineer = 0
+				}
+			}
+		}
+	}
+
+	UIC_expanding_the_artillerie_de_marine = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			OR = {
+				controls_state = 286 #사이공
+				controls_state = 997 #시아누크빌
+				controls_state = 979 #카인호아 냐짱
+			}
+		}
+		visible = {
+			has_country_flag = UIC_artillerie_de_marine_reinforcements
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		days_remove = 30
+		remove_effect = {
+			add_units_to_division_template = {
+				template_name = "식민지 포병 연대"
+				regiments = {
+					infantry = 0
+					infantry = 0 
+				}
+				support = {
+					artillery = 0
+					mot_recon = 0
+					engineer = 0
+				}
+			}
+		}
+	}
+
+	UIC_request_infantry_equipment = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			and = {
+				or = {
+					NOT = {
+						has_capitulated = yes
+						has_global_flag = achievement_france_surrender
+					}
+				}
+				is_subject_of = FRA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = FRA
+			}
+		}
+	}
+
+	UIC_request_artillery_equipment = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			and = {
+				or = {
+					NOT = {
+						has_capitulated = yes
+						has_global_flag = achievement_france_surrender
+					}
+				}
+				is_subject_of = FRA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+				producer = FRA
+			}
+		}
+	}
+
+	UIC_request_support_equipment = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			and = {
+				or = {
+					NOT = {
+						has_capitulated = yes
+						has_global_flag = achievement_france_surrender
+					}
+				}
+				is_subject_of = FRA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+				producer = FRA
+			}
+		}
+	}
+
+	UIC_request_motorized_equipment = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			and = {
+				or = {
+					NOT = {
+						has_capitulated = yes
+						has_global_flag = achievement_france_surrender
+					}
+				}
+				is_subject_of = FRA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+				producer = FRA
+			}
+		}
+	}
+
+	UIC_request_light_tank_equipment = {
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			and = {
+				or = {
+					NOT = {
+						has_capitulated = yes
+						has_global_flag = achievement_france_surrender
+					}
+				}
+				is_subject_of = FRA
+			}
+		}
+		visible = {
+			UIC = {
+				has_completed_focus = UIC_request_for_military_reinforcements_and_equipment
+			}
+		}
+		days_re_enable = 150
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 200
+				producer = FRA
 			}
 		}
 	}

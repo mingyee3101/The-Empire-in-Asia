@@ -1,4 +1,11 @@
 ﻿l_english:
- production_speed_bunker_factor_tt: " $modifier_production_speed_bunker_factor$: $RIGHT|+=%1$" #요새 건설속도
- industry_air_damage_factor_tt:0 " $MODIFIER_INDUSTRY_AIR_DAMAGE_FACTOR$: $RIGHT|-=%1$" #공장 폭격 취약도
- naval_speed_factor_tt:0 " $MODIFIER_NAVAL_SPEED_FACTOR$: $RIGHT|+=%1$" #해군 속도
+ production_speed_bunker_factor_tt: " $modifier_production_speed_bunker_factor$: $RIGHT|+=%1$"
+ industry_air_damage_factor_tt: " $MODIFIER_INDUSTRY_AIR_DAMAGE_FACTOR$: $RIGHT|-=%1$"
+ naval_speed_factor_tt: " $MODIFIER_NAVAL_SPEED_FACTOR$: $RIGHT|+=%1$"
+ max_planning_tt: " $MODIFIER_MAX_PLANNING$: $RIGHT|+=%1$"
+ command_power_gain_tt: " $MODIFIER_COMMAND_POWER_GAIN$: $RIGHT|+=%1$"
+ army_speed_factor_tt: " $MODIFIER_ARMY_SPEED_FACTOR$: $RIGHT|+=%1$"
+ recon_factor_tt: " $MODIFIER_RECON_FACTOR$: $RIGHT|+=%1$"
+ acclimatization_hot_climate_gain_factor_tt: " $MODIFIER_ACCLIMATIZATION_HOT_CLIMATE_GAIN_FACTOR$: $RIGHT|+=%1$"
+ heat_attrition_tt: " $MODIFIER_HEAT_ATTRITION$: $RIGHT|+=%1$"
+ max_dig_in_tt: " $MODIFIER_MAX_DIG_IN$: $RIGHT|+=%1$"

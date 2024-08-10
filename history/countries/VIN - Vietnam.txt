@@ -116,7 +116,7 @@ recruit_character = VIN_Hoang_Van_Thai
 recruit_character = VIN_Le_Trong_Tan
 recruit_character = VIN_Chu_Huy_Man
 recruit_character = VIN_Vuong_Thua_Vu
-recruit_character = VIN_Nguyen_Binh
+recruit_character = VIN_Nguyen_Binh #베트남 국민당
 recruit_character = VIN_Nguyen_Son
 
 #recruit_character = VIN_Nguyen_Van_Xuan #45년 Quan năm(Đại tá) 대령~준장 사이

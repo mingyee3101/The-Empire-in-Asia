@@ -335,7 +335,7 @@ characters = {
 		}
 	}
 	
-	VIN_Nguyen_Binh={ #48년 중장 #베트남 인민군 최초 중장
+	VIN_Nguyen_Binh={ #48년 중장 #베트남 인민군 최초 중장 #베트남 국민당
 		name=VIN_Nguyen_Binh
 		portraits={
 			army={

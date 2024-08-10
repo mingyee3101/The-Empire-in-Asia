@@ -45,6 +45,28 @@ UIC_tirailleurs_indochinois = {
 
 	experience_gain_army_factor = UIC_tirailleurs_indochinois_experience_gain_army_factor
 	acclimatization_hot_climate_gain_factor = UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor
+	heat_attrition = UIC_tirailleurs_indochinois_heat_attrition
 	max_planning = UIC_tirailleurs_indochinois_max_planning
 	command_power_gain = UIC_tirailleurs_indochinois_command_power_gain
+	army_org_factor = UIC_tirailleurs_indochinois_army_org_factor
+	planning_speed_factor = UIC_tirailleurs_indochinois_planning_speed_factor
+	army_attack_factor = UIC_tirailleurs_indochinois_army_attack_factor
+	army_core_attack_factor = UIC_tirailleurs_indochinois_army_core_defence_factor
+	army_core_defence_factor = UIC_tirailleurs_indochinois_army_core_defence_factor
+	army_speed_factor = UIC_tirailleurs_indochinois_army_speed_factor
+	recon_factor = UIC_tirailleurs_indochinois_recon_factor
+	training_time_factor = UIC_tirailleurs_indochinois_training_time_factor
+	max_dig_in = UIC_tirailleurs_indochinois_max_dig_in
+	dig_in_speed_factor = UIC_tirailleurs_indochinois_dig_in_speed_factor
+	max_command_power = UIC_tirailleurs_indochinois_max_command_power
+	org_loss_when_moving = UIC_tirailleurs_indochinois_org_loss_when_moving
+	experience_gain_army_factor = UIC_tirailleurs_indochinois_experience_gain_army_factor
+}
+
+UIC_indochina_air_force = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	experience_gain_air_factor = UIC_indochina_air_force_experience_gain_air_factor
+	air_accidents_factor = UIC_indochina_air_force_air_accidents_factor
+
 }
