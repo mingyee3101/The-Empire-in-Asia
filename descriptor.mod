@@ -4,4 +4,4 @@ tags={
 }
 replace_path="gfx/loadingscreens"
 name="The Empire in Asia"
-supported_version="1.13.*"
+supported_version="1.14.*"
