@@ -9,3 +9,8 @@
  acclimatization_hot_climate_gain_factor_tt: " $MODIFIER_ACCLIMATIZATION_HOT_CLIMATE_GAIN_FACTOR$: $RIGHT|+=%1$"
  heat_attrition_tt: " $MODIFIER_HEAT_ATTRITION$: $RIGHT|+=%1$"
  max_dig_in_tt: " $MODIFIER_MAX_DIG_IN$: $RIGHT|+=%1$"
+ experience_gain_navy_factor_tt: " $MODIFIER_XP_GAIN_NAVY_FACTOR$: $RIGHT|+=%1$"
+ convoy_escort_efficiency_tt: " $MODIFIER_XP_GAIN_NAVY_FACTOR$: $RIGHT|+=%1$"
+ naval_strike_tt: " $MODIFIER_NAVAL_STRIKE$: $RIGHT|+=%1$"
+ critical_receive_chance_tt: " $MODIFIER_NAVAL_CRITICAL_RECEIVE_CHANCE_FACTOR$: $RIGHT|-=%1$"
+ naval_retreat_speed_tt: " $MODIFIER_NAVAL_RETREAT_SPEED$: $RIGHT|+=%1$"

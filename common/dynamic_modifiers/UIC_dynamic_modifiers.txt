@@ -60,7 +60,6 @@ UIC_tirailleurs_indochinois = {
 	dig_in_speed_factor = UIC_tirailleurs_indochinois_dig_in_speed_factor
 	max_command_power = UIC_tirailleurs_indochinois_max_command_power
 	org_loss_when_moving = UIC_tirailleurs_indochinois_org_loss_when_moving
-	experience_gain_army_factor = UIC_tirailleurs_indochinois_experience_gain_army_factor
 }
 
 UIC_indochina_air_force = {
@@ -68,5 +67,27 @@ UIC_indochina_air_force = {
 
 	experience_gain_air_factor = UIC_indochina_air_force_experience_gain_air_factor
 	air_accidents_factor = UIC_indochina_air_force_air_accidents_factor
+	air_ace_generation_chance_factor = UIC_indochina_air_force_air_ace_generation_chance_factor
+	air_weather_penalty = UIC_indochina_air_force_air_weather_penalty
+	ground_attack_factor = UIC_indochina_air_force_ground_attack_factor
+	air_cas_efficiency = UIC_indochina_air_force_air_cas_efficiency
+	air_intercept_efficiency = UIC_indochina_air_force_air_intercept_efficiency
+	air_superiority_efficiency = UIC_indochina_air_force_air_superiority_efficiency
+	air_nav_efficiency = UIC_indochina_air_force_air_nav_efficiency
+
+}
+
+UIC_far_east_squadron = {
+	icon = GFX_idea_generic_agrarian_reform
+
+	experience_gain_navy_factor = UIC_far_east_squadron_experience_gain_navy_factor
+	naval_accidents_chance = UIC_far_east_squadron_naval_accidents_chance
+	navy_org_factor = UIC_far_east_squadron_navy_org_factor
+	naval_strike = UIC_far_east_squadron_naval_strike
+	naval_detection = UIC_far_east_squadron_naval_detection
+	critical_receive_chance = UIC_far_east_squadron_critical_receive_chance
+	naval_retreat_speed = UIC_far_east_squadron_naval_retreat_speed
+	convoy_escort_efficiency = UIC_far_east_squadron_convoy_escort_efficiency
+	navy_anti_air_attack_factor = UIC_far_east_squadron_navy_anti_air_attack_factor
 
 }

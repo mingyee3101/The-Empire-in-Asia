@@ -589,7 +589,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			#이벤트로 미국, 영국, 자유프랑스, 말레이, 인도네시아, 호주, 뉴질랜드에 정보주기
+			add_intel = {
+				target = JAP
+				civilian_intel = 5
+				army_intel = 10
+				navy_intel = 10
+				airforce_intel = 10
+			}
 		}
 	}
 
@@ -1049,7 +1056,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_forced_to_grow_cash_crops
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
 		mutually_exclusive = { focus = UIC_cash_crop_regulations }
 		cost = 5
@@ -1073,7 +1080,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_cash_crop_regulations
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_form_rfsu
 		prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
 		mutually_exclusive = { focus = UIC_forced_to_grow_cash_crops }
 		cost = 10
@@ -1093,7 +1100,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_food_plunder
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_UIC_food_plunder
 		prerequisite = { focus = UIC_forced_to_grow_cash_crops focus = UIC_cash_crop_regulations }
 		cost = 10
 		x = 1
@@ -1123,7 +1130,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_prohibition_of_opium_cultivation
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_UIC_prohibition_of_opium_cultivation
 		prerequisite = { focus = UIC_cash_crop_regulations }
 		#mutually_exclusive = { focus = UIC_encouraging_opium_cultivation }
 		cost = 10
@@ -1159,7 +1166,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_flood_preparedness
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_workers
 		prerequisite = { focus = UIC_indochina_economy }
 		cost = 10
 		x = 1
@@ -1188,7 +1195,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_strengthening_public_works
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = UIC_indochina_economy }
 		cost = 10
 		x = 3
@@ -1251,7 +1258,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_construction_of_irrigation_facilities
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		prerequisite = { focus = UIC_flood_preparedness focus = UIC_strengthening_public_works }
 		cost = 10
 		x = 0
@@ -1338,7 +1345,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_local_investment_plan
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = UIC_indochina_economy }
 		cost = 10
 		x = 5
@@ -1357,7 +1364,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_factory_modernization_plan
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = UIC_local_investment_plan }
 		cost = 10
 		x = 0
@@ -1794,7 +1801,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_local_conscription
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_UIC_local_conscription
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
 		x = 4
@@ -1925,7 +1932,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_maintain_existing_tactics
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { focus = UIC_tirailleurs_indochinois }
 		mutually_exclusive = { focus = UIC_new_tactics }
 		cost = 5
@@ -2168,7 +2175,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_new_tactics
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = UIC_tirailleurs_indochinois }
 		mutually_exclusive = { focus = UIC_maintain_existing_tactics }
 		cost = 5
@@ -2300,7 +2307,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = UIC_tirailleurs_indochinois_ns_intro
 			add_to_variable = { UIC_tirailleurs_indochinois_training_time_factor = -0.1 tooltip = training_time_factor_tt }
-			add_to_variable = { UIC_tirailleurs_indochinois_experience_gain_army_factor = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { UIC_tirailleurs_indochinois_experience_gain_army_factor = 0.05 tooltip = experience_gain_army_factor_tt }
 		}
 	}
 
@@ -2344,7 +2351,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_accidents_factor = -0.1 tooltip = air_accidents_factor_tt }
+			add_to_variable = { UIC_indochina_air_force_air_ace_generation_chance_factor = 0.2 tooltip = air_ace_generation_chance_factor_tt }
 		}
 	}
 
@@ -2362,7 +2371,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_accidents_factor = -0.1 tooltip = air_accidents_factor_tt }
+			add_to_variable = { UIC_indochina_air_force_air_weather_penalty = -0.2 tooltip = air_weather_penalty_tt }
 		}
 	}
 
@@ -2427,7 +2438,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_ground_attack_factor = 0.1 tooltip = ground_attack_factor_tt }
 		}
 	}
 
@@ -2445,7 +2457,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_cas_efficiency = 0.1 tooltip = air_cas_efficiency_tt }
 		}
 	}
 
@@ -2464,7 +2477,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_intercept_efficiency = 0.1 tooltip = air_intercept_efficiency_tt }
 		}
 	}
 
@@ -2482,7 +2496,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_superiority_efficiency = 0.1 tooltip = air_superiority_efficiency_tt }
 		}
 	}
 
@@ -2501,7 +2516,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_nav_efficiency = 0.1 tooltip = air_nav_efficiency_tt }
 		}
 	}
 
@@ -2519,7 +2535,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_nav_efficiency = 0.1 tooltip = air_nav_efficiency_tt }
 		}
 	}
 
@@ -2538,7 +2555,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_indochina_air_force_ns_intro
+			add_to_variable = { UIC_indochina_air_force_air_mission_efficiency = 0.2 tooltip = air_mission_efficiency_tt }
+			add_to_variable = { UIC_indochina_air_force_air_night_penalty = -0.2 tooltip = air_night_penalty_tt }
 		}
 	}
 	
@@ -2556,7 +2575,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			effect_tooltip = {
+				add_ideas = UIC_far_east_squadron_fake
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+		            modifier = UIC_far_east_squadron
+		        }
+			}
 		}
 	}
 
@@ -2645,7 +2671,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_far_east_squadron_ns_intro
+			add_to_variable = { UIC_far_east_squadron_naval_detection = 0.1 tooltip = naval_detection_tt }
+			add_to_variable = { UIC_far_east_squadron_naval_strike = 0.1 tooltip = naval_strike_tt }
+			#천해 특성
 		}
 	}
 
@@ -2664,7 +2693,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_far_east_squadron_ns_intro
+			add_to_variable = { UIC_far_east_squadron_critical_receive_chance = -0.2 tooltip = critical_receive_chance_tt }
+			add_to_variable = { UIC_far_east_squadron_naval_retreat_speed = 0.2 tooltip = naval_retreat_speed_tt }
+			#대양 특성
 		}
 	}
 
@@ -2682,7 +2714,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_far_east_squadron_ns_intro
+			add_to_variable = { UIC_far_east_squadron_experience_gain_navy_factor = 0.05 tooltip = experience_gain_navy_factor_tt }
+			add_to_variable = { UIC_far_east_squadron_naval_accidents_chance = -0.1 tooltip = naval_accidents_chance_tt }
 		}
 	}
 
@@ -2700,7 +2734,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_far_east_squadron_ns_intro
+			add_to_variable = { UIC_far_east_squadron_navy_org_factor = 0.1 tooltip = navy_org_factor_tt }
 		}
 	}
 
@@ -2719,7 +2754,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = UIC_far_east_squadron_ns_intro
+			add_to_variable = { UIC_far_east_squadron_navy_org_factor = 0.1 tooltip = navy_org_factor_tt }
+			add_to_variable = { UIC_far_east_squadron_convoy_escort_efficiency = 0.2 tooltip = convoy_escort_efficiency_tt }
+			add_to_variable = { UIC_far_east_squadron_navy_anti_air_attack_factor = 0.1 tooltip = navy_anti_air_attack_factor_tt }
 		}
 	}
 }

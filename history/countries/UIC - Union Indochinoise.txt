@@ -22,6 +22,10 @@ set_variable = { UIC_tirailleurs_indochinois_max_planning = 0 }
 set_variable = { UIC_indochina_air_force_experience_gain_air_factor = 0.05 }
 set_variable = { UIC_indochina_air_force_air_accidents_factor = -0.1 }
 
+#인도차이나 해군
+set_variable = { UIC_far_east_squadron_experience_gain_navy_factor = 0.05 }
+set_variable = { UIC_far_east_squadron_naval_accidents_chance = -0.1 }
+
 #set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5

@@ -27,6 +27,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_UIC_far_east_squadron.png"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_UIC_local_conscription"
+		texturefile = "gfx/interface/goals/focus_UIC_local_conscription.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_UIC_prohibition_of_opium_cultivation"
+		texturefile = "gfx/interface/goals/focus_UIC_prohibition_of_opium_cultivation.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_UIC_food_plunder"
+		texturefile = "gfx/interface/goals/focus_UIC_food_plunder.png"
+	}
+
 	#만주국
 
 	SpriteType = { 
