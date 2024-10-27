@@ -24,12 +24,12 @@ technologies = {
 
 		category_light_infantry = {
 			hills = {
-				attack = 0.1	
-				defence = 0.1
+				attack = 0.05	
+				defence = 0.05
 			}
 			mountain = {
-				attack = 0.1	
-				defence = 0.1
+				attack = 0.05	
+				defence = 0.05
 			}
 		}
 	}
@@ -43,12 +43,12 @@ technologies = {
 
 		category_light_infantry = {
 			forest = {
-				attack = 0.1	
-				defence = 0.1
+				attack = 0.05	
+				defence = 0.05
 			}
 			jungle = {
-				attack = 0.1	
-				defence = 0.1
+				attack = 0.05	
+				defence = 0.05
 			}
 		}
 	}

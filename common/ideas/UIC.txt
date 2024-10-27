@@ -15,6 +15,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.4
 				war_support_factor = -0.4
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
 			}
 
 		}
@@ -30,6 +31,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				war_support_factor = -0.4
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
 			}
 
 		}
@@ -45,6 +47,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.2
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
 			}
 
 		}
@@ -60,6 +63,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.15
 				war_support_factor = -0.1
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
 			}
 
 		}
@@ -124,8 +128,7 @@ ideas = {
 			picture = Indochinese_labor
 			
 			modifier = {
-				political_power_factor = -0.05
-				production_speed_buildings_factor = 0.2
+				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.3
 				industrial_capacity_dockyard = 0.3
 			}
@@ -142,8 +145,8 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 
 		}
@@ -158,8 +161,6 @@ ideas = {
 			
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
 			}
 
 		}
@@ -188,10 +189,10 @@ ideas = {
 			picture = generic_oppression
 			
 			modifier = {
-				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
 				production_speed_buildings_factor = 0.05
-				political_power_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 
 		}
@@ -205,12 +206,10 @@ ideas = {
 			picture = generic_oppression
 			
 			modifier = {
-				consumer_goods_factor = -0.1
 				local_resources_factor = 0.3
 				production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				political_power_factor = 0.1
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
 			}
 
 		}
@@ -309,7 +308,7 @@ ideas = {
 
 		UIC_profits_in_indochina_i = {
 
-			picture = generic_build_infrastructure
+			picture = Indochinese_labor
 			
 			modifier = {
 				consumer_goods_factor = -0.03
@@ -320,7 +319,7 @@ ideas = {
 
 		UIC_profits_in_indochina_ii = {
 
-			picture = generic_build_infrastructure
+			picture = Indochinese_labor
 			
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -331,11 +330,11 @@ ideas = {
 
 		UIC_profits_in_indochina_iii = {
 
-			picture = generic_build_infrastructure
+			picture = Indochinese_labor
 			
 			modifier = {
 				consumer_goods_factor = -0.1
-				production_speed_buildings_factor = 0.3
+				production_speed_buildings_factor = 0.2
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
@@ -344,11 +343,11 @@ ideas = {
 
 		UIC_profits_in_indochina_iv = {
 
-			picture = generic_build_infrastructure
+			picture = Indochinese_labor
 			
 			modifier = {
 				consumer_goods_factor = -0.15
-				production_speed_buildings_factor = 0.3
+				production_speed_buildings_factor = 0.2
 				industrial_capacity_factory = 0.3
 				industrial_capacity_dockyard = 0.3
 			}
@@ -357,7 +356,7 @@ ideas = {
 
 		UIC_profits_in_indochina_v = {
 
-			picture = generic_build_infrastructure
+			picture = Indochinese_labor
 			
 			modifier = {
 				consumer_goods_factor = -0.1
@@ -411,7 +410,14 @@ ideas = {
 		UIC_fort_construction_plan = {
 
 			allowed = {
-				has_war = no
+				or = {
+					not = {
+						has_war_with = JAP
+					}
+					not = {
+						has_war_with = SIA
+					}
+				}
 			}
 
 			picture = usa_great_depression
@@ -770,6 +776,36 @@ ideas = {
 				}
 			}
 
+		}
+
+	}
+
+	industrial_concern = {
+		
+		UIC_banque_de_lindochine = {
+			
+			picture = uic_banque_de_lindochine
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = UIC
+			}
+			
+			available = {
+				has_country_flag = UIC_French_colony
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				
+			}
+			
+			modifier = {
+				economy_cost_factor = -0.2
+			}
+
+			traits = { industrial_concern }
 		}
 
 	}

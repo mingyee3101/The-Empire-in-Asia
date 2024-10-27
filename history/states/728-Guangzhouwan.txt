@@ -8,7 +8,6 @@ state={
 	history={
 		add_core_of = UIC
 		owner = UIC
-		add_claim_by = FRA
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {

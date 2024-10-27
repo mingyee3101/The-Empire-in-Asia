@@ -319,7 +319,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_participating_in_the_research_institute_for_development
-		icon = GFX_focus_research2
+		icon = GFX_focus_UIC_participating_in_the_research_institute_for_development
 		prerequisite = { focus = UIC_suppression_of_rebellion focus = UIC_granting_freedom_to_the_press }
 		cost = 10
 		x = -1
@@ -396,7 +396,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_Air_Force_base_construction
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		icon = GFX_focus_generic_air_bases
 		prerequisite = { focus = UIC_negotiations_with_japan }
 		cost = 10
 		x = 0
@@ -429,7 +429,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_Haiphong_port_expansion
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = UIC_Air_Force_base_construction }
 		cost = 10
 		x = 0
@@ -463,7 +463,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_surrender_to_japan
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		icon = GFX_focus_jap_strike_south
 		prerequisite = { focus = UIC_Haiphong_port_expansion }
 		cost = 10
 		x = 0
@@ -478,7 +478,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 120
+			
 		}
 	}
 
@@ -1779,7 +1779,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_attracting_french_companies
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = UIC_request_for_investment_in_france }
 		cost = 10
 		x = 0

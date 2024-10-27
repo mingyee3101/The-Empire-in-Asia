@@ -100,4 +100,14 @@
  JAP_Government_General_of_Chosen: "우가키 가즈시게"
 
 
- 
+ #고민
+ teia_japan.1.t: "일본의 최후통첩"
+ teia_japan.1.d: "일본측이 우리에게 굴복하라는 최후통첩을 보내왔습니다! 이제 인도차이나에 일본군이 진주할 것입니다!"
+ teia_japan.1.a: "우리는 굴복해야 한다."
+ teia_japan.1.a: "우리의 영토를 내어줄 수 없다!"
+ teia_japan.2.t: "우리의 요구를 수락한 [FROM.GetName]"
+ teia_japan.2.d: "[FROM.GetName]는 우리의 수락하여 통킹지역에 군사를 주둔하고 함선을 정박할 수 있게 되었습니다. 이제 중국을 압박할 수 있을 것입니다."
+ teia_japan.2.a: "잘됐군!"
+ teia_japan.3.t: "우리의 요구를 거부한 [FROM.GetName]"
+ teia_japan.3.d: "[FROM.GetName]는 우리의 요구를 들어줄 수 없다며 거절하였습니다. 우리는 어쩔 수 없이 그들에게 다른 방법을 사용해야 할 것 같습니다."
+ teia_japan.3.a: "버르장머리를 고쳐줘야겠군."

@@ -5,12 +5,26 @@ characters={
 			civilian={
 				large = "gfx/leaders/CHI/CHI_chiang_kai_shek.png"
 			}
+			army={
+				large = "gfx/leaders/CHI/CHI_chiang_kai_shek.png"
+				small = "gfx/interface/ideas/CHI/CHI_chiang_kai_shek.png"
+			}
 		}
 		country_leader={
 			ideology=despotism
 			traits={ generallissimo }
 			expire="1965.1.1.1"
 			id=-1
+		}
+
+		field_marshal={
+			traits={ media_personality career_officer war_hero brilliant_strategist }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=0
 		}
 	}
 	

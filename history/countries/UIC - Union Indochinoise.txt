@@ -7,8 +7,9 @@ if = {
 }
 
 set_cosmetic_tag = UIC_fra
+set_country_flag = UIC_French_colony
 
-#country_lock_all_division_template = yes
+country_lock_all_division_template = yes
 
 #인도차이나 보호계획
 set_variable = { UIC_indochina_conservation_plan_army_core_defence_factor = 0.1 }
@@ -29,8 +30,8 @@ set_variable = { UIC_far_east_squadron_naval_accidents_chance = -0.1 }
 #set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
-#starting_train_buffer = 4 #30
-#set_convoys = 200
+#starting_train_buffer = 5
+set_convoys = 20
 
 add_ideas = {
 	#법
@@ -116,6 +117,7 @@ recruit_character = UIC_jules_brevie
 #정치고문
 #recruit_character = VIN_bui_quang_chieu
 recruit_character = UIC_Rene_schneyder
+recruit_character = UIC_Henri_Maux
 
 #총사령관
 recruit_character = UIC_Georges_Ayme

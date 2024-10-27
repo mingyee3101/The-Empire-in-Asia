@@ -450,12 +450,12 @@ UIC_COL_05 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { UIC_INF_01 }
 
-	fallback_name = "제%산악 식민지 대대"
+	fallback_name = "제%d산악 식민지 대대"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "제%산악 식민지 대대" }
+		1 = { "제%d산악 식민지 대대" }
 	}
 }

@@ -42,6 +42,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_UIC_food_plunder.png"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_UIC_participating_in_the_research_institute_for_development"
+		texturefile = "gfx/interface/goals/focus_UIC_participating_in_the_research_institute_for_development.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_UIC_western_operation_plan"
+		texturefile = "gfx/interface/goals/focus_UIC_western_operation_plan.png"
+	}
+
 	#만주국
 
 	SpriteType = { 

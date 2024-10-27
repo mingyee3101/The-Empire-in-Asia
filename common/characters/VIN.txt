@@ -48,7 +48,7 @@ characters = {
 				}
 			}
 			traits = {
-				silent_workhorse
+				silent_workhorse_vin
 			}
 		}
 	}
@@ -97,6 +97,7 @@ characters = {
 				}
 			}
 			traits = {
+				#social_reformer_vin
 				democratic_reformer
 			}
 		}
@@ -582,11 +583,26 @@ characters = {
 		country_leader = {
 			ideology = trotskyism
 	
-	spriteType = {
-		name = "GFX_ideology_VIN_marxism"
-		texturefile = "gfx/interface/ideologies/vin_cpv.png"
-	} #trotskyism
+			spriteType = {
+				name = "GFX_ideology_VIN_marxism"
+				texturefile = "gfx/interface/ideologies/vin_cpv.png"
+			} #trotskyism
 			expire = "1989.1.1.1"
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Ta_Thu_Thau
+			allowed = {
+				original_tag = VIN
+				original_tag = UIC
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				communist_revolutionary
+			}
 		}
 	}
 

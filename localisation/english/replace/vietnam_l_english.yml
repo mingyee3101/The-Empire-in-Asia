@@ -62,6 +62,10 @@
   VIN_Nguyen_Phuc_Buu_Loc:0 "응우옌푹부록"
   VIN_Phan_Ke_Toai:0 "판께또아이" #모든 이념 가능 #Phan Kế Toại #흠차대신
   VIN_Nguyen_Xuan_Chu:0 "응우옌쑤언츠" #추가하기 #공산주의, 응오딘지엠 정부는 안됨 #정치최고위원회위원장
+  VIN_Pham_Quynh:0 "팜꾸인" #Phạm Quỳnh #추가하기 #인헌군주제 민족주의 친프랑스 #반 쩐쫑김
+  #VIN_Hồ Đắc Khải
+  #Thái Văn Toản
+  #Bùi Bằng Đoàn
 
   ###파시즘
   VIN_Tran_Trong_Kim:0 "쩐쫑낌"
@@ -79,6 +83,8 @@
   unpopular_emperor:0 "인기없는 황제"
   respected_emperor:0 "존경받는 황제"
   bac_ho:0 "호 아저씨"
+  social_reformer_vin:0 "사회 개혁가"
+  silent_workhorse_vin:0 "조용한 일꾼"
 
   #정당
   VIN_fascism_party:0 "대월국가사회당"

@@ -12,6 +12,7 @@
 
  #정치고문
  UIC_Rene_schneyder:0 "르네 프랑수아 슈나이더"
+ UIC_Henri_Maux:0 "앙리 모"
  UIC_Georges_Ayme:0 "조르주 아메" #인도차이나군 총사령관 #34 대령 #40 준장
 
  #장군
@@ -58,6 +59,9 @@
  UIC_fra_fascism:0 "프랑스령 인도차이나"
  UIC_fra_democratic:0 "프랑스령 인도차이나"
  UIC_fra_communism:0 "프랑스령 인도차이나"
+
+ #산업업체
+ UIC_banque_de_lindochine:0 "인도차이나 은행"
 
  #기술공유그룹
  research_institute_for_development_name:0 "개발연구소"
@@ -139,6 +143,7 @@
  UIC_continue_cooperation_with_china_desc:0 ""
  UIC_fight_together_with_china:0 "중국과 함께 싸우다"
  UIC_fight_together_with_china_desc:0 ""
+ UIC_fight_together_with_china_tt:0 "§Y[ROOT.GetName]§!의 §Y중국 세력§!에 가입."
  UIC_guardian_of_southern_china:0 "중국 남부 수호"
  UIC_guardian_of_southern_china_desc:0 ""
  UIC_tank_response:0 "전차 대응"
@@ -192,7 +197,7 @@
 
  #인도차이나 보호
  UIC_indochina_conservation_plan:0 "인도차이나 보호 계획"
- UIC_protecting_indochina_desc:0 "유럽과 아시아에서 심상치 않은 움직임이 보입니다. 혹시 모를 전쟁을 대비해야 합니다."
+ UIC_indochina_conservation_plan_desc:0 "유럽과 아시아에서 심상치 않은 움직임이 보입니다. 혹시 모를 전쟁을 대비해야 합니다."
 
  UIC_western_operation_plan:0 "서부 작전계획" #태국에 이벤트가 감, 태국 관계도 하락 #태국의 항의 -> 인도차이나 수락 -> 중점 취소
  UIC_western_operation_plan_desc:0 ""
@@ -238,10 +243,10 @@
  UIC_perfect_defense_desc:0 ""
  UIC_mountain_training:0 "산악 훈련"
  UIC_mountain_training_desc:0 ""
- UIC_mountain_training_tt:0 "£unit_category_light_infantry_icon_small  보병:\n§Y언덕§!\n 공격: §G+10.0%§!\n 방어: §G+10.0%§!\n§Y산악§!\n 공격: §G+10.0%§!\n 방어: §G+10.0%§!\n"
+ UIC_mountain_training_tt:0 "£unit_category_light_infantry_icon_small  보병:\n§Y언덕§!\n 공격: §G+5.0%§!\n 방어: §G+5.0%§!\n§Y산악§!\n 공격: §G+5.0%§!\n 방어: §G+5.0%§!\n"
  UIC_jungle_training:0 "정글 훈련"
  UIC_jungle_training_desc:0 ""
- UIC_jungle_training_tt:0 "£unit_category_light_infantry_icon_small  보병:\n§Y숲§!\n 공격: §G+10.0%§!\n 방어: §G+10.0%§!\n§Y밀림§!\n 공격: §G+10.0%§!\n 방어: §G+10.0%§!\n"
+ UIC_jungle_training_tt:0 "£unit_category_light_infantry_icon_small  보병:\n§Y숲§!\n 공격: §G+5.0%§!\n 방어: §G+5.0%§!\n§Y밀림§!\n 공격: §G+5.0%§!\n 방어: §G+5.0%§!\n"
  UIC_artillery_production:0 "포 생산"
  UIC_artillery_production_desc:0 ""
  UIC_supply_of_quality_equipment:0 "질 좋은 장비 보급"
@@ -301,6 +306,7 @@
  UIC_naval_modernization_desc:0 ""
 
  #country_flag
+ UIC_French_colony:0 "프랑스의 식민지"
  UIC_flood_occurs:0 "홍수 발생"
  UIC_flood_preparedness_i:0 "홍수를 대비함"
  UIC_flood_preparedness_ii:0 "홍수를 대비함"
@@ -316,10 +322,10 @@
 
  #국민정신
  UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
- UIC_indochinese_resistance_i:0 "인도차이나인들의 저항"
- UIC_indochinese_resistance_ii:0 "인도차이나인들의 저항"
- UIC_indochinese_resistance_iii:0 "인도차이나인들의 저항"
- #UIC_indochinese_resistance_tt:0 "§R사단을 훈련, 해산하거나, 편제를 수정할 수 없습니다.§!"
+ UIC_indochinese_resistance_i:0 "$UIC_indochinese_resistance_rene_robins_i$"
+ UIC_indochinese_resistance_ii:0 "$UIC_indochinese_resistance_rene_robins_i$"
+ UIC_indochinese_resistance_iii:0 "$UIC_indochinese_resistance_rene_robins_i$"
+ UIC_indochinese_resistance_tt:0 "§R부대 훈련, 해산 및 부대 편제 수정 불가능.§!\n"
  UIC_unprepared_army_i:0 "준비되지 않은 군대" #결정으로 프랑스의 지원을 받아 풀 수 있음
  UIC_unprepared_army_i_desc:0 "우리의 군대는 적들과의 싸움에서 승리를 보장할 수 없습니다. 프랑스로부터 전차를 지원받고 육군을 개혁하여 외부 위협으로부터 대비해야 합니다."
  UIC_unprepared_army_ii:0 "준비되지 않은 군대"
@@ -327,6 +333,8 @@
  UIC_unprepared_army_iii:0 "준비되지 않은 군대"
  UIC_unprepared_army_iii_desc:0 "우리의 군대는 적들과의 싸움에서 승리를 보장할 수 없습니다. 프랑스로부터 전차를 지원받고 육군을 개혁하여 외부 위협으로부터 대비해야 합니다."
  UIC_Indochinese_labor:0 "인도차이나인들의 노동"
+ UIC_Indochinese_labor_1:0 "인도차이나인들의 노동"
+ UIC_Indochinese_labor_2:0 "인도차이나인들의 노동"
  UIC_indochinese_exploitation_i:0 "인도차이나인들의 노동"
  UIC_indochinese_exploitation_ii:0 "인도차이나인들의 노동"
  UIC_indochinese_exploitation_iii:0 "인도차이나인들의 노동"
@@ -399,7 +407,7 @@
  UIC_increase_the_power_of_the_french_power_balance:0 "프랑스의 권한이 강화됨"
 
  #결정
- UIC_foreign_support_category:0 "중국 지원"
+ UIC_foreign_support_category:0 "중국 지원" #중국과 군벌에게 의용군과 버프를 받을수 있음
  #UIC_supplying_materials_to_china:0 "중국에 물자 공급"
  UIC_supplying_materials_to_china_foc:0 "중국에 많은 물자 공급"
  UIC_cooperation_with_warlords:0 "[From.GetName]과 협력"
@@ -418,6 +426,7 @@
  UIC_request_support_equipment:0 "지원장비 요구"
  UIC_request_motorized_equipment:0 "트럭 요구"
  UIC_request_light_tank_equipment:0 "경전차 요구"
+ UIC_army_reform:0 "군대 개혁"
 
  UIC_local_investment_plan_category:0 "지역 투자 계획"
  UIC_local_investment_plan_decision:0 "[FROM.GetName] 토지개혁 실행"
@@ -520,6 +529,8 @@
  #인도차이나정부는 우리가 그들을 정복할 것이라며 작전을 계획하고 있습니다.
  #무례하다, 계획을 철회하라 #정치력 -50
  #그럴수도 있다
+ uic.9.t:0 "인도차이나의 협력 요청"
+ uic.9.d:0 "인도차이나가 일본의 야망을 막기위해 우리와 협력이 필요하다고 말했습니다. 우리는 그들과 협력해야 할까요?"
  uic.12.t:0 "해군기지 건설"
  #uic.12.d:0 "일본과 태국이 우리를 집어삼키려고 하고 있습니다. 어디에 해군기지를 건설하는것이 좋을까요? 타이만에 건설한다면 태국을 더 쉽게 제압할 수 있겠지만 일본에 쉽게 패배할 것입니다. 하이퐁은 통킹만에서 작전하기에는 이상적인 위치지만 중국 본토에서 오는 폭격기에 매우 취약해질 것입니다. 카인호아는 하이퐁보다 약간 아쉽지만 일본의 폭격기로부터 안전할 것입니다."
  uic.12.a:0 "타이만에 건설하자"

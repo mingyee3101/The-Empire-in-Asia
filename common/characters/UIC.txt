@@ -65,6 +65,9 @@ characters = {
 		}
 		advisor={
 			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
 			slot = theorist
 			idea_token = UIC_jean_decoux_theorist
 			ledger = navy
@@ -129,6 +132,9 @@ characters = {
 		}
 		advisor={
 			cost = 100
+			ai_will_do = {
+				factor = 1.5
+			}
 			slot = army_chief
 			idea_token = UIC_Jules_Antoine_Buhrer
 			ledger = army
@@ -265,7 +271,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 2
+				factor = 1.1
 			}
 		}
 	}
@@ -281,6 +287,9 @@ characters = {
 		}
 		advisor={
 			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
 			slot = political_advisor
 			idea_token = UIC_Rene_schneyder
 			allowed = {
@@ -306,6 +315,47 @@ characters = {
 			}
 			traits = {
 				UIC_silent_workhorse
+			}
+		}
+	}
+
+	UIC_Henri_Maux={
+		name=UIC_Henri_Maux
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/UIC/UIC_Henri_Maux.png"
+			}
+		}
+		advisor={
+			cost = 150
+			ai_will_do = {
+				factor = 10
+			}
+			slot = political_advisor
+			idea_token = UIC_Henri_Maux
+			allowed = {
+				original_tag = UIC
+			}
+			available = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
+			visible = {
+				OR = {
+					NOT ={
+						has_government = fascism
+						has_government = communism
+					}
+				}
+				UIC = { is_subject_of = FRA }
+			}
+			traits = {
+				economic_organizer #농업 전문가
 			}
 		}
 	}

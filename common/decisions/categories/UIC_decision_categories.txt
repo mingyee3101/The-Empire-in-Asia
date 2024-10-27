@@ -33,17 +33,6 @@ UIC_local_investment_plan_category = {
 	}
 }
 
-UIC_faction_management_category = {
-	priority = 9
-	icon = gre_faction_management
-
-	scripted_gui = uic_internal_factions_decision_ui
-
-	allowed = {
-		original_tag = UIC
-	}
-}
-
 UIC_indochina_wars_category = {
 	priority = 8
 	icon = generic_political_actions

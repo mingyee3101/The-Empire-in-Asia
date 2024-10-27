@@ -1,0 +1,74 @@
+﻿add_namespace = teia_japan
+
+country_event = {
+	id = teia_japan.1
+	title = teia_japan.1.t
+	desc = teia_japan.1.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = teia_japan.1.a
+		ai_chance = {
+			base = 0
+		}
+		JAP = {
+			transfer_state = 970
+			transfer_state = 971
+			transfer_state = 972
+			transfer_state = 973
+			transfer_state = 671
+			country_event = { days = 1 id = teia_japan.2 }
+		}
+	}
+
+	#Refuse
+	option = {
+		name = teia_japan.1.b
+		ai_chance = {
+			base = 10
+		}
+		JAP = {
+			country_event = { days = 1 id = teia_japan.3 }
+		}
+	}
+}
+
+country_event = {
+	id = teia_japan.2
+	title = teia_japan.2.t
+	desc = teia_japan.2.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = teia_japan.2.a
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {
+	id = teia_japan.3
+	title = teia_japan.3.t
+	desc = teia_japan.3.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = teia_japan.3.a
+		ai_chance = {
+			base = 10
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = FROM
+			generator = { 970 671 }
+		}
+	}
+}

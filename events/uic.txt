@@ -21,22 +21,7 @@ country_event = {
 		CHI = {
 			country_event = { id = uic.2 days = 5 }
 		}
-		SOV = {
-			country_event = { id = uic.2 days = 5 }
-		}
 		FRA = {
-			country_event = { id = uic.2 days = 5 }
-		}
-		ENG = {
-			country_event = { id = uic.2 days = 5 }
-		}
-		GER = {
-			country_event = { id = uic.2 days = 5 }
-		}
-		ITA = {
-			country_event = { id = uic.2 days = 5 }
-		}
-		USA = {
 			country_event = { id = uic.2 days = 5 }
 		}
 		if = {
@@ -542,7 +527,9 @@ country_event = { #시작
 		ai_chance = {
 			base = 10
 		}
-		country_event = { id = uic.14 days = 150 }
+		hidden_effect = {
+			country_event = { id = uic.14 days = 150 }
+		}
 	}
 
 	option = {
@@ -555,7 +542,9 @@ country_event = { #시작
 		ai_chance = {
 			base = 10
 		}
-		country_event = { id = uic.15 days = 150 }
+		hidden_effect = {
+			country_event = { id = uic.15 days = 150 }
+		}
 	}
 }
 

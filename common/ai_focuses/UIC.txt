@@ -1,27 +1,66 @@
 
 ai_historical_focus_list_UIC = {
 	ai_national_focuses = {
-		# grab as fast as you can if available
-		UIC_indochina_economy
-		UIC_agricultural_exploitation
-		UIC_forced_to_grow_cash_crops
-		UIC_food_plunder
+		UIC_indochina_economy #인도차이나 경제
+		UIC_agricultural_exploitation #농업 착취
+		UIC_forced_to_grow_cash_crops #현금작물 재배 강요
 
-		UIC_The_reign_of_jules_brevie #36년 9월
-		UIC_completion_of_North_South_railway #36년 10월
-		UIC_labor_law_amendments
-		UIC_deregulation_of_political_parties
-		UIC_pardon_political_offender
-		UIC_granting_freedom_to_the_press
+		UIC_The_reign_of_jules_brevie #쥘 브레비예의 통치 #36년 9월 #10월완
+		UIC_labor_law_amendments #노동법 개정
+		UIC_deregulation_of_political_parties #민족주의 정당 규제 완화
+		UIC_pardon_political_offender #정치범 사면
+		UIC_granting_freedom_to_the_press #언론에 자유 부여
 
-		#중일전쟁 #1937년 7월 7일
-		UIC_supplying_materials_to_china
-		UIC_indochina_conservation_plan
+		#중일전쟁 #1937년 7월 7일 #17일
+		UIC_supplying_materials_to_china #중국에 물자 공급
 
 		#홍수 #1937년 8월 말
-		UIC_strengthening_public_works
-		UIC_construction_of_irrigation_facilities
-		UIC_hlm_construction_program
+		UIC_strengthening_public_works #공공사업 강화
+		UIC_construction_of_irrigation_facilities #관개시설 구축
+		UIC_hlm_construction_program #HLM 건설 계획
+
+		#전쟁 준비 #38년 4월
+		UIC_indochina_conservation_plan #인도차이나 보호 계획
+		UIC_eastern_operation_plan #동부 작전계획
+
+		#세계대전 준비
+		UIC_food_plunder #식량 수탈
+
+		#
+		UIC_tirailleurs_indochinois #인도차이나 식민지군
+		UIC_maintain_existing_tactics #기존 전술 유지
+		UIC_far_east_squadron #극동 해군
+		UIC_indochina_air_force #인도차이나 공군
+
+		#
+		UIC_western_operation_plan #서부 작전계획
+
+		#장드쿠 #40년
+		UIC_additional_indochinese_people_appointed #인도차이나인 추가 등용
+		UIC_fair_wages #공평한 임금
+
+		#39년 3월 완
+		UIC_negotiations_with_japan #일본과 협상
+
+		#전쟁 준비 2
+		UIC_guangzhouwan_port_expansion #광저우만 항구 확장
+		UIC_naval_base_construction_plan #해군기지 건설 계획 #40년 6월
+
+		#일본에 굴복
+		UIC_Air_Force_base_construction #공군기지 건설
+		UIC_Haiphong_port_expansion #하이퐁 항구 확장
+
+		#나머지 #항복X
+		UIC_great_war_analysis #대전쟁 분석
+		UIC_mountain_training #산악 훈련
+		UIC_perfect_defense #완벽한 방어
+		UIC_request_for_military_reinforcements_and_equipment #장비와 군 증원 요청
+		UIC_local_conscription #현지인 추가 징병
+		UIC_local_investment_plan #지역 투자 계획
+		UIC_request_for_investment_in_france #프랑스에 투자 요청
+		UIC_attracting_french_companies #프랑스 기업 유치
+
+		#항복
 
 	}
 }

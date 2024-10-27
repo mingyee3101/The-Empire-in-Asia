@@ -24,8 +24,8 @@ VIN_Saigon_Naval_Shipyard = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 	allowed = { 
 		or = {
-			tag = UIC
 			tag = VIN
+			tag = UIC
 		}
 	}
 	available = {
@@ -38,10 +38,8 @@ VIN_Z173_Shipyard = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_vin_Z173_Shipyard
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 970 } #하이퐁
@@ -52,10 +50,8 @@ VIN_Z189_Shipyard = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_vin_Z189_Shipyard
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 970 } #하이퐁
@@ -66,10 +62,8 @@ VIN_tong_cong_ty_song_thu = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_vin_tong_cong_ty_song_thu
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 977 } #꽝남-다낭
@@ -103,8 +97,8 @@ VIN_saigon_arsenal = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 	allowed = { 
 		or = {
-			tag = UIC
 			tag = VIN
+			tag = UIC
 		}
 	}
 	available = {
@@ -117,8 +111,8 @@ VIN_saigon_arsenal_artillery = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 	allowed = { 
 		or = {
-			tag = UIC
 			tag = VIN
+			tag = UIC
 		}
 	}
 	available = {
@@ -131,10 +125,8 @@ VIN_Cam_Ranh_arsenal = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_3
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 979 } #카인호아
@@ -145,10 +137,8 @@ VIN_nha_may_z111 = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_vin_nha_may_z111
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 974 } #타인호아
@@ -159,10 +149,10 @@ VIN_thaco = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_vin_thaco
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
+	}
+	available = {
 	}
 }
 
@@ -170,10 +160,8 @@ VIN_xi_nghiep_lien_hop_z751 = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_vin_xi_nghiep_lien_hop_z751
 	allowed = { 
-		or = {
-			tag = UIC
-			tag = VIN
-		}
+		tag = VIN
+		has_government = communism
 	}
 	available = {
 		owner = { controls_state = 286 } #사이공
