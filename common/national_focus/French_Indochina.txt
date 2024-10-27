@@ -17,7 +17,7 @@ focus_tree = {
 		id = UIC_no_negotiation
 		icon = GFX_goal_generic_dangerous_deal
 		mutually_exclusive = { focus = UIC_The_reign_of_jules_brevie }
-		cost = 5
+		cost = 10
 		x = 38
 		y = 0
 
@@ -44,7 +44,7 @@ focus_tree = {
 		id = UIC_pay_cut
 		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = UIC_no_negotiation }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_no_negotiation
@@ -61,7 +61,7 @@ focus_tree = {
 		id = UIC_the_medals_of_french_indochina
 		icon = GFX_UIC_the_medals_of_french_indochina
 		prerequisite = { focus = UIC_pay_cut }
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		relative_position_id = UIC_pay_cut
@@ -78,8 +78,8 @@ focus_tree = {
 	focus = {
 		id = UIC_prohibit_party
 		icon = GFX_focus_UIC_prohibit_party
-		prerequisite = { focus = UIC_the_medals_of_french_indochina focus = UIC_pay_cut }
-		cost = 5
+		prerequisite = { focus = UIC_pay_cut }
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_pay_cut
@@ -93,7 +93,7 @@ focus_tree = {
 		id = UIC_suppression_of_rebellion
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = UIC_prohibit_party }
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_the_medals_of_french_indochina
@@ -130,7 +130,7 @@ focus_tree = {
 		id = UIC_The_reign_of_jules_brevie
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { focus = UIC_no_negotiation }
-		cost = 5
+		cost = 10
 		x = 6
 		y = 0
 		relative_position_id = UIC_no_negotiation
@@ -142,7 +142,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = jules_brevie_retirement
+			or = {
+				has_country_flag = jules_brevie_retirement
+				NOT = {
+					has_country_flag = UIC_French_colony
+				}
+			}
 		}
 
 		completion_reward = {
@@ -155,7 +160,6 @@ focus_tree = {
 			        expire = "1965.1.1.1"
 				}
 			}
-			add_stability = 0.05
 		}
 	}
 
@@ -163,7 +167,7 @@ focus_tree = {
 		id = UIC_labor_law_amendments
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = UIC_The_reign_of_jules_brevie }
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		relative_position_id = UIC_The_reign_of_jules_brevie
@@ -175,7 +179,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = jules_brevie_retirement
+			or = {
+				has_country_flag = jules_brevie_retirement
+				NOT = {
+					has_country_flag = UIC_French_colony
+				}
+			}
 		}
 
 		completion_reward = {
@@ -194,7 +203,7 @@ focus_tree = {
 		id = UIC_deregulation_of_political_parties
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = UIC_labor_law_amendments }
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		relative_position_id = UIC_labor_law_amendments
@@ -206,7 +215,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = jules_brevie_retirement
+			or = {
+				has_country_flag = jules_brevie_retirement
+				NOT = {
+					has_country_flag = UIC_French_colony
+				}
+			}
 		}
 
 		completion_reward = {
@@ -225,7 +239,7 @@ focus_tree = {
 		id = UIC_pardon_political_offender
 		icon = GFX_focus_generic_court
 		prerequisite = { focus = UIC_labor_law_amendments }
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_labor_law_amendments
@@ -237,7 +251,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = jules_brevie_retirement
+			or = {
+				has_country_flag = jules_brevie_retirement
+				NOT = {
+					has_country_flag = UIC_French_colony
+				}
+			}
 		}
 
 		completion_reward = {
@@ -252,7 +271,7 @@ focus_tree = {
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = UIC_deregulation_of_political_parties }
 		prerequisite = { focus = UIC_pardon_political_offender }
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_deregulation_of_political_parties
@@ -264,7 +283,12 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_country_flag = jules_brevie_retirement
+			or = {
+				has_country_flag = jules_brevie_retirement
+				NOT = {
+					has_country_flag = UIC_French_colony
+				}
+			}
 		}
 
 		completion_reward = {
@@ -282,13 +306,21 @@ focus_tree = {
 		id = UIC_supplying_materials_to_china
 		icon = GFX_focus_UIC_supplying_materials_to_china
 		prerequisite = { focus = UIC_no_negotiation focus = UIC_The_reign_of_jules_brevie }
-		cost = 5
+		cost = 10
 		x = 3
 		y = 1
 		relative_position_id = UIC_no_negotiation
 
 		available = {
 			#중국(군벌, 공산당)이 존재, 중국과 영토가 닿아있음
+			or = {
+				NOT = {
+					has_war_with = CHI
+				}
+				NOT = {
+					is_subject_of = JAP
+				}
+			}
 		}
 
 		completion_reward = {
@@ -358,6 +390,7 @@ focus_tree = {
 				JAP = {
 					has_war_with = UIC
 				}
+				is_subject_of = JAP
 			}
 		}
 
@@ -383,6 +416,10 @@ focus_tree = {
 			}
 		}
 
+		bypass = {
+			is_subject_of = JAP
+		}
+
 		completion_reward = {
 			add_opinion_modifier = { target = JAP modifier = UIC_japan_indochina_cooperation_jap }
 			JAP = {
@@ -396,7 +433,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_Air_Force_base_construction
-		icon = GFX_focus_generic_air_bases
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = UIC_negotiations_with_japan }
 		cost = 10
 		x = 0
@@ -478,7 +515,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			#정치, 인도차이나 보호 중점 바꾸기
 		}
 	}
 
@@ -692,7 +729,7 @@ focus_tree = {
 			is_in_faction = no
 		}
 
-		complete_effect = {
+		completion_reward = {
 			If = {
 				limit = {
 					CHI = {
@@ -722,6 +759,19 @@ focus_tree = {
 					id = "PRC"
 					value = 200
 				}
+			}
+			else_if = {
+				limit = {
+					or = {
+						CHI = {	
+							is_in_faction = no
+						}
+						PRC = {
+							is_in_faction = no
+						}
+					}
+				}
+				custom_effect_tooltip = UIC_fight_together_with_china_tt
 			}
 		}
 	}
@@ -961,7 +1011,7 @@ focus_tree = {
 	focus = {
 		id = UIC_indochina_economy
 		icon = GFX_focus_mex_privatisation
-		cost = 5
+		cost = 10
 		x = 6 #32
 		y = 0
 
@@ -1003,7 +1053,7 @@ focus_tree = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = UIC_indochina_economy }
 		mutually_exclusive = { focus = UIC_agricultural_development_support }
-		cost = 5
+		cost = 10
 		x = -5
 		y = 1
 		relative_position_id = UIC_indochina_economy
@@ -1027,13 +1077,12 @@ focus_tree = {
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = UIC_indochina_economy }
 		mutually_exclusive = { focus = UIC_agricultural_exploitation }
-		cost = 15
+		cost = 20
 		x = 4
 		y = 0
 		relative_position_id = UIC_agricultural_exploitation
 
 		completion_reward = { #시간이 지나면 이벤트가 뜨면서 주 유형이나 기반시설을 줄수도
-			add_political_power = -50
 			custom_effect_tooltip = UIC_agricultural_development_support_tt
 			hidden_effect = {
 				add_to_variable = { UIC_indochina_economy_stability_factor = 0.1 }
@@ -1059,7 +1108,7 @@ focus_tree = {
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		prerequisite = { focus = UIC_agricultural_exploitation focus = UIC_agricultural_development_support }
 		mutually_exclusive = { focus = UIC_cash_crop_regulations }
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		relative_position_id = UIC_agricultural_exploitation
@@ -1185,7 +1234,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
 			custom_effect_tooltip = UIC_flood_preparedness_tt
 			hidden_effect = {
 				set_country_flag = UIC_flood_preparedness_i
@@ -1270,7 +1319,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.03
 			custom_effect_tooltip = UIC_flood_preparedness_tt
 			hidden_effect = {
 				clr_country_flag = UIC_flood_preparedness_i
@@ -1495,7 +1544,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_western_operation_plan
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_UIC_western_operation_plan
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
 		x = -4
@@ -1523,7 +1572,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_eastern_operation_plan
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_attack_japan
 		prerequisite = { focus = UIC_indochina_conservation_plan }
 		cost = 10
 		x = -2
@@ -1600,31 +1649,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UIC_ask_for_outside_help
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = UIC_eastern_operation_plan }
-		cost = 10
-		x = 2
-		y = 0
-		relative_position_id = UIC_fort_construction_plan
-
-		completion_reward = {
-			custom_effect_tooltip = UIC_ask_for_outside_help_tt
-			#국가가 동의하면 버프 추가
-			#인도차이나가 비시프랑스편이고 이탈리아또는 독일이 보호를 약속하면 일본이 침공을 안함
-			#역사적은 보호해주는 국가 없음
-			#자유프랑스: 자유프랑스, 영국, 미국
-			#비시프랑스: 비시프랑스, 독일, 이탈리아, 미국
-		}
-	}
-
-	focus = {
 		id = UIC_saigon_dockyard_expansion
 		icon = GFX_focus_SWE_italian_destroyers
-		prerequisite = { focus = UIC_fort_construction_plan }
+		prerequisite = { focus = UIC_western_operation_plan focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = -1
-		y = 1
+		x = -2
+		y = 0
 		relative_position_id = UIC_fort_construction_plan
 
 		available = {
@@ -1648,10 +1678,10 @@ focus_tree = {
 	focus = {
 		id = UIC_guangzhouwan_port_expansion
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = UIC_fort_construction_plan }
+		prerequisite = { focus = UIC_western_operation_plan focus = UIC_eastern_operation_plan }
 		cost = 10
-		x = 1
-		y = 1
+		x = 2
+		y = 0
 		relative_position_id = UIC_fort_construction_plan
 
 		available = {
@@ -1681,6 +1711,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = UIC_indochina_conservation_plan
 
+		available = {
+			has_country_flag = UIC_French_colony
+		}
+
 		completion_reward = {
 			unlock_decision_category_tooltip = UIC_request_for_military_reinforcements_and_equipment_category
 		}
@@ -1694,6 +1728,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = UIC_request_for_military_reinforcements_and_equipment
+
+		available = {
+			has_country_flag = UIC_French_colony
+		}
 
         complete_tooltip = {
             random_state = {
@@ -1785,6 +1823,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = UIC_request_for_investment_in_france
+
+		available = {
+			has_country_flag = UIC_French_colony
+		}
 
 		completion_reward = {
 			hidden_effect = { set_country_flag = has_invited_FRA_renault_organization_flag }
