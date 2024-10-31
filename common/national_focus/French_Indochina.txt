@@ -104,6 +104,9 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = UIC_indochinese_resistance_i
+			hidden_effect = {
+				country_lock_all_division_template = no
+			}
 		}
 	}
 
@@ -292,7 +295,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = UIC_indochinese_resistance_iii
+			swap_ideas = {
+				remove_idea = UIC_indochinese_resistance_iii
+				add_idea = UIC_indochinese_resistance_iv
+			}
 			add_popularity = { ideology = democratic popularity = 0.03 }
 			add_popularity = { ideology = fascism popularity = 0.03 }
 			add_popularity = { ideology = communism popularity = 0.03 }
@@ -1851,6 +1857,10 @@ focus_tree = {
 		relative_position_id = UIC_indochina_conservation_plan
 
 		available = {
+			NOT = {
+				has_completed_focus = UIC_no_negotiation
+			}
+			has_idea = UIC_indochinese_resistance_iv
 			or = {
 				#has_war_with = JAP
 				#has_war_with = CHI
@@ -1865,6 +1875,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = UIC_indochinese_resistance_iv
+			hidden_effect = {
+				country_lock_all_division_template = no
+			}
 			custom_effect_tooltip = UIC_indochina_conservation_plan_ns_intro
 			add_to_variable = { UIC_indochina_conservation_plan_conscription_factor = 0.3 tooltip = conscription_factor_tt }
 			custom_effect_tooltip = UIC_indochina_revolution_foc_tt

@@ -10,6 +10,7 @@
 				tag = YUN
 				tag = SIK
 				tag = SHX
+				tag = XSM
 				tag = TGS
 				tag = HCP
 				tag = SDC
@@ -17,6 +18,7 @@
 				tag = SCC
 				tag = CSR
 				tag = GXC
+				tag = MEN
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -71,7 +73,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {
@@ -111,11 +113,13 @@
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 10
+				factor = 20
 				OR = {
 					original_tag = GXC
+					original_tag = GDC
 					original_tag = YUN
 					original_tag = XSM
+					original_tag = SHX
 				}
 			}
 		}
@@ -532,11 +536,8 @@
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 10
-				OR = {
-					original_tag = SHX
-					original_tag = SIK
-				}
+				factor = 20
+				original_tag = SIK
 			}
 		}
 
@@ -883,6 +884,10 @@
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 20
+				original_tag = MEN
+			}
 		}
 
 		available = {
@@ -1125,7 +1130,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = CHI_seek_japanese_support
+			#unlock_decision_category_tooltip = CHI_seek_japanese_support
+			JAP = { country_event = wtt_warlord.1 }
 		}
 	}
 
@@ -1156,145 +1162,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = { ROOT = { tag = GXC } }
-				add_field_marshal_role = {
-					character = "GXC_li_zongren"
-						traits = { infantry_officer } # Many warlord battles as a junior commander
-						skill = 3
-						attack_skill = 2
-						defense_skill = 4
-						planning_skill = 2
-						logistics_skill = 2	
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = YUN } }
-				add_field_marshal_role = {
-					character = "YUN_long_yun"
-						traits = { war_hero } # Fought in the Xinhai Revolution, showed personal bravery fighting Japan
-						skill = 3
-						attack_skill = 3
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = SHX } }
-				add_field_marshal_role = {
-					character = "SHX_yan_xishan"
-					traits = { career_officer infantry_officer } # Educated at officer schools in China and Japan
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = XSM } }
-				add_field_marshal_role = {
-					character = "XSM_ma_bufang"
-					traits = { cavalry_officer } # Raised 30,000 Muslim Cavalrymen
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = SIK } }
-				add_field_marshal_role = {
-					character = SIK_sheng_shicai
-					gfx = GFX_portrait_sheng_shicai
-					traits = { politically_connected } # Studied political economy, played Stalin and Chiang against one another
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = TGS } }
-				add_field_marshal_role = {
-					character = TGS_Ma_Hushan
-					gfx = gfx/leaders/TGS/Portrait_Ma_Hushan.png
-					traits = { cavalry_officer }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = HCP } }
-				add_field_marshal_role = {
-					character = HCP_Song_Zheyuan
-					gfx = gfx/leaders/HCP/Portrait_Song_Zheyuan.png
-					traits = { war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = SDC } }
-				add_field_marshal_role = {
-					character = SDC_Han_Fuju
-					gfx = gfx/leaders/SDC/Portrait_Han_Fuju.png
-					traits = { war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = GDC } }
-				add_field_marshal_role = {
-					character = GDC_Chen_Jitang
-					gfx = gfx/leaders/GDC/Portrait_Chen_Jitang.png
-					traits = { war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = SCC } }
-				add_field_marshal_role = {
-					character = SCC_Liu_Xiang
-					gfx = gfx/leaders/SCC/Portrait_Liu_Xiang.png
-					traits = { war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-			else_if = {
-				limit = { ROOT = { tag = CSR } }
-				add_field_marshal_role = {
-					character = CSR_Liu_Wenhui
-					gfx = gfx/leaders/CSR/Portrait_Liu_Wenhui.png
-					traits = { war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
+			add_war_support = 0.05
 		}
 	}
 

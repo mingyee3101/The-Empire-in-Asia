@@ -68,6 +68,20 @@ ideas = {
 
 		}
 
+		UIC_indochinese_resistance_iv = {
+			
+			allowed = {
+				
+			}
+
+			picture = POL_the_peasants_strike
+			
+			modifier = {
+				custom_modifier_tooltip = UIC_indochinese_resistance_tt
+			}
+
+		}
+
 		#준비되지 않은 군대
 
 		UIC_unprepared_army_i = {
