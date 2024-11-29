@@ -1,0 +1,24 @@
+state={
+	id=1016
+	name="STATE_1016"
+	resources={ #라타나키리 고무농장, 보석(주요 수입원)
+		rubber=8
+	}
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		4596 12167 
+	}
+	manpower=92999 #309,997
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

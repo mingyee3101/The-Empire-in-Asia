@@ -153,6 +153,7 @@ recruit_character = VIN_bui_quang_chieu
 recruit_character = VIN_Nguyen_Phuc_Buu_Loc
 recruit_character = VIN_Phan_Ke_Toai
 recruit_character = VIN_Nguyen_Xuan_Chu
+recruit_character = VIN_Pham_Quynh
 
 ###제독###
 #공산

@@ -24,11 +24,17 @@ CHI_integrate_the_warlords = {
 		OR = {
 			tag = CHI
 			tag = PRC
-			tag = GXC
-			tag = YUN
+			tag = HCP
+			tag = SDC
 			tag = SHX
 			tag = XSM
 			tag = SIK
+			tag = TGS
+			tag = SCC
+			tag = CSR
+			tag = YUN
+			tag = GXC
+			tag = GDC
 		}
 	}
 	icon = generic_political_actions
@@ -38,11 +44,17 @@ CHI_integrate_the_warlords = {
 			any_of_scopes = {
 				array = subjects
 				OR = {
-					tag = GXC
-					tag = YUN
+					tag = HCP
+					tag = SDC
 					tag = SHX
 					tag = XSM
 					tag = SIK
+					tag = TGS
+					tag = SCC
+					tag = CSR
+					tag = YUN
+					tag = GXC
+					tag = GDC
 				}
 			}
 		}

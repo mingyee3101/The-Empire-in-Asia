@@ -15,8 +15,7 @@ FRA_renault_organization = {
 	allowed = {	
 		OR = {
 			tag = FRA 
-			tag = BEL
-			tag = UIC
+			tag = UIC #고민
 			tag = VIN
 			tag = CAM
 			tag = LAO
@@ -51,7 +50,7 @@ FRA_renault_organization = {
 
 		IF = {
 			limit = {
-				or = {
+				or = { #고민
 					FROM = { original_tag = ETH }
 					FROM = { original_tag = UIC }
 					FROM = { original_tag = VIN }
@@ -258,7 +257,7 @@ FRA_bloch_organization = {
 	allowed = {	
 		OR = {
 			tag = FRA 
-			tag = UIC
+			tag = UIC #고민
 			tag = VIN
 			tag = CAM
 			tag = LAO
@@ -291,15 +290,13 @@ FRA_bloch_organization = {
 			FROM = { NOT = { has_war_with = FRA } }
 		}
 
-		IF = {
+		IF = { #고민
 			limit = {
-				or = {
 					FROM = { original_tag = ETH }
 					FROM = { original_tag = UIC }
 					FROM = { original_tag = VIN }
 					FROM = { original_tag = CAM }
 					FROM = { original_tag = LAO }
-				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
@@ -420,7 +417,7 @@ FRA_mas_organization = {
 	allowed = {	 
 		OR = {
 			tag = FRA 
-			tag = UIC
+			tag = UIC #고만
 			tag = VIN
 			tag = CAM
 			tag = LAO
@@ -451,7 +448,7 @@ FRA_mas_organization = {
 
 		IF = {
 			limit = {
-				or = {
+				or = { #고민
 					FROM = { original_tag = ETH }
 					FROM = { original_tag = UIC }
 					FROM = { original_tag = VIN }

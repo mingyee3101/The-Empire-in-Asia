@@ -339,6 +339,8 @@
  UIC_indochinese_exploitation_i:0 "인도차이나인들의 노동"
  UIC_indochinese_exploitation_ii:0 "인도차이나인들의 노동"
  UIC_indochinese_exploitation_iii:0 "인도차이나인들의 노동"
+ UIC_indochinese_exploitation_iv:0 "인도차이나인들의 노동"
+ UIC_indochinese_exploitation_v:0 "인도차이나인들의 노동"
  UIC_indochina_conservation_plan_i:0 "인도차이나 보호 계획"
  UIC_indochina_conservation_plan_ii:0 "인도차이나 보호 계획"
  UIC_North_South_railwayunder_construction:0 "남북선 건설"
@@ -557,9 +559,17 @@
  uic.16.t:0 "남북선 완공"
  uic.16.d:0 "1899년부터 건설되었던 남북선이 드디어 완공되었습니다. 베트남 남부의 미토부터 북부의 하노이를 넘어 중국의 광서와 운남까지 철로가 연결되어있어 경제적으로 많은 이익을 얻을 것입니다."
  uic.16.a:0 "앞으로가 기대되는군"
+ uic.17.t:0 "인도차이나 총독으로 임명된 조르쿠 카트루"
+ uic.17.d:0 "프랑스 정부는 적대행위가 시작되기 전에 극동에 강한 메시지를 주기 위해 조르쿠 카트루를 인도차이나 총독으로 임명하였습니다."
+ uic.17.a:0 "인도차이나 총독이 된 걸 환영합니다!"
 
  uicuprising.1.t:0 "혁명 활동을 하는 공산당의 민병대"
  uicuprising.1.d:0 "공산당의 민병대들은 전투에 참여하기보단 마을의 주민들과 우리 군인들을 회유하고 있습니다. 그들을 어떻게 처리해야할까요?"
  uicuprising.1.a:0 "우린 아직 그들의 도움이 필요하다."
- uicuprising.1.a:0 "민병대원들을 체포한다." #공산당의 영향력 감소 #공산당의 영향력이 크면 내전
- uicuprising.1.a:0 "민병대원들을 처형한다." #내전 발생 #일정 확률로 그들이 도망가거나 전투를 함(내전)
+ uicuprising.1.b:0 "민병대원들을 체포한다." #공산당의 영향력 감소 #공산당의 영향력이 크면 내전
+ uicuprising.1.c:0 "민병대원들을 처형한다." #내전 발생 #일정 확률로 그들이 도망가거나 전투를 함(내전)
+
+ uicfallfrance.1.t:0 "비시프랑스의 지도자 교체 요구"
+ uicfallfrance.1.d:0 ""
+ uicfallfrance.1.a:0 "수락"
+ uicfallfrance.1.b:0 "거절"

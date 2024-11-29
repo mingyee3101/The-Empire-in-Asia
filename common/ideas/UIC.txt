@@ -247,7 +247,7 @@ ideas = {
 
 		}
 
-		UIC_indochinese_exploitation_iv = {
+		UIC_indochinese_exploitation_v = {
 			
 			allowed = {
 				
@@ -256,7 +256,6 @@ ideas = {
 			picture = generic_oppression
 			
 			modifier = {
-				political_power_factor = -0.05
 				consumer_goods_factor = -0.1
 				local_resources_factor = 0.3
 				production_speed_buildings_factor = 0.2

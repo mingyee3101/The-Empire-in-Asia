@@ -1,4 +1,4 @@
-﻿capital = 1014 #Kuala Lumpur
+﻿capital = 1026 #슬랑오르
 
 oob = "MAL_1936"
 

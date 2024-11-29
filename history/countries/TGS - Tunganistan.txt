@@ -4,7 +4,18 @@ oob = "TGS_1936"
 
 set_cosmetic_tag = CHI_KMT
 
+#회족
 recruit_character = TGS_Ma_Hushan
+recruit_character = TGS_Ma_Zhongying #소련 ###
+recruit_character = TGS_Ma_Ju_lung
+recruit_character = TGS_Pai_Tzu_li
+#위구르족
+recruit_character = TGS_Muhammad_Amin_Bughra ###
+recruit_character = TGS_Khoja_Niyaz ###
+recruit_character = TGS_Yulbars_Khan #국민당
+recruit_character = TGS_Mahmut_Muhiti ###
+recruit_character = TGS_Kichik_Akhund ###
+recruit_character = TGS_Abd_al_Niyas ###
 
 # Starting tech
 set_technology = {

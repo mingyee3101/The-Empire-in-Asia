@@ -1,0 +1,24 @@
+state={
+	id=1004
+	name="STATE_1004"
+
+	history={
+		add_core_of = UIC
+		owner = UIC
+		add_core_of = LAO
+		victory_points = { #살라완
+			1374 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		1374 12210 
+	}
+	manpower=119082 #396,942
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

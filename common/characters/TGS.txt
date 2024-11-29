@@ -2,11 +2,14 @@ characters = {
 
 	############지도자############
 
+	#회족
+
 	TGS_Ma_Hushan = {
 		name = TGS_Ma_Hushan
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/TGS/Portrait_Ma_Hushan.png"
+				small = "gfx/interface/ideas/TGS/TGS_Ma_Hushan.png"
 			}
 		}
 		country_leader = {
@@ -20,6 +23,196 @@ characters = {
 		country_leader = {
 			ideology = fascism_ideology
 			expire = "1989.1.1.1"
+		}
+
+		field_marshal={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	TGS_Ma_Zhongying={
+		name=TGS_Ma_Zhongying
+		portraits={
+			army={
+				large = "gfx/leaders/TGS/Portrait_Ma_Zhongying.png"
+				small = "gfx/interface/ideas/TGS/TGS_Ma_Zhongying.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1989.1.1.1"
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	TGS_Ma_Ju_lung={
+		name=TGS_Ma_Ju_lung
+		portraits={
+			#army={
+			#	large = "gfx/leaders/TGS/Portrait_Ma_Ju_lung.png"
+			#	small = "gfx/interface/ideas/TGS/TGS_Ma_Ju_lung.png"
+			#}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	TGS_Pai_Tzu_li={
+		name=TGS_Pai_Tzu_li
+		portraits={
+			#army={
+			#	large = "gfx/leaders/TGS/Portrait_Pai_Tzu_li.png"
+			#	small = "gfx/interface/ideas/TGS/TGS_Pai_Tzu_li.png"
+			#}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#위구르족
+
+	TGS_Muhammad_Amin_Bughra = {
+		name = TGS_Muhammad_Amin_Bughra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TGS/Portrait_Muhammad_Amin_Bughra.png"
+				small = "gfx/interface/ideas/TGS/TGS_Muhammad_Amin_Bughra.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+	}
+	
+	TGS_Khoja_Niyaz={
+		name=TGS_Khoja_Niyaz
+		portraits={
+			army={
+				large = "gfx/leaders/TGS/Portrait_Khoja_Niyaz.png"
+				small = "gfx/interface/ideas/TGS/TGS_Khoja_Niyaz.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1989.1.1.1"
+		}
+
+		field_marshal={
+			traits={  }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	TGS_Yulbars_Khan={
+		name=TGS_Yulbars_Khan
+		portraits={
+			army={
+				large = "gfx/leaders/TGS/Portrait_Yulbars_Khan.png"
+				small = "gfx/interface/ideas/TGS/TGS_Yulbars_Khan.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	TGS_Mahmut_Muhiti={
+		name=TGS_Mahmut_Muhiti
+		portraits={
+			army={
+				large = "gfx/leaders/TGS/Portrait_Mahmut_Muhiti.png"
+				small = "gfx/interface/ideas/TGS/TGS_Mahmut_Muhiti.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	TGS_Kichik_Akhund={
+		name=TGS_Kichik_Akhund
+		portraits={
+			#army={
+			#	large = "gfx/leaders/TGS/Portrait_Kichik_Akhund.png"
+			#	small = "gfx/interface/ideas/TGS/TGS_Kichik_Akhund.png"
+			#}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	TGS_Abd_al_Niyas={
+		name=TGS_Abd_al_Niyas
+		portraits={
+			army={
+				large = "gfx/leaders/TGS/Portrait_Abd_al_Niyas.png"
+				small = "gfx/interface/ideas/TGS/TGS_Abd_al_Niyas.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 

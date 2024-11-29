@@ -866,6 +866,29 @@ characters = {
 		}
 	}
 
+	VIN_Pham_Quynh={
+		name=VIN_Pham_Quynh
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/VIN/VIN_Pham_Quynh.png"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = political_advisor
+			idea_token = VIN_Pham_Quynh
+			allowed = {
+				original_tag = VIN
+			}
+			available = {
+				has_government = neutrality
+			}
+			traits = {
+				modernist_and_monarchist
+			}
+		}
+	}
+
 	VIN_Phan_Ke_Toai={ #공산주의
 		name=VIN_Phan_Ke_Toai
 		portraits={

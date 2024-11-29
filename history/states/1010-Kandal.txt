@@ -1,0 +1,24 @@
+state={
+	id=1010
+	name="STATE_1010"
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #타크마우
+			12260 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		4330 12260 12288 
+	}
+	manpower=632704 #2,109,016
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

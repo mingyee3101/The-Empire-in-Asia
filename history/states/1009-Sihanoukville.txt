@@ -1,0 +1,27 @@
+state={
+	id=1009
+	name="STATE_1009"
+
+	history={
+		add_core_of = CAM
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #시아누크빌
+			7432 1
+		}
+		buildings = {
+			infrastructure = 1
+			7432 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		7432 10317 
+	}
+	manpower=247587 #825,292
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

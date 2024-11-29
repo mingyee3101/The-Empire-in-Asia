@@ -1,0 +1,24 @@
+state={
+	id=995
+	name="STATE_995"
+	
+	history={
+		add_core_of = CAM
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		buildings = {
+			infrastructure = 1
+			13366 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13366
+	}
+	manpower=33802
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

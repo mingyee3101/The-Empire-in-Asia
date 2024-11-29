@@ -2,87 +2,87 @@
  #베트남
  STATE_286:0 "사이공" #Đòng Nam Bộ 동남부 지방
  STATE_671:0 "하노이" #Đồng Bằng Sông Hồng 홍강 삼각주
- STATE_970:0 "하이퐁" #Hai Phong
- STATE_971:0 "랑선" #Lang Son
- STATE_972:0 "타이응우옌" #Thai Nguyen
- STATE_973:0 "디엔비엔" #Dien Bien
- STATE_974:0 "타인호아" #Thanh Hoa
- STATE_975:0 "하띤" #Ha Tinh
- STATE_976:0 "투아티엔후에" #Thua Thien Hue
- STATE_977:0 "꽝남" #Quang Nam
- STATE_978:0 "빈딘" #Binh Dinh
- STATE_979:0 "카인호아" #Khanh Hoa
- STATE_980:0 "닥락" #Dak Lak
- STATE_981:0 "럼동" #Lam Dong
- STATE_982:0 "껀터" #Can Tho #서부의 수도라는 별명이 있음 Tây Đô
- STATE_983:0 "꼬뜨랄" #dao phu quoc
+ STATE_982:0 "하이퐁" #Hai Phong
+ STATE_983:0 "랑선" #Lang Son
+ STATE_984:0 "타이응우옌" #Thai Nguyen
+ STATE_985:0 "디엔비엔" #Dien Bien
+ STATE_986:0 "타인호아" #Thanh Hoa
+ STATE_987:0 "하띤" #Ha Tinh
+ STATE_988:0 "투아티엔후에" #Thua Thien Hue
+ STATE_989:0 "꽝남" #Quang Nam
+ STATE_990:0 "빈딘" #Binh Dinh
+ STATE_991:0 "카인호아" #Khanh Hoa
+ STATE_992:0 "닥락" #Dak Lak
+ STATE_993:0 "럼동" #Lam Dong
+ STATE_994:0 "껀터" #Can Tho #서부의 수도라는 별명이 있음 Tây Đô
+ STATE_995:0 "꼬뜨랄" #dao phu quoc
 
  #라오스
  STATE_670:0 "비엔티안" #Vientiane
- STATE_984:0 "퐁살리" #Phongsali
- STATE_985:0 "우돔사이" #Oudomxay
- STATE_986:0 "루앙프라방" #Louang Prabang
- STATE_987:0 "사이냐불리" #Sainyabuli #란창(태국) Lan Chang
- STATE_988:0 "후아판" #Houaphan
- STATE_989:0 "볼리캄사이" #Bolikhamxai
- STATE_990:0 "캄무안" #Khammouan
- STATE_991:0 "사완나켓" #Savannakhet
- STATE_992:0 "살라완" #Salavan
- STATE_993:0 "세콩" #Sekong
- STATE_994:0 "앗따쁘" #Attapu
- STATE_995:0 "팍세" #Pakse
- STATE_996:0 "참파사크" #Champasak
+ STATE_996:0 "퐁살리" #Phongsali
+ STATE_997:0 "우돔사이" #Oudomxay
+ STATE_998:0 "루앙프라방" #Louang Prabang
+ STATE_999:0 "사이냐불리" #Sainyabuli #란창(태국) Lan Chang
+ STATE_1000:0 "후아판" #Houaphan
+ STATE_1001:0 "볼리캄사이" #Bolikhamxai
+ STATE_1002:0 "캄무안" #Khammouan
+ STATE_1003:0 "사완나켓" #Savannakhet
+ STATE_1004:0 "살라완" #Salavan
+ STATE_1005:0 "세콩" #Sekong
+ STATE_1006:0 "앗따쁘" #Attapu
+ STATE_1007:0 "팍세" #Pakse
+ STATE_1008:0 "참파사크" #Champasak
 
  #캄보디아
  STATE_741:0 "프놈펜" #Phnom Penh
- STATE_997:0 "시아누크빌" #Sihanoukville
- STATE_998:0 "칸달" #Kandal
- STATE_999:0 "바탐방" #Battambang
- STATE_1000:0 "반테아이메안체이" #Banteay Meanchey
- STATE_1001:0 "캄퐁참" #Kampong Cham 캄보디아에서 인구가 가장 많음
- STATE_1002:0 "프레아비헤아르" #Preah Vihear
- STATE_1003:0 "몬둘키리" #Mondulkiri
- STATE_1004:0 "라타나키리" #Ratanakiri
+ STATE_1009:0 "시아누크빌" #Sihanoukville
+ STATE_1010:0 "칸달" #Kandal
+ STATE_1011:0 "바탐방" #Battambang
+ STATE_1012:0 "반테아이메안체이" #Banteay Meanchey
+ STATE_1013:0 "캄퐁참" #Kampong Cham 캄보디아에서 인구가 가장 많음
+ STATE_1014:0 "프레아비헤아르" #Preah Vihear
+ STATE_1015:0 "몬둘키리" #Mondulkiri
+ STATE_1016:0 "라타나키리" #Ratanakiri
 
  #말레이
- STATE_1005:0 "페낭"
- STATE_1006:0 "딘딩"
- STATE_1007:0 "말라카"
- STATE_1008:0 "조호르"
- STATE_1009:0 "크다"
- STATE_1010:0 "클란탄"
- STATE_1011:0 "트렝가누"
- STATE_1012:0 "페락"
- STATE_1013:0 "파항"
- STATE_1014:0 "슬랑오르"
+ STATE_1017:0 "페낭"
+ STATE_1018:0 "딘딩"
+ STATE_1019:0 "말라카"
+ STATE_1020:0 "조호르"
+ STATE_1021:0 "크다"
+ STATE_1022:0 "클란탄"
+ STATE_1023:0 "트렝가누"
+ STATE_1024:0 "페락"
+ STATE_1025:0 "파항"
+ STATE_1026:0 "슬랑오르"
 
  #사라왁
  STATE_333:0 "사라왁"
 
  #브루나이
- STATE_1033:0 "브루나이"
+ STATE_1045:0 "브루나이"
 
  #북보르네오
- STATE_1034:0 "북보르네오" #사바
+ STATE_1046:0 "북보르네오" #사바
 
 #만주, 한반도
-STATE_1015:0 "젠다오"
-STATE_1016:0 "퉁화"
-STATE_1017:0 "안둥"
 STATE_525:0 "경기"
 STATE_527:0 "평안"
-STATE_1018:0 "경상"
-STATE_1019:0 "함경"
-STATE_1020:0 "제주"
-STATE_1021:0 "황해"
-STATE_1022:0 "전라"
-STATE_1023:0 "충청"
-STATE_1024:0 "강원"
-STATE_1025:0 "랴오시"
-STATE_1026:0 "서싱안"
-STATE_1027:0 "남빈장"
-STATE_1028:0 "동룽장"
-STATE_1029:0 "헤이허"
-STATE_1030:0 "서룽장"
-STATE_1031:0 "북빈장"
-STATE_1032:0 "북싼장"
+STATE_1027:0 "젠다오"
+STATE_1028:0 "퉁화"
+STATE_1029:0 "안둥"
+STATE_1030:0 "경상"
+STATE_1031:0 "함경"
+STATE_1032:0 "제주"
+STATE_1033:0 "황해"
+STATE_1034:0 "전라"
+STATE_1035:0 "충청"
+STATE_1036:0 "강원"
+STATE_1037:0 "랴오시"
+STATE_1038:0 "서싱안"
+STATE_1039:0 "남빈장"
+STATE_1040:0 "동룽장"
+STATE_1041:0 "헤이허"
+STATE_1042:0 "서룽장"
+STATE_1043:0 "북빈장"
+STATE_1044:0 "북싼장"

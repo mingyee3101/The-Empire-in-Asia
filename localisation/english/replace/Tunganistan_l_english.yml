@@ -1,7 +1,20 @@
 ﻿l_english:
 
  #인물
+ #회족
  TGS_Ma_Hushan:0 "마후샨"
+ TGS_Ma_Zhongying:0 "마중잉" #馬仲英
+ TGS_Ma_Ju_lung:0 "마루룽" #馬如龍
+ TGS_Pai_Tzu_li:0 "바이쯔리" #拜自立
+
+ #위구르족
+ TGS_Muhammad_Amin_Bughra:0 "무함마드 아민 부그라" #아미르
+ TGS_Khoja_Niyaz:0 "호자 니야즈" #대통령 #장군
+ TGS_Isa_Alptekin:0 "이사 유수프 알프테킨" #정치인
+ TGS_Yulbars_Khan:0 "율바르스 칸" #장군 #친중
+ TGS_Mahmut_Muhiti:0 "메흐무트 무히티" #장군 #36사단
+ TGS_Kichik_Akhund:0 "키칙 아쿤드" #장군
+ TGS_Abd_al_Niyas:0 "압둘 니야즈" #장군 #제6위구르 사단
 
  #특성
  King_of_Tunganistan:0 "둥가니스탄의 왕"

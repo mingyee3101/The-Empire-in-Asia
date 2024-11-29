@@ -460,7 +460,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			671 = {
+			671 = { #하노이
 				add_building_construction = {
 					type = air_base
 					level = 3
@@ -493,7 +493,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			970 = {
+			970 = { #하이퐁
 				add_building_construction = {
 					type = naval_base
 					level = 2
@@ -1350,16 +1350,25 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
-			every_owned_state = {
-                limit = {
-                    is_fully_controlled_by = ROOT
-                    NOT = { has_state_category = wasteland }
-                    NOT = { has_state_category = enclave }
-                    NOT = { has_state_category = pastoral }
-                    NOT = { has_state_category = tiny_island }
-                    NOT = { has_state_category = small_island }
-                    NOT = { has_state_category = rural }
-                }
+			671 = { #하노이
+                add_extra_state_shared_building_slots = 1
+            }
+			976 = { #후에
+                add_extra_state_shared_building_slots = 1
+            }
+			286 = { #사이공
+                add_extra_state_shared_building_slots = 1
+            }
+			741 = { #프놈펜
+                add_extra_state_shared_building_slots = 1
+            }
+            999 = { #바탐방
+                add_extra_state_shared_building_slots = 1
+            }
+            670 = { #비엔티안
+                add_extra_state_shared_building_slots = 1
+            }
+            986 = { #루앙프라방
                 add_extra_state_shared_building_slots = 1
             }
 			if = {
@@ -1428,8 +1437,8 @@ focus_tree = {
 
 		available = {
 			or = {
-				has_full_control_of_state = 286
-				has_full_control_of_state = 979
+				has_full_control_of_state = 286 #사이공
+				has_full_control_of_state = 979 #카인호아
 			}
 		}
 
@@ -1664,7 +1673,7 @@ focus_tree = {
 		relative_position_id = UIC_fort_construction_plan
 
 		available = {
-			has_full_control_of_state = 286
+			has_full_control_of_state = 286 #사이공
 		}
 
 		cancel_if_invalid = yes
@@ -1691,7 +1700,7 @@ focus_tree = {
 		relative_position_id = UIC_fort_construction_plan
 
 		available = {
-			has_full_control_of_state = 728
+			has_full_control_of_state = 728 #광저우만
 		}
 
 		cancel_if_invalid = yes
@@ -1702,7 +1711,7 @@ focus_tree = {
 					type = naval_base
 					level = 3
 					instant_build = yes
-					province = 11981
+					province = 11981 #광저우만
 				}
 			}
 		}
@@ -1768,7 +1777,7 @@ focus_tree = {
 
 		completion_reward = {
             random_owned_controlled_state = {
-                prioritize = { 286 979 741 }
+                prioritize = { 286 979 741 } #사이공 카인호아 프놈펜
                 limit = {
                     free_building_slots = {
                         building = arms_factory
@@ -1933,11 +1942,11 @@ focus_tree = {
 					#template_counter = 68 #아이콘
 				}
 				random_owned_controlled_state = {
-					prioritize = { 671 }
+					prioritize = { 671 } #하노이
 					limit = { is_in_home_area = yes }
 					create_unit = {
 						division = "name = \"1st Forest Division\" division_template = \"인도차이나 공산당 민병대\" start_experience_factor = 0.1"
-						prioritize_location = 4075
+						prioritize_location = 4075 #하노이
 						owner = ROOT
 						id = 198
 					}
@@ -1962,7 +1971,7 @@ focus_tree = {
 	#육군
 	focus = {
 		id = UIC_tirailleurs_indochinois
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
 		x = 17
 		y = 0
@@ -2011,7 +2020,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_great_war_analysis
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		prerequisite = { focus = UIC_maintain_existing_tactics }
 		cost = 5
 		x = -2
@@ -2033,7 +2042,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_perfect_defense
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = UIC_great_war_analysis }
 		cost = 10
 		x = 0
@@ -2055,7 +2064,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_mountain_training
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SMB_a_land_of_mountains
 		prerequisite = { focus = UIC_maintain_existing_tactics focus = UIC_new_tactics }
 		mutually_exclusive = { focus = UIC_jungle_training }
 		cost = 10
@@ -2077,7 +2086,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_jungle_training
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		prerequisite = { focus = UIC_maintain_existing_tactics focus = UIC_new_tactics }
 		mutually_exclusive = { focus = UIC_mountain_training }
 		cost = 10
@@ -2099,7 +2108,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_artillery_production
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_let_fly_all_guns
 		prerequisite = { focus = UIC_mountain_training focus = UIC_jungle_training }
 		cost = 10
 		x = 0
@@ -2141,7 +2150,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_supply_of_quality_equipment
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_POL_beck_ribbentrop
 		prerequisite = { focus = UIC_mountain_training focus = UIC_jungle_training }
 		cost = 10
 		x = 0
@@ -2181,7 +2190,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_tank_armament
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = UIC_artillery_production }
 		prerequisite = { focus = UIC_supply_of_quality_equipment }
 		cost = 10
@@ -2255,7 +2264,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_infantry_combat
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = UIC_new_tactics }
 		cost = 15
 		x = 2
@@ -2283,7 +2292,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_colonial_army_training
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_AUS_frontmiliz_focus
 		prerequisite = { focus = UIC_infantry_combat }
 		cost = 10
 		x = 0
@@ -2309,7 +2318,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_colonial_army_modernization
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = UIC_perfect_defense focus = UIC_colonial_army_training }
 		prerequisite = { focus = UIC_tank_armament }
 		cost = 10
@@ -2349,7 +2358,7 @@ focus_tree = {
 
 	focus = {
 		id = UIC_ecole_superieure_de_guerre
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
 		prerequisite = { focus = UIC_tirailleurs_indochinois }	
 		cost = 10
 		x = 4

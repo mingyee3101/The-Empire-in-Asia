@@ -77,7 +77,7 @@ leader_traits = {
 
 	unpopular_emperor = {
 		random = no
-		stability_factor = -0.2
+		stability_factor = -0.1
 	}
 
 	respected_emperor = {
@@ -88,7 +88,7 @@ leader_traits = {
 
 	bac_ho = {
 		random = no
-		stability_factor = 0.2
+		stability_factor = 0.1
 	}
 
 	social_reformer_vin = {
@@ -113,6 +113,14 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+	modernist_and_monarchist = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.05
 	}
 
 }

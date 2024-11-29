@@ -1,0 +1,24 @@
+state={
+	id=1002
+	name="STATE_1002"
+
+	history={
+		add_core_of = UIC
+		owner = UIC
+		add_core_of = LAO
+		victory_points = { #타케크
+			1520 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		1390 1520 4260 10326 
+	}
+	manpower=107640 #358,800
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

@@ -1,0 +1,33 @@
+state={
+	id=991
+	name="STATE_991"
+	#resources={
+	#	oil=2 #4 #Phú Khánh
+	#}
+
+	history={
+		add_core_of = VIN
+		add_core_of = UIC
+		owner = UIC
+		victory_points = { #냐짱
+			10162 3
+		}
+		victory_points = { #판티엣
+			10232 3
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1 #L’Arsenal de Cam-Ranh
+			10162 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1285 10162 10232 12204 
+	}
+	manpower=982606 #3,275,353
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
