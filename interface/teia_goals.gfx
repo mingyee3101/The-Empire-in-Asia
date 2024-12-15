@@ -52,6 +52,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_UIC_western_operation_plan.png"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_UIC_china_indochina_cooperation"
+		texturefile = "gfx/interface/goals/focus_UIC_china_indochina_cooperation.png"
+	}
+
 	#만주국
 
 	SpriteType = { 

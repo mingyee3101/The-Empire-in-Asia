@@ -39,12 +39,15 @@ TGS_preparing_for_rebellion_category = {
 			SIK = {
 				country_event = { id = tgs.1 }
 			}
-			SOV = {
-				country_event = { id = tgs.2 hours = 12 }
-			}
 			declare_war_on = {
 			    target = SIK
 			    type = annex_everything
+			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = tgs.2 hours = 12 }
+				}
+				news_event = teia_news.1
 			}
 		}
 	}

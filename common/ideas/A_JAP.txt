@@ -39,5 +39,15 @@ ideas = {
                 local_building_slots_factor = 0.15
 			}
 		}
+
+		#고민
+		JAP_Futsuin_shinchu = {
+            picture = AUS_naval_efficiency_idea
+			modifier = {
+                invasion_preparation = -0.3
+                naval_invasion_penalty = -0.1
+                amphibious_invasion_defence = 0.1
+			}
+		}
 	}
 }

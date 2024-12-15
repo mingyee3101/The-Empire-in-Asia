@@ -4,6 +4,23 @@ oob = "TGS_1936"
 
 set_cosmetic_tag = CHI_KMT
 
+add_ideas = {
+	limited_conscription
+
+	SIK_islamic_rebellion_in_xinjiang
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+		CHI_warlord_state_idea
+	}
+}
+
 #회족
 recruit_character = TGS_Ma_Hushan
 recruit_character = TGS_Ma_Zhongying #소련 ###

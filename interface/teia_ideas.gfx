@@ -9,9 +9,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/JAP_strong_military.tga"
 	}
 
+	#인도차이나
+
 	spriteType = {
 		name = "GFX_idea_Indochinese_labor"
 		texturefile = "gfx/interface/ideas/UIC/idea_Indochinese_labor.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_uic_indochina_conservation_plan"
+		texturefile = "gfx/interface/ideas/UIC/idea_uic_indochina_conservation_plan.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_uic_east_squadron"
+		texturefile = "gfx/interface/ideas/UIC/idea_uic_east_squadron.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_uic_tirailleurs_indochinois"
+		texturefile = "gfx/interface/ideas/UIC/idea_uic_tirailleurs_indochinois.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_uic_indochina_air_force"
+		texturefile = "gfx/interface/ideas/UIC/idea_uic_indochina_air_force.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_uic_friendly_relations_with_warlord"
+		texturefile = "gfx/interface/ideas/UIC/idea_uic_friendly_relations_with_warlord.png"
 	}
 
 	#mio

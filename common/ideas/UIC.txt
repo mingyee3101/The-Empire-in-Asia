@@ -2,6 +2,93 @@ ideas = {
 
 	country = {
 
+		#프랑스 괴뢰국
+
+		UIC_FRA_colony = {
+			
+			allowed = {
+				NOT = {
+					is_subject_of = FRA
+				}
+			}
+
+			picture = FRA_undividable
+			
+			modifier = {
+				ai_join_ally_desire_factor = -999
+				ai_get_ally_desire_factor = -999
+			}
+
+		}
+
+		#비시 프랑스 괴뢰국
+
+		UIC_VIC_colony = {
+			
+			allowed = {
+				NOT = {
+					is_subject_of = VIC
+				}
+			}
+
+			picture = FRA_undividable
+			
+			modifier = {
+				ai_join_ally_desire_factor = -999
+				ai_get_ally_desire_factor = -999
+			}
+
+		}
+
+		#장드쿠
+
+		UIC_additional_indochinese_people_appointed = {
+			
+			allowed = {
+				
+			}
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_factor = 0.1
+				autonomy_gain = 0.2
+			}
+
+		}
+
+		UIC_fair_wages = {
+			
+			allowed = {
+				
+			}
+
+			picture = NOR_printing_money
+			
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+				autonomy_gain = 0.2
+			}
+
+		}
+
+		#조르주 카트루
+
+		UIC_provide_information = {
+			
+			allowed = {
+				
+			}
+
+			picture = GFX_idea_FIN_maan_turva
+			
+			modifier = {
+				decryption_power_factor = 0.1
+			}
+
+		}
+
 		#인도차이나인들의 저항
 
 		UIC_indochinese_resistance_rene_robins_i = {
@@ -433,7 +520,7 @@ ideas = {
 				}
 			}
 
-			picture = usa_great_depression
+			picture = GFX_idea_ast_all_in
 			
 			modifier = {
 				production_speed_bunker_factor = 0.3
@@ -441,6 +528,199 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 
+		}
+
+		#기근
+
+		UIC_risk_of_famine = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		UIC_famine_i = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				conscription_factor = -0.05
+				monthly_population = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		UIC_famine_ii = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				conscription_factor = -0.05
+				monthly_population = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		UIC_famine_iii = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				conscription_factor = -0.1
+				monthly_population = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		UIC_famine_iv = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				conscription_factor = -0.1
+				monthly_population = -0.3
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		UIC_famine_v = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.2
+				monthly_population = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		UIC_famine_vi = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = UIC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				conscription_factor = -0.3
+				monthly_population = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		#군벌 지원
+
+		UIC_friendly_relations_with_warlord = {
+
+			picture = GFX_idea_generic_railroads
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				not = {
+					is_subject_of = JAP
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+			}
 		}
 
 		#인도차이나 보호
@@ -497,7 +777,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = GFX_idea_generic_wall_line
 			
 			modifier = {
 				army_defence_factor = 0.05
@@ -513,7 +793,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = GFX_idea_generic_wall_line
 			
 			modifier = {
 				army_defence_factor = 0.1
@@ -530,7 +810,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = GFX_idea_generic_wall_line
 			
 			modifier = {
 				stability_factor = 0.1
@@ -660,7 +940,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = generic_air_payment
 			
 			equipment_bonus = {
 				small_plane_airframe = {
@@ -689,7 +969,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = escort_effort_focus
 			
 			modifier = {
 				industrial_capacity_dockyard = 0.1
@@ -710,7 +990,7 @@ ideas = {
 				
 			}
 
-			picture = usa_great_depression
+			picture = GFX_idea_escort_effort_focus
 			
 			equipment_bonus = {
 				ship_hull_light = {

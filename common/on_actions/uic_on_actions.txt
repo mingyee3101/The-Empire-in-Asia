@@ -1,0 +1,36 @@
+on_actions = { 
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = UIC
+					UIC = {
+						or = {
+							has_country_flag = UIC_FRA_colony
+							has_country_flag = UIC_VIC_colony
+							has_ideas = UIC_FRA_colony
+							has_ideas = UIC_VIC_colony
+						}
+						or = {
+							is_subject_of = JAP
+							is_subject_of = SIA
+							is_in_faction_with = JAP
+							is_in_faction_with = SIA
+							exists = no
+						}
+					}
+				}
+				UIC = {
+					crl_country_flag = UIC_FRA_colony
+					crl_country_flag = UIC_VIC_colony
+					crl_country_flag = UIC_autonomy_dominion
+					crl_country_flag = UIC_autonomy_colony
+					crl_country_flag = UIC_autonomy_puppet
+					crl_country_flag = UIC_autonomy_integrated_puppet
+					remove_idea = UIC_FRA_colony
+					remove_idea = UIC_VIC_colony
+				}
+			}
+		}
+	}
+}

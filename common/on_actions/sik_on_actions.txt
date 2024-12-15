@@ -1,0 +1,110 @@
+on_actions = { 
+	on_before_peace_conference_start = {
+		effect = {
+			if = {
+				limit = {
+					tag = SIK
+					has_idea = SIK_islamic_rebellion_in_xinjiang
+					TGS = { 
+						#exists = no
+						has_capitulated = yes
+					}
+				}
+				SIK = {
+					remove_ideas = SIK_islamic_rebellion_in_xinjiang
+				}
+				TGS = {
+					remove_ideas = SIK_islamic_rebellion_in_xinjiang
+				}
+				287 = {
+					remove_core_of = TGS
+				}
+				759 = {
+					remove_core_of = TGS
+				}
+				if = {
+					limit = {
+						SIK = {
+							has_country_flag = SIK_soviet_support_for_Xinjiang
+						}
+					}
+					SIK = {
+						clr_country_flag = SIK_soviet_support_for_Xinjiang
+						delete_units = {
+							division_template = "소총 군단"
+							disband = no
+						}
+						delete_units = {
+							division_template = "기계화 군단"
+							disband = no
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = TGS
+					has_idea = SIK_islamic_rebellion_in_xinjiang
+					SIK = { 
+						#exists = no
+						has_capitulated = yes
+					}
+				}
+				SIK = {
+					remove_ideas = SIK_islamic_rebellion_in_xinjiang
+				}
+				TGS = {
+					remove_ideas = SIK_islamic_rebellion_in_xinjiang
+				}
+				617 = {
+					add_core_of = TGS
+				}
+				618 = {
+					add_core_of = TGS
+				}
+				619 = {
+					add_core_of = TGS
+				}
+				760 = {
+					add_core_of = TGS
+				}
+				617 = {
+					emove_core_of = SIK
+				}
+				618 = {
+					emove_core_of = SIK
+				}
+				619 = {
+					emove_core_of = SIK
+				}
+				760 = {
+					emove_core_of = SIK
+				}
+				287 = {
+					remove_core_of = SIK
+				}
+				759 = {
+					remove_core_of = SIK
+				}
+				if = {
+					limit = {
+						SIK = {
+							has_country_flag = SIK_soviet_support_for_Xinjiang
+						}
+					}
+					SIK = {
+						clr_country_flag = SIK_soviet_support_for_Xinjiang
+						delete_units = {
+							division_template = "소총 군단"
+							disband = no
+						}
+						delete_units = {
+							division_template = "기계화 군단"
+							disband = no
+						}
+					}
+				}
+			}
+		}
+	}
+}

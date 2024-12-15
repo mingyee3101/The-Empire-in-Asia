@@ -58,6 +58,7 @@ focus_tree = {
 #
 #		}
 #	}
+	shared_focus = CHI_invite_foreign_investors
 
 	focus = {
 		id = PRC_strengthen_the_central_secretariat
@@ -288,7 +289,9 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			NOT = {
+				has_idea = PRC_the_long_march_1
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -323,7 +326,9 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			NOT = {
+				has_idea = PRC_power_struggles
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -867,7 +872,7 @@ focus_tree = {
 			}
 			else = {
 				set_rule = { can_create_factions = yes }
-				create_faction = PRC_government_of_national_defense
+				create_faction = chinese_united_front
 			}
 		}
 	}
@@ -1295,7 +1300,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_idea = PRC_red_army_weakened
 		}
 
 		bypass = {

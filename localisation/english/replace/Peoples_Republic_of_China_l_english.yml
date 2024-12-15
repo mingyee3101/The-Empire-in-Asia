@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ #임시중점
+ PRC_government_of_national_defense:0 "국공합작"
+
  #국민정신
  PRC_red_army:0 "홍군"
  PRC_separatism:0 "분리주의"

@@ -23,7 +23,7 @@ UIC_Indochina_flood = {
 }
 
 UIC_indochina_conservation_plan = {
-	icon = GFX_idea_generic_agrarian_reform
+	icon = GFX_idea_uic_indochina_conservation_plan
 
 	army_core_defence_factor = UIC_indochina_conservation_plan_army_core_defence_factor
 	conscription_factor = UIC_indochina_conservation_plan_conscription_factor
@@ -41,7 +41,7 @@ UIC_indochina_conservation_plan = {
 }
 
 UIC_tirailleurs_indochinois = {
-	icon = GFX_idea_generic_agrarian_reform
+	icon = GFX_idea_uic_tirailleurs_indochinois
 
 	experience_gain_army_factor = UIC_tirailleurs_indochinois_experience_gain_army_factor
 	acclimatization_hot_climate_gain_factor = UIC_tirailleurs_indochinois_acclimatization_hot_climate_gain_factor
@@ -63,7 +63,7 @@ UIC_tirailleurs_indochinois = {
 }
 
 UIC_indochina_air_force = {
-	icon = GFX_idea_generic_agrarian_reform
+	icon = GFX_idea_uic_indochina_air_force
 
 	experience_gain_air_factor = UIC_indochina_air_force_experience_gain_air_factor
 	air_accidents_factor = UIC_indochina_air_force_air_accidents_factor
@@ -78,7 +78,7 @@ UIC_indochina_air_force = {
 }
 
 UIC_far_east_squadron = {
-	icon = GFX_idea_generic_agrarian_reform
+	icon = GFX_idea_uic_east_squadron
 
 	experience_gain_navy_factor = UIC_far_east_squadron_experience_gain_navy_factor
 	naval_accidents_chance = UIC_far_east_squadron_naval_accidents_chance

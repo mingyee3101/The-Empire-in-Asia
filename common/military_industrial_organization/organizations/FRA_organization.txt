@@ -154,13 +154,21 @@ FRA_apx_organization = {
 	}
 }
 
-#FRA_amx_organization = { # TODO set up correct from focus if needed
-#	include = generic_mobile_tank_organization
-#	icon = GFX_idea_generic_tank_manufacturer_2
-#	allowed = {	
-#		tag = FRA 
-#	}
-#}
+FRA_amx_organization = { 
+	include = generic_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
+	allowed = {	
+		tag = FRA 
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { original_tag = FRA } 
+			}
+			FROM = { has_completed_focus = FRA_form_the_state_arsenals }
+		}
+	}
+}
 
 #####################
 
@@ -290,18 +298,20 @@ FRA_bloch_organization = {
 			FROM = { NOT = { has_war_with = FRA } }
 		}
 
-		IF = { #고민
+		IF = {
 			limit = {
+				or = { #고민
 					FROM = { original_tag = ETH }
 					FROM = { original_tag = UIC }
 					FROM = { original_tag = VIN }
 					FROM = { original_tag = CAM }
 					FROM = { original_tag = LAO }
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_FRA_bloch_organization_flag
+					has_country_flag = has_invited_FRA_renault_organization_flag
 				}
 			}
 		}
@@ -417,7 +427,7 @@ FRA_mas_organization = {
 	allowed = {	 
 		OR = {
 			tag = FRA 
-			tag = UIC #고만
+			tag = UIC #고민
 			tag = VIN
 			tag = CAM
 			tag = LAO

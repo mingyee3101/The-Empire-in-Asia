@@ -1,0 +1,33 @@
+﻿add_namespace = teia_news
+
+#이슬람 반란
+news_event = {
+	id = teia_news.1
+	title = teia_news.1.t
+	desc = teia_news.1.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = teia_news.1.a
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = teia_news.1.b
+		trigger = { 
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = teia_news.1.c
+		trigger = { 
+			NOT = { original_tag = CHI }
+			NOT = { original_tag = JAP }
+		}
+	}
+}

@@ -615,7 +615,7 @@ UIC_foreign_support_category = {
 				}
 			}
 			has_equipment = { infantry_equipment > 999 }
-			#country_exists = CHI #중국 존재
+			country_exists = CHI #중국 존재
 		}
 		visible = {
 			OR = {
@@ -627,11 +627,10 @@ UIC_foreign_support_category = {
 				controls_state = 974 #퐁살리
 				controls_state = 975 #우돔사이
 			}
-			CHI = {
-				has_war_with = JAP
-			}
 			NOT = {
-				has_completed_focus = UIC_supplying_materials_to_china
+				UIC = {
+					has_completed_focus = UIC_supplying_materials_to_china
+				}
 			}
 		}
 		days_re_enable = 100
@@ -665,6 +664,7 @@ UIC_foreign_support_category = {
 		allowed = {
 			OR = {
 				original_tag = UIC
+				original_tag = LAO
 				original_tag = VIN
 			}
 		}
@@ -692,16 +692,10 @@ UIC_foreign_support_category = {
 				controls_state = 972 #타이응우옌
 				controls_state = 973 #디엔비엔
 			}
-			#UIC = {
-			#	has_completed_focus = UIC_supplying_materials_to_china
-			#}
-			has_global_flag = UIC_supplying_materials_to_china
-			or = {
-				CHI = {
-					has_war_with = JAP
-				}
+			UIC = {
 				has_completed_focus = UIC_supplying_materials_to_china
 			}
+			#has_global_flag = UIC_supplying_materials_to_china
 		}
 		days_re_enable = 60
 		ai_will_do = {
@@ -732,8 +726,22 @@ UIC_foreign_support_category = {
 
 		icon = generic_form_nation
 
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				FROM = {
+					original_tag = YUN
+				}
+			}
+		}
+
 		allowed = {
-			original_tag = UIC
+			OR = {
+				original_tag = UIC
+				original_tag = LAO
+				original_tag = VIN
+			}
 		}
 
 		available = {
@@ -744,13 +752,18 @@ UIC_foreign_support_category = {
 			FROM = {
 				is_neighbor_of = ROOT
 			}
-			has_global_flag = UIC_supplying_materials_to_china
+			#has_global_flag = UIC_supplying_materials_to_china
 			not = {
 				has_global_flag = UIC_cooperation_with_warlords
 			}
+			UIC = {
+				has_completed_focus = UIC_supplying_materials_to_china
+			}
 		}	
 
-		fire_only_once = yes
+		#fire_only_once = yes
+
+		days_re_enable = 300
 
 		target_trigger = {
 			FROM = {
@@ -761,6 +774,9 @@ UIC_foreign_support_category = {
 				not = {
 					original_tag = CHI
 				}
+				not = {
+					has_country_flag = UIC_accept_support_warlords
+				}
 			}
 		}
 
@@ -770,7 +786,7 @@ UIC_foreign_support_category = {
 
 		target_array = neighbors
 
-		cost = 30
+		cost = 50
 		
 		complete_effect = {
 			FROM = {
@@ -784,27 +800,42 @@ UIC_foreign_support_category = {
 
 		icon = generic_form_nation
 
+		ai_will_do = {
+			base = 1
+			#modifier = {
+			#	factor = 5
+			#	FROM = {
+			#		original_tag = YUN
+			#	}
+			#}
+		}
+
 		allowed = {
 			original_tag = UIC
 		}
 
 		available = {
 			
+			has_equipment = {
+				infantry_equipment > 999
+			}
+			
 		}
 
 		visible = {
 			FROM = {
 				is_neighbor_of = ROOT
+				not = {
+					is_subject_of = JAP
+				}
 			}
-			has_global_flag = UIC_supplying_materials_to_china
-		}	
-
-		#fire_only_once = yes
-
-		target_root_trigger = {
-			has_country_flag = UIC_cooperation_with_warlords
-			#중원을 지배하면 안됨
+			#has_global_flag = UIC_supplying_materials_to_china
 		}
+
+		#target_root_trigger = {
+		#	has_country_flag = UIC_accept_support_warlords
+		#	#중원을 지배하면 안됨
+		#}
 
 		target_trigger = {
 			FROM = {
@@ -815,31 +846,71 @@ UIC_foreign_support_category = {
 				not = {
 					original_tag = CHI
 				}
+				has_country_flag = UIC_accept_support_warlords
 			}
 		}
 
-		target_array = neighbors
 		days_re_enable = 30
+
 		ai_will_do = {
 			factor = 1
 		}
+
 		cost = 10
-		days_remove = 10
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -1000
 			}
 		}
+
 		remove_effect = {
+			army_experience = 5
 			FROM = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 1000
 					producer = UIC
 				}
+				UIC_support_warlords_level_up = yes
 			}
-			#인도차이나에게 보상주기
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = UIC_support_warlords_v
+					}
+				}
+				FROM = {
+					clr_country_flag = UIC_support_warlords_v
+					set_country_flag = UIC_friendly_relations_with_warlord
+					add_ideas = UIC_friendly_relations_with_warlord
+					add_opinion_modifier = { target = ROOT modifier = UIC_friendly_relations_with_warlord }
+				}
+				hidden_effect = {
+					division_template = {
+						name = "중국 의용군"
+						division_names_group = "CHI_INF_01"
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+						}
+						#template_counter = 68 #아이콘
+					}
+					random_owned_controlled_state = {
+						prioritize = { 671 } #하노이
+						limit = { is_in_home_area = yes }
+						create_unit = {
+							division = "name = \"중국 의용군\" division_template = \"중국 의용군\" start_experience_factor = 0.5"
+							prioritize_location = 4075 #하노이
+							owner = ROOT
+							id = 198
+						}
+					}
+				}
+			}
 		}
 
 	}
@@ -936,6 +1007,103 @@ UIC_local_investment_plan_category = {
 }
 
 UIC_indochina_wars_category = {
+
+	UIC_sue_for_peace_JAP = {
+
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = UIC_sue_for_peacejap_TT
+			}
+			JAP = {
+				or = {
+					# 하노이
+					controls_state = 671
+					# 하이퐁
+					controls_state = 982
+				}
+			}
+		}
+
+		visible = {
+			JAP = { 
+				exists = yes 
+				is_subject = no
+			}
+			#is_subject = no
+			any_enemy_country = {
+				tag = JAP
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 400
+		}
+
+		complete_effect = {
+			JAP = {
+				country_event = { 
+					id = uicwar.1
+					days = 1 
+				}
+			}
+		}
+	}
+
+	UIC_sue_for_peace_SIA = {
+
+		allowed = {
+			original_tag = UIC
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = UIC_sue_for_peacesia_TT
+			}
+			SIA = {
+				# 사이냐불리
+				controls_state = 999
+				# 바탐방
+				controls_state = 1011
+			}
+		}
+
+		visible = {
+			SIA = { 
+				exists = yes 
+				is_subject = no
+			}
+			#is_subject = no
+			any_enemy_country = {
+				tag = SIA
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 400
+		}
+
+		complete_effect = {
+			SIA = {
+				country_event = { 
+					id = uicwar.4
+					days = 1 
+				}
+			}
+		}
+	}
+
 	UIC_western_operation_plan_decision = {
 		icon = generic_factory
 		available = {
@@ -1009,6 +1177,211 @@ UIC_indochina_wars_category = {
 			air_intercept_efficiency = 0.1
 		}
 	}
+
+	UIC_protecting_Indochina_decision = {
+		icon = generic_factory
+		available = {
+			UIC = {
+				not = {
+					has_war_with = JAP
+				}
+				or = {
+					has_idea = UIC_FRA_colony
+					has_idea = UIC_VIC_colony
+				}
+			}
+		}
+
+		allowed = {
+			OR = {
+				original_tag = FRA
+				original_tag = VIC
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				NOT = {
+					or = {
+						country_exists = JAP
+						not = {
+							JAP ={
+								has_government = fascism
+							}
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			UIC = {
+				or = {
+					has_country_flag = UIC_autonomy_dominion
+					has_country_flag = UIC_autonomy_colony
+					has_country_flag = UIC_autonomy_puppet
+					has_country_flag = UIC_autonomy_integrated_puppet
+				}
+			}
+			or = {	
+				and = {
+					tag = VIC
+					UIC = {
+						has_idea = UIC_VIC_colony
+					}
+				}
+				and = {
+					tag = FRA
+					UIC = {
+						has_idea = UIC_FRA_colony
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			UIC = {
+				has_war_with = JAP
+			}
+		}
+		#fire_only_once = yes
+		cost = 10
+		days_remove = 100
+		remove_effect = {
+			if = {
+				limit = {
+					UIC = {
+						has_idea = UIC_FRA_colony
+					}
+				}
+				UIC = {
+					add_ideas = remove_ideas = UIC_FRA_colony
+				}
+			}
+			else_if = {
+				limit = {
+					UIC = {
+						has_idea = UIC_VIC_colony
+					}
+				}
+				UIC = {
+					add_ideas = remove_ideas = UIC_VIC_colony
+				}
+			}
+
+			IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_dominion
+						has_idea = UIC_FRA_colony
+					}
+				}
+				FRA = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_colony
+						has_idea = UIC_FRA_colony
+					}
+				}
+				FRA = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_colony
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_puppet
+						has_idea = UIC_FRA_colony
+					}
+				}
+				FRA = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_puppet
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_integrated_puppet
+						has_idea = UIC_FRA_colony
+					}
+				}
+				FRA = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_dominion
+						has_idea = UIC_VIC_colony
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_colony
+						has_idea = UIC_VIC_colony
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_colony
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_puppet
+						has_idea = UIC_VIC_colony
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_puppet
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						has_country_flag = UIC_autonomy_integrated_puppet
+						has_idea = UIC_VIC_colony
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+			}
+		}
+	}
 }
 
 political_actions = {
@@ -1032,7 +1405,6 @@ political_actions = {
 			consumer_goods_factor = 0.10
 			industrial_capacity_factory = -0.1
 		}
-		days_remove = 180
 		ai_will_do = {
 			factor = 1
 		}

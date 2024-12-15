@@ -19,6 +19,7 @@
 				tag = CSR
 				tag = GXC
 				tag = MEN
+				tag = PGC
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -113,13 +114,18 @@
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 20
+				factor = 50
 				OR = {
 					original_tag = GXC
 					original_tag = GDC
 					original_tag = YUN
 					original_tag = XSM
 					original_tag = SHX
+					original_tag = HCP
+					original_tag = SDC
+					original_tag = SCC
+					original_tag = CSR
+					original_tag = SIK
 				}
 			}
 		}
@@ -535,10 +541,10 @@
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 20
-				original_tag = SIK
-			}
+			#modifier = {
+			#	factor = 20
+			#	original_tag = SIK
+			#}
 		}
 
 		available = {
@@ -885,8 +891,9 @@
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 20
+				factor = 50
 				original_tag = MEN
+				original_tag = PGC
 			}
 		}
 

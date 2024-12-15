@@ -43,14 +43,14 @@ PRC_historical_plan = {
 	}
 
 	ai_national_focuses = {
-		PRC_strengthen_the_central_secretariat #March 10 1936	
 		PRC_land_redistribution #May 20 1936	
+		PRC_the_yanan_base_area #December 20 1936	
+		PRC_prepare_for_war_with_japan #September 20 1938	
+		PRC_government_of_national_defense #시안사건 12월 12일
+		PRC_strengthen_the_central_secretariat #March 10 1936	
 		PRC_enforce_the_three_rules #July 30 1936	
 		PRC_agrarian_socialism #October 10 1936	
-		PRC_the_yanan_base_area #December 20 1936	
 		PRC_focus_on_china #February 30 1937	
-		PRC_prepare_for_war_with_japan #September 20 1938	
-		PRC_government_of_national_defense
 		PRC_infiltration #May 10 1937	
 		PRC_revolutionary_military_commission #July 20 1937	
 		PRC_literacy_programs #September 30 1937	

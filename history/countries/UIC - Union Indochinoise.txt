@@ -8,6 +8,7 @@ if = {
 
 set_cosmetic_tag = UIC_fra
 set_country_flag = UIC_French_colony
+set_country_flag = UIC_famine_iii
 
 country_lock_all_division_template = yes
 
@@ -41,6 +42,7 @@ add_ideas = {
 	UIC_indochinese_resistance_i
 	UIC_unprepared_army_i
 	UIC_indochinese_exploitation_i
+	UIC_risk_of_famine
 }
 
 set_technology = {
@@ -167,8 +169,8 @@ country_event = { id = uic.16 days = 275 } #10월 2일 #베트남 파편화 넣�
 country_event = { id = uic.17 days = 1330 } #39년 8월 20일
 
 #민족주의자 관리
-set_variable = { var = UIC_monarchist_loyalty value = 2 }
-set_variable = { var = UIC_republican_loyalty value = 1 }
-set_variable = { var = UIC_communist_loyalty value = 0 }
-set_variable = { var = UIC_trotskyist_loyalty value = 0 }
-set_variable = { var = UIC_fascist_loyalty value = 0 }
+#set_variable = { var = UIC_monarchist_loyalty value = 2 }
+#set_variable = { var = UIC_republican_loyalty value = 1 }
+#set_variable = { var = UIC_communist_loyalty value = 0 }
+#set_variable = { var = UIC_trotskyist_loyalty value = 0 }
+#set_variable = { var = UIC_fascist_loyalty value = 0 }

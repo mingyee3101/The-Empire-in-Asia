@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ #game_rules #안됨
+ RULE_ALLOW_RELEASE_NATIONS_UIC_TOOLTIP:0 "§Y[ROOT.GetNameDefCap]§!(은)는 국가를 해방할 수 없습니다."
+
+
  #북마크
  UIC_GATHERING_STORM_DESC:0 "인도차이나"
 
@@ -13,7 +17,7 @@
  #정치고문
  UIC_Rene_schneyder:0 "르네 프랑수아 슈나이더"
  UIC_Henri_Maux:0 "앙리 모"
- UIC_Georges_Ayme:0 "조르주 아메" #인도차이나군 총사령관 #34 대령 #40 준장
+ UIC_Georges_Ayme:0 "조르주 아메" #인도차이나군 총사령관 #34 대령 #40 준장 #비시
 
  #장군
  UIC_Jules_Antoine_Buhrer:0 "쥘 앙투안 뷔러" #35~37 인도차이나 총사령관 #34 소장 36 중장
@@ -21,6 +25,7 @@
  UIC_Eugene_Mordant:0 "외젠 모흐멍" #37 준장 40 소장 41 중장
  UIC_Gabriel_Sabattier:0 "가브리엘 사바티에" #34 중령 40 대령
  UIC_Marcel_Alessandri:0 "마르셀 알레산드리" #1936 중령 41 대령
+ #Marcel Élie Pellet #조르주 아메 이전 통킹 사령관 #자유 #https://generals.dk/general/Pellet/Marcel-%C3%89lie/France.html
 
  #제독
  UIC_Georges_Thierry_d_Argenlieu:0 "조지 티에리 다르장리우" #45년
@@ -125,6 +130,7 @@
  UIC_negotiations_with_japan:0 "일본과 협상"
  UIC_negotiations_with_japan_desc:0 ""
  UIC_negotiations_with_japan_tt:0 "결정 제거: §Y$UIC_foreign_support_category$§!"
+ UIC_negotiations_with_japan_2_tt:0 "일본이 우리에게 최후통첩을 보내지 않을 것입니다."
  UIC_Air_Force_base_construction:0 "공군기지 건설"
  UIC_Air_Force_base_construction_desc:0 ""
  UIC_Haiphong_port_expansion:0 "하이퐁 항구 확장"
@@ -321,6 +327,8 @@
  UIC_tirailleurs_indochinois_equipment_production_tt:0 "장비, 항공기, 함선 관련 국민정신을 모두 얻으면 하나의 국민정신으로 합쳐집니다."
 
  #국민정신
+ UIC_FRA_colony:0 "자유 프랑스의 식민지"
+ UIC_VIC_colony:0 "비시 프랑스의 식민지"
  UIC_indochinese_resistance_rene_robins_i:0 "인도차이나인들의 저항"
  UIC_indochinese_resistance_i:0 "$UIC_indochinese_resistance_rene_robins_i$"
  UIC_indochinese_resistance_ii:0 "$UIC_indochinese_resistance_rene_robins_i$"
@@ -354,6 +362,14 @@
  UIC_flood_relief_iii:0 "홍수 구호"
  UIC_flood_relief_iv:0 "홍수 구호"
  UIC_flood_relief_v:0 "홍수 구호"
+ UIC_risk_of_famine:0 "기근의 위험"
+ UIC_famine_i:0 "기근"
+ UIC_famine_ii:0 "기근"
+ UIC_famine_iii:0 "기근"
+ UIC_famine_iv:0 "기근"
+ UIC_famine_v:0 "기근"
+ UIC_famine_vi:0 "기근"
+ UIC_friendly_relations_with_warlord:0 "인도차이나의 지원"
  UIC_profits_in_indochina_i:0 "인도차이나에서의 이익"
  UIC_profits_in_indochina_ii:0 "인도차이나에서의 이익"
  UIC_profits_in_indochina_iii:0 "인도차이나에서의 이익"
@@ -435,11 +451,16 @@
  UIC_local_investment_plan_decision:0 "[FROM.GetName] 토지개혁 실행"
 
  UIC_indochina_wars_category:0 "인도차이나 전쟁"
+ UIC_sue_for_peace_JAP:0 "[From.GetNameDef]에 조건부 항복 제안"
+ UIC_sue_for_peacejap_TT:0 "§Y[JAP.GetAdjective]§!이 §Y하노이§!와 §Y하이퐁§!을 지배하고 있음."
+ UIC_sue_for_peace_SIA:0 "[From.GetNameDef]에 조건부 항복 제안"
+ UIC_sue_for_peacesia_TT:0 "§Y[SIA.GetNameDef]§!이 §Y사이냐불리§!와 §Y바탐방§!을 지배하고 있음."
  UIC_western_operation_plan_decision:0 "$UIC_western_operation_plan$"
  UIC_end_franco_thai_war:0 "프랑스-태국 전쟁이 끝남"
  UIC_eastern_operation_plan_decision:0 "$UIC_eastern_operation_plan$"
  UIC_end_franco_Japanese_war:0 "프랑스-일본 전쟁이 끝남"
  UIC_in_operation:0 "작전 중"
+ UIC_protecting_Indochina_decision:0 "인도차이나 보호"
 
  #인도차이나 민족주의자 관리
  UIC_faction_management_category:0 "인도차이나 민족주의 세력 관리"
@@ -534,6 +555,15 @@
  #그럴수도 있다
  uic.9.t:0 "인도차이나의 협력 요청"
  uic.9.d:0 "인도차이나가 일본의 야망을 막기위해 우리와 협력이 필요하다고 말했습니다. 우리는 그들과 협력해야 할까요?"
+ uic.9.a:0 "우리의 힘을 키우기 위해 그들과 협력하자."
+ uic9_tt:0 "수락이 인도차이나의 무기지원을 받을 수 있습니다."
+ uic.9.b:0 "우린 그들을 믿을 수 없다!"
+ uic.10.t:0 "[From.GetName]의 협력"
+ uic.10.d:0 "[From.GetName]은 우리와의 협력을 받아드렸습니다."
+ uic.10.a:0 "잘됐군."
+ uic.11.t:0 "[From.GetName]의 거부"
+ uic.11.d:0 "[From.GetName]은 우리와의 협력을 거부하였습니다."
+ uic.11.a:0 "이 결정을 내린 것을 후회할 것이다."
  uic.12.t:0 "해군기지 건설"
  #uic.12.d:0 "일본과 태국이 우리를 집어삼키려고 하고 있습니다. 어디에 해군기지를 건설하는것이 좋을까요? 타이만에 건설한다면 태국을 더 쉽게 제압할 수 있겠지만 일본에 쉽게 패배할 것입니다. 하이퐁은 통킹만에서 작전하기에는 이상적인 위치지만 중국 본토에서 오는 폭격기에 매우 취약해질 것입니다. 카인호아는 하이퐁보다 약간 아쉽지만 일본의 폭격기로부터 안전할 것입니다."
  uic.12.a:0 "타이만에 건설하자"
@@ -573,3 +603,49 @@
  uicfallfrance.1.d:0 ""
  uicfallfrance.1.a:0 "수락"
  uicfallfrance.1.b:0 "거절"
+
+ uicwar.1.t:0 "[From.GetName]의 평화 제안"
+ uicwar.1.desc:2 "[From.GetAdjective] 관리들이 우리에게 평화를 제안하였습니다. 우리는 즉시 적대행위를 중단하는 대신 [From.GetAdjective]는 우리에게 협력할 것입니다."
+ uicwar.1.a:0 "전쟁에서 이겼다."
+ uicwar.1.b:0 "우리는 총체적 승리에 만족할 것이다!"
+ uicwar.2.t:0 "[From.GetName]의 평화 수락"
+ uicwar.2.desc:0 "[From.GetNameDef] 측은 우리의 평화 제안을 수락하였고, 우리는 [From.GetAdjective]에 협력할 것입니다."
+ uicwar.2.a:0 "그들은 우리를 넘어섰다... 당장은."
+ uicwar.3.t:0 "[From.GetName]의 평화 거부"
+ uicwar.3.desc:0 "[From.GetNameDef](은)는 우리의 평화 제의를 거부했고, 무조건 항복을 받아내기 전까지 전쟁을 계속할 것입니다."
+ uicwar.3.a:0 "그럼 우리도 최후까지 싸울 것이다!"
+
+ uicwar.4.t:0 "[From.GetName]의 평화 제안"
+ uicwar.4.desc:2 "[From.GetAdjective] 관리들이 우리에게 평화를 제안하였습니다. 우리는 즉시 적대행위를 중단하는 대신 [From.GetAdjective]는 우리에게 영토를 넘겨줄 것입니다."
+ uicwar.4.a:0 "우리는 사이냐불리와 바탐방까지의 캄보디아 영토를 요구할 것이다!"
+ uicwar.4.b:0 "우리는 사이냐불리와 프놈펜까지의 캄보디아 영토를 요구할 것이다!"
+ uicwar.4.c:0 "우리는 라오스와 캄보디아를 요구할 것이다!"
+ uicwar.4.d:0 "우리는 총체적 승리에 만족할 것이다!"
+ uicwar.5.t:0 "[From.GetName]의 영토 요구"
+ uicwar.5.desc:0 "[From.GetNameDef] 측은 우리의 평화 제안을 수락하였고, 우리는 [From.GetAdjective]에 그들이 요구하는 영토를 넘겨줄 것입니다."
+ uicwar.5.a:0 "그들은 우리를 넘어섰다... 당장은."
+ uicwar.5.b:0 "우리도 최후까지 싸울 것이다!"
+ uicwar.6.t:0 "[From.GetName]의 영토 요구"
+ uicwar.6.desc:0 "[From.GetNameDef] 측은 우리의 평화 제안을 수락하였고, 우리는 [From.GetAdjective]에 그들이 요구하는 영토를 넘겨줄 것입니다."
+ uicwar.6.a:0 "그들은 우리를 넘어섰다... 당장은."
+ uicwar.6.b:0 "우리도 최후까지 싸울 것이다!"
+ uicwar.7.t:0 "[From.GetName]의 영토 요구"
+ uicwar.7.desc:0 "[From.GetNameDef] 측은 우리의 평화 제안을 수락하였고, 우리는 [From.GetAdjective]에 그들이 요구하는 영토를 넘겨줄 것입니다."
+ uicwar.7.a:0 "그들은 우리를 넘어섰다... 당장은."
+ uicwar.7.b:0 "우리도 최후까지 싸울 것이다!"
+ uicwar.8.t:0 "[From.GetName]의 평화 거부"
+ uicwar.8.desc:0 "[From.GetNameDef](은)는 우리의 평화 제의를 거부했고, 무조건 항복을 받아내기 전까지 전쟁을 계속할 것입니다."
+ uicwar.8.a:0 "그럼 우리도 최후까지 싸울 것이다!"
+ uicwar.8.b:0 "우리도 최후까지 싸울 것이다!"
+ uicwar.9.t:0 "일본의 인도차이나 위협"
+ uicwar.9.desc:0 "중일전쟁이 시작되면서 아시아의 상황이 좋지 않습니다. 인도차이나 정부는 우리에게 도움을 요청하고 있습니다. 일본이 인도차이나를 공격한다면 우리는 그들을 도와줘야 할까요?"
+ uicwar.9.a:0 "우리는 인도차이나를 지킬것이다!"
+ uicwar.9.b:0 "우리는 도울 수 없다."
+ uicwar.10.t:0 "도움을 약속한 프랑스"
+ uicwar.10.desc:0 "일본이 우리를 공격한다면 프랑스는 우리를 버리지 않기로 약속했습니다."
+ uicwar.10.a:0 "잘됐군!"
+ uicwar.11.t:0 "인도차이나 보호를 포기한 프랑스"
+ uicwar.11.desc:0 "일본이 우리를 공격한다면 프랑스는 우리를 지킬 수 없을 것이라고 말했습니다."
+ uicwar.11.a:0 "걱정스럽군..."
+
+

@@ -1,6 +1,7 @@
 add_namespace = uic
 add_namespace = uicuprising
 add_namespace = uicfallfrance
+add_namespace = uicwar
 
 country_event = {
 	id = uic.1
@@ -369,20 +370,48 @@ country_event = {
 	option = { #수락
 		name = uic.9.a
 		ai_chance = {
-			base = 10
+			base = 50
+			modifier = {
+				factor = 2
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value < -10
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value < -50
+					}
+				}
+			}
 		}
 		UIC = {
 			country_event = { id = uic.10 }
 		}
+		custom_effect_tooltip = uic9_tt
 		hidden_effect = {
-			set_country_flag = UIC_cooperation_with_warlords
+			set_country_flag = UIC_accept_support_warlords
 		}
 	}
 
 	option = { #거절
 		name = uic.9.b
 		ai_chance = {
-			base = 10
+			base = 50
 		}
 		UIC = {
 			country_event = { id = uic.11 }
@@ -988,6 +1017,103 @@ country_event = {
 	}
 }
 
+#기근
+country_event = {
+	id = uic.20
+	
+	hidden = yes
+	
+	immediate = { #효과
+		country_event = { id = uic.21 days = 600 }
+	}
+
+	trigger = {
+		has_capitulated = no
+		original_tag = UIC
+		has_idea = UIC_risk_of_famine
+		has_war = yes		
+	}
+
+	mean_time_to_happen = { days = 150 } #해당일을 기준으로 조건 확인
+
+}
+
+#uic gets famine - Actual event
+country_event = {
+	id = uic.21
+	title = uic.21.t
+	desc = uic.21.desc	#
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	#immediate = {
+	#	hidden_effect = {
+	#		remove_ideas = UIC_risk_of_famine
+	#		add_timed_idea = { idea = UIC_famine days = 365 }
+	#		#news_event = { id = news.272 }
+	#		#news_event = { id = news.273 days = 365 }
+	#	}
+	#}
+			
+	#trigger = {
+	#	has_capitulated = no
+	#	original_tag = UIC
+	#	has_idea = UIC_risk_of_famine
+	#}
+
+	option = {
+		name = uic.21.a
+		effect_tooltip = {
+			remove_ideas = UIC_risk_of_famine
+			if = {
+				limit = {
+					has_country_flag = UIC_famine_i
+				}
+				clr_country_flag = UIC_famine_i
+				add_timed_idea = { idea = UIC_famine_i days = 100 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = UIC_famine_ii
+				}
+				clr_country_flag = UIC_famine_i
+				add_timed_idea = { idea = UIC_famine_ii days = 100 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = UIC_famine_iii
+				}
+				clr_country_flag = UIC_famine_iii
+				add_timed_idea = { idea = UIC_famine_iii days = 150 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = UIC_famine_iv
+				}
+				clr_country_flag = UIC_famine_iv
+				add_timed_idea = { idea = UIC_famine_iv days = 150 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = UIC_famine_v
+				}
+				clr_country_flag = UIC_famine_v
+				add_timed_idea = { idea = UIC_famine_v days = 200 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = UIC_famine_vi
+				}
+				clr_country_flag = UIC_famine_vi
+				add_timed_idea = { idea = UIC_famine_vi days = 300 }
+			}
+		}
+	}
+}
+
 #혁명 이벤트
 country_event = {
 	id = uicuprising.1
@@ -1046,17 +1172,75 @@ country_event = {
 	option = { #수락
 		name = uicfallfrance.1.a
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
 		every_enemy_country = {
 			white_peace = UIC
 		}
-		VIC = {
-			set_autonomy = {
-				target = UIC
-				autonomy_state = autonomy_colony
+			IF = {
+				limit = {
+					UIC = {
+						or = {
+							has_country_flag = UIC_autonomy_dominion
+							has_autonomy_state = autonomy_dominion
+						}
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_dominion
+					}
+				}
 			}
-		}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						or = {
+							has_country_flag = UIC_autonomy_colony
+							has_autonomy_state = autonomy_colony
+						}
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = autonomy_colony
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						or = {
+							has_country_flag = UIC_autonomy_puppet
+							has_autonomy_state = autonomy_puppet
+						}
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = UIC_autonomy_puppet
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					UIC = {
+						or = {
+							has_country_flag = UIC_autonomy_integrated_puppet
+							has_autonomy_state = autonomy_integrated_puppet
+						}
+					}
+				}
+				VIC = {
+					set_autonomy = {
+						target = UIC
+						autonomy_state = UIC_autonomy_integrated_puppet
+					}
+				}
+			}
 		set_country_flag = UIC_vichy_france
 		set_politics = {
 			ruling_party = neutrality
@@ -1071,13 +1255,559 @@ country_event = {
 		        expire = "1965.1.1.1"
 			}
 		}
+		VIC = {
+			country_event = uicwar.9
+		}
+		UIC_vic_profits_in_indochina = yes
+		if = {
+			limit = {
+				UIC = {
+					has_idea = UIC_FRA_colony
+				}
+			}
+			UIC = {
+				remove_ideas = UIC_FRA_colony
+			}
+		}
+		if = {
+			limit = {
+				UIC = {
+					has_country_flag = UIC_FRA_colony
+				}
+			}
+			UIC = {
+				clr_country_flag = UIC_FRA_colony
+			}
+		}
 	}
 
 	option = { #거절
 		name = uicfallfrance.1.b
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 		
+	}
+}
+
+country_event = {
+	id = uicwar.1
+	title = uicwar.1.t
+	desc = uicwar.1.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# We accept their surrender.
+	option = {
+		name = uicwar.1.a
+		UIC = {
+			country_event = { id = uicwar.2 }
+		}
+		effect_tooltip = {
+			UIC = {
+				give_military_access = JAP
+			}
+		}
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	# No surrender! We want total victory!
+	option = {
+		name = uicwar.1.b
+		UIC = {
+			country_event = { id = uicwar.3 }
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.2
+	title = uicwar.2.t
+	desc = uicwar.2.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.2.a
+		every_other_country = {
+			limit = {
+				has_war_with = JAP
+				is_in_faction_with = UIC
+			}
+			white_peace = JAP
+		}
+		#JAP = {
+		#	set_autonomy = {
+		#	    target = UIC
+		#	    autonomous_state = autonomy_wtt_imperial_protectorate
+		#	    end_wars = no
+		#	}
+		#}
+		UIC = {
+			give_military_access = JAP
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.3
+	title = uicwar.3.t
+	desc = uicwar.3.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.3.a
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.4
+	title = uicwar.4.t
+	desc = uicwar.4.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+	
+	# We accept their surrender.
+	option = { #바탐방
+		name = uicwar.4.a
+		UIC = {
+			country_event = { id = uicwar.5 }
+		}
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	# We accept their surrender.
+	option = { #프놈펜
+		name = uicwar.4.b
+		UIC = {
+			country_event = { id = uicwar.6 }
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	# We accept their surrender
+	option = { #라오스 캄보디아
+		name = uicwar.4.c
+		UIC = {
+			country_event = { id = uicwar.7 }
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	# No surrender! We want total victory!
+	option = { #거절
+		name = uicwar.4.d
+		UIC = {
+			country_event = { id = uicwar.8 }
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.5
+	title = uicwar.5.t
+	desc = uicwar.5.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.5.a
+		every_other_country = {
+			limit = {
+				has_war_with = SIA
+				is_in_faction_with = UIC
+			}
+			white_peace = SIA
+		}
+		if = {
+			limit = {
+				UIC = {
+					owns_state = 999
+					owns_state = 1008
+					owns_state = 1011
+					owns_state = 1012
+					owns_state = 1014
+				}
+			}
+			SIA = {
+				transfer_state = 999 #사이냐불리
+				transfer_state = 1008 #참파사크
+				transfer_state = 1011 #반테아이메안체이
+				transfer_state = 1012 #반테아이메안체이
+				transfer_state = 1014 #프레아비헤아르
+			}
+		}
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = { #거절
+		name = uicwar.5.b
+		UIC = {
+			country_event = { id = uicwar.8 }
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				SIA = {
+					surrender_progress > 0.2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.6
+	title = uicwar.6.t
+	desc = uicwar.6.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.6.a
+		every_other_country = {
+			limit = {
+				has_war_with = SIA
+				is_in_faction_with = UIC
+			}
+			white_peace = SIA
+		}
+		if = {
+			limit = {
+				UIC = {
+					owns_state = 999
+					owns_state = 1008
+					owns_state = 1011
+					owns_state = 1012
+					owns_state = 1014
+
+					owns_state = 1013
+					owns_state = 741
+				}
+			}
+			SIA = {
+				transfer_state = 999 #사이냐불리
+				transfer_state = 1008 #참파사크
+				transfer_state = 1011 #반테아이메안체이
+				transfer_state = 1012 #반테아이메안체이
+				transfer_state = 1014 #프레아비헤아르
+
+				transfer_state = 1013 #캄퐁참
+				transfer_state = 741 #프놈펜
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				add = 50
+				SIA = {
+					controls_state = 741
+					controls_state = 1013
+				}
+			}
+		}
+	}
+
+	option = { #거절
+		name = uicwar.6.b
+		UIC = {
+			country_event = { id = uicwar.8 }
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.7
+	title = uicwar.7.t
+	desc = uicwar.7.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.7.a
+		every_other_country = {
+			limit = {
+				has_war_with = SIA
+				is_in_faction_with = UIC
+			}
+			white_peace = SIA
+		}
+		if = {
+			limit = {
+				UIC = {
+					#라오스
+					owns_state = 670
+					owns_state = 996
+					owns_state = 997
+					owns_state = 998
+					owns_state = 999
+					owns_state = 1000
+					owns_state = 1001
+					owns_state = 1002
+					owns_state = 1003
+					owns_state = 1004
+					owns_state = 1005
+					owns_state = 1006
+					owns_state = 1007
+					owns_state = 1008
+
+					#캄보디아
+					owns_state = 741
+					owns_state = 1009
+					owns_state = 1010
+					owns_state = 1011
+					owns_state = 1012
+					owns_state = 1013
+					owns_state = 1014
+					owns_state = 1015
+					owns_state = 1016
+				}
+			}
+			SIA = {
+				#라오스
+				transfer_state = 670
+				transfer_state = 996
+				transfer_state = 997
+				transfer_state = 998
+				transfer_state = 999
+				transfer_state = 1000
+				transfer_state = 1001
+				transfer_state = 1002
+				transfer_state = 1003
+				transfer_state = 1004
+				transfer_state = 1005
+				transfer_state = 1006
+				transfer_state = 1007
+				transfer_state = 1008
+
+				#캄보디아
+				transfer_state = 741
+				transfer_state = 1009
+				transfer_state = 1010
+				transfer_state = 1011
+				transfer_state = 1012
+				transfer_state = 1013
+				transfer_state = 1014
+				transfer_state = 1015
+				transfer_state = 1016
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 30
+				SIA = {
+					controls_state = 741
+					controls_state = 1013
+					controls_state = 998
+				}
+			}
+			modifier = {
+				add = 50
+				SIA = {
+					controls_state = 286 #사이공
+				}
+			}
+			modifier = {
+				add = 50
+				SIA = {
+					controls_state = 671 #하노이
+				}
+			}
+		}
+	}
+
+	option = { #거절
+		name = uicwar.7.b
+		UIC = {
+			country_event = { id = uicwar.8 }
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.8
+	title = uicwar.8.t
+	desc = uicwar.8.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.8.a
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#프랑스의 인도차이나 보호
+country_event = {
+	id = uicwar.9
+	title = uicwar.9.t
+	desc = uicwar.9.desc
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	#fire_only_once = yes
+
+	option = { #인도차이나 보호
+		name = uicwar.9.a
+		ai_chance = {
+			factor = 0
+		}
+		#UIC = {
+		#	country_event = { id = uicwar.10 }
+		#}
+	}
+
+	option = { #인도차이나 보호 포기
+		name = uicwar.9.b
+		ai_chance = {
+			factor = 100
+		}
+		UIC = {
+			country_event = { id = uicwar.11 }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = FRA
+					}
+				}
+				UIC = {
+					add_ideas = UIC_FRA_colony
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						tag = VIC
+					}
+				}
+				UIC = {
+					add_ideas = UIC_VIC_colony
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = uicwar.10
+	title = uicwar.10.t
+	desc = uicwar.10.desc
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.10.a
+	}
+}
+
+country_event = {
+	id = uicwar.11
+	title = uicwar.11.t
+	desc = uicwar.11.desc
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	option = {
+		name = uicwar.11.a
+		OVERLORD = {
+			set_autonomy = {
+				target = UIC
+				autonomy_state = autonomy_free
+			}
+		}
+		OVERLORD = { remove_from_faction = ROOT }
+		if = {
+			limit = {
+				UIC = {
+					has_autonomy_state = autonomy_dominion
+				}
+				set_country_flag = UIC_autonomy_dominion
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_autonomy_state = autonomy_colony
+				}
+				set_country_flag = UIC_autonomy_colony
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_autonomy_state = autonomy_puppet
+				}
+				set_country_flag = UIC_autonomy_puppet
+			}
+		}
+		else_if = {
+			limit = {
+				UIC = {
+					has_autonomy_state = autonomy_integrated_puppet
+				}
+				set_country_flag = UIC_autonomy_integrated_puppet
+			}
+		}
 	}
 }

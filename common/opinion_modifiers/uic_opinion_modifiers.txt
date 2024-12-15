@@ -32,4 +32,8 @@ opinion_modifiers = {
 		value = -30
 	}
 
+	UIC_friendly_relations_with_warlord = {
+		value = 30
+	}
+
 }

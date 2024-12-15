@@ -1146,23 +1146,24 @@
 				AND = {
 					608 = {
 						NOT = {
+							OR = {
 							is_controlled_by = CHI
 							is_controlled_by = PRC
 							is_controlled_by = SHX
-						}
-					}
-					597 = {
-						NOT = {
-							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
+							is_controlled_by = HCP
+							is_controlled_by = SDC
+							}
 						}
 					}
 					614 = {
 						NOT = {
+							OR = {
 							is_controlled_by = CHI
 							is_controlled_by = PRC
 							is_controlled_by = SHX
+							is_controlled_by = HCP
+							is_controlled_by = SDC
+							}
 						}
 					}
 				}
@@ -1188,11 +1189,18 @@
 		completion_reward = {
 			if = {
 				limit = {
-					CHI = { #if CHI owns one of these states, they get the event
-						OR = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
+					or = {
+						CHI = { #if CHI owns one of these states, they get the event
+							OR = {
+								controls_state = 608
+								controls_state = 614
+							}
+						}
+						HCP = { #if CHI owns one of these states, they get the event
+							OR = {
+								controls_state = 608
+								controls_state = 614
+							}
 						}
 					}
 				}
@@ -1205,7 +1213,6 @@
 					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
 						AND = {
 							controls_state = 608
-							controls_state = 597
 							controls_state = 614
 						}
 					}
@@ -1219,7 +1226,6 @@
 					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
 						AND = {
 							controls_state = 608
-							controls_state = 597
 							controls_state = 614
 						}
 					}
@@ -1231,6 +1237,28 @@
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 			add_ideas = JAP_intervene_in_china_5
 			unlock_decision_tooltip = JAP_china_step_up_war_effort
+			hidden_effect = {
+				if = {
+					limit = {
+						UIC = {
+							is_subject_of = FRA
+						}
+					}
+					FRA = {
+						country_event = uicwar.9
+					}
+				}
+				else_if = {
+					limit = {
+						UIC = {
+							is_subject_of = VIC
+						}
+					}
+					VIC = {
+						country_event = uicwar.9
+					}
+				}
+			}
 		}
 	}
 
@@ -1336,6 +1364,8 @@
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
+		will_lead_to_war_with = UIC
+
 		cost = 10
 
 		ai_will_do = {
@@ -1347,7 +1377,21 @@
 		}
 
 		available = {
-
+			or = {
+				has_full_control_of_state = 591 #하이난
+				has_full_control_of_state = 592 #광저우
+				has_full_control_of_state = 594 #난닝
+				has_full_control_of_state = 599 #광시
+				has_full_control_of_state = 325 #윈난
+				has_full_control_of_state = 747 #다리
+				any_subject_country = {
+					or = {
+						is_neighbor_of = UIC
+						is_neighbor_of = VIN
+						is_neighbor_of = LAO
+					}
+				}
+			}
 		}
 
 		bypass = {

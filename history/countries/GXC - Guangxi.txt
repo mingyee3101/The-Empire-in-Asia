@@ -4,6 +4,10 @@ oob = "GXC_1936"
 
 set_cosmetic_tag = CHI_KMT
 
+add_ideas = {
+	limited_conscription
+}
+
 set_stability = 0.6
 set_war_support = 0.4
 # Starting tech
@@ -40,6 +44,7 @@ if = {
 	add_ideas = {
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
+		CHI_warlord_state_idea
 	}
 }
 

@@ -1,6 +1,7 @@
 leader_traits = {
 
 	UIC_silent_workhorse = {
+		random = no
 		sprite = 13
 		political_power_factor = 0.15
 		neutrality_drift = 0.1

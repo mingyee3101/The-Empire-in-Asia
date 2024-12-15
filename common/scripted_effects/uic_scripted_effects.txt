@@ -9,7 +9,7 @@ UIC_profits_in_indochina_clear_all = {
 	}
 }
 
-#버프 증가
+#프랑스 농업 버프 증가
 UIC_profits_in_indochina_level_up = {
 	#custom_effect_tooltip = UIC_profit_growth_tt
 	if = {
@@ -46,7 +46,7 @@ UIC_profits_in_indochina_level_up = {
 	}
 }
 
-#버프 감소
+#프랑스 농업 버프 감소
 UIC_profits_in_indochina_level_down = {
 #custom_effect_tooltip = CHI_profit_decreases_tt
 	if = {
@@ -79,6 +79,228 @@ UIC_profits_in_indochina_level_down = {
 		swap_ideas = {
 			remove_idea = UIC_profits_in_indochina_v
 			add_idea = UIC_profits_in_indochina_iv
+		}
+	}
+}
+
+#기근 증가
+UIC_famine_level_up = {
+	custom_effect_tooltip = UIC_indochina_famine_tt
+	if = {
+		limit = {
+			NOT = {
+				has_idea = UIC_risk_of_famine
+			}
+		}
+		set_country_flag = UIC_famine_i
+	}
+	else_if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_i
+		}
+		clr_country_flag = UIC_famine_i
+		set_country_flag = UIC_famine_ii
+	}
+	else_if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_ii
+		}
+		clr_country_flag = UIC_famine_ii
+		set_country_flag = UIC_famine_iii
+	}
+	else_if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_iii
+		}
+		clr_country_flag = UIC_famine_iii
+		set_country_flag = UIC_famine_iv
+	}
+	else_if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_iv
+		}
+		clr_country_flag = UIC_famine_iv
+		set_country_flag = UIC_famine_v
+	}
+	else_if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_v
+		}
+		clr_country_flag = UIC_famine_v
+		set_country_flag = UIC_famine_vi
+	}
+}
+
+#기근 감소
+UIC_famine_level_down = {
+	custom_effect_tooltip = UIC_indochina_prevent_famine_tt
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_i
+		}
+		clr_country_flag = UIC_famine_i
+		remove_ideas = UIC_risk_of_famine
+	}
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_ii
+		}
+		clr_country_flag = UIC_famine_ii
+		set_country_flag = UIC_famine_i
+	}
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_iii
+		}
+		clr_country_flag = UIC_famine_iii
+		set_country_flag = UIC_famine_ii
+	}
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_iv
+		}
+		clr_country_flag = UIC_famine_iv
+		set_country_flag = UIC_famine_iii
+	}
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_iv
+		}
+		clr_country_flag = UIC_famine_v
+		set_country_flag = UIC_famine_iv
+	}
+	if = {
+		limit = {
+			has_idea = UIC_risk_of_famine
+			has_country_flag = UIC_famine_vi
+		}
+		clr_country_flag = UIC_famine_v
+		set_country_flag = UIC_famine_vi
+	}
+}
+
+#중국 지원
+UIC_support_warlords_level_up = {
+	if = {
+		limit = {
+			not = {
+				has_country_flag = UIC_friendly_relations_with_warlord
+				or = {
+					has_country_flag = UIC_support_warlords_i
+					has_country_flag = UIC_support_warlords_ii
+					has_country_flag = UIC_support_warlords_iii
+					has_country_flag = UIC_support_warlords_iv
+					has_country_flag = UIC_support_warlords_v
+				}
+			}
+		}
+		set_country_flag = UIC_support_warlords_i
+	}
+	else_if = {
+		limit = {
+			has_country_flag = UIC_support_warlords_i
+		}
+		clr_country_flag = UIC_support_warlords_i
+		set_country_flag = UIC_support_warlords_ii
+	}
+	else_if = {
+		limit = {
+			has_country_flag = UIC_support_warlords_ii
+		}
+		clr_country_flag = UIC_support_warlords_ii
+		set_country_flag = UIC_support_warlords_iii
+	}
+	else_if = {
+		limit = {
+			has_country_flag = UIC_support_warlords_iii
+		}
+		clr_country_flag = UIC_support_warlords_iii
+		set_country_flag = UIC_support_warlords_iv
+	}
+	else_if = {
+		limit = {
+			has_country_flag = UIC_support_warlords_iv
+		}
+		clr_country_flag = UIC_support_warlords_iv
+		set_country_flag = UIC_support_warlords_v
+	}
+}
+
+#인도차이나에서의 이익 버프 관리
+UIC_vic_profits_in_indochina = {
+	if = {
+		limit = {
+			FRA = {
+				has_idea = UIC_profits_in_indochina_i
+			}
+		}
+		FRA = {
+			remove_ideas = UIC_profits_in_indochina_i
+		}
+		VIC = {
+			add_ideas = UIC_profits_in_indochina_i
+		}
+	}
+	else_if = {
+		limit = {
+			FRA = {
+				has_idea = UIC_profits_in_indochina_ii
+			}
+		}
+		FRA = {
+			remove_ideas = UIC_profits_in_indochina_ii
+		}
+		VIC = {
+			add_ideas = UIC_profits_in_indochina_ii
+		}
+	}
+	else_if = {
+		limit = {
+			FRA = {
+				has_idea = UIC_profits_in_indochina_iii
+			}
+		}
+		FRA = {
+			remove_ideas = UIC_profits_in_indochina_iii
+		}
+		VIC = {
+			add_ideas = UIC_profits_in_indochina_iii
+		}
+	}
+	else_if = {
+		limit = {
+			FRA = {
+				has_idea = UIC_profits_in_indochina_iv
+			}
+		}
+		FRA = {
+			remove_ideas = UIC_profits_in_indochina_iv
+		}
+		VIC = {
+			add_ideas = UIC_profits_in_indochina_iv
+		}
+	}
+	else_if = {
+		limit = {
+			FRA = {
+				has_idea = UIC_profits_in_indochina_v
+			}
+		}
+		FRA = {
+			remove_ideas = UIC_profits_in_indochina_v
+		}
+		VIC = {
+			add_ideas = UIC_profits_in_indochina_v
 		}
 	}
 }

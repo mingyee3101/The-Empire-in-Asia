@@ -4,6 +4,21 @@ oob = "PGC_1936"
 
 set_cosmetic_tag = PGC_EHA
 
+add_ideas = {
+	limited_conscription
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+		CHI_warlord_state_idea
+	}
+}
+
 recruit_character = PGC_Yin_Ju_keng
 recruit_character = PGC_Sun_Liangcheng
 recruit_character = PGC_Wu_Huawen

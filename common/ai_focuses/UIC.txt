@@ -40,7 +40,7 @@ ai_historical_focus_list_UIC = {
 		UIC_fair_wages #공평한 임금
 
 		#39년 3월 완
-		UIC_negotiations_with_japan #일본과 협상
+		#UIC_negotiations_with_japan #일본과 협상
 
 		#전쟁 준비 2
 		UIC_guangzhouwan_port_expansion #광저우만 항구 확장

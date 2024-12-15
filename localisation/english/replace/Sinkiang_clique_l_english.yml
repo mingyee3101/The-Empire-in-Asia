@@ -6,6 +6,9 @@
 
  #국명
 
+ #국민정신
+ SIK_islamic_rebellion_in_xinjiang:0 "불안정한 신강"
+
  #결정
  SIK_preparing_for_rebellion_category:0 "반란"
  SIK_preparing_for_rebellion_dummy:0 "[TGS.GetLeader]의 반란 모의"

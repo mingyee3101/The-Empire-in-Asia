@@ -5,6 +5,35 @@
  #장군
  KOR_Mu_Chong:0 "김무정" #공산
 
+ #정당
+ KOR_fascism_party:0 "조선총독부"
+ KOR_fascism_party_long:0 "조선총독부"
+ KOR_democratic_party:0 "자유당"
+ KOR_democratic_party_long:0 "자유당"
+ KOR_communism_party:0 "조선로동당"
+ KOR_communism_party_long:0 "조선로동당"
+ KOR_neutrality_party:0 "이씨 왕조"
+ KOR_neutrality_party_long:0 "이씨 왕조"
+
+ #국명
+ KOR_fascism:0 "대한제국"
+ KOR_fascism_DEF:0 "대한제국"
+ KOR_fascism_ADJ:0 "대한국"
+ KOR_democratic:0 "대한민국"
+ KOR_democratic_DEF:0 "대한민국"
+ KOR_democratic_ADJ:0 "한국"
+ KOR_neutrality:1 "대한제국"
+ KOR_neutrality_DEF:1 "대한제국"
+ KOR_neutrality_ADJ:0 "대한국"
+ KOR_communism:0 "조선민주주의인민공화국"
+ KOR_communism_DEF:0 "조선민주주의인민공화국"
+ KOR_communism_ADJ:0 "조선"
+ KOR:0 "한국"
+ KOR_DEF:0 "한국"
+ KOR_ADJ:0 "한국"
+ KOR_government_general_of_chosen_fascism:0 "조선총독부"
+ KOR_government_general_of_chosen_fascism_DEF:0 "조선총독부"
+
  #중점
  #조선총독부
  kr_1:0 "총독부 유지"

@@ -88,6 +88,7 @@ country_event = {
 		custom_effect_tooltip = tgs_soviet_support_tt
 
 		hidden_effect = {
+		set_country_flag = SIK_soviet_support_for_Xinjiang
 		division_template = {
 				name = "소총 군단"
 				division_names_group = SOV_INF_01

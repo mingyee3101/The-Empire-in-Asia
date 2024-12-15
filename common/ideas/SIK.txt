@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+
+		SIK_islamic_rebellion_in_xinjiang = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+
+			rule = {
+				can_join_factions = no
+			}
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_core_attack_factor = 0.2
+			}
+		}
+
+	}
+}
